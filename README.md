@@ -15,3 +15,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 ### Binary Search
 
 - [Search Insert Position](./binary-search/search-insert-position.js)
+
+### Hashing
+
+- [Two Sum](./hashing/two-sum.js)
