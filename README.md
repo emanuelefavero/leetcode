@@ -31,3 +31,4 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 ### array
 
 - [Running Sum Of 1d Array](./array/running-sum-of-1d-array.js)
+- [Richest Customer Wealth](./array/richest-customer-wealth.js)
