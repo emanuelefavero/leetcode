@@ -23,3 +23,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 ### Easy
 
 - [Add Two Integers](./easy/add-two-integers.js)
+
+### Tree
+
+- [Root Equal Sum Of Children](./tree/root-equal-sum-of-children.js)
