@@ -19,6 +19,8 @@ function twoSum(nums, target) {
     // if the map does not have the complement, add the current number and its index to the map
     map.set(nums[i], i)
   }
+
+  return []
 }
 
 console.log(twoSum([2, 3, 4, 5], 6))
