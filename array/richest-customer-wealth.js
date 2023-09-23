@@ -28,3 +28,23 @@ console.log(
     [3, 2, 1],
   ])
 ) // 6
+
+// --------------------------------------------------------------------------
+// ALTERNATE SOLUTIONS
+
+// O(n^2) time, O(1) space
+function maximumWealth2(accounts) {
+  let max = 0
+
+  for (let i = 0; i < accounts.length; i++) {
+    let sum = 0
+
+    for (let j = 0; j < accounts[i].length; j++) {
+      sum += accounts[i][j] // add each element in the array
+    }
+
+    if (sum > max) max = sum // update max if sum is greater than max
+  }
+
+  return max
+}
