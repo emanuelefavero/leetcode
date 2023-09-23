@@ -19,3 +19,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 ### Hashing
 
 - [Two Sum](./hashing/two-sum.js)
+
+### Easy
+
+- [Add Two Integers](./easy/add-two-integers.js)
