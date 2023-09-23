@@ -1,6 +1,12 @@
-// Loop through each element in array and find if there is another value that equals to target - array[i].
+/**
+ * Loop through each element in array and find if there is another value that equals to target - array[i]
+ *
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */
 
-// O(n) - linear
+// O(n)
 function twoSum(nums, target) {
   let map = new Map()
 
@@ -13,8 +19,6 @@ function twoSum(nums, target) {
     // if the map does not have the complement, add the current number and its index to the map
     map.set(nums[i], i)
   }
-
-  return []
 }
 
 console.log(twoSum([2, 3, 4, 5], 6))
