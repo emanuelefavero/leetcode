@@ -23,6 +23,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 ### Easy
 
 - [Add Two Integers](./easy/add-two-integers.js)
+- [Fizz Buzz](./easy/fizz-buzz.js)
 
 ### Tree
 
