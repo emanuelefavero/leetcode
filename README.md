@@ -41,3 +41,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 ### Tree
 
 - [Root Equal Sum Of Children](./tree/root-equal-sum-of-children.js)
+
+## License
+
+- [MIT](LICENSE.md)
