@@ -6,7 +6,7 @@
  * @returns {number}
  */
 
-// O(n)
+// O(log n)
 function numberOfSteps(num) {
   let steps = 0
 
