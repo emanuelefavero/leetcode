@@ -1,3 +1,9 @@
+/**
+ * Definition for singly-linked list.
+ * @typedef ListNode
+ * @property {number} val
+ * @property {ListNode} next
+ */
 class ListNode {
   constructor(val, next) {
     this.val = val ?? 0
@@ -5,6 +11,13 @@ class ListNode {
   }
 }
 
+/**
+ * * Given the head of a singly linked list, return the middle node of the linked list.
+ * @param {ListNode} head
+ * @returns {ListNode}
+ */
+
+// O(n)
 function middleNode(head) {
   let slow = head
   let fast = head
@@ -18,6 +31,7 @@ function middleNode(head) {
 }
 
 // -----------------------------
+// TESTS
 
 let head = new ListNode(1)
 head.next = new ListNode(2)
