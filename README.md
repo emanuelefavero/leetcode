@@ -12,24 +12,24 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 
 ## Contents
 
+### Array
+
+- [Running Sum Of 1d Array](./array/running-sum-of-1d-array.js)
+- [Richest Customer Wealth](./array/richest-customer-wealth.js)
+
 ### Binary Search
 
 - [Search Insert Position](./binary-search/search-insert-position.js)
-
-### Hashing
-
-- [Two Sum](./hashing/two-sum.js)
 
 ### Easy
 
 - [Add Two Integers](./easy/add-two-integers.js)
 - [Fizz Buzz](./easy/fizz-buzz.js)
 
+### Hashing
+
+- [Two Sum](./hashing/two-sum.js)
+
 ### Tree
 
 - [Root Equal Sum Of Children](./tree/root-equal-sum-of-children.js)
-
-### array
-
-- [Running Sum Of 1d Array](./array/running-sum-of-1d-array.js)
-- [Richest Customer Wealth](./array/richest-customer-wealth.js)
