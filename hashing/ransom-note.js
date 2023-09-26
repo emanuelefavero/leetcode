@@ -1,8 +1,5 @@
-// TODO: Add comments
-// TODO: Add solution2
-
 /**
- * Given two stings ransomNote and magazine, return true if ransomNote can be constructed from magazine and false otherwise.
+ * * Given two stings ransomNote and magazine, return true if ransomNote can be constructed from magazine and false otherwise.
  *
  * Each letter in magazine can only be used once in ransomNote.
  *
@@ -11,6 +8,7 @@
  * @returns {boolean}
  */
 
+// O(n) time | O(n) space
 function canConstruct(ransomNote, magazine) {
   let hashTable = {}
 
@@ -34,7 +32,7 @@ console.log(canConstruct('aa', 'aab')) // true
 // -------------------------------
 // SOLUTION 2
 
-/*
+// O(n) time | O(n) space
 function canConstruct(ransomNote, magazine) {
   if (ransomNote.length > magazine.length) return false
 
@@ -52,4 +50,3 @@ function canConstruct(ransomNote, magazine) {
 
   return true
 }
-*/
