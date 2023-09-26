@@ -1,6 +1,15 @@
-// TODO: Add jsDoc
 // TODO: Add comments
 // TODO: Add solution2
+
+/**
+ * Given two stings ransomNote and magazine, return true if ransomNote can be constructed from magazine and false otherwise.
+ *
+ * Each letter in magazine can only be used once in ransomNote.
+ *
+ * @param {string} ransomNote
+ * @param {string} magazine
+ * @returns {boolean}
+ */
 
 function canConstruct(ransomNote, magazine) {
   let hashTable = {}
