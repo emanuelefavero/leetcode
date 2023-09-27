@@ -1,3 +1,10 @@
+/**
+ * @typedef {Object} TreeNode
+ * @property {number} val
+ * @property {TreeNode} left
+ * @property {TreeNode} right
+ */
+
 class TreeNode {
   constructor(val) {
     this.val = val
@@ -5,6 +12,13 @@ class TreeNode {
     this.right = null
   }
 }
+
+/**
+ * * Given the root of a binary tree, return the inorder traversal of its nodes' values
+ * @param {TreeNode} root
+ * @param {number[]} result
+ * @returns {number[]}
+ */
 
 function inorderTraversal(root, result = []) {
   if (!root) return result
