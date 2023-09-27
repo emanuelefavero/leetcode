@@ -16,9 +16,31 @@ function inorderTraversal(root, result = []) {
   return result
 }
 
+// ----------------- SOLUTION 2 ----------------
+function inorderTraversal2(root) {
+  let result = []
+  let stack = []
+  let current = root
+
+  while (current || stack.length) {
+    if (current) {
+      stack.push(current)
+      current = current.left
+    } else {
+      current = stack.pop()
+      result.push(current.val)
+      current = current.right
+    }
+  }
+
+  return result
+}
+
+// ----------------- test case -----------------
+
 let root = new TreeNode(1)
-root.left = new TreeNode(null)
 root.right = new TreeNode(2)
 root.right.left = new TreeNode(3)
 
-console.log(inorderTraversal(root))
+console.log(inorderTraversal(root)) // [1, 3, 2]
+console.log(inorderTraversal2(root)) // [1, 3, 2]
