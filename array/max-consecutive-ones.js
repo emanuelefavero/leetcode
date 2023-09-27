@@ -7,6 +7,28 @@
 
 // O(n) time | O(1) space
 function findMaxConsecutiveOnes(nums) {
+  let max = 0
+  let counter = 0
+
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] === 1) {
+      counter++
+    } else {
+      counter = 0
+    }
+
+    // if counter is greater than maxValue, set maxValue to counter
+    if (counter > max) max = counter
+  }
+
+  return max
+}
+
+// -------------------------------
+// SOLUTION 2
+
+// O(n) time | O(1) space
+function findMaxConsecutiveOnes2(nums) {
   let currentSum = 0
   let maxSum = 0
 
@@ -25,10 +47,10 @@ function findMaxConsecutiveOnes(nums) {
 }
 
 // -------------------------------
-// SOLUTION 2
+// SOLUTION 3
 
 // O(n) time | O(n) space
-function findMaxConsecutiveOnes2(nums) {
+function findMaxConsecutiveOnes3(nums) {
   let result = []
   let consecutiveOnes = 0
 
@@ -53,3 +75,5 @@ console.log(findMaxConsecutiveOnes([1, 1, 0, 1, 1, 1])) // 3
 console.log(findMaxConsecutiveOnes([1, 1, 0, 1, 1, 0])) // 2
 console.log(findMaxConsecutiveOnes2([1, 1, 0, 1, 1, 1])) // 3
 console.log(findMaxConsecutiveOnes2([1, 1, 0, 1, 1, 0])) // 2
+console.log(findMaxConsecutiveOnes3([1, 1, 0, 1, 1, 1])) // 3
+console.log(findMaxConsecutiveOnes3([1, 1, 0, 1, 1, 0])) // 2
