@@ -20,6 +20,7 @@ class TreeNode {
  * @returns {number[]}
  */
 
+// O(n) time | O(n) space - recursive approach
 function inorderTraversal(root, result = []) {
   if (!root) return result
 
@@ -31,6 +32,8 @@ function inorderTraversal(root, result = []) {
 }
 
 // ----------------- SOLUTION 2 ----------------
+
+// O(n) time | O(n) space - iterative approach (using stack)
 function inorderTraversal2(root) {
   let result = []
   let stack = []
