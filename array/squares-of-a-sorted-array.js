@@ -1,12 +1,12 @@
-// not in-place
-function sortedSquares(nums) {
-  let squares = []
+// TODO: Add jsDoc and comments
+// TODO: Add link to README
 
-  for (let i = 0; i < nums.length; i++) {
-    squares.push(nums[i] * nums[i])
-  }
+// Given an integer array nums sorted in non-decreasing order, return an array of the squares of each number sorted in non-decreasing order
 
-  return squares.sort((a, b) => a - b)
+function sortedSquares3(nums) {
+  let result = nums.map((n) => n * n) // square each number
+
+  return result.sort((a, b) => a - b) // sort the array
 }
 
 // -------------------------------
@@ -21,6 +21,20 @@ function sortedSquares2(nums) {
 }
 
 // -------------------------------
+// SOLUTION 3 - not in-place
+function sortedSquares(nums) {
+  let squares = []
+
+  for (let i = 0; i < nums.length; i++) {
+    squares.push(nums[i] * nums[i])
+  }
+
+  return squares.sort((a, b) => a - b)
+}
+
+// -------------------------------
 // TESTS
 
 console.log(sortedSquares([-4, -1, 0, 3, 10]))
+console.log(sortedSquares2([-4, -1, 0, 3, 10]))
+console.log(sortedSquares3([-4, -1, 0, 3, 10]))
