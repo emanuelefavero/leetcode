@@ -1,5 +1,4 @@
 // TODO: jsDoc and comments
-// TODO: Solution 2
 // TODO: Add link to README
 
 // Given a fixed-length integer array arr, duplicate each occurrence of zero, shifting the remaining elements to the right.
@@ -15,6 +14,25 @@ function duplicateZeros(arr) {
       // We need to skip the next element because we already added a 0 to it
       i++
     }
+  }
+}
+
+// -----------------------------
+// SOLUTION 2
+
+function duplicateZeros(arr) {
+  let i = 0
+
+  while (i < arr.length) {
+    if (arr[i] === 0) {
+      arr.splice(i, 0, 0)
+      arr.pop()
+
+      i++
+    }
+
+    // We need to skip the next element because we already added a 0 to it
+    i++
   }
 }
 
