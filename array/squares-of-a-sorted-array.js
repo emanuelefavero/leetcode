@@ -1,8 +1,12 @@
-// TODO: Add jsDoc and comments
 // TODO: Add link to README
 
-// Given an integer array nums sorted in non-decreasing order, return an array of the squares of each number sorted in non-decreasing order
+/**
+ * * Given an integer array nums sorted in non-decreasing order, return an array of the squares of each number sorted in non-decreasing order
+ * @param {number[]} nums
+ * @return {number[]}
+ */
 
+// O(n log n) time | O(n) space
 function sortedSquares3(nums) {
   let result = nums.map((n) => n * n) // square each number
 
@@ -12,6 +16,7 @@ function sortedSquares3(nums) {
 // -------------------------------
 // SOLUTION 2 - in-place
 
+// O(n log n) time | O(1) space
 function sortedSquares2(nums) {
   for (let i = 0; i < nums.length; i++) {
     nums[i] = nums[i] * nums[i]
@@ -22,6 +27,8 @@ function sortedSquares2(nums) {
 
 // -------------------------------
 // SOLUTION 3 - not in-place
+
+// O(n log n) time | O(n) space
 function sortedSquares(nums) {
   let squares = []
 
@@ -35,6 +42,6 @@ function sortedSquares(nums) {
 // -------------------------------
 // TESTS
 
-console.log(sortedSquares([-4, -1, 0, 3, 10]))
-console.log(sortedSquares2([-4, -1, 0, 3, 10]))
-console.log(sortedSquares3([-4, -1, 0, 3, 10]))
+console.log(sortedSquares([-4, -1, 0, 3, 10])) // [0,1,9,16,100]
+console.log(sortedSquares2([-4, -1, 0, 3, 10])) // [0,1,9,16,100]
+console.log(sortedSquares3([-4, -1, 0, 3, 10])) // [0,1,9,16,100]
