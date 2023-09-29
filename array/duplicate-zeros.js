@@ -7,17 +7,14 @@
 // Note that elements beyond the length of the original array are not written. Do the above modifications to the input array in place and do not return anything.
 
 function duplicateZeros(arr) {
-  let i = 0
-
-  while (i < arr.length) {
+  for (let i = 0; i < arr.length; i++) {
     if (arr[i] === 0) {
-      arr.splice(i, 0, 0) // Insert 0 at index i, remove 0 elements
-      arr.pop() // Remove last element
+      arr.splice(i, 0, 0) // Add a 0 at the current index
+      arr.pop() // Remove the last element
+
+      // We need to skip the next element because we already added a 0 to it
       i++
     }
-
-    // We need to also increment i here because we don't want to check the newly added 0
-    i++
   }
 }
 
