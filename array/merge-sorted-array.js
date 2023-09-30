@@ -1,10 +1,17 @@
-// TODO: Add jsDoc and comments
 // TODO: Add link to README
 
-// You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n, representing the number of elements in nums1 and nums2 respectively.
+/**
+ * You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n, representing the number of elements in nums1 and nums2 respectively.
+ *
+ * * Merge nums1 and nums2 into a single array sorted in non-decreasing order.
+ *
+ * @param {number[]} nums1
+ * @param {number} m
+ * @param {number[]} nums2
+ * @param {number} n
+ */
 
-// Merge nums1 and nums2 into a single array sorted in non-decreasing order.
-
+// O(n log n) time | O(1) space
 function merge(nums1, m, nums2, n) {
   let i = m // Start at the end of nums1
   j = 0 // Start at the beginning of nums2
@@ -22,6 +29,7 @@ function merge(nums1, m, nums2, n) {
 // -----------------------------
 // SOLUTION 2
 
+// O(n) time | O(1) space
 function merge2(nums1, m, nums2, n) {
   let i = m - 1
   let j = n - 1
