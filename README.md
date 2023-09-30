@@ -19,7 +19,8 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Max Consecutive Ones](./array/max-consecutive-ones.js)
 - [Even Number Of Digits](./array/even-number-of-digits.js)
 - [Squares Of A Sorted Array](./array/squares-of-a-sorted-array.js)
-- - [Duplicate Zeros](./array/duplicate-zeros.js)
+- [Duplicate Zeros](./array/duplicate-zeros.js)
+- [Merge Sorted Array](./array/merge-sorted-array.js)
 
 ### Binary Search
 
