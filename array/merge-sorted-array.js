@@ -1,8 +1,28 @@
+// TODO: Add jsDoc and comments
+// TODO: Add link to README
+
 // You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n, representing the number of elements in nums1 and nums2 respectively.
 
 // Merge nums1 and nums2 into a single array sorted in non-decreasing order.
 
 function merge(nums1, m, nums2, n) {
+  let i = m // Start at the end of nums1
+  j = 0 // Start at the beginning of nums2
+
+  while (i < m + n) {
+    nums1[i] = nums2[j] // Add the element from nums2 to nums1
+    i++
+    j++
+  }
+
+  // Sort nums1
+  nums1.sort((a, b) => a - b)
+}
+
+// -----------------------------
+// SOLUTION 2
+
+function merge2(nums1, m, nums2, n) {
   let i = m - 1
   let j = n - 1
   let k = m + n - 1
