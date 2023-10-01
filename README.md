@@ -25,6 +25,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Remove Element](./array/remove-element.js)
 - [Remove Duplicates From Sorted Array](./array/remove-duplicates-from-sorted-array.js)
 - [Check If N And Its Double Exist](./array/check-if-n-and-its-double-exist.js)
+- [Valid Mountain Array](./array/valid-mountain-array.js)
 
 ### Binary Search
 
