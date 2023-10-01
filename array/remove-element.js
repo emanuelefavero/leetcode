@@ -8,13 +8,10 @@
 
 // O(n) time | O(1) space
 function removeElement(nums, val) {
-  let i = 0
-
-  while (i < nums.length) {
+  for (let i = 0; i < nums.length; i++) {
     if (nums[i] === val) {
       nums.splice(i, 1)
-    } else {
-      i++
+      i-- // to account for the change in length when splicing
     }
   }
 
