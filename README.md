@@ -22,6 +22,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Duplicate Zeros](./array/duplicate-zeros.js)
 - [Merge Sorted Array](./array/merge-sorted-array.js)
 - [Delete Element By Index](./array/delete-element-by-index.js)
+- [Remove Element](./array/remove-element.js)
 
 ### Binary Search
 
