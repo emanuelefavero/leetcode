@@ -1,5 +1,11 @@
-// Given an array of integers arr, return true if there are two distinct indices i and j in the array such that arr[i] == 2 * arr[j], or arr[j] == 2 * arr[i], or both
+/**
+ * * Given an array of integers arr, return true if there are two distinct indices i and j in the array such that arr[i] == 2 * arr[j], or arr[j] == 2 * arr[i], or both
+ *
+ * @param {number[]} arr
+ * @returns {boolean}
+ */
 
+// O(n) time | O(n) space
 function checkIfExist(arr) {
   let set = new Set()
 
