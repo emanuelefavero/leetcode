@@ -1,18 +1,21 @@
 // Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same. Then return the number of unique elements in nums
 
-function removeDuplicates(nums) {
-  let hashTable = {}
+// TIP: This solution is more efficient than others but only works for sorted arrays (where duplicates are next to each other)
 
-  for (let i = 0; i < nums.length; i++) {
-    if (!hashTable[nums[i]]) {
-      hashTable[nums[i]] = true
-    } else {
-      nums.splice(i, 1)
-      i-- // to account for the change in length when splicing
+function removeDuplicates(nums) {
+  let index = 1 // index of the next unique number
+
+  for (let i = 0; i < nums.length - 1; i++) {
+    // if the current number is not equal to the next number, then the next number is unique
+    if (nums[i] !== nums[i + 1]) {
+      // move the next unique number to the previous unique number's index
+      nums[index] = nums[i + 1]
+      index++
     }
   }
 
-  return nums.length
+  // return the number of unique numbers (the index of the next unique number)
+  return index
 }
 
 // -------------------------
