@@ -1,7 +1,15 @@
-// Delete an element from an array (given the index) - no built in methods
+/**
+ * * Delete an element from an array (given the index) - no built in methods
+ *
+ * @param {number[]} array
+ * @param {number} index
+ */
 
+// O(n) time | O(1) space
 function deleteElement(array, index) {
-  for (let i = index + 1; i < array.length; i++) {
+  index++ // we need to start from the next element
+
+  for (let i = index; i < array.length; i++) {
     array[i - 1] = array[i]
   }
   array.length = array.length - 1 // remove last element
