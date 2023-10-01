@@ -1,3 +1,17 @@
+/**
+ * * Given an array of integers arr, return true if and only if it is a valid mountain array
+ *
+ * TIP: A mountain array is defined as:
+ * - arr.length >= 3
+ * - There exists some i with 0 < i < arr.length - 1 such that:
+ *  - arr[0] < arr[1] < ... < arr[i - 1] < arr[i]
+ * - arr[i] > arr[i + 1] > ... > arr[arr.length - 1]
+ *
+ * @param {number[]} arr
+ * @returns {boolean}
+ */
+
+// O(n) time | O(1) space
 function validMountainArray(arr) {
   if (arr.length < 3) return false
 
