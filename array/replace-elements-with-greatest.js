@@ -1,9 +1,15 @@
 // Replace Elements With Greatest Element on Right Side
 
-// Given an array arr, replace every element in that array with the greatest element among the elements to its right, and replace the last element with -1.
+/**
+ * * Given an array arr, replace every element in that array with the greatest element among the elements to its right, and replace the last element with -1
+ *
+ * After doing so, return the array
+ *
+ * @param {number[]} arr
+ * @returns {number[]}
+ */
 
-// After doing so, return the array.
-
+// O(n) time | O(1) space
 function replaceElements(arr) {
   let max = -1
 
@@ -21,4 +27,4 @@ function replaceElements(arr) {
 // ------------------
 // TESTS
 
-console.log(replaceElements([17, 18, 5, 4, 6, 1]))
+console.log(replaceElements([17, 18, 5, 4, 6, 1])) // [18, 6, 6, 6, 1, -1]
