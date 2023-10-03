@@ -1,4 +1,3 @@
-// TODO: Add link to README
 // TODO: Add jsDoc and clean up comments
 
 /*

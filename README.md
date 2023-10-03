@@ -30,6 +30,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Two Pointer Technique](./array/two-pointer-technique.js)
 - [Move Zeroes](./array/move-zeroes.js)
 - [Sort Array By Parity](./array/sort-array-by-parity.js)
+- [Height Checker](./array/height-checker.js)
 
 ### Binary Search
 
