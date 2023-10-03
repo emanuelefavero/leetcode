@@ -1,9 +1,12 @@
-// The following array problem illustrates the useful two-pointer technique.
+// * The following array problem illustrates the useful two-pointer technique.
+// TIP: The two pointer technique is used a lot in in-place array algorithms
 
-// The two pointer technique is used a lot in in-place array algorithms
+/**
+ * Remove duplicates from sorted array
+ * @param {number[]} nums
+ */
 
-// Remove duplicates from sorted array
-
+// O(n) time | O(1) space - in-place
 function removeDuplicates(nums) {
   let writePointer = 1
 
