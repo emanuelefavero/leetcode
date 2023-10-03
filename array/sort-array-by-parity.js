@@ -1,7 +1,11 @@
-// TODO: jsDoc and comments
+/**
+ * * Given an integer array nums, move all the even integers at the beginning of the array followed by all the odd integers
+ *
+ * @param {number[]} nums
+ * @returns {number[]}
+ */
 
-// Given an integer array nums, move all the even integers at the beginning of the array followed by all the odd integers.
-
+// O(n) time | O(n) space
 function sortArrayByParity(nums) {
   let even = []
   let odd = []
@@ -18,6 +22,8 @@ function sortArrayByParity(nums) {
 // SOLUTION 2
 
 // TIP: This solution is faster time-wise
+
+// O(n) time | O(n) space
 function sortArrayByParity2(nums) {
   let result = []
 
@@ -34,6 +40,7 @@ function sortArrayByParity2(nums) {
 
 // TIP: This solution uses the two-pointer technique and is 99% faster than the other two solutions! (it is less readable though)
 
+// O(n) time | O(1) space - in-place
 function sortArrayByParity3(nums) {
   let writePointer = 0
 
@@ -55,3 +62,5 @@ function sortArrayByParity3(nums) {
 console.log(sortArrayByParity([3, 1, 2, 4])) // [2, 4, 3, 1]
 console.log(sortArrayByParity2([3, 1, 2, 4])) // [4, 2, 3, 1] - still correct
 console.log(sortArrayByParity3([3, 1, 2, 4])) // [2, 4, 3, 1]
+
+// TIP: The fastest possible sorting algorithm is O(n log n) time. In this instance we have O(n) because we only need to sort even and odd numbers.
