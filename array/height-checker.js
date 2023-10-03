@@ -1,5 +1,3 @@
-// TODO: Add jsDoc and clean up comments
-
 /*
 A school is trying to take an annual photo of all the students. The students are asked to stand in a single file line in non-decreasing order by height. Let this ordering be represented by the integer array expected where expected[i] is the expected height of the ith student in line.
 
@@ -7,9 +5,17 @@ You are given an integer array heights representing the current order that the s
 
 Return the number of indices where heights[i] != expected[i]
 
-// TIP: To solve this problem, you can copy the heights array and sort it. Then, compare the two arrays and count the number of differences.
+TIP: To solve this problem, you can copy the heights array and sort it. Then, compare the two arrays and count the number of differences.
 */
 
+/**
+ * * Height Checker
+ *
+ * @param {number[]} heights
+ * @returns {number}
+ */
+
+// O(n log n) time | O(n) space
 function heightChecker(heights) {
   let expected = [...heights].sort((a, b) => a - b) // sort heights
   let result = 0
