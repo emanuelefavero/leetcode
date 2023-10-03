@@ -10,19 +10,14 @@
 // -------------------------
 // SOLUTION 1
 
-// O(n) time | O(n) space
+// TIP: This solution is easy to understand and is really efficient memory-wise but is a bit slow time-wise
+
 function findDisappearedNumbers(nums) {
-  let hashTable = {}
-
-  // Populate hash table (remove duplicates)
-  for (let num of nums) {
-    if (!hashTable[num]) hashTable[num] = true
-  }
-
-  // Find missing numbers by looping up to nums.length and checking if the number exists in the hash table
   let result = []
-  for (let i = 1; i < nums.length; i++) {
-    if (!hashTable[i]) result.push(i)
+
+  // Check if each number from 1 to nums.length is in the array
+  for (let i = 1; i <= nums.length; i++) {
+    if (!nums.includes(i)) result.push(i)
   }
 
   return result
@@ -32,3 +27,4 @@ function findDisappearedNumbers(nums) {
 // TESTS
 
 console.log(findDisappearedNumbers([4, 3, 2, 7, 8, 2, 3, 1])) // [5, 6]
+console.log(findDisappearedNumbers([1, 1])) // [2]
