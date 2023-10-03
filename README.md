@@ -32,6 +32,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Sort Array By Parity](./array/sort-array-by-parity.js)
 - [Height Checker](./array/height-checker.js)
 - [Third Maximum Number](./array/third-maximum-number.js)
+- [Find All Numbers Disappeared In An Array](./array/find-disappeared-numbers.js)
 
 ### Binary Search
 
