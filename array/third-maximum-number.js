@@ -22,7 +22,36 @@ function thirdMax(nums) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: This solution is more efficient time-wise by 98% and about the same memory-wise
+
+// O(n) time | O(1) space
+function thirdMax2(nums) {
+  let first = -Infinity
+  let second = -Infinity
+  let third = -Infinity
+
+  for (let num of nums) {
+    if (num > first) {
+      third = second
+      second = first
+      first = num
+    } else if (num > second && num < first) {
+      third = second
+      second = num
+    } else if (num > third && num < second) {
+      third = num
+    }
+  }
+
+  if (third === -Infinity) return first
+  else return third
+}
+
+// -------------------------
 // TESTS
 
 let nums = [3, 1, 2, 2, 4, 6, 5]
 console.log(thirdMax(nums)) // 4
+console.log(thirdMax2(nums)) // 4
