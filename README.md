@@ -27,6 +27,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Check If N And Its Double Exist](./array/check-if-n-and-its-double-exist.js)
 - [Valid Mountain Array](./array/valid-mountain-array.js)
 - [Replace Elements With Greatest Element On Right Side](./array/replace-elements-with-greatest.js)
+- [Two Pointer Technique](./array/two-pointer-technique.js)
 
 ### Binary Search
 
