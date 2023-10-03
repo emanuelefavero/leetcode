@@ -25,6 +25,23 @@ function removeDuplicates(nums) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: This solution is a little bit slower than the previous one but it still fine and probably easier to understand
+
+// O(n) time | O(1) space
+function removeDuplicates2(nums) {
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] === nums[i + 1]) {
+      nums.splice(i, 1)
+      i-- // to account for the removed element
+    }
+  }
+
+  return nums.length
+}
+
+// -------------------------
 // TESTS
 
 let nums = [1, 1, 2]
