@@ -23,5 +23,5 @@ function removeElement(nums, val) {
 
 let nums = [3, 2, 2, 3]
 let val = 3
-console.log(removeElement(nums, val)) // 1
+console.log(removeElement(nums, val)) // 2
 console.log(nums) // [2, 2]
