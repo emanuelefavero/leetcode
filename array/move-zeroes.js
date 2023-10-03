@@ -1,7 +1,12 @@
-// Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements. (in-place)
+/**
+ * * Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements. (in-place)
+ *
+ * @param {number[]} nums
+ */
 
 // TIP: This first solution is probably more readable and is faster memory-wise
 
+// O(n) time | O(1) space - in-place
 function moveZeroes(nums) {
   numberOfZeroes = 0
 
@@ -23,6 +28,7 @@ function moveZeroes(nums) {
 
 // TIP: This second solution is slightly faster and uses the two-pointer technique
 
+// O(n) time | O(1) space - in-place
 function moveZeroes2(nums) {
   let writePointer = 0
 
