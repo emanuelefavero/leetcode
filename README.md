@@ -31,6 +31,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Move Zeroes](./array/move-zeroes.js)
 - [Sort Array By Parity](./array/sort-array-by-parity.js)
 - [Height Checker](./array/height-checker.js)
+- [Third Maximum Number](./array/third-maximum-number.js)
 
 ### Binary Search
 
