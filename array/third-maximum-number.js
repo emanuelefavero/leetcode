@@ -24,7 +24,7 @@ function thirdMax(nums) {
 // -------------------------
 // SOLUTION 2
 
-// TIP: This solution is more efficient time-wise by 98% and about the same memory-wise
+// TIP: This solution is more efficient time-wise by 98% and about the same as solution 1 memory-wise
 
 // O(n) time | O(1) space
 function thirdMax2(nums) {
@@ -50,8 +50,33 @@ function thirdMax2(nums) {
 }
 
 // -------------------------
+// SOLUTION 3
+
+// TIP: This solution is more efficient than 85% memory-wise
+
+function thirdMax3(nums) {
+  nums.sort((a, b) => b - a) // sort in descending order
+  let index = 1 // keep track of the index to find the third max
+  let prev = nums[0] // keep track of the previous number
+
+  for (let i = 1; i < nums.length; i++) {
+    // if the current number is not equal to the previous number, increment the index
+    if (nums[i] !== prev) {
+      index++
+      prev = nums[i] // update the previous number
+    }
+
+    // if we are at the third distinct number, return it
+    if (index === 3) return nums[i]
+  }
+
+  return nums[0] // if there is no third max, return the max
+}
+
+// -------------------------
 // TESTS
 
 let nums = [3, 1, 2, 2, 4, 6, 5]
 console.log(thirdMax(nums)) // 4
 console.log(thirdMax2(nums)) // 4
+console.log(thirdMax3(nums)) // 4
