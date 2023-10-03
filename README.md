@@ -28,6 +28,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Valid Mountain Array](./array/valid-mountain-array.js)
 - [Replace Elements With Greatest Element On Right Side](./array/replace-elements-with-greatest.js)
 - [Two Pointer Technique](./array/two-pointer-technique.js)
+- [Move Zeroes](./array/move-zeroes.js)
 
 ### Binary Search
 
