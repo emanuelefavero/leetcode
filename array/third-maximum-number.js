@@ -12,15 +12,9 @@
 
 // O(n log n) time | O(n) space
 function thirdMax(nums) {
-  nums.sort((a, b) => a - b) // sort nums
-
-  // remove duplicates
-  let set = new Set()
-  for (let i = 0; i < nums.length; i++) {
-    set.add(nums[i])
-  }
-
+  let set = new Set(nums) // remove duplicates
   let result = [...set] // convert set to array
+  result.sort((a, b) => a - b) // sort result array
 
   // return third max if it exists, otherwise return max
   if (result.length >= 3) return result[result.length - 3]
