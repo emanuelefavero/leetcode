@@ -12,6 +12,10 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 
 ## Contents
 
+### 2D Array
+
+- [Print 2D Array](./2d-array/print-2d-array.js)
+
 ### Array
 
 - [Running Sum Of 1d Array](./array/running-sum-of-1d-array.js)
