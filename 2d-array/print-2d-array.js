@@ -1,6 +1,3 @@
-// TODO: Commit - add jsDoc and comments to 2d-array/print-2d-array
-// TODO: Add 2d-array/print-2d-array link to README
-
 /**
  * * Print 2d array
  *
