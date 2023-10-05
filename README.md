@@ -34,6 +34,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Third Maximum Number](./array/third-maximum-number.js)
 - [Find All Numbers Disappeared In An Array](./array/find-disappeared-numbers.js)
 - [Find Pivot Index](./array/find-pivot-index.js)
+- [Largest Number At Least Twice Of Others](./array/largest-number-twice-of-others.js)
 
 ### Binary Search
 
