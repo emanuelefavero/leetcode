@@ -33,6 +33,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Height Checker](./array/height-checker.js)
 - [Third Maximum Number](./array/third-maximum-number.js)
 - [Find All Numbers Disappeared In An Array](./array/find-disappeared-numbers.js)
+- [Find Pivot Index](./array/find-pivot-index.js)
 
 ### Binary Search
 
