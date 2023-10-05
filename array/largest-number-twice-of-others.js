@@ -5,21 +5,9 @@ Determine whether the largest element in the array is at least twice as much as 
 */
 
 function dominantIndex(nums) {
-  let max = -Infinity
-  let maxIndex = -1
-  let secondMax = -Infinity
+  let sorted = [...nums].sort((a, b) => b - a)
 
-  for (let i = 0; i < nums.length; i++) {
-    if (nums[i] > max) {
-      secondMax = max
-      max = nums[i]
-      maxIndex = i
-    } else if (nums[i] > secondMax) {
-      secondMax = nums[i]
-    }
-  }
-
-  if (max >= secondMax * 2) return maxIndex
+  if (sorted[0] >= sorted[1] * 2) return nums.indexOf(sorted[0])
   return -1
 }
 
