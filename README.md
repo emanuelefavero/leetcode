@@ -15,6 +15,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 ### 2D Array
 
 - [Print 2D Array](./2d-array/print-2d-array.js)
+- [Print Multi Dimensional Array](./2d-array/print-multi-dimensional-array.js)
 
 ### Array
 

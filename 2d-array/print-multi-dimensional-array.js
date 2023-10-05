@@ -1,5 +1,4 @@
 // TODO: Add jsDoc and comments
-// TODO: Add link to README
 
 function printMultiDimensionalArray(array) {
   for (let i = 0; i < array.length; i++) {
