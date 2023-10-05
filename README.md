@@ -35,6 +35,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Find All Numbers Disappeared In An Array](./array/find-disappeared-numbers.js)
 - [Find Pivot Index](./array/find-pivot-index.js)
 - [Largest Number At Least Twice Of Others](./array/largest-number-twice-of-others.js)
+- [Plus One](./array/plus-one.js)
 
 ### Binary Search
 
