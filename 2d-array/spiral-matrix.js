@@ -1,6 +1,9 @@
-// TODO: Ad jsDoc
-
-// Given an m x n matrix, return all elements of the matrix in spiral order
+/**
+ * * Given an m x n matrix, return all elements of the matrix in spiral order
+ *
+ * @param {number[][]} matrix m x n matrix
+ * @returns {number[]}
+ */
 
 // O(n) time | O(n) space
 function spiralOrder(matrix) {
