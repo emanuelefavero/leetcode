@@ -1,9 +1,8 @@
-// TODO: Add link to README
-// TODO: Add solution 2 (from this file comment)
 // TODO: Ad jsDoc
 
 // Given an m x n matrix, return all elements of the matrix in spiral order
 
+// O(n) time | O(n) space
 function spiralOrder(matrix) {
   // Extract the first row of the matrix and the rightmost elements of each remaining row
   let firstRowAndRightmost = [...matrix.shift(), ...matrix.map((m) => m.pop())]
@@ -24,8 +23,11 @@ function spiralOrder(matrix) {
   ]
 }
 
-/*
-function spiralOrder(matrix) {
+// -------------------------------
+// SOLUTION 2
+
+// O(n) time | O(1) space
+function spiralOrder2(matrix) {
   let m = matrix.length
   let n = matrix[0].length
   let result = []
@@ -61,7 +63,9 @@ function spiralOrder(matrix) {
 
   return result
 }
-*/
+
+// -------------------------------
+// TESTS
 
 let matrix = [
   [1, 2, 3],
@@ -70,3 +74,6 @@ let matrix = [
 ]
 
 console.log(spiralOrder(matrix)) // [1, 2, 3, 6, 9, 8, 7, 4, 5]
+
+// NOTE: UNCOMMENT FOR SOLUTION 2 (COMMENT OUT THE PREVIOUS LINE)
+// console.log(spiralOrder2(matrix)) // [1, 2, 3, 6, 9, 8, 7, 4, 5]
