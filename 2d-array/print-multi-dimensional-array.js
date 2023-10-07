@@ -1,5 +1,10 @@
-// TODO: Add jsDoc and comments
+/**
+ * * Print multi dimensional array
+ *
+ * @param {number[]} array
+ */
 
+// O(n) time | O(1) space
 function printMultiDimensionalArray(array) {
   for (let i = 0; i < array.length; i++) {
     if (Array.isArray(array[i])) {
@@ -9,6 +14,9 @@ function printMultiDimensionalArray(array) {
     }
   }
 }
+
+// -------------------------
+// TESTS
 
 let multiDimensionalArray = [
   [1, 2],
