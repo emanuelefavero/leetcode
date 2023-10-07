@@ -8,6 +8,49 @@
 
 // O(n) time | O(1) space
 function findDiagonalOrder(mat) {
+  let result = []
+  let m = mat.length
+  let n = mat[0].length
+  let row = 0
+  let col = 0
+  let direction = 1 // 1 for upward, -1 for downward
+
+  while (result.length < m * n) {
+    result.push(mat[row][col])
+
+    if (direction === 1) {
+      if (col === n - 1) {
+        row++
+        direction = -1
+      } else if (row === 0) {
+        col++
+        direction = -1
+      } else {
+        row--
+        col++
+      }
+    } else {
+      if (row === m - 1) {
+        col++
+        direction = 1
+      } else if (col === 0) {
+        row++
+        direction = 1
+      } else {
+        row++
+        col--
+      }
+    }
+  }
+
+  return result
+}
+
+// -------------------------
+// SOLUTION 2
+
+// O(n) time | O(1) space
+function findDiagonalOrder2(mat) {
   // Check for empty matrices
   if (!mat.length) return []
 
@@ -56,3 +99,4 @@ let mat = [
 ]
 
 console.log(findDiagonalOrder(mat)) // [1, 2, 4, 7, 5, 3, 6, 8, 9]
+console.log(findDiagonalOrder2(mat)) // [1, 2, 4, 7, 5, 3, 6, 8, 9]
