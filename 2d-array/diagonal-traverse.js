@@ -1,3 +1,12 @@
+/**
+ * * Given an m x n matrix mat, return an array of all the elements of the array in a diagonal order.
+ *
+ * @see https://leetcode.com/problems/diagonal-traverse/editorial/
+ * @param {number[][]} mat
+ * @returns {number[]}
+ */
+
+// O(n) time | O(1) space
 function findDiagonalOrder(mat) {
   // Check for empty matrices
   if (!mat.length) return []
