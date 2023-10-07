@@ -22,7 +22,7 @@ function duplicateZeros(arr) {
 // -----------------------------
 // SOLUTION 2
 
-function duplicateZeros(arr) {
+function duplicateZeros2(arr) {
   let i = 0
 
   while (i < arr.length) {
@@ -45,3 +45,8 @@ let arr = [1, 0, 2, 3, 0, 4, 5, 0]
 duplicateZeros(arr)
 
 console.log(arr) // [1, 0, 0, 2, 3, 0, 0, 4]
+
+let arr2 = [1, 0, 2, 3, 0, 4, 5, 0]
+duplicateZeros2(arr2)
+
+// console.log(arr2) // [1, 0, 0, 2, 3, 0, 0, 4]

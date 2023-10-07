@@ -25,15 +25,11 @@ function canConstruct(ransomNote, magazine) {
   return true
 }
 
-console.log(canConstruct('a', 'b')) // false
-console.log(canConstruct('aa', 'ab')) // false
-console.log(canConstruct('aa', 'aab')) // true
-
 // -------------------------------
 // SOLUTION 2
 
 // O(n) time | O(n) space
-function canConstruct(ransomNote, magazine) {
+function canConstruct2(ransomNote, magazine) {
   if (ransomNote.length > magazine.length) return false
 
   let hashTable = new Map()
@@ -50,3 +46,14 @@ function canConstruct(ransomNote, magazine) {
 
   return true
 }
+
+// -------------------------------
+// TESTS
+
+console.log(canConstruct('a', 'b')) // false
+console.log(canConstruct('aa', 'ab')) // false
+console.log(canConstruct('aa', 'aab')) // true
+
+console.log(canConstruct2('a', 'b')) // false
+console.log(canConstruct2('aa', 'ab')) // false
+console.log(canConstruct2('aa', 'aab')) // true
