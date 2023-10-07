@@ -5,9 +5,10 @@
  * - answer[i] == 'Buzz' if i is divisible by 5.
  * - answer[i] == i if non of the above conditions are true.
  *
- * @param {number} n
+ * @param {number} n The integer to loop up to
  * @returns {string[]}
  */
+
 function fizzBuzz(n) {
   let answer = []
 
