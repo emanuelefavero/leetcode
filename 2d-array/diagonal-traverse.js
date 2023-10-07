@@ -19,16 +19,13 @@ function findDiagonalOrder(mat) {
   let result = []
   let intermediate = []
 
-  // We have to go over all the elements in the first
-  // row and the last column to cover all possible diagonals
+  // We have to go over all the elements in the first row and the last column to cover all possible diagonals
   for (let d = 0; d < N + M - 1; d++) {
-    // Clear the intermediate array every time we start
-    // to process another diagonal
+    // Clear the intermediate array every time we start to process another diagonal
     intermediate = []
 
     // We need to figure out the "head" of this diagonal
-    // The elements in the first row and the last column
-    // are the respective heads.
+    // The elements in the first row and the last column are the respective heads.
     let r = d < M ? 0 : d - M + 1
     let c = d < M ? d : M - 1
 
@@ -40,10 +37,7 @@ function findDiagonalOrder(mat) {
       --c
     }
 
-    // Reverse even numbered diagonals. The
-    // article says we have to reverse odd
-    // numbered articles but here, the numbering
-    // is starting from 0 :P
+    // Reverse even numbered diagonals. The article says we have to reverse odd numbered articles but here, the numbering is starting from 0 :P
     if (d % 2 === 0) intermediate.reverse()
 
     result = [...result, ...intermediate]
