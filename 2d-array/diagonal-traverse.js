@@ -9,36 +9,36 @@
 // O(n) time | O(1) space
 function findDiagonalOrder(mat) {
   let result = []
-  let m = mat.length
-  let n = mat[0].length
+  let rowLength = mat.length
+  let columnLength = mat[0].length
   let row = 0
-  let col = 0
+  let column = 0
   let direction = 1 // 1 for upward, -1 for downward
 
-  while (result.length < m * n) {
-    result.push(mat[row][col])
+  while (result.length < rowLength * columnLength) {
+    result.push(mat[row][column])
 
     if (direction === 1) {
-      if (col === n - 1) {
+      if (column === columnLength - 1) {
         row++
         direction = -1
       } else if (row === 0) {
-        col++
+        column++
         direction = -1
       } else {
         row--
-        col++
+        column++
       }
     } else {
-      if (row === m - 1) {
-        col++
+      if (row === rowLength - 1) {
+        column++
         direction = 1
-      } else if (col === 0) {
+      } else if (column === 0) {
         row++
         direction = 1
       } else {
         row++
-        col--
+        column--
       }
     }
   }
