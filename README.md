@@ -70,6 +70,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 ### String
 
 - [Add Binary](./string/add-binary.js)
+- [Implement StrStr](./string/implement-strstr.js)
 
 ### Tree
 
