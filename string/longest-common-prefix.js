@@ -1,8 +1,13 @@
-// TODO: Add jsDoc and comments
+/**
+ * * Write a function to find the longest common prefix string amongst an array of strings
+ *
+ * If there is no common prefix, return an empty string ""
+ *
+ * @param {string[]} strs
+ * @returns {string}
+ */
 
-// Write a function to find the longest common prefix string amongst an array of strings.
-
-// If there is no common prefix, return an empty string "".
+// O(n * m) time - O(1) space - where n is the length of the array and m is the length of the shortest string
 
 function longestCommonPrefix(strs) {
   let prefix = ''
@@ -29,6 +34,7 @@ function longestCommonPrefix(strs) {
 
 // TIP: This solution uses sorting and the fact that the longest common prefix is the prefix of the first and last string in the array
 
+// O(n * log(n)) time - O(1) space
 function longestCommonPrefix2(strs) {
   let prefix = ''
   strs.sort() // sort the array
