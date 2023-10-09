@@ -18,6 +18,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Print Multi Dimensional Array](./2d-array/print-multi-dimensional-array.js)
 - [Diagonal Traverse](./2d-array/diagonal-traverse.js)
 - [Spiral Matrix](./2d-array/spiral-matrix.js)
+- [Pascal Triangle](./2d-array/pascal-triangle.js)
 
 ### Array
 

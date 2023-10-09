@@ -1,4 +1,3 @@
-// TODO: Add link to README
 // TODO: Add jsDoc
 
 // Given an integer numRows, return the first numRows of Pascal's triangle.
