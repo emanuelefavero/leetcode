@@ -17,6 +17,22 @@ function strStr(haystack, needle) {
   return -1
 }
 
+// -------------------------
+// SOLUTION 2
+
+// TIP: This solution uses JavaScript built in methods
+
+function strStr2(haystack, needle) {
+  return haystack.indexOf(needle)
+}
+
+// -------------------------
+// TESTS
+
 console.log(strStr('sadbutsad', 'sad')) // 0
 console.log(strStr('sadbutsad', 'but')) // 3
 console.log(strStr('leetcode', 'leto')) // -1
+
+console.log(strStr2('sadbutsad', 'sad')) // 0
+console.log(strStr2('sadbutsad', 'but')) // 3
+console.log(strStr2('leetcode', 'leto')) // -1
