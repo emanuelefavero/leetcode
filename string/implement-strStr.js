@@ -35,6 +35,22 @@ function strStr2(haystack, needle) {
 }
 
 // -------------------------
+// SOLUTION 3
+
+// O(n * m) time - O(1) space
+function strStr3(haystack, needle) {
+  for (let i = 0; i < haystack.length; i++) {
+    if (
+      haystack[i] === needle[0] &&
+      haystack.slice(i, i + needle.length) === needle
+    )
+      return i
+  }
+
+  return -1
+}
+
+// -------------------------
 // TESTS
 
 console.log(strStr('sadbutsad', 'sad')) // 0
@@ -44,3 +60,7 @@ console.log(strStr('leetcode', 'leto')) // -1
 console.log(strStr2('sadbutsad', 'sad')) // 0
 console.log(strStr2('sadbutsad', 'but')) // 3
 console.log(strStr2('leetcode', 'leto')) // -1
+
+console.log(strStr3('sadbutsad', 'sad')) // 0
+console.log(strStr3('sadbutsad', 'but')) // 3
+console.log(strStr3('leetcode', 'leto')) // -1
