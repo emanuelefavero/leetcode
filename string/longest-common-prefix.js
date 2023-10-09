@@ -1,4 +1,3 @@
-// TODO: Add link to README
 // TODO: Add jsDoc and comments
 
 // Write a function to find the longest common prefix string amongst an array of strings.
