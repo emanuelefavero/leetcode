@@ -1,4 +1,3 @@
-// TODO: link to README
 // TODO: jsDOc
 
 function addBinary(a, b) {

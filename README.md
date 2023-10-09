@@ -67,6 +67,10 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 
 - [Number Of Steps To Reduce A Number To Zero](./math/number-of-steps-to-reduce-a-number-to-zero.js)
 
+### String
+
+- [Add Binary](./string/add-binary.js)
+
 ### Tree
 
 - [Root Equal Sum Of Children](./tree/root-equal-sum-of-children.js)
