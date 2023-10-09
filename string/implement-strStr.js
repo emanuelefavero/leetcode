@@ -1,5 +1,12 @@
-// Given two strings needle and haystack, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack
+/**
+ * * Given two strings needle and haystack, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack
+ *
+ * @param {string} haystack
+ * @param {string} needle
+ * @returns {number}
+ */
 
+// O(n * m) time - O(1) space
 function strStr(haystack, needle) {
   for (let i = 0; i < haystack.length; i++) {
     if (haystack[i] === needle[0]) {
@@ -22,6 +29,7 @@ function strStr(haystack, needle) {
 
 // TIP: This solution uses JavaScript built in methods
 
+// O(n) time - O(1) space
 function strStr2(haystack, needle) {
   return haystack.indexOf(needle)
 }
