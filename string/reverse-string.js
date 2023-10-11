@@ -1,9 +1,13 @@
-// TODO: jsDoc and comments
+/**
+ * * Write a function that reverses a string. The input string is given as an array of characters s
+ *
+ * You must do this by modifying the input array in-place with O(1) extra memory
+ *
+ * @param {string[]} s
+ * @returns {void}
+ */
 
-// Write a function that reverses a string. The input string is given as an array of characters s
-
-// You must do this by modifying the input array in-place with O(1) extra memory
-
+// O(n) time - O(1) space
 function reverseString(s) {
   let left = 0
   let right = s.length - 1
@@ -17,6 +21,9 @@ function reverseString(s) {
 // -------------------------
 // SOLUTION 2
 
+// TIP: Using JavaScript built-in functions
+
+// O(n) time - O(1) space
 function reverseString2(s) {
   s.reverse()
 }
