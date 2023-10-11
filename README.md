@@ -72,6 +72,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Add Binary](./string/add-binary.js)
 - [Implement StrStr](./string/implement-strstr.js)
 - [Longest Common Prefix](./string/longest-common-prefix.js)
+- [Reverse String](./string/reverse-string.js)
 
 ### Tree
 
