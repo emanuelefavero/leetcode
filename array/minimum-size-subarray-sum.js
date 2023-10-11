@@ -1,12 +1,12 @@
-// Given an array of positive integers nums and a positive integer target, return the minimal length of a subarray whose sum is greater than or equal to target. If there is no such subarray, return 0 instead.
+/**
+ * * Given an array of positive integers nums and a positive integer target, return the minimal length of a subarray whose sum is greater than or equal to target. If there is no such subarray, return 0 instead
+ *
+ * @param {number} target
+ * @param {number[]} nums
+ * @returns {number}
+ */
 
-/*
-EXAMPLE:
-Input: target = 7, nums = [2,3,1,2,4,3]
-Output: 2
-Explanation: The subarray [4,3] has the minimal length under the problem constraint.
-*/
-
+// O(n^2) time - O(1) space
 function minSubArrayLen(target, nums) {
   let minLength = Infinity
 
@@ -29,4 +29,9 @@ function minSubArrayLen(target, nums) {
   return minLength === Infinity ? 0 : minLength
 }
 
-console.log(minSubArrayLen(7, [2, 3, 1, 2, 4, 3])) // [4, 3]
+// -------------------------
+// TESTS
+
+console.log(minSubArrayLen(7, [2, 3, 1, 2, 4, 3])) // 2
+
+// Explanation: The subarray [4,3] has the minimal length under the problem constraint.
