@@ -16,6 +16,20 @@ function reverseString(s) {
   }
 }
 
+// -------------------------
+// SOLUTION 2
+
+function reverseString2(s) {
+  s.reverse()
+}
+
+// -------------------------
+// TESTS
+
 let s = ['h', 'e', 'l', 'l', 'o']
 reverseString(s)
-console.log(s)
+console.log(s) // ['o', 'l', 'l', 'e', 'h']
+
+s = ['h', 'e', 'l', 'l', 'o']
+reverseString2(s)
+console.log(s) // ['o', 'l', 'l', 'e', 'h']
