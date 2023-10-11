@@ -1,3 +1,20 @@
+/**
+ * * Given an array of integers numbers that is already sorted in ascending order, find two numbers such that they add up to a specific target number
+ *
+ * Return the indices of the two numbers (1-indexed) as an integer array answer of size 2, where 1 <= answer[0] < answer[1] <= numbers.length
+ *
+ * @param {number[]} numbers
+ * @param {number} target
+ * @returns {number[]}
+ */
+
+/*
+EXAMPLE:
+Input: numbers = [2,7,11,15], target = 9
+Output: [1,2]
+Explanation: The sum of 2 and 7 is 9. Therefore, index1 = 1, index2 = 2. We return [1, 2]
+*/
+
 // O(n) time - O(1) space
 function twoSum(numbers, target) {
   let hashTable = {}
