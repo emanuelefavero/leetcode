@@ -6,27 +6,27 @@
  * @returns {number}
  */
 
-// O(n^2) time - O(1) space
+// O(n) time - O(1) space
 function minSubArrayLen(target, nums) {
-  let minLength = Infinity
+  let left = 0
+  let right = 0
+  let sum = 0
+  let minLen = Infinity
 
-  nums.forEach((num, i) => {
-    let sum = 0
+  while (right < nums.length) {
+    sum += nums[right]
 
-    // Nested loop starting at the current index
-    for (let j = i; j < nums.length; j++) {
-      // Add the current number to the sum
-      sum += nums[j]
-
-      // If the sum is greater than or equal to the target, update minLength and break out of the loop
-      if (sum >= target) {
-        minLength = Math.min(minLength, j - i + 1) // j - i + 1 is the length of the subarray
-        break
-      }
+    // if the sum is greater than or equal to the target, move the left pointer to the right and update the minLen with the difference between the right and left pointers. Also subtract the value of the left pointer from the sum
+    while (sum >= target) {
+      minLen = Math.min(minLen, right - left + 1)
+      sum -= nums[left]
+      left++
     }
-  })
 
-  return minLength === Infinity ? 0 : minLength
+    right++
+  }
+
+  return minLen === Infinity ? 0 : minLen
 }
 
 // -------------------------
