@@ -45,6 +45,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Largest Number At Least Twice Of Others](./array/largest-number-twice-of-others.js)
 - [Plus One](./array/plus-one.js)
 - [Array Partition I](./array/array-partition-i.js)
+- [Two Sum II - Input Array Is Sorted](./array/two-sum-ii.js)
 
 ### Binary Search
 
