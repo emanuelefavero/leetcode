@@ -2,12 +2,14 @@ function reverseWords(s) {
   let result = []
   let word = ''
 
-  for (let char of s) {
-    if (char === ' ') {
+  for (let i = 0; i < s.length; i++) {
+    let char = s[i]
+
+    if (char !== ' ') {
+      word += char
+    } else if (word) {
       result.push(word)
       word = ''
-    } else {
-      word += char
     }
   }
 
@@ -18,3 +20,4 @@ function reverseWords(s) {
 
 console.log(reverseWords('the sky is blue')) // 'blue is the sky'
 console.log(reverseWords('  hello world  ')) // 'world hello'
+console.log(reverseWords('a good   example')) // 'example good a'
