@@ -1,8 +1,13 @@
-// Given an integer rowIndex, return the rowIndex th (0-indexed) row of the Pascal's triangle
+/**
+ * * Given an integer rowIndex, return the rowIndex th (0-indexed) row of the Pascal's triangle
+ *
+ * In Pascal's triangle, each number is the sum of the two numbers directly above it as shown:
+ * @see https://leetcode.com/explore/learn/card/array-and-string/204/conclusion/1171/
+ * @param {number} rowIndex
+ * @returns {number[]}
+ */
 
-// In Pascal's triangle, each number is the sum of the two numbers directly above it as shown:
-// https://leetcode.com/explore/learn/card/array-and-string/204/conclusion/1171/
-
+// O(n^2) time | O(n) space
 function getRow(rowIndex) {
   let result = []
 
@@ -24,8 +29,11 @@ function getRow(rowIndex) {
     result.push(row)
   }
 
-  return result[rowIndex]
+  return result[rowIndex] // return the sub array at the rowIndex
 }
+
+// -------------------------
+// TESTS
 
 console.log(getRow(3)) // [1, 3, 3, 1]
 console.log(getRow(1)) // [1, 1]
