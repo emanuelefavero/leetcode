@@ -1,5 +1,11 @@
-// Given a string s, reverse the order of characters in each word within a sentence while still preserving whitespace and initial word order.
+/**
+ * Given a string s, reverse the order of characters in each word within a sentence while still preserving whitespace and initial word order
+ *
+ * @param {string} s
+ * @returns {string}
+ */
 
+// O(n) time - O(n) space
 function reverseWords(s) {
   let result = []
   let word = ''
@@ -19,6 +25,9 @@ function reverseWords(s) {
 
   return result.reverse().join(' ').trim()
 }
+
+// -------------------------
+// TESTS
 
 console.log(reverseWords('the sky is blue')) // 'eht yks si eulb'
 console.log(reverseWords('  hello world  ')) // '  olleh dlrow  '
