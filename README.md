@@ -19,6 +19,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Diagonal Traverse](./2d-array/diagonal-traverse.js)
 - [Spiral Matrix](./2d-array/spiral-matrix.js)
 - [Pascal Triangle](./2d-array/pascal-triangle.js)
+- [Pascal Triangle II](./2d-array/pascal-triangle-ii.js)
 
 ### Array
 
@@ -48,7 +49,6 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Two Sum II - Input Array Is Sorted](./array/two-sum-ii.js)
 - [Minimum Size Subarray Sum](./array/minimum-size-subarray-sum.js)
 - [Rotate Array](./array/rotate-array.js)
-- [Pascal Triangle II](./array/pascal-triangle-ii.js)
 
 ### Binary Search
 
