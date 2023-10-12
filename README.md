@@ -47,6 +47,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Array Partition I](./array/array-partition-i.js)
 - [Two Sum II - Input Array Is Sorted](./array/two-sum-ii.js)
 - [Minimum Size Subarray Sum](./array/minimum-size-subarray-sum.js)
+- [Rotate Array](./array/rotate-array.js)
 
 ### Binary Search
 
