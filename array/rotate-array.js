@@ -25,11 +25,10 @@ function reverse(nums, start, end) {
 // TIP: Using JavaScript built-in functions
 
 function rotate2(nums, k) {
-  // Remove the last k elements and add them to the beginning of the array
-  return nums.unshift(...nums.splice(-k % nums.length))
-
-  // ? Splice removes elements from an array and returns the removed elements
-  // ? -k % nums.length ensures that k is never larger than the array length
+  // Remove the last k elements and add them to the beginning of the array:
+  k = k % nums.length // ensures that k is never larger than the array length
+  let removed = nums.splice(-k) // remove the last k elements and store them
+  nums.unshift(...removed) // add them to the beginning of the array
 }
 
 // -------------------------
