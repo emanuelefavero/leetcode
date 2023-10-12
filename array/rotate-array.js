@@ -1,13 +1,18 @@
-// Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.
+/**
+ * * Given an integer array nums, rotate the array to the right by k steps, where k is non-negative
+ *
+ * @param {number[]} nums
+ * @param {number} k
+ */
 
 // TIP: By reversing the array 3 times, we can achieve the desired result
 
+// O(n) time - O(1) space
 function rotate(nums, k) {
   k = k % nums.length // In case k is larger than the array length
   reverse(nums, 0, nums.length - 1) // Reverse the entire array
   reverse(nums, 0, k - 1) // Reverse the first k elements
   reverse(nums, k, nums.length - 1) // Reverse the rest of the elements
-  return nums
 }
 
 function reverse(nums, start, end) {
@@ -25,6 +30,7 @@ function reverse(nums, start, end) {
 
 // TIP: Using JavaScript built-in functions
 
+// O(n) time - O(1) space
 function rotate2(nums, k) {
   // Remove the last k elements and add them to the beginning of the array:
   k = k % nums.length // ensures that k is never larger than the array length
