@@ -19,6 +19,26 @@ function reverse(nums, start, end) {
   }
 }
 
+// -------------------------
+// SOLUTION 2
+
+// TIP: Using JavaScript built-in functions
+
+function rotate2(nums, k) {
+  // Remove the last k elements and add them to the beginning of the array
+  return nums.unshift(...nums.splice(-k % nums.length))
+
+  // ? Splice removes elements from an array and returns the removed elements
+  // ? -k % nums.length ensures that k is never larger than the array length
+}
+
+// -------------------------
+// TESTS
+
 let nums = [1, 2, 3, 4, 5, 6, 7]
 let k = 3
 console.log(rotate(nums, k)) // [5, 6, 7, 1, 2, 3, 4]
+
+nums = [1, 2, 3, 4, 5, 6, 7]
+k = 3
+console.log(rotate2(nums, k)) // [5, 6, 7, 1, 2, 3, 4]
