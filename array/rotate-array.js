@@ -1,5 +1,7 @@
 // Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.
 
+// TIP: By reversing the array 3 times, we can achieve the desired result
+
 function rotate(nums, k) {
   k = k % nums.length // In case k is larger than the array length
   reverse(nums, 0, nums.length - 1) // Reverse the entire array
@@ -10,10 +12,9 @@ function rotate(nums, k) {
 
 function reverse(nums, start, end) {
   while (start < end) {
-    // Swap elements at start and end indices
-    let temp = nums[start]
-    nums[start] = nums[end]
-    nums[end] = temp
+    // Swap start end elements
+    ;[nums[start], nums[end]] = [nums[end], nums[start]]
+
     start++
     end--
   }
