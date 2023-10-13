@@ -1,5 +1,5 @@
 /**
- * Given a string s, reverse the order of characters in each word within a sentence while still preserving whitespace and initial word order
+ * * Given a string s, reverse the order of characters in each word within a sentence while still preserving whitespace and initial word order
  *
  * @param {string} s
  * @returns {string}
@@ -31,6 +31,7 @@ function reverseWords(s) {
 
 // TIP: This solution uses JavaScript built in methods
 
+// O(n) time - O(n) space
 function reverseWords2(s) {
   return s
     .split(' ') // split string into array of words
@@ -41,12 +42,23 @@ function reverseWords2(s) {
 }
 
 // -------------------------
+// SOLUTION 3
+
+// O(n) time - O(n) space
+function reverseWords3(s) {
+  let words = s.split(' ') // split string into array of words
+
+  // loop through the array and reverse each word
+  for (let i = 0; i < words.length; i++) {
+    words[i] = words[i].split('').reverse().join('')
+  }
+
+  return words.join(' ')
+}
+
+// -------------------------
 // TESTS
 
 console.log(reverseWords('the sky is blue')) // 'eht yks si eulb'
-console.log(reverseWords('  hello world  ')) // '  olleh dlrow  '
-console.log(reverseWords('a good   example')) // 'a doog   elpmaxe'
-
-console.log(reverseWords2('the sky is blue')) // 'eht yks si eulb'
 console.log(reverseWords2('  hello world  ')) // '  olleh dlrow  '
-console.log(reverseWords2('a good   example')) // 'a doog   elpmaxe'
+console.log(reverseWords3('a good   example')) // 'a doog   elpmaxe'
