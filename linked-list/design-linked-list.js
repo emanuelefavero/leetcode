@@ -71,7 +71,20 @@ class MyLinkedList {
     this.length++
   }
 
-  deleteAtIndex(index) {}
+  deleteAtIndex(index) {
+    if (index > this.length || !this.head) return
+
+    let current = this.head
+    let prev = null
+    for (let i = 0; i < index; i++) {
+      prev = current
+      current = current.next
+    }
+
+    prev.next = current.next
+
+    this.length--
+  }
 }
 
 let obj = new MyLinkedList()
