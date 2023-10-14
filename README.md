@@ -70,6 +70,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Design Linked List](./linked-list/design-linked-list.js)
 - [Linked List Cycle](./linked-list/linked-list-cycle.js)
 - [Linked List Cycle II](./linked-list/linked-list-cycle-ii.js)
+- [Intersection Of Two Linked Lists](./linked-list/intersection-of-two-linked-lists.js)
 
 ### Math
 
