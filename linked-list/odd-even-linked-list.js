@@ -1,6 +1,3 @@
-// TODO: link to README
-// TODO: jsDoc
-
 /**
  * @typedef {Object} ListNode
  * @property {*} val
@@ -12,6 +9,16 @@ class ListNode {
     this.next = null
   }
 }
+
+/**
+ * * Odd Even Linked List
+ *
+ * Given the head of a singly linked list, group all the nodes with odd indices together followed by the nodes with even indices, and return the reordered list
+ * @see https://leetcode.com/problems/odd-even-linked-list/
+ *
+ * @param {ListNode} head
+ * @returns {ListNode | null}
+ */
 
 function oddEvenList(head) {
   if (!head) return null
