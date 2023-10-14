@@ -1,3 +1,6 @@
+// TODO: README link
+// TODO: jsDoc
+
 /**
  * @typedef {Object} ListNode
  * @property {*} val
@@ -31,7 +34,7 @@ function removeElements(head, val) {
 // -----------------------------
 // SOLUTION 2
 
-// TIP: This solution uses recursion
+// TIP: This solution uses recursion. It is extremely fast time wise but uses a ton of memory
 
 function removeElements2(head, val) {
   if (!head) return null
@@ -43,6 +46,28 @@ function removeElements2(head, val) {
 }
 
 // -----------------------------
+// SOLUTION 3
+
+function removeElements3(head, val) {
+  // remove all nodes with val at the beginning of the list
+  while (head && head.val === val) {
+    head = head.next
+  }
+
+  // remove all nodes with val in the middle of the list
+  let current = head
+  while (current && current.next) {
+    if (current.next.val === val) {
+      current.next = current.next.next
+    } else {
+      current = current.next
+    }
+  }
+
+  return head
+}
+
+// -----------------------------
 // TEST
 
 let head = new ListNode(1)
@@ -50,5 +75,6 @@ head.next = new ListNode(2)
 head.next.next = new ListNode(6)
 head.next.next.next = new ListNode(3)
 
-// console.log(removeElements(head, 6)) // 1 -> 2 -> 3
-console.log(removeElements2(head, 6)) // 1 -> 2 -> 3
+console.log(removeElements(head, 6)) // 1 -> 2 -> 3
+// console.log(removeElements2(head, 6)) // 1 -> 2 -> 3
+// console.log(removeElements3(head, 6)) // 1 -> 2 -> 3
