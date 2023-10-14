@@ -13,6 +13,7 @@ class MyLinkedList {
 
   get(index) {
     if (index >= this.length || !this.head) return -1
+    if (index === 0) return this.head.val
 
     let current = this.head
     for (let i = 0; i < index; i++) {
