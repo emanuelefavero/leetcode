@@ -29,6 +29,20 @@ function removeElements(head, val) {
 }
 
 // -----------------------------
+// SOLUTION 2
+
+// TIP: This solution uses recursion
+
+function removeElements2(head, val) {
+  if (!head) return null
+
+  head.next = removeElements2(head.next, val)
+
+  if (head.val === val) return head.next
+  else return head
+}
+
+// -----------------------------
 // TEST
 
 let head = new ListNode(1)
@@ -36,4 +50,5 @@ head.next = new ListNode(2)
 head.next.next = new ListNode(6)
 head.next.next.next = new ListNode(3)
 
-console.log(removeElements(head, 6)) // 1 -> 2 -> 3
+// console.log(removeElements(head, 6)) // 1 -> 2 -> 3
+console.log(removeElements2(head, 6)) // 1 -> 2 -> 3
