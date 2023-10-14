@@ -1,3 +1,5 @@
+// TODO: Add jsDoc
+
 /**
  * @typedef {Object} ListNode
  * @property {*} val
@@ -27,6 +29,24 @@ function reverseList(head) {
 }
 
 // -----------------------------
+// SOLUTION 2
+
+// TIP: This solution is slightly more space efficient because it doesn't create a new variable for the current node
+
+function reverseList2(head) {
+  let prev = null
+
+  while (head) {
+    let next = head.next
+    head.next = prev // reverse the link
+    prev = head
+    head = next
+  }
+
+  return prev
+}
+
+// -----------------------------
 // TEST
 
 let head = new ListNode(1)
@@ -35,3 +55,4 @@ head.next.next = new ListNode(3)
 head.next.next.next = new ListNode(4)
 
 console.log(reverseList(head)) // 4 -> 3 -> 2 -> 1
+// console.log(reverseList2(head)) // 4 -> 3 -> 2 -> 1
