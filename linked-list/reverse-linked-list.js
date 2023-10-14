@@ -1,5 +1,3 @@
-// TODO: Add jsDoc
-
 /**
  * @typedef {Object} ListNode
  * @property {*} val
@@ -12,8 +10,17 @@ class ListNode {
   }
 }
 
-// Given the head of a singly linked list, reverse the list, and return the reversed list.
-// Use the method where you go through the list and insert each node at the beginning of the list
+/**
+ * * Reverse Linked List
+ *
+ * Given the head of a singly linked list, reverse the list, and return the reversed list
+ *
+ * @param {ListNode} head
+ * @returns {ListNode}
+ */
+
+// TIP: This method goes through the list and inserts each node at the beginning of the list
+
 function reverseList(head) {
   let prev = null
   let current = head
