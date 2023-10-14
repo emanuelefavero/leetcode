@@ -38,6 +38,27 @@ function getIntersectionNode(headA, headB) {
 }
 
 // -----------------------------
+// SOLUTION 2
+
+function getIntersectionNode2(headA, headB) {
+  let a = headA
+  let b = headB
+
+  // Traverse the list. If one of the pointers reaches the end of the list, set it to the head of the other list
+  while (a !== b) {
+    if (a) a = a.next
+    else a = headB
+
+    if (b) b = b.next
+    else b = headA
+
+    // TIP: By setting a and b to the head of the other list, we are essentially making the lists the same length so they will reach the intersection at the same time (on the second iteration, try it on a whiteboard!)
+  }
+
+  return a // return either a or b (they are the same node)
+}
+
+// -----------------------------
 // TESTS
 
 let headA = new ListNode(4)
