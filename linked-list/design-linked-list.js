@@ -11,7 +11,16 @@ class MyLinkedList {
     this.length = 0
   }
 
-  get(index) {}
+  get(index) {
+    if (index >= this.length || !this.head) return -1
+
+    let current = this.head
+    for (let i = 0; i < index; i++) {
+      current = current.next
+    }
+
+    return current.val
+  }
 
   addAtHead(val) {
     let newNode = new Node(val)
@@ -55,3 +64,5 @@ obj.addAtTail(3)
 obj.addAtHead(1)
 
 console.log(obj)
+console.log(obj.get(0)) // 1
+console.log(obj.get(1)) // 2
