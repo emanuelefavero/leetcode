@@ -1,4 +1,3 @@
-// TODO: README link
 // TODO: jsDoc
 
 /**
