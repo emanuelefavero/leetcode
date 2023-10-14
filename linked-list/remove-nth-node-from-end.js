@@ -1,5 +1,3 @@
-// TODO: Add solution 2?
-
 /**
  * @typedef {Object} ListNode
  * @property {*} val

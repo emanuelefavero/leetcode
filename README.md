@@ -72,6 +72,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Linked List Cycle II](./linked-list/linked-list-cycle-ii.js)
 - [Intersection Of Two Linked Lists](./linked-list/intersection-of-two-linked-lists.js)
 - [Remove Nth Node From End Of List](./linked-list/remove-nth-node-from-end.js)
+- [Reverse Linked List](./linked-list/reverse-linked-list.js)
 
 ### Math
 
