@@ -1,4 +1,3 @@
-// TODO: Add link to README
 // TODO: Add jsDoc
 
 class ListNode {
