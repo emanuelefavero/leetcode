@@ -1,16 +1,20 @@
-// TODO: Add jsDoc
+/**
+ * @typedef {Object} ListNode
+ * @property {*} val
+ */
 
 class ListNode {
-  /**
-   *
-   * @param {*} val
-   */
-
   constructor(val) {
     this.val = val
     this.next = null
   }
 }
+
+/**
+ *
+ * @param {ListNode} head
+ * @returns {ListNode | null}
+ */
 
 function detectCycle(head) {
   let slow = head
