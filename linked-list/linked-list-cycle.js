@@ -1,9 +1,20 @@
 class ListNode {
+  /**
+   *
+   * @param {*} val
+   */
+
   constructor(val) {
     this.val = val
     this.next = null
   }
 }
+
+/**
+ *
+ * @param {*} head
+ * @returns {boolean}
+ */
 
 function hasCycle(head) {
   if (!head || !head.next) return false
@@ -20,6 +31,9 @@ function hasCycle(head) {
 
   return false
 }
+
+// -----------------------------
+// TESTS
 
 let head = new ListNode(1)
 head.next = new ListNode(2)
