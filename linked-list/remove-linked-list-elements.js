@@ -1,5 +1,3 @@
-// TODO: jsDoc
-
 /**
  * @typedef {Object} ListNode
  * @property {*} val
@@ -12,7 +10,14 @@ class ListNode {
   }
 }
 
-// Given the head of a linked list and an integer val, remove all the nodes of the linked list that has Node.val == val, and return the new head
+/**
+ * * Remove Linked List Elements
+ *
+ * Given the head of a linked list and an integer val, remove all the nodes of the linked list that has Node.val == val, and return the new head
+ * @param {ListNode} head
+ * @param {*} val
+ * @returns {ListNode}
+ */
 
 function removeElements(head, val) {
   let dummy = new ListNode(0)
