@@ -1,3 +1,5 @@
+// * Singly Linked List
+
 class Node {
   constructor(val) {
     this.val = val
@@ -11,6 +13,12 @@ class MyLinkedList {
     this.length = 0
   }
 
+  /**
+   *
+   * @param {number} index
+   * @returns {number}
+   */
+
   get(index) {
     if (index >= this.length || !this.head) return -1
     if (index === 0) return this.head.val
@@ -22,6 +30,12 @@ class MyLinkedList {
 
     return current.val
   }
+
+  /**
+   *
+   * @param {number} val
+   * @returns {void}
+   */
 
   addAtHead(val) {
     let newNode = new Node(val)
@@ -36,6 +50,12 @@ class MyLinkedList {
     this.length++
   }
 
+  /**
+   *
+   * @param {number} val
+   * @returns {void}
+   */
+
   addAtTail(val) {
     let newNode = new Node(val)
 
@@ -49,10 +69,20 @@ class MyLinkedList {
       }
 
       current.next = newNode
+
+      // TIP: Add the following line to create a cycle
+      // newNode.next = this.head
     }
 
     this.length++
   }
+
+  /**
+   *
+   * @param {number} index
+   * @param {number} val
+   * @returns {void}
+   */
 
   addAtIndex(index, val) {
     if (index > this.length) return
@@ -80,6 +110,12 @@ class MyLinkedList {
     this.length++
   }
 
+  /**
+   *
+   * @param {number} index
+   * @returns {void}
+   */
+
   deleteAtIndex(index) {
     if (index >= this.length || !this.head) return
 
@@ -101,6 +137,9 @@ class MyLinkedList {
   }
 }
 
+// -------------------------
+// TESTS
+
 let obj = new MyLinkedList()
 obj.addAtTail(2)
 obj.addAtTail(3)
@@ -108,7 +147,7 @@ obj.addAtHead(1)
 
 obj.addAtIndex(2, 10)
 
-console.log(obj.head)
-console.log(obj.length)
-console.log(obj.get(0))
-console.log(obj.get(1))
+console.log(obj.head) // 1 -> 2 -> 10 -> 3
+console.log(obj.length) // 4
+console.log(obj.get(0)) // 1
+console.log(obj.get(1)) // 2
