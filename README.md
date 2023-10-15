@@ -75,6 +75,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Reverse Linked List](./linked-list/reverse-linked-list.js)
 - [Remove Linked List Elements](./linked-list/remove-linked-list-elements.js)
 - [Odd Even Linked List](./linked-list/odd-even-linked-list.js)
+- [Palindrome Linked List](./linked-list/palindrome-linked-list.js)
 
 ### Math
 
