@@ -52,6 +52,38 @@ function isPalindrome(head) {
 }
 
 // -----------------------------
+// SOLUTION 2
+
+// TIP: This solution uses a stack to store the first half of the list and then compares the second half of the list to the stack
+
+function isPalindrome2(head) {
+  let stack = []
+  let slow = head
+  let fast = head
+
+  // push first half of list into stack
+  while (fast && fast.next) {
+    stack.push(slow.val)
+    slow = slow.next
+    fast = fast.next.next
+  }
+
+  // if list has odd number of nodes, skip the middle node
+  if (fast) slow = slow.next
+
+  // compare second half of list to stack
+  while (slow) {
+    let top = stack.pop()
+
+    if (top !== slow.val) return false
+
+    slow = slow.next
+  }
+
+  return true
+}
+
+// -----------------------------
 // TEST
 
 let head = new ListNode(1)
