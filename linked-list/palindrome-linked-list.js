@@ -11,23 +11,34 @@ class ListNode {
 }
 
 function isPalindrome(head) {
-  let reversed = reverseList(head)
+  let slow = head
+  let fast = head
 
-  return reversed
-}
-
-function reverseList(head) {
-  let prev = null
-  let current = head
-
-  while (current) {
-    let next = current.next
-    current.next = prev
-    prev = current
-    current = next
+  // find middle node
+  while (fast && fast.next) {
+    slow = slow.next
+    fast = fast.next.next
   }
 
-  return prev // prev is the new head
+  // reverse second half of list
+  let prev = null
+  while (slow) {
+    let next = slow.next
+    slow.next = prev
+    prev = slow
+    slow = next
+  }
+
+  // compare the first half and the reversed second half
+  // TIP: prev is now the head of the reversed second half
+  while (prev) {
+    if (head.val !== prev.val) return false
+
+    head = head.next
+    prev = prev.next
+  }
+
+  return true
 }
 
 // -----------------------------
