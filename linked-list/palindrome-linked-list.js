@@ -10,6 +10,16 @@ class ListNode {
   }
 }
 
+/**
+ * * Palindrome Linked List
+ *
+ * Given the head of a singly linked list, return true if it is a palindrome
+ *
+ * @param {ListNode} head
+ * @returns {boolean}
+ */
+
+// O(n) time | O(1) space
 function isPalindrome(head) {
   let slow = head
   let fast = head
