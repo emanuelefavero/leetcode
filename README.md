@@ -81,6 +81,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Add Two Numbers](./linked-list/add-two-numbers.js)
 - [Print Multilevel Linked List](./linked-list/print-multilevel-linked-list.js)
 - [Flatten Multilevel Linked List](./linked-list/flatten-multilevel-linked-list.js)
+- [Copy List With Random Pointer](./linked-list/copy-list-with-random-pointer.js)
 
 ### Math
 
