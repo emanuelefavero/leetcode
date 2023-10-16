@@ -41,6 +41,12 @@ class MyLinkedList {
     return current.val
   }
 
+  /**
+   *
+   * @param {*} val
+   * @returns {void}
+   */
+
   addAtHead(val) {
     let newNode = new Node(val)
 
@@ -54,6 +60,12 @@ class MyLinkedList {
 
     this.length++
   }
+
+  /**
+   *
+   * @param {*} val
+   * @returns {void}
+   */
 
   addAtTail(val) {
     let newNode = new Node(val)
@@ -72,6 +84,13 @@ class MyLinkedList {
 
     this.length++
   }
+
+  /**
+   *
+   * @param {number} index
+   * @param {*} val
+   * @returns {void}
+   */
 
   addAtIndex(index, val) {
     if (index > this.length) return
@@ -92,10 +111,17 @@ class MyLinkedList {
     this.length++
   }
 
+  /**
+   *
+   * @param {number} index
+   * @returns {void}
+   */
+
   deleteAtIndex(index) {
     if (index >= this.length || !this.head) return
 
     if (index === 0) {
+      // delete first node
       this.head = this.head.next
       this.length--
       return
