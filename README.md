@@ -78,6 +78,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Odd Even Linked List](./linked-list/odd-even-linked-list.js)
 - [Palindrome Linked List](./linked-list/palindrome-linked-list.js)
 - [Merge Two Sorted Lists](./linked-list/merge-two-sorted-lists.js)
+- [Add Two Numbers](./linked-list/add-two-numbers.js)
 
 ### Math
 
