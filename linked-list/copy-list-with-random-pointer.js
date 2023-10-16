@@ -6,12 +6,20 @@ class Node {
   }
 }
 
+// TODO: Add jsDoc
+// TODO: Create rotate-list.js file and add link to README
+
+// Copy List with Random Pointer
+// Given a linked list where each node has a next pointer and a random pointer, make a deep copy of the list
+// @see https://leetcode.com/problems/copy-list-with-random-pointer/description/
+
 function copyRandomList(head) {
   let map = new Map()
 
   let current = head
   while (current) {
-    map.set(current, new Node(current.val))
+    map.set(current, new Node(current.val)) // map.set(key, value)
+
     current = current.next
   }
 
