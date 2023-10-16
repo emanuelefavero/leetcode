@@ -1,5 +1,15 @@
 // * Doubly Linked List
+
+/**
+ * @typedef {Object} Node
+ */
+
 class Node {
+  /**
+   *
+   * @param {*} val
+   */
+
   constructor(val) {
     this.val = val
     this.next = null
@@ -12,6 +22,12 @@ class MyLinkedList {
     this.head = null
     this.length = 0
   }
+
+  /**
+   *
+   * @param {number} index
+   * @returns {*}
+   */
 
   get(index) {
     if (index < 0 || index >= this.length || !this.head) return -1
