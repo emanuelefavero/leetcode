@@ -91,6 +91,26 @@ class MyLinkedList {
 
     this.length++
   }
+
+  deleteAtIndex(index) {
+    if (index >= this.length || !this.head) return
+
+    if (index === 0) {
+      this.head = this.head.next
+      this.length--
+      return
+    }
+
+    let current = this.head
+    for (let i = 0; i < index; i++) {
+      current = current.next
+    }
+
+    current.prev.next = current.next
+    if (current.next) current.next.prev = current.prev
+
+    this.length--
+  }
 }
 
 // -----------------------------
@@ -102,6 +122,7 @@ obj.addAtTail(3)
 obj.addAtHead(1)
 
 obj.addAtIndex(2, 10)
+obj.deleteAtIndex(2)
 
-console.log(obj.head) // 1 -> 2 -> 10 -> 3
-console.log(obj.length) // 4
+console.log(obj.head) // 1 -> 2 -> -> 3
+console.log(obj.length) // 3
