@@ -10,6 +10,17 @@ class ListNode {
   }
 }
 
+/**
+ * * Merge Two Sorted Lists
+ *
+ * Given two sorted linked lists, merge them in order. Return the merged list
+ *
+ * @param {ListNode} list1
+ * @param {ListNode} list2
+ * @returns {ListNode}
+ */
+
+// O(n + m) time | O(1) space
 function mergeTwoLists(list1, list2) {
   let head = new ListNode()
   let current = head
@@ -37,6 +48,7 @@ function mergeTwoLists(list1, list2) {
 
 // TIP: This solution uses recursion
 
+// O(n + m) time | O(n + m) space
 function mergeTwoLists2(list1, list2) {
   if (!list1) return list2
   if (!list2) return list1
