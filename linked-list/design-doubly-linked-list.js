@@ -30,16 +30,29 @@ class MyLinkedList {
    */
 
   get(index) {
-    if (index < 0 || index >= this.length || !this.head) return -1
+    if (index >= this.length || !this.head) return -1
     if (index === 0) return this.head.val
 
     let current = this.head
-
     for (let i = 0; i < index; i++) {
       current = current.next
     }
 
     return current.val
+  }
+
+  addAtHead(val) {
+    let newNode = new Node(val)
+
+    if (!this.head) {
+      this.head = newNode
+    } else {
+      newNode.next = this.head
+      this.head.prev = newNode
+      this.head = newNode
+    }
+
+    this.length++
   }
 }
 
@@ -47,6 +60,7 @@ class MyLinkedList {
 // TESTS
 
 let obj = new MyLinkedList()
-obj.head = new Node(1)
+obj.addAtHead(2)
+obj.addAtHead(1)
 
-console.log(obj.get()) // 1
+console.log(obj.head)
