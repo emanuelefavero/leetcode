@@ -10,6 +10,27 @@ class ListNode {
   }
 }
 
+/**
+ * * Add Two Numbers
+ *
+ * You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return the sum as a linked list
+ *
+ * @param {ListNode} l1
+ * @param {ListNode} l2
+ * @returns {ListNode}
+ */
+
+/*
+EXAMPLE:
+
+2 -> 4 -> 3
+5 -> 6 -> 4
+-----------
+7 -> 0 -> 8
+
+Explanation: 342 + 465 = 807
+*/
+
 function addTwoNumbers(l1, l2) {
   let num1 = []
   let num2 = []
@@ -29,8 +50,8 @@ function addTwoNumbers(l1, l2) {
 
   let sum = (reversedNum1 + reversedNum2).toString()
 
+  // Create linked list from sum (add new nodes to head so that sum is reversed)
   let result = null
-
   for (let i = 0; i < sum.length; i++) {
     let newNode = new ListNode(sum[i])
     newNode.next = result
@@ -68,6 +89,9 @@ function addTwoNumbers2(l1, l2, carry) {
   return newNode // return linked list with total
 }
 
+// -----------------------------
+// TESTS
+
 let l1 = new ListNode(2)
 l1.next = new ListNode(4)
 l1.next.next = new ListNode(3)
@@ -76,4 +100,4 @@ let l2 = new ListNode(5)
 l2.next = new ListNode(6)
 l2.next.next = new ListNode(4)
 
-console.log(addTwoNumbers2(l1, l2)) // 708
+console.log(addTwoNumbers(l1, l2)) // 708 (as linked list)
