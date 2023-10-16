@@ -80,6 +80,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Merge Two Sorted Lists](./linked-list/merge-two-sorted-lists.js)
 - [Add Two Numbers](./linked-list/add-two-numbers.js)
 - [Print Multilevel Linked List](./linked-list/print-multilevel-linked-list.js)
+- [Flatten Multilevel Linked List](./linked-list/flatten-multilevel-linked-list.js)
 
 ### Math
 
