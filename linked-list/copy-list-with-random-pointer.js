@@ -1,3 +1,8 @@
+/**
+ * @typedef {Object} ListNode
+ * @param {number} val
+ */
+
 class Node {
   constructor(val) {
     this.val = val
