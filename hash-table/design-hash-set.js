@@ -7,13 +7,21 @@
 */
 
 class MyHashSet {
-  constructor() {}
+  constructor() {
+    this.set = {}
+  }
 
-  add(key) {}
+  add(key) {
+    this.set[key] = true
+  }
 
-  remove(key) {}
+  remove(key) {
+    delete this.set[key]
+  }
 
-  contains(key) {}
+  contains(key) {
+    return this.set[key] === true
+  }
 }
 
 // -----------------------------
