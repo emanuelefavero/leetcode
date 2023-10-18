@@ -11,6 +11,7 @@ class MyHashSet {
 
   /**
    * Inserts the value key into the HashSet
+   *
    * @param {*} key
    * @returns {void}
    */
@@ -21,6 +22,7 @@ class MyHashSet {
 
   /**
    * Removes the value key in the HashSet. If key does not exist in the HashSet, do nothing
+   *
    * @param {*} key
    * @returns {void}
    */
@@ -31,6 +33,7 @@ class MyHashSet {
 
   /**
    * Returns whether the value key exists in the HashSet or not
+   *
    * @param {*} key
    * @returns {boolean}
    */
