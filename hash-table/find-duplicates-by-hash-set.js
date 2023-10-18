@@ -1,5 +1,11 @@
-// Given an array of integers, find if the array contains any duplicates
+/**
+ * * Given an array of integers, find if the array contains any duplicates
+ *
+ * @param {int} keys
+ * @returns {boolean}
+ */
 
+// O(n) time | O(n) space
 function findDuplicates(keys) {
   let set = new Set()
 
