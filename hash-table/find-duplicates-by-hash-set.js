@@ -1,7 +1,7 @@
 /**
  * * Given an array of integers, find if the array contains any duplicates
  *
- * @param {int} keys
+ * @param {number[]} keys
  * @returns {boolean}
  */
 
