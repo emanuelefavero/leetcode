@@ -17,6 +17,18 @@ function containsDuplicate(nums) {
 }
 
 // -----------------------------
+// SOLUTION 2
+
+// TIP: This solution uses the size of the set to determine if there are duplicates (if there are duplicates, the size of the set will be less than the length of the array)
+
+// O(n) time | O(n) space
+function containsDuplicate2(nums) {
+  let set = new Set(nums)
+
+  return set.size !== nums.length
+}
+
+// -----------------------------
 // TESTS
 
 console.log(containsDuplicate([1, 2, 3, 1])) // true
