@@ -11,15 +11,29 @@ function intersection(nums1, nums2) {
   let result = new Set()
 
   for (let num of nums2) {
-    if (set.has(num)) {
-      result.add(num)
-    }
+    if (set.has(num)) result.add(num)
   }
 
-  return [...result]
+  return [...result] // convert set to array
+}
+
+// -----------------------------
+// SOLUTION 2
+
+function intersection2(nums1, nums2) {
+  let set1 = new Set(nums1)
+  let set2 = new Set(nums2)
+  let result = []
+
+  for (let num of set1) {
+    if (set2.has(num)) result.push(num) // if num is in both sets, push it
+  }
+
+  return result
 }
 
 // -----------------------------
 // TESTS
 
-console.log(intersection([4, 9, 5], [9, 4, 9, 8, 4]))
+console.log(intersection([4, 9, 5], [9, 4, 9, 8, 4])) // [9, 4]
+console.log(intersection2([4, 9, 5], [9, 4, 9, 8, 4])) // [9, 4]
