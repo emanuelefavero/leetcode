@@ -64,6 +64,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Two Sum](./hash-table/two-sum.js)
 - [Ransom Note](./hash-table/ransom-note.js)
 - [Design Hash Set](./hash-table/design-hash-set.js)
+- [Design Hash Map](./hash-table/design-hash-map.js)
 
 ### Linked List
 
