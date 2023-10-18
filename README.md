@@ -68,6 +68,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Find Duplicates By Hash Set](./hash-table/find-duplicates-by-hash-set.js)
 - [Contains Duplicate](./hash-table/contains-duplicate.js)
 - [Single Number](./hash-table/single-number.js)
+- [Intersection Of Two Arrays](./hash-table/intersection-of-two-arrays.js)
 
 ### Linked List
 
