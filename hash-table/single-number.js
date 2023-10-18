@@ -1,5 +1,11 @@
-// Given a non-empty array of integers nums, every element appears twice except for one. Find that single one
+/**
+ * * Given a non-empty array of integers nums, every element appears twice except for one. Find that single one
+ *
+ * @param {number[]} nums
+ * @returns {number}
+ */
 
+// O(n) time | O(n) space
 function singleNumber(nums) {
   let hashTable = {}
 
