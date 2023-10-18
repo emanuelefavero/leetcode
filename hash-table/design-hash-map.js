@@ -10,21 +10,13 @@ void remove(key) removes the key and its corresponding value if the map contains
 */
 
 class MyHashMap {
-  constructor() {
-    this.map = {}
-  }
+  map = {}
 
-  put(key, value) {
-    this.map[key] = value
-  }
+  put = (key, value) => (this.map[key] = value)
 
-  get(key) {
-    return this.map[key] ?? -1
-  }
+  get = (key) => this.map[key] ?? -1
 
-  remove(key) {
-    delete this.map[key]
-  }
+  remove = (key) => delete this.map[key]
 }
 
 // -----------------------------
