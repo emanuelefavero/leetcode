@@ -65,6 +65,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Ransom Note](./hash-table/ransom-note.js)
 - [Design Hash Set](./hash-table/design-hash-set.js)
 - [Design Hash Map](./hash-table/design-hash-map.js)
+- [Find Duplicates By Hash Set](./hash-table/find-duplicates-by-hash-set.js)
 
 ### Linked List
 
