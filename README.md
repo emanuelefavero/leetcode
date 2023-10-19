@@ -69,6 +69,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Contains Duplicate](./hash-table/contains-duplicate.js)
 - [Single Number](./hash-table/single-number.js)
 - [Intersection Of Two Arrays](./hash-table/intersection-of-two-arrays.js)
+- [Happy Number](./hash-table/happy-number.js)
 
 ### Linked List
 
