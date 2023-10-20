@@ -19,9 +19,28 @@ function twoSum(nums, target) {
     // if the map does not have the complement, add the current number and its index to the map
     map.set(nums[i], i)
   }
-
-  return []
 }
+
+// --------------------------
+// SOLUTION 2 - same but using object instead of map
+
+function twoSum2(nums, target) {
+  let map = {}
+
+  for (let i = 0; i < nums.length; i++) {
+    let complement = target - nums[i]
+
+    // NOTE: We need to check if the value is undefined when using object
+    if (map[complement] !== undefined) return [map[complement], i]
+
+    map[nums[i]] = i
+  }
+}
+
+// --------------------------
+// TESTS
 
 console.log(twoSum([2, 3, 4, 5], 6))
 // OUTPUT: [0, 2] - returns the key of 2, 4
+
+console.log(twoSum2([2, 3, 4, 5], 6)) // [0, 2]
