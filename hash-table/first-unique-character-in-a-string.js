@@ -18,5 +18,5 @@ function firstUniqChar(s) {
 // -------------------------------
 // TESTS
 
-console.log(firstUniqChar('aabbc'))
-console.log(firstUniqChar('aabb'))
+console.log(firstUniqChar('aabbc')) // 4
+console.log(firstUniqChar('aabb')) // -1

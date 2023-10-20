@@ -72,6 +72,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Happy Number](./hash-table/happy-number.js)
 - [Isomorphic Strings](./hash-table/isomorphic-strings.js)
 - [Minimum Index Sum Of Two Lists](./hash-table/minimum-index-sum-of-two-lists.js)
+- [First Unique Character In A String](./hash-table/first-unique-character-in-a-string.js)
 
 ### Linked List
 
