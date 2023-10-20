@@ -73,6 +73,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Isomorphic Strings](./hash-table/isomorphic-strings.js)
 - [Minimum Index Sum Of Two Lists](./hash-table/minimum-index-sum-of-two-lists.js)
 - [First Unique Character In A String](./hash-table/first-unique-character-in-a-string.js)
+- [Intersection Of Two Arrays II](./hash-table/intersection-of-two-arrays-ii.js)
 
 ### Linked List
 
