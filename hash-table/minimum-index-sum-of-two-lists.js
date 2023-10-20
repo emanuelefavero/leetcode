@@ -36,8 +36,55 @@ function findRestaurant(list1, list2) {
 }
 
 // -------------------------------
+// SOLUTION 2
+
+// O(n) time | O(n) space - faster and still readable although a bit more complex
+function findRestaurant2(list1, list2) {
+  let map = new Map()
+  let array = []
+  let min = Infinity
+
+  // fill the map with the elements of list1
+  for (let i = 0; i < list1.length; i++) {
+    map.set(list1[i], i)
+  }
+
+  // check if the elements of list2 are in the map
+  for (let i = 0; i < list2.length; i++) {
+    // if the element is in the map, add the index sum to the map
+    if (map.has(list2[i])) {
+      map.set(list2[i], map.get(list2[i]) + i)
+
+      // if the index sum is smaller than min, update min
+      if (map.get(list2[i]) < min) min = map.get(list2[i])
+    }
+  }
+
+  // get the elements with the smallest index sum
+  for (let [key, value] of map) {
+    if (value === min) array.push(key)
+  }
+
+  return array
+}
+
+// -------------------------------
 // TESTS
 
+// Solution 1
+console.log(
+  findRestaurant(
+    ['Shogun', 'Tapioca Express', 'Burger King', 'KFC'],
+    [
+      'Piatti',
+      'The Grill at Torrey Pines',
+      'Hungry Hunter Steakhouse',
+      'Shogun',
+    ]
+  )
+) // ['Shogun']
+
+// Solution 2
 console.log(
   findRestaurant(
     ['Shogun', 'Tapioca Express', 'Burger King', 'KFC'],
