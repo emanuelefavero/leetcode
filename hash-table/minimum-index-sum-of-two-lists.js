@@ -1,4 +1,10 @@
-// Given two arrays of strings list1 and list2, find the common strings with the least index sum.
+/**
+ * * Given two arrays of strings list1 and list2, find the common strings with the least index sum
+ *
+ * @param {string[]} list1
+ * @param {string[]} list2
+ * @returns {string[]}
+ */
 
 /*
 A common string is a string that appeared in both list1 and list2.
@@ -8,6 +14,7 @@ A common string with the least index sum is a common string such that if it appe
 Return all the common strings with the least index sum. Return the answer in any order.
 */
 
+// O(n^2) time | O(n) space - slower but easier to understand
 function findRestaurant(list1, list2) {
   let min = Infinity
   let array = []
@@ -27,6 +34,9 @@ function findRestaurant(list1, list2) {
 
   return array
 }
+
+// -------------------------------
+// TESTS
 
 console.log(
   findRestaurant(
