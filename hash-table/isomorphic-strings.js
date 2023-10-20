@@ -19,10 +19,24 @@ r ?
 FALSE
 */
 
-function isIsomorphic(s, t) {}
+function isIsomorphic(s, t) {
+  let hashTable = new Map()
+  let hashTable2 = new Map()
+
+  for (let i = 0; i < s.length; i++) {
+    if (!hashTable.has(s[i])) hashTable.set(s[i], t[i])
+    if (!hashTable2.has(t[i])) hashTable2.set(t[i], s[i])
+
+    if (hashTable.get(s[i]) !== t[i] || hashTable2.get(t[i]) !== s[i])
+      return false
+  }
+
+  return true
+}
 
 // -------------------------------
 // TESTS
 
 console.log(isIsomorphic('egg', 'add')) // true
 console.log(isIsomorphic('foo', 'bar')) // false
+console.log(isIsomorphic('badc', 'baba')) // false
