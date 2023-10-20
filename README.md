@@ -70,6 +70,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Single Number](./hash-table/single-number.js)
 - [Intersection Of Two Arrays](./hash-table/intersection-of-two-arrays.js)
 - [Happy Number](./hash-table/happy-number.js)
+- [Isomorphic Strings](./hash-table/isomorphic-strings.js)
 
 ### Linked List
 
