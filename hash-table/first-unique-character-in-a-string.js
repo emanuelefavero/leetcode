@@ -1,5 +1,11 @@
-// Given a string s, find the first non-repeating character in it and return its index. If it does not exist, return -1
+/**
+ * * Given a string s, find the first non-repeating character in it and return its index. If it does not exist, return -1
+ *
+ * @param {string} s
+ * @returns {number}
+ */
 
+// O(n) time | O(n) space
 function firstUniqChar(s) {
   let map = new Map()
 
