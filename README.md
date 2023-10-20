@@ -71,6 +71,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Intersection Of Two Arrays](./hash-table/intersection-of-two-arrays.js)
 - [Happy Number](./hash-table/happy-number.js)
 - [Isomorphic Strings](./hash-table/isomorphic-strings.js)
+- [Minimum Index Sum Of Two Lists](./hash-table/minimum-index-sum-of-two-lists.js)
 
 ### Linked List
 
