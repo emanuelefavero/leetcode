@@ -44,8 +44,27 @@ function isIsomorphic(s, t) {
 }
 
 // -------------------------------
+// SOLUTION 2
+
+function isIsomorphic2(s, t) {
+  for (let i = 0; i < s.length; i++) {
+    // check if the index of the current character is the same in both strings
+    // TIP: If the index is different, it means the character is mapped to a different character and it's not isomorphic
+    if (s.indexOf(s[i]) !== t.indexOf(t[i])) return false
+  }
+
+  return true
+}
+
+// -------------------------------
 // TESTS
 
+// Solution 1
 console.log(isIsomorphic('egg', 'add')) // true
 console.log(isIsomorphic('foo', 'bar')) // false
 console.log(isIsomorphic('badc', 'baba')) // false
+
+// Solution 2
+console.log(isIsomorphic2('egg', 'add')) // true
+console.log(isIsomorphic2('foo', 'bar')) // false
+console.log(isIsomorphic2('badc', 'baba')) // false
