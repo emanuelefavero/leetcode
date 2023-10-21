@@ -17,7 +17,6 @@ function containsNearbyDuplicate(nums, k) {
 
 // TIP: This solution is more memory efficient but slower
 
-// TODO: link to README
 // TODO: jsDoc
 
 function containsNearbyDuplicate2(nums, k) {
