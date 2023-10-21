@@ -1,9 +1,5 @@
 // Given an integer array nums and an integer k, return true if there are two distinct indices i and j in the array such that nums[i] == nums[j] and abs(i - j) <= k
 
-// TODO: Commit solution 1
-// TODO: jsDoc
-// TODO: link to README
-
 function containsNearbyDuplicate(nums, k) {
   let map = new Map()
 
@@ -17,11 +13,38 @@ function containsNearbyDuplicate(nums, k) {
 }
 
 // -----------------------------
+// SOLUTION 2
+
+// TIP: This solution is more memory efficient but slower
+
+// TODO: link to README
+// TODO: jsDoc
+
+function containsNearbyDuplicate2(nums, k) {
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = i + 1; j <= nums.length && j - i <= k; j++) {
+      if (nums[i] === nums[j]) return true
+    }
+  }
+
+  return false
+}
+
+// -----------------------------
 // TESTS
 
+// Solution 1
 console.log(containsNearbyDuplicate([1, 2, 3, 1], 3)) // true
 console.log(containsNearbyDuplicate([1, 0, 1, 1], 1)) // true
 console.log(containsNearbyDuplicate([1, 2, 3, 1, 2, 3], 2)) // false
 console.log(
   containsNearbyDuplicate([0, 1, 2, 3, 4, 0, 0, 7, 8, 9, 10, 11, 12, 0], 1)
+) // true
+
+// Solution 2
+console.log(containsNearbyDuplicate2([1, 2, 3, 1], 3)) // true
+console.log(containsNearbyDuplicate2([1, 0, 1, 1], 1)) // true
+console.log(containsNearbyDuplicate2([1, 2, 3, 1, 2, 3], 2)) // false
+console.log(
+  containsNearbyDuplicate2([0, 1, 2, 3, 4, 0, 0, 7, 8, 9, 10, 11, 12, 0], 1)
 ) // true
