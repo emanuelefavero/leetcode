@@ -13,13 +13,17 @@ function groupAnagrams(strs) {
   for (string of strs) {
     let sortedString = string.split('').sort().join('')
 
+    // if the map already has the sorted string, push the string into the array
     if (map.has(sortedString)) {
       map.get(sortedString).push(string)
+
+      // otherwise, add the sorted string as a key and the string as the value in an array
     } else {
       map.set(sortedString, [string])
     }
   }
 
+  // return an array of the map's values
   return [...map.values()]
 }
 
