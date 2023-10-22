@@ -4,13 +4,30 @@
 
 // Two trees are duplicate if they have the same structure with the same node values.
 
+/**
+ * @typedef {Object} TreeNode
+ */
+
 class TreeNode {
+  /**
+   *
+   * @param {number} val
+   * @param {TreeNode | null} left
+   * @param {TreeNode | null} right
+   */
+
   constructor(val, left, right) {
     this.val = val || 0
     this.left = left || null
     this.right = right || null
   }
 }
+
+/**
+ *
+ * @param {TreeNode} root
+ * @returns {TreeNode[]}
+ */
 
 function findDuplicateSubtrees(root) {
   let map = new Map()
@@ -24,16 +41,19 @@ function findDuplicateSubtrees(root) {
 function dfs(root, map, result) {
   if (!root) return '#'
 
+  // TIP: This is the formula to get the subtree
   let subtree = `${root.val}.${dfs(root.left, map, result)}.${dfs(
     root.right,
     map,
     result
   )}`
 
+  // keep track of the number of times the subtree appears
   if (map.has(subtree)) {
     map.set(subtree, map.get(subtree) + 1)
   } else map.set(subtree, 1)
 
+  // if the subtree appears twice, push the root into the result array
   if (map.get(subtree) === 2) result.push(root)
 
   return subtree
