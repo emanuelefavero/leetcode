@@ -1,7 +1,13 @@
 // * Longest Substring Without Repeating Characters
 
-// Given a string s, find the length of the longest substring without repeating characters
+/**
+ * Given a string s, find the length of the longest substring without repeating characters
+ *
+ * @param {string} s
+ * @returns {number}
+ */
 
+// O(n) time | O(n) space
 function lengthOfLongestSubstring(s) {
   let set = new Set()
   let left = 0
@@ -30,6 +36,7 @@ function lengthOfLongestSubstring(s) {
 // -----------------------------
 // SOLUTION 2
 
+// O(n) time | O(n) space
 function lengthOfLongestSubstring2(s) {
   let longest = 0
   let current = []
@@ -54,14 +61,14 @@ function lengthOfLongestSubstring2(s) {
 // -----------------------------
 // TESTS
 
-console.log(lengthOfLongestSubstring2('abcabcbb')) // 3
+console.log(lengthOfLongestSubstring('abcabcbb')) // 3
 // Explanation: The answer is 'abc', with the length of 3
 
-console.log(lengthOfLongestSubstring2('bbbbb')) // 1
+console.log(lengthOfLongestSubstring('bbbbb')) // 1
 // Explanation: The answer is 'b', with the length of 1
 
-console.log(lengthOfLongestSubstring2('pwwkew')) // 3
+console.log(lengthOfLongestSubstring('pwwkew')) // 3
 // Explanation: The answer is 'wke', with the length of 3
 
-console.log(lengthOfLongestSubstring2('aab')) // 2
+console.log(lengthOfLongestSubstring('aab')) // 2
 // Explanation: The answer is 'ab', with the length of 2
