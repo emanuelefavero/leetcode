@@ -12,7 +12,32 @@ class TreeNode {
   }
 }
 
-function findDuplicateSubtrees(root) {}
+function findDuplicateSubtrees(root) {
+  let map = new Map()
+  let result = []
+
+  dfs(root, map, result)
+
+  return result
+}
+
+function dfs(root, map, result) {
+  if (!root) return '#'
+
+  let subtree = `${root.val}.${dfs(root.left, map, result)}.${dfs(
+    root.right,
+    map,
+    result
+  )}`
+
+  if (map.has(subtree)) {
+    map.set(subtree, map.get(subtree) + 1)
+  } else map.set(subtree, 1)
+
+  if (map.get(subtree) === 2) result.push(root)
+
+  return subtree
+}
 
 // -----------------------------
 // TESTS
