@@ -80,6 +80,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Find Duplicate Subtrees](./hash-table/find-duplicate-subtrees.js)
 - [Jewels And Stones](./hash-table/jewels-and-stones.js)
 - [Longest Substring Without Repeating Characters](./hash-table/longest-without-repeating-chars.js)
+- [4Sum II](./hash-table/4sum-ii.js)
 
 ### Linked List
 
