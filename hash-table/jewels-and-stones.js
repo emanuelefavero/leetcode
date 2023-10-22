@@ -10,7 +10,7 @@
 
 // O(n) time | O(n) space
 function numJewelsInStones(jewels, stones) {
-  let set = new Set(...jewels)
+  let set = new Set()
   let count = 0
 
   for (let jewel of jewels) {
@@ -19,6 +19,19 @@ function numJewelsInStones(jewels, stones) {
 
   for (let stone of stones) {
     if (set.has(stone)) count++
+  }
+
+  return count
+}
+
+// -------------------------------
+// SOLUTION 2
+
+function numJewelsInStones2(jewels, stones) {
+  let count = 0
+
+  for (let stone of stones) {
+    if (jewels.includes(stone)) count++
   }
 
   return count
