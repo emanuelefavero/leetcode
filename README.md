@@ -76,6 +76,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Intersection Of Two Arrays II](./hash-table/intersection-of-two-arrays-ii.js)
 - [Contains Duplicate II](./hash-table/contains-duplicate-ii.js)
 - [Group Anagrams](./hash-table/group-anagrams.js)
+- [Valid Sudoku](./hash-table/valid-sudoku.js)
 
 ### Linked List
 
