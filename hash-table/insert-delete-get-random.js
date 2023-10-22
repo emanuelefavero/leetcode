@@ -8,14 +8,21 @@ int getRandom() Returns a random element from the current set of elements (it's 
 You must implement the functions of the class such that each function works in average O(1) time complexity.
 */
 
-// TODO: jsDoc
+/**
+ * @typedef {Object} RandomizedSet
+ */
 
 class RandomizedSet {
   constructor() {
     this.set = {}
   }
 
-  // Inserts an item val into the set if not present. Returns true if the item was not present, false otherwise.
+  /**
+   * * Inserts an item val into the set if not present. Returns true if the item was not present, false otherwise
+   * @param {number} val
+   * @returns {boolean}
+   */
+
   insert(val) {
     if (!this.set[val]) {
       this.set[val] = true
@@ -23,7 +30,12 @@ class RandomizedSet {
     } else return false
   }
 
-  // Removes an item val from the set if present. Returns true if the item was present, false otherwise.
+  /**
+   * * Removes an item val from the set if present. Returns true if the item was present, false otherwise
+   * @param {number} val
+   * @returns {boolean}
+   */
+
   remove(val) {
     if (!this.set[val]) {
       return false
@@ -33,7 +45,11 @@ class RandomizedSet {
     }
   }
 
-  // Returns a random element from the current set of elements (it's guaranteed that at least one element exists when this method is called). Each element must have the same probability of being returned
+  /**
+   * * Returns a random element from the current set of elements (it's guaranteed that at least one element exists when this method is called). Each element must have the same probability of being returned
+   * @returns {number}
+   */
+
   getRandom() {
     let keys = Object.keys(this.set)
     let randomIndex = Math.floor(Math.random() * keys.length)
