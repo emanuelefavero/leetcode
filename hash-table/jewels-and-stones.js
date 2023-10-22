@@ -38,7 +38,21 @@ function numJewelsInStones2(jewels, stones) {
 }
 
 // -------------------------------
+// SOLUTION 3
+
+function numJewelsInStones3(jewels, stones) {
+  let set = new Set(jewels)
+  let count = 0
+
+  for (let i = 0; i < stones.length; i++) {
+    if (set.has(stones[i])) count++
+  }
+
+  return count
+}
+
+// -------------------------------
 // TESTS
 
-console.log(numJewelsInStones('aA', 'aAAbbb')) // 3
-console.log(numJewelsInStones('z', 'ZZ')) // 0
+console.log(numJewelsInStones3('aA', 'aAAbbb')) // 3
+console.log(numJewelsInStones3('z', 'ZZ')) // 0
