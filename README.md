@@ -77,6 +77,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Contains Duplicate II](./hash-table/contains-duplicate-ii.js)
 - [Group Anagrams](./hash-table/group-anagrams.js)
 - [Valid Sudoku](./hash-table/valid-sudoku.js)
+- [Find Duplicate Subtrees](./hash-table/find-duplicate-subtrees.js)
 
 ### Linked List
 
