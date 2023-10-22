@@ -1,8 +1,12 @@
-// * Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
+/**
+ * * Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order
+ *
+ * @param {number[]} nums
+ * @param {number} k
+ * @returns {number[]}
+ */
 
-// TODO: Commit solution 1
-// TODO: jsDoc
-
+// O(n log n) time | O(n) space
 function topKFrequent(nums, k) {
   let map = new Map()
   let result = []
