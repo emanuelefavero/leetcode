@@ -82,6 +82,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Longest Substring Without Repeating Characters](./hash-table/longest-without-repeating-chars.js)
 - [4Sum II](./hash-table/4sum-ii.js)
 - [Top K Frequent Elements](./hash-table/top-k-frequent-elements.js)
+- [Insert Delete GetRandom O(1)](./hash-table/insert-delete-get-random.js)
 
 ### Linked List
 
