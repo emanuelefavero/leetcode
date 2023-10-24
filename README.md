@@ -111,6 +111,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 ### Queue
 
 - [Design Circular Queue](./queue/design-circular-queue.js)
+- [Number of Islands](./queue/number-of-islands.js)
 
 ### String
 
