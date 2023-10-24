@@ -51,6 +51,35 @@ function numSquares(n) {
 }
 
 // --------------------------
+// SOLUTION 2
+
+// NOTE: This is a mathematical solution
+
+function numSquares2(n) {
+  // check if x is a perfect square
+  function isSquare(x) {
+    return Math.floor(Math.sqrt(x)) ** 2 === x
+  }
+
+  // if n is a perfect square, return 1
+  if (isSquare(n)) return 1
+
+  // if n is divisible by 4, n /= 4 divides n by 4 and assigns the result back to n
+  while (n % 4 === 0) n /= 4
+
+  // if at this point the remainder of n / 8 is 7, return 4
+  if (n % 8 === 7) return 4
+
+  // check if n can be written as the sum of two perfect squares
+  for (let i = 0; i <= n; i++) {
+    // if n - i * i is a perfect square, return 2
+    if (isSquare(n - i * i)) return 2
+  }
+
+  return 3
+}
+
+// --------------------------
 // TESTS
 
 console.log(numSquares(12)) // 3, 12 = 4 + 4 + 4
