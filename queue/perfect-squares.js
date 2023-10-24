@@ -16,10 +16,6 @@ Output: 2
 Explanation: 13 = 4 + 9
 */
 
-// TODO: Add solution
-// TODO: Add link to README
-// TODO: Add jsDoc
-
 function numSquares(n) {
   const queue = [n]
   const visited = new Set()
@@ -77,6 +73,36 @@ function numSquares2(n) {
   }
 
   return 3
+}
+
+// --------------------------
+// SOLUTION 3
+
+// NOTE: This is a dynamic programming solution
+
+// TODO: Add link to README
+// TODO: Add jsDoc
+
+function numSquares3(n) {
+  // TIP: db means dynamic programming
+
+  // dp[i] represents the least number of perfect square numbers that sum to i
+  let dp = new Array(n + 1)
+
+  // base case
+  dp[0] = 0 // 0 is the sum of 0 perfect squares
+
+  // fill the dp array from 1 to n
+  for (let i = 1; i <= n; i++) {
+    dp[i] = i // the worst case is 1 + 1 + ... + 1
+
+    // for each i, it must be the sum of some number (i - j * j) and a perfect square number (j * j)
+    for (let j = 1; j * j <= i; j++) {
+      dp[i] = Math.min(1 + dp[i - j * j], dp[i])
+    }
+  }
+
+  return dp[n] // the least number of perfect square numbers that sum to n
 }
 
 // --------------------------
