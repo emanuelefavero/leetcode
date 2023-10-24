@@ -1,9 +1,11 @@
-// Given an m x n 2D binary grid grid which represents a map of '1's (land) and '0's (water), return the number of islands
+// * Given an m x n 2D binary grid grid which represents a map of '1's (land) and '0's (water), return the number of islands
 
 // An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water
 
 /*
-Example 1:
+TIP: An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water
+
+EXAMPLE 1:
 
 Input: grid = [
   ["1","1","1","1","0"],
@@ -14,7 +16,7 @@ Input: grid = [
 Output: 1
 Explanation: There is only one island in the above grid because all other 0's are connected to form one island
 
-Example 2:
+EXAMPLE 2:
 
 Input: grid = [
   ["1","1","0","0","0"],
@@ -24,6 +26,12 @@ Input: grid = [
 ]
 Output: 3
 */
+
+/**
+ * * Depth First Search (DFS) solution
+ * @param {string[][]} grid
+ * @returns {number}
+ */
 
 function numIslands(grid) {
   let count = 0
