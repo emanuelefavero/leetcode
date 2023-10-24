@@ -2,11 +2,26 @@
 
 // TIP: This solution is not really circular, it's just a queue with a fixed size but it works and in JavScript it's not needed to create a circular queue since the array is dynamic and can grow as needed
 
+/**
+ * @typedef {Object} MyCircularQueue
+ */
+
 class MyCircularQueue {
+  /**
+   * Initializes the object with the size of the queue to be k
+   * @param {number} k
+   */
+
   constructor(k) {
     this.queue = []
     this.size = k
   }
+
+  /**
+   * Inserts an element into the circular queue. Return true if the operation is successful
+   * @param {number} value
+   * @returns {boolean}
+   */
 
   enQueue(value) {
     if (this.queue.length < this.size) {
@@ -15,6 +30,11 @@ class MyCircularQueue {
     } else return false
   }
 
+  /**
+   * Deletes an element from the circular queue. Return true if the operation is successful
+   * @returns {boolean}
+   */
+
   deQueue() {
     if (this.queue.length > 0) {
       this.queue.shift() // remove first element
@@ -22,11 +42,21 @@ class MyCircularQueue {
     } else return false
   }
 
+  /**
+   * Gets the front item from the queue. If the queue is empty, return -1
+   * @returns {number}
+   */
+
   Front() {
     if (this.queue.length > 0) {
       return this.queue[0]
     } else return -1
   }
+
+  /**
+   * Gets the last item from the queue. If the queue is empty, return -1
+   * @returns {number}
+   */
 
   Rear() {
     if (this.queue.length > 0) {
@@ -34,9 +64,19 @@ class MyCircularQueue {
     } else return -1
   }
 
+  /**
+   * Checks whether the circular queue is empty or not
+   * @returns {boolean}
+   */
+
   isEmpty() {
     return this.queue.length === 0
   }
+
+  /**
+   * Checks whether the circular queue is full or not
+   * @returns {boolean}
+   */
 
   isFull() {
     return this.queue.length === this.size
