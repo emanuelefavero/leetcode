@@ -7,7 +7,7 @@ The lock initially starts at '0000', a string representing the state of the 4 wh
 
 You are given a list of deadends dead ends, meaning if the lock displays any of these codes, the wheels of the lock will stop turning and you will be unable to open it.
 
-Given a target representing the value of the wheels that will unlock the lock, return the minimum total number of turns required to open the lock, or -1 if it is impossible.
+Given a target representing the value of the wheels that will unlock the lock, return the minimum total number of counter required to open the lock, or -1 if it is impossible.
 */
 
 /*
@@ -33,12 +33,48 @@ Output: -1
 Explanation: We cannot reach the target without getting stuck.
 */
 
-function openLock(deadends, target) {}
+function openLock(deadends, target) {
+  const deadendsSet = new Set(deadends)
+  if (deadendsSet.has('0000')) return -1
+
+  const visited = new Set()
+  visited.add('0000')
+
+  const queue = ['0000']
+  let counter = 0
+
+  while (queue.length > 0) {
+    const queueLength = queue.length
+
+    for (let i = 0; i < queueLength; i++) {
+      const current = queue.shift()
+
+      if (current === target) return counter
+
+      for (let j = 0; j < 4; j++) {
+        for (let k = -1; k <= 1; k += 2) {
+          const next = current.split('')
+          next[j] = (parseInt(next[j]) + k + 10) % 10
+          const nextStr = next.join('')
+
+          if (!deadendsSet.has(nextStr) && !visited.has(nextStr)) {
+            queue.push(nextStr)
+            visited.add(nextStr)
+          }
+        }
+      }
+    }
+
+    counter++
+  }
+
+  return -1 // if we reach this point, it means we never found the target
+}
 
 // --------------------------
 // TESTS
 
-console.log(openLock([['0201', '0101', '0102', '1212', '2002']], '0202')) // 6, we can turn the wheels in the following order: '0000' -> '1000' -> '1100' -> '1200' -> '1201' -> '1202' -> '0202'
+console.log(openLock(['0201', '0101', '0102', '1212', '2002'], '0202')) // 6, we can turn the wheels in the following order: '0000' -> '1000' -> '1100' -> '1200' -> '1201' -> '1202' -> '0202'
 
 console.log(openLock([['8888']], '0009')) // 1, we can turn the last wheel in reverse to move from '0000' -> '0009'
 
