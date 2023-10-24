@@ -80,7 +80,6 @@ function numSquares2(n) {
 
 // NOTE: This is a dynamic programming solution
 
-// TODO: Add link to README
 // TODO: Add jsDoc
 
 function numSquares3(n) {

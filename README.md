@@ -113,6 +113,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Design Circular Queue](./queue/design-circular-queue.js)
 - [Number of Islands](./queue/number-of-islands.js)
 - [Open The Lock](./queue/open-the-lock.js)
+- [Perfect Squares](./queue/perfect-squares.js)
 
 ### String
 
