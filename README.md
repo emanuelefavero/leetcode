@@ -108,6 +108,10 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 
 - [Number Of Steps To Reduce A Number To Zero](./math/number-of-steps-to-reduce-a-number-to-zero.js)
 
+### Queue
+
+- [Design Circular Queue](./queue/design-circular-queue.js)
+
 ### String
 
 - [Add Binary](./string/add-binary.js)
