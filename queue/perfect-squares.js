@@ -1,6 +1,11 @@
-// Given an integer n, return the least number of perfect square numbers that sum to n
-
-// A perfect square is an integer that is the square of an integer; in other words, it is the product of some integer with itself. For example, 1, 4, 9, and 16 are perfect squares while 3 and 11 are not
+/**
+ * * Given an integer n, return the least number of perfect square numbers that sum to n
+ *
+ * A perfect square is an integer that is the square of an integer; in other words, it is the product of some integer with itself. For example, 1, 4, 9, and 16 are perfect squares while 3 and 11 are not
+ *
+ * @param {number} n
+ * @returns {number}
+ */
 
 /*
 EXAMPLE 1:
@@ -16,6 +21,7 @@ Output: 2
 Explanation: 13 = 4 + 9
 */
 
+// O(n * sqrt(n)) time | O(n) space
 function numSquares(n) {
   const queue = [n]
   const visited = new Set()
@@ -80,8 +86,6 @@ function numSquares2(n) {
 
 // NOTE: This is a dynamic programming solution
 
-// TODO: Add jsDoc
-
 function numSquares3(n) {
   // TIP: db means dynamic programming
 
@@ -107,5 +111,14 @@ function numSquares3(n) {
 // --------------------------
 // TESTS
 
+// Solution 1
 console.log(numSquares(12)) // 3, 12 = 4 + 4 + 4
 console.log(numSquares(13)) // 2, 13 = 4 + 9
+
+// Solution 2
+console.log(numSquares2(12)) // 3, 12 = 4 + 4 + 4
+console.log(numSquares2(13)) // 2, 13 = 4 + 9
+
+// Solution 3
+console.log(numSquares3(12)) // 3, 12 = 4 + 4 + 4
+console.log(numSquares3(13)) // 2, 13 = 4 + 9
