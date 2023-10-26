@@ -119,6 +119,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 ### Stack
 
 - [Design Stack](./stack/design-stack.js)
+- [Min Stack](./stack/min-stack.js)
 
 ### String
 
