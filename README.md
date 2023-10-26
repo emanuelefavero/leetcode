@@ -121,6 +121,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Design Stack](./stack/design-stack.js)
 - [Min Stack](./stack/min-stack.js)
 - [Valid Parentheses](./stack/valid-parentheses.js)
+- [Daily Temperatures](./stack/daily-temperatures.js)
 
 ### String
 
