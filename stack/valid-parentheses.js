@@ -8,8 +8,14 @@ Open brackets must be closed in the correct order.
 Every close bracket has a corresponding open bracket of the same type.
 */
 
+/**
+ * @param {string} s
+ * @returns {boolean}
+ */
+
 // TIP: We will use a stack to keep track of the open brackets
 
+// O(n) time | O(p) space - where p is how many parentheses in the string
 function isValid(s) {
   let stack = []
 
