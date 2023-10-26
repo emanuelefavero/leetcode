@@ -45,7 +45,6 @@ function evalRPN(tokens) {
 // ----------------------------
 // SOLUTION 2
 
-// TODO: add link to README
 // TODO: add jsDoc (add @see tag, see up top)
 
 function evalRPN2(tokens) {

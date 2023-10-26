@@ -122,6 +122,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Min Stack](./stack/min-stack.js)
 - [Valid Parentheses](./stack/valid-parentheses.js)
 - [Daily Temperatures](./stack/daily-temperatures.js)
+- [Evaluate Reverse Polish Notation](./stack/evaluate-reverse-polish-notation.js)
 
 ### String
 
