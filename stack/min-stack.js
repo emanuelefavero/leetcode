@@ -21,16 +21,11 @@ class MinStack {
   push(val) {
     this.stack.push(val)
 
-    let minStackTop = this.minStack[this.minStack.length - 1]
-
-    if (this.minStack.length === 0) {
+    if (
+      !this.minStack.length ||
+      val <= this.minStack[this.minStack.length - 1]
+    ) {
       this.minStack.push(val)
-    } else {
-      if (val < minStackTop) {
-        this.minStack.push(val)
-      } else {
-        this.minStack.push(minStackTop) // push the same value so that the minStack is the same length as the stack when popping
-      }
     }
   }
 
@@ -40,8 +35,11 @@ class MinStack {
    */
 
   pop() {
-    this.stack.pop()
-    this.minStack.pop()
+    let popped = this.stack.pop()
+
+    if (popped === this.minStack[this.minStack.length - 1]) {
+      this.minStack.pop()
+    }
   }
 
   /**
