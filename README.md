@@ -116,6 +116,10 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Perfect Squares](./queue/perfect-squares.js)
 - [Queue Technique Template](./queue/queue-technique-template.js)
 
+### Stack
+
+- [Design Stack](./stack/design-stack.js)
+
 ### String
 
 - [Add Binary](./string/add-binary.js)
