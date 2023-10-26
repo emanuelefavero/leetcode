@@ -33,6 +33,35 @@ function isValid(s) {
 }
 
 // -----------------------
+// SOLUTION 2
+
+// TIP: This solution is more concise but can be harder to understand
+
+function isValid2(s) {
+  let parentheses = {
+    '(': ')',
+    '[': ']',
+    '{': '}',
+  }
+
+  let stack = []
+
+  for (let char of s) {
+    // if the current character is an opening bracket, push it onto the stack
+    if (parentheses[char]) {
+      stack.push(char)
+    } else {
+      let last = stack.pop()
+
+      // if the current closing bracket does not match the last opening bracket, return false
+      if (char !== parentheses[last]) return false
+    }
+  }
+
+  return stack.length === 0
+}
+
+// -----------------------
 // TESTS
 
 console.log(isValid('()')) // true
