@@ -114,6 +114,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Number of Islands](./queue/number-of-islands.js)
 - [Open The Lock](./queue/open-the-lock.js)
 - [Perfect Squares](./queue/perfect-squares.js)
+- [Queue Technique Template](./queue/queue-technique-template.js)
 
 ### String
 
