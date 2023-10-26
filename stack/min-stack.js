@@ -1,5 +1,7 @@
 // Design a stack that supports push, pop, top, and retrieving the minimum element in constant time
 
+// TIP: To achieve constant time we will use two stacks, one to store the elements and another to store the minimums
+
 /**
  * @typedef {Object} MinStack
  */
@@ -7,6 +9,7 @@
 class MinStack {
   constructor() {
     this.stack = []
+    this.minStack = []
   }
 
   /**
@@ -17,6 +20,18 @@ class MinStack {
 
   push(val) {
     this.stack.push(val)
+
+    let minStackTop = this.minStack[this.minStack.length - 1]
+
+    if (this.minStack.length === 0) {
+      this.minStack.push(val)
+    } else {
+      if (val < minStackTop) {
+        this.minStack.push(val)
+      } else {
+        this.minStack.push(minStackTop) // push the same value so that the minStack is the same length as the stack when popping
+      }
+    }
   }
 
   /**
@@ -26,6 +41,7 @@ class MinStack {
 
   pop() {
     this.stack.pop()
+    this.minStack.pop()
   }
 
   /**
@@ -43,7 +59,7 @@ class MinStack {
    */
 
   getMin() {
-    return Math.min(...this.stack)
+    return this.minStack[this.minStack.length - 1]
   }
 }
 
@@ -51,14 +67,15 @@ class MinStack {
 // TESTS
 
 let stack = new MinStack()
-stack.push(1)
-stack.push(2)
-stack.push(3)
+stack.push(10)
+stack.push(5)
+stack.push(20)
+stack.push(15)
 
 stack.pop()
 
-console.log(stack.top()) // 2
-console.log(stack.stack) // [1, 2]
+console.log(stack.top()) // 20
+console.log(stack.stack) // [10, 5, 20]
 
 // get min
-console.log(stack.getMin()) // 1
+console.log(stack.getMin()) // 5
