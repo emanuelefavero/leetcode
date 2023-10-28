@@ -1,4 +1,4 @@
-// return true if there is a path from cur to target
+// * return true if there is a path from cur to target
 
 class Node {
   constructor(val, neighbors) {
@@ -6,6 +6,9 @@ class Node {
     this.neighbors = neighbors || []
   }
 }
+
+// TIP: This solution uses a stack (depth-first search) to solve the problem and a set to keep track of the nodes that have been visited.
+// TIP: It is not a recursive solution
 
 function DFS(root, target) {
   let stack = [root]
