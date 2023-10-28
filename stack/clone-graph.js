@@ -1,10 +1,12 @@
 // * Clone Graph
 
-// Given a reference of a node in a connected undirected graph.
+// Given a reference of a node in a connected undirected graph
+// Return a deep copy (clone) of the graph
+// Each node in the graph contains a value (int) and a list (List[Node]) of its neighbors
 
-// Return a deep copy (clone) of the graph.
-
-// Each node in the graph contains a value (int) and a list (List[Node]) of its neighbors.
+/**
+ * @typedef {Object} Node
+ */
 
 class Node {
   constructor(val, neighbors) {
@@ -13,7 +15,12 @@ class Node {
   }
 }
 
-// TIP: This solution uses a stack to keep track of the nodes
+/**
+ * @param {Node} node
+ * @returns {Node}
+ */
+
+// TIP: This solution uses recursion (depth-first search) to solve the problem and a map to keep track of the nodes that have been visited
 
 function cloneGraph(node) {
   if (!node) return null
@@ -23,10 +30,12 @@ function cloneGraph(node) {
   function DFS(node) {
     if (!map.has(node.val)) {
       map.set(node.val, new Node(node.val))
-      map.get(node.val).neighbors = node.neighbors.map(DFS)
+      map.get(node.val).neighbors = node.neighbors.map(
+        (neighbor) => DFS(neighbor) // recursively call DFS on each neighbor
+      )
     }
 
-    return map.get(node.val)
+    return map.get(node.val) // return the node from the map
   }
 
   return DFS(node)
