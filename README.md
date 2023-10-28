@@ -125,6 +125,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Evaluate Reverse Polish Notation](./stack/evaluate-reverse-polish-notation.js)
 - [Clone Graph](./stack/clone-graph.js)
 - [Depth First Search Template II](./stack/depth-first-search-template-ii.js)
+- [Target Sum](./stack/target-sum.js)
 
 ### String
 
