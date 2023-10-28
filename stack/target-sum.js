@@ -11,6 +11,13 @@ Return the number of different expressions that you can build, which evaluates t
 
 // TIP: In this solution we use backtracking (depth-first search) to solve the problem
 
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @returns {number}
+ */
+
+// O(2^n) time | O(n) space
 function findTargetSumWays(nums, target) {
   let count = 0 // count the number of ways we can reach the target
 
