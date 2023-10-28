@@ -9,20 +9,24 @@ For example, if nums = [2, 1], you can add a '+' before 2 and a '-' before 1 and
 Return the number of different expressions that you can build, which evaluates to target.
 */
 
+// TIP: In this solution we use backtracking (depth-first search) to solve the problem
+
 function findTargetSumWays(nums, target) {
-  let count = 0
+  let count = 0 // count the number of ways we can reach the target
 
   function backtrack(index, sum) {
+    // base case - when we reach the end of the array
     if (index === nums.length) {
+      // if the sum is equal to the target, increment the count
       if (sum === target) count++
       return
     }
 
-    backtrack(index + 1, sum + nums[index])
-    backtrack(index + 1, sum - nums[index])
+    backtrack(index + 1, sum + nums[index]) // add the current number
+    backtrack(index + 1, sum - nums[index]) // subtract the current number
   }
 
-  backtrack(0, 0)
+  backtrack(0, 0) // start at the first index with a sum of 0
 
   return count
 }
