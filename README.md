@@ -115,6 +115,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Open The Lock](./queue/open-the-lock.js)
 - [Perfect Squares](./queue/perfect-squares.js)
 - [Queue Technique Template](./queue/queue-technique-template.js)
+- [Implement Queue Using Stacks](./queue/implement-queue-using-stacks.js)
 
 ### Stack
 
