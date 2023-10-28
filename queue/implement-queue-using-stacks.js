@@ -1,40 +1,39 @@
 // Implement a first in first out (FIFO) queue using only two stacks. The implemented queue should support all the functions of a normal queue (push, peek, pop, and empty).
 
+// TODO: add link to README
+// TODO: add jsDoc
+
 class MyQueue {
   constructor() {
     this.stack1 = []
     this.stack2 = []
   }
 
-  _migrate(stack1, stack2) {
-    while (stack1.length) {
-      stack2.push(stack1.pop())
-    }
+  push(x) {
+    this.stack1.push(x)
   }
 
-  push(x) {
-    if (this.stack1.length) {
-      this.stack2.push(x)
-      this._migrate(this.stack1, this.stack2)
-    } else {
-      this._migrate(this.stack2, this.stack1) // pass stack2 as stack1 and vice versa
-      this.stack1.push(x)
+  // NOTE: This is the key to the solution, before calling pop or peek we need to migrate the elements from stack1 to stack2 so that the first element in stack2 is the first element in the queue
+  _migrate() {
+    if (!this.stack2.length) {
+      while (this.stack1.length) {
+        this.stack2.push(this.stack1.pop())
+      }
     }
   }
 
   pop() {
-    if (this.stack1.length) return this.stack1.pop()
-    else return this.stack2.pop()
+    this._migrate()
+    return this.stack2.pop()
   }
 
   peek() {
-    if (this.stack1.length) return this.stack1[this.stack1.length - 1]
-    else return this.stack2[this.stack2.length - 1]
+    this._migrate()
+    return this.stack2[this.stack2.length - 1]
   }
 
   empty() {
-    // if any of the stacks has elements, the queue is not empty
-    return !(this.stack1.length || this.stack2.length)
+    return !this.stack1.length && !this.stack2.length
   }
 }
 
