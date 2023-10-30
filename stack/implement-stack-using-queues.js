@@ -4,21 +4,39 @@
  * @typedef {Object} MyQueue
  */
 
+// NOTE: Create a stack using two queues. The queues can't use the pop method, only shift and push
+
 class MyStack {
   constructor() {
-    this.queue = []
-    this.queue = []
+    this.queue1 = []
+    this.queue2 = []
   }
 
-  push(x) {}
+  push(x) {
+    this.queue1.push(x)
+  }
 
-  _migrate() {}
+  _migrate() {
+    if (!this.queue2.length) {
+      while (this.queue1.length) {
+        this.queue2.push(this.queue1.shift())
+      }
+    }
+  }
 
-  pop() {}
+  pop() {
+    this._migrate()
+    return this.queue2.pop()
+  }
 
-  peek() {}
+  top() {
+    this._migrate()
+    return this.queue2[this.queue2.length - 1]
+  }
 
-  empty() {}
+  empty() {
+    return !this.queue1.length && !this.queue2.length
+  }
 }
 
 // ------------------------
@@ -32,7 +50,7 @@ stack.push(3)
 stack.push(4)
 
 console.log(stack.pop()) // 1
-console.log(stack.peek()) // 2
+console.log(stack.top()) // 2
 console.log(stack.empty()) // false
 
 console.log(stack)
