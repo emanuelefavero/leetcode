@@ -64,6 +64,38 @@ class MyStack {
 }
 
 // ------------------------
+// SOLUTION 2
+
+// TIP: This solution uses only one queue
+
+class MyStack2 {
+  constructor() {
+    this.queue = []
+  }
+
+  push(x) {
+    this.queue.push(x)
+
+    // move the first n - 1 elements to the end of the queue
+    for (let i = 0; i < this.queue.length - 1; i++) {
+      this.queue.push(this.queue.shift())
+    }
+  }
+
+  pop() {
+    return this.queue.shift()
+  }
+
+  top() {
+    return this.queue[0]
+  }
+
+  empty() {
+    return this.queue.length === 0
+  }
+}
+
+// ------------------------
 // TESTS
 
 let stack = new MyStack()
