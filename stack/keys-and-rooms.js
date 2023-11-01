@@ -8,7 +8,33 @@ When you visit a room, you may find a set of distinct keys in it. Each key has a
 Given an array rooms where rooms[i] is the set of keys that you can obtain if you visited room i, return true if you can visit all the rooms, or false otherwise.
 */
 
+// TODO: add link to README
+// TODO: add jsDoc
+
+// TIP: This solution uses a stack (depth-first search)
+
 function canVisitAllRooms(rooms) {
+  let visited = new Set()
+  let stack = [0] // start with room 0
+
+  while (stack.length > 0) {
+    let current = stack.pop()
+
+    if (!visited.has(current)) {
+      visited.add(current)
+      stack.push(...rooms[current]) // the spread operator is used to push the elements of the nested array into the stack
+    }
+  }
+
+  return visited.size === rooms.length
+}
+
+// --------------------------
+// SOLUTION 2
+
+// TIP: This solution uses Depth First Search (DFS) and recursion
+
+function canVisitAllRooms2(rooms) {
   let visited = new Set()
 
   function DFS(rooms, i) {
