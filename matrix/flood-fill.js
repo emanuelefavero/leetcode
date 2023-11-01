@@ -18,7 +18,7 @@ Return the modified image after performing the flood fill.
  * @returns {number[][]}
  */
 
-// O(n) time | O(n) space
+// O(n) time | O(n) space 
 function floodFill(image, sr, sc, color) {
   let row = image.length
   let column = image[0].length
