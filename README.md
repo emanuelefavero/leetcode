@@ -108,6 +108,10 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 
 - [Number Of Steps To Reduce A Number To Zero](./math/number-of-steps-to-reduce-a-number-to-zero.js)
 
+### Matrix
+
+- [Flood Fill](./matrix/flood-fill.js)
+
 ### Queue
 
 - [Design Circular Queue](./queue/design-circular-queue.js)
@@ -129,6 +133,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Target Sum](./stack/target-sum.js)
 - [Implement Stack Using Queues](./stack/implement-stack-using-queues.js)
 - [Decode String](./stack/decode-string.js)
+- [Flood Fill](./stack/flood-fill.js)
 
 ### String
 
