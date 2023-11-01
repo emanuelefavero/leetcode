@@ -8,7 +8,6 @@ When you visit a room, you may find a set of distinct keys in it. Each key has a
 Given an array rooms where rooms[i] is the set of keys that you can obtain if you visited room i, return true if you can visit all the rooms, or false otherwise.
 */
 
-// TODO: add link to README
 // TODO: add jsDoc
 
 // TIP: This solution uses a stack (depth-first search)
