@@ -6,51 +6,43 @@ Given an m x n binary matrix mat, return the distance of the nearest 0 for each 
 The distance between two adjacent cells is 1.
 */
 
-function updateMatrix(mat) {
-  const queue = []
-  const visited = new Set()
+/**
+ * @param {number[][]} mat
+ * @returns {number[][]}
+ */
 
-  // iterate through the matrix
-  for (let row = 0; row < mat.length; row++) {
-    for (let col = 0; col < mat[row].length; col++) {
-      // if the current cell is 0, add it to the queue
-      if (mat[row][col] === 0) {
-        queue.push([row, col])
-        visited.add(`${row},${col}`)
-      }
+// O(n) time | O(n) space
+function updateMatrix(mat) {
+  let row = mat.length
+  let col = mat[0].length
+
+  // loop through the matrix
+  for (let r = 0; r < row; r++) {
+    for (let c = 0; c < col; c++) {
+      if (mat[r][c] === 0) continue // if the current element is 0, skip it
+
+      let left = Infinity
+      let top = Infinity
+      if (0 <= r - 1) left = mat[r - 1][c] // go up
+      if (0 <= c - 1) top = mat[r][c - 1] // go left
+
+      // update the current element with the minimum of the left and top elements + 1
+      mat[r][c] = Math.min(left, top) + 1
     }
   }
 
-  // NOTE: This is the key to the solution, we need to use BFS to find the distance of the nearest 0 for each cell
-  while (queue.length) {
-    const [row, col] = queue.shift()
+  // loop through the matrix in reverse
+  for (let r = row - 1; r >= 0; r--) {
+    for (let c = col - 1; c >= 0; c--) {
+      if (mat[r][c] === 0) continue // if the current element is 0, skip it
 
-    // check the top cell
-    if (row > 0 && !visited.has(`${row - 1},${col}`)) {
-      mat[row - 1][col] = mat[row][col] + 1
-      queue.push([row - 1, col])
-      visited.add(`${row - 1},${col}`)
-    }
+      let right = Infinity
+      let bottom = Infinity
+      if (r + 1 < row) right = mat[r + 1][c] // go down
+      if (c + 1 < col) bottom = mat[r][c + 1] // go right
 
-    // check the bottom cell
-    if (row < mat.length - 1 && !visited.has(`${row + 1},${col}`)) {
-      mat[row + 1][col] = mat[row][col] + 1
-      queue.push([row + 1, col])
-      visited.add(`${row + 1},${col}`)
-    }
-
-    // check the left cell
-    if (col > 0 && !visited.has(`${row},${col - 1}`)) {
-      mat[row][col - 1] = mat[row][col] + 1
-      queue.push([row, col - 1])
-      visited.add(`${row},${col - 1}`)
-    }
-
-    // check the right cell
-    if (col < mat[row].length - 1 && !visited.has(`${row},${col + 1}`)) {
-      mat[row][col + 1] = mat[row][col] + 1
-      queue.push([row, col + 1])
-      visited.add(`${row},${col + 1}`)
+      // update the current element with the minimum of the right and bottom elements + 1
+      mat[r][c] = Math.min(Math.min(right, bottom) + 1, mat[r][c])
     }
   }
 
