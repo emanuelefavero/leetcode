@@ -111,6 +111,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 ### Matrix
 
 - [Flood Fill](./matrix/flood-fill.js)
+- [01 Matrix](./matrix/01-matrix.js)
 
 ### Queue
 
