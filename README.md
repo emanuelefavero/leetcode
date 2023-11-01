@@ -128,6 +128,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Depth First Search Template II](./stack/depth-first-search-template-ii.js)
 - [Target Sum](./stack/target-sum.js)
 - [Implement Stack Using Queues](./stack/implement-stack-using-queues.js)
+- [Decode String](./stack/decode-string.js)
 
 ### String
 
