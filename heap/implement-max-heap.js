@@ -4,20 +4,50 @@
 
 // NOTE: We can implement a heap with an array or a linked list. In this example, we'll use an array
 
+/*
+To find the parent node of any node, use this formula:
+  Math.floor(index / 2)
+
+To find the left child node of any node, use this formula:
+  index * 2
+
+To find the right child node of any node, use this formula:
+  index * 2 + 1
+
+To check if a node is a leaf node, use this formula:
+  index > number of nodes / 2
+*/
+
+/**
+ * @typedef {Object} MaxHeap
+ * @property {number[]} heap
+ */
+
 class MaxHeap {
   constructor() {
     this.heap = []
   }
+
+  /**
+   * @param {number} value
+   * @return {void}
+   */
 
   insert(value) {
     this.heap.push(value)
     this._bubbleUp()
   }
 
+  /**
+   * @returns {number}
+   */
+
   delete() {
     let min = this.heap[0]
     this.heap[0] = this.heap.pop() // replace root with last element
     this._bubbleDown()
+
+    return min
   }
 
   _bubbleUp() {
@@ -25,7 +55,7 @@ class MaxHeap {
 
     while (index > 0) {
       let element = this.heap[index]
-      let parentIndex = Math.floor((index - 1) / 2)
+      let parentIndex = Math.floor((index - 1) / 2) // to find parent note of any node, use this formula. We just need to divide the index of the node by 2 and round it down to the nearest whole number
       let parent = this.heap[parentIndex]
 
       // TIP: Change comparison operator to <= to convert to min heap
@@ -75,6 +105,10 @@ class MaxHeap {
       index = swap
     }
   }
+
+  /**
+   * @returns {number}
+   */
 
   peek() {
     return this.heap[0]

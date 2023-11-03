@@ -4,6 +4,20 @@
 
 // NOTE: We can implement a heap with an array or a linked list. In this example, we'll use an array
 
+/*
+To find the parent node of any node, use this formula:
+  Math.floor(index / 2)
+
+To find the left child node of any node, use this formula:
+  index * 2
+
+To find the right child node of any node, use this formula:
+  index * 2 + 1
+
+To check if a node is a leaf node, use this formula:
+  index > number of nodes / 2
+*/
+
 /**
  * @typedef {Object} MinHeap
  * @property {number[]} heap
@@ -41,7 +55,7 @@ class MinHeap {
 
     while (index > 0) {
       let element = this.heap[index]
-      let parentIndex = Math.floor((index - 1) / 2)
+      let parentIndex = Math.floor((index - 1) / 2) // to find parent note of any node, use this formula. We just need to divide the index of the node by 2 and round it down to the nearest whole number
       let parent = this.heap[parentIndex]
 
       if (parent <= element) break // Change comparison operator to <=
