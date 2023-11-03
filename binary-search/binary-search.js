@@ -4,7 +4,6 @@
 
 // You must write an algorithm with O(log n) runtime complexity
 
-// TODO: add link to README
 // TODO: add jsDoc
 
 function search(nums, target) {
