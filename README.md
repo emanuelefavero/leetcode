@@ -86,7 +86,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 
 ### Heap
 
-- [Implement Heap](./heap/implement-heap.js)
+- [Implement Min Heap](./heap/implement-min-heap.js)
 
 ### Linked List
 

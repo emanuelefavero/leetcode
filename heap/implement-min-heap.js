@@ -1,6 +1,8 @@
-// * Implement a heap data structure
+// * Implement a min heap data structure
 
 // TIP: In a min heap, the parent nodes are always smaller than the child nodes and the root node is the smallest value in the heap
+
+// NOTE: We can implement a heap with an array or a linked list. In this example, we'll use an array
 
 /**
  * @typedef {Object} MinHeap
