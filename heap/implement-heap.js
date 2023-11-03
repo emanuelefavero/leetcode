@@ -1,26 +1,40 @@
 // * Implement a heap data structure
 
-// TIP: In a min heap, the parent nodes are always smaller than the child nodes and the root node is the smallest value in the heap.
+// TIP: In a min heap, the parent nodes are always smaller than the child nodes and the root node is the smallest value in the heap
+
+/**
+ * @typedef {Object} MinHeap
+ * @property {number[]} heap
+ */
 
 class MinHeap {
   constructor() {
     this.heap = []
   }
 
+  /**
+   * @param {number} value
+   * @return {void}
+   */
+
   insert(value) {
     this.heap.push(value)
-    this.bubbleUp()
+    this._bubbleUp()
   }
+
+  /**
+   * @returns {number}
+   */
 
   delete() {
     let min = this.heap[0]
     this.heap[0] = this.heap.pop() // replace root with last element
-    this.bubbleDown()
+    this._bubbleDown()
 
     return min
   }
 
-  bubbleUp() {
+  _bubbleUp() {
     let index = this.heap.length - 1
 
     while (index > 0) {
@@ -37,7 +51,7 @@ class MinHeap {
     }
   }
 
-  bubbleDown() {
+  _bubbleDown() {
     let index = 0
     let length = this.heap.length
     let element = this.heap[0] // root node
@@ -74,6 +88,10 @@ class MinHeap {
       index = swap
     }
   }
+
+  /**
+   * @returns {number}
+   */
 
   peek() {
     return this.heap[0]
