@@ -84,6 +84,10 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Top K Frequent Elements](./hash-table/top-k-frequent-elements.js)
 - [Insert Delete GetRandom O(1)](./hash-table/insert-delete-get-random.js)
 
+### Heap
+
+- [Implement Heap](./heap/implement-heap.js)
+
 ### Linked List
 
 - [Design Linked List](./linked-list/design-linked-list.js)
