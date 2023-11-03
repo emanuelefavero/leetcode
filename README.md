@@ -87,6 +87,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 ### Heap
 
 - [Implement Min Heap](./heap/implement-min-heap.js)
+- [Implement Max Heap](./heap/implement-max-heap.js)
 
 ### Linked List
 
