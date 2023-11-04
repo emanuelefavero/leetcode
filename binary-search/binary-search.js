@@ -1,11 +1,14 @@
-// * Binary Search
+/**
+ * * Binary Search
+ *
+ * Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search target in nums. If target exists, then return its index. Otherwise, return -1
+ *
+ * @param {number[]} nums
+ * @param {number} target
+ * @returns {number}
+ */
 
-// Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search target in nums. If target exists, then return its index. Otherwise, return -1.
-
-// You must write an algorithm with O(log n) runtime complexity
-
-// TODO: add jsDoc
-
+// O(log n) time | O(1) space
 function search(nums, target) {
   let start = 0
   let end = nums.length - 1
