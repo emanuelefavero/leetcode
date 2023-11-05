@@ -54,6 +54,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 
 - [Search Insert Position](./binary-search/search-insert-position.js)
 - [Binary Search](./binary-search/binary-search.js)
+- [Binary Search Template I](./binary-search/binary-search-template-i.js)
 
 ### Easy
 
