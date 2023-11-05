@@ -56,6 +56,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Binary Search](./binary-search/binary-search.js)
 - [Binary Search Template I](./binary-search/binary-search-template-i.js)
 - [Sqrt(x)](./binary-search/sqrt-x.js)
+- [Guess Number Higher Or Lower](./binary-search/guess-number-higher-or-lower.js)
 
 ### Easy
 

@@ -25,7 +25,6 @@ function guess(n) {
   else return 0
 }
 
-// TODO: add link to README
 // TODO: add jsDoc
 
 function guessNumber(n) {
