@@ -1,7 +1,12 @@
-// * Sqrt(x)
+/**
+ * * Sqrt(x)
+ *
+ * Given a non-negative integer x, return the square root of x rounded down to the nearest integer. The returned integer should be non-negative as well
+ * @param {number} x
+ * @returns {number}
+ */
 
-// Given a non-negative integer x, return the square root of x rounded down to the nearest integer. The returned integer should be non-negative as well
-
+// O(n) time | O(1) space
 function mySqrt(x) {
   let i = 0
 
@@ -15,6 +20,7 @@ function mySqrt(x) {
 // -------------------------
 // SOLUTION 2
 
+// O(log n) time | O(1) space
 function mySqrt2(x) {
   let left = 0
   let right = x
@@ -39,6 +45,8 @@ function mySqrt2(x) {
 // SOLUTION 3
 
 // TIP: This solution uses built in methods to solve the problem
+
+// O(1) time | O(1) space
 function mySqrt3(x) {
   return Math.floor(Math.sqrt(x))
 }
