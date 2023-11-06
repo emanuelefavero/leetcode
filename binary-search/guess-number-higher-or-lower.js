@@ -1,4 +1,4 @@
-// * Guess Number Higher or Lower
+// Guess Number Higher or Lower
 
 /*
 We are playing the Guess Game. The game is as follows:
@@ -15,7 +15,12 @@ You call a pre-defined API int guess(int num), which returns three possible resu
 Return the number that I picked.
 */
 
-// NOTE: simulate guess function (this function is provided by LeetCode, we don't need to implement it)
+/**
+ * NOTE: simulate guess function (this function is provided by LeetCode, we don't need to implement it)
+ *
+ * @param {number} n
+ * @returns {number}
+ */
 
 function guess(n) {
   const pick = 6
@@ -25,8 +30,14 @@ function guess(n) {
   else return 0
 }
 
-// TODO: add jsDoc
+/**
+ * * Guess Number Higher or Lower
+ *
+ * @param {number} n
+ * @returns {number}
+ */
 
+// O(log n) time | O(1) space
 function guessNumber(n) {
   let left = 1
   let right = n
