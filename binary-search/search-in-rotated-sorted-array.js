@@ -10,6 +10,14 @@ Given the array nums after the possible rotation and an integer target, return t
 You must write an algorithm with O(log n) runtime complexity
 */
 
+/**
+ * search - Searches for a target in a rotated sorted array
+ *
+ * @param {number[]} nums
+ * @param {number} target
+ * @returns {number}
+ */
+
 // TIP: We will use binary search to solve this problem efficiently
 
 function search(nums, target) {
