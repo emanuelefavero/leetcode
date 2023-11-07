@@ -52,9 +52,10 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 
 ### Binary Search
 
+- [Binary Search Template I](./binary-search/binary-search-template-i.js)
+- [Binary Search Template II](./binary-search/binary-search-template-ii.js)
 - [Search Insert Position](./binary-search/search-insert-position.js)
 - [Binary Search](./binary-search/binary-search.js)
-- [Binary Search Template I](./binary-search/binary-search-template-i.js)
 - [Sqrt(x)](./binary-search/sqrt-x.js)
 - [Guess Number Higher Or Lower](./binary-search/guess-number-higher-or-lower.js)
 - [Search in Rotated Sorted Array](./binary-search/search-in-rotated-sorted-array.js)
