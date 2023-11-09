@@ -12,7 +12,6 @@ Given the sorted rotated array nums of unique elements, return the minimum eleme
 You must write an algorithm that runs in O(log n) time.
 */
 
-// TODO: add link to README
 // TODO: add jsDoc
 
 function findMin(nums) {

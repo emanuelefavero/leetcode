@@ -61,6 +61,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Search in Rotated Sorted Array](./binary-search/search-in-rotated-sorted-array.js)
 - [First Bad Version](./binary-search/first-bad-version.js)
 - [Find Peak Element](./binary-search/find-peak-element.js)
+- [Find Minimum In Rotated Sorted Array](./binary-search/find-minimum-in-rotated-sorted-array.js)
 
 ### Easy
 
