@@ -1,7 +1,12 @@
-// * Binary Search Template II
+/**
+ * * Binary Search Template II
+ *
+ * @param {number[]} nums
+ * @param {number} target
+ * @returns {number}
+ */
 
-// TODO: add jsDoc
-
+// O(log n) time | O(1) space
 function binarySearch(nums, target) {
   if (!nums.length) return -1
 
