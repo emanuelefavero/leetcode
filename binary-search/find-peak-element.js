@@ -13,7 +13,21 @@ function findPeakElement(nums) {
 }
 
 // ------------------------
+// SOLUTION 2 - linear search
+
+function findPeakElement2(nums) {
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] > nums[i + 1]) return i
+  }
+
+  return nums.length - 1 // if we get here, the last element is the peak
+}
+
+// ------------------------
 // TESTS
 
 console.log(findPeakElement([1, 2, 3, 1])) // 2
 console.log(findPeakElement([1, 2, 1, 3, 5, 6, 4])) // 5
+
+console.log(findPeakElement2([1, 2, 3, 1])) // 2
+console.log(findPeakElement2([1, 2, 1, 3, 5, 6, 4])) // 5
