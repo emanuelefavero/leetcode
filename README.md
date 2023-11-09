@@ -60,6 +60,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Guess Number Higher Or Lower](./binary-search/guess-number-higher-or-lower.js)
 - [Search in Rotated Sorted Array](./binary-search/search-in-rotated-sorted-array.js)
 - [First Bad Version](./binary-search/first-bad-version.js)
+- [Find Peak Element](./binary-search/find-peak-element.js)
 
 ### Easy
 
