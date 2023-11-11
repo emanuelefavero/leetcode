@@ -1,3 +1,12 @@
+/**
+ * * Binary Search Template III
+ *
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number}
+ */
+
+// O(log n) time | O(1) space
 function binarySearch(nums, target) {
   if (!nums.length) return -1
 
