@@ -10,7 +10,6 @@ You must write an algorithm with O(log n) runtime complexity
 
 // TIP: To find the range ios easy. Just run two binary searches. One that starts from the left to find the starting index and one that starts from the right to find the ending index
 
-// TODO: add link to README
 // TODO: add jsDoc
 
 function searchRange(nums, target) {
