@@ -1,3 +1,14 @@
+/**
+ * * Pow(x, n)
+ *
+ * Implement pow(x, n), which calculates x raised to the power n (i.e., xn)
+ *
+ * @param {number} x
+ * @param {number} n
+ * @returns {number}
+ */
+
+// O(log n) time | O(log n) space
 function myPow(x, n) {
   if (n === 0) return 1
 
@@ -16,6 +27,7 @@ function myPow(x, n) {
 
 // TIP: This solution uses the built-in Math.pow() method
 
+// O(log n) time | O(1) space
 const myPow2 = (x, n) => Math.pow(x, n)
 
 // ---------------------
