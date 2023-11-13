@@ -13,7 +13,6 @@ You must decrease the overall operation steps as much as possible.
 */
 
 // TODO add jsDoc
-// TODO add link to README
 
 // TIP: This solution is identical to the previous one (binary-search/find-minimum-in-rotated-sorted-array.js)
 
