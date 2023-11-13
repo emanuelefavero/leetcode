@@ -12,7 +12,7 @@
 function myPow(x, n) {
   if (n === 0) return 1
 
-  let pow = Math.abs(n) // always return a positive number
+  let pow = Math.abs(n) // always return x positive number
 
   // The following line efficiently divides the problem of exponentiation into smaller sub problems by exploiting the fact that `x^n` can be expressed as `(x^(n/2))^2` when `n` is even, and as `x * (x^(n-1)/2)^2` when `n` is odd
   let result =
@@ -31,16 +31,43 @@ function myPow(x, n) {
 const myPow2 = (x, n) => Math.pow(x, n)
 
 // ---------------------
+// SOLUTION 3
+
+// TIP: This solution uses binary search
+
+function myPow3(x, n) {
+  // BASE CASES
+  if (n === 0) return 1
+  else if (n === 1) return x
+  else if (n === -1) return 1 / x
+  // If n is even, recursively compute x^(n/2) and square the result
+  else if (n % 2 === 0) {
+    let result = myPow3(x, n / 2)
+    return result * result
+
+    // If n is odd, recursively compute x^((n-1)/2) and square the result
+  } else {
+    return x * myPow3(x, n - 1)
+  }
+}
+
+// ---------------------
 // TESTS
 
 // 1
-console.log(myPow(2, 10)) // 1024
-console.log(myPow(2, 4)) // 16
-console.log(myPow2(2, 1)) // 2
-console.log(myPow(2.0, -2)) // 0.25
+// console.log(myPow(2, 10)) // 1024
+// console.log(myPow(2, 4)) // 16
+// console.log(myPow2(2, 1)) // 2
+// console.log(myPow(2.0, -2)) // 0.25
 
-// 2
-console.log(myPow2(2, 10)) // 1024
-console.log(myPow2(2, 4)) // 16
-console.log(myPow2(2, 1)) // 2
-console.log(myPow2(2.0, -2)) // 0.25
+// // 2
+// console.log(myPow2(2, 10)) // 1024
+// console.log(myPow2(2, 4)) // 16
+// console.log(myPow2(2, 1)) // 2
+// console.log(myPow2(2.0, -2)) // 0.25
+
+// 3
+console.log(myPow3(2, 10)) // 1024
+console.log(myPow3(2, 4)) // 16
+console.log(myPow3(2, 1)) // 2
+console.log(myPow3(2.0, -2)) // 0.25
