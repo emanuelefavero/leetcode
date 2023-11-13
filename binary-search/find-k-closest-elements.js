@@ -9,6 +9,14 @@ An integer a is closer to x than an integer b if:
 |a - x| == |b - x| and a < b
 */
 
+/**
+ * @param {number[]} arr
+ * @param {number} k
+ * @param {number} x
+ * @returns {number[]}
+ */
+
+// O(n) time | O(1) space
 function findClosestElements(arr, k, x) {
   let left = 0
   let right = arr.length - 1
@@ -28,6 +36,7 @@ function findClosestElements(arr, k, x) {
 
 // TIP: This solution uses binary search
 
+// O(log n) time | O(1) space
 function findClosestElements2(arr, k, x) {
   let left = 0
   let right = arr.length - 1
