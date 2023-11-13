@@ -6,8 +6,13 @@ You are given an array of characters letters that is sorted in non-decreasing or
 Return the smallest character in letters that is lexicographically greater than target. If such a character does not exist, return the first character in letters.
 */
 
-// TODO: add jsDoc
+/**
+ * @param {string[]} letters
+ * @param {string} target
+ * @returns {string}
+ */
 
+// O(n) time | O(1) space
 function nextGreatestLetter(letters, target) {
   for (let letter of letters) {
     if (letter.charCodeAt(0) > target.charCodeAt(0)) return letter
@@ -21,6 +26,7 @@ function nextGreatestLetter(letters, target) {
 
 // TIP: This solution uses binary search
 
+// O(log n) time | O(1) space
 function nextGreatestLetter2(letters, target) {
   let left = 0
   let right = letters.length - 1
