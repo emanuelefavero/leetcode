@@ -64,6 +64,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Find Peak Element](./binary-search/find-peak-element.js)
 - [Find Minimum In Rotated Sorted Array](./binary-search/find-minimum-in-rotated-sorted-array.js)
 - [Search For A Range](./binary-search/search-for-a-range.js)
+- [Find K Closest Elements](./binary-search/find-k-closest-elements.js)
 
 ### Easy
 
