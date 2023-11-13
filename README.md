@@ -55,6 +55,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Binary Search Template I](./binary-search/binary-search-template-i.js)
 - [Binary Search Template II](./binary-search/binary-search-template-ii.js)
 - [Binary Search Template II](./binary-search/binary-search-template-iii.js)
+- [Recursive Binary Search](./binary-search/recursive-binary-search.js)
 - [Search Insert Position](./binary-search/search-insert-position.js)
 - [Binary Search](./binary-search/binary-search.js)
 - [Sqrt(x)](./binary-search/sqrt-x.js)
