@@ -2,6 +2,15 @@
 
 // TIP: This is an implementation of the binary search algorithm using recursion
 
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @param {number} left
+ * @param {number} right
+ * @returns {number}
+ */
+
+// O(log n) time | O(log n) space
 function binarySearch(nums, target, left = 0, right = nums.length - 1) {
   if (left > right) return -1 // BASE CASE
 
