@@ -67,6 +67,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Search For A Range](./binary-search/search-for-a-range.js)
 - [Find K Closest Elements](./binary-search/find-k-closest-elements.js)
 - [Pow(x, n)](./binary-search/pow-x-n.js)
+- [Valid Perfect Square](./binary-search/valid-perfect-square.js)
 
 ### Easy
 
