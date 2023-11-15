@@ -6,7 +6,6 @@
 
 // TIP: This solution uses recursion
 
-// TODO add link to readme
 // TODO add jsDoc
 
 function getRow(rowIndex) {
