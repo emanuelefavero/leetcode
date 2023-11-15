@@ -12,16 +12,24 @@ class TreeNode {
   }
 }
 
+// TIP: This solution uses recursion
+
 function searchBST(root, val) {
   if (!root) return null
+
   if (root.val === val) return root
 
   if (val < root.val) return searchBST(root.left, val)
-  else if (val > root.val) return searchBST(root.right, val)
+  else return searchBST(root.right, val)
 }
 
-/*
-function searchBST(root, val) {
+// -----------------------------
+// SOLUTION 2
+
+// TODO add link to readme
+// TODO add jsDoc
+
+function searchBST2(root, val) {
   let current = root
 
   while (current) {
@@ -33,7 +41,6 @@ function searchBST(root, val) {
 
   return null
 }
-*/
 
 // -----------------------------
 // TESTS
@@ -44,5 +51,10 @@ root.right = new TreeNode(7)
 root.left.left = new TreeNode(1)
 root.left.right = new TreeNode(3)
 
+// 1
 console.log(searchBST(root, 2)) // 2 -> 1 -> 3
 console.log(searchBST(root, 5)) // null
+
+// 2
+console.log(searchBST2(root, 2)) // 2 -> 1 -> 3
+console.log(searchBST2(root, 5)) // null
