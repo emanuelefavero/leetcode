@@ -150,6 +150,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Print Reverse](./recursion/print-reverse.js)
 - [Reverse String](./recursion/reverse-string.js)
 - [Swap Nodes In Pairs](./recursion/swap-nodes-in-pairs.js)
+- [Reverse Linked List](./recursion/reverse-linked-list.js)
 
 ### Stack
 
