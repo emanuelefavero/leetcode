@@ -33,7 +33,41 @@ function getRow(rowIndex) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: This solution does not use recursion (you can also find this solution in array/pascal-triangle-ii.js).
+
+function getRow2(rowIndex) {
+  let result = []
+
+  // loop through the number of rows
+  for (let i = 0; i <= rowIndex; i++) {
+    let row = []
+
+    // loop through the current row
+    for (let j = 0; j <= i; j++) {
+      // if we are at the first or last column, add 1 (the first or last column always has 1)
+      if (j === 0 || j === i) {
+        row.push(1)
+      } else {
+        // otherwise, add the sum of the two numbers above the current number
+        row.push(result[i - 1][j - 1] + result[i - 1][j])
+      }
+    }
+
+    result.push(row)
+  }
+
+  return result[rowIndex] // return the sub array at the rowIndex
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(getRow(3)) // [1, 3, 3, 1]
 console.log(getRow(1)) // [1, 1]
+
+// 2
+console.log(getRow2(3)) // [1, 3, 3, 1]
+console.log(getRow2(1)) // [1, 1]
