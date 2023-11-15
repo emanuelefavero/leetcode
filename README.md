@@ -151,6 +151,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Reverse String](./recursion/reverse-string.js)
 - [Swap Nodes In Pairs](./recursion/swap-nodes-in-pairs.js)
 - [Reverse Linked List](./recursion/reverse-linked-list.js)
+- [Search In A Binary Search Tree](./recursion/search-in-a-binary-search-tree.js)
 
 ### Stack
 

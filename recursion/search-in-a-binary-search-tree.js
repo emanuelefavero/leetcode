@@ -26,7 +26,6 @@ function searchBST(root, val) {
 // -----------------------------
 // SOLUTION 2
 
-// TODO add link to readme
 // TODO add jsDoc
 
 function searchBST2(root, val) {
