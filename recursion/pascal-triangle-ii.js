@@ -1,13 +1,18 @@
-// * Pascal's Triangle II
-
-// Given an integer rowIndex, return the rowIndexth (0-indexed) row of the Pascal's triangle.
-
-// In Pascal's triangle, each number is the sum of the two numbers directly above it as shown: @see https://leetcode.com/explore/learn/card/recursion-i/251/scenario-i-recurrence-relation/3234
+/**
+ * * Pascal's Triangle II
+ *
+ * Given an integer rowIndex, return the rowIndexth (0-indexed) row of the Pascal's triangle
+ *
+ * In Pascal's triangle, each number is the sum of the two numbers directly above it as shown:
+ * @see https://leetcode.com/explore/learn/card/recursion-i/251/scenario-i-recurrence-relation/3234
+ *
+ * @param {*} rowIndex
+ * @returns
+ */
 
 // TIP: This solution uses recursion
 
-// TODO add jsDoc
-
+// O(n^2) time | O(n) space
 function getRow(rowIndex) {
   if (rowIndex === 0) return [1]
 
