@@ -148,6 +148,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 
 - [Fibonacci Number](./recursion/fibonacci-number.js)
 - [Print Reverse](./recursion/print-reverse.js)
+- [Reverse String](./recursion/reverse-string.js)
 
 ### Stack
 
