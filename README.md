@@ -147,6 +147,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 ### Recursion
 
 - [Fibonacci Number](./recursion/fibonacci-number.js)
+- [Print Reverse](./recursion/print-reverse.js)
 
 ### Stack
 
