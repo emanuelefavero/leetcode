@@ -1,6 +1,6 @@
-// * Reverse Linked List
-
-// Given the head of a singly linked list, reverse the list, and return the reversed list.
+/**
+ * @typedef ListNode {object}
+ */
 
 class ListNode {
   constructor(val) {
@@ -9,6 +9,16 @@ class ListNode {
   }
 }
 
+/**
+ * * Reverse Linked List
+ *
+ * Given the head of a singly linked list, reverse the list, and return the reversed list
+ *
+ * @param {ListNode} head
+ * @returns {ListNode}
+ */
+
+// O(n) time | O(1) space
 function reverseList(head) {
   let prev = null
   let current = head
@@ -28,8 +38,7 @@ function reverseList(head) {
 
 // TIP: This solution uses recursion
 
-// TODO: jsDoc
-
+// O(n) time | O(n) space
 function reverseList2(head, prev = null) {
   if (!head) return prev
 
