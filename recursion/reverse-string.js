@@ -1,11 +1,17 @@
-// * Reverse String
-
-// Write a function that reverses a string. The input string is given as an array of characters s.
-
-// You must do this by modifying the input array in-place with O(1) extra memory.
+/**
+ * * Reverse String
+ *
+ * Write a function that reverses a string. The input string is given as an array of characters s
+ *
+ * You must do this by modifying the input array in-place with O(1) extra memory
+ *
+ * @param {string[]} s
+ * @returns {string[]}
+ */
 
 // TIP: This solution uses recursion
 
+// O(n) time | O(n) space
 function reverseString(s) {
   if (s.length === 0) return s
 
@@ -23,6 +29,7 @@ function reverseString(s) {
 
 // TIP: This solution does not use recursion
 
+// O(n) time | O(1) space
 function reverseString2(s) {
   let left = 0
   let right = s.length - 1
