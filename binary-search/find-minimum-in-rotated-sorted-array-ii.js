@@ -12,10 +12,14 @@ Given the sorted rotated array nums THAT MAY CONTAIN DUPLICATES, return the mini
 You must decrease the overall operation steps as much as possible.
 */
 
-// TODO add jsDoc
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
 
 // TIP: This solution is identical to the previous one (binary-search/find-minimum-in-rotated-sorted-array.js)
 
+// O(n) time | O(1) space
 function findMin(nums) {
   for (let i = 0; i < nums.length; i++) {
     // Check if current element is less than previous element, if so, return current element
@@ -32,6 +36,7 @@ function findMin(nums) {
 
 // TIP: This solution uses binary search
 
+// O(log n) time | O(1) space
 function findMin2(nums) {
   let left = 0
   let right = nums.length - 1
