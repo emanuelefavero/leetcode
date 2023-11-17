@@ -154,6 +154,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Search In A Binary Search Tree](./recursion/search-in-a-binary-search-tree.js)
 - [Pascal Triangle II](./recursion/pascal-triangle-ii.js)
 - [Climbing Stairs](./recursion/climbing-stairs.js)
+- [Maximum Depth Of Binary Tree](./recursion/maximum-depth-of-binary-tree.js)
 
 ### Stack
 
