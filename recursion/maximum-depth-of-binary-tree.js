@@ -1,4 +1,12 @@
+/**
+ * @typedef {Object} TreeNode
+ */
+
 class TreeNode {
+  /**
+   * @param {number} val
+   */
+
   constructor(val) {
     this.val = val
     this.left = null
@@ -6,6 +14,17 @@ class TreeNode {
   }
 }
 
+/**
+ * * Maximum Depth of Binary Tree
+ *
+ * Given the root of a binary tree, return its maximum depth.
+ * A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node
+ *
+ * @param {TreeNode} root
+ * @returns {number}
+ */
+
+// O(n) time | O(n) space
 function maxDepth(root) {
   if (!root) return 0
 
