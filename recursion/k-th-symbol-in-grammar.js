@@ -4,6 +4,15 @@
 // For example, for n = 3, the 1st row is 0, the 2nd row is 01, and the 3rd row is 0110.
 // Given two integer n and k, return the kth (1-indexed) symbol in the nth row of a table of n rows.
 
+/**
+ * @param {number} n
+ * @param {number} k
+ * @returns {number}
+ */
+
+// TIP: This solution uses recursion
+
+// O(n) time | O(n) space
 function kthGrammar(n, k) {
   // base case - check if we are in the first row
   if (n === 1 && k === 1) return 0
