@@ -1,14 +1,21 @@
-// * Climbing Stairs
+/**
+ * * Climbing Stairs
+ *
+ * You are climbing a staircase. It takes n steps to reach the top.
+ * Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+ *
+ * @param {number} n
+ * @param {object} memo
+ * @returns {number}
+ */
 
-// You are climbing a staircase. It takes n steps to reach the top
+// TIP: This solution is identical to fibonacci number
 
-// Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
-
+// O(2^n) time | O(n) space
 function climbStairs(n, memo = {}) {
   if (n === 0 || n === 1) return 1
 
   if (!memo[n]) {
-    // ? this problem is similar to fibonacci number
     return (memo[n] = climbStairs(n - 1, memo) + climbStairs(n - 2, memo))
   }
 
