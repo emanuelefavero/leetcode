@@ -1,6 +1,6 @@
-// * Merge Two Sorted Lists
-
-//  Given two sorted linked lists, merge them in order. Return the merged list
+/**
+ * @typedef {Object} ListNode
+ */
 
 class ListNode {
   constructor(val) {
@@ -9,9 +9,20 @@ class ListNode {
   }
 }
 
+/**
+ * * Merge Two Sorted Lists
+ *
+ * Given two sorted linked lists, merge them in order. Return the merged list
+ *
+ * @param {ListNode} list1
+ * @param {ListNode} list2
+ * @returns {ListNode}
+ */
+
 // TIP: You can find the same solution in linked-list/merge-two-sorted-lists.js
 // TIP: This solution uses recursion
 
+// O(n + m) time | O(n + m) space
 function mergeTwoLists(list1, list2) {
   if (!list1) return list2
   if (!list2) return list1
