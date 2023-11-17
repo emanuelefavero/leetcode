@@ -157,6 +157,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Maximum Depth Of Binary Tree](./recursion/maximum-depth-of-binary-tree.js)
 - [Merge Two Sorted Lists](./recursion/merge-two-sorted-lists.js)
 - [K-th Symbol In Grammar](./recursion/k-th-symbol-in-grammar.js)
+- [Unique Binary Search Trees II](./recursion/unique-binary-search-trees-ii.js)
 
 ### Stack
 
