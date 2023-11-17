@@ -155,6 +155,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Pascal Triangle II](./recursion/pascal-triangle-ii.js)
 - [Climbing Stairs](./recursion/climbing-stairs.js)
 - [Maximum Depth Of Binary Tree](./recursion/maximum-depth-of-binary-tree.js)
+- [Merge Two Sorted Lists](./recursion/merge-two-sorted-lists.js)
 
 ### Stack
 

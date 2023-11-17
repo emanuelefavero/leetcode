@@ -27,6 +27,18 @@ function myPow(x, n) {
   }
 }
 
+// TODO commit solution 2
+
+// ---------------------
+// SOLUTION 2
+
+// TIP: This solution uses the built-in Math.pow() method
+
+// O(log n) time | O(1) space
+function myPow2(x, n) {
+  return Math.pow(x, n)
+}
+
 // ---------------------
 // TESTS
 
@@ -35,3 +47,9 @@ console.log(myPow(2, 10)) // 1024
 console.log(myPow(2, 4)) // 16
 console.log(myPow(2, 1)) // 2
 console.log(myPow(2.0, -2)) // 0.25
+
+// 2
+console.log(myPow2(2, 10)) // 1024
+console.log(myPow2(2, 4)) // 16
+console.log(myPow2(2, 1)) // 2
+console.log(myPow2(2.0, -2)) // 0.25
