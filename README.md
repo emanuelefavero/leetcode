@@ -153,6 +153,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Reverse Linked List](./recursion/reverse-linked-list.js)
 - [Search In A Binary Search Tree](./recursion/search-in-a-binary-search-tree.js)
 - [Pascal Triangle II](./recursion/pascal-triangle-ii.js)
+- [Climbing Stairs](./recursion/climbing-stairs.js)
 
 ### Stack
 
