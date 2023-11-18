@@ -20,6 +20,10 @@ output: [
 ]
 */
 
+/**
+ * @typedef {Object} TreeNode
+ */
+
 class TreeNode {
   constructor(val, left, right) {
     this.val = val
@@ -28,7 +32,10 @@ class TreeNode {
   }
 }
 
-// TODO add jsDoc
+/**
+ * @param {number} n
+ * @returns {TreeNode[]}
+ */
 
 function generateTrees(n) {
   if (n === 0) return [] // edge case
