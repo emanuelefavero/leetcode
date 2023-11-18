@@ -28,10 +28,37 @@ class TreeNode {
   }
 }
 
-// TODO commit this file
 // TODO add jsDoc
 
-function generateTrees(n) {}
+function generateTrees(n) {
+  if (n === 0) return [] // edge case
+
+  function generateBacktrack(start, end) {
+    if (start > end) return [null] // base case
+
+    let result = []
+
+    for (let i = start; i <= end; i++) {
+      let leftTrees = generateBacktrack(start, i - 1)
+      let rightTrees = generateBacktrack(i + 1, end)
+
+      for (let l of leftTrees) {
+        for (let r of rightTrees) {
+          let current = new TreeNode(i)
+
+          current.left = l
+          current.right = r
+
+          result.push(current)
+        }
+      }
+    }
+
+    return result
+  }
+
+  return generateBacktrack(1, n) // start = 1, end = n
+}
 
 // -----------------------------
 // TESTS
