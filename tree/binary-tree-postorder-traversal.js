@@ -33,6 +33,27 @@ function postorderTraversal(root, result = []) {
 }
 
 // -----------------------------
+// SOLUTION 2
+
+// O(n) time | O(n) space - iterative approach (using stack)
+function postorderTraversal2(root) {
+  let result = []
+  let stack = [root]
+
+  while (stack.length) {
+    let current = stack.pop()
+
+    if (current) {
+      result.unshift(current.val) // unshift instead of push (add at beginning)
+      stack.push(current.left)
+      stack.push(current.right)
+    }
+  }
+
+  return result
+}
+
+// -----------------------------
 // TESTS
 
 let root = new TreeNode(1)
@@ -40,3 +61,4 @@ root.right = new TreeNode(2)
 root.right.left = new TreeNode(3)
 
 console.log(postorderTraversal(root)) // [3, 2, 1]
+console.log(postorderTraversal2(root)) // [3, 2, 1]
