@@ -188,6 +188,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Binary Tree Inorder Traversal](./tree/binary-tree-inorder-traversal.js)
 - [Binary Tree Preorder Traversal](./tree/binary-tree-preorder-traversal.js)
 - [Binary Tree Postorder Traversal](./tree/binary-tree-postorder-traversal.js)
+- [Binary Tree Level Order Traversal](./tree/binary-tree-level-order-traversal.js)
 - [Root Equal Sum Of Children](./tree/root-equal-sum-of-children.js)
 
 ## License

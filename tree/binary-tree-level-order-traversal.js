@@ -14,7 +14,7 @@ class TreeNode {
 }
 
 /**
- * * Given the root of a binary tree, return the level order traversal of its nodes' values
+ * * Given the root of a binary tree, return the level order traversal of its nodes' values (Breath First Search)
  *
  * @param {TreeNode} root
  * @returns {number[]}
