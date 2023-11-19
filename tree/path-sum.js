@@ -13,7 +13,6 @@ class TreeNode {
 }
 
 // TODO jsDoc
-// TODO link README
 
 function hasPathSum(root, targetSum) {
   if (!root) return false

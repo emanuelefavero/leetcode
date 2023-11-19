@@ -192,6 +192,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Root Equal Sum Of Children](./tree/root-equal-sum-of-children.js)
 - [Maximum Depth Of Binary Tree](./tree/maximum-depth-of-binary-tree.js)
 - [Symmetric Tree](./tree/symmetric-tree.js)
+- [Path Sum](./tree/path-sum.js)
 
 ## License
 
