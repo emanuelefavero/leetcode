@@ -11,6 +11,11 @@ Example:
 3    4 4    3
 */
 
+/**
+ * @typedef {Object} TreeNode
+ * @property {number} val
+ */
+
 class TreeNode {
   constructor(val) {
     this.val = val
@@ -19,8 +24,12 @@ class TreeNode {
   }
 }
 
-// TODO add jsDoc
+/**
+ * @param {TreeNode} root
+ * @returns {boolean}
+ */
 
+// O(n) time | O(n) space - recursive approach
 function isSymmetric(root) {
   if (!root) return true
 
