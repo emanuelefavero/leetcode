@@ -6,6 +6,9 @@ class TreeNode {
   }
 }
 
+// TIP: You can find the same problem in the "recursion" folder
+// TIP: This is a "bottom-up" recursion approach
+
 function maxDepth(root) {
   if (!root) return 0
 

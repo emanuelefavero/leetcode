@@ -190,6 +190,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Binary Tree Postorder Traversal](./tree/binary-tree-postorder-traversal.js)
 - [Binary Tree Level Order Traversal](./tree/binary-tree-level-order-traversal.js)
 - [Root Equal Sum Of Children](./tree/root-equal-sum-of-children.js)
+- [Maximum Depth Of Binary Tree](./tree/maximum-depth-of-binary-tree.js)
 
 ## License
 
