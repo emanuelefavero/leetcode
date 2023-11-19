@@ -20,7 +20,6 @@ class TreeNode {
 }
 
 // TODO add jsDoc
-// TODO add link to README
 
 function isSymmetric(root) {
   if (!root) return true
