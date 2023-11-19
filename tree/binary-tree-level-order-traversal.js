@@ -1,3 +1,10 @@
+/**
+ * @typedef {Object} TreeNode
+ * @property {number} val
+ * @property {TreeNode} left
+ * @property {TreeNode} right
+ */
+
 class TreeNode {
   constructor(val, left, right) {
     this.val = val || 0
@@ -6,6 +13,14 @@ class TreeNode {
   }
 }
 
+/**
+ * * Given the root of a binary tree, return the level order traversal of its nodes' values
+ *
+ * @param {TreeNode} root
+ * @returns {number[]}
+ */
+
+// O(n) time | O(n) space - iterative approach (using queue)
 function levelOrder(root) {
   if (!root) return []
 
