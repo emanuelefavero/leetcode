@@ -1,3 +1,10 @@
+/**
+ * @typedef {Object} TreeNode
+ * @property {number} val
+ * @property {TreeNode} left
+ * @property {TreeNode} right
+ */
+
 class TreeNode {
   constructor(val, left, right) {
     this.val = val || 0
@@ -5,6 +12,15 @@ class TreeNode {
     this.right = right || null
   }
 }
+
+/**
+ * * Maximum Depth of Binary Tree
+ *
+ * Given the root of a binary tree, return its maximum depth. A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
+ *
+ * @param {TreeNode} root
+ * @returns {number}
+ */
 
 // TIP: You can find the same problem in the "recursion" folder
 // TIP: This is a "bottom-up" recursion approach
