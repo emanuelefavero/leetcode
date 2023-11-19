@@ -187,6 +187,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 
 - [Root Equal Sum Of Children](./tree/root-equal-sum-of-children.js)
 - [Binary Tree Inorder Traversal](./tree/binary-tree-inorder-traversal.js)
+- [Binary Tree Preorder Traversal](./tree/binary-tree-preorder-traversal.js)
 
 ## License
 
