@@ -33,6 +33,27 @@ function preorderTraversal(root, result = []) {
 }
 
 // -----------------------------
+// SOLUTION 2
+
+// O(n) time | O(n) space - iterative approach (using stack)
+function preorderTraversal2(root) {
+  let result = []
+  let stack = [root]
+
+  while (stack.length) {
+    let current = stack.pop()
+
+    if (current) {
+      result.push(current.val)
+      stack.push(current.right)
+      stack.push(current.left)
+    }
+  }
+
+  return result
+}
+
+// -----------------------------
 // TESTS
 
 let root = new TreeNode(1)
@@ -40,3 +61,4 @@ root.right = new TreeNode(2)
 root.right.left = new TreeNode(3)
 
 console.log(preorderTraversal(root)) // [1, 2, 3]
+console.log(preorderTraversal2(root)) // [1, 2, 3]
