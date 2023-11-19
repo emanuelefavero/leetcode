@@ -1,3 +1,10 @@
+/**
+ * @typedef {Object} TreeNode
+ * @property {number} val
+ * @property {TreeNode} left
+ * @property {TreeNode} right
+ */
+
 class TreeNode {
   constructor(val, left, right) {
     this.val = val || 0
@@ -6,6 +13,15 @@ class TreeNode {
   }
 }
 
+/**
+ * * Given the root of a binary tree, return the preorder traversal of its nodes' values
+ *
+ * @param {TreeNode} root
+ * @param {number[]} result
+ * @returns {number[]}
+ */
+
+// O(n) time | O(n) space - recursive approach
 function preorderTraversal(root, result = []) {
   if (!root) return result
 
@@ -19,8 +35,8 @@ function preorderTraversal(root, result = []) {
 // -----------------------------
 // TESTS
 
-let tree = new TreeNode(1)
-tree.right = new TreeNode(2)
-tree.right.left = new TreeNode(3)
+let root = new TreeNode(1)
+root.right = new TreeNode(2)
+root.right.left = new TreeNode(3)
 
-console.log(preorderTraversal(tree)) // [1, 2, 3]
+console.log(preorderTraversal(root)) // [1, 2, 3]
