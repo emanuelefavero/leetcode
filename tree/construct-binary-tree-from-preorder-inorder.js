@@ -1,6 +1,9 @@
-// * Construct Binary Tree from Preorder and Inorder Traversal
-
-// Given two integer arrays preorder and inorder where preorder is the preorder traversal of a binary tree and inorder is the inorder traversal of the same tree, construct and return the binary tree.
+/**
+ * @typedef {Object} TreeNode
+ * @property {number} val
+ * @property {TreeNode} left
+ * @property {TreeNode} right
+ */
 
 class TreeNode {
   constructor(val, left, right) {
@@ -10,6 +13,17 @@ class TreeNode {
   }
 }
 
+/**
+ * * Construct Binary Tree from Preorder and Inorder Traversal
+ *
+ * Given two integer arrays preorder and inorder where preorder is the preorder traversal of a binary tree and inorder is the inorder traversal of the same tree, construct and return the binary tree.
+ *
+ * @param {number[]} inorder
+ * @param {number[]} postorder
+ * @returns {TreeNode}
+ */
+
+// O(n) time | O(n) space
 function buildTree(preorder, inorder) {
   let hash = {}
   for (let i = 0; i < inorder.length; i++) hash[inorder[i]] = i
@@ -31,6 +45,7 @@ function buildTree(preorder, inorder) {
 // -----------------------------
 // SOLUTION 2
 
+// O(n) time | O(n) space
 function buildTree2(preorder, inorder) {
   let p = 0
   let i = 0
