@@ -29,9 +29,34 @@ function buildTree(preorder, inorder) {
 }
 
 // -----------------------------
+// SOLUTION 2
+
+function buildTree2(preorder, inorder) {
+  let p = 0
+  let i = 0
+
+  function recurse(stop) {
+    if (inorder[i] !== stop) {
+      let root = new TreeNode(preorder[p++])
+      root.left = recurse(root.val)
+      i++
+      root.right = recurse(stop)
+      return root
+    }
+
+    return null // base case
+  }
+
+  return recurse()
+}
+
+// -----------------------------
 // TESTS
 
 let preorder = [3, 9, 20, 15, 7]
 let inorder = [9, 3, 15, 20, 7]
 
-console.log(buildTree(preorder, inorder)) // [3,9,20,null,null,15,7]
+// NOTE: Only one log statement can be used at a time
+
+// console.log(buildTree(preorder, inorder)) // [3,9,20,null,null,15,7]
+console.log(buildTree2(preorder, inorder)) // [3,9,20,null,null,15,7]
