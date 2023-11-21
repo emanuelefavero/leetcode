@@ -23,6 +23,8 @@ class TreeNode {
  * @returns {TreeNode}
  */
 
+// TIP: The first element of preorder will always be the root of a subtree. We can determine its left and right subtrees by finding its position in the inorder array. The left subtree will be the elements to the left of the root in the inorder array, and the right subtree will be the elements to the right of the root in the inorder array.
+
 // O(n) time | O(n) space
 function buildTree(preorder, inorder) {
   let hash = {}
@@ -66,6 +68,23 @@ function buildTree2(preorder, inorder) {
 }
 
 // -----------------------------
+// SOLUTION 3
+
+// O(n) time | O(n) space
+function buildTree3(preorder, inorder) {
+  if (!preorder.length || !inorder.length) return null
+
+  let root = new TreeNode(preorder[0]) // first element of preorder is root
+  let middle = inorder.indexOf(preorder[0]) // find root in inorder
+  root.left = buildTree3(
+    preorder.slice(1, middle + 1), // ? 1 starts at 1 index to skip root
+    inorder.slice(0, middle)
+  )
+  root.right = buildTree3(preorder.slice(middle + 1), inorder.slice(middle + 1))
+  return root
+}
+
+// -----------------------------
 // TESTS
 
 let preorder = [3, 9, 20, 15, 7]
@@ -74,4 +93,5 @@ let inorder = [9, 3, 15, 20, 7]
 // NOTE: Only one log statement can be used at a time
 
 // console.log(buildTree(preorder, inorder)) // [3,9,20,null,null,15,7]
-console.log(buildTree2(preorder, inorder)) // [3,9,20,null,null,15,7]
+// console.log(buildTree2(preorder, inorder)) // [3,9,20,null,null,15,7]
+console.log(buildTree3(preorder, inorder)) // [3,9,20,null,null,15,7]
