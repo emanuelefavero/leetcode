@@ -193,6 +193,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Maximum Depth Of Binary Tree](./tree/maximum-depth-of-binary-tree.js)
 - [Symmetric Tree](./tree/symmetric-tree.js)
 - [Path Sum](./tree/path-sum.js)
+- [Construct Binary Tree From Inorder And Postorder Traversal](./tree/construct-binary-tree-from-inorder-postorder.js)
 
 ## License
 
