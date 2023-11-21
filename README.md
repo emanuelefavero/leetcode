@@ -195,6 +195,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Path Sum](./tree/path-sum.js)
 - [Construct Binary Tree From Inorder And Postorder Traversal](./tree/construct-binary-tree-from-inorder-postorder.js)
 - [Construct Binary Tree From Preorder And Inorder Traversal](./tree/construct-binary-tree-from-preorder-inorder.js)
+- [Populating Next Right Pointers in Each Node](./tree/populating-next-right-pointers.js)
 
 ## License
 
