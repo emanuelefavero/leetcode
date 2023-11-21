@@ -14,9 +14,6 @@ class TreeNode {
   }
 }
 
-// TODO add link to README
-// TODO add jsDoc
-
 function serialize(root) {
   let data = []
 
@@ -58,4 +55,8 @@ root.right = new TreeNode(3)
 root.right.left = new TreeNode(4)
 root.right.right = new TreeNode(5)
 
-console.log(deserialize(serialize(root))) // [1,2,3,null,null,4,5]
+// 1
+// console.log(deserialize(serialize(root))) // [1,2,3,null,null,4,5]
+
+// 2
+console.log(deserialize2(serialize2(root))) // [1,2,3,null,null,4,5]
