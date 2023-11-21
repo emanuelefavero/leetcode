@@ -4,6 +4,10 @@
 
 // A leaf is a node with no children.
 
+/**
+ * @typedef {Object} TreeNode
+ */
+
 class TreeNode {
   constructor(val, left, right) {
     this.val = val || 0
@@ -12,8 +16,13 @@ class TreeNode {
   }
 }
 
-// TODO jsDoc
+/**
+ * @param {TreeNode} root
+ * @param {number} targetSum
+ * @returns {boolean}
+ */
 
+// O(n) time | O(n) space - recursive approach
 function hasPathSum(root, targetSum) {
   if (!root) return false
   if (!root.left && !root.right) return targetSum === root.val
