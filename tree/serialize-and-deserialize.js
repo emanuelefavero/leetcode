@@ -47,6 +47,21 @@ function deserialize(data) {
 }
 
 // -----------------------------
+// SOLUTION 2
+
+// TODO add jsDoc to serialize and deserialize functions
+
+// TIP: This solution uses built in methods (JSON.stringify, JSON.parse) and it is more efficient than the first solution
+
+function serialize2(root) {
+  return JSON.stringify(root)
+}
+
+function deserialize2(data) {
+  return JSON.parse(data)
+}
+
+// -----------------------------
 // TESTS
 
 let root = new TreeNode(1)
