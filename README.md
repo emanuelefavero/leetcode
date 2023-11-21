@@ -197,6 +197,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Construct Binary Tree From Preorder And Inorder Traversal](./tree/construct-binary-tree-from-preorder-inorder.js)
 - [Populating Next Right Pointers in Each Node](./tree/populating-next-right-pointers.js)
 - [Populating Next Right Pointers in Each Node II](./tree/populating-next-right-pointers-ii.js)
+- [Lowest Common Ancestor of a Binary Tree](./tree/lowest-common-ancestor.js)
 
 ## License
 
