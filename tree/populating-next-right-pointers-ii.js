@@ -14,6 +14,14 @@ Populate each next pointer to point to its next right node. If there is no next 
 Initially, all next pointers are set to NULL.
 */
 
+/**
+ * @typedef {Object} Node
+ * @property {number} val
+ * @property {Node} left
+ * @property {Node} right
+ * @property {Node} next
+ */
+
 class Node {
   constructor(val, left, right, next) {
     this.val = val || null
@@ -23,6 +31,15 @@ class Node {
   }
 }
 
+/**
+ * For example, given the following perfect binary tree:
+ * @see https://leetcode.com/explore/learn/card/data-structure-tree/133/conclusion/1016/
+ *
+ * @param {Node} root
+ * @returns {Node}
+ */
+
+// O(n) time | O(n) space
 function connect(root) {
   if (!root) return root
 
