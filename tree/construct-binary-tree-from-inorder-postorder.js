@@ -1,6 +1,9 @@
-// * Construct Binary Tree from Inorder and Postorder Traversal
-
-// Given two integer arrays inorder and postorder where inorder is the inorder traversal of a binary tree and postorder is the postorder traversal of the same tree, construct and return the binary tree.
+/**
+ * @typedef {Object} TreeNode
+ * @property {number} val
+ * @property {TreeNode} left
+ * @property {TreeNode} right
+ */
 
 class TreeNode {
   constructor(val, left, right) {
@@ -10,8 +13,19 @@ class TreeNode {
   }
 }
 
+/**
+ * * Construct Binary Tree from Inorder and Postorder Traversal
+ *
+ * Given two integer arrays inorder and postorder where inorder is the inorder traversal of a binary tree and postorder is the postorder traversal of the same tree, construct and return the binary tree
+ *
+ * @param {number[]} inorder
+ * @param {number[]} postorder
+ * @returns {TreeNode}
+ */
+
 // TIP: The last element of postorder will always be the root of a subtree. We can determine its left and right subtrees by finding its position in the inorder array. The left subtree will be the elements to the left of the root in the inorder array, and the right subtree will be the elements to the right of the root in the inorder array.
 
+// O(n) time | O(n) space
 function buildTree(inorder, postorder) {
   // Store inorder values in hash table
   let hash = {}
