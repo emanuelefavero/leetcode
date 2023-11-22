@@ -6,6 +6,11 @@
 
 // Clarification: The input/output format is the same as how LeetCode serializes a binary tree. You do not necessarily need to follow this format, so please be creative and come up with different approaches yourself.
 
+/**
+ * @typedef {Object} TreeNode
+ * @property {number} val
+ */
+
 class TreeNode {
   constructor(val) {
     this.val = val
@@ -14,6 +19,12 @@ class TreeNode {
   }
 }
 
+/**
+ * @param {TreeNode} root
+ * @returns {number[]}
+ */
+
+// O(n) time | O(n) space - recursive approach
 function serialize(root) {
   let data = []
 
@@ -30,6 +41,12 @@ function serialize(root) {
   return data
 }
 
+/**
+ * @param {number[]} data
+ * @returns {TreeNode}
+ */
+
+// O(n) time | O(n) space - recursive approach
 function deserialize(data) {
   function recurse() {
     if (!data.length) return
@@ -48,8 +65,6 @@ function deserialize(data) {
 
 // -----------------------------
 // SOLUTION 2
-
-// TODO add jsDoc to serialize and deserialize functions
 
 // TIP: This solution uses built in methods (JSON.stringify, JSON.parse) and it is more efficient than the first solution
 
