@@ -1,14 +1,28 @@
+/**
+ * @typedef {Object} Node
+ */
+
 class Node {
   constructor() {
     this.children = {}
   }
 }
 
+/**
+ * @typedef {Object} Trie
+ */
+
 class Trie {
   constructor() {
     this.root = new Node()
   }
 
+  /**
+   * @param {string} word
+   * @return {void}
+   */
+
+  // O(n)
   insert(word) {
     let current = this.root
 
@@ -23,6 +37,12 @@ class Trie {
     current.isWord = true
   }
 
+  /**
+   * @param {string} word
+   * @returns {boolean}
+   */
+
+  // O(n)
   search(word) {
     let current = this.root
 
@@ -34,6 +54,12 @@ class Trie {
     return current.isWord === true
   }
 
+  /**
+   * @param {string} prefix
+   * @returns {boolean}
+   */
+
+  // O(n)
   startsWith(prefix) {
     let current = this.root
 
