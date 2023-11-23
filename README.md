@@ -203,6 +203,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 ### Trie
 
 - [Implement Trie](./trie/implement-trie.js)
+- [Map Sum Pairs](./trie/map-sum-pairs.js)
 
 ## License
 
