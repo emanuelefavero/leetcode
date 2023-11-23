@@ -8,6 +8,15 @@ Given a dictionary consisting of many roots and a sentence consisting of words s
 Return the sentence after the replacement.
 */
 
+// TIP: This problem can also be solved with a Trie but this solution is much simpler
+
+/**
+ * @param {string[]} dictionary
+ * @param {string} sentence
+ * @returns {string}
+ */
+
+// O(n^2) time | O(n) space - where n is the number of words in the sentence
 function replaceWords(dictionary, sentence) {
   let dict = new Set(dictionary) // create a set of dictionary words
   let words = sentence.split(' ') // split sentence into array of words
