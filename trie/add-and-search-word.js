@@ -10,6 +10,10 @@ void addWord(word) Adds word to the data structure, it can be matched later.
 bool search(word) Returns true if there is any string in the data structure that matches word or false otherwise. word may contain dots '.' where dots can be matched with any letter.
 */
 
+/**
+ * @typedef {Object} Node
+ */
+
 class Node {
   constructor() {
     this.children = {}
@@ -17,11 +21,21 @@ class Node {
   }
 }
 
+/**
+ * @typedef {Object} WordDictionary
+ */
+
 class WordDictionary {
   constructor() {
     this.root = new Node()
   }
 
+  /**
+   * @param {string} word
+   * @return {void}
+   */
+
+  // O(n)
   addWord(word) {
     let current = this.root
 
@@ -36,10 +50,24 @@ class WordDictionary {
     current.end = true
   }
 
+  /**
+   * @param {string} word
+   * @return {boolean}
+   */
+
+  // O(n)
   search(word) {
     return this.dfs(word, 0, this.root)
   }
 
+  /**
+   * @param {string} word
+   * @param {number} index
+   * @param {Node} node
+   * @returns {boolean}
+   */
+
+  // O(n)
   dfs(word, index, node) {
     if (index === word.length) return node.end
 
