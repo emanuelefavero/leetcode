@@ -204,6 +204,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 
 - [Implement Trie](./trie/implement-trie.js)
 - [Map Sum Pairs](./trie/map-sum-pairs.js)
+- [Replace Words](./trie/replace-words.js)
 
 ## License
 
