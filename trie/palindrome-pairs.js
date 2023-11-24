@@ -13,8 +13,12 @@ Return an array of all the palindrome pairs of words.
 You must write an algorithm with O(sum of words[i].length) runtime complexity.
 */
 
-// TODO add jsDoc
+/**
+ * @param {string[]} words
+ * @returns {number[][]}
+ */
 
+// O(n^2) time | O(n) space - where n is the number of words
 function palindromePairs(words) {
   let map = new Map()
   let result = []
