@@ -13,36 +13,52 @@ Return an array of all the palindrome pairs of words.
 You must write an algorithm with O(sum of words[i].length) runtime complexity.
 */
 
+// TODO add link to README
+// TODO add jsDoc
+
 function palindromePairs(words) {
   let map = new Map()
   let result = []
 
+  // Populate map with words and their indices
   for (let i = 0; i < words.length; i++) map.set(words[i], i)
 
+  // Iterate through words
   for (let i = 0; i < words.length; i++) {
+    // Check for empty string and find all palindromes
     if (words[i] === '') {
       for (let j = 0; j < words.length; j++)
         if (isPalindrome(words[j]) && j !== i) result.push([i, j], [j, i])
       continue
     }
 
-    let bw = words[i].split('').reverse().join('')
-    let res = map.get(bw)
+    // Check for reversed word in map
+    let reversedWord = words[i].split('').reverse().join('')
+    let matchingIndex = map.get(reversedWord)
 
-    if (res !== undefined && res !== i) result.push([i, res])
+    // If reversed word exists in map, add to result
+    if (matchingIndex !== undefined && matchingIndex !== i)
+      result.push([i, matchingIndex])
 
-    for (let j = 1; j < bw.length; j++) {
-      if (isPalindrome(bw, 0, j - 1)) {
-        let res = map.get(bw.slice(j))
-        if (res !== undefined) result.push([i, res])
+    // Check for palindromes in reversed word
+    for (let j = 1; j < reversedWord.length; j++) {
+      if (isPalindrome(reversedWord, 0, j - 1)) {
+        let matchingIndex = map.get(reversedWord.slice(j))
+
+        // If palindrome exists in map, add to result
+        if (matchingIndex !== undefined) result.push([i, matchingIndex])
       }
-      if (isPalindrome(bw, j)) {
-        let res = map.get(bw.slice(0, j))
-        if (res !== undefined) result.push([res, i])
+
+      if (isPalindrome(reversedWord, j)) {
+        let matchingIndex = map.get(reversedWord.slice(0, j))
+
+        // If palindrome exists in map, add to result
+        if (matchingIndex !== undefined) result.push([matchingIndex, i])
       }
     }
   }
 
+  // Return the array of palindrome pairs
   return result
 }
 
