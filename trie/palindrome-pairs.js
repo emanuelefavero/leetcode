@@ -13,7 +13,6 @@ Return an array of all the palindrome pairs of words.
 You must write an algorithm with O(sum of words[i].length) runtime complexity.
 */
 
-// TODO add link to README
 // TODO add jsDoc
 
 function palindromePairs(words) {

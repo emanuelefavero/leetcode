@@ -206,6 +206,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Map Sum Pairs](./trie/map-sum-pairs.js)
 - [Replace Words](./trie/replace-words.js)
 - [Add and Search Word - Data structure design](./trie/add-and-search-word.js)
+- [Palindrome Pairs](./trie/palindrome-pairs.js)
 
 ## License
 
