@@ -29,6 +29,8 @@ class Node {
  * @returns {number[]}
  */
 
+// NOTE: Recursive solution
+
 // O(n) time | O(n) space
 function postorder(root, result = []) {
   if (!root) return result
@@ -43,6 +45,26 @@ function postorder(root, result = []) {
 }
 
 // -----------------------------
+// SOLUTION 2
+
+// NOTE: Iterative solution
+
+// O(n) time | O(n) space
+function postorder2(root) {
+  let result = []
+  let stack = [root]
+
+  while (stack.length) {
+    let current = stack.pop()
+    if (!current) continue // we need this to avoid pushing null values into the result array
+    result.push(current.val)
+    stack.push(...current.children) // we use the spread operator (...) to push all the children of the current node into the stack
+  }
+
+  return result.reverse() // we need to reverse the result because we are pushing the children in reverse order (cause we use pop() which is more efficient than shift())
+}
+
+// -----------------------------
 // TESTS
 
 let root = new Node(1)
@@ -51,3 +73,4 @@ root.children[0].children = [new Node(5), new Node(6)]
 root.children[1].children = [new Node(7)]
 
 console.log(postorder(root)) // [5, 6, 3, 7, 2, 4, 1]
+console.log(postorder2(root)) // [5, 6, 3, 7, 2, 4, 1]
