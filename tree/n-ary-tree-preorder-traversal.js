@@ -8,6 +8,12 @@
 // Input: root = [1,null,3,2,4,null,5,6]
 // Output: [1,3,5,6,2,4]
 
+/**
+ * @typedef {Object} Node
+ * @property {number} val
+ * @property {Node[]} children
+ */
+
 class Node {
   constructor(val, children) {
     this.val = val
@@ -15,6 +21,13 @@ class Node {
   }
 }
 
+/**
+ * @param {Node} root
+ * @param {number[]} result
+ * @returns {number[]}
+ */
+
+// O(n) time | O(n) space
 function preorder(root, result = []) {
   if (!root) return result
 
