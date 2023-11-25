@@ -8,6 +8,14 @@
 // Input: root = [1,null,3,2,4,null,5,6]
 // Output: [5,6,3,2,4,1]
 
+// TIP: Inorder traversal does not work for N-ary trees because we don't know which child to visit first
+
+/**
+ * @typedef {Object} Node
+ * @property {number} val
+ * @property {Node[]} children
+ */
+
 class Node {
   constructor(val, children) {
     this.val = val
@@ -15,6 +23,13 @@ class Node {
   }
 }
 
+/**
+ * @param {Node} root
+ * @param {number[]} result
+ * @returns {number[]}
+ */
+
+// O(n) time | O(n) space
 function postorder(root, result = []) {
   if (!root) return result
 

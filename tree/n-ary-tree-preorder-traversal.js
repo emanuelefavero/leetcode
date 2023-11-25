@@ -8,6 +8,8 @@
 // Input: root = [1,null,3,2,4,null,5,6]
 // Output: [1,3,5,6,2,4]
 
+// TIP: Inorder traversal does not work for N-ary trees because we don't know which child to visit first
+
 /**
  * @typedef {Object} Node
  * @property {number} val
