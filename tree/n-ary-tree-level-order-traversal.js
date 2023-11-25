@@ -8,6 +8,12 @@
 // Input: root = [1,null,3,2,4,null,5,6]
 // Output: [[1],[3,2,4],[5,6]]
 
+/**
+ * @typedef {Object} Node
+ * @property {number} val
+ * @property {Node[]} children
+ */
+
 class Node {
   constructor(val, children) {
     this.val = val
@@ -15,6 +21,14 @@ class Node {
   }
 }
 
+/**
+ * @param {Node} root
+ * @returns {number[][]}
+ */
+
+// NOTE: Iterative solution
+
+// O(n) time | O(n) space
 function levelOrder(root) {
   if (!root) return []
 
