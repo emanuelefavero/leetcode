@@ -53,6 +53,33 @@ function levelOrder(root) {
 }
 
 // -----------------------------
+// SOLUTION 2
+
+// NOTE: Recursive solution
+
+// O(n) time | O(n) space
+function levelOrder2(root) {
+  let result = []
+  BFS(root, 0)
+  return result
+
+  function BFS(node, depth) {
+    if (!node) return
+
+    // we need to check if the depth is equal to the length of the result array
+    if (depth === result.length) result.push([])
+
+    // we push the current node value into the result array at the current depth
+    result[depth].push(node.val)
+
+    // we recursively call BFS on all the children of the current node
+    for (let child of node.children) {
+      BFS(child, depth + 1)
+    }
+  }
+}
+
+// -----------------------------
 // TESTS
 
 let root = new Node(1)
@@ -63,3 +90,4 @@ root.children[0].children.push(new Node(5))
 root.children[0].children.push(new Node(6))
 
 console.log(levelOrder(root)) // [[1],[3,2,4],[5,6]]
+console.log(levelOrder2(root)) // [[1],[3,2,4],[5,6]]
