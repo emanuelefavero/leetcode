@@ -202,6 +202,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Populating Next Right Pointers in Each Node II](./tree/populating-next-right-pointers-ii.js)
 - [Lowest Common Ancestor of a Binary Tree](./tree/lowest-common-ancestor.js)
 - [Serialize And Deserialize Binary Tree](./tree/serialize-and-deserialize.js)
+- [Maximum Depth Of N-ary Tree](./tree/maximum-depth-of-n-ary-tree.js)
 
 ### Trie
 

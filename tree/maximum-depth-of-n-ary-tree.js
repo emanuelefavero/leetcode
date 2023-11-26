@@ -19,7 +19,6 @@ class Node {
   }
 }
 
-// TODO link to README
 // TODO jsDoc
 
 function maxDepth(root) {
