@@ -11,6 +11,13 @@ Notice that by initializing the pointer to a non-existent smallest number, the f
 You may assume that next() calls will always be valid. That is, there will be at least a next number in the in-order traversal when next() is called.
 */
 
+/**
+ * @typedef {Object} TreeNode
+ * @property {number} val
+ * @property {TreeNode} left
+ * @property {TreeNode} right
+ */
+
 class TreeNode {
   constructor(val, left, right) {
     this.val = val || 0
@@ -18,6 +25,12 @@ class TreeNode {
     this.right = right || null
   }
 }
+
+/**
+ * @typedef {Object} BSTIterator
+ * @property {number} root
+ * @property {number[]} data
+ */
 
 class BSTIterator {
   constructor(root) {
@@ -39,9 +52,17 @@ class BSTIterator {
     this.data = visited.reverse() // we reverse the array because we are using pop() which is more efficient than shift()
   }
 
+  /**
+   * @returns {number}
+   */
+
   next() {
     return this.data.pop()
   }
+
+  /**
+   * @returns {boolean}
+   */
 
   hasNext() {
     return this.data.length > 0
