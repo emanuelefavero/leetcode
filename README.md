@@ -192,6 +192,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [N-ary Tree Preorder Traversal](./tree/n-ary-tree-preorder-traversal.js)
 - [N-ary Tree Postorder Traversal](./tree/n-ary-tree-postorder-traversal.js)
 - [N-ary Tree Level Order Traversal](./tree/n-ary-tree-level-order-traversal.js)
+- [Search In A Binary Search Tree](./tree/search-in-a-binary-search-tree.js)
 - [Root Equal Sum Of Children](./tree/root-equal-sum-of-children.js)
 - [Maximum Depth Of Binary Tree](./tree/maximum-depth-of-binary-tree.js)
 - [Symmetric Tree](./tree/symmetric-tree.js)
