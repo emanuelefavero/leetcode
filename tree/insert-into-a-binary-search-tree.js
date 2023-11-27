@@ -22,6 +22,31 @@ function insertIntoBST(root, val) {
 }
 
 // -----------------------------
+// SOLUTION 2
+
+function insertIntoBST2(root, val) {
+  if (!root) return new TreeNode(val)
+
+  let current = root
+
+  while (current) {
+    if (val < current.val) {
+      if (!current.left) {
+        current.left = new TreeNode(val)
+        break
+      } else current = current.left
+    } else {
+      if (!current.right) {
+        current.right = new TreeNode(val)
+        break
+      } else current = current.right
+    }
+  }
+
+  return root
+}
+
+// -----------------------------
 // TESTS
 
 let root = new TreeNode(4)
@@ -30,4 +55,10 @@ root.right = new TreeNode(7)
 root.left.left = new TreeNode(1)
 root.left.right = new TreeNode(3)
 
-console.log(insertIntoBST(root, 5)) // [4,2,7,1,3,5]
+// NOTE: Uncomment only one of the following lines at a time
+
+// 1
+// console.log(insertIntoBST(root, 5)) // [4,2,7,1,3,5]
+
+// 2
+console.log(insertIntoBST2(root, 5)) // [4,2,7,1,3,5]
