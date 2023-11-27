@@ -12,6 +12,12 @@ Input: root = [1,null,3,2,4,null,5,6]
 Output: 3
 */
 
+/**
+ * @typedef {Object} Node
+ * @property {number} val
+ * @property {Node[]} children
+ */
+
 class Node {
   constructor(val, children) {
     this.val = val
@@ -19,7 +25,10 @@ class Node {
   }
 }
 
-// TODO jsDoc
+/**
+ * @param {Node} root
+ * @returns {number}
+ */
 
 function maxDepth(root) {
   if (!root) return 0
