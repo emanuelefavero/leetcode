@@ -10,6 +10,13 @@ The right subtree of a node contains only nodes with keys greater than the node'
 Both the left and right subtrees must also be binary search trees.
 */
 
+/**
+ * @typedef {Object} TreeNode
+ * @property {number} val
+ * @property {TreeNode} left
+ * @property {TreeNode} right
+ */
+
 class TreeNode {
   constructor(val, left, right) {
     this.val = val || 0
@@ -18,6 +25,14 @@ class TreeNode {
   }
 }
 
+/**
+ * @param {TreeNode} root
+ * @param {number} min
+ * @param {number} max
+ * @returns {boolean}
+ */
+
+// O(n) time | O(n) space
 function isValidBST(root, min = -Infinity, max = Infinity) {
   if (!root) return true
 
