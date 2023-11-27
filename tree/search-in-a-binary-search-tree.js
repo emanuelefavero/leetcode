@@ -1,8 +1,9 @@
-// * Search in a Binary Search Tree
-
-// You are given the root of a binary search tree (BST) and an integer val.
-
-// Find the node in the BST that the node's value equals val and return the subtree rooted with that node. If such a node does not exist, return null.
+/**
+ * @typedef {Object} TreeNode
+ * @property {number} val
+ * @property {TreeNode} left
+ * @property {TreeNode} right
+ */
 
 class TreeNode {
   constructor(val, left, right) {
@@ -12,6 +13,21 @@ class TreeNode {
   }
 }
 
+/**
+ * * Search in a Binary Search Tree
+ *
+ * You are given the root of a binary search tree (BST) and an integer val
+ *
+ * Find the node in the BST that the node's value equals val and return the subtree rooted with that node. If such a node does not exist, return null
+ *
+ * @param {TreeNode} root
+ * @param {number} val
+ * @returns {TreeNode | null}
+ */
+
+// TIP: Recursive solution
+
+// O(n) time | O(n) space
 function searchBST(root, val) {
   if (!root) return null
 
@@ -23,6 +39,9 @@ function searchBST(root, val) {
 // -----------------------------
 // SOLUTION 2
 
+// TIP: Iterative solution
+
+// O(n) time | O(1) space
 function searchBST2(root, val) {
   let current = root
 
