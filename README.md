@@ -204,6 +204,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Serialize And Deserialize Binary Tree](./tree/serialize-and-deserialize.js)
 - [Maximum Depth Of N-ary Tree](./tree/maximum-depth-of-n-ary-tree.js)
 - [Validate Binary Search Tree](./tree/validate-binary-search-tree.js)
+- [Binary Search Tree Iterator](./tree/binary-search-tree-iterator.js)
 
 ### Trie
 
