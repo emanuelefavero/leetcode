@@ -194,6 +194,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [N-ary Tree Level Order Traversal](./tree/n-ary-tree-level-order-traversal.js)
 - [Search In A Binary Search Tree](./tree/search-in-a-binary-search-tree.js)
 - [Insert Into A Binary Search Tree](./tree/insert-into-a-binary-search-tree.js)
+- [Delete Node In A Binary Search Tree](./tree/delete-node-in-a-bst.js)
 - [Root Equal Sum Of Children](./tree/root-equal-sum-of-children.js)
 - [Maximum Depth Of Binary Tree](./tree/maximum-depth-of-binary-tree.js)
 - [Symmetric Tree](./tree/symmetric-tree.js)

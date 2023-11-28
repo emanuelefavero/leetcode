@@ -33,7 +33,6 @@ class TreeNode {
   }
 }
 
-// TODO link to README
 // TODO jsDoc
 
 function deleteNode(root, key) {
