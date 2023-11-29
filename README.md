@@ -212,6 +212,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Lowest Common Ancestor of a Binary Search Tree](./tree/lowest-common-ancestor-of-a-bst.js)
 - [Contains Duplicate III](./tree/contains-duplicate-iii.js)
 - [Balanced Binary Tree](./tree/balanced-binary-tree.js)
+- [Convert Sorted Array To Binary Search Tree](./tree/convert-sorted-array-to-bst.js)
 
 ### Trie
 
