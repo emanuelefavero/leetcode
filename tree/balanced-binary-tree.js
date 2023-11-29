@@ -2,7 +2,6 @@
 
 // Given a binary tree, determine if it is height-balanced
 
-// TODO add link to README
 // TODO add jsDoc
 
 function isBalanced(root) {
