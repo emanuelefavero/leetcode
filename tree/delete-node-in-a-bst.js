@@ -25,6 +25,13 @@ Output: [5,4,6,2,null,null,7]
   2       7
 */
 
+/**
+ * @typedef {Object} TreeNode
+ * @property {number} val
+ * @property {TreeNode} left
+ * @property {TreeNode} right
+ */
+
 class TreeNode {
   constructor(val, left, right) {
     this.val = val || 0
@@ -33,8 +40,13 @@ class TreeNode {
   }
 }
 
-// TODO jsDoc
+/**
+ * @param {TreeNode} root
+ * @param {number} key
+ * @returns {TreeNode}
+ */
 
+// O(log n) time | O(log n) space
 function deleteNode(root, key) {
   if (!root) return null
 
