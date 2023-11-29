@@ -12,8 +12,14 @@ class TreeNode {
 
 // TIP: To convert a sorted array to a BST, we just need to do a binary search on the array and insert the middle element asd the root node
 
-// TODO jsDoc
+/**
+ * @param {number[]} nums
+ * @param {number} start
+ * @param {number} end
+ * @returns {TreeNode}
+ */
 
+// O(n) time | O(n) space
 function sortedArrayToBST(nums, start = 0, end = nums.length - 1) {
   if (start > end) return null
 
