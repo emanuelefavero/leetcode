@@ -11,8 +11,16 @@ abs(nums[i] - nums[j]) <= valueDiff, and
 Return true if such pair exists or false otherwise.
 */
 
-// TIP: This is a brute force solution (inefficient)
+/**
+ * @param {number[]} nums
+ * @param {number} indexDiff
+ * @param {number} valueDiff
+ * @returns {boolean}
+ */
 
+// TIP: This is a brute force solution (inefficient, it will get time limit exceeded in LeetCode)
+
+// O(n^2) time | O(1) space
 function containsNearbyAlmostDuplicate(nums, indexDiff, valueDiff) {
   for (let i = 0; i < nums.length; i++) {
     for (let j = i + 1; j <= i + indexDiff; j++) {
@@ -29,6 +37,7 @@ function containsNearbyAlmostDuplicate(nums, indexDiff, valueDiff) {
 // TIP: Bucket sort, also known as bin sort, is a sorting algorithm that divides an array's elements into several buckets. The buckets are then sorted one at a time, either using a different sorting algorithm or by recursively applying the bucket sorting algorithm
 // @see https://www.geeksforgeeks.org/bucket-sort-2
 
+// O(n) time | O(n) space
 function containsNearbyAlmostDuplicate2(nums, indexDiff, valueDiff) {
   let buckets = new Map()
 
