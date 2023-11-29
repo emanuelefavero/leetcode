@@ -2,12 +2,37 @@
 
 // Given a binary tree, determine if it is height-balanced
 
-// TODO add jsDoc
+/**
+ * @typedef {Object} TreeNode
+ * @property {number} val
+ * @property {TreeNode} left
+ * @property {TreeNode} right
+ */
 
+class TreeNode {
+  constructor(val) {
+    this.val = val
+    this.left = null
+    this.right = null
+  }
+}
+
+/**
+ * @param {TreeNode} root
+ * @returns {boolean}
+ */
+
+// O(n log n) time | O(n) space
 function isBalanced(root) {
   return getHeight(root) !== -1 // if height is -1, tree is not balanced
 }
 
+/**
+ * @param {TreeNode} root
+ * @returns {number}
+ */
+
+// O(n) time | O(n) space
 function getHeight(root) {
   if (!root) return 0 // base case
 
