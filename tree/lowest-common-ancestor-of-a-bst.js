@@ -4,6 +4,13 @@
 
 // According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes p and q as the lowest node in T that has both p and q as descendants (where we allow a node to be a descendant of itself).”
 
+/**
+ * @typedef {Object} TreeNode
+ * @property {number} val
+ * @property {TreeNode} left
+ * @property {TreeNode} right
+ */
+
 class TreeNode {
   constructor(val, left, right) {
     this.val = val || 0
@@ -12,13 +19,24 @@ class TreeNode {
   }
 }
 
+/**
+ * @param {TreeNode} root
+ * @param {TreeNode} p
+ * @param {TreeNode} q
+ * @returns {TreeNode}
+ */
+
+// O(n) time | O(n) space
 function lowestCommonAncestor(root, p, q) {
   if (!root) return null
 
+  // if both nodes are smaller than root, LCA is in left subtree
   if (p.val < root.val && q.val < root.val)
     return lowestCommonAncestor(root.left, p, q)
+  // if both nodes are greater than root, LCA is in right subtree
   else if (p.val > root.val && q.val > root.val)
     return lowestCommonAncestor(root.right, p, q)
+  // if one node is smaller and the other is greater than root, LCA is root
   else return root
 }
 
