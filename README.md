@@ -208,6 +208,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Maximum Depth Of N-ary Tree](./tree/maximum-depth-of-n-ary-tree.js)
 - [Validate Binary Search Tree](./tree/validate-binary-search-tree.js)
 - [Binary Search Tree Iterator](./tree/binary-search-tree-iterator.js)
+- [Kth Largest Element In A Stream](./tree/kth-largest-element-in-a-stream.js)
 
 ### Trie
 
