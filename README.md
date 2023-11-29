@@ -210,6 +210,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Binary Search Tree Iterator](./tree/binary-search-tree-iterator.js)
 - [Kth Largest Element In A Stream](./tree/kth-largest-element-in-a-stream.js)
 - [Lowest Common Ancestor of a Binary Search Tree](./tree/lowest-common-ancestor-of-a-bst.js)
+- [Contains Duplicate III](./tree/contains-duplicate-iii.js)
 
 ### Trie
 
