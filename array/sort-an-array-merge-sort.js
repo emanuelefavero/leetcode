@@ -6,7 +6,6 @@
 
 // TIP: This solution uses the merge sort algorithm to sort the array (top-down approach)
 
-// TODO link to README (array/sort-an-array-merge-sort)
 // TODO jsDoc
 
 function sortArray(nums) {
