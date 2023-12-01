@@ -6,8 +6,12 @@
 
 // TIP: This solution uses the merge sort algorithm to sort the array (top-down approach)
 
-// TODO jsDoc
+/**
+ * @param {number[]} nums
+ * @return {number[]}
+ */
 
+// O(n log(n)) time - O(n) space
 function sortArray(nums) {
   if (nums.length <= 1) return nums
 
