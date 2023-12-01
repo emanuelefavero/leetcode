@@ -11,13 +11,25 @@ Each of the digits 1-9 must occur exactly once in each of the 9 3x3 sub-boxes of
 The '.' character indicates empty cells.
 */
 
-// TODO jsDoc
+/**
+ * @param {string[][]} board
+ * @return {void} Do not return anything, modify board in-place instead
+ */
 
+// O(9^(n*n)) time - O(n*n) space
 function solveSudoku(board) {
   let n = board.length
   dfs(board, n)
 }
 
+/**
+ * @param {string[][]} board
+ * @param {number} n
+ * @returns {boolean}
+ */
+
+// O(n) time - O(1) space
+// depth-first search
 function dfs(board, n) {
   // for every cell in the sudoku
   for (let row = 0; row < n; row++) {
@@ -50,6 +62,16 @@ function dfs(board, n) {
   return true
 }
 
+/**
+ * @param {string[][]} board
+ * @param {number} row
+ * @param {number} col
+ * @param {number} n
+ * @param {string} c
+ * @returns {boolean}
+ */
+
+// O(n) time - O(1) space
 // check if the number is valid for the cell
 function isValid(board, row, col, n, c) {
   let blockRow = Math.floor(row / 3) * 3 // 0, 3, 6
