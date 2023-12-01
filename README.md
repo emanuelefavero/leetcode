@@ -161,6 +161,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Unique Binary Search Trees II](./recursion/unique-binary-search-trees-ii.js)
 - [Search a 2D Matrix II](./recursion/search-a-2d-matrix-ii.js)
 - [N Queens II](./recursion/n-queens-ii.js)
+- [Sudoku Solver](./recursion/sudoku-solver.js)
 
 ### Stack
 

@@ -11,7 +11,6 @@ Each of the digits 1-9 must occur exactly once in each of the 9 3x3 sub-boxes of
 The '.' character indicates empty cells.
 */
 
-// TODO link
 // TODO jsDoc
 
 function solveSudoku(board) {
