@@ -7,6 +7,13 @@
 
 // TIP: This solution uses a binary search approach
 
+/**
+ * @param {number[][]} matrix
+ * @param {number} target
+ * @returns {boolean}
+ */
+
+// O(n + m) time - O(1) space
 function searchMatrix(matrix, target) {
   let row = 0
   let column = matrix[0].length - 1
