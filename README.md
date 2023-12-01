@@ -159,6 +159,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Merge Two Sorted Lists](./recursion/merge-two-sorted-lists.js)
 - [K-th Symbol In Grammar](./recursion/k-th-symbol-in-grammar.js)
 - [Unique Binary Search Trees II](./recursion/unique-binary-search-trees-ii.js)
+- [Search a 2D Matrix II](./recursion/search-a-2d-matrix-ii.js)
 
 ### Stack
 
