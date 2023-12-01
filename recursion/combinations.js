@@ -6,7 +6,6 @@
 
 // TIP: This is a recursive backtracking solution
 
-// TODO add link
 // TODO jsDoc
 
 function combine(n, k) {

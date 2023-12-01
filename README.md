@@ -162,6 +162,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Search a 2D Matrix II](./recursion/search-a-2d-matrix-ii.js)
 - [N Queens II](./recursion/n-queens-ii.js)
 - [Sudoku Solver](./recursion/sudoku-solver.js)
+- [Combinations](./recursion/combinations.js)
 
 ### Stack
 
