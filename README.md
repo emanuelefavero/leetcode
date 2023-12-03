@@ -165,6 +165,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Combinations](./recursion/combinations.js)
 - [Same Tree](./recursion/same-tree.js)
 - [Generate Parentheses](./recursion/generate-parentheses.js)
+- [Largest Rectangle In Histogram](./recursion/largest-rectangle-in-histogram.js)
 
 ### Stack
 
