@@ -163,6 +163,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [N Queens II](./recursion/n-queens-ii.js)
 - [Sudoku Solver](./recursion/sudoku-solver.js)
 - [Combinations](./recursion/combinations.js)
+- [Same Tree](./recursion/same-tree.js)
 
 ### Stack
 
