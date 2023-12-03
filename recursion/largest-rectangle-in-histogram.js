@@ -2,6 +2,12 @@
 
 // Given an array of integers `heights` representing the histogram's bar height where the width of each bar is 1, return the area of the largest rectangle in the histogram.
 
+/**
+ * @param {number[]} heights
+ * @returns {number}
+ */
+
+// O(n) time - O(n) space
 function largestRectangleArea(heights) {
   let maxArea = 0
   let stack = []
