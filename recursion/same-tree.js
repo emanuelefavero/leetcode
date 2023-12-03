@@ -4,6 +4,13 @@
 
 // Two binary trees are considered the same if they are structurally identical, and the nodes have the same value.
 
+/**
+ * @typedef {Object} TreeNode
+ * @property {number} val
+ * @property {TreeNode} left
+ * @property {TreeNode} right
+ */
+
 class TreeNode {
   constructor(val, left, right) {
     this.val = val || 0
@@ -12,8 +19,15 @@ class TreeNode {
   }
 }
 
+/**
+ * @param {TreeNode} p
+ * @param {TreeNode} q
+ * @returns {boolean}
+ */
+
 // TIP: Recursive solution
 
+// O(n) time - O(n) space
 function isSameTree(p, q) {
   if (!p && !q) return true
   if (!p || !q) return false
