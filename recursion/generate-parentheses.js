@@ -2,6 +2,14 @@
 
 // Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses
 
+/**
+ * @param {number} n
+ * @returns {string[]}
+ */
+
+// TIP: This is a recursive backtracking solution
+
+// O(n^2) time - O(n) space
 function generateParenthesis(n) {
   let result = []
 
