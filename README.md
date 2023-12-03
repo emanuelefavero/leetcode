@@ -168,6 +168,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Largest Rectangle In Histogram](./recursion/largest-rectangle-in-histogram.js)
 - [Permutations](./recursion/permutations.js)
 - [Letter Combinations of a Phone Number](./recursion/letter-combinations-phone-number.js)
+- [The Skyline Problem](./recursion/the-skyline-problem.js)
 
 ### Stack
 
