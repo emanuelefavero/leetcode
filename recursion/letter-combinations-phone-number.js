@@ -15,8 +15,14 @@
   9: 'wxyz',
 */
 
+/**
+ * @param {string} digits
+ * @returns {string[]}
+ */
+
 // TIP: This is a recursive backtracking solution
 
+// O(n^2) time - O(n) space
 function letterCombinations(digits) {
   if (!digits.length) return []
 
