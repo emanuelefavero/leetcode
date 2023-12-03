@@ -6,8 +6,13 @@
 
 // TIP: This is a recursive backtracking solution
 
-// TODO jsDoc
+/**
+ * @param {number} n
+ * @param {number} k
+ * @returns {number[][]}
+ */
 
+// O(n!) time (factorial) - O(n) space
 function combine(n, k) {
   let result = []
 
