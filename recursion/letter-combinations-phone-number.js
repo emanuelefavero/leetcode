@@ -18,7 +18,9 @@
 // TIP: This is a recursive backtracking solution
 
 function letterCombinations(digits) {
-  let hash = {
+  if (!digits.length) return []
+
+  let map = {
     2: 'abc',
     3: 'def',
     4: 'ghi',
@@ -31,28 +33,20 @@ function letterCombinations(digits) {
 
   let result = []
 
-  if (digits.length === 0) return result
+  function backtrack(string, i) {
+    // base case
+    if (digits.length === i) {
+      return result.push(string)
+    }
 
-  backtrack(digits, hash, '', result)
+    for (let char of map[digits[i]]) {
+      backtrack(string + char, i + 1)
+    }
+  }
+
+  backtrack('', 0) // start at char 0
 
   return result
-}
-
-function backtrack(digits, hash, current, result) {
-  // base case
-  if (current.length === digits.length) {
-    result.push(current)
-    return
-  }
-
-  // get the letters for the current digit
-  let letters = hash[digits[current.length]]
-
-  // loop through the letters
-  for (let i = 0; i < letters.length; i++) {
-    // add the letter to the current combination
-    backtrack(digits, hash, current + letters[i], result)
-  }
 }
 
 // -----------------------------
