@@ -15,8 +15,12 @@ The skyline should be represented as a list of "key points" sorted by their x-co
 Note: There must be no consecutive horizontal lines of equal height in the output skyline. For instance, [...,[2 3],[4 5],[7 5],[11 5],[12 7],...] is not acceptable; the three lines of height 5 should be merged into one in the final output as such: [...,[2 3],[4 5],[12 7],...]
 */
 
-// TODO jsDoc
+/**
+ * @param {number[][]} buildings
+ * @returns {number[][]}
+ */
 
+// O(n log n) time - O(n) space
 function getSkyline(buildings) {
   let heights = []
 
