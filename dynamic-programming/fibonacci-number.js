@@ -11,6 +11,12 @@ Given n, calculate F(n).
 
 // TIP: This solution uses memoization to store the results of previous calculations (dynamic programming)
 
+/**
+ * @param {number} n
+ * @returns {number}
+ */
+
+// O(n) time | O(n) space
 function fib(n, memo = {}) {
   if (n === 0 || n === 1) return n
 
