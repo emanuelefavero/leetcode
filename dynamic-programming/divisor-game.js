@@ -12,6 +12,12 @@ Also, if a player cannot make a move, they lose the game.
 Return true if and only if Alice wins the game, assuming both players play optimally.
 */
 
+function divisorGame(n) {
+  return n % 2 === 0
+
+  // TIP: Since Alice goes first, if n is even, she can always choose x = 1 and win the game so if n is even, Alice wins every time
+}
+
 // -----------------------------
 // TESTS
 
