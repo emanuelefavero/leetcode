@@ -75,6 +75,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 ## Dynamic Programming
 
 - [Fibonacci Number](./dynamic-programming/fibonacci-number.js)
+- [Counting Bits](./dynamic-programming/counting-bits.js)
 
 ### Easy
 
