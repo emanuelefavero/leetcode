@@ -26,8 +26,20 @@ function fib(n, memo = {}) {
 }
 
 // -----------------------------
+// SOLUTION 2
+
+// TIP: This solution does not use memoization and is much less efficient
+
+function fib2(n) {
+  if (n === 0 || n === 1) return n
+
+  return fib2(n - 1) + fib2(n - 2)
+}
+
+// -----------------------------
 // TESTS
 
+// 1
 console.log(fib(2)) // 1
 console.log(fib(3)) // 2
 console.log(fib(4)) // 3
@@ -37,3 +49,6 @@ console.log(fib(7)) // 13
 console.log(fib(8)) // 21
 console.log(fib(9)) // 34
 console.log(fib(10)) // 55
+
+// 2
+console.log(fib2(10)) // 55
