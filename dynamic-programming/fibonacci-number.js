@@ -9,7 +9,7 @@ F(n) = F(n - 1) + F(n - 2), for n > 1.
 Given n, calculate F(n).
 */
 
-// TIP: This solution uses memoization to store the results of previous calculations (dynamic programming)
+// TIP: This solution uses memoization to store the results of previous calculations (top-down dynamic programming)
 
 /**
  * @param {number} n
@@ -30,10 +30,30 @@ function fib(n, memo = {}) {
 
 // TIP: This solution does not use memoization and is much less efficient
 
+// O(2^n) time (exponential) | O(n) space
 function fib2(n) {
   if (n === 0 || n === 1) return n
 
   return fib2(n - 1) + fib2(n - 2)
+}
+
+// -----------------------------
+// SOLUTION 3
+
+// TIP: This solution uses tabulation (bottom-up dynamic programming)
+
+// O(n) time | O(n) space
+function fib3(n) {
+  let table = new Array(n + 1)
+
+  table[0] = 0
+  table[1] = 1
+
+  for (let i = 2; i <= n; i++) {
+    table[i] = table[i - 1] + table[i - 2]
+  }
+
+  return table[n]
 }
 
 // -----------------------------
@@ -52,3 +72,6 @@ console.log(fib(10)) // 55
 
 // 2
 console.log(fib2(10)) // 55
+
+// 3
+console.log(fib3(10)) // 55
