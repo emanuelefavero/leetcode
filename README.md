@@ -72,6 +72,10 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Valid Perfect Square](./binary-search/valid-perfect-square.js)
 - [Find Smallest Letter Greater Than Target](./binary-search/find-smallest-letter-greater-than-target.js)
 
+## Dynamic Programming
+
+- [Fibonacci Number](./dynamic-programming/fibonacci-number.js)
+
 ### Easy
 
 - [Add Two Integers](./easy/add-two-integers.js)
