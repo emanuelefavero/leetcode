@@ -76,6 +76,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 
 - [Fibonacci Number](./dynamic-programming/fibonacci-number.js)
 - [Counting Bits](./dynamic-programming/counting-bits.js)
+- [Divisor Game](./dynamic-programming/divisor-game.js)
 
 ### Easy
 
