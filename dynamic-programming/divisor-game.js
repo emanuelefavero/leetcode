@@ -12,6 +12,12 @@ Also, if a player cannot make a move, they lose the game.
 Return true if and only if Alice wins the game, assuming both players play optimally.
 */
 
+/**
+ * @param {number} n
+ * @returns {boolean}
+ */
+
+// O(1) time | O(1) space
 function divisorGame(n) {
   return n % 2 === 0
 
@@ -23,8 +29,7 @@ function divisorGame(n) {
 
 // TIP: This solution uses dynamic programming (bottom-up approach) but is not as efficient as the first solution
 
-// TODO jsDoc
-
+// O(n^2) time | O(n) space
 function divisorGame2(n) {
   let dp = new Array(n + 1).fill(false)
 
