@@ -43,7 +43,6 @@ function DFS(isConnected, i, visited) {
 // TIP: This solution uses disjoint sets (union-find) to solve the problem. We create a new DisjointSet object and add each city to the set. We then loop through the isConnected array and union each city with its connected neighbors. We then loop through the parent object and increment the result by 1 for each city that is its own parent (i.e. each city that is not connected to another city)
 
 // TODO jsDoc
-// TODO link to README
 
 function findCircleNum2(isConnected) {
   class DisjointSet {
