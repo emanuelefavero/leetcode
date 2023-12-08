@@ -8,7 +8,9 @@
 // TIP: find return the root of the set that the element belongs to
 // TIP: union merges two sets together
 
-// TODO jsDoc
+/**
+ * @typedef {Object} DisjointSet
+ */
 
 class DisjointSet {
   constructor() {
@@ -18,16 +20,35 @@ class DisjointSet {
     // this.size = {}
   }
 
+  /**
+   * @param {number} x
+   * @returns {void}
+   */
+
+  // O(1) time | O(1) space
   makeSet(x) {
     this.parent[x] = x
   }
 
+  /**
+   * @param {number} x
+   * @returns {number}
+   */
+
+  // O(n) time | O(1) space
   find(x) {
     if (this.parent[x] === x) return x
 
     return this.find(this.parent[x])
   }
 
+  /**
+   * @param {number} x
+   * @param {number} y
+   * @returns {void}
+   */
+
+  // O(n) time | O(1) space
   union(x, y) {
     let xRoot = this.find(x)
     let yRoot = this.find(y)
