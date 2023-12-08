@@ -57,6 +57,19 @@ class DisjointSet {
 
     // TIP: To improve the efficiency of the data structure, we can refactor this function to keep track of the size of each set and always merge the smaller set into the larger set
   }
+
+  /**
+   * check if x and y are in the same set
+   *
+   * @param {number} x
+   * @param {number} y
+   * @returns {boolean}
+   */
+
+  // O(n) time | O(1) space
+  connected(x, y) {
+    return this.find(x) === this.find(y)
+  }
 }
 
 // -----------------------------
@@ -74,5 +87,7 @@ disjointSet.union(2, 3)
 console.log(disjointSet.find(1)) // 3
 console.log(disjointSet.find(2)) // 3
 console.log(disjointSet.find(3)) // 3
+
+console.log(disjointSet.connected(1, 3)) // true
 
 // Explanation: 1, 2, and 3 have the same root so they are all in the same set
