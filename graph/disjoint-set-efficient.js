@@ -26,6 +26,7 @@ class DisjointSet {
   // O(1) time | O(1) space
   makeSet(x) {
     this.parent[x] = x
+    this.size[x] = 1 // * initialize the size of each set to 1
   }
 
   /**
