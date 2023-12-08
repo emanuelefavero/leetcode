@@ -13,6 +13,12 @@ Return the total number of provinces.
 // TIP: This solution uses depth-first search (DFS) to traverse the matrix array. If a city is connected to another city, we add it to the visited set and increment the result by 1. We then recursively call DFS on the connected city and its neighbors. If a city is not connected to another city, we do nothing.
 // NOTE: This solution does not use disjoint sets (union-find) but it is easier to understand
 
+/**
+ * @param {number[][]} isConnected
+ * @returns {number}
+ */
+
+// O(n^2) time | O(n) space
 function findCircleNum(isConnected) {
   let visited = new Set()
   let result = 0
@@ -42,8 +48,7 @@ function DFS(isConnected, i, visited) {
 
 // TIP: This solution uses disjoint sets (union-find) to solve the problem. We create a new DisjointSet object and add each city to the set. We then loop through the isConnected array and union each city with its connected neighbors. We then loop through the parent object and increment the result by 1 for each city that is its own parent (i.e. each city that is not connected to another city)
 
-// TODO jsDoc
-
+// O(n^2) time | O(n) space
 function findCircleNum2(isConnected) {
   class DisjointSet {
     constructor(n) {
