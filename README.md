@@ -88,6 +88,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Disjoint Set](./graph/disjoint-set.js)
 - [Disjoint Set Efficient](./graph/disjoint-set-efficient.js)
 - [Number Of Provinces](./graph/number-of-provinces.js)
+- [Smallest String With Swaps](./graph/smallest-string-with-swaps.js)
 
 ### Hash Table
 

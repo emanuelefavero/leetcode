@@ -10,7 +10,6 @@ Return the lexicographically smallest string that s can be changed to after usin
 
 // TIP: This solution simply swaps the characters at each pair of indices and then sorts the resulting strings and returns the first one
 
-// TODO add link to README
 // TODO jsDoc
 
 function smallestStringWithSwaps(s, pairs) {
