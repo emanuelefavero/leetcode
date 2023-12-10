@@ -10,8 +10,13 @@ Return the lexicographically smallest string that s can be changed to after usin
 
 // TIP: This solution simply swaps the characters at each pair of indices and then sorts the resulting strings and returns the first one
 
-// TODO jsDoc
+/**
+ * @param {string} s
+ * @param {number[][]} pairs
+ * @returns {string}
+ */
 
+// O(n^2) time | O(n) space
 function smallestStringWithSwaps(s, pairs) {
   class DisjointSet {
     constructor() {
