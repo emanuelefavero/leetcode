@@ -77,6 +77,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Recyclable And Low Fat Products](./database/recyclable-and-low-fat-products.js)
 - [Find Total Time Spent By Each Employee](./database/find-total-time-spent.js)
 - [Daily Leads And Partners](./database/daily-leads-and-partners.js)
+- [Number of Unique Subjects Taught by Each Teacher](./database/number-of-unique-subjects.js)
 
 ## Dynamic Programming
 
