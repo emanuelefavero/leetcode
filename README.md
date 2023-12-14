@@ -83,6 +83,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Invalid Tweets](./database/invalid-tweets.js)
 - [Bank Account Summary II](./database/bank-account-summary-ii.js)
 - [Swap Salary](./database/swap-salary.js)
+- [Replace Employee ID With The Unique Identifier](./database/replace-employee-id-with-unique-id.js)
 
 ## Dynamic Programming
 
