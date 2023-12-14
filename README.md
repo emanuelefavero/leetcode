@@ -80,6 +80,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Daily Leads And Partners](./database/daily-leads-and-partners.js)
 - [Number of Unique Subjects Taught by Each Teacher](./database/number-of-unique-subjects.js)
 - [Rearrange Products Table](./database/rearrange-products-table.js)
+- [Invalid Tweets](./database/invalid-tweets.js)
 
 ## Dynamic Programming
 
