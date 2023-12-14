@@ -82,6 +82,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Rearrange Products Table](./database/rearrange-products-table.js)
 - [Invalid Tweets](./database/invalid-tweets.js)
 - [Bank Account Summary II](./database/bank-account-summary-ii.js)
+- [Swap Salary](./database/swap-salary.js)
 
 ## Dynamic Programming
 
