@@ -24,6 +24,11 @@ function operation(a, b, operator) {
   if (operator === '/') return a / b >= 0 ? Math.floor(a / b) : Math.ceil(a / b)
 }
 
+/**
+ * @param {string[]} tokens
+ * @returns {number}
+ */
+
 function evalRPN(tokens) {
   let stack = []
   let operators = new Set(['+', '-', '*', '/'])
@@ -44,8 +49,6 @@ function evalRPN(tokens) {
 
 // ----------------------------
 // SOLUTION 2
-
-// TODO: add jsDoc (add @see tag, see up top)
 
 function evalRPN2(tokens) {
   let stack = []

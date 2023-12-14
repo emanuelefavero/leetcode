@@ -27,8 +27,6 @@ function myPow(x, n) {
   }
 }
 
-// TODO commit solution 2
-
 // ---------------------
 // SOLUTION 2
 
