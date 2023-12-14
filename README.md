@@ -50,6 +50,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Rotate Array](./array/rotate-array.js)
 - [Pascal Triangle II](./array/pascal-triangle-ii.js)
 - [Sort an Array (Merge Sort)](./array/sort-an-array-merge-sort.js)
+- [Duplicate Zeros](./array/duplicate-zeros.js)
 
 ### Binary Search
 
