@@ -84,6 +84,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Bank Account Summary II](./database/bank-account-summary-ii.js)
 - [Swap Salary](./database/swap-salary.js)
 - [Replace Employee ID With The Unique Identifier](./database/replace-employee-id-with-unique-id.js)
+- [Product Sales Analysis I](./database/product-sales-analysis-i.js)
 
 ## Dynamic Programming
 
