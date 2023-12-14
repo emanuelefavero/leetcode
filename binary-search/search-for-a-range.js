@@ -10,8 +10,13 @@ You must write an algorithm with O(log n) runtime complexity
 
 // TIP: To find the range ios easy. Just run two binary searches. One that starts from the left to find the starting index and one that starts from the right to find the ending index
 
-// TODO: add jsDoc
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @returns {number[]}
+ */
 
+// O(log n) time | O(1) space
 function searchRange(nums, target) {
   const result = [-1, -1]
 
