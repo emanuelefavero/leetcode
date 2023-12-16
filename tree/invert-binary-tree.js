@@ -1,3 +1,10 @@
+/**
+ * @typedef {Object} TreeNode
+ * @property {number} val
+ * @property {TreeNode} left
+ * @property {TreeNode} right
+ */
+
 class TreeNode {
   constructor(val, left, right) {
     this.val = val || 0
@@ -6,6 +13,15 @@ class TreeNode {
   }
 }
 
+/**
+ * * Invert Binary Tree
+ * Given the root of a binary tree, invert the tree, and return its root
+ *
+ * @param {TreeNode} root
+ * @returns {TreeNode}
+ */
+
+// O(n) time | O(n) space
 function invertTree(root) {
   if (!root) return null
 
