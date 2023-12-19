@@ -96,6 +96,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 
 - [Add Two Integers](./easy/add-two-integers.js)
 - [Fizz Buzz](./easy/fizz-buzz.js)
+- [Two Sum](./easy/two-sum.js)
 
 ### Graph
 

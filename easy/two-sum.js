@@ -21,7 +21,6 @@ function twoSum(nums, target) {
 // -----------------------------
 // SOLUTION 2
 
-// TODO add link
 // TODO add jsDoc
 
 function twoSum2(nums, target) {
