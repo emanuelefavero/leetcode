@@ -6,6 +6,13 @@
 
 // You can return the answer in any order.
 
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @returns {number[]}
+ */
+
+// O(n)
 function twoSum(nums, target) {
   let map = new Map()
 
@@ -21,8 +28,7 @@ function twoSum(nums, target) {
 // -----------------------------
 // SOLUTION 2
 
-// TODO add jsDoc
-
+// O(n)
 function twoSum2(nums, target) {
   let map = {}
 
