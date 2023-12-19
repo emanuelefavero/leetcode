@@ -19,7 +19,30 @@ function twoSum(nums, target) {
 }
 
 // -----------------------------
+// SOLUTION 2
+
+// TODO add link
+// TODO add jsDoc
+
+function twoSum2(nums, target) {
+  let map = {}
+
+  for (let i = 0; i < nums.length; i++) {
+    let difference = target - nums[i]
+
+    if (map[difference] !== undefined) return [map[difference], i]
+
+    map[nums[i]] = i
+  }
+}
+
+// -----------------------------
 // TESTS
 
+// 1
 console.log(twoSum([2, 7, 11, 15], 9)) // [0, 1]
 console.log(twoSum([3, 2, 4], 6)) // [1, 2]
+
+// 2
+console.log(twoSum2([2, 7, 11, 15], 9)) // [0, 1]
+console.log(twoSum2([3, 2, 4], 6)) // [1, 2]
