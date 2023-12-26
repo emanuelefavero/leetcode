@@ -25,7 +25,6 @@ function majorityElement(nums) {
 // -----------------------------
 // SOLUTION 2
 
-// TODO link to README
 // TODO add jsDoc
 
 // TIP: This solution is i O(1) space complexity, but is less readable

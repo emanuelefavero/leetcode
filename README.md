@@ -98,6 +98,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Fizz Buzz](./easy/fizz-buzz.js)
 - [Two Sum](./easy/two-sum.js)
 - [Best Time To Buy And Sell Stock](./easy/best-time-to-buy-and-sell-stock.js)
+- [Majority Element](./easy/majority-element.js)
 
 ### Graph
 
