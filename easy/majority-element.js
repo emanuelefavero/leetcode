@@ -4,10 +4,6 @@
 
 // The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
 
-// TODO commit this solution
-// TODO link to README
-// TODO add jsDoc
-
 function majorityElement(nums) {
   let map = new Map()
 
@@ -27,7 +23,40 @@ function majorityElement(nums) {
 }
 
 // -----------------------------
+// SOLUTION 2
+
+// TODO link to README
+// TODO add jsDoc
+
+// TIP: This solution is i O(1) space complexity, but is less readable
+
+function majorityElement2(nums) {
+  let candidate = null
+  let count = 0
+
+  for (let i = 0; i < nums.length; i++) {
+    // If the count is 0, the current number is the candidate
+    if (count === 0) {
+      candidate = nums[i]
+    }
+
+    // If the current number is the candidate, increment the count, otherwise decrement it
+    if (nums[i] === candidate) {
+      count++
+    } else {
+      count--
+    }
+  }
+
+  return candidate
+}
+
+// -----------------------------
 // TESTS
 
+// 1
 console.log(majorityElement([3, 2, 3])) // 3
 // Explanation: 3 appears twice in nums and the length of nums / 2 is 1
+
+// 2
+console.log(majorityElement2([3, 2, 3])) // 3
