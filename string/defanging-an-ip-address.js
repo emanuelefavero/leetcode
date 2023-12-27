@@ -4,8 +4,6 @@
 
 // A defanged IP address replaces every period "." with "[.]".
 
-// TODO jsDoc
-
 // TIP: THis solution uses regex
 
 function defangIPaddr(address) {
@@ -27,6 +25,27 @@ function defangIPaddr3(address) {
 }
 
 // -----------------------------
+// SOLUTION 4
+
+// TIP: This solution doesn't use JavaScript built in methods but is less efficient memory wise and longer to read
+
+// TODO jsDoc
+
+function defangIPaddr4(address) {
+  let result = ''
+
+  for (let char of address) {
+    if (char === '.') {
+      result += '[.]'
+    } else {
+      result += char
+    }
+  }
+
+  return result
+}
+
+// -----------------------------
 // TESTS
 
 // 1
@@ -37,3 +56,6 @@ console.log(defangIPaddr2('255.100.50.0')) // '255[.]100[.]50[.]0'
 
 // 3
 console.log(defangIPaddr3('255.100.50.0')) // '255[.]100[.]50[.]0'
+
+// 4
+console.log(defangIPaddr4('255.100.50.0')) // '255[.]100[.]50[.]0'
