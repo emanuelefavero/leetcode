@@ -4,6 +4,8 @@
 
 // A defanged IP address replaces every period "." with "[.]".
 
+// TODO jsDoc
+
 function defangIPaddr(address) {
   return address.replace(/\./g, '[.]')
 }
