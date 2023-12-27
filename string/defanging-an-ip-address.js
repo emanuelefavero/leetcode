@@ -6,12 +6,24 @@
 
 // TODO jsDoc
 
+// TIP: THis solution uses regex
+
 function defangIPaddr(address) {
   return address.replace(/\./g, '[.]')
 }
 
 // -----------------------------
+// SOLUTION 2
+
+function defangIPaddr2(address) {
+  return address.replaceAll('.', '[.]')
+}
+
+// -----------------------------
 // TESTS
 
-console.log(defangIPaddr('1.1.1.1')) // '1[.]1[.]1[.]1'
+// 1
 console.log(defangIPaddr('255.100.50.0')) // '255[.]100[.]50[.]0'
+
+// 2
+console.log(defangIPaddr2('255.100.50.0')) // '255[.]100[.]50[.]0'
