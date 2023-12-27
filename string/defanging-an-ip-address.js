@@ -1,11 +1,17 @@
-// * Defanging an IP Address
-
-// Given a valid (IPv4) IP address, return a defanged version of that IP address.
-
-// A defanged IP address replaces every period "." with "[.]".
+/**
+ * * Defanging an IP Address
+ *
+ * Given a valid (IPv4) IP address, return a defanged version of that IP address.
+ *
+ * A defanged IP address replaces every period "." with "[.]".
+ *
+ * @param {string} address
+ * @returns {string}
+ */
 
 // TIP: THis solution uses regex
 
+// O(n) time | O(n) space
 function defangIPaddr(address) {
   return address.replace(/\./g, '[.]')
 }
@@ -28,8 +34,6 @@ function defangIPaddr3(address) {
 // SOLUTION 4
 
 // TIP: This solution doesn't use JavaScript built in methods but is less efficient memory wise and longer to read
-
-// TODO jsDoc
 
 function defangIPaddr4(address) {
   let result = ''
