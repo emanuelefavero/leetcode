@@ -20,6 +20,13 @@ function defangIPaddr2(address) {
 }
 
 // -----------------------------
+// SOLUTION 3
+
+function defangIPaddr3(address) {
+  return address.split('.').join('[.]')
+}
+
+// -----------------------------
 // TESTS
 
 // 1
@@ -27,3 +34,6 @@ console.log(defangIPaddr('255.100.50.0')) // '255[.]100[.]50[.]0'
 
 // 2
 console.log(defangIPaddr2('255.100.50.0')) // '255[.]100[.]50[.]0'
+
+// 3
+console.log(defangIPaddr3('255.100.50.0')) // '255[.]100[.]50[.]0'
