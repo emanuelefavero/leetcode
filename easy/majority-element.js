@@ -4,6 +4,12 @@
 
 // The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
 
+/**
+ * @param {number[]} nums
+ * @returns {number}
+ */
+
+// O(n) time complexity
 function majorityElement(nums) {
   let map = new Map()
 
@@ -24,8 +30,6 @@ function majorityElement(nums) {
 
 // -----------------------------
 // SOLUTION 2
-
-// TODO add jsDoc
 
 // TIP: This solution is i O(1) space complexity, but is less readable
 
