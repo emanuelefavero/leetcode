@@ -224,6 +224,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Reverse Words In A String](./string/reverse-words-in-a-string.js)
 - [Reverse Words In A String III](./string/reverse-words-in-a-string-iii.js)
 - [Defanging An IP Address](./string/defanging-an-ip-address.js)
+- [Final Value Of Variable After Performing Operations](./string/final-value-after-operations.js)
 
 ### Tree
 

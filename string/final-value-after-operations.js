@@ -10,7 +10,6 @@ Initially, the value of X is 0.
 Given an array of strings operations containing a list of operations, return the final value of X after performing all the operations.
 */
 
-// TODO link to README
 // TODO jsDoc
 
 function finalValueAfterOperations(operations) {
