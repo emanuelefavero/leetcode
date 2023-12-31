@@ -31,6 +31,18 @@ function interpret2(command) {
 }
 
 // -----------------------------
+// SOLUTION 3
+
+// TIP: This solution uses regex
+
+// TODO jsDoc
+// TODO link to README
+
+function interpret3(command) {
+  return command.replace(/\(\)/g, 'o').replace(/\(al\)/g, 'al')
+}
+
+// -----------------------------
 // TESTS
 
 // 1
@@ -40,3 +52,7 @@ console.log(interpret('G()()()()(al)')) // 'Gooooal'
 // 2
 console.log(interpret2('G()(al)')) // 'Goal'
 console.log(interpret2('G()()()()(al)')) // 'Gooooal'
+
+// 3
+console.log(interpret3('G()(al)')) // 'Goal'
+console.log(interpret3('G()()()()(al)')) // 'Gooooal'
