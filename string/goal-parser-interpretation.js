@@ -22,7 +22,21 @@ function interpret(command) {
 }
 
 // -----------------------------
+// SOLUTION 2
+
+// TIP: This solution uses built in methods. The split() method splits a String into an array by a specific separator. The join() method joins all elements of an array into a string. The argument passed to the join() method is the string that will be used between joined elements of the array
+
+function interpret2(command) {
+  return command.split('()').join('o').split('(al)').join('al')
+}
+
+// -----------------------------
 // TESTS
 
+// 1
 console.log(interpret('G()(al)')) // 'Goal'
 console.log(interpret('G()()()()(al)')) // 'Gooooal'
+
+// 2
+console.log(interpret2('G()(al)')) // 'Goal'
+console.log(interpret2('G()()()()(al)')) // 'Gooooal'
