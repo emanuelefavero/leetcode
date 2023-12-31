@@ -24,9 +24,28 @@ function mostWordsFound(sentences) {
   return max
 }
 
+// -----------------------------
+// SOLUTION 2
+
+// TODO link to README
+// TODO jsDoc
+
+function mostWordsFound2(sentences) {
+  let max = 0
+
+  for (let i = 0; i < sentences.length; i++) {
+    let numberOfWords = sentences[i].split(' ').length
+
+    if (numberOfWords > max) max = numberOfWords
+  }
+
+  return max
+}
+
 // ------------------------------
 // TESTS
 
+// 1
 console.log(
   mostWordsFound([
     'alice and bob love leetcode',
@@ -41,3 +60,12 @@ Explanation:
 - The third sentence, "this is great thanks very much", has 6 words in total.
 Thus, the maximum number of words in a single sentence comes from the third sentence, which has 6 words.
 */
+
+// 2
+console.log(
+  mostWordsFound2([
+    'alice and bob love leetcode',
+    'i think so too',
+    'this is great thanks very much',
+  ])
+) // 6
