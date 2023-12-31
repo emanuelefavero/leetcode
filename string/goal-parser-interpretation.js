@@ -9,22 +9,13 @@ Given the string command, return the Goal Parser's interpretation of command.
 function interpret(command) {
   let result = ''
 
-  current = 0
+  for (let i = 0; i < command.length; i++) {
+    if (command[i] === 'G') result += 'G'
 
-  while (current < command.length) {
-    if (command[current] === '(') {
-      if (command[current + 1] === ')') {
-        result += 'o'
-        current++
-      } else {
-        result += 'al'
-        current += 3
-      }
-    } else {
-      result += 'G'
+    if (command[i] === '(') {
+      if (command[i + 1] === ')') result += 'o'
+      else result += 'al'
     }
-
-    current++
   }
 
   return result
