@@ -10,8 +10,12 @@ Initially, the value of X is 0.
 Given an array of strings operations containing a list of operations, return the final value of X after performing all the operations.
 */
 
-// TODO jsDoc
+/**
+ * @param {string[]} operations
+ * @return {number}
+ */
 
+// O(n) time | O(1) space
 function finalValueAfterOperations(operations) {
   let result = 0
 
