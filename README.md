@@ -226,6 +226,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Defanging An IP Address](./string/defanging-an-ip-address.js)
 - [Final Value Of Variable After Performing Operations](./string/final-value-after-operations.js)
 - [Goal Parser Interpretation](./string/goal-parser-interpretation.js)
+- [Maximum Number of Words Found in Sentences](./string/maximum-words-found.js)
 
 ### Tree
 

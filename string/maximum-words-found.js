@@ -27,7 +27,6 @@ function mostWordsFound(sentences) {
 // -----------------------------
 // SOLUTION 2
 
-// TODO link to README
 // TODO jsDoc
 
 function mostWordsFound2(sentences) {
