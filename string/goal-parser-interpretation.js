@@ -6,6 +6,12 @@ You own a Goal Parser that can interpret a string command. The command consists 
 Given the string command, return the Goal Parser's interpretation of command.
 */
 
+/**
+ * @param {string} command
+ * @returns {string}
+ */
+
+// O(n) time | O(1) space
 function interpret(command) {
   let result = ''
 
@@ -35,7 +41,6 @@ function interpret2(command) {
 
 // TIP: This solution uses regex
 
-// TODO jsDoc
 // TODO link to README
 
 function interpret3(command) {
