@@ -41,8 +41,6 @@ function interpret2(command) {
 
 // TIP: This solution uses regex
 
-// TODO link to README
-
 function interpret3(command) {
   return command.replace(/\(\)/g, 'o').replace(/\(al\)/g, 'al')
 }
