@@ -8,6 +8,12 @@ You are given an array of strings sentences, where each sentences[i] represents 
 Return the maximum number of words that appear in a single sentence.
 */
 
+/**
+ * @param {string[]} sentences
+ * @returns {number}
+ */
+
+// O(n^2) time | O(1) space
 function mostWordsFound(sentences) {
   let max = 0
 
@@ -26,8 +32,6 @@ function mostWordsFound(sentences) {
 
 // -----------------------------
 // SOLUTION 2
-
-// TODO jsDoc
 
 function mostWordsFound2(sentences) {
   let max = 0
