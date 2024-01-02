@@ -11,7 +11,17 @@ function getConcatenation(nums) {
 }
 
 // ---------------------------------------------------
+// SOLUTION 2
+
+function getConcatenation2(nums) {
+  return nums.concat(nums)
+}
+
+// ---------------------------------------------------
 // TESTS
 
+// 1
 console.log(getConcatenation([1, 2, 1])) // [1,2,1,1,2,1]
-console.log(getConcatenation([1, 3, 2, 1])) // [1,3,2,1,1,3,2,1]
+
+// 2
+console.log(getConcatenation2([1, 3, 2, 1])) // [1,3,2,1,1,3,2,1]
