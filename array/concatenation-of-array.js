@@ -18,6 +18,13 @@ function getConcatenation2(nums) {
 }
 
 // ---------------------------------------------------
+// SOLUTION 3
+function getConcatenation3(nums) {
+  nums.push(...nums)
+  return nums
+}
+
+// ---------------------------------------------------
 // TESTS
 
 // 1
@@ -25,3 +32,6 @@ console.log(getConcatenation([1, 2, 1])) // [1,2,1,1,2,1]
 
 // 2
 console.log(getConcatenation2([1, 3, 2, 1])) // [1,3,2,1,1,3,2,1]
+
+// 3
+console.log(getConcatenation3([1, 2, 1])) // [1,2,1,1,2,1]
