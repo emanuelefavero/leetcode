@@ -29,7 +29,6 @@ function getConcatenation3(nums) {
 // SOLUTION 4
 
 // TODO jsDoc
-// TODO link
 
 function getConcatenation4(nums) {
   let n = nums.length // ? needed to avoid infinite loop
