@@ -19,8 +19,25 @@ function getConcatenation2(nums) {
 
 // ---------------------------------------------------
 // SOLUTION 3
+
 function getConcatenation3(nums) {
   nums.push(...nums)
+  return nums
+}
+
+// ---------------------------------------------------
+// SOLUTION 4
+
+// TODO jsDoc
+// TODO link
+
+function getConcatenation4(nums) {
+  let n = nums.length // ? needed to avoid infinite loop
+
+  for (let i = 0; i < n; i++) {
+    nums.push(nums[i])
+  }
+
   return nums
 }
 
@@ -35,3 +52,6 @@ console.log(getConcatenation2([1, 3, 2, 1])) // [1,3,2,1,1,3,2,1]
 
 // 3
 console.log(getConcatenation3([1, 2, 1])) // [1,2,1,1,2,1]
+
+// 4
+console.log(getConcatenation4([1, 3, 2, 1])) // [1,3,2,1,1,3,2,1]
