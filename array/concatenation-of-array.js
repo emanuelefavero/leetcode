@@ -6,6 +6,12 @@
 
 // Return the array ans.
 
+/**
+ * @param {number[]} nums
+ * @returns {number[]}
+ */
+
+// O(n) time | O(n) space
 function getConcatenation(nums) {
   return [...nums, ...nums]
 }
@@ -27,8 +33,6 @@ function getConcatenation3(nums) {
 
 // ---------------------------------------------------
 // SOLUTION 4
-
-// TODO jsDoc
 
 function getConcatenation4(nums) {
   let n = nums.length // ? needed to avoid infinite loop
