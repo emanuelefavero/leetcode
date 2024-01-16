@@ -52,6 +52,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Sort an Array (Merge Sort)](./array/sort-an-array-merge-sort.js)
 - [Duplicate Zeros](./array/duplicate-zeros.js)
 - [Concatenation Of Array](./array/concatenation-of-array.js)
+- [Build Array From Permutation](./array/build-array-from-permutation.js)
 
 ### Binary Search
 
