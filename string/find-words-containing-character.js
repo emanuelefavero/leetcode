@@ -24,6 +24,26 @@ function findWordsContaining(words, x) {
 }
 
 // -------------------------------------------------------------
+// SOLUTION 2
+
+// O(n) time | O(n) space - where n is the number of words
+function findWordsContaining2(words, x) {
+  let result = []
+
+  for (let i = 0; i < words.length; i++) {
+    for (let j = 0; j < words[i].length; j++) {
+      if (words[i][j] === x) {
+        result.push(i)
+        break
+      }
+    }
+  }
+
+  return result
+}
+
+// -------------------------------------------------------------
 // TESTS
 
 console.log(findWordsContaining(['leet', 'code'], 'e')) // [0, 1]
+console.log(findWordsContaining2(['leet', 'code'], 'e')) // [0, 1]
