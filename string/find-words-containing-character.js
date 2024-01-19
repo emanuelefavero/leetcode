@@ -6,6 +6,13 @@
 
 // Note that the returned array may be in any order.
 
+/**
+ * @param {string[]} words
+ * @param {string} x
+ * @returns {number[]}
+ */
+
+// O(n) time | O(n) space - where n is the number of words
 function findWordsContaining(words, x) {
   let result = []
 
