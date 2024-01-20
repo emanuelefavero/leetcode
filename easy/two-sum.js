@@ -42,6 +42,21 @@ function twoSum2(nums, target) {
 }
 
 // -----------------------------
+// SOLUTION 3
+
+// TIP: This solution is not recommended because it has a time complexity of O(n^2) but it is a good solution to know for interviews
+
+// O(n^2)
+function twoSum3(nums, target) {
+  for (let i = 0; i < nums.length; i++) {
+    // ?     j = i + 1 because we don't want to use the same element twice
+    for (let j = i + 1; j < nums.length; j++) {
+      if (nums[i] + nums[j] === target) return [i, j]
+    }
+  }
+}
+
+// -----------------------------
 // TESTS
 
 // 1
@@ -51,3 +66,7 @@ console.log(twoSum([3, 2, 4], 6)) // [1, 2]
 // 2
 console.log(twoSum2([2, 7, 11, 15], 9)) // [0, 1]
 console.log(twoSum2([3, 2, 4], 6)) // [1, 2]
+
+// 3
+console.log(twoSum3([2, 7, 11, 15], 9)) // [0, 1]
+console.log(twoSum3([3, 2, 4], 6)) // [1, 2]
