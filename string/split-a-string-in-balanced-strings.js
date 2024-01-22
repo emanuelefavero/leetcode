@@ -9,6 +9,12 @@ Each substring is balanced.
 Return the maximum number of balanced strings you can obtain.
 */
 
+/**
+ * @param {string} s
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function balancedStringSplit(s) {
   let count = 0
   let balanced = 0
