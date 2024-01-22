@@ -230,6 +230,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Goal Parser Interpretation](./string/goal-parser-interpretation.js)
 - [Maximum Number of Words Found in Sentences](./string/maximum-words-found.js)
 - [Find Words Containing Character](./string/find-words-containing-character.js)
+- [Split A String In Balanced Strings](./string/split-a-string-in-balanced-strings.js)
 
 ### Tree
 
