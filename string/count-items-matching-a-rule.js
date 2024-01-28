@@ -11,6 +11,14 @@ ruleKey == "name" and ruleValue == name i.
 Return the number of items that match the given rule.
 */
 
+/**
+ * @param {string[][]} items
+ * @param {string}} ruleKey
+ * @param {string} ruleValue
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function countMatches(items, ruleKey, ruleValue) {
   let count = 0
   let hash = {
@@ -26,6 +34,9 @@ function countMatches(items, ruleKey, ruleValue) {
 
   return count
 }
+
+// -----------------------------
+// TESTS
 
 console.log(
   countMatches(
