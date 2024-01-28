@@ -232,6 +232,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Find Words Containing Character](./string/find-words-containing-character.js)
 - [Split A String In Balanced Strings](./string/split-a-string-in-balanced-strings.js)
 - [Check If Two String Arrays Are Equivalent](./string/array-strings-are-equal.js)
+- [Count Items Matching A Rule](./string/count-items-matching-a-rule.js)
 
 ### Tree
 
