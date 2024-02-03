@@ -134,6 +134,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Top K Frequent Elements](./hash-table/top-k-frequent-elements.js)
 - [Insert Delete GetRandom O(1)](./hash-table/insert-delete-get-random.js)
 - [Number of Good Pairs](./hash-table/number-of-good-pairs.js)
+- [How Many Numbers Are Smaller Than the Current Number](./hash-table/smaller-numbers-than-current.js)
 
 ### Heap
 

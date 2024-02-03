@@ -11,8 +11,6 @@
  * @returns {number[]}
  */
 
-// TODO link to README
-
 // O(n^2) time | O(n) space
 function smallerNumbersThanCurrent(nums) {
   let result = []
