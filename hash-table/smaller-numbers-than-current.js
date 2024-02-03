@@ -4,6 +4,16 @@
 
 // Return the answer in an array
 
+// NOTE: This problem was in the hash-table section because it could be solved using a hash table, but most solutions use a brute force approach
+
+/**
+ * @param {number[]} nums
+ * @returns {number[]}
+ */
+
+// TODO link to README
+
+// O(n^2) time | O(n) space
 function smallerNumbersThanCurrent(nums) {
   let result = []
 
