@@ -9,8 +9,6 @@ nums[k] - nums[j] == diff.
 Return the number of unique arithmetic triplets
 */
 
-// TODO add link to README
-
 /**
  * @param {number[]} nums
  * @param {number} diff

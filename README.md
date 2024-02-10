@@ -136,6 +136,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Number of Good Pairs](./hash-table/number-of-good-pairs.js)
 - [How Many Numbers Are Smaller Than the Current Number](./hash-table/smaller-numbers-than-current.js)
 - [Decode the Message](./hash-table/decode-the-message.js)
+- [Number of Arithmetic Triplets](./hash-table/number-of-arithmetic-triplets.js)
 
 ### Heap
 
