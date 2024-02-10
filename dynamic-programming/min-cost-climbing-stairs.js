@@ -14,14 +14,20 @@ Return the minimum cost to reach the top of the floor.
 // TIP: This is a bottom-up approach
 
 function minCostClimbingStairs(cost, result = 0) {
-  // We start at the first or second step
+  let prev1 = cost[0]
+  let prev2 = cost[1]
+
   for (let i = 2; i < cost.length; i++) {
-    // We add the minimum cost of the previous step to the current step
-    cost[i] += Math.min(cost[i - 1], cost[i - 2])
+    // The current cost is the cost of the current step plus the minimum of the previous two steps
+    let current = cost[i] + Math.min(prev1, prev2)
+
+    // The previous two steps are updated
+    prev1 = prev2
+    prev2 = current
   }
 
-  // We return the minimum cost of the last two steps
-  return Math.min(cost[cost.length - 1], cost[cost.length - 2])
+  // The minimum cost is the minimum of the previous two steps at this point
+  return Math.min(prev1, prev2)
 }
 
 // -----------------------------
