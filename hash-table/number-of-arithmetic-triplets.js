@@ -9,8 +9,17 @@ nums[k] - nums[j] == diff.
 Return the number of unique arithmetic triplets
 */
 
+// TODO add link to README
+
+/**
+ * @param {number[]} nums
+ * @param {number} diff
+ * @returns {number}
+ */
+
 // TIP: WE just need to check if the current number - diff and the current number - 2 * diff are in the map. If they are, we have an arithmetic triplet
 
+// O(n) time | O(n) space
 function arithmeticTriplets(nums, diff) {
   let map = new Map()
   let count = 0
