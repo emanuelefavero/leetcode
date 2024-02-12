@@ -94,6 +94,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Counting Bits](./dynamic-programming/counting-bits.js)
 - [Divisor Game](./dynamic-programming/divisor-game.js)
 - [Min Cost Climbing Stairs](./dynamic-programming/min-cost-climbing-stairs.js)
+- [N-th Tribonacci Number](./dynamic-programming/n-th-tribonacci-number.js)
 
 ### Easy
 
