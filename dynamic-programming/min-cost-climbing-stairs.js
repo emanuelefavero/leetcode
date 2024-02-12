@@ -8,12 +8,17 @@ You can either start from the step with index 0, or the step with index 1.
 Return the minimum cost to reach the top of the floor.
 */
 
-// TODO jsDoc
 // TODO link to README
+
+/**
+ * @param {number[]} cost
+ * @returns {number}
+ */
 
 // TIP: This is a bottom-up approach
 
-function minCostClimbingStairs(cost, result = 0) {
+// O(n) time | O(1) space
+function minCostClimbingStairs(cost) {
   let prev1 = cost[0]
   let prev2 = cost[1]
 
