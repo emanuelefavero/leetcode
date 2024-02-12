@@ -8,8 +8,6 @@ You can either start from the step with index 0, or the step with index 1.
 Return the minimum cost to reach the top of the floor.
 */
 
-// TODO link to README
-
 /**
  * @param {number[]} cost
  * @returns {number}
