@@ -20,8 +20,30 @@ function tribonacci(n) {
 }
 
 // -----------------------------
+// SOLUTION 2
+
+// TIP: This solution uses memoization (dynamic programming) to optimize the solution
+
+function tribonacci2(
+  n,
+  memo = {
+    0: 0,
+    1: 1,
+    2: 1,
+  }
+) {
+  if (memo[n] !== undefined) return memo[n]
+  return (memo[n] =
+    tribonacci2(n - 1) + tribonacci2(n - 2) + tribonacci2(n - 3))
+}
+
+// -----------------------------
 // TESTS
 
 // 1
 console.log(tribonacci(4)) // 4
 console.log(tribonacci(25)) // 1389537
+
+// 2
+console.log(tribonacci2(4)) // 4
+console.log(tribonacci2(25)) // 1389537
