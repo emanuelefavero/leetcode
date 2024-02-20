@@ -169,6 +169,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 ### Math
 
 - [Number Of Steps To Reduce A Number To Zero](./math/number-of-steps-to-reduce-a-number-to-zero.js)
+- [Find the Maximum Achievable Number](./math/find-maximum-achievable-number.js)
 
 ### Matrix
 
