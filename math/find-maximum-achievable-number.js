@@ -9,6 +9,13 @@ Increase or decrease x by 1, and simultaneously increase or decrease num by 1.
 Return the maximum possible achievable number. It can be proven that there exists at least one achievable number.
 */
 
+/**
+ * @param {number} num
+ * @param {number} t
+ * @returns {number}
+ */
+
+// O(1) time | O(1) space
 function theMaximumAchievableX(num, t) {
   // TIP: the maximum achievable number is num+2t as it is impossible to obtain a higher number within t steps
   return num + 2 * t
