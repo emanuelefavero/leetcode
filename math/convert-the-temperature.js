@@ -13,6 +13,12 @@ Kelvin = Celsius + 273.15
 Fahrenheit = Celsius * 1.80 + 32.00
 */
 
+/**
+ * @param {number} celsius
+ * @returns {number[]}
+ */
+
+// O(1) time | O(1) space
 function convertTemperature(celsius) {
   return [celsius + 273.15, celsius * 1.8 + 32.0]
 }
