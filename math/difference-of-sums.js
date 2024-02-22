@@ -36,6 +36,26 @@ function differenceOfSums(n, m) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: This solution is more efficient than the previous one
+
+function differenceOfSums(n, m) {
+  let num1 = 0
+  let num2 = 0
+
+  for (let i = 1; i <= n; i++) {
+    if (i % m === 0) {
+      num2 += i
+    } else {
+      num1 += i
+    }
+  }
+
+  return num1 - num2
+}
+
+// -------------------------
 // TESTS
 
 console.log(differenceOfSums(10, 3)) // 19
