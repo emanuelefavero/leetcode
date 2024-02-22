@@ -10,6 +10,13 @@ num2: The sum of all integers in the range [1, n] that are divisible by m.
 Return the integer num1 - num2.
 */
 
+/**
+ * @param {number} n
+ * @param {number} m
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function differenceOfSums(n, m) {
   let num1 = []
   let num2 = []
