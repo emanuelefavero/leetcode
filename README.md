@@ -171,6 +171,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Number Of Steps To Reduce A Number To Zero](./math/number-of-steps-to-reduce-a-number-to-zero.js)
 - [Find the Maximum Achievable Number](./math/find-maximum-achievable-number.js)
 - [Convert The Temperature](./math/convert-the-temperature.js)
+- [Divisible and Non-divisible Sums Difference](./math/difference-of-sums.js)
 
 ### Matrix
 
