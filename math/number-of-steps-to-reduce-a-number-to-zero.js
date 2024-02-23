@@ -22,4 +22,7 @@ function numberOfSteps(num) {
   return steps
 }
 
+// -------------------------
+// TESTS
+
 console.log(numberOfSteps(14)) // 6
