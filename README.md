@@ -172,6 +172,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Find the Maximum Achievable Number](./math/find-maximum-achievable-number.js)
 - [Convert The Temperature](./math/convert-the-temperature.js)
 - [Divisible and Non-divisible Sums Difference](./math/difference-of-sums.js)
+- [Smallest Even Multiple](./math/smallest-even-multiple.js)
 
 ### Matrix
 
