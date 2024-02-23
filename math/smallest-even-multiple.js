@@ -1,7 +1,12 @@
-// * Smallest Even Multiple
+/**
+ * * Smallest Even Multiple
+ *
+ * Given a positive integer n, return the smallest positive integer that is a multiple of both 2 and n.
+ * @param {number} n
+ * @returns {number}
+ */
 
-// Given a positive integer n, return the smallest positive integer that is a multiple of both 2 and n.
-
+// O(1) time | O(1) space
 function smallestEvenMultiple(n) {
   return n % 2 === 0 ? n : n * 2
 }
