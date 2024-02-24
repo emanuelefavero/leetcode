@@ -173,6 +173,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Convert The Temperature](./math/convert-the-temperature.js)
 - [Divisible and Non-divisible Sums Difference](./math/difference-of-sums.js)
 - [Smallest Even Multiple](./math/smallest-even-multiple.js)
+- [Subtract the Product and Sum of Digits of an Integer](./math/subtract-product-and-sum.js)
 
 ### Matrix
 
