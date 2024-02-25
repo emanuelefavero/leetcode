@@ -8,8 +8,14 @@ For example, given num = 2932, you have the following digits: two 2's, one 9 and
 Return the minimum possible sum of new1 and new2.
 */
 
+/**
+ * @param {number} num
+ * @returns {number}
+ */
+
 // TIP: the minimum sum can be obtained by sorting the digits of num and then combining the first two digits with the last two digits
 
+// O(1) time | O(1) space
 function minimumSum(num) {
   num = num.toString().split('').sort() // num = ['2', '2', '3', '9']
 
