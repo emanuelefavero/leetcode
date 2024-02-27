@@ -215,6 +215,10 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Letter Combinations of a Phone Number](./recursion/letter-combinations-phone-number.js)
 - [The Skyline Problem](./recursion/the-skyline-problem.js)
 
+### Sorting
+
+- [Widest Vertical Area Between Two Points Containing No Points](./sorting/max-width-of-vertical-area.js)
+
 ### Stack
 
 - [Design Stack](./stack/design-stack.js)
