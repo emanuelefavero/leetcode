@@ -8,6 +8,12 @@ A vertical area is an area of fixed-width extending infinitely along the y-axis 
 Note that points on the edge of a vertical area are not considered included in the area.
 */
 
+/**
+ * @param {number[][]} points
+ * @returns {number}
+ */
+
+// O(nlogn) time | O(1) space
 function maxWidthOfVerticalArea(points) {
   points = points.sort((a, b) => a[0] - b[0]) // sort the points by x value
 
