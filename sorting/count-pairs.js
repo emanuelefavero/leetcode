@@ -1,9 +1,16 @@
-// * COunt Pairs Whose Sum is Less than Target
-
-// Given a 0-indexed integer array nums of length n and an integer target, return the number of pairs (i, j) where 0 <= i < j < n and nums[i] + nums[j] < target.
+/**
+ * * Count Pairs Whose Sum is Less than Target
+ *
+ * Given a 0-indexed integer array nums of length n and an integer target, return the number of pairs (i, j) where 0 <= i < j < n and nums[i] + nums[j] < target.
+ *
+ * @param {number[]} nums
+ * @param {number} target
+ * @returns {number}
+ */
 
 // TIP: This solution does not use sorting, but is easier to understand and implement
 
+// O(n^2) time | O(1) space
 function countPairs(nums, target) {
   let count = 0
 
