@@ -9,6 +9,12 @@ The game continues until nums becomes empty.
 Return the resulting array arr.
 */
 
+/**
+ * @param {number[]} nums
+ * @returns {number[]}
+ */
+
+// O(nlogn) time | O(n) space
 function numberGame(nums) {
   let result = []
 
