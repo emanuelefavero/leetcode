@@ -219,6 +219,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 
 - [Widest Vertical Area Between Two Points Containing No Points](./sorting/max-width-of-vertical-area.js)
 - [Count Pairs Whose Sum is Less than Target](./sorting/count-pairs.js)
+- [Minimum Number Game](./sorting/minimum-number-game.js)
 
 ### Stack
 
