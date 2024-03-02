@@ -14,7 +14,9 @@ Return the resulting array arr.
  * @returns {number[]}
  */
 
-// O(nlogn) time | O(n) space
+// TIP: This solution uses sorting to solve the problem
+
+// O(n log n) time | O(n) space
 function numberGame(nums) {
   let result = []
 
@@ -29,10 +31,43 @@ function numberGame(nums) {
 }
 
 // -----------------------
+// SOLUTION 2
+
+// TIP: This solution does not use sorting and it's not more efficient than the first solution
+
+// TODO: commit solution 2
+
+// O(n^2) time | O(n) space
+function numberGame2(nums) {
+  let result = []
+
+  let bobMin = 0
+  let aliceMin = 0
+
+  while (nums.length) {
+    // find and remove the minimum numbers from the array for both players
+    aliceMin = Math.min(...nums)
+    nums.splice(nums.indexOf(aliceMin), 1)
+    bobMin = Math.min(...nums)
+    nums.splice(nums.indexOf(bobMin), 1)
+
+    // append the minimum numbers to the result array
+    result.push(bobMin)
+    result.push(aliceMin)
+  }
+
+  return result
+}
+
+// -----------------------
 // TESTS
 
+// 1
 console.log(numberGame([5, 4, 2, 3])) // [3, 2, 5, 4]
 /*
 In round one, first Alice removes 2 and then Bob removes 3. Then in arr firstly Bob appends 3 and then Alice appends 2. So arr = [3,2].
 At the beginning of round two, nums = [5,4]. Now, first Alice removes 4 and then Bob removes 5. Then both append in arr which becomes [3,2,5,4].
 */
+
+// 2
+console.log(numberGame2([5, 4, 2, 3])) // [3, 2, 5, 4]
