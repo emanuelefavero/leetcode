@@ -9,6 +9,12 @@ For example, the sentence "This is a sentence" can be shuffled as "sentence4 a3 
 Given a shuffled sentence s containing no more than 9 words, reconstruct and return the original sentence.
 */
 
+/**
+ * @param {string} s
+ * @returns {string}
+ */
+
+// O(n) time | O(n) space
 function sortSentence(s) {
   let result = new Array(9).fill(undefined)
   let word = ''
