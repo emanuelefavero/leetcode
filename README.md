@@ -221,6 +221,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Count Pairs Whose Sum is Less than Target](./sorting/count-pairs.js)
 - [Minimum Number Game](./sorting/minimum-number-game.js)
 - [Sorting the Sentence](./sorting/sorting-the-sentence.js)
+- [Maximum Product Difference Between Two Pairs](./sorting/max-product-difference.js)
 
 ### Stack
 
