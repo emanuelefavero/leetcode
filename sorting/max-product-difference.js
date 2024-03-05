@@ -9,6 +9,12 @@ Given an integer array nums, choose four distinct indices w, x, y, and z such th
 Return the maximum such product difference.
 */
 
+/**
+ * @param {number[]} nums
+ * @returns {number}
+ */
+
+// O(n log n) time | O(1) space
 function maxProductDifference(nums) {
   nums.sort((a, b) => a - b)
 
