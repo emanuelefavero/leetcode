@@ -223,6 +223,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Sorting the Sentence](./sorting/sorting-the-sentence.js)
 - [Maximum Product Difference Between Two Pairs](./sorting/max-product-difference.js)
 - [Maximum Product of Two Elements in an Array](./sorting/max-product-of-two-elements.js)
+- [Minimum Number of Moves to Seat Everyone](./sorting/min-moves-to-seat.js)
 
 ### Stack
 
