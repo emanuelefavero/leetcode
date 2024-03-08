@@ -112,6 +112,10 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Number Of Provinces](./graph/number-of-provinces.js)
 - [Smallest String With Swaps](./graph/smallest-string-with-swaps.js)
 
+### Greedy
+
+- [Maximum Odd Binary Number](./greedy/maximum-odd-binary-number.js)
+
 ### Hash Table
 
 - [Two Sum](./hash-table/two-sum.js)
