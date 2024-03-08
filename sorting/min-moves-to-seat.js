@@ -11,6 +11,13 @@ Return the minimum number of moves required to move each student to a seat such 
 Note that there may be multiple seats or students in the same position at the beginning.
 */
 
+/**
+ * @param {number[]} seats
+ * @param {number[]} students
+ * @returns {number}
+ */
+
+// O(n log n) time | O(1) space
 function minMovesToSeat(seats, students) {
   seats.sort((a, b) => a - b)
   students.sort((a, b) => a - b)
