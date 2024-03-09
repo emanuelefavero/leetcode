@@ -115,6 +115,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 ### Greedy
 
 - [Maximum Odd Binary Number](./greedy/maximum-odd-binary-number.js)
+- [Maximum 69 Number](./greedy/maximum-69-number.js)
 
 ### Hash Table
 
