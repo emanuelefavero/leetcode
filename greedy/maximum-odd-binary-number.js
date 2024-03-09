@@ -31,8 +31,22 @@ function maximumOddBinaryNumber(s) {
 }
 
 // -----------------------------
+// SOLUTION 2
+
+function maximumOddBinaryNumber2(s) {
+  let count1 = s.match(/1/g).length
+  let count0 = s.length - count1
+
+  return '1'.repeat(count1 - 1) + '0'.repeat(count0) + '1'
+}
+
+// -----------------------------
 // TESTS
 
 // 1
 console.log(maximumOddBinaryNumber('010'))
 console.log(maximumOddBinaryNumber('0101'))
+
+// 2
+console.log(maximumOddBinaryNumber2('010'))
+console.log(maximumOddBinaryNumber2('0101'))
