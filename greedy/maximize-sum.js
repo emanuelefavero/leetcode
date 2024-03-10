@@ -11,6 +11,13 @@ You are given a 0-indexed integer array nums and an integer k. Your task is to p
 Return the maximum score you can achieve after performing the operation exactly k times.
 */
 
+/**
+ * @param {number[]} nums
+ * @param {number} k
+ * @returns {number}
+ */
+
+// O(n log n) time | O(1) space
 function maximizeSum(nums, k) {
   nums.sort((a, b) => a - b)
 
@@ -28,6 +35,7 @@ function maximizeSum(nums, k) {
 // -----------------------------
 // SOLUTION 2
 
+// O(n) time | O(1) space
 function maximizeSum2(nums, k) {
   let max = Math.max(...nums)
 
