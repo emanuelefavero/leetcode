@@ -26,8 +26,25 @@ function maximizeSum(nums, k) {
 }
 
 // -----------------------------
+// SOLUTION 2
+
+function maximizeSum2(nums, k) {
+  let max = Math.max(...nums)
+
+  let sum = 0
+
+  for (let i = 0; i < k; i++) {
+    sum += max
+    max++
+  }
+
+  return sum
+}
+
+// -----------------------------
 // TESTS
 
+// 1
 console.log(maximizeSum([1, 2, 3, 4, 5], 3)) // 18
 /*
 Explanation: We need to choose exactly 3 elements from nums to maximize the sum.
@@ -37,3 +54,6 @@ For the third iteration, we choose 7. Then sum is 5 + 6 + 7 = 18 and nums = [1,2
 So, we will return 18.
 It can be proven, that 18 is the maximum answer that we can achieve.
 */
+
+// 2
+console.log(maximizeSum2([1, 2, 3, 4, 5], 3)) // 18
