@@ -117,6 +117,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Maximum Odd Binary Number](./greedy/maximum-odd-binary-number.js)
 - [Maximum 69 Number](./greedy/maximum-69-number.js)
 - [Maximum Sum With Exactly K Elements](./greedy/maximize-sum.js)
+- [Lexicographically Smallest Palindrome](./greedy/lexicographically-smallest-palindrome.js)
 
 ### Hash Table
 
