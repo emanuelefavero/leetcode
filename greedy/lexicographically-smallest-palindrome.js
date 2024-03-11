@@ -10,6 +10,13 @@ A string a is lexicographically smaller than a string b (of the same length) if 
 Return the resulting palindrome string.
 */
 
+/**
+ *
+ * @param {string} s
+ * @returns string
+ */
+
+// O(n) time | O(n) space
 function makeSmallestPalindrome(s) {
   let a = 0
   let b = s.length - 1
