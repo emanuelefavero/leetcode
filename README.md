@@ -119,6 +119,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Maximum Sum With Exactly K Elements](./greedy/maximize-sum.js)
 - [Lexicographically Smallest Palindrome](./greedy/lexicographically-smallest-palindrome.js)
 - [Minimum Operations to Make the Array Increasing](./greedy/min-operations.js)
+- [DI String Match](./greedy/di-string-match.js)
 
 ### Hash Table
 
