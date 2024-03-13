@@ -9,6 +9,12 @@ Return the minimum number of operations needed to make nums strictly increasing.
 An array nums is strictly increasing if nums[i] < nums[i+1] for all 0 <= i < nums.length - 1. An array of length 1 is trivially strictly increasing.
 */
 
+/**
+ * @param {number[]} nums
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function minOperations(nums) {
   if (nums.length < 2) return 0
 
