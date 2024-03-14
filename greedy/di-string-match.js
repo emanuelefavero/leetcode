@@ -11,6 +11,12 @@ Given a string s, reconstruct the permutation perm and return it. If there are m
 
 // TIP: We can use two pointers to keep track of the left and right values and push them into the result array based on the current character in the string. AT the end, we push the remaining value of left into the result array
 
+/**
+ * @param {string} s
+ * @returns {number[]}
+ */
+
+// O(n) time | O(n) space
 function diStringMatch(s) {
   let result = []
   let left = 0
