@@ -10,6 +10,12 @@ Type the character the previous is currently on.
 Given a string word, return the minimum number of seconds to type out the characters in word.
 */
 
+/**
+ * @param {string} word
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function minTimeToType(word) {
   let map = {
     a: 1,
