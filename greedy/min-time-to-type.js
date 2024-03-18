@@ -63,6 +63,28 @@ function minTimeToType(word) {
 }
 
 // -----------------------------
+// SOLUTION 2
+
+function minTimeToType2(word) {
+  let lastChar = 'a'
+  let time = 0
+
+  for (let char of word) {
+    // get the distance between the last character and the current character
+    let clockWise = Math.abs(lastChar.charCodeAt() - char.charCodeAt())
+    let counterClockWise = 26 - clockWise
+
+    // get the minimum distance between the two characters
+    let turn = Math.min(clockWise, counterClockWise)
+
+    time += turn + 1 // we add one for each character typed (one per second)
+    lastChar = char // update the last character
+  }
+
+  return time
+}
+
+// -----------------------------
 // TESTS
 
 console.log(minTimeToType('abc')) // 5
@@ -77,3 +99,6 @@ The characters are printed as follows:
 */
 
 console.log(minTimeToType('bza')) // 7
+
+// 2
+console.log(minTimeToType2('bza')) // 7
