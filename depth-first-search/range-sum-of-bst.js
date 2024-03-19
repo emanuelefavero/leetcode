@@ -68,6 +68,32 @@ function rangeSumBST2(root, low, high) {
 }
 
 // -------------------------
+// SOLUTION 3
+
+function rangeSumBST3(root, low, high) {
+  let sum = 0
+  let stack = [root]
+
+  while (stack.length) {
+    let node = stack.pop()
+
+    if (node.val >= low && node.val <= high) {
+      sum += node.val
+    }
+
+    if (node.left && node.val > low) {
+      stack.push(node.left)
+    }
+
+    if (node.right && node.val < high) {
+      stack.push(node.right)
+    }
+  }
+
+  return sum
+}
+
+// -------------------------
 // TESTS
 
 let root = new TreeNode(10)
@@ -79,5 +105,6 @@ root.right.right = new TreeNode(18)
 
 console.log(rangeSumBST(root, 7, 15)) // 32
 console.log(rangeSumBST2(root, 7, 15)) // 32
+console.log(rangeSumBST3(root, 7, 15)) // 32
 
 // Explanation: Nodes 7, 10, and 15 are in the range [7, 15]. 7 + 10 + 15 = 32.
