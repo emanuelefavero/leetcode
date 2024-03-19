@@ -2,6 +2,14 @@
 
 // Given the root node of a binary search tree and two integers low and high, return the sum of values of all nodes with a value in the inclusive range [low, high]
 
+/**
+ * @typedef TreeNode
+ * @type {object}
+ * @property {number} val
+ * @property {TreeNode | null} left
+ * @property {TreeNode | null} right
+ */
+
 class TreeNode {
   constructor(val, left, right) {
     this.val = val || 0
@@ -10,6 +18,16 @@ class TreeNode {
   }
 }
 
+/**
+ *
+ * @param {TreeNode} root
+ * @param {number} low
+ * @param {number} high
+ * @param {number} sum
+ * @returns {number}
+ */
+
+// O(n) time | O(n) space
 function rangeSumBST(root, low, high, sum = 0) {
   if (!root) return sum
 
