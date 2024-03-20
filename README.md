@@ -78,6 +78,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 ## Depth First Search
 
 - [Range Sum of BST](./depth-first-search/range-sum-of-bst.js)
+- [Find a Corresponding Node of a Binary Tree in a Clone of That Tree](./depth-first-search/find-node-in-cloned-binary-tree.js)
 
 ## Database
 
