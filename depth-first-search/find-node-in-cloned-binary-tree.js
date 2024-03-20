@@ -10,6 +10,14 @@ Return a reference to the same node in the cloned tree.
 Note that you are not allowed to change any of the two trees or the target node and the answer must be a reference to a node in the cloned tree.
 */
 
+/**
+ * @typedef TreeNode
+ * @type {object}
+ * @property {number} val
+ * @property {TreeNode | null} left
+ * @property {TreeNode | null} right
+ */
+
 class TreeNode {
   constructor(val, left, right) {
     this.val = val || 0
@@ -18,6 +26,14 @@ class TreeNode {
   }
 }
 
+/**
+ * @param {TreeNode} original
+ * @param {TreeNode} cloned
+ * @param {TreeNode} target
+ * @returns {TreeNode}
+ */
+
+// O(n) time | O(n) space
 function getTargetCopy(original, cloned, target) {
   if (!cloned) return null
 
