@@ -10,6 +10,14 @@ Return the merged tree.
 Note: The merging process must start from the root nodes of both trees.
 */
 
+/**
+ * @typedef TreeNode
+ * @type {object}
+ * @property {number} val
+ * @property {TreeNode | null} left
+ * @property {TreeNode | null} right
+ */
+
 class TreeNode {
   constructor(val, left, right) {
     this.val = val || 0
@@ -18,6 +26,13 @@ class TreeNode {
   }
 }
 
+/**
+ * @param {TreeNode} root1
+ * @param {TreeNode} root2
+ * @returns {TreeNode}
+ */
+
+// O(n) time | O(n) space
 function mergeTrees(root1, root2) {
   if (!root1) return root2
   if (!root2) return root1
