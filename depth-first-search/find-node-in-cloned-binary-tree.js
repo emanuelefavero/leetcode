@@ -33,6 +33,8 @@ class TreeNode {
  * @returns {TreeNode}
  */
 
+// TIP: This is a DFS solution
+
 // O(n) time | O(n) space
 function getTargetCopy(original, cloned, target) {
   if (!cloned) return null
@@ -43,6 +45,26 @@ function getTargetCopy(original, cloned, target) {
     getTargetCopy(original, cloned.left, target) ||
     getTargetCopy(original, cloned.right, target)
   )
+}
+
+// -------------------------
+// SOLUTION 2
+
+// TIP: This is a BFS solution
+
+function getTargetCopy2(original, cloned, target) {
+  let queue = [cloned]
+
+  while (queue.length) {
+    let node = queue.shift()
+
+    if (node.val === target.val) return node
+
+    if (node.left) queue.push(node.left)
+    if (node.right) queue.push(node.right)
+  }
+
+  return null
 }
 
 // -------------------------
@@ -59,3 +81,4 @@ let cloned = original
 let target = original.right
 
 console.log(getTargetCopy(original, cloned, target))
+console.log(getTargetCopy2(original, cloned, target))
