@@ -11,6 +11,29 @@ class TreeNode {
 }
 
 function increasingBST(root) {
+  let newRoot = new TreeNode()
+  let current = newRoot
+
+  function inOrder(node) {
+    if (!node) return
+
+    inOrder(node.left)
+
+    current.right = new TreeNode(node.val)
+    current = current.right
+
+    inOrder(node.right)
+  }
+
+  inOrder(root)
+
+  return newRoot.right
+}
+
+// -------------------------
+// SOLUTION 2
+
+function increasingBST2(root) {
   let values = []
 
   function inOrder(node) {
@@ -48,3 +71,4 @@ root.right.right.left = new TreeNode(7)
 root.right.right.right = new TreeNode(9)
 
 console.log(increasingBST(root))
+console.log(increasingBST2(root))
