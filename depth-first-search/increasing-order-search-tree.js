@@ -2,6 +2,14 @@
 
 // Given the root of a binary search tree, rearrange the tree in in-order so that the leftmost node in the tree is now the root of the tree, and every node has no left child and only one right child
 
+/**
+ * @typedef TreeNode
+ * @type {object}
+ * @property {number} val
+ * @property {TreeNode | null} left
+ * @property {TreeNode | null} right
+ */
+
 class TreeNode {
   constructor(val, left, right) {
     this.val = val || 0
@@ -10,6 +18,12 @@ class TreeNode {
   }
 }
 
+/**
+ * @param {TreeNode} root
+ * @returns {TreeNode}
+ */
+
+// O(n) time | O(n) space
 function increasingBST(root) {
   let newRoot = new TreeNode()
   let current = newRoot
