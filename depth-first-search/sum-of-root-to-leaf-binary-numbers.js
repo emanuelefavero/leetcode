@@ -9,6 +9,14 @@ For all leaves in the tree, consider the numbers represented by the path from th
 The test cases are generated so that the answer fits in a 32-bits integer.
 */
 
+/**
+ * @typedef TreeNode
+ * @type {object}
+ * @property {number} val
+ * @property {TreeNode | null} left
+ * @property {TreeNode | null} right
+ */
+
 class TreeNode {
   constructor(val, left, right) {
     this.val = val || 0
@@ -17,6 +25,12 @@ class TreeNode {
   }
 }
 
+/**
+ * @param {TreeNode} root
+ * @returns {number}
+ */
+
+// O(n) time | O(n) space
 function sumRootToLeaf(root) {
   let sum = 0
   let binaryNumber = ''
