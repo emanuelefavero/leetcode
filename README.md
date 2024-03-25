@@ -81,6 +81,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Find a Corresponding Node of a Binary Tree in a Clone of That Tree](./depth-first-search/find-node-in-cloned-binary-tree.js)
 - [Merge Two Binary Trees](./depth-first-search/merge-two-binary-trees.js)
 - [Increasing Order Search Tree](./depth-first-search/increasing-order-search-tree.js)
+- [Sum of Root To Leaf Binary Numbers](./depth-first-search/sum-of-root-to-leaf-binary-numbers.js)
 
 ## Database
 
