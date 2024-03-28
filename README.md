@@ -75,13 +75,9 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Valid Perfect Square](./binary-search/valid-perfect-square.js)
 - [Find Smallest Letter Greater Than Target](./binary-search/find-smallest-letter-greater-than-target.js)
 
-## Depth First Search
+## Breadth First Search
 
-- [Range Sum of BST](./depth-first-search/range-sum-of-bst.js)
-- [Find a Corresponding Node of a Binary Tree in a Clone of That Tree](./depth-first-search/find-node-in-cloned-binary-tree.js)
-- [Merge Two Binary Trees](./depth-first-search/merge-two-binary-trees.js)
-- [Increasing Order Search Tree](./depth-first-search/increasing-order-search-tree.js)
-- [Sum of Root To Leaf Binary Numbers](./depth-first-search/sum-of-root-to-leaf-binary-numbers.js)
+- [Average of Levels in Binary Tree](./breadth-first-search/average-of-levels-in-binary-tree.js)
 
 ## Database
 
@@ -95,6 +91,14 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Swap Salary](./database/swap-salary.js)
 - [Replace Employee ID With The Unique Identifier](./database/replace-employee-id-with-unique-id.js)
 - [Product Sales Analysis I](./database/product-sales-analysis-i.js)
+
+## Depth First Search
+
+- [Range Sum of BST](./depth-first-search/range-sum-of-bst.js)
+- [Find a Corresponding Node of a Binary Tree in a Clone of That Tree](./depth-first-search/find-node-in-cloned-binary-tree.js)
+- [Merge Two Binary Trees](./depth-first-search/merge-two-binary-trees.js)
+- [Increasing Order Search Tree](./depth-first-search/increasing-order-search-tree.js)
+- [Sum of Root To Leaf Binary Numbers](./depth-first-search/sum-of-root-to-leaf-binary-numbers.js)
 
 ## Dynamic Programming
 

@@ -11,8 +11,6 @@ class TreeNode {
 }
 
 // TODO jsDoc
-// TODO add breadth-first-search/average-of-levels-in-binary-tree.js to README
-// NOTE: This is a new folder (breadth, no depth)
 
 function averageOfLevels(root) {
   let result = []
