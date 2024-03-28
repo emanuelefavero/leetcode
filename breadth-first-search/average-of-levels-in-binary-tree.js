@@ -2,6 +2,14 @@
 
 // Given the root of a binary tree, return the average value of the nodes on each level in the form of an array. Answers within 10-5 of the actual answer will be accepted.
 
+/**
+ * @typedef TreeNode
+ * @type {object}
+ * @property {number} val
+ * @property {TreeNode | null} left
+ * @property {TreeNode | null} right
+ */
+
 class TreeNode {
   constructor(val = 0, left = null, right = null) {
     this.val = val
@@ -10,8 +18,12 @@ class TreeNode {
   }
 }
 
-// TODO jsDoc
+/**
+ * @param {TreeNode} root
+ * @returns {number[]}
+ */
 
+// O(n) time | O(n) space
 function averageOfLevels(root) {
   let result = []
   let queue = [root]
