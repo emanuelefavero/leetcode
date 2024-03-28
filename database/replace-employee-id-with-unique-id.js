@@ -41,6 +41,9 @@ left join EmployeeUNI a
 on a.id = b.id;
 */
 
+// -------------------------
+// EXAMPLE
+
 /*
 Input: 
 Employees table:

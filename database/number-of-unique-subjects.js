@@ -23,6 +23,9 @@ The result format is shown in the following example.
 // * SOLUTION
 // * select teacher_id, count(distinct subject_id) as cnt from Teacher group by teacher_id;
 
+// -------------------------
+// EXAMPLE
+
 /*
 Input: 
 Teacher table:

@@ -48,6 +48,9 @@ having balance > 10000
 ;
 */
 
+// -------------------------
+// EXAMPLE
+
 /*
 Input: 
 Users table:

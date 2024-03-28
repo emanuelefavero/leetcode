@@ -17,6 +17,8 @@ product_id is a foreign key (reference column) to Product table.
 Each row of this table shows a sale on the product product_id in a certain year.
 Note that the price is per unit.
 
+// -------------------------
+// EXAMPLE
 
 Table: Product
 

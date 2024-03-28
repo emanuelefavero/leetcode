@@ -28,6 +28,9 @@ The result format is in the following example.
 // * SOLUTION
 // * select emp_id, event_day, sum(out_time - in_time) as total_time from Employees group by emp_id, event_day;
 
+// -------------------------
+// EXAMPLE
+
 /*
 Input: 
 Employees table:

@@ -26,6 +26,9 @@ The result format is in the following example.
 // * SOLUTION
 // * select product_id from Products where low_fats = 'Y' and recyclable = 'Y';
 
+// -------------------------
+// EXAMPLE
+
 /*
 Output:
 +-------------+

@@ -23,6 +23,9 @@ The result format is in the following example.
 // * SOLUTION
 // * select tweet_id from Tweets where length(content) > 15;
 
+// -------------------------
+// EXAMPLE
+
 /*
 Input: 
 Tweets table:

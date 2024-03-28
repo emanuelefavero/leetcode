@@ -33,6 +33,9 @@ CASE sex
 END;
 */
 
+// -------------------------
+// EXAMPLE
+
 /*
 Input: 
 Salary table:
