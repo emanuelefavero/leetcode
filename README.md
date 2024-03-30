@@ -74,6 +74,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Pow(x, n)](./binary-search/pow-x-n.js)
 - [Valid Perfect Square](./binary-search/valid-perfect-square.js)
 - [Find Smallest Letter Greater Than Target](./binary-search/find-smallest-letter-greater-than-target.js)
+- [Count Negative Numbers in a Sorted Matrix](./binary-search/count-negatives.js)
 
 ## Breadth First Search
 
