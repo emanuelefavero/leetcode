@@ -15,8 +15,38 @@ function countNegatives(grid) {
 }
 
 // ------------------------
+// SOLUTION 2
+
+// TIP: This is a binary search solution
+
+function countNegatives2(grid) {
+  let count = 0
+
+  for (let i = 0; i < grid.length; i++) {
+    let left = 0
+    let right = grid[i].length - 1
+
+    while (left <= right) {
+      let middle = Math.floor((left + right) / 2)
+
+      if (grid[i][middle] < 0) {
+        right = middle - 1
+      } else {
+        left = middle + 1
+      }
+    }
+
+    // Count the number of negative numbers by subtracting the left index from the length of the row
+    count += grid[i].length - left
+  }
+
+  return count
+}
+
+// ------------------------
 // TESTS
 
+// 1
 console.log(
   countNegatives([
     [4, 3, 2, -1],
@@ -26,3 +56,13 @@ console.log(
   ])
 ) // 8
 // Explanation: There are 8 negatives number in the matrix.
+
+// 2
+console.log(
+  countNegatives2([
+    [4, 3, 2, -1],
+    [3, 2, 1, -1],
+    [1, 1, -1, -2],
+    [-1, -1, -2, -3],
+  ])
+) // 8
