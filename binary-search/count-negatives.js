@@ -2,6 +2,12 @@
 
 // Given a m x n matrix grid which is sorted in non-increasing order both row-wise and column-wise, return the number of negative numbers in grid.
 
+/**
+ * @param {number[][]} grid
+ * @returns {number}
+ */
+
+// O(n^2) time | O(1) space
 function countNegatives(grid) {
   let count = 0
 
@@ -19,6 +25,7 @@ function countNegatives(grid) {
 
 // TIP: This is a binary search solution
 
+// O(n log n) time | O(1) space
 function countNegatives2(grid) {
   let count = 0
 
