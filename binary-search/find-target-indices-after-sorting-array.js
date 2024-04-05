@@ -17,6 +17,10 @@ function targetIndices(nums, target) {
     if (nums[i] === target) {
       result.push(i)
     }
+
+    if (nums[i] > target) {
+      break
+    }
   }
   return result
 }
