@@ -14,7 +14,7 @@ Return a list of the target indices of nums after sorting nums in non-decreasing
  * @returns {number[]}
  */
 
-// O(nlogn) time complexity
+// O(n) time | O(1) space
 function targetIndices(nums, target) {
   nums.sort((a, b) => a - b)
 
@@ -33,8 +33,41 @@ function targetIndices(nums, target) {
 }
 
 // ------------------------
+// SOLUTION 2
+
+function targetIndices2(nums, target) {
+  nums.sort((a, b) => a - b) // sort
+
+  let result = []
+
+  // Binary search
+  let left = 0
+  let right = nums.length - 1
+
+  while (left <= right) {
+    let middle = Math.floor((left + right) / 2)
+
+    if (target > nums[middle]) left = middle + 1
+    else right = middle - 1
+  }
+
+  // Find all target indices
+  // TIP: At this point left is the first index of target
+  for (let i = left; i < nums.length; i++) {
+    if (nums[i] !== target) break
+    result.push(i)
+  }
+
+  return result
+}
+
+// ------------------------
 // TESTS
 
+// 1
 console.log(targetIndices([1, 2, 5, 2, 3], 2)) // [1, 2]
 // Explanation: After sorting, nums is [1,2,2,3,5].
 // The indices where nums[i] == 2 are 1 and 2.
+
+// 2
+console.log(targetIndices2([1, 2, 5, 2, 3], 2)) // [1, 2]
