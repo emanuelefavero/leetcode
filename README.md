@@ -76,6 +76,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Find Smallest Letter Greater Than Target](./binary-search/find-smallest-letter-greater-than-target.js)
 - [Count Negative Numbers in a Sorted Matrix](./binary-search/count-negatives.js)
 - [Find Target Indices After Sorting Array](./binary-search/find-target-indices-after-sorting-array.js)
+- [Longest Subsequence With Limited Sum](./binary-search/longest-subsequence-with-limited-sum.js)
 
 ## Breadth First Search
 
