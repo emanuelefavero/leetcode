@@ -8,8 +8,15 @@ Return an array answer of length m where answer[i] is the maximum size of a subs
 A subsequence is an array that can be derived from another array by deleting some or no elements without changing the order of the remaining elements.
 */
 
+/**
+ * @param {number[]} nums
+ * @param {number[]} queries
+ * @returns {number[]}
+ */
+
 // TIP: This is not a binary search solution but is the most simple and common
 
+// O(n * m) time | O(1) space
 function answerQueries(nums, queries) {
   nums.sort((a, b) => a - b)
 
