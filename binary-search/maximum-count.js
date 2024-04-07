@@ -7,6 +7,12 @@ In other words, if the number of positive integers in nums is pos and the number
 Note that 0 is neither positive nor negative.\
 */
 
+/**
+ * @param {number[]} nums
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function maximumCount(nums) {
   let pos = 0
   let neg = 0
