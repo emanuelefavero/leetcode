@@ -2,8 +2,14 @@
 
 // Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array
 
+/**
+ * @param {number[]} nums
+ * @returns {number}
+ */
+
 // TIP: This solution is not binary search, but it's a good solution to solve the problem
 
+// O(n) time | O(n) space
 function missingNumber(nums) {
   let set = new Set([...nums])
 
