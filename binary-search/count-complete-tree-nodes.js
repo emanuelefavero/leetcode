@@ -8,6 +8,14 @@ According to Wikipedia, every level, except possibly the last, is completely fil
 Design an algorithm that runs in less than O(n) time complexity.
 */
 
+/**
+ * @typedef TreeNode
+ * @type {object}
+ * @property {number} val
+ * @property {TreeNode} left
+ * @property {TreeNode} right
+ */
+
 class TreeNode {
   constructor(val = 0, left = null, right = null) {
     this.val = val
@@ -16,8 +24,14 @@ class TreeNode {
   }
 }
 
+/**
+ * @param {TreeNode} root
+ * @returns {number}
+ */
+
 // TIP: This is a DFS solution that takes O(n)
 
+// O(n) time | O(n) space
 function countNodes(root) {
   if (!root) return 0
 
