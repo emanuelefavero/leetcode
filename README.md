@@ -80,6 +80,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Maximum Count of Positive Integer and Negative Integer](./binary-search/maximum-count.js)
 - [Find the Distance Value Between Two Arrays](./binary-search/find-the-distance-value.js)
 - [Missing Number](./binary-search/missing-number.js)
+- [Count Complete Tree Nodes](./binary-search/count-complete-tree-nodes.js)
 
 ## Breadth First Search
 
