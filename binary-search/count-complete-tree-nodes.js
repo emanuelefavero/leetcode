@@ -39,6 +39,37 @@ function countNodes(root) {
 }
 
 // ------------------------
+// SOLUTION 2
+
+// TIP: This is a binary search solution that takes O(log n)
+
+function countNodes2(root) {
+  if (!root) return 0
+
+  let left = root
+  let right = root
+  let leftHeight = 0
+  let rightHeight = 0
+
+  while (left) {
+    left = left.left
+    leftHeight++
+  }
+
+  while (right) {
+    right = right.right
+    rightHeight++
+  }
+
+  if (leftHeight === rightHeight) {
+    return Math.pow(2, leftHeight) - 1 // 2^h - 1
+    // TIP: We subtract 1 because the root is already counted
+  }
+
+  return 1 + countNodes2(root.left) + countNodes2(root.right)
+}
+
+// ------------------------
 // TESTS
 
 let root = new TreeNode(1)
@@ -48,4 +79,8 @@ root.left.left = new TreeNode(4)
 root.left.right = new TreeNode(5)
 root.right.left = new TreeNode(6)
 
+// 1
 console.log(countNodes(root)) // 6
+
+// 2
+console.log(countNodes2(root)) // 6
