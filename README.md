@@ -85,6 +85,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 ## Breadth First Search
 
 - [Average of Levels in Binary Tree](./breadth-first-search/average-of-levels-in-binary-tree.js)
+- [Univalued Binary Tree](./breadth-first-search/univalued-binary-tree.js)
 
 ## Database
 
