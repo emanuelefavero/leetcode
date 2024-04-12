@@ -25,6 +25,27 @@ function isUnivalTree(root, prev = root.val) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: This is a breadth first search solution
+
+function isUnivalTree2(root) {
+  let value = root.val
+  let queue = [root]
+
+  while (queue.length) {
+    let current = queue.shift()
+
+    if (current.val !== value) return false
+
+    if (current.left) queue.push(current.left)
+    if (current.right) queue.push(current.right)
+  }
+
+  return true
+}
+
+// -------------------------
 // TESTS
 
 let root = new TreeNode(1)
@@ -35,9 +56,11 @@ root.left.right = new TreeNode(1)
 root.right.right = new TreeNode(1)
 
 console.log(isUnivalTree(root)) // true
+console.log(isUnivalTree2(root)) // true
 
 root = new TreeNode(2)
 root.left = new TreeNode(2)
 root.right = new TreeNode(5)
 
 console.log(isUnivalTree(root))
+console.log(isUnivalTree2(root))
