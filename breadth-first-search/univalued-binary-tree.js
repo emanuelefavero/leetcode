@@ -6,6 +6,14 @@ A binary tree is uni-valued if every node in the tree has the same value.
 Given the root of a binary tree, return true if the given tree is uni-valued, or false otherwise.
 */
 
+/**
+ * @typedef TreeNode
+ * @type {object}
+ * @property {number} val
+ * @property {TreeNode | null} left
+ * @property {TreeNode | null} right
+ */
+
 class TreeNode {
   constructor(val = 0, left = null, right = null) {
     this.val = val
@@ -14,8 +22,15 @@ class TreeNode {
   }
 }
 
+/**
+ * @param {TreeNode} root
+ * @param {number} prev
+ * @returns {boolean}
+ */
+
 // TIP: This is a depth first search solution
 
+// O(n) time | O(n) space
 function isUnivalTree(root, prev = root.val) {
   if (!root) return true
 
@@ -29,6 +44,7 @@ function isUnivalTree(root, prev = root.val) {
 
 // TIP: This is a breadth first search solution
 
+// O(n) time | O(n) space
 function isUnivalTree2(root) {
   let value = root.val
   let queue = [root]
