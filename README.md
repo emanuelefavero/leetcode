@@ -53,6 +53,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Duplicate Zeros](./array/duplicate-zeros.js)
 - [Concatenation Of Array](./array/concatenation-of-array.js)
 - [Build Array From Permutation](./array/build-array-from-permutation.js)
+- [Shuffle the Array](./array/shuffle-the-array.js)
 
 ### Binary Search
 
