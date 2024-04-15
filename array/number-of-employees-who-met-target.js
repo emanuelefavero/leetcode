@@ -10,6 +10,13 @@ You are given a 0-indexed array of non-negative integers hours of length n and a
 Return the integer denoting the number of employees who worked at least target hours.
 */
 
+/**
+ * @param {number[]} hours
+ * @param {number} target
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function numberOfEmployeesWhoMetTarget(hours, target) {
   let count = 0
 
