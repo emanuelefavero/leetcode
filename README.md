@@ -55,6 +55,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Build Array From Permutation](./array/build-array-from-permutation.js)
 - [Shuffle the Array](./array/shuffle-the-array.js)
 - [Number of Employees Who Met the Target](./array/number-of-employees-who-met-target.js)
+- [Kids With the Greatest Number of Candies](./array/kids-with-candies.js)
 
 ### Binary Search
 
