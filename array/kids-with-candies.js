@@ -8,6 +8,13 @@ Return a boolean array result of length n, where result[i] is true if, after giv
 Note that multiple kids can have the greatest number of candies.
 */
 
+/**
+ * @param {number[]} candies
+ * @param {number} extraCandies
+ * @returns {boolean[]}
+ */
+
+// O(n) time | O(1) space
 function kidsWithCandies(candies, extraCandies) {
   let max = Math.max(...candies)
   let result = []
