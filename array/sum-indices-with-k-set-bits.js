@@ -10,6 +10,14 @@ The set bits in an integer are the 1's present when it is written in binary.
 For example, the binary representation of 21 is 10101, which has 3 set bits.
 */
 
+/**
+ *
+ * @param {number[]} nums
+ * @param {number} k
+ * @returns {number}
+ */
+
+// O(n * log(n)) time | O(1) space
 function sumIndicesWithKSetBits(nums, k) {
   let count = 0
 
