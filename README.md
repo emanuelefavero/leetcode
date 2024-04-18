@@ -57,6 +57,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Number of Employees Who Met the Target](./array/number-of-employees-who-met-target.js)
 - [Kids With the Greatest Number of Candies](./array/kids-with-candies.js)
 - [Sum of Values at Indices With K Set Bits](./array/sum-indices-with-k-set-bits.js)
+- [Decode XORed Array](./array/decode-xored-array.js)
 
 ### Binary Search
 
