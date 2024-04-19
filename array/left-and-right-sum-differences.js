@@ -1,4 +1,4 @@
-// * Left and Right Sum Differences
+// * Left and Right sum Differences
 
 /*
 Given a 0-indexed integer array nums, find a 0-indexed integer array answer where:
@@ -50,6 +50,30 @@ function leftRightDifference(nums) {
 }
 
 // -----------------------------
+// SOLUTION 2
+
+// O(n) time | O(n) space
+function leftRightDifference2(nums) {
+  let leftSum = 0
+
+  // Find sum of all elements and assign it to rightSum
+  let rightSum = nums.reduce((sum, num) => (sum += num), 0)
+
+  // Iterate through nums array and calculate leftSum and rightSum
+  return nums.map((num) => {
+    rightSum -= num
+    let result = Math.abs(leftSum - rightSum) // Calculate difference
+    leftSum += num
+
+    return result
+  })
+}
+
+// -----------------------------
 // TESTS
 
+// 1
 console.log(leftRightDifference([10, 4, 8, 3])) // [15,1,11,22]
+
+// 2
+console.log(leftRightDifference2([10, 4, 8, 3])) // [15,1,11,22]
