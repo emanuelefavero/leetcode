@@ -10,9 +10,16 @@ You are given the encoded array. You are also given an integer first, that is th
 Return the original array arr. It can be proved that the answer exists and is unique.
 */
 
+/**
+ * @param {number[]} encoded
+ * @param {number} first
+ * @returns {number[]}
+ */
+
 // TIP: Since encoded[i] = result[i] XOR result[i+1], then result[i+1] = encoded[i] XOR result[i].
 // Iterate encoded array, and set result[i+1] = encoded[i] XOR result[i]
 
+// O(n) time | O(n) space
 function decode(encoded, first) {
   let result = [first]
 
