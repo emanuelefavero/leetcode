@@ -12,6 +12,13 @@ rightSum[i] is the sum of elements to the right of the index i in the array nums
 Return the array answer.
 */
 
+/**
+ *
+ * @param {number[]} nums
+ * @returns {number[]}
+ */
+
+// O(n) time | O(n) space
 function leftRightDifference(nums) {
   let result = []
 
