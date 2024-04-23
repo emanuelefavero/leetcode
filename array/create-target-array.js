@@ -11,6 +11,13 @@ Return the target array.
 It is guaranteed that the insertion operations will be valid.
 */
 
+/**
+ * @param {number[]} nums
+ * @param {number[]} index
+ * @returns {number[]}
+ */
+
+// O(n) time | O(n) space
 function createTargetArray(nums, index) {
   let target = []
 
