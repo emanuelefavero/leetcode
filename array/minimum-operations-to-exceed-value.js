@@ -8,6 +8,13 @@ In one operation, you can remove one occurrence of the smallest element of nums.
 Return the minimum number of operations needed so that all elements of the array are greater than or equal to k.
 */
 
+/**
+ * @param {number[]} nums
+ * @param {number} k
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function minOperations(nums, k) {
   let count = 0
 
