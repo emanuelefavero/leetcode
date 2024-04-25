@@ -59,7 +59,8 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Sum of Values at Indices With K Set Bits](./array/sum-indices-with-k-set-bits.js)
 - [Decode XORed Array](./array/decode-xored-array.js)
 - [Left and Right Sum Differences](./array/left-and-right-sum-differences.js)
-- [Create Target Array in the Given Order](./array/create-target-array.js)`
+- [Create Target Array in the Given Order](./array/create-target-array.js)
+- [Minimum Operations to Exceed Threshold Value I](./array/minimum-operations-to-exceed-value.js)
 
 ### Binary Search
 
