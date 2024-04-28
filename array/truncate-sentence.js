@@ -7,6 +7,13 @@ For example, "Hello World", "HELLO", and "hello world hello world" are all sente
 You are given a sentence s​​​​​​ and an integer k​​​​​​. You want to truncate s​​​​​​ such that it contains only the first k​​​​​​ words. Return s​​​​​​ after truncating it.
 */
 
+/**
+ * @param {string} s
+ * @param {number} k
+ * @returns {string}
+ */
+
+// O(n) time | O(n) space
 function truncateSentence(s, k) {
   let array = s.split(' ')
   array.length = k
@@ -18,6 +25,7 @@ function truncateSentence(s, k) {
 
 // TIP: The following solution does not use built in methods and is just for research purposes
 
+// O(n) time | O(n) space
 function truncateSentence2(s, k) {
   let array = []
   let counter = 0
