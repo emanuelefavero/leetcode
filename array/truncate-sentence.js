@@ -14,8 +14,38 @@ function truncateSentence(s, k) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: The following solution does not use built in methods and is just for research purposes
+
+function truncateSentence2(s, k) {
+  let array = []
+  let counter = 0
+  let word = ''
+
+  for (let i = 0; i < s.length; i++) {
+    if (counter === k) break
+    if (s[i] === ' ') {
+      array.push(word)
+      word = ''
+    } else {
+      word += s[i]
+    }
+  }
+
+  let result = ''
+
+  for (let i = 0; i < array.length; i++) {
+    result += array[i] + ' '
+  }
+
+  return result.trim() // trim() is the only built in method used
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(truncateSentence('Hello how are you Contestant', 4))
 // "Hello how are you"
 /* Explanation:
@@ -23,3 +53,6 @@ The words in s are ["Hello", "how" "are", "you", "Contestant"].
 The first 4 words are ["Hello", "how", "are", "you"].
 Hence, you should return "Hello how are you".
 */
+
+// 2
+console.log(truncateSentence2('Hello how are you Contestant', 4))
