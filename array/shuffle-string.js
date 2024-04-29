@@ -6,6 +6,13 @@ You are given a string s and an integer array indices of the same length. The st
 Return the shuffled string.
 */
 
+/**
+ * @param {string} s
+ * @param {number[]} indices
+ * @returns {string}
+ */
+
+// O(n) time | O(n) space
 function restoreString(s, indices) {
   let result = []
 
