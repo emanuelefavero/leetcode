@@ -62,6 +62,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Create Target Array in the Given Order](./array/create-target-array.js)
 - [Minimum Operations to Exceed Threshold Value I](./array/minimum-operations-to-exceed-value.js)
 - [Truncate Sentence](./array/truncate-sentence.js)
+- [Shuffle String](./array/shuffle-string.js)
 
 ### Binary Search
 
