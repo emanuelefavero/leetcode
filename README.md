@@ -63,6 +63,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Minimum Operations to Exceed Threshold Value I](./array/minimum-operations-to-exceed-value.js)
 - [Truncate Sentence](./array/truncate-sentence.js)
 - [Shuffle String](./array/shuffle-string.js)
+- [Difference Between Element Sum and Digit Sum of an Array](./array/difference-of-sum.js)
 
 ### Binary Search
 
