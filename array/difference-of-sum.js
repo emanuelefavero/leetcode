@@ -10,6 +10,12 @@ Return the absolute difference between the element sum and digit sum of nums.
 Note that the absolute difference between two integers x and y is defined as |x - y|.
 */
 
+/**
+ * @param {number[]} nums
+ * @returns {number}
+ */
+
+// O(n + m) time | O(1) space, where n is the number of elements in nums and m is the number of digits in nums
 function differenceOfSum(nums) {
   let elementSum = 0
   let digitSum = 0
