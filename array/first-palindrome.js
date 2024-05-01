@@ -6,6 +6,12 @@ Given an array of strings words, return the first palindromic string in the arra
 A string is palindromic if it reads the same forward and backward.
 */
 
+/**
+ * @param {string[]} words
+ * @returns {string}
+ */
+
+// O(n + m) time | O(m) space - where n is the number of words and m is the length of the longest word
 function firstPalindrome(words) {
   for (let i = 0; i < words.length; i++) {
     let word = words[i]
