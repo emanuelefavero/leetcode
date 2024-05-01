@@ -28,10 +28,39 @@ function firstPalindrome(words) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+function firstPalindrome2(words) {
+  for (let i = 0; i < words.length; i++) {
+    if (isPalindrome(words[i])) return words[i]
+  }
+
+  return ''
+}
+
+function isPalindrome(word) {
+  let left = 0
+  let right = word.length - 1
+
+  while (left < right) {
+    if (word[left] !== word[right]) return false
+
+    left++
+    right--
+  }
+
+  return true
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(firstPalindrome(['abc', 'car', 'ada', 'racecar', 'cool'])) // ada
 // Explanation: The first string that is palindromic is "ada".
 // Note that "racecar" is also palindromic, but it is not the first.
 
 console.log(firstPalindrome(['car', 'cool'])) // ''
+
+// 2
+console.log(firstPalindrome(['abc', 'car', 'ada', 'racecar', 'cool'])) // ada
