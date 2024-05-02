@@ -7,7 +7,7 @@
  */
 
 // O(1) time | O(1) space
-function sum(num1, num2) {
+export function sum(num1, num2) {
   return num1 + num2
 }
 

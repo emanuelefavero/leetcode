@@ -1,0 +1,16 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "This repository contains my solutions to LeetCode problems.",
+  "main": "jest.config.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Emanuele Favero",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
