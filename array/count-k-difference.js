@@ -1,3 +1,10 @@
+/**
+ * @param {number[]} nums
+ * @param {number} k
+ * @returns {number}
+ */
+
+// O(n^2) time | O(1) space
 function countKDifference(nums, k) {
   let count = 0
 
