@@ -13,7 +13,7 @@ Return the array in the form [x1,y1,x2,y2,...,xn,yn].
  */
 
 // O(n) time | O(n) space
-function shuffle(nums, n) {
+export function shuffle(nums, n) {
   let left = 0
   let right = n
   let result = []
@@ -45,6 +45,7 @@ function shuffle2(nums, n) {
 // -------------------------
 // TESTS
 
+// 1
 console.log(shuffle([2, 5, 1, 3, 4, 7], 3)) // [2, 3, 5, 4, 1, 7]
 // Explanation: Since x1=2, x2=5, x3=1, y1=3, y2=4, y3=7 then the answer is [2,3,5,4,1,7].
 
