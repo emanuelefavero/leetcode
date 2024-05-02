@@ -65,6 +65,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Shuffle String](./array/shuffle-string.js)
 - [Difference Between Element Sum and Digit Sum of an Array](./array/difference-of-sum.js)
 - [Find First Palindromic String in the Array](./array/first-palindrome.js)
+- [Count Number of Pairs With Absolute Difference K](./array/count-k-difference.js)
 
 ### Binary Search
 
