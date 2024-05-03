@@ -6,6 +6,13 @@ You are given a string allowed consisting of distinct characters and an array of
 Return the number of consistent strings in the array words.
 */
 
+/**
+ * @param {string} allowed
+ * @param {string[]} words
+ * @returns {number}
+ */
+
+// O(n * m) time | O(1) space - where n is the length of the allowed string and m is the total number of characters in all words
 function countConsistentStrings(allowed, words) {
   const hash = {}
   for (let char of allowed) hash[char] = true
