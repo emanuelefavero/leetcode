@@ -67,6 +67,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Find First Palindromic String in the Array](./array/first-palindrome.js)
 - [Count Number of Pairs With Absolute Difference K](./array/count-k-difference.js)
 - [Count the Number of Consistent Strings](./array/count-consistent-strings.js)
+- [Find the Highest Altitude](./array/find-the-highest-altitude.js)
 
 ### Binary Search
 
