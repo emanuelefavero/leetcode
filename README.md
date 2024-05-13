@@ -19,6 +19,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Diagonal Traverse](./2d-array/diagonal-traverse.js)
 - [Spiral Matrix](./2d-array/spiral-matrix.js)
 - [Pascal Triangle](./2d-array/pascal-triangle.js)
+- [Matrix Diagonal Sum](./2d-array/matrix-diagonal-sum.js)
 
 ### Array
 
