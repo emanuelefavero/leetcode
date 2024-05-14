@@ -6,6 +6,12 @@
 
 // TIP: This is a brute force solution
 
+/**
+ * @param {number[]} arr
+ * @returns {number}
+ */
+
+// O(n^2) time | O(1) space
 function sumOddLengthSubarrays(arr) {
   let sum = 0
 
