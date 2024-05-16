@@ -1,9 +1,9 @@
 // * Check if a String Is an Acronym of Words
 
 /*
-Given an array of strings words and a string s, determine if s is an acronym of words.
+Given an array of strings words and a acronym s, determine if s is an acronym of words.
 
-The string s is considered an acronym of words if it can be formed by concatenating the first character of each string in words in order. For example, "ab" can be formed from ["apple", "banana"], but it can't be formed from ["bear", "aardvark"].
+The acronym s is considered an acronym of words if it can be formed by concatenating the first character of each acronym in words in order. For example, "ab" can be formed from ["apple", "banana"], but it can't be formed from ["bear", "aardvark"].
 
 Return true if s is an acronym of words, and false otherwise.
 */
@@ -19,7 +19,25 @@ function isAcronym(words, s) {
 }
 
 // -----------------------------
+// SOLUTION 2
+
+function isAcronym2(words, s) {
+  let acronym = ''
+
+  for (let i = 0; i < words.length; i++) {
+    acronym += words[i][0]
+  }
+
+  return acronym === s
+}
+
+// -----------------------------
 // TESTS
 
+// 1
 console.log(isAcronym(['alice', 'bob', 'charlie'], 'abc')) // true
 console.log(isAcronym(['an', 'apple'], 'a')) // false
+
+// 2
+console.log(isAcronym2(['alice', 'bob', 'charlie'], 'abc')) // true
+console.log(isAcronym2(['an', 'apple'], 'a')) // false
