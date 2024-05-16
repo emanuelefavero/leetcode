@@ -70,6 +70,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Count the Number of Consistent Strings](./array/count-consistent-strings.js)
 - [Find the Highest Altitude](./array/find-the-highest-altitude.js)
 - [Sum of All Odd Length Subarrays](./array/sum-odd-length-subarrays.js)
+- [Check if a String Is an Acronym of Words](./array/check-if-string-is-acronym-of-words.js)
 
 ### Binary Search
 
