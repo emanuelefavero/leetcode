@@ -8,6 +8,14 @@ The acronym s is considered an acronym of words if it can be formed by concatena
 Return true if s is an acronym of words, and false otherwise.
 */
 
+/**
+ *
+ * @param {string[]} words
+ * @param {string} s
+ * @returns {boolean}
+ */
+
+// O(n) time | O(1) space
 function isAcronym(words, s) {
   if (words.length !== s.length) return false
 
@@ -21,6 +29,7 @@ function isAcronym(words, s) {
 // -----------------------------
 // SOLUTION 2
 
+// O(n) time | O(1) space
 function isAcronym2(words, s) {
   let acronym = ''
 
