@@ -15,6 +15,12 @@ For example, "cab" can be written as "-.-..--...", which is the concatenation of
 Return the number of different transformations among all words we have.
 */
 
+/**
+ * @param {string[]} words
+ * @returns {number}
+ */
+
+// O(n * m) time | O(n) space, where n is the number of words and m is the length of each word
 function uniqueMorseRepresentations(words) {
   let map = {
     a: '.-',
