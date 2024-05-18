@@ -10,8 +10,15 @@ The number of indices i such that 0 <= i < m and nums2[i] occurs at least once i
 Return an integer array answer of size 2 containing the two values in the above order.
 */
 
+/**
+ * @param {number[]} nums1
+ * @param {number[]} nums2
+ * @returns {number[]}
+ */
+
 // TIP: This is an hash table solution
 
+// O(n + m) time | O(n + m) space
 function findIntersectionValues(nums1, nums2) {
   let result = []
   let set1 = new Set(nums1)
