@@ -13,6 +13,12 @@ You have to visit the points in the same order as they appear in the array.
 You are allowed to pass through points that appear later in the order, but these do not count as visits.
 */
 
+/**
+ * @param {number[][]} points
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function minTimeToVisitAllPoints(points) {
   let result = 0
 
