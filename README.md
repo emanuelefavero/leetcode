@@ -73,6 +73,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Check if a String Is an Acronym of Words](./array/check-if-string-is-acronym-of-words.js)
 - [Unique Morse Code Words](./array/unique-morse-code-words.js)
 - [Find Common Elements Between Two Arrays](./array/find-common-elements.js)
+- [Minimum Time Visiting All Points](./array/minimum-time-visiting-all-points.js)
 
 ### Binary Search
 
