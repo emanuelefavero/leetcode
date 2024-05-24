@@ -11,6 +11,12 @@ Return the sum of the squares of distinct counts of all subarrays of nums.
 A subarray is a contiguous non-empty sequence of elements within an array.
 */
 
+/**
+ * @param {number[]} nums
+ * @returns {number}
+ */
+
+// O(n^2) time | O(n) space
 function sumCounts(nums) {
   let sum = 0
 
