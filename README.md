@@ -74,7 +74,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Unique Morse Code Words](./array/unique-morse-code-words.js)
 - [Find Common Elements Between Two Arrays](./array/find-common-elements.js)
 - [Minimum Time Visiting All Points](./array/minimum-time-visiting-all-points.js)
-- [Subarrays Distinct Element Sum of Squares I](./array/subarrays-distinct-element-sum-of-squares.js)
+- [Subarrays Distinct Element Sum of Squares I](./array/subarrays-distinct-sum-of-squares-i.js)
 
 ### Binary Search
 
