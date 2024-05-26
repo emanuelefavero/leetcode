@@ -13,6 +13,12 @@ For example, inverting [0,1,1] results in [1,0,0].
 
 // TIP: More readable solution (2 loops instead of one, still beats 95%)
 
+/**
+ * @param {number[][]} image
+ * @returns {number[][]}
+ */
+
+// O(n^2) time, O(1) space
 function flipAndInvertImage(image) {
   // flip horizontally
   for (let i = 0; i < image.length; i++) {
