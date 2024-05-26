@@ -20,7 +20,7 @@ For example, inverting [0,1,1] results in [1,0,0].
 
 // O(n^2) time, O(1) space
 function flipAndInvertImage(image) {
-  // flip horizontally
+  // Flip horizontally
   for (let i = 0; i < image.length; i++) {
     let left = 0
     let right = image[i].length - 1
@@ -35,7 +35,7 @@ function flipAndInvertImage(image) {
     }
   }
 
-  // invert
+  // Invert
   for (let i = 0; i < image.length; i++) {
     for (let j = 0; j < image.length; j++) {
       if (image[i][j] === 0) image[i][j] = 1
@@ -49,6 +49,33 @@ function flipAndInvertImage(image) {
 // -------------------------
 // TESTS
 
+function flipAndInvertImage2(image) {
+  // Flip and invert
+  for (let row of image) {
+    let left = 0
+    let right = row.length - 1
+
+    while (left < right) {
+      let temp = row[left]
+      row[left] = row[right] === 0 ? 1 : 0
+      row[right] = temp === 0 ? 1 : 0
+
+      left++
+      right--
+    }
+
+    // In case of odd number of elements, invert the middle element
+    if (left === right) {
+      row[left] = row[left] === 0 ? 1 : 0
+    }
+  }
+  return image
+}
+
+// -------------------------
+// TESTS
+
+// 1
 console.log(
   flipAndInvertImage([
     [1, 1, 0],
@@ -59,3 +86,12 @@ console.log(
 
 // Explanation: First reverse each row: [[0,1,1],[1,0,1],[0,0,0]].
 // Then, invert the image: [[1,0,0],[0,1,0],[1,1,1]]
+
+// 2
+console.log(
+  flipAndInvertImage2([
+    [1, 1, 0],
+    [1, 0, 1],
+    [0, 0, 0],
+  ])
+) // [[1,0,0],[0,1,0],[1,1,1]]
