@@ -75,6 +75,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Find Common Elements Between Two Arrays](./array/find-common-elements.js)
 - [Minimum Time Visiting All Points](./array/minimum-time-visiting-all-points.js)
 - [Subarrays Distinct Element Sum of Squares I](./array/subarrays-distinct-sum-of-squares-i.js)
+- [Flipping an Image](./array/flipping-an-image.js)
 
 ### Binary Search
 
