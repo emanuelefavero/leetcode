@@ -76,6 +76,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Minimum Time Visiting All Points](./array/minimum-time-visiting-all-points.js)
 - [Subarrays Distinct Element Sum of Squares I](./array/subarrays-distinct-sum-of-squares-i.js)
 - [Flipping an Image](./array/flipping-an-image.js)
+- [Find the Integer Added to Array I](./array/find-the-integer-added-to-array-i.js)
 
 ### Binary Search
 
