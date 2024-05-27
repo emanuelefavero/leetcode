@@ -14,6 +14,15 @@ Where |x| denotes the absolute value of x.
 Return the number of good triplets.
 */
 
+/**
+ * @param {number[]} arr
+ * @param {number} a
+ * @param {number} b
+ * @param {number} c
+ * @returns {number}
+ */
+
+// O(n^3) time | O(1) space
 function countGoodTriplets(arr, a, b, c) {
   let count = 0
 
