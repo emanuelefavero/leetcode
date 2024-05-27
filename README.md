@@ -78,6 +78,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Flipping an Image](./array/flipping-an-image.js)
 - [Find the Integer Added to Array I](./array/find-the-integer-added-to-array-i.js)
 - [Count Good Triplets](./array/count-good-triplets.js)
+- [Find Maximum Number of String Pairs](./array/find-maximum-number-of-string-pairs.js)
 
 ### Binary Search
 
