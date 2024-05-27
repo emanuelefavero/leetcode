@@ -14,6 +14,13 @@ Note that each string can belong in at most one pair.
 
 // TIP: We will use two loops to compare two strings at a time and a helper function to reverse the string.
 
+/**
+ *
+ * @param {string[]} words
+ * @returns {number}
+ */
+
+// O(n^2) time | O(1) space
 function maximumNumberOfStringPairs(words) {
   let count = 0
 
