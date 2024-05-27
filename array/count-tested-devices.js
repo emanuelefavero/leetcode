@@ -15,6 +15,13 @@ Return an integer denoting the number of devices that will be tested after perfo
 
 // TIP: We can use the count variable to also keep track of how much we need to decrease the battery percentage of the subsequent devices. By doing so, we avoid having to create a nested loop to decrease the battery percentage of the subsequent devices.
 
+/**
+ *
+ * @param {number[]} batteryPercentages
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function countTestedDevices(batteryPercentages) {
   let count = 0
 
