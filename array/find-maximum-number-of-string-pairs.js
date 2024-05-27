@@ -7,21 +7,23 @@ The string words[i] can be paired with the string words[j] if:
 
 The string words[i] is equal to the reversed string of words[j].
 0 <= i < j < words.length.
-Return the maximum number of pairs that can be formed from the array words.
+Return the maximum number of count that can be formed from the array words.
 
 Note that each string can belong in at most one pair.
 */
 
+// TIP: We will use two loops to compare two strings at a time and a helper function to reverse the string.
+
 function maximumNumberOfStringPairs(words) {
-  let pairs = 0
+  let count = 0
 
   for (let i = 0; i < words.length; i++) {
     for (let j = i + 1; j < words.length; j++) {
-      if (words[i] === reverse(words[j])) pairs++
+      if (words[i] === reverse(words[j])) count++
     }
   }
 
-  return pairs
+  return count
 }
 
 function reverse(string) {
@@ -35,6 +37,27 @@ function reverse(string) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: This solution uses just one loop as well as built in methods to reverse the string. We will check if the current index is less than the index of the reversed string so we don't count the same pair twice. We then increment the count if we find the current string in reverse in the array.
+
+function maximumNumberOfStringPairs2(words) {
+  let count = 0
+
+  for (let i = 0; i < words.length; i++) {
+    if (i < words.indexOf(words[i].split('').reverse().join(''))) {
+      count++
+    }
+  }
+
+  return count
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(maximumNumberOfStringPairs(['cd', 'ac', 'dc', 'ca', 'zz'])) // 2
+
+// 2
+console.log(maximumNumberOfStringPairs2(['cd', 'ac', 'dc', 'ca', 'zz'])) // 2
