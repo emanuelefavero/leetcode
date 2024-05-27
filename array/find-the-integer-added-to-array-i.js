@@ -12,6 +12,13 @@ Return the integer x.
 
 // TIP: We sort the arrays to get the smallest number in each array. Then we subtract the smallest number in nums1 from the smallest number in nums2. This will give us the integer that was added to each element in nums1 to get nums2 at each index.
 
+/**
+ * @param {number[]} nums1
+ * @param {number[]} nums2
+ * @returns {number}
+ */
+
+// O(n log n) time | O(1) space
 function addedInteger(nums1, nums2) {
   nums1 = nums1.sort((a, b) => a - b)
   nums2 = nums2.sort((a, b) => a - b)
