@@ -77,6 +77,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Subarrays Distinct Element Sum of Squares I](./array/subarrays-distinct-sum-of-squares-i.js)
 - [Flipping an Image](./array/flipping-an-image.js)
 - [Find the Integer Added to Array I](./array/find-the-integer-added-to-array-i.js)
+- [Count Good Triplets](./array/count-good-triplets.js)
 
 ### Binary Search
 
