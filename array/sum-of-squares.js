@@ -10,6 +10,12 @@ Return the sum of the squares of all special elements of nums.
 
 // TIP: WE subtract 1 from i because the array is 0-indexed
 
+/**
+ * @param {number[]} nums
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function sumOfSquares(nums) {
   let sum = 0
 
