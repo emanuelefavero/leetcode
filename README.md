@@ -80,6 +80,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Count Good Triplets](./array/count-good-triplets.js)
 - [Find Maximum Number of String Pairs](./array/find-maximum-number-of-string-pairs.js)
 - [Count Tested Devices After Test Operations](./array/count-tested-devices.js)
+- [Sum of Squares of Special Elements](./array/sum-of-squares.js)
 
 ### Binary Search
 
