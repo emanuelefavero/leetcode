@@ -8,6 +8,13 @@ For each index i, names[i] and heights[i] denote the name and height of the ith 
 Return names sorted in descending order by the people's heights.
 */
 
+/**
+ * @param {string[]} names
+ * @param {number[]} heights
+ * @returns {string[]}
+ */
+
+// O(n log n) time | O(n) space
 function sortPeople(names, heights) {
   let result = []
 
