@@ -1,4 +1,4 @@
-// *  Sort the People
+// * Sort the People
 
 /*
 You are given an array of strings names, and an array heights that consists of distinct positive integers. Both arrays are of length n.
