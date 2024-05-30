@@ -32,6 +32,9 @@ function differenceOfSum(nums) {
   return Math.abs(elementSum - digitSum)
 }
 
+// -----------------------------
+// TESTS
+
 console.log(differenceOfSum([1, 15, 6, 3])) // 9
 /*
 Explanation: 
