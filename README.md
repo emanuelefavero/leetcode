@@ -82,6 +82,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Count Tested Devices After Test Operations](./array/count-tested-devices.js)
 - [Sum of Squares of Special Elements](./array/sum-of-squares.js)
 - [Sort the People](./array/sort-the-people.js)
+- [Destination City](./array/destination-city.js)
 
 ### Binary Search
 
