@@ -8,6 +8,13 @@ It is guaranteed that the graph of paths forms a line without any loop, therefor
 
 // TIP: The destination city never appears on the left of the array so we will create a set with all left cities and then check which right city does not appear on the left by checking which right city is not found in the set
 
+/**
+ *
+ * @param {string[][]} paths
+ * @returns {string}
+ */
+
+// O(n) time | O(n) space
 function destCity(paths) {
   if (paths.length === 1) return paths[0][1]
 
