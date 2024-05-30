@@ -9,17 +9,18 @@ It is guaranteed that the graph of paths forms a line without any loop, therefor
 // TIP: The destination city never appears on the left of the array so we will create a set with all left cities and then check which right city does not appear on the left by checking which right city is not found in the set
 
 function destCity(paths) {
+  if (paths.length === 1) return paths[0][1]
+
   let set = new Set()
 
   // Add all left cities to the set
-  for (let i = 0; i < paths.length; i++) {
-    let leftCity = paths[i][0]
-    set.add(leftCity)
+  for (const path of paths) {
+    set.add(path[0])
   }
 
   // Check which right city does not appear on the left
-  for (let i = 0; i < paths.length; i++) {
-    let rightCity = paths[i][1]
+  for (const path of paths) {
+    let rightCity = path[1]
     if (!set.has(rightCity)) return rightCity
   }
 }
