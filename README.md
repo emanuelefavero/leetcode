@@ -83,6 +83,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Sum of Squares of Special Elements](./array/sum-of-squares.js)
 - [Sort the People](./array/sort-the-people.js)
 - [Destination City](./array/destination-city.js)
+- [Count Equal and Divisible Pairs in an Array](./array/count-pairs.js)
 
 ### Binary Search
 
