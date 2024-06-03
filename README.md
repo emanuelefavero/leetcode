@@ -84,6 +84,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Sort the People](./array/sort-the-people.js)
 - [Destination City](./array/destination-city.js)
 - [Count Equal and Divisible Pairs in an Array](./array/count-pairs.js)
+- [Separate the Digits in an Array](./array/separate-the-digits-in-an-array.js)
 
 ### Binary Search
 
