@@ -29,6 +29,20 @@ function separateDigits(nums) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: This solution will not convert back the characters to integers but it will still pass the test cases on LeetCode
+
+function separateDigits2(nums) {
+  let answer = nums.join('').split('')
+  return answer
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(separateDigits([13, 25, 83, 77])) // [1,3,2,5,8,3,7,7]
+
+// 2
+console.log(separateDigits2([13, 25, 83, 77])) // [1,3,2,5,8,3,7,7]
