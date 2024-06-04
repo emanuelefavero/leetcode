@@ -8,6 +8,12 @@ Return the total frequencies of elements in nums such that those elements all ha
 The frequency of an element is the number of occurrences of that element in the array.
 */
 
+/**
+ * @param {number[]} nums
+ * @returns {number}
+ */
+
+// O(n^2) time | O(n) space
 function maxFrequencyElements(nums) {
   let sum = 0
   let frequencies = []
