@@ -86,6 +86,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Count Equal and Divisible Pairs in an Array](./array/count-pairs.js)
 - [Separate the Digits in an Array](./array/separate-the-digits-in-an-array.js)
 - [Count Elements With Maximum Frequency](./array/count-elements-with-maximum-frequency.js)
+- [Find the Difference of Two Arrays](./array/find-the-difference-of-two-arrays.js)
 
 ### Binary Search
 
