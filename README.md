@@ -87,6 +87,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Separate the Digits in an Array](./array/separate-the-digits-in-an-array.js)
 - [Count Elements With Maximum Frequency](./array/count-elements-with-maximum-frequency.js)
 - [Find the Difference of Two Arrays](./array/find-the-difference-of-two-arrays.js)
+- [Number Of Rectangles That Can Form The Largest Square](./array/count-good-rectangles.js)
 
 ### Binary Search
 
