@@ -6,6 +6,13 @@ You are given an integer array arr. Sort the integers in the array in ascending 
 Return the array after sorting it.
 */
 
+/**
+ *
+ * @param {number[]} arr
+ * @returns {number[]}
+ */
+
+// O(n log n) time | O(1) space
 function sortByBits(arr) {
   return arr.sort((a, b) => {
     let countA = a
