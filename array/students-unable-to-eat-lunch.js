@@ -12,6 +12,14 @@ This continues until none of the queue students want to take the top sandwich an
 You are given two integer arrays students and sandwiches where sandwiches[i] is the type of the i​​​​​​th sandwich in the stack (i = 0 is the top of the stack) and students[j] is the preference of the j​​​​​​th student in the initial queue (j = 0 is the front of the queue). Return the number of students that are unable to eat.
 */
 
+/**
+ *
+ * @param {number[]} students
+ * @param {number[]} sandwiches
+ * @returns {number}
+ */
+
+// O(n^2) time | O(1) space (where n = students.length)
 function countStudents(students, sandwiches) {
   let count = 0
 
@@ -48,4 +56,4 @@ Explanation:
 Hence all students are able to eat.
 */
 
-console.log(countStudents([1,1,1,0,0,1], [1,0,0,0,1,1])) // 3
+console.log(countStudents([1, 1, 1, 0, 0, 1], [1, 0, 0, 0, 1, 1])) // 3
