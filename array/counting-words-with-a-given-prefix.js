@@ -8,6 +8,13 @@ Return the number of strings in words that contain pref as a prefix.
 A prefix of a string s is any leading contiguous substring of s.
 */
 
+/**
+ * @param {string[]} words
+ * @param {string} pref
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function prefixCount(words, pref) {
   let count = 0
 
