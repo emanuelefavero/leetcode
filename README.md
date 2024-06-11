@@ -90,6 +90,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Number Of Rectangles That Can Form The Largest Square](./array/count-good-rectangles.js)
 - [Sort Integers by The Number of 1 Bits](./array/sort-by-bits.js)
 - [Number of Students Unable to Eat Lunch](./array/students-unable-to-eat-lunch.js)
+- [Counting Words With a Given Prefix](./array/counting-words-with-a-given-prefix.js)
 
 ### Binary Search
 
