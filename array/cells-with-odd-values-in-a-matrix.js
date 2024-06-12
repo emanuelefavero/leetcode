@@ -10,6 +10,15 @@ Increment all the cells on column ci.
 Given m, n, and indices, return the number of odd-valued cells in the matrix after applying the increment to all locations in indices.
 */
 
+/**
+ *
+ * @param {number} row
+ * @param {number} column
+ * @param {number[][]} indices
+ * @returns {number}
+ */
+
+// O(n^2) time | O(n) space
 function oddCells(row, column, indices) {
   const matrix = []
   let count = 0
@@ -21,12 +30,8 @@ function oddCells(row, column, indices) {
   for (let i = 0; i < indices.length; i++) {
     const [r, c] = indices[i]
 
-    for (let j = 0; j < column; j++) {
-      matrix[r][j]++
-    }
-    for (let j = 0; j < row; j++) {
-      matrix[j][c]++
-    }
+    for (let j = 0; j < column; j++) matrix[r][j]++
+    for (let j = 0; j < row; j++) matrix[j][c]++
   }
 
   for (let i = 0; i < row; i++) {
