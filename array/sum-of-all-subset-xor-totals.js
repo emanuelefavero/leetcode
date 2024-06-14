@@ -20,6 +20,12 @@ The final value of sumTotal after the left shift is returned as the result.
 TIP: The bitwise OR operator (|) is used to set a bit to 1 if it is 1 in either operand. The bitwise left shift operator (<<) is used to shift the bits of the first operand to the left by the number of places specified in the second operand
 */
 
+/**
+ * @param {number[]} nums
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function subsetXORSum(nums) {
   let sum = 0
 
