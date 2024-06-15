@@ -328,6 +328,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Check If Two String Arrays Are Equivalent](./string/array-strings-are-equal.js)
 - [Count Items Matching A Rule](./string/count-items-matching-a-rule.js)
 - [Length of Last Word](./string/length-of-last-word.js)
+- [Score of a String](./string/score-of-a-string.js)
 
 ### Tree
 
