@@ -4,6 +4,12 @@
 
 // Return the score of s.
 
+/**
+ * @param {string} s
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function scoreOfString(s) {
   let sum = 0
 
