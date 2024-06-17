@@ -6,6 +6,14 @@
 
 // Return the total number of good pairs.
 
+/**
+ * @param {number[]} nums1
+ * @param {number[]} nums2
+ * @param {number} k
+ * @returns {number}
+ */
+
+// O(n * m) time | O(1) space - where n is the length of nums1 and m is the length of nums2
 function numberOfPairs(nums1, nums2, k) {
   let count = 0
 
