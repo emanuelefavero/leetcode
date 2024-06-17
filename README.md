@@ -93,6 +93,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Counting Words With a Given Prefix](./array/counting-words-with-a-given-prefix.js)
 - [Cells with Odd Values in a Matrix](./array/cells-with-odd-values-in-a-matrix.js)
 - [Sum of All Subset XOR Totals](./array/sum-of-all-subset-xor-totals.js)
+- [Find the Number of Good Pairs I](./array/find-the-number-of-good-pairs-i.js)
 
 ### Binary Search
 
