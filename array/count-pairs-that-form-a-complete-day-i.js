@@ -6,6 +6,12 @@
 
 // For example, 1 day is 24 hours, 2 days is 48 hours, 3 days is 72 hours, and so on.
 
+/**
+ * @param {number[]} hours
+ * @returns {number}
+ */
+
+// O(n^2) time | O(1) space
 function countCompleteDayPairs(hours) {
   let count = 0
 
