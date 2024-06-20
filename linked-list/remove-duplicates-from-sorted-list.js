@@ -2,12 +2,22 @@
 
 // Given the head of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list sorted as well
 
+/**
+ * @typedef {Object} ListNode
+ * @property {*} val
+ */
+
 class ListNode {
   constructor(val, next) {
     this.val = val || 0
     this.next = next || null
   }
 }
+
+/**
+ * @param {ListNode} head
+ * @returns {ListNode}
+ */
 
 function deleteDuplicates(head) {
   let current = head
