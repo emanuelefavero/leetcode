@@ -238,6 +238,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Flatten Multilevel Linked List](./linked-list/flatten-multilevel-linked-list.js)
 - [Copy List With Random Pointer](./linked-list/copy-list-with-random-pointer.js)
 - [Rotate List](./linked-list/rotate-list.js)
+- [Remove Duplicates from Sorted List](./linked-list/remove-duplicates-from-sorted-list.js)
 
 ### Math
 
