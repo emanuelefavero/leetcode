@@ -4,6 +4,12 @@
 
 // Given a string s, return true if it is a palindrome, or false otherwise.
 
+/**
+ * @param {string} s
+ * @returns {boolean}
+ */
+
+// O(n) time | O(1) space
 function isPalindrome(s) {
   const string = s.toLowerCase().replace(/[^a-z0-9]/g, '')
 
