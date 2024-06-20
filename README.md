@@ -332,6 +332,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Count Items Matching A Rule](./string/count-items-matching-a-rule.js)
 - [Length of Last Word](./string/length-of-last-word.js)
 - [Score of a String](./string/score-of-a-string.js)
+- [Valid Palindrome](./string/valid-palindrome.js)
 
 ### Tree
 
