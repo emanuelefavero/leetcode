@@ -27,8 +27,24 @@ function isPalindrome(s) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+function isPalindrome2(s) {
+  const formatted = s.toLowerCase().replace(/[^a-z0-9]/g, '')
+  const reversed = formatted.split('').reverse().join('')
+
+  return formatted === reversed
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(isPalindrome('A man, a plan, a canal: Panama')) // true
 console.log(isPalindrome('race a car')) // false
 console.log(isPalindrome('')) // true
+
+// 2
+console.log(isPalindrome2('A man, a plan, a canal: Panama')) // true
+console.log(isPalindrome2('race a car')) // false
+console.log(isPalindrome2('')) // true
