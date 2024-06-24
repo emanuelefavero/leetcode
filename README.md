@@ -95,6 +95,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Sum of All Subset XOR Totals](./array/sum-of-all-subset-xor-totals.js)
 - [Find the Number of Good Pairs I](./array/find-the-number-of-good-pairs-i.js)
 - [Count Pairs That Form a Complete Day I](./array/count-pairs-that-form-a-complete-day-i.js)
+- [Final Prices With a Special Discount in a Shop](./array/final-prices-with-a-special-discount.js)
 
 ### Binary Search
 
