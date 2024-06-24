@@ -32,8 +32,34 @@ function finalPrices(prices) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: THis solution uses a stack to keep track of the prices that have not been discounted yet.
+
+function finalPrices2(prices) {
+  let stack = []
+
+  for (let i = prices.length - 1; i >= 0; i--) {
+    let cost = prices[i]
+
+    while (stack.length && cost < stack[stack.length - 1]) {
+      stack.pop()
+    }
+
+    if (stack.length) {
+      prices[i] -= stack[stack.length - 1]
+    }
+
+    stack.push(cost)
+  }
+
+  return prices
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(finalPrices([8, 4, 6, 2, 3])) // [4,2,4,2,3]
 /*
 Explanation: 
@@ -42,3 +68,6 @@ For item 1 with price[1]=4 you will receive a discount equivalent to prices[3]=2
 For item 2 with price[2]=6 you will receive a discount equivalent to prices[3]=2, therefore, the final price you will pay is 6 - 2 = 4.
 For items 3 and 4 you will not receive any discount at all.
 */
+
+// 2
+console.log(finalPrices2([8, 4, 6, 2, 3])) // [4,2,4,2,3]
