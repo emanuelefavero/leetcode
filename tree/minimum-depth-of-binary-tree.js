@@ -30,6 +30,31 @@ function minDepth(root) {
 }
 
 // ---------------------
+// SOLUTION 2
+
+// TIP: THis solution uses BFS
+
+function minDepth2(root) {
+  if (!root) return 0
+
+  let queue = [[root, 1]]
+
+  while (queue.length) {
+    let [node, depth] = queue.shift()
+
+    if (!node.left && !node.right) return depth
+
+    if (node.left) {
+      queue.push([node.left, depth + 1])
+    }
+
+    if (node.right) {
+      queue.push([node.right, depth + 1])
+    }
+  }
+}
+
+// ---------------------
 // TESTS
 
 let tree = new TreeNode(3)
@@ -39,3 +64,4 @@ tree.right.left = new TreeNode(15)
 tree.right.right = new TreeNode(7)
 
 console.log(minDepth(tree)) // 2
+console.log(minDepth2(tree)) // 2
