@@ -2,6 +2,12 @@
 
 // Write a function argumentsLength that returns the count of arguments passed to it
 
+/**
+ * @param  {...any} args
+ * @returns {number}
+ */
+
+// O(1) time | O(1) space
 function argumentsLength(...args) {
   return args.length
 }
