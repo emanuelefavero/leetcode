@@ -2,6 +2,13 @@
 
 // Given two promises promise1 and promise2, return a new promise. promise1 and promise2 will both resolve with a number. The returned promise should resolve with the sum of the two numbers.
 
+/**
+ * @param {Promise} promise1
+ * @param {Promise} promise2
+ * @returns {Promise}
+ */
+
+// O(n) time | O(1) space
 async function addTwoPromises(promise1, promise2) {
   const a = await promise1
   const b = await promise2
