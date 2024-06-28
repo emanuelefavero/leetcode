@@ -8,6 +8,14 @@ The permutation difference between s and t is defined as the sum of the absolute
 Return the permutation difference between s and t.
 */
 
+/**
+ *
+ * @param {string} s
+ * @param {string} t
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function findPermutationDifference(s, t) {
   let map = new Map()
 
