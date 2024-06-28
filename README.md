@@ -336,6 +336,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Length of Last Word](./string/length-of-last-word.js)
 - [Score of a String](./string/score-of-a-string.js)
 - [Valid Palindrome](./string/valid-palindrome.js)
+- [Permutation Difference between Two Strings](./string/permutation-difference.js)
 
 ### Tree
 
