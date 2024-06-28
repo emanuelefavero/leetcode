@@ -35,8 +35,24 @@ function findPermutationDifference(s, t) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// O(n) time | O(1) space
+function findPermutationDifference2(s, t) {
+  let result = 0
+
+  for (let i = 0; i < s.length; i++) {
+    let ii = t.indexOf(s[i])
+    result += Math.abs(ii - i)
+  }
+
+  return result
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(findPermutationDifference('abc', 'bac')) // 2
 /*
 Explanation:
@@ -47,3 +63,6 @@ The absolute difference between the index of the occurrence of "b" in s and the 
 The absolute difference between the index of the occurrence of "c" in s and the index of the occurrence of "c" in t.
 That is, the permutation difference between s and t is equal to |0 - 1| + |2 - 2| + |1 - 0| = 2.
 */
+
+// 2
+console.log(findPermutationDifference2('abc', 'bac')) // 2
