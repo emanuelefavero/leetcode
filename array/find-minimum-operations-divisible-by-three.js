@@ -4,6 +4,12 @@
 
 // Return the minimum number of operations to make all elements of nums divisible by 3.
 
+/**
+ * @param {number[]} nums
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function minimumOperations(nums) {
   let count = 0
 
