@@ -126,12 +126,12 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Missing Number](./binary-search/missing-number.js)
 - [Count Complete Tree Nodes](./binary-search/count-complete-tree-nodes.js)
 
-## Breadth First Search
+### Breadth First Search
 
 - [Average of Levels in Binary Tree](./breadth-first-search/average-of-levels-in-binary-tree.js)
 - [Univalued Binary Tree](./breadth-first-search/univalued-binary-tree.js)
 
-## Database
+### Database
 
 - [Recyclable And Low Fat Products](./database/recyclable-and-low-fat-products.js)
 - [Find Total Time Spent By Each Employee](./database/find-total-time-spent.js)
@@ -145,7 +145,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Product Sales Analysis I](./database/product-sales-analysis-i.js)
 - [Reformat Department Table](./database/reformat-department-table.js)
 
-## Depth First Search
+### Depth First Search
 
 - [Range Sum of BST](./depth-first-search/range-sum-of-bst.js)
 - [Find a Corresponding Node of a Binary Tree in a Clone of That Tree](./depth-first-search/find-node-in-cloned-binary-tree.js)
@@ -153,7 +153,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Increasing Order Search Tree](./depth-first-search/increasing-order-search-tree.js)
 - [Sum of Root To Leaf Binary Numbers](./depth-first-search/sum-of-root-to-leaf-binary-numbers.js)
 
-## Dynamic Programming
+### Dynamic Programming
 
 - [Fibonacci Number](./dynamic-programming/fibonacci-number.js)
 - [Counting Bits](./dynamic-programming/counting-bits.js)
@@ -162,7 +162,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [N-th Tribonacci Number](./dynamic-programming/n-th-tribonacci-number.js)
 - [Is Subsequence](./dynamic-programming/is-subsequence.js)
 
-## Easy
+### Easy
 
 - [Add Two Integers](./easy/add-two-integers.js)
 - [Fizz Buzz](./easy/fizz-buzz.js)
