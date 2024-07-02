@@ -162,7 +162,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [N-th Tribonacci Number](./dynamic-programming/n-th-tribonacci-number.js)
 - [Is Subsequence](./dynamic-programming/is-subsequence.js)
 
-### Easy
+## Easy
 
 - [Add Two Integers](./easy/add-two-integers.js)
 - [Fizz Buzz](./easy/fizz-buzz.js)
@@ -171,6 +171,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Majority Element](./easy/majority-element.js)
 - [Return Length of Arguments Passed](./easy/return-length-of-arguments-passed.js)
 - [Add Two Promises](./easy/add-two-promises.js)
+- [Timeout Cancellation](./easy/timeout-cancellation.js)
 
 ### Graph
 
