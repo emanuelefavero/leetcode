@@ -172,6 +172,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Return Length of Arguments Passed](./easy/return-length-of-arguments-passed.js)
 - [Add Two Promises](./easy/add-two-promises.js)
 - [Timeout Cancellation](./easy/timeout-cancellation.js)
+- [Design Parking System](./easy/design-parking-system.js)
 
 ### Graph
 
