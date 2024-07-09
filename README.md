@@ -174,6 +174,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Timeout Cancellation](./easy/timeout-cancellation.js)
 - [Design Parking System](./easy/design-parking-system.js)
 - [Array Wrapper](./easy/array-wrapper.js)
+- [Sleep](./easy/sleep.js)
 
 ### Graph
 
