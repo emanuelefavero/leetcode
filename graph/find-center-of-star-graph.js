@@ -21,6 +21,14 @@ function findCenter(edges) {
 }
 
 // -------------------
+// SOLUTION 2
+
+function findCenter2(edges) {
+  const [[a, b], [c, d]] = edges
+  return a === c || a === d ? a : b
+}
+
+// -------------------
 // TESTS
 
 let edges = [
@@ -29,5 +37,9 @@ let edges = [
   [4, 2],
 ]
 
+// 1
 console.log(findCenter(edges)) // 2
 // Explanation: As shown in the figure above, node 2 is connected to every other node, so 2 is the center.
+
+// 2
+console.log(findCenter2(edges)) // 2
