@@ -182,6 +182,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Disjoint Set Efficient](./graph/disjoint-set-efficient.js)
 - [Number Of Provinces](./graph/number-of-provinces.js)
 - [Smallest String With Swaps](./graph/smallest-string-with-swaps.js)
+- [Find Center of Star Graph](./graph/find-center-of-star-graph.js)
 
 ### Greedy
 
