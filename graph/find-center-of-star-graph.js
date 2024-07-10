@@ -6,6 +6,12 @@
 
 // TIP: The center node appears in each edge, so we can simply compare the nodes of the first and second edges to identify the common node, which serves as the center.
 
+/**
+ * @param {number[][]} edges
+ * @returns {number}
+ */
+
+// O(1) time | O(1) space
 function findCenter(edges) {
   if (edges[0][0] === edges[1][0] || edges[0][0] === edges[1][1]) {
     return edges[0][0]
