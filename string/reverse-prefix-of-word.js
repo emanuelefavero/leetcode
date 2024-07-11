@@ -25,10 +25,28 @@ function reversePrefix(word, ch) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: Using indexOf method
+
+function reversePrefix2(word, ch) {
+  const index = word.indexOf(ch)
+
+  if (index === -1) return word
+
+  return reverse(word.slice(0, index + 1)) + word.slice(index + 1)
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(reversePrefix('abcdefd', 'd')) // 'dcbaefd'
 // Explanation: The first occurrence of "d" is at index 3.
 // Reverse the part of word from 0 to 3 (inclusive), the resulting string is "dcbaefd".
 
 console.log(reversePrefix('abcd', 'z')) // 'abcd'
+
+// 2
+console.log(reversePrefix2('abcdefd', 'd')) // 'dcbaefd'
+console.log(reversePrefix2('abcd', 'z')) // 'abcd'
