@@ -7,10 +7,18 @@ For example, if word = "abcdefd" and ch = "d", then you should reverse the segme
 Return the resulting string.
 */
 
+// Utility function to reverse a string
 function reverse(string) {
   return string.split('').reverse().join('')
 }
 
+/**
+ * @param {string} word
+ * @param {string} ch
+ * @returns {string}
+ */
+
+// O(n) time | O(1) space
 function reversePrefix(word, ch) {
   let right = 0
 
@@ -29,6 +37,7 @@ function reversePrefix(word, ch) {
 
 // TIP: Using indexOf method
 
+// O(n) time | O(1) space
 function reversePrefix2(word, ch) {
   const index = word.indexOf(ch)
 
