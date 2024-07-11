@@ -343,6 +343,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Score of a String](./string/score-of-a-string.js)
 - [Valid Palindrome](./string/valid-palindrome.js)
 - [Permutation Difference between Two Strings](./string/permutation-difference.js)
+- [Reverse Prefix of Word](./string/reverse-prefix-of-word.js)
 
 ### Tree
 
