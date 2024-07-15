@@ -29,8 +29,18 @@ function compose(functions) {
 }
 
 // ----------------------
+// SOLUTION 2
+
+// TIP: You can use reduceRight to iterate over the array in reverse order
+
+function compose2(functions) {
+  return (x) => functions.reduceRight((acc, fn) => fn(acc), x)
+}
+
+// ----------------------
 // TESTS
 
+// 1
 const fn = compose([(x) => x + 1, (x) => x * x, (x) => 2 * x])
 console.log(fn(4)) // 65
 /*
@@ -41,3 +51,7 @@ Starting with x = 4.
 (8) * (8) = 64
 (64) + 1 = 65
 */
+
+// 2
+const fn2 = compose2([(x) => x + 1, (x) => x * x, (x) => 2 * x])
+console.log(fn2(4)) // 65
