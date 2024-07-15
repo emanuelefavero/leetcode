@@ -10,6 +10,12 @@ The function composition of an empty list of functions is the identity function 
 You may assume each function in the array accepts one integer as input and returns one integer as output.
 */
 
+/**
+ * @param {Function[]} functions
+ * @return {Function}
+ */
+
+// O(n) time | O(1) space
 function compose(functions) {
   return (x) => {
     let result = x
