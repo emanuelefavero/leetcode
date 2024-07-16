@@ -176,6 +176,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Array Wrapper](./easy/array-wrapper.js)
 - [Sleep](./easy/sleep.js)
 - [Function Composition](./easy/function-composition.js)
+- [Allow One Function Call](./easy/allow-one-function-call.js)
 
 ### Graph
 
