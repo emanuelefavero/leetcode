@@ -7,6 +7,12 @@ The first time the returned function is called, it should return the same result
 Every subsequent time it is called, it should return undefined.
 */
 
+/**
+ * @param {function} fn
+ * @returns {function}
+ */
+
+// O(1) time | O(1) space
 function once(fn) {
   let called = false
 
