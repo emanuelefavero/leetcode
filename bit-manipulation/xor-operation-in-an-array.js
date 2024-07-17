@@ -8,6 +8,13 @@ Define an array nums where nums[i] = start + 2 * i (0-indexed) and n == nums.len
 Return the bitwise XOR of all elements of nums.
 */
 
+/**
+ * @param {number} n
+ * @param {number} start
+ * @returns {number}
+ */
+
+// O(n) time | O(n) space
 function xorOperation(n, start) {
   let arr = []
   for (let i = 0; i < n; i++) {
