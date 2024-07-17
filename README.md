@@ -126,6 +126,10 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Missing Number](./binary-search/missing-number.js)
 - [Count Complete Tree Nodes](./binary-search/count-complete-tree-nodes.js)
 
+### Bit Manipulation
+
+- [XOR Operation In An Array](./bit-manipulation/xor-operation-in-an-array.js)
+
 ### Breadth First Search
 
 - [Average of Levels in Binary Tree](./breadth-first-search/average-of-levels-in-binary-tree.js)
