@@ -24,11 +24,32 @@ function xorOperation(n, start) {
 }
 
 // ----------------------
+// SOLUTION 2
+
+// TIP: This solution does not use an array to store the values of nums and it is more efficient
+
+// O(n) time | O(1) space
+function xorOperation2(n, start) {
+  let result = 0
+
+  for (let i = 0; i < n; i++) {
+    result ^= start + 2 * i
+  }
+
+  return result
+}
+
+// ----------------------
 // TESTS
 
+// 1
 console.log(xorOperation(5, 0)) // 8
 console.log(xorOperation(4, 3)) // 8
 /*
 Explanation: Array nums is equal to [0, 2, 4, 6, 8] where (0 ^ 2 ^ 4 ^ 6 ^ 8) = 8.
 Where "^" corresponds to bitwise XOR operator.
 */
+
+// 2
+console.log(xorOperation2(5, 0)) // 8
+console.log(xorOperation2(4, 3)) // 8
