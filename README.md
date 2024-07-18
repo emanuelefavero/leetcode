@@ -97,6 +97,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Count Pairs That Form a Complete Day I](./array/count-pairs-that-form-a-complete-day-i.js)
 - [Final Prices With a Special Discount in a Shop](./array/final-prices-with-a-special-discount.js)
 - [Find Minimum Operations to Make All Elements Divisible by Three](./array/find-minimum-operations-divisible-by-three.js)
+- [Decompress Run-Length Encoded List](./array/decompress-rle-list.js)
 
 ### Binary Search
 
