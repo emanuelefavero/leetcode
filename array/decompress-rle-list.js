@@ -12,6 +12,16 @@ Return the decompressed list.
 // e.g. 'aaabb' => 'a3b2', [1, 2] => [2], [3, 4] => [4, 4, 4]
 // So we need to take the second number of the pair and repeat it the first number of times
 
+/**
+ * @param {number[]} nums
+ * @returns {number[]}
+ */
+
+// TIP: A run-length encoding is a method of compressing data by replacing repeated sequences with a single value and the number of times it repeats.
+// e.g. 'aaabb' => 'a3b2', [1, 2] => [2], [3, 4] => [4, 4, 4]
+// So we need to take the second number of the pair and repeat it the first number of times
+
+// O(n) time | O(n) space
 function decompressRLElist(nums) {
   let i = 0
   let result = []
