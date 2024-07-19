@@ -1,9 +1,15 @@
-// * Count Primes
-
-// Given an integer n, return the number of prime numbers that are strictly less than n
+/**
+ * * Count Primes
+ *
+ * Given an integer n, return the number of prime numbers that are strictly less than n
+ *
+ * @param {number} n
+ * @returns {number}
+ */
 
 // TIP: To solve this problem efficiently, we have to use the Sieve of Eratosthenes algorithm @see https://www.geeksforgeeks.org/sieve-of-eratosthenes/
 
+// O(n log log n) time | O(n) space
 function countPrimes(n) {
   let count = 0
   let seen = new Array(n).fill(false)
