@@ -265,6 +265,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Smallest Even Multiple](./math/smallest-even-multiple.js)
 - [Subtract the Product and Sum of Digits of an Integer](./math/subtract-product-and-sum.js)
 - [Minimum Sum of Four Digit Number After Splitting Digits](./math/minimum-sum.js)
+- [Count Primes](./math/count-primes.js)
 
 ### Matrix
 
