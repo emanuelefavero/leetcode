@@ -4,6 +4,12 @@
 
 // An integer n is a power of three, if there exists an integer x such that n == 3x.
 
+/**
+ * @param {number} n
+ * @returns {boolean}
+ */
+
+// O(log3(n)) time | O(1) space
 function isPowerOfThree(n) {
   while (n > 1) n /= 3
   return n === 1
