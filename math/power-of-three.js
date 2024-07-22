@@ -16,8 +16,26 @@ function isPowerOfThree(n) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: Recursive solution
+
+function isPowerOfThree2(n) {
+  if (n === 1) return true
+  if (n < 1) return false
+
+  return isPowerOfThree(n / 3)
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(isPowerOfThree(27)) // true, 27 = 3^3
 console.log(isPowerOfThree(0)) // false, there is no x such that 0 == 3^x
 console.log(isPowerOfThree(-1)) // false, there is no x where 3x = (-1)
+
+// 2
+console.log(isPowerOfThree2(27)) // true
+console.log(isPowerOfThree2(0)) // false
+console.log(isPowerOfThree2(-1)) // false
