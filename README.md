@@ -266,6 +266,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Subtract the Product and Sum of Digits of an Integer](./math/subtract-product-and-sum.js)
 - [Minimum Sum of Four Digit Number After Splitting Digits](./math/minimum-sum.js)
 - [Count Primes](./math/count-primes.js)
+- [Power of Three](./math/power-of-three.js)
 
 ### Matrix
 
