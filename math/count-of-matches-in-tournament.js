@@ -32,6 +32,27 @@ function numberOfMatches2(n, count = 0) {
 }
 
 // -------------------------
+// SOLUTION 3
+
+// TIP: This is an iterative solution
+
+function numberOfMatches3(n) {
+  let count = 0
+
+  while (n > 1) {
+    if (n % 2 === 0) {
+      count += n / 2
+      n = n / 2
+    } else {
+      count += (n - 1) / 2
+      n = (n - 1) / 2 + 1
+    }
+  }
+
+  return count
+}
+
+// -------------------------
 // TESTS
 
 // 1
@@ -48,3 +69,6 @@ console.log(numberOfMatches(14)) // 13
 
 // 2
 console.log(numberOfMatches2(7)) // 6
+
+// 3
+console.log(numberOfMatches3(7)) // 6
