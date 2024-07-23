@@ -23,20 +23,20 @@ Given a roman numeral, convert it to an integer.
 */
 
 function romanToInt(s) {
-  let map = new Map([
-    ['I', 1],
-    ['V', 5],
-    ['X', 10],
-    ['L', 50],
-    ['C', 100],
-    ['D', 500],
-    ['M', 1000],
-  ])
+  let map = {
+    I: 1,
+    V: 5,
+    X: 10,
+    L: 50,
+    C: 100,
+    D: 500,
+    M: 1000,
+  }
   let result = 0
 
   for (let i = 0; i < s.length; i++) {
-    let current = map.get(s[i])
-    let next = map.get(s[i + 1])
+    let current = map[s[i]]
+    let next = map[s[i + 1]]
 
     if (current < next) {
       result += next - current
