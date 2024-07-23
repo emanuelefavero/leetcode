@@ -268,6 +268,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Count Primes](./math/count-primes.js)
 - [Power of Three](./math/power-of-three.js)
 - [Roman to Integer](./math/roman-to-integer.js)
+- [Count of Matches in Tournament](./math/count-of-matches-in-tournament.js)
 
 ### Matrix
 
