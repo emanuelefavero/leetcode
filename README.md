@@ -267,6 +267,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Minimum Sum of Four Digit Number After Splitting Digits](./math/minimum-sum.js)
 - [Count Primes](./math/count-primes.js)
 - [Power of Three](./math/power-of-three.js)
+- [Roman to Integer](./math/roman-to-integer.js)
 
 ### Matrix
 
