@@ -22,6 +22,12 @@ C can be placed before D (500) and M (1000) to make 400 and 900.
 Given a roman numeral, convert it to an integer.
 */
 
+/**
+ * @param {string} s
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function romanToInt(s) {
   let map = {
     I: 1,
