@@ -8,8 +8,14 @@ If the current number of teams is odd, one team randomly advances in the tournam
 Return the number of matches played in the tournament until a winner is decided.
 */
 
+/**
+ * @param {number} n
+ * @returns {number}
+ */
+
 // TIP: This is a greedy solution
 
+// O(1) time | O(1) space
 function numberOfMatches(n) {
   return n - 1
 }
@@ -19,6 +25,7 @@ function numberOfMatches(n) {
 
 // TIP: This is a recursive solution
 
+// O(log(n)) time | O(log(n)) space
 function numberOfMatches2(n, count = 0) {
   if (n === 1) return count
 
@@ -36,6 +43,7 @@ function numberOfMatches2(n, count = 0) {
 
 // TIP: This is an iterative solution
 
+// O(log(n)) time | O(1) space
 function numberOfMatches3(n) {
   let count = 0
 
