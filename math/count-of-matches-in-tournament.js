@@ -8,21 +8,33 @@ If the current number of teams is odd, one team randomly advances in the tournam
 Return the number of matches played in the tournament until a winner is decided.
 */
 
-function numberOfMatches(n, count = 0) {
+// TIP: This is a greedy solution
+
+function numberOfMatches(n) {
+  return n - 1
+}
+
+// -------------------------
+// SOLUTION 2
+
+// TIP: This is a recursive solution
+
+function numberOfMatches2(n, count = 0) {
   if (n === 1) return count
 
   if (n % 2 === 0) {
     count += n / 2
-    return numberOfMatches(n / 2, count)
+    return numberOfMatches2(n / 2, count)
   } else {
     count += (n - 1) / 2
-    return numberOfMatches((n - 1) / 2 + 1, count)
+    return numberOfMatches2((n - 1) / 2 + 1, count)
   }
 }
 
 // -------------------------
 // TESTS
 
+// 1
 console.log(numberOfMatches(7)) // 6
 /* 
 Explanation: Details of the tournament: 
@@ -33,3 +45,6 @@ Total number of matches = 3 + 2 + 1 = 6.
 */
 
 console.log(numberOfMatches(14)) // 13
+
+// 2
+console.log(numberOfMatches2(7)) // 6
