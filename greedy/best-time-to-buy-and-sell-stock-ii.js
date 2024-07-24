@@ -29,13 +29,32 @@ function maxProfit(prices) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: This solution is similar to the first one, but simply checks if the next day's price is greater than the current day's price and adds the difference to the sum
+
+function maxProfit2(prices) {
+  let sum = 0
+
+  for (let i = 0; i < prices.length - 1; i++) {
+    if (prices[i + 1] > prices[i]) {
+      sum += prices[i + 1] - prices[i]
+    }
+  }
+
+  return sum
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(maxProfit([7, 1, 5, 3, 6, 4])) // 7
 /*
 Explanation: Buy on day 2 (price = 1) and sell on day 3 (price = 5), profit = 5-1 = 4.
 Then buy on day 4 (price = 3) and sell on day 5 (price = 6), profit = 6-3 = 3.
 Total profit is 4 + 3 = 7.
 */
-console.log(maxProfit([1, 2, 3, 4, 5])) // 4
-console.log(maxProfit([7, 6, 4, 3, 1])) // 0
+
+// 2
+console.log(maxProfit2([7, 1, 5, 3, 6, 4])) // 7
