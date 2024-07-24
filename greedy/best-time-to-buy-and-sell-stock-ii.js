@@ -10,6 +10,12 @@ Find and return the maximum profit you can achieve.
 
 // TIP: This is a greedy solution that adds the difference between the next day and the current day if the difference is positive.
 
+/**
+ * @param {number[]} prices
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function maxProfit(prices) {
   let sum = 0
 
