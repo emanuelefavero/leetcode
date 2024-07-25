@@ -8,6 +8,12 @@ You have to rotate the image in-place, which means you have to modify the input 
 // NOTE: Do not return anything, modify matrix in-place instead
 */
 
+/**
+ * @param {number[][]} matrix
+ * @returns {void}
+ */
+
+// O(n^2) time, O(1) space
 function rotate(matrix) {
   let n = matrix.length
 
