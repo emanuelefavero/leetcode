@@ -4,12 +4,12 @@
 
 // Assume the environment does not allow you to store 64-bit integers (signed or unsigned).
 
-function isOutsideInt32Range(number) {
-  const MIN_INT32 = -2147483648
-  const MAX_INT32 = 2147483647
-  return number < MIN_INT32 || number > MAX_INT32
-}
+/**
+ * @param {number} number
+ * @returns {number}
+ */
 
+// O(n) time | O(n) space
 function reverse(x) {
   let stringArray = x.toString().split('')
 
@@ -23,6 +23,12 @@ function reverse(x) {
   if (isOutsideInt32Range(reversed)) return 0
 
   return reversed
+}
+
+function isOutsideInt32Range(number) {
+  const MIN_INT32 = -2147483648
+  const MAX_INT32 = 2147483647
+  return number < MIN_INT32 || number > MAX_INT32
 }
 
 // -------------------------
