@@ -6,6 +6,13 @@ Given two strings s and t, return true if t is an anagram of s, and false otherw
 An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
 */
 
+/**
+ * @param {string} s
+ * @param {string} t
+ * @returns {boolean}
+ */
+
+// O(n log n) time | O(1) space
 function isAnagram(s, t) {
   if (s.length !== t.length) return false
   let sSorted = s.split('').sort().join('')
@@ -17,6 +24,7 @@ function isAnagram(s, t) {
 // -------------------------
 // SOLUTION 2
 
+// O(n) time | O(1) space
 function isAnagram2(s, t) {
   if (s.length !== t.length) return false
 
