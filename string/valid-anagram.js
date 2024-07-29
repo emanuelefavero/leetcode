@@ -8,6 +8,17 @@ An Anagram is a word or phrase formed by rearranging the letters of a different 
 
 function isAnagram(s, t) {
   if (s.length !== t.length) return false
+  let sSorted = s.split('').sort().join('')
+  let tSorted = t.split('').sort().join('')
+
+  return sSorted === tSorted
+}
+
+// -------------------------
+// SOLUTION 2
+
+function isAnagram2(s, t) {
+  if (s.length !== t.length) return false
 
   let map = {}
 
@@ -26,5 +37,10 @@ function isAnagram(s, t) {
 // -------------------------
 // TESTS
 
+// 1
 console.log(isAnagram('anagram', 'nagaram')) // true
 console.log(isAnagram('rat', 'car')) // false
+
+// 2
+console.log(isAnagram2('anagram', 'nagaram')) // true
+console.log(isAnagram2('rat', 'car')) // false
