@@ -358,6 +358,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Permutation Difference between Two Strings](./string/permutation-difference.js)
 - [Reverse Prefix of Word](./string/reverse-prefix-of-word.js)
 - [Reverse Integer](./string/reverse-integer.js)
+- [Valid Anagram](./string/valid-anagram.js)
 
 ### Tree
 
