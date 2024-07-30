@@ -17,8 +17,21 @@ Return the integer as the final int.
  * @returns {number}
  */
 
-// O(n) time | O(1) space
 function myAtoi(s) {
+  let num = parseInt(s.trim()) || 0
+  let max = Math.pow(2, 31) - 1
+  let min = Math.pow(-2, 31)
+
+  if (num > max) return max
+  if (num < min) return min
+  return num
+}
+
+// -------------------------
+// SOLUTION 2
+
+// O(n) time | O(1) space
+function myAtoi2(s) {
   let MIN_INT = -2147483648
   let MAX_INT = 2147483647
 
@@ -55,6 +68,12 @@ function myAtoi(s) {
 // -------------------------
 // TESTS
 
+// 1
 console.log(myAtoi('42')) // 42
 console.log(myAtoi(' -042')) // -42
 console.log(myAtoi('1337c0d3')) // 4193
+
+// 2
+console.log(myAtoi2('42')) // 42
+console.log(myAtoi2(' -042')) // -42
+console.log(myAtoi2('1337c0d3')) // 4193
