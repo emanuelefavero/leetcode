@@ -12,6 +12,12 @@ Rounding: If the integer is out of the 32-bit signed integer range [-231, 231 - 
 Return the integer as the final int.
 */
 
+/**
+ * @param {string} s
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function myAtoi(s) {
   let MIN_INT = -2147483648
   let MAX_INT = 2147483647
