@@ -166,6 +166,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Min Cost Climbing Stairs](./dynamic-programming/min-cost-climbing-stairs.js)
 - [N-th Tribonacci Number](./dynamic-programming/n-th-tribonacci-number.js)
 - [Is Subsequence](./dynamic-programming/is-subsequence.js)
+- [Maximum Subarray](./dynamic-programming/maximum-subarray.js)
 
 ### Easy
 
