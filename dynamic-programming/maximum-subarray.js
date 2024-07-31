@@ -2,8 +2,14 @@
 
 // Given an integer array nums, find the subarray with the largest sum, and return its sum
 
+/**
+ * @param {number[]} nums
+ * @returns {number}
+ */
+
 // TIP: Kadane's Algorithm
 
+// O(n) time | O(1) space
 function maxSubArray(nums) {
   let max = nums[0]
   let sum = nums[0]
