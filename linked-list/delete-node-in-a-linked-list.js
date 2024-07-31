@@ -28,18 +28,28 @@ class ListNode {
 }
 
 function deleteNode(node) {
-  let current = node
-  let previous = current
-
-  while (current && current.next) {
-    current.val = current.next.val
-
-    previous = current
-    current = current.next
-  }
-
-  previous.next = null
+  node.val = node.next.val // copy the next node's value to the current node
+  node.next = node.next.next // skip the next node
 }
+
+// -------------------
+// SOLUTION 2
+
+// TIP: This solution works for any node in the linked list, not just the second node
+
+// function deleteNode2(node) {
+//   let current = node
+//   let previous = current
+
+//   while (current && current.next) {
+//     current.val = current.next.val
+
+//     previous = current
+//     current = current.next
+//   }
+
+//   previous.next = null
+// }
 
 // -------------------
 // TESTS
