@@ -20,6 +20,11 @@ We will build the linked list and pass the node to your function.
 The output will be the entire list after calling your function.
 */
 
+/**
+ * @typedef {Object} ListNode
+ * @property {*} val
+ */
+
 class ListNode {
   constructor(val) {
     this.val = val
@@ -27,6 +32,12 @@ class ListNode {
   }
 }
 
+/**
+ * @param {ListNode} node
+ * @returns {void} Do not return anything, modify node in-place instead
+ */
+
+// O(1) time | O(1) space
 function deleteNode(node) {
   node.val = node.next.val // copy the next node's value to the current node
   node.next = node.next.next // skip the next node
@@ -34,8 +45,6 @@ function deleteNode(node) {
 
 // -------------------
 // SOLUTION 2
-
-// TIP: This solution works for any node in the linked list, not just the second node
 
 // function deleteNode2(node) {
 //   let current = node
