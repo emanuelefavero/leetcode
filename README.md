@@ -256,6 +256,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Copy List With Random Pointer](./linked-list/copy-list-with-random-pointer.js)
 - [Rotate List](./linked-list/rotate-list.js)
 - [Remove Duplicates from Sorted List](./linked-list/remove-duplicates-from-sorted-list.js)
+- [Delete Node in a Linked List](./linked-list/delete-node-in-a-linked-list.js)
 
 ### Math
 
