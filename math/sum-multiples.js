@@ -4,6 +4,12 @@
 
 // Return an integer denoting the sum of all numbers in the given range satisfying the constraint.
 
+/**
+ * @param {number} n
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function sumOfMultiples(n) {
   let sum = 0
 
