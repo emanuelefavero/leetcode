@@ -6,8 +6,14 @@ You are a professional robber planning to rob houses along a street. Each house 
 Given an integer array nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.
 */
 
+/**
+ * @param {number[]} nums
+ * @returns {number}
+ */
+
 // TIP: We can use dynamic programming to solve this problem
 
+// O(n) time | O(n) space
 function rob(nums) {
   let n = nums.length
   if (n === 1) return nums[0]
@@ -28,6 +34,7 @@ function rob(nums) {
 
 // TIP: We don't need to store all the values in the dp array, we can just store the last two values
 
+// O(n) time | O(1) space
 function rob2(nums) {
   let first = 0
   let second = 0
