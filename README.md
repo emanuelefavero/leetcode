@@ -167,6 +167,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [N-th Tribonacci Number](./dynamic-programming/n-th-tribonacci-number.js)
 - [Is Subsequence](./dynamic-programming/is-subsequence.js)
 - [Maximum Subarray](./dynamic-programming/maximum-subarray.js)
+- [House Robber](./dynamic-programming/house-robber.js)
 
 ### Easy
 
