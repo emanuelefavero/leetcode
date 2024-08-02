@@ -6,6 +6,8 @@ You are a professional robber planning to rob houses along a street. Each house 
 Given an integer array nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.
 */
 
+// TIP: We can use dynamic programming to solve this problem
+
 function rob(nums) {
   let n = nums.length
   if (n === 1) return nums[0]
@@ -22,8 +24,34 @@ function rob(nums) {
 }
 
 // ------------------
+// SOLUTION 2
+
+// TIP: We don't need to store all the values in the dp array, we can just store the last two values
+
+function rob2(nums) {
+  let first = 0
+  let second = 0
+
+  for (let i = 0; i < nums.length; i++) {
+    let current = Math.max(first + nums[i], second)
+    first = second
+    second = current
+  }
+
+  // second will have the maximum amount of money at the end
+  return second
+}
+
+// ------------------
 // TESTS
 
+// 1
 console.log(rob([1, 2, 3, 1])) // 4
 // Explanation: Rob house 1 (money = 1) and then rob house 3 (money = 3). Total amount you can rob = 1 + 3 = 4.
 console.log(rob([2, 7, 9, 3, 1])) // 12
+console.log(rob([2, 1, 1, 2])) // 4
+
+// 2
+console.log(rob2([1, 2, 3, 1])) // 4
+console.log(rob2([2, 7, 9, 3, 1])) // 12
+console.log(rob2([2, 1, 1, 2])) // 4
