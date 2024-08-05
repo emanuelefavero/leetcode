@@ -17,8 +17,23 @@ function hammingWeight(n) {
 }
 
 // ----------------------
+// SOLUTION 2
+
+function hammingWeight2(n) {
+  let count = 0
+
+  while (n !== 0) {
+    if (n & 1) count++ // n & 1 will give 1 if the last bit is 1, otherwise 0
+    n = n >>> 1 // shift n to the right by 1 bit (meaning divide by 2)
+  }
+
+  return count
+}
+
+// ----------------------
 // TESTS
 
 console.log(hammingWeight(11)) // 3
 // Explanation: The input binary string 1011 has a total of three set bits
-console.log(hammingWeight(128)) // 1, 10000000 has only one set bit
+
+console.log(hammingWeight2(11)) // 3
