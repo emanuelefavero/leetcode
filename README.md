@@ -130,6 +130,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 ### Bit Manipulation
 
 - [XOR Operation In An Array](./bit-manipulation/xor-operation-in-an-array.js)
+- [Number of 1 Bits](./bit-manipulation/number-of-1-bits.js)
 
 ### Breadth First Search
 
