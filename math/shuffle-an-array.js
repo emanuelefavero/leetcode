@@ -23,6 +23,7 @@ class Solution {
    * @returns {number[]}
    */
 
+  // O(1) time | O(1) space
   reset() {
     return this.nums
   }
@@ -31,6 +32,7 @@ class Solution {
    * @returns {number[]}
    */
 
+  // O(n) time | O(n) space
   shuffle() {
     let shuffled = [...this.nums]
 
