@@ -19,6 +19,8 @@ function hammingWeight(n) {
 // ----------------------
 // SOLUTION 2
 
+// TIP: Using bitwise operators
+
 function hammingWeight2(n) {
   let count = 0
 
@@ -31,9 +33,22 @@ function hammingWeight2(n) {
 }
 
 // ----------------------
+// SOLUTION 3
+
+// TIP: Easiest solution to understand
+
+function hammingWeight3(n) {
+  return n.toString(2).split('0').join('').length
+
+  // OR
+  // return n.toString(2).replace(/0/g, '').length
+}
+
+// ----------------------
 // TESTS
 
 console.log(hammingWeight(11)) // 3
 // Explanation: The input binary string 1011 has a total of three set bits
 
 console.log(hammingWeight2(11)) // 3
+console.log(hammingWeight3(11)) // 3
