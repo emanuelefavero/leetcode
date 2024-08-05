@@ -274,6 +274,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Roman to Integer](./math/roman-to-integer.js)
 - [Count of Matches in Tournament](./math/count-of-matches-in-tournament.js)
 - [Sum Multiples](./math/sum-multiples.js)
+- [Shuffle an Array](./math/shuffle-an-array.js)
 
 ### Matrix
 
