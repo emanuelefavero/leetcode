@@ -10,14 +10,26 @@ int[] reset() Resets the array to its original configuration and returns it.
 int[] shuffle() Returns a random shuffling of the array.
 */
 
+/**
+ * @param {number[]} nums
+ */
+
 class Solution {
   constructor(nums) {
     this.nums = nums
   }
 
+  /**
+   * @returns {number[]}
+   */
+
   reset() {
     return this.nums
   }
+
+  /**
+   * @returns {number[]}
+   */
 
   shuffle() {
     let shuffled = [...this.nums]
