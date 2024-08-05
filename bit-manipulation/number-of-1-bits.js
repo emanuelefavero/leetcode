@@ -5,6 +5,12 @@
 // TIP: A set bit refers to a bit in the binary representation of a number that has a value of 1.
 // TIP: @see https://en.wikipedia.org/wiki/Hamming_weight?useskin=vector
 
+/**
+ * @param {number} n
+ * @returns {number}
+ */
+
+// O(log n) time | O(1) space
 function hammingWeight(n) {
   let binary = n.toString(2)
   let count = 0
