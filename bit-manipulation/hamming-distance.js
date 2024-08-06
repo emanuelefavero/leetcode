@@ -4,6 +4,13 @@
 
 // Given two integers x and y, return the Hamming distance between them.
 
+/**
+ * @param {number} x
+ * @param {number} y
+ * @returns {number}
+ */
+
+// O(log n) time | O(1) space
 function hammingDistance(x, y) {
   // TIP: XOR operator (^) will return 1 if the bits are different and 0 if they are the same
   return (x ^ y).toString(2).replace(/0/g, '').length
