@@ -10,8 +10,32 @@ function hammingDistance(x, y) {
 }
 
 // ----------------------
+// SOLUTION 2
+
+function hammingDistance2(x, y) {
+  x = x.toString(2)
+  y = y.toString(2)
+
+  // Add leading zeros to make the strings the same length
+  if (x.length < y.length) {
+    while (x.length !== y.length) x = '0' + x
+  } else {
+    while (x.length !== y.length) y = '0' + y
+  }
+
+  let distance = 0
+
+  for (let i = 0; i < x.length; i++) {
+    if (x[i] !== y[i]) distance++
+  }
+
+  return distance
+}
+
+// ----------------------
 // TESTS
 
+// 1
 console.log(hammingDistance(1, 4)) // 2
 /*
 Explanation:
@@ -21,3 +45,7 @@ Explanation:
 The above arrows point to positions where the corresponding bits are different.
 */
 console.log(hammingDistance(3, 1)) // 1
+
+// 2
+console.log(hammingDistance2(1, 4)) // 2
+console.log(hammingDistance2(3, 1)) // 1
