@@ -19,6 +19,27 @@ function reverseBits(n) {
 }
 
 // ----------------------
+// SOLUTION 2
+
+// TIP: << left shift, >> right shift, | OR, & AND, (n & 1) gets 1 or 0 depending on the last bit
+
+function reverseBits2(n) {
+  let result = 0
+
+  for (let i = 0; i < 32; i++) {
+    result = (result << 1) | (n & 1)
+    n >>>= 1
+  }
+
+  return result >>> 0
+}
+
+// ----------------------
 // TESTS
 
+// 1
+console.log(reverseBits(43261596)) // 964176192
+// Explanation: The input binary string 00000010100101000001111010011100 represents the unsigned integer 43261596, so return 964176192 which its binary representation is 00111001011110000010100101000000.
+
+// 2
 console.log(reverseBits(43261596)) // 964176192
