@@ -6,6 +6,13 @@ You are given two strings word1 and word2. Merge the strings by adding letters i
 Return the merged string.
 */
 
+/**
+ * @param {string} word1
+ * @param {string} word2
+ * @returns {string}
+ */
+
+// O(n) time | O(n) space
 function mergeAlternately(word1, word2) {
   let result = ''
 
