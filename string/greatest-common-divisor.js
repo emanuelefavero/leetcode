@@ -6,6 +6,13 @@ For two strings s and t, we say "t divides s" if and only if s = t + t + t + ...
 Given two strings str1 and str2, return the largest string x such that x divides both str1 and str2.
 */
 
+/**
+ * @param {string} str1
+ * @param {string} str2
+ * @returns {string}
+ */
+
+// O(n) time | O(1) space
 function gcdOfStrings(str1, str2) {
   if (str1 + str2 !== str2 + str1) return ''
 
