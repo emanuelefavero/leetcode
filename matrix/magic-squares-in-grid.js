@@ -17,7 +17,7 @@ Note: while a magic square can only contain numbers from 1 to 9, grid may contai
 
 // O(n^2) time | O(1) space
 function numMagicSquaresInside(grid) {
-  const sum = (...nums) => nums.reduce((acc, curr) => acc + curr, 0)
+  const sum = (...set) => set.reduce((acc, curr) => acc + curr, 0)
 
   let result = 0
   let cols = grid[0].length
@@ -59,8 +59,58 @@ function numMagicSquaresInside(grid) {
 }
 
 // -----------------------
+// SOLUTION 2
+
+function numMagicSquaresInside2(grid) {
+  const isMagicSquare = (i, j) => {
+    const set = new Set() // track unique numbers
+    const sum = 15 // 15 is the required sum for rows, columns, and diagonals
+
+    // Loop through the 3x3 subgrid
+    for (let x = i; x < i + 3; x++) {
+      for (let y = j; y < j + 3; y++) {
+        const num = grid[x][y]
+
+        // Check if the number is between 1 and 9 and is unique
+        if (num < 1 || num > 9 || set.has(num)) return false
+        set.add(num) // add number to the set
+      }
+    }
+
+    // Check if the sum of all rows, columns, and diagonals equals 15
+    return (
+      grid[i][j] + grid[i][j + 1] + grid[i][j + 2] === sum && // row 1
+      grid[i + 1][j] + grid[i + 1][j + 1] + grid[i + 1][j + 2] === sum && // row 2
+      grid[i + 2][j] + grid[i + 2][j + 1] + grid[i + 2][j + 2] === sum && // row 3
+      grid[i][j] + grid[i + 1][j] + grid[i + 2][j] === sum && // column 1
+      grid[i][j + 1] + grid[i + 1][j + 1] + grid[i + 2][j + 1] === sum && // column 2
+      grid[i][j + 2] + grid[i + 1][j + 2] + grid[i + 2][j + 2] === sum && // column 3
+      grid[i][j] + grid[i + 1][j + 1] + grid[i + 2][j + 2] === sum && // diagonal 1
+      grid[i][j + 2] + grid[i + 1][j + 1] + grid[i + 2][j] === sum // diagonal 2
+    )
+  }
+
+  let result = 0 // count of magic squares found
+  const rows = grid.length
+  const cols = grid[0].length
+
+  // Iterate through each possible top-left corner of a 3x3 subgrid
+  for (let i = 0; i < rows - 2; i++) {
+    for (let j = 0; j < cols - 2; j++) {
+      // Early exit condition: the center of the magic square must be 5
+      if (grid[i + 1][j + 1] === 5 && isMagicSquare(i, j)) {
+        result++ // Increment the count of magic squares found
+      }
+    }
+  }
+
+  return result
+}
+
+// -----------------------
 // TESTS
 
+// 1
 console.log(
   numMagicSquaresInside([
     [4, 3, 8, 4],
@@ -82,3 +132,12 @@ while this one is not:
 
 In total, there is only one magic square inside the given grid.
 */
+
+// 2
+console.log(
+  numMagicSquaresInside2([
+    [4, 3, 8, 4],
+    [9, 5, 1, 9],
+    [2, 7, 6, 2],
+  ])
+) // 1
