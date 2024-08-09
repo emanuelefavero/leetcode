@@ -8,6 +8,14 @@ Given a row x col grid of integers, how many 3 x 3 contiguous magic square subgr
 Note: while a magic square can only contain numbers from 1 to 9, grid may contain numbers up to 15.
 */
 
+/**
+ * @param {number[][]} grid
+ * @returns {number}
+ */
+
+// TIP: This is a brute force solution
+
+// O(n^2) time | O(1) space
 function numMagicSquaresInside(grid) {
   const sum = (...nums) => nums.reduce((acc, curr) => acc + curr, 0)
 
