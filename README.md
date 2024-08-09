@@ -284,6 +284,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Flood Fill](./matrix/flood-fill.js)
 - [01 Matrix](./matrix/01-matrix.js)
 - [Rotate Image](./matrix/rotate-image.js)
+- [Magic Squares In Grid](./matrix/magic-squares-in-grid.js)
 
 ### Queue
 
