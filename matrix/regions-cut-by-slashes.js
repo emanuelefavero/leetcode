@@ -82,9 +82,71 @@ class DisjointSetUnion {
 }
 
 // ----------------------
+// SOLUTION 2
+
+// TIP: This solution uses a recursive function to solve the problem
+
+function regionsBySlashes2(grid) {
+  const n = grid.length
+  // Create a new grid with 3 times the size of the original grid
+  const newGrid = Array.from({ length: n * 3 }, () => Array(3 * n).fill(1))
+
+  // Iterate over the original grid
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < n; j++) {
+      // Fill the new grid with the original grid
+      if (grid[i][j] == '/') {
+        for (let k = 2; k >= 0; k--) newGrid[i * 3 + k][3 * j - k + 2] = 0
+      } else if (grid[i][j] == '\\') {
+        for (let k = 2; k >= 0; k--) newGrid[i * 3 + k][3 * j + k] = 0
+      }
+    }
+  }
+
+  // Iterate over the new grid and count the regions
+  let result = 0
+  const newGridLength = newGrid.length
+  for (let i = 0; i < newGridLength; i++) {
+    for (let j = 0; j < newGridLength; j++) {
+      // If the cell is 1, increment the result and call the recursion function
+      if (newGrid[i][j] == 1) result++, recursion(newGrid, i, j)
+    }
+  }
+  return result
+}
+
+// Recursive function to fill the regions
+function recursion(grid, i, j) {
+  const dir = [
+    [-1, 0],
+    [1, 0],
+    [0, -1],
+    [0, 1],
+  ]
+
+  for (const [x, y] of dir) {
+    // Calculate the new coordinates
+    const newX = i + x
+    const newY = j + y
+
+    // If the cell is 1, set it to 0 and call the recursive function
+    if (grid[newX]?.[newY] == 1) {
+      grid[newX][newY] = 0
+      recursion(grid, newX, newY)
+    }
+  }
+}
+
+// ----------------------
 // TESTS
 
+// 1
 console.log(regionsBySlashes([' /', '/ '])) // 2
 console.log(regionsBySlashes([' /', '  '])) // 1
 console.log(regionsBySlashes(['/\\', '\\/'])) // 5
 // Explanation: Recall that because \ characters are escaped, "\\/" refers to \/, and "/\\" refers to /\.
+
+// 2
+console.log(regionsBySlashes2([' /', '/ '])) // 2
+console.log(regionsBySlashes2([' /', '  '])) // 1
+console.log(regionsBySlashes2(['/\\', '\\/'])) // 5
