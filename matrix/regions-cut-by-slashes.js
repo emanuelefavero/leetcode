@@ -12,6 +12,12 @@ Note that backslash characters are escaped, so a '\' is represented as '\\'.
 
 // TIP: This solution uses a disjoint set (union find) to solve the problem
 
+/**
+ * @param {string[]} grid
+ * @returns {number}
+ */
+
+// O(n^2) time | O(n^2) space
 function regionsBySlashes(grid) {
   const n = grid.length
   const size = 4 * n * n // size of the disjoint set (4 cells per square)
@@ -60,6 +66,12 @@ function regionsBySlashes(grid) {
 
   return result
 }
+
+/**
+ * @typedef {DisjointSetUnion}
+ * @type {Object}
+ * @property {number[]} parent
+ */
 
 class DisjointSetUnion {
   constructor(n) {
