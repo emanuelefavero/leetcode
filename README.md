@@ -187,6 +187,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Sleep](./easy/sleep.js)
 - [Function Composition](./easy/function-composition.js)
 - [Allow One Function Call](./easy/allow-one-function-call.js)
+- [Apply Transform Over Each Element In Array](./easy/apply-transform-over-each-element.js)
 
 ### Graph
 
