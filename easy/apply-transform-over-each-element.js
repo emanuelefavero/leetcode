@@ -8,6 +8,13 @@ The returned array should be created such that returnedArray[i] = fn(arr[i], i).
 Please solve it without the built-in Array.map method.
 */
 
+/**
+ * @param {number[]} arr
+ * @param {Function} fn
+ * @returns {number[]}
+ */
+
+// O(n) time | O(n) space
 function map(arr, fn) {
   let result = []
 
