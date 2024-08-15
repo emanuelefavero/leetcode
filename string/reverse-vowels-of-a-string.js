@@ -50,12 +50,8 @@ function reverseVowels2(s) {
   let right = sArray.length - 1
 
   while (left < right) {
-    while (left < right && !vowels.has(sArray[left])) {
-      left++
-    }
-    while (left < right && !vowels.has(sArray[right])) {
-      right--
-    }
+    while (left < right && !vowels.has(sArray[left])) left++
+    while (left < right && !vowels.has(sArray[right])) right--
 
     if (left < right) {
       ;[sArray[left], sArray[right]] = [sArray[right], sArray[left]]
