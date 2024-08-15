@@ -40,6 +40,8 @@ function reverseVowels(s) {
 // -------------------------
 // SOLUTION 2
 
+// TIP: This solution uses two pointers to swap the vowels in place
+
 function reverseVowels2(s) {
   let vowels = new Set(['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'])
 
@@ -66,6 +68,30 @@ function reverseVowels2(s) {
 }
 
 // -------------------------
+// SOLUTION 3
+
+// TIP: This solution also saves the vowels in a string and converts the s string to an array in place
+
+function reverseVowels3(s) {
+  let vowels = 'aeiouAEIOU'
+  s = s.split('')
+  let left = 0
+  let right = s.length - 1
+
+  while (left < right) {
+    if (!vowels.includes(s[left])) left++
+    else if (!vowels.includes(s[right])) right--
+    else {
+      ;[s[left], s[right]] = [s[right], s[left]]
+      left++
+      right--
+    }
+  }
+
+  return s.join('')
+}
+
+// -------------------------
 // TESTS
 
 // 1
@@ -75,3 +101,7 @@ console.log(reverseVowels('leetcode')) // 'leotcede'
 // 2
 console.log(reverseVowels2('hello')) // 'holle'
 console.log(reverseVowels2('leetcode')) // 'leotcede'
+
+// 3
+console.log(reverseVowels3('hello')) // 'holle'
+console.log(reverseVowels3('leetcode')) // 'leotcede'
