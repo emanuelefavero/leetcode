@@ -4,6 +4,12 @@
 
 // The vowels are 'a', 'e', 'i', 'o', and 'u', and they can appear in both lower and upper cases, more than once.
 
+/**
+ * @param {string} s
+ * @returns {string}
+ */
+
+// O(n) time | O(n) space
 function reverseVowels(s) {
   let vowels = new Map([
     ['a', true],
@@ -42,6 +48,7 @@ function reverseVowels(s) {
 
 // TIP: This solution uses two pointers to swap the vowels in place
 
+// O(n) time | O(1) space
 function reverseVowels2(s) {
   let vowels = new Set(['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'])
 
@@ -68,6 +75,7 @@ function reverseVowels2(s) {
 
 // TIP: This solution also saves the vowels in a string and converts the s string to an array in place
 
+// O(n) time | O(1) space
 function reverseVowels3(s) {
   let vowels = 'aeiouAEIOU'
   s = s.split('')
