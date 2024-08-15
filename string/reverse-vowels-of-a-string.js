@@ -38,7 +38,40 @@ function reverseVowels(s) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+function reverseVowels2(s) {
+  let vowels = new Set(['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'])
+
+  let sArray = s.split('')
+  let left = 0
+  let right = sArray.length - 1
+
+  while (left < right) {
+    while (left < right && !vowels.has(sArray[left])) {
+      left++
+    }
+    while (left < right && !vowels.has(sArray[right])) {
+      right--
+    }
+
+    if (left < right) {
+      ;[sArray[left], sArray[right]] = [sArray[right], sArray[left]]
+      left++
+      right--
+    }
+  }
+
+  return sArray.join('')
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(reverseVowels('hello')) // 'holle'
 console.log(reverseVowels('leetcode')) // 'leotcede'
+
+// 2
+console.log(reverseVowels2('hello')) // 'holle'
+console.log(reverseVowels2('leetcode')) // 'leotcede'
