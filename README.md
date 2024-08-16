@@ -98,6 +98,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Final Prices With a Special Discount in a Shop](./array/final-prices-with-a-special-discount.js)
 - [Find Minimum Operations to Make All Elements Divisible by Three](./array/find-minimum-operations-divisible-by-three.js)
 - [Decompress Run-Length Encoded List](./array/decompress-rle-list.js)
+- [Minimum Average of Smallest and Largest Elements](./array/minimum-average-of-smallest-and-largest.js)
 
 ### Binary Search
 
