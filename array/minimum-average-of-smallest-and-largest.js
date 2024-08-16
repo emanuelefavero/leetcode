@@ -10,6 +10,12 @@ Add (minElement + maxElement) / 2 to averages.
 Return the minimum element in averages.
 */
 
+/**
+ * @param {number[]} nums
+ * @returns {number}
+ */
+
+// O(nlogn) time | O(n) space
 function minimumAverage(nums) {
   let averages = []
 
@@ -29,6 +35,7 @@ function minimumAverage(nums) {
 
 // TIP: We can avoid sorting the averages array by keeping track of the minimum value while iterating over the nums array
 
+// O(nlogn) time | O(1) space
 function minimumAverage2(nums) {
   nums.sort((a, b) => a - b)
   let min = Infinity
