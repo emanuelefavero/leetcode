@@ -25,8 +25,25 @@ function minimumAverage(nums) {
 }
 
 // -----------------------
+// SOLUTION 2
+
+// TIP: We can avoid sorting the averages array by keeping track of the minimum value while iterating over the nums array
+
+function minimumAverage2(nums) {
+  nums.sort((a, b) => a - b)
+  let min = Infinity
+
+  while (nums.length) {
+    min = Math.min(min, (nums.shift() + nums.pop()) / 2)
+  }
+
+  return min
+}
+
+// -----------------------
 // TESTS
 
+// 1
 console.log(minimumAverage([7, 8, 3, 4, 15, 13, 4, 1])) // 5.5
 /*
 Explanation:
@@ -40,3 +57,6 @@ step	nums	              averages
 
 The smallest element of averages, 5.5, is returned.
 */
+
+// 2
+console.log(minimumAverage2([7, 8, 3, 4, 15, 13, 4, 1])) // 5.5
