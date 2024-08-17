@@ -4,6 +4,12 @@
 
 // An integer val divides nums if nums % val == 0.
 
+/**
+ * @param {number} num
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function countDigits(num) {
   let count = 0
 
