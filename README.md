@@ -281,6 +281,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Count of Matches in Tournament](./math/count-of-matches-in-tournament.js)
 - [Sum Multiples](./math/sum-multiples.js)
 - [Shuffle an Array](./math/shuffle-an-array.js)
+- [Count the Digits That Divide a Number](./math/count-the-digits-that-divide-a-number.js)
 
 ### Matrix
 
