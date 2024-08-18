@@ -134,6 +134,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Number of 1 Bits](./bit-manipulation/number-of-1-bits.js)
 - [Hamming Distance](./bit-manipulation/hamming-distance.js)
 - [Reverse Bits](./bit-manipulation/reverse-bits.js)
+- [Minimum Bit Flips to Convert Number](./bit-manipulation/minimum-bit-flips-to-convert-number.js)
 
 ### Breadth First Search
 
