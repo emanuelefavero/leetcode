@@ -7,8 +7,15 @@ For example, for x = 7, the binary representation is 111 and we may choose any b
 Given two integers start and goal, return the minimum number of bit flips to convert start to goal.
 */
 
+/**
+ * @param {number} start
+ * @param {number} goal
+ * @returns {number}
+ */
+
 // TIP: XOR (^) operator to find the difference between two numbers, then count the number of 1s in the result
 
+// O(n) time | O(1) space
 function minBitFlips(start, goal) {
   return (start ^ goal).toString(2).replace(/0/g, '').length
 }
