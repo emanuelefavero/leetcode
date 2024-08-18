@@ -99,6 +99,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Find Minimum Operations to Make All Elements Divisible by Three](./array/find-minimum-operations-divisible-by-three.js)
 - [Decompress Run-Length Encoded List](./array/decompress-rle-list.js)
 - [Minimum Average of Smallest and Largest Elements](./array/minimum-average-of-smallest-and-largest.js)
+- [Filter Elements from Array](./array/filter-elements-from-array.js)
 
 ### Binary Search
 
