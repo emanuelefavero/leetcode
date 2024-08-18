@@ -23,6 +23,15 @@ function filter(arr, fn) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: This solution uses the filter method (even though it's not allowed in the problem statement)
+
+function filter2(arr, fn) {
+  return arr.filter((el, i) => fn(el, i))
+}
+
+// -------------------------
 // TESTS
 
 console.log(filter([0, 10, 20, 30], (n) => n > 10)) // [20, 30]
@@ -30,3 +39,6 @@ console.log(filter([0, 10, 20, 30], (n) => n > 10)) // [20, 30]
 
 console.log(filter([1, 2, 3], (n, i) => i === 0)) // [1]
 // fn can also accept the index of each element. In this case, the function removes elements not at index 0
+
+console.log(filter2([0, 10, 20, 30], (n) => n > 10)) // [20, 30]
+console.log(filter2([1, 2, 3], (n, i) => i === 0)) // [1]
