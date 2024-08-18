@@ -12,6 +12,13 @@ filteredArr should only contain the elements from the arr for which the expressi
 Please solve it without the built-in Array.filter method.
 */
 
+/**
+ * @param {number[]} arr
+ * @param {Function} fn
+ * @returns {number[]}
+ */
+
+// O(n) time | O(n) space
 function filter(arr, fn) {
   let result = []
 
