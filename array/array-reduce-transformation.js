@@ -10,6 +10,14 @@ If the length of the array is 0, the function should return init.
 Please solve it without using the built-in Array.reduce method.
 */
 
+/**
+ * @param {number[]} nums
+ * @param {Function} fn
+ * @param {number} init
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function reduce(nums, fn, init) {
   let acc = init
   for (let i = 0; i < nums.length; i++) {
