@@ -33,6 +33,15 @@ function reduce2(nums, fn, init) {
 }
 
 // -------------------------
+// SOLUTION 3
+
+// TIP: Using the built in reduce method (not allowed in this problem)
+
+function reduce3(nums, fn, init) {
+  return nums.reduce(fn, init)
+}
+
+// -------------------------
 // TESTS
 
 // 1
@@ -49,5 +58,9 @@ The final answer is 10.
 console.log(reduce([1, 2, 3, 4], (acc, curr) => acc + curr * curr, 100)) // 130
 
 // 2
+console.log(reduce([1, 2, 3, 4], (acc, curr) => acc + curr, 0)) // 10
+console.log(reduce([1, 2, 3, 4], (acc, curr) => acc + curr * curr, 100)) // 130
+
+// 3
 console.log(reduce([1, 2, 3, 4], (acc, curr) => acc + curr, 0)) // 10
 console.log(reduce([1, 2, 3, 4], (acc, curr) => acc + curr * curr, 100)) // 130
