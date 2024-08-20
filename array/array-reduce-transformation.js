@@ -20,8 +20,22 @@ function reduce(nums, fn, init) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: Using a forEach loop
+
+function reduce2(nums, fn, init) {
+  let acc = init
+  nums.forEach((num) => {
+    acc = fn(acc, num)
+  })
+  return acc
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(reduce([1, 2, 3, 4], (acc, curr) => acc + curr, 0)) // 10
 /*
 Explanation:
@@ -32,4 +46,8 @@ initially, the value is init=0.
 (6) + nums[3] = 10
 The final answer is 10.
 */
+console.log(reduce([1, 2, 3, 4], (acc, curr) => acc + curr * curr, 100)) // 130
+
+// 2
+console.log(reduce([1, 2, 3, 4], (acc, curr) => acc + curr, 0)) // 10
 console.log(reduce([1, 2, 3, 4], (acc, curr) => acc + curr * curr, 100)) // 130
