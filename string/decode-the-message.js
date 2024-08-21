@@ -31,8 +31,29 @@ function decodeMessage(key, message) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: This solution is the fastest on LeetCode but is harder to understand
+
+function decodeMessage2(key, message) {
+  const keyStr = new Set(key.split(' ').join(''))
+  let decoded = ''
+  for (let i = 0; i < message.length; i++) {
+    if (message[i] === ' ') {
+      decoded += ' '
+    } else {
+      // get the index of the letter in the keyStr and add 97 to get the ASCII value of the letter
+      decoded += String.fromCharCode([...keyStr].indexOf(message[i]) + 97)
+    }
+  }
+
+  return decoded
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(
   decodeMessage(
     'the quick brown fox jumps over the lazy dog',
@@ -40,3 +61,11 @@ console.log(
   )
 ) // 'this is a secret'
 // Explanation: The diagram above shows the substitution table. It is obtained by taking the first appearance of each letter in "the quick brown fox jumps over the lazy dog".
+
+// 2
+console.log(
+  decodeMessage(
+    'the quick brown fox jumps over the lazy dog',
+    'vkbs bs t suepuv'
+  )
+) // 'this is a secret'
