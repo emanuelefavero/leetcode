@@ -380,6 +380,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Merge Strings Alternately](./string/merge-strings-alternately.js)
 - [Greatest Common Divisor of Strings](./string/greatest-common-divisor.js)
 - [Reverse Vowels of a String](./string/reverse-vowels-of-a-string.js)
+- [Decode the Message](./string/decode-the-message.js)
 
 ### Tree
 
