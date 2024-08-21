@@ -13,6 +13,13 @@ You are given the strings key and message, which represent a cipher key and a se
 Return the decoded message.
 */
 
+/**
+ * @param {string} key
+ * @param {string} message
+ * @returns {string}
+ */
+
+// O(n) time | O(1) space
 function decodeMessage(key, message) {
   key = [...new Set(key.replace(/ /g, ''))] // remove duplicates, spaces
   let result = ''
@@ -34,6 +41,7 @@ function decodeMessage(key, message) {
 // SOLUTION 2
 
 // TIP: This solution is the fastest on LeetCode but is harder to understand
+// NOTE: It is also not guaranteed to be the fastest when uploaded to LeetCode once again
 
 function decodeMessage2(key, message) {
   const keyStr = new Set(key.split(' ').join(''))
