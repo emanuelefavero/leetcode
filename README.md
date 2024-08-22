@@ -101,6 +101,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Minimum Average of Smallest and Largest Elements](./array/minimum-average-of-smallest-and-largest.js)
 - [Filter Elements from Array](./array/filter-elements-from-array.js)
 - [Array Reduce Transformation](./array/array-reduce-transformation.js)
+- [Design an Ordered Stream](./array/design-an-ordered-stream.js)
 
 ### Binary Search
 
