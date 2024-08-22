@@ -11,12 +11,23 @@ OrderedStream(int n) Constructs the stream to take n values.
 String[] insert(int idKey, String value) Inserts the pair (idKey, value) into the stream, then returns the largest possible chunk of currently inserted values that appear next in the order.
 */
 
+/**
+ * @param {number} n
+ */
+
 class OrderedStream {
   constructor(n) {
     this.list = new Array(n)
     this.pointer = 0
   }
 
+  /**
+   * @param {number} idKey
+   * @param {string} value
+   * @returns {string[]}
+   */
+
+  // O(n) time | O(n) space
   insert(idKey, value) {
     let chunk = []
     this.list[idKey - 1] = value // idKey is 1-based, so we need to subtract 1
