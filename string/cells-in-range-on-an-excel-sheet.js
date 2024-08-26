@@ -14,6 +14,26 @@ Return the list of cells (row, y) such that r1 <= row <= r2 and c1 <= y <= c2. T
 
 function cellsInRange(s) {
   let result = []
+
+  let col1 = s.charCodeAt(0)
+  let col2 = s.charCodeAt(3)
+  let row1 = +s[1]
+  let row2 = +s[4]
+
+  for (let col = col1; col <= col2; col++) {
+    for (let row = row1; row <= row2; row++) {
+      result.push(String.fromCharCode(col) + row)
+    }
+  }
+
+  return result
+}
+
+// -------------------------
+// SOLUTION 2
+
+function cellsInRange2(s) {
+  let result = []
   let col1 = s[0]
   let col2 = s[3]
   let cols = colsInRange(col1, col2)
@@ -36,26 +56,6 @@ function colsInRange(col1, col2) {
 
   for (let i = start; i <= end; i++) {
     result.push(String.fromCharCode(i))
-  }
-
-  return result
-}
-
-// -------------------------
-// SOLUTION 2
-
-function cellsInRange2(s) {
-  let result = []
-
-  let col1 = s.charCodeAt(0)
-  let col2 = s.charCodeAt(3)
-  let row1 = +s[1]
-  let row2 = +s[4]
-
-  for (let col = col1; col <= col2; col++) {
-    for (let row = row1; row <= row2; row++) {
-      result.push(String.fromCharCode(col) + row)
-    }
   }
 
   return result
