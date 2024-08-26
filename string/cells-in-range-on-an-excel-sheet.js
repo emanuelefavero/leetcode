@@ -12,6 +12,12 @@ You are given a string s in the format "<col1><row1>:<col2><row2>", where <col1>
 Return the list of cells (row, y) such that r1 <= row <= r2 and c1 <= y <= c2. The cells should be represented as strings in the format mentioned above and be sorted in non-decreasing order first by columns and then by rows.
 */
 
+/**
+ * @param {string} s
+ * @returns string[]
+ */
+
+// O(n) time | O(n) space
 function cellsInRange(s) {
   let result = []
 
