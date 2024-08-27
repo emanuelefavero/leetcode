@@ -20,6 +20,39 @@ function finalString(s) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: This solution does not use the built-in reverse method
+
+function finalString2(s) {
+  let result = ''
+  s = s.split('')
+
+  for (let char of s) {
+    if (char === 'i') {
+      result = reverse(result)
+    } else result += char
+  }
+
+  return result
+}
+
+function reverse(s) {
+  let left = 0
+  let right = s.length - 1
+  s = s.split('')
+
+  while (left < right) {
+    ;[s[left], s[right]] = [s[right], s[left]]
+
+    left++
+    right--
+  }
+
+  return s.join('')
+}
+
+// -------------------------
 // TESTS
 
 console.log(finalString('string')) // 'rtsng'
@@ -35,3 +68,7 @@ Therefore, we return "rtsng".
 */
 
 console.log(finalString('poiinter')) // 'ponter'
+
+// 2
+console.log(finalString2('string')) // 'rtsng'
+console.log(finalString2('poiinter')) // 'ponter'
