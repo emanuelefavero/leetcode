@@ -8,6 +8,12 @@ You are given a 0-indexed string s, and you type each character of s using your 
 Return the final string that will be present on your laptop screen.
 */
 
+/**
+ * @param {string} s
+ * @returns {string}
+ */
+
+// O(n) time | O(n) space
 function finalString(s) {
   let result = []
 
@@ -37,6 +43,7 @@ function finalString2(s) {
   return result
 }
 
+// O(n) time | O(1) space
 function reverse(s) {
   let left = 0
   let right = s.length - 1
@@ -55,6 +62,7 @@ function reverse(s) {
 // -------------------------
 // TESTS
 
+// 1
 console.log(finalString('string')) // 'rtsng'
 /*
 Explanation: 
@@ -66,7 +74,6 @@ After the fifth character, the text is "rtsn".
 After the sixth character, the text is "rtsng". 
 Therefore, we return "rtsng".
 */
-
 console.log(finalString('poiinter')) // 'ponter'
 
 // 2
