@@ -383,6 +383,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Reverse Vowels of a String](./string/reverse-vowels-of-a-string.js)
 - [Decode the Message](./string/decode-the-message.js)
 - [Cells in a Range on an Excel Sheet](./string/cells-in-range-on-an-excel-sheet.js)
+- [Faulty Keyboard](./string/faulty-keyboard.js)
 
 ### Tree
 
