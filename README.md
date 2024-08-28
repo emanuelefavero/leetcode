@@ -384,6 +384,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Decode the Message](./string/decode-the-message.js)
 - [Cells in a Range on an Excel Sheet](./string/cells-in-range-on-an-excel-sheet.js)
 - [Faulty Keyboard](./string/faulty-keyboard.js)
+- [Maximum Nesting Depth of the Parentheses](./string/max-depth-of-parentheses.js)
 
 ### Tree
 
