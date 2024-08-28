@@ -2,6 +2,12 @@
 
 // Given a valid parentheses string s, return the nesting depth of s. The nesting depth is the maximum number of nested parentheses.
 
+/**
+ * @param {string} s
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function maxDepth(s) {
   let max = 0
   let count = 0
@@ -23,6 +29,7 @@ function maxDepth(s) {
 
 // TIP: This solutions uses a stack to keep track of the depth of the parentheses
 
+// O(n) time | O(n) space
 function maxDepth2(s) {
   let max = 0
   let stack = []
