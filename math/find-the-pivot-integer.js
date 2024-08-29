@@ -29,9 +29,25 @@ function pivotInteger(n) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: The sum of all integers from 1 to n is n * (n + 1) / 2. The pivot integer x is the square root of the sum of all integers from 1 to n. If the pivot is an integer, return it; otherwise, return -1.
+
+function pivotInteger2(n) {
+  let pivot = Math.sqrt((n * (n + 1)) / 2)
+  return Number.isInteger(pivot) ? pivot : -1
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(pivotInteger(8)) // 6
 // Explanation: 6 is the pivot integer since: 1 + 2 + 3 + 4 + 5 + 6 = 6 + 7 + 8 = 21.
 console.log(pivotInteger(1)) // 1
 console.log(pivotInteger(4)) // -1
+
+// 2
+console.log(pivotInteger2(8)) // 6
+console.log(pivotInteger2(1)) // 1
+console.log(pivotInteger2(4)) // -1
