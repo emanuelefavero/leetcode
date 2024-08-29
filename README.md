@@ -286,6 +286,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Sum Multiples](./math/sum-multiples.js)
 - [Shuffle an Array](./math/shuffle-an-array.js)
 - [Count the Digits That Divide a Number](./math/count-the-digits-that-divide-a-number.js)
+- [Find the Pivot Integer](./math/find-the-pivot-integer.js)
 
 ### Matrix
 
