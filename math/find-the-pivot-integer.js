@@ -8,6 +8,12 @@ Given a positive integer n, find the pivot integer x such that:
 Return the pivot integer x. If no such integer exists, return -1. It is guaranteed that there will be at most one pivot index for the given input.
 */
 
+/**
+ * @param {number} n
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function pivotInteger(n) {
   let totalSum = (n * (n + 1)) / 2
   let leftSum = 0
