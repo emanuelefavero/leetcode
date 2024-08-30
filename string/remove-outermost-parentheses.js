@@ -12,8 +12,14 @@ Given a valid parentheses string s, consider its primitive decomposition: s = P1
 Return s after removing the outermost parentheses of every primitive string in the primitive decomposition of s.
 */
 
+/**
+ * @param {string} s
+ * @returns {string}
+ */
+
 // TIP: Use a counter to keep track of the number of open parentheses
 
+// O(n) time | O(1) space
 function removeOuterParentheses(s) {
   let result = ''
   let count = 0
