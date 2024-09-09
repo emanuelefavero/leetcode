@@ -11,16 +11,6 @@ Please solve it without using lodash's _.chunk function.
 */
 
 function chunk(arr, size) {
-  if (!arr.length) return []
-  if (arr.length <= size) return [[...arr]]
-  if (size === 1) {
-    let result = []
-    for (let num of arr) {
-      result.push([num])
-    }
-    return result
-  }
-
   let result = []
 
   for (let i = 0; i < arr.length; i += size) {
