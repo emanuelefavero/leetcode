@@ -10,6 +10,13 @@ You may assume the array is the output of JSON.parse. In other words, it is vali
 Please solve it without using lodash's _.chunk function.
 */
 
+/**
+ * @param {Array} arr
+ * @param {number} size
+ * @returns {Array}
+ */
+
+// O(n) time | O(n) space
 function chunk(arr, size) {
   let result = []
 
