@@ -26,9 +26,24 @@ function checkIfPangram(sentence) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: We can use a Set to store the unique characters of the sentence and then check if the size of the set is equal to 26 (number of letters in the English alphabet)
+
+function checkIfPangram2(sentence) {
+  let set = new Set([...sentence])
+  return set.size === 26
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(checkIfPangram('thequickbrownfoxjumpsoverthelazydog')) // true
 // Explanation: sentence contains at least one of every letter of the English alphabet.
 
 console.log(checkIfPangram('hello')) // false
+
+// 2
+console.log(checkIfPangram2('thequickbrownfoxjumpsoverthelazydog')) // true
+console.log(checkIfPangram2('hello')) // false
