@@ -4,6 +4,12 @@
 
 // Given a string sentence containing only lowercase English letters, return true if sentence is a pangram, or false otherwise.
 
+/**
+ * @param {string} sentence
+ * @returns {boolean}
+ */
+
+// O(n) time | O(1) space
 function checkIfPangram(sentence) {
   let alphabet = 'abcdefghijklmnopqrstuvwxyz'
   let map = new Map()
