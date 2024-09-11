@@ -9,16 +9,16 @@ Return true if Alice can win this game, otherwise, return false.
 */
 
 function canAliceWin(nums) {
-  let sum1 = 0
+  let singleDigitSum = 0
   let doubleDigitSum = 0
 
   for (let num of nums) {
     if (num < 10) {
-      sum1 += num
+      singleDigitSum += num
     } else doubleDigitSum += num
   }
 
-  return sum1 !== doubleDigitSum
+  return singleDigitSum !== doubleDigitSum
 }
 
 // -------------------------
