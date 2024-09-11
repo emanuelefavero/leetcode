@@ -8,6 +8,12 @@ Alice and Bob are playing a game. In the game, Alice can choose either all singl
 Return true if Alice can win this game, otherwise, return false.
 */
 
+/**
+ * @param {number[]} nums
+ * @returns {boolean}
+ */
+
+// O(n) time | O(1) space
 function canAliceWin(nums) {
   let singleDigitSum = 0
   let doubleDigitSum = 0
