@@ -103,6 +103,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Array Reduce Transformation](./array/array-reduce-transformation.js)
 - [Design an Ordered Stream](./array/design-an-ordered-stream.js)
 - [Chunk Array](./array/chunk-array.js)
+- [Find if Digit Game Can Be Won](./array/find-if-digit-game-can-be-won.js)
 
 ### Binary Search
 
