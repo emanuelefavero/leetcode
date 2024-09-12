@@ -13,6 +13,11 @@ TIP: A generator function is a special type of function that can be paused and r
 
 // TIP: To solve this problem, we are going to create an infinite loop that calculates the next number in the fibonacci sequence and yields it. We will start with the first two numbers of the sequence, 0 and 1, and then calculate the next number by adding the previous two numbers
 
+/**
+ * @returns {Generator<number>}
+ */
+
+// O(1) time | O(1) space
 function* fibGenerator() {
   let a = 0
   let b = 1
