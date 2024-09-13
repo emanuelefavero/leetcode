@@ -13,10 +13,19 @@ int diagonalSum(int value) returns the sum of elements which are diagonal neighb
 */
 
 class NeighborSum {
+  /**
+   * @param {number[][]} grid
+   */
+
   constructor(grid) {
     this.n = grid.length
     this.grid = grid
   }
+
+  /**
+   * @param {number} value
+   * @returns {number}
+   */
 
   adjacentSum(value) {
     let count = 0
@@ -34,6 +43,11 @@ class NeighborSum {
 
     return count
   }
+
+  /**
+   * @param {number} value
+   * @returns {number}
+   */
 
   diagonalSum(value) {
     let count = 0
