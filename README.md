@@ -21,6 +21,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Pascal Triangle](./2d-array/pascal-triangle.js)
 - [Matrix Diagonal Sum](./2d-array/matrix-diagonal-sum.js)
 - [Design Neighbor Sum Service](./2d-array/design-neighbor-sum-service.js)
+- [Largest Local Values in a Matrix](./2d-array/largest-local-values-in-a-matrix.js)
 
 ### Array
 
