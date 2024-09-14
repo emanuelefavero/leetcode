@@ -12,6 +12,12 @@ In other words, we want to find the largest value in every contiguous 3 x 3 matr
 Return the generated matrix.
 */
 
+/**
+ * @param {number[][]} grid
+ * @returns {number[][]}
+ */
+
+// O(n^2) time | O(n^2) space
 function largestLocal(grid) {
   const n = grid.length
   const result = []
