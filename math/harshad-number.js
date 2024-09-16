@@ -34,6 +34,23 @@ function sumOfTheDigitsOfHarshadNumber2(x) {
 }
 
 // -------------------------
+// SOLUTION 3
+
+// TIP: This solution leverages the modulo operator to get the last digit of x
+
+function sumOfTheDigitsOfHarshadNumber3(x) {
+  let digits = x
+  let sum = 0
+
+  while (x > 0) {
+    sum += x % 10 // get the last digit of x
+    x = Math.floor(x / 10) // remove the last digit of x
+  }
+
+  return digits % sum === 0 ? sum : -1
+}
+
+// -------------------------
 // TESTS
 
 // 1
@@ -42,3 +59,6 @@ console.log(sumOfTheDigitsOfHarshadNumber(18)) // 9
 
 // 2
 console.log(sumOfTheDigitsOfHarshadNumber2(18)) // 9
+
+// 3
+console.log(sumOfTheDigitsOfHarshadNumber3(18)) // 9
