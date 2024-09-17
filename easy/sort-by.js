@@ -6,6 +6,13 @@ Given an array arr and a function fn, return a sorted array sortedArr. You can a
 You may assume that fn will never duplicate numbers for a given array.
 */
 
+/**
+ * @param {Array} arr
+ * @param {Function} fn
+ * @returns {Array}
+ */
+
+// O(n log n) time | O(1) space
 function sortBy(arr, fn) {
   return arr.sort((a, b) => fn(a) - fn(b))
 }
