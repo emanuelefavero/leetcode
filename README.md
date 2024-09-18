@@ -430,6 +430,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Convert Sorted Array To Binary Search Tree](./tree/convert-sorted-array-to-bst.js)
 - [Diameter Of Binary Tree](./tree/diameter-of-binary-tree.js)
 - [Minimum Depth of Binary Tree](./tree/minimum-depth-of-binary-tree.js)
+- [Evaluate Boolean Binary Tree](./tree/evaluate-boolean-binary-tree.js)
 
 ### Trie
 
