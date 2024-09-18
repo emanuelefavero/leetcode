@@ -16,6 +16,13 @@ A full binary tree is a binary tree where each node has either 0 or 2 children.
 A leaf node is a node that has zero children.
 */
 
+/**
+ * @typedef {Object} TreeNode
+ * @property {number} val
+ * @property {TreeNode} left
+ * @property {TreeNode} right
+ */
+
 class TreeNode {
   constructor(val) {
     this.val = val
@@ -24,6 +31,12 @@ class TreeNode {
   }
 }
 
+/**
+ * @param {TreeNode} root
+ * @returns {boolean}
+ */
+
+// O(n) time | O(n) space
 function evaluateTree(root) {
   // Base case: if it's a leaf node, return its boolean value
   if (!root.left && !root.right) return root.val === 1
