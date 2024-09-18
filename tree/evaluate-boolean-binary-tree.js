@@ -25,22 +25,16 @@ class TreeNode {
 }
 
 function evaluateTree(root) {
-  // if root is null, return false
-  if (!root) return false
-
-  // if root is a leaf node, return boolean value depending on the value of the node
+  // Base case: if it's a leaf node, return its boolean value
   if (!root.left && !root.right) return root.val === 1
 
-  // evaluateTree left and right subtrees
+  // EvaluateTree left and right subtrees
   let left = evaluateTree(root.left)
   let right = evaluateTree(root.right)
 
-  // apply boolean operation based on the value of the root node if it's not a leaf node
+  // Apply boolean operation based on the node's value
   if (root.val === 2) return left || right
   if (root.val === 3) return left && right
-
-  // if root node is not a leaf node and its value is not 2 or 3, return false
-  return false
 }
 
 // ----------------------
