@@ -8,6 +8,12 @@ Return the number of '*' in s, excluding the '*' between each pair of '|'.
 Note that each '|' will belong to exactly one pair.
 */
 
+/**
+ * @param {string} s
+ * @returns {number}
+ */
+
+// O(n) time | O(n) space
 function countAsterisks(s) {
   let count = 0
   let array = s.split('|')
