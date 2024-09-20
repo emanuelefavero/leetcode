@@ -303,6 +303,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Rotate Image](./matrix/rotate-image.js)
 - [Magic Squares In Grid](./matrix/magic-squares-in-grid.js)
 - [Regions Cut By Slashes](./matrix/regions-cut-by-slashes.js)
+- [Snake in Matrix](./matrix/snake-in-matrix.js)
 
 ### Queue
 
