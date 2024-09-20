@@ -94,6 +94,31 @@ function finalPositionOfSnake2(n, commands) {
 }
 
 // --------------------------
+// SOLUTION 3
+
+// TIP: This solution also doesn't create a matrix and it is the most efficient one.
+
+// O(n) time | O(1) space
+function finalPositionOfSnake3(n, commands) {
+  let i = 0
+  let j = 0
+
+  for (let command of commands) {
+    if (command === 'UP') {
+      i--
+    } else if (command === 'RIGHT') {
+      j++
+    } else if (command === 'DOWN') {
+      i++
+    } else if (command === 'LEFT') {
+      j--
+    }
+  }
+
+  return i * n + j // get the position in the matrix
+}
+
+// --------------------------
 // TESTS
 
 // 1
@@ -106,4 +131,7 @@ Start at 0, right to 1, down to 3:
 */
 
 // 2
-console.log(finalPositionOfSnake(2, ['RIGHT', 'DOWN'])) // 3
+console.log(finalPositionOfSnake2(2, ['RIGHT', 'DOWN'])) // 3
+
+// 3
+console.log(finalPositionOfSnake3(2, ['RIGHT', 'DOWN'])) // 3
