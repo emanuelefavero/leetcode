@@ -64,7 +64,7 @@ function createMatrix(n) {
 // --------------------------
 // SOLUTION 2
 
-// TIP: This solution is more efficient than the previous one, as it doesn't create a matrix.
+// TIP: This solution is more efficient than the previous one, as it doesn't create a matrix. It is also the most common solution
 
 // O(n) time | O(1) space
 function finalPositionOfSnake2(n, commands) {
