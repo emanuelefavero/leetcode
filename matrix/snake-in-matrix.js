@@ -62,8 +62,41 @@ function createMatrix(n) {
 }
 
 // --------------------------
+// SOLUTION 2
+
+// TIP: This solution is more efficient than the previous one, as it doesn't create a matrix.
+
+// O(n) time | O(1) space
+function finalPositionOfSnake2(n, commands) {
+  let position = 0
+
+  for (let command of commands) {
+    switch (command) {
+      case 'UP':
+        position -= n
+        break
+      case 'RIGHT':
+        position++
+        break
+      case 'DOWN':
+        position += n
+        break
+      case 'LEFT':
+        position--
+        break
+
+      default:
+        break
+    }
+  }
+
+  return position
+}
+
+// --------------------------
 // TESTS
 
+// 1
 console.log(finalPositionOfSnake(2, ['RIGHT', 'DOWN'])) // 3
 /*
 Explanation:
@@ -71,3 +104,6 @@ Start at 0, right to 1, down to 3:
 [(0),1] -> [0,(1)] -> [0, 1]
 [ 2, 3]    [2, 3]     [2,(3)]
 */
+
+// 2
+console.log(finalPositionOfSnake(2, ['RIGHT', 'DOWN'])) // 3
