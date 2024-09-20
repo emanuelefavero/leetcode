@@ -10,6 +10,15 @@ You are given an integer n representing the size of the grid and an array of str
 Return the position of the final cell where the snake ends up after executing commands.
 */
 
+/**
+ * @param {number} n
+ * @param {string[]} commands
+ * @returns {number}
+ */
+
+// TIP: This solution creates a matrix (even if it is not really needed) and moves the snake through it. It's not the most efficient solution, but it's easy to understand.
+
+// O(n^2) time | O(n^2) space
 function finalPositionOfSnake(n, commands) {
   let matrix = createMatrix(n)
   let i = 0
