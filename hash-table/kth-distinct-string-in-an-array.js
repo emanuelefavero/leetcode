@@ -8,9 +8,16 @@ Given an array of strings arr, and an integer k, return the kth result string pr
 Note that the strings are considered in the order in which they appear in the array.
 */
 
+/**
+ * @param {string[]} arr
+ * @param {number} k
+ * @returns {string}
+ */
+
 // TIP: Use a hash table to store the count of each string in the array.
 // ? We only assign 1 to duplicate strings since we don't really care about the count, just if it is a duplicate or not
 
+// O(n) time | O(n) space
 function kthDistinct(arr, k) {
   let map = new Map()
 
