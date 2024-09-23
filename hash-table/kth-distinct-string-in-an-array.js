@@ -1,18 +1,21 @@
 // * Kth Distinct String in an Array
 
 /*
-A distinct string is a string that is present only once in an array.
+A result string is a string that is present only once in an array.
 
-Given an array of strings arr, and an integer k, return the kth distinct string present in arr. If there are fewer than k distinct strings, return an empty string "".
+Given an array of strings arr, and an integer k, return the kth result string present in arr. If there are fewer than k result strings, return an empty string "".
 
 Note that the strings are considered in the order in which they appear in the array.
 */
+
+// TIP: Use a hash table to store the count of each string in the array.
+// ? We only assign 1 to duplicate strings since we don't really care about the count, just if it is a duplicate or not
 
 function kthDistinct(arr, k) {
   let map = new Map()
 
   for (let string of arr) {
-    if (map.has(string)) map.set(string, 1)
+    if (map.has(string)) map.set(string, 1) // ?
     else map.set(string, 0)
   }
 
@@ -26,13 +29,39 @@ function kthDistinct(arr, k) {
 }
 
 // -----------------------------
+// SOLUTION 2
+
+// TIP: This solution stops the second loop as soon as it finds the kth distinct string
+
+function kthDistinct2(arr, k) {
+  let map = new Map()
+
+  for (let string of arr) {
+    if (map.has(string)) map.set(string, 1)
+    else map.set(string, 0)
+  }
+
+  let count = 0
+  for (let string of arr) {
+    if (map.get(string) === 0) count++
+    if (count === k) return string
+  }
+
+  return ''
+}
+
+// -----------------------------
 // TESTS
 
+// 1
 console.log(kthDistinct(['d', 'b', 'c', 'b', 'c', 'a'], 2)) // 'a'
 /*
 Explanation:
-The only distinct strings in arr are "d" and "a".
-"d" appears 1st, so it is the 1st distinct string.
-"a" appears 2nd, so it is the 2nd distinct string.
+The only result strings in arr are "d" and "a".
+"d" appears 1st, so it is the 1st result string.
+"a" appears 2nd, so it is the 2nd result string.
 Since k == 2, "a" is returned. 
 */
+
+// 2
+console.log(kthDistinct2(['d', 'b', 'c', 'b', 'c', 'a'], 2)) // 'a'
