@@ -249,6 +249,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Decode the Message](./hash-table/decode-the-message.js)
 - [Number of Arithmetic Triplets](./hash-table/number-of-arithmetic-triplets.js)
 - [Check if the Sentence Is Pangram](./hash-table/check-if-the-sentence-is-pangram.js)
+- [Kth Distinct String in an Array](./hash-table/kth-distinct-string-in-an-array.js)
 
 ### Heap
 
