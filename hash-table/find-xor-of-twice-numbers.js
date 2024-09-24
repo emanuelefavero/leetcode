@@ -4,6 +4,12 @@
 
 // Return the bitwise XOR of all the numbers that appear twice in the array, or 0 if no number appears twice.
 
+/**
+ * @param {number[]} nums
+ * @returns {number}
+ */
+
+// O(n) time | O(n) space
 function duplicateNumbersXOR(nums) {
   let map = new Map()
   let result = []
