@@ -22,18 +22,39 @@ function duplicateNumbersXOR(nums) {
     }
   }
 
-  if (!result.length) return 0
   return result.reduce((acc, num) => acc ^ num, 0)
+}
+
+// -----------------------------
+// SOLUTION 2
+
+function duplicateNumbersXOR2(nums) {
+  let result = 0
+  let set = new Set()
+
+  for (let num of nums) {
+    if (set.has(num)) {
+      result ^= num
+    } else {
+      set.add(num)
+    }
+  }
+
+  return result
 }
 
 // -----------------------------
 // TESTS
 
+// 1
 console.log(duplicateNumbersXOR([1, 2, 1, 3])) // 1
 // Explanation: The only number that appears twice in nums is 1.
-
 console.log(duplicateNumbersXOR([1, 2, 3])) // 0
 // Explanation: No number appears twice in nums.
-
 console.log(duplicateNumbersXOR([1, 2, 2, 1])) // 3
 // Explanation: Numbers 1 and 2 appeared twice. 1 XOR 2 == 3.
+
+// 2
+console.log(duplicateNumbersXOR2([1, 2, 1, 3])) // 1
+console.log(duplicateNumbersXOR2([1, 2, 3])) // 0
+console.log(duplicateNumbersXOR2([1, 2, 2, 1])) // 3
