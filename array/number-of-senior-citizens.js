@@ -25,6 +25,8 @@ function countSeniors(details) {
 // -------------------------
 // SOLUTION 2
 
+// TIP: Use the unary plus operator to convert a string to a number.
+
 function countSeniors2(details) {
   let count = 0
 
@@ -34,6 +36,15 @@ function countSeniors2(details) {
   }
 
   return count
+}
+
+// -------------------------
+// SOLUTION 3
+
+// TIP: Use the filter method to filter the elements that meet the condition. This also seems to be faster than the previous solutions
+
+function countSeniors3(details) {
+  return details.filter((d) => +(d[11] + d[12]) > 60).length
 }
 
 // -------------------------
@@ -48,4 +59,9 @@ console.log(
 // 2
 console.log(
   countSeniors2(['7868190130M7522', '5303914400F9211', '9273338290F4010'])
+) // 2
+
+// 3
+console.log(
+  countSeniors3(['7868190130M7522', '5303914400F9211', '9273338290F4010'])
 ) // 2
