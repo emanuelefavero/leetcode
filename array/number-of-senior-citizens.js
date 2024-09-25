@@ -11,6 +11,12 @@ You are given a 0-indexed array of strings details. Each element of details prov
 Return the number of passengers who are strictly more than 60 years old.
 */
 
+/**
+ * @param {string[]} details
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function countSeniors(details) {
   let count = 0
 
