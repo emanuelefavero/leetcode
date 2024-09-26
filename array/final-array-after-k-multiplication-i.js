@@ -20,6 +20,21 @@ Return an integer array denoting the final state of nums after performing all k 
 // O(k * n) time | O(1) space, where n is the length of nums and k is the number of operations
 function getFinalState(nums, k, multiplier) {
   while (k > 0) {
+    let min = Math.min(...nums) // find min value
+    nums[nums.indexOf(min)] *= multiplier // replace min value
+    k--
+  }
+
+  return nums
+}
+
+// -------------------------
+// SOLUTION 2
+
+// TIP: This solution does not use the built-in Math.min function
+
+function getFinalState2(nums, k, multiplier) {
+  while (k > 0) {
     // Find minimum value in nums
     let min = Infinity
     for (let num of nums) {
@@ -35,11 +50,11 @@ function getFinalState(nums, k, multiplier) {
 }
 
 // -------------------------
-// SOLUTION 2
+// SOLUTION 3
 
 // TIP: This solution might be slightly more optimized but maybe less readable
 
-function getFinalState2(nums, k, multiplier) {
+function getFinalState3(nums, k, multiplier) {
   while (k > 0) {
     let min = nums[0]
     for (let i = 1; i < nums.length; i++) {
@@ -55,26 +70,13 @@ function getFinalState2(nums, k, multiplier) {
 }
 
 // -------------------------
-// SOLUTION 3
+// SOLUTION 4
 
 // TIP: This solution has less code but again might be less readable
 
-function getFinalState3(nums, k, multiplier) {
-  while (k > 0) {
-    nums[nums.indexOf(Math.min(...nums))] *= multiplier
-    k--
-  }
-
-  return nums
-}
-
-// -------------------------
-// SOLUTION 4
-
 function getFinalState4(nums, k, multiplier) {
   while (k > 0) {
-    let min = Math.min(...nums) // find min value
-    nums[nums.indexOf(min)] = min * multiplier // replace min value
+    nums[nums.indexOf(Math.min(...nums))] *= multiplier
     k--
   }
 
