@@ -47,6 +47,20 @@ function getFinalState2(nums, k, multiplier) {
 }
 
 // -------------------------
+// SOLUTION 3
+
+// TIP: This solution has less code but again might be less readable
+
+function getFinalState3(nums, k, multiplier) {
+  while (k > 0) {
+    nums[nums.indexOf(Math.min(...nums))] *= multiplier
+    k--
+  }
+
+  return nums
+}
+
+// -------------------------
 // TESTS
 
 // 1
@@ -64,3 +78,6 @@ After operation 5	[8, 4, 6, 5, 6]
 
 // 2
 console.log(getFinalState2([2, 1, 3, 5, 6], 5, 2)) // [8,4,6,5,6]
+
+// 3
+console.log(getFinalState3([2, 1, 3, 5, 6], 5, 2)) // [8,4,6,5,6]
