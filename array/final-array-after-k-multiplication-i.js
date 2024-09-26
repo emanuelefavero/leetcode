@@ -69,6 +69,19 @@ function getFinalState3(nums, k, multiplier) {
 }
 
 // -------------------------
+// SOLUTION 4
+
+function getFinalState4(nums, k, multiplier) {
+  while (k > 0) {
+    let min = Math.min(...nums) // find min value
+    nums[nums.indexOf(min)] = min * multiplier // replace min value
+    k--
+  }
+
+  return nums
+}
+
+// -------------------------
 // TESTS
 
 // 1
@@ -89,3 +102,6 @@ console.log(getFinalState2([2, 1, 3, 5, 6], 5, 2)) // [8,4,6,5,6]
 
 // 3
 console.log(getFinalState3([2, 1, 3, 5, 6], 5, 2)) // [8,4,6,5,6]
+
+// 4
+console.log(getFinalState4([2, 1, 3, 5, 6], 5, 2)) // [8,4,6,5,6]
