@@ -53,7 +53,8 @@ function getFinalState2(nums, k, multiplier) {
 
 function getFinalState3(nums, k, multiplier) {
   while (k > 0) {
-    nums[nums.indexOf(Math.min(...nums))] *= multiplier
+    let index = nums.findIndex((num) => num === Math.min(...nums))
+    nums[index] *= multiplier
     k--
   }
 
