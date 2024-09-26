@@ -10,6 +10,14 @@ Replace the selected minimum value x with x * multiplier.
 Return an integer array denoting the final state of nums after performing all k operations.
 */
 
+/**
+ * @param {number[]} nums
+ * @param {number} k
+ * @param {number} multiplier
+ * @returns {number[]}
+ */
+
+// O(k * n) time | O(1) space, where n is the length of nums and k is the number of operations
 function getFinalState(nums, k, multiplier) {
   while (k > 0) {
     // Find minimum value in nums
