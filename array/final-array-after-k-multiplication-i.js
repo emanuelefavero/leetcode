@@ -27,8 +27,29 @@ function getFinalState(nums, k, multiplier) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: This solution might be slightly more optimized but maybe less readable
+
+function getFinalState2(nums, k, multiplier) {
+  while (k > 0) {
+    let min = nums[0]
+    for (let i = 1; i < nums.length; i++) {
+      const num = nums[i]
+      if (num < min) min = num
+    }
+
+    nums[nums.indexOf(min)] *= multiplier
+    k--
+  }
+
+  return nums
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(getFinalState([2, 1, 3, 5, 6], 5, 2)) // [8,4,6,5,6]
 /*
 Explanation:
@@ -40,3 +61,6 @@ After operation 3	[4, 4, 3, 5, 6]
 After operation 4	[4, 4, 6, 5, 6]
 After operation 5	[8, 4, 6, 5, 6]
 */
+
+// 2
+console.log(getFinalState2([2, 1, 3, 5, 6], 5, 2)) // [8,4,6,5,6]
