@@ -6,6 +6,12 @@
 
 // Return the minimum element in nums after all replacements.
 
+/**
+ * @param {number[]} nums
+ * @returns {number}
+ */
+
+// O(n log n) time | O(1) space
 function minElement(nums) {
   for (let i = 0; i < nums.length; i++) {
     let sum = nums[i]
@@ -25,6 +31,7 @@ function minElement(nums) {
 
 // TIP: We can avoid sorting the array by keeping track of the minimum element while iterating through the array
 
+// O(n) time | O(1) space
 function minElement2(nums) {
   let result = Infinity
 
