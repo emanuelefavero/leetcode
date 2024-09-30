@@ -21,7 +21,31 @@ function minElement(nums) {
 }
 
 // -----------------------
+// SOLUTION 2
+
+// TIP: We can avoid sorting the array by keeping track of the minimum element while iterating through the array
+
+function minElement2(nums) {
+  let result = Infinity
+
+  for (let num of nums) {
+    let sum = num
+      .toString()
+      .split('')
+      .reduce((acc, digit) => acc + Number(digit), 0)
+
+    result = Math.min(result, sum)
+  }
+
+  return result
+}
+
+// -----------------------
 // TESTS
 
+// 1
 console.log(minElement([10, 12, 13, 14])) // 1
 // Explanation: nums becomes [1, 3, 4, 5] after all replacements, with minimum element 1
+
+// 2
+console.log(minElement([10, 12, 13, 14])) // 1
