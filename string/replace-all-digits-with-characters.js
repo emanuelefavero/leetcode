@@ -13,6 +13,12 @@ Return s after replacing all digits. It is guaranteed that shift(s[i-1], s[i]) w
 Note that shift(c, x) is not a preloaded function, but an operation to be implemented as part of the solution.
 */
 
+/**
+ * @param {string} s
+ * @param {number} x
+ * @returns {string}
+ */
+
 function shift(c, x) {
   let alphabet = 'abcdefghijklmnopqrstuvwxyz'
   let index = alphabet.indexOf(c)
@@ -20,6 +26,7 @@ function shift(c, x) {
   return alphabet[(index + x) % 26]
 }
 
+// O(n) time | O(n) space
 function replaceDigits(s) {
   s = s.split('')
 
@@ -37,6 +44,7 @@ function shift2(c, x) {
   return String.fromCharCode(c.charCodeAt(0) + x)
 }
 
+// O(n) time | O(1) space
 function replaceDigits2(s) {
   for (let i = 1; i < s.length; i += 2) {
     let c = s[i - 1]
