@@ -403,6 +403,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Remove Outermost Parentheses](./string/remove-outermost-parentheses.js)
 - [To Lower Case](./string/to-lower-case.js)
 - [Count Asterisks](./string/count-asterisks.js)
+- [Replace All Digits with Characters](./string/replace-all-digits-with-characters.js)
 
 ### Tree
 
