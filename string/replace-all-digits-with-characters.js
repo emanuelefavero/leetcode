@@ -31,6 +31,24 @@ function replaceDigits(s) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+function shift2(c, x) {
+  return String.fromCharCode(c.charCodeAt(0) + x)
+}
+
+function replaceDigits2(s) {
+  for (let i = 1; i < s.length; i += 2) {
+    let c = s[i - 1]
+    let x = parseInt(s[i])
+
+    s = s.slice(0, i) + shift2(c, x) + s.slice(i + 1)
+  }
+
+  return s
+}
+
+// -------------------------
 // TESTS
 
 // 1
@@ -41,3 +59,6 @@ Explanation: The digits are replaced as follows:
 - s[3] -> shift('c',1) = 'd'
 - s[5] -> shift('e',1) = 'f'
 */
+
+// 2
+console.log(replaceDigits2('a1c1e1')) // 'abcdef'
