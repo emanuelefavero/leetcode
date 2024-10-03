@@ -203,6 +203,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Generate Fibonacci Sequence](./easy/generate-fibonacci-sequence.js)
 - [Sort By](./easy/sort-by.js)
 - [Create Hello World Function](./easy/create-hello-word-function.js)
+- [Interval Cancellation](./easy/interval-cancellation.js)
 
 ### Graph
 
