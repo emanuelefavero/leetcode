@@ -9,6 +9,14 @@ setTimeout(cancelFn, cancelTimeMs)
 The function fn should be called with args immediately and then called again every t milliseconds until cancelFn is called at cancelTimeMs ms.
 */
 
+/**
+ * @param {Function} fn
+ * @param {Array} args
+ * @param {number} t
+ * @returns {Function}
+ */
+
+// O(n) time | O(1) space
 function cancellable(fn, args, t) {
   fn(...args)
   const interval = setInterval(() => fn(...args), t)
@@ -37,7 +45,7 @@ const cancel = cancellable(log, args, t)
 setTimeout(cancel, cancelTimeMs)
 
 setTimeout(() => {
-  console.log(result) 
+  console.log(result)
 }, cancelTimeMs + t + 15)
 
 /* [ 
