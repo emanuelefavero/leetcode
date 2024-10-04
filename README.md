@@ -204,6 +204,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Sort By](./easy/sort-by.js)
 - [Create Hello World Function](./easy/create-hello-word-function.js)
 - [Interval Cancellation](./easy/interval-cancellation.js)
+- [Counter](./easy/counter.js)
 
 ### Graph
 
