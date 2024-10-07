@@ -407,6 +407,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [To Lower Case](./string/to-lower-case.js)
 - [Count Asterisks](./string/count-asterisks.js)
 - [Replace All Digits with Characters](./string/replace-all-digits-with-characters.js)
+- [Number of Strings That Appear as Substrings in Word](./string/number-of-strings-as-substrings.js)
 
 ### Tree
 
