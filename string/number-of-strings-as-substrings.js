@@ -4,6 +4,13 @@
 
 // A substring is a contiguous sequence of characters within a string.
 
+/**
+ * @param {string[]} patterns
+ * @param {string} word
+ * @returns {number}
+ */
+
+// O(n * m) time | O(1) space - where n is the number of strings in patterns and m is the length of the word
 function numOfStrings(patterns, word) {
   let count = 0
 
