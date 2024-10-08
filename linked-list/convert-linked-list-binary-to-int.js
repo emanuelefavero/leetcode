@@ -28,10 +28,32 @@ function getDecimalValue(head) {
 }
 
 // -----------------------------
+// SOLUTION 2
+
+// TIP: By multiplying result by 2 and adding current value we can convert binary to decimal as we traverse the linked list
+
+function getDecimalValue2(head) {
+  let current = head
+  let result = 0
+
+  while (current) {
+    result = result * 2 + current.val
+
+    current = current.next
+  }
+
+  return result
+}
+
+// -----------------------------
 // TESTS
 
 let head = new ListNode(1)
 head.next = new ListNode(0)
 head.next.next = new ListNode(1)
 
-console.log(getDecimalValue(head)) // 5
+// 1
+// console.log(getDecimalValue(head)) // 5
+
+// 2
+console.log(getDecimalValue2(head)) // 5
