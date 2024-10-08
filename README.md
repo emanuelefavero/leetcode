@@ -284,6 +284,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Rotate List](./linked-list/rotate-list.js)
 - [Remove Duplicates from Sorted List](./linked-list/remove-duplicates-from-sorted-list.js)
 - [Delete Node in a Linked List](./linked-list/delete-node-in-a-linked-list.js)
+- [Convert Binary Number in a Linked List to Integer](./linked-list/convert-linked-list-binary-to-int.js)
 
 ### Math
 
