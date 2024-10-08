@@ -59,6 +59,22 @@ function getDecimalValue2(head) {
 }
 
 // -----------------------------
+// SOLUTION 3
+
+// TIP: We can use bitwise operators to convert binary to decimal as we traverse the linked list
+
+function getDecimalValue3(head) {
+  let result = 0
+
+  while (head) {
+    result = (result << 1) | head.val
+    head = head.next
+  }
+
+  return result
+}
+
+// -----------------------------
 // TESTS
 
 let head = new ListNode(1)
@@ -70,3 +86,6 @@ console.log(getDecimalValue(head)) // 5
 
 // 2
 console.log(getDecimalValue2(head)) // 5
+
+// 3
+console.log(getDecimalValue3(head)) // 5
