@@ -28,12 +28,11 @@ class ListNode {
 
 // O(n) time | O(n) space
 function getDecimalValue(head) {
-  let current = head
   let result = ''
 
-  while (current) {
-    result += current.val
-    current = current.next
+  while (head) {
+    result += head.val
+    head = head.next
   }
 
   return parseInt(result, 2)
