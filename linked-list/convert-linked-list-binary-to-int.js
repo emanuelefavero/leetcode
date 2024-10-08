@@ -8,6 +8,12 @@ Return the decimal value of the number in the linked list.
 The most significant bit is at the head of the linked list.
 */
 
+/**
+ * @typedef {Object} ListNode
+ * @property {number} val
+ * @property {ListNode | null} next
+ */
+
 class ListNode {
   constructor(val) {
     this.val = val
@@ -15,6 +21,12 @@ class ListNode {
   }
 }
 
+/**
+ * @param {ListNode} head
+ * @returns {number}
+ */
+
+// O(n) time | O(n) space
 function getDecimalValue(head) {
   let current = head
   let result = ''
@@ -32,6 +44,7 @@ function getDecimalValue(head) {
 
 // TIP: By multiplying result by 2 and adding current value we can convert binary to decimal as we traverse the linked list
 
+// O(n) time | O(1) space
 function getDecimalValue2(head) {
   let current = head
   let result = 0
