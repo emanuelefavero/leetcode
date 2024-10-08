@@ -53,7 +53,7 @@ head.next = new ListNode(0)
 head.next.next = new ListNode(1)
 
 // 1
-// console.log(getDecimalValue(head)) // 5
+console.log(getDecimalValue(head)) // 5
 
 // 2
 console.log(getDecimalValue2(head)) // 5
