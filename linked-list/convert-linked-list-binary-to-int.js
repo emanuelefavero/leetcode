@@ -45,13 +45,11 @@ function getDecimalValue(head) {
 
 // O(n) time | O(1) space
 function getDecimalValue2(head) {
-  let current = head
   let result = 0
 
-  while (current) {
-    result = result * 2 + current.val
-
-    current = current.next
+  while (head) {
+    result = result * 2 + head.val
+    head = head.next
   }
 
   return result
