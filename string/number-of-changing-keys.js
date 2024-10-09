@@ -19,8 +19,25 @@ function countKeyChanges(s) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: We could also convert the string (s) to lowercase first
+
+function countKeyChanges2(s) {
+  s = s.toLowerCase()
+  let count = 0
+
+  for (let i = 0; i < s.length - 1; i++) {
+    if (s[i] !== s[i + 1]) count++
+  }
+
+  return count
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(countKeyChanges('aAbBcC')) // 2
 /*
 Explanation: 
@@ -30,3 +47,6 @@ From s[2] = 'b' to s[3] = 'B', there is no change of key as caps lock or shift i
 From s[3] = 'B' to s[4] = 'c', there is a change of key.
 From s[4] = 'c' to s[5] = 'C', there is no change of key as caps lock or shift is not counted.
 */
+
+// 2
+console.log(countKeyChanges2('aAbBcC')) // 2
