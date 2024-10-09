@@ -35,6 +35,27 @@ function countKeyChanges2(s) {
 }
 
 // -------------------------
+// SOLUTION 3
+
+// TIP: The following solution it's a good example of how to solve the problem using two pointers
+
+function countKeyChanges3(s) {
+  s = s.toLowerCase()
+  let count = 0
+  let previous = 0
+  let current = 1
+
+  while (current < s.length) {
+    if (s[previous] !== s[current]) count++
+
+    previous = current
+    current++
+  }
+
+  return count
+}
+
+// -------------------------
 // TESTS
 
 // 1
@@ -50,3 +71,6 @@ From s[4] = 'c' to s[5] = 'C', there is no change of key as caps lock or shift i
 
 // 2
 console.log(countKeyChanges2('aAbBcC')) // 2
+
+// 3
+console.log(countKeyChanges3('aAbBcC')) // 2
