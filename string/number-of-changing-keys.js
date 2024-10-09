@@ -8,6 +8,12 @@ Return the number of times the user had to change the key.
 Note: Modifiers like shift or caps lock won't be counted in changing the key that is if a user typed the letter 'a' and then the letter 'A' then it will not be considered as a changing of key.
 */
 
+/**
+ * @param {string} s 
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function countKeyChanges(s) {
   let count = 0
 
