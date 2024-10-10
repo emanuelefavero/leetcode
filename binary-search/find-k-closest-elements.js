@@ -16,6 +16,8 @@ An integer a is closer to x than an integer b if:
  * @returns {number[]}
  */
 
+// TIP: This is a sliding window problem
+
 // O(n) time | O(1) space
 function findClosestElements(arr, k, x) {
   let left = 0

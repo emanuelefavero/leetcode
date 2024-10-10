@@ -6,6 +6,8 @@
  * @returns {boolean}
  */
 
+// TIP: This is a sliding window problem
+
 // O(n) time | O(n) space
 function containsNearbyDuplicate(nums, k) {
   let map = new Map()

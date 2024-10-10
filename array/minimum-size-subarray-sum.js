@@ -6,6 +6,8 @@
  * @returns {number}
  */
 
+// TIP: This is a sliding window problem
+
 // O(n) time - O(1) space
 function minSubArrayLen(target, nums) {
   let left = 0

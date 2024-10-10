@@ -11,6 +11,8 @@ abs(nums[i] - nums[j]) <= valueDiff, and
 Return true if such pair exists or false otherwise.
 */
 
+// TIP: This is a sliding window problem
+
 /**
  * @param {number[]} nums
  * @param {number} indexDiff
