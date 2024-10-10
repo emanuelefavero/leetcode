@@ -6,6 +6,13 @@
 
 // TIP: This is a sliding window problem
 
+/**
+ * @param {number[]} nums
+ * @param {number} k
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function findMaxAverage(nums, k) {
   let sum = 0
   let max = -Infinity
