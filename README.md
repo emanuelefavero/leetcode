@@ -109,6 +109,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Number of Senior Citizens](./array/number-of-senior-citizens.js)
 - [Final Array State After K Multiplication Operations I](./array/final-array-after-k-multiplication-i.js)
 - [Minimum Element After Replacement With Digit Sum](./array/minimum-element-after-replacement.js)
+- [Maximum Average Subarray I](./array/maximum-average-subarray-i.js)
 
 ### Binary Search
 
