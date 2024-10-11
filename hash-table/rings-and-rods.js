@@ -32,8 +32,34 @@ function countPoints(rings) {
 }
 
 // -----------------------------
+// SOLUTION 2
+
+// TIP: This solution uses an array and a set to store the rods with all three colors
+
+function countPoints2(rings) {
+  let rods = Array(10)
+    .fill(0)
+    .map(() => new Set())
+
+  for (let i = 0; i < rings.length; i += 2) {
+    let color = rings[i]
+    let rod = rings[i + 1]
+
+    rods[rod].add(color)
+  }
+
+  let count = 0
+  for (let rod of rods) {
+    if (rod.size === 3) count++
+  }
+
+  return count
+}
+
+// -----------------------------
 // TESTS
 
+// 1
 console.log(countPoints('B0B6G0R6R0R6G9')) // 1
 /*
 Explanation: 
@@ -42,3 +68,6 @@ Explanation:
 - The rod labeled 9 holds only a green ring.
 Thus, the number of rods with all three colors is 1.
 */
+
+// 2
+console.log(countPoints2('B0B6G0R6R0R6G9')) // 1
