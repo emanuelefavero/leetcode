@@ -14,16 +14,13 @@ Return the number of rods that have all three colors of rings on them.
 
 function countPoints(rings) {
   let map = {}
-  let index = 0
 
-  while (index < rings.length - 1) {
-    let color = rings[index]
-    let rod = rings[index + 1]
+  for (let i = 0; i < rings.length; i += 2) {
+    let color = rings[i]
+    let rod = rings[i + 1]
 
     if (!map[rod]) map[rod] = {}
     map[rod][color] = true
-
-    index += 2
   }
 
   let count = 0
