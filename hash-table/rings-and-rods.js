@@ -12,6 +12,12 @@ For example, "R3G2B1" describes n == 3 rings: a red ring placed onto the rod lab
 Return the number of rods that have all three colors of rings on them.
 */
 
+/**
+ * @param {string} rings
+ * @returns {number}
+ */
+
+// O(n) time | O(n) space
 function countPoints(rings) {
   let map = {}
 
