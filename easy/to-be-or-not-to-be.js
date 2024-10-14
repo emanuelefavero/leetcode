@@ -9,6 +9,12 @@ toBe(val) accepts another value and returns true if the two values === each othe
 notToBe(val) accepts another value and returns true if the two values !== each other. If they are equal, it should throw an error "Equal".
 */
 
+/**
+ * @param {string} val
+ * @returns {Object}
+ */
+
+// O(1) time | O(1) space
 function expect(val) {
   return {
     toBe: (val2) => {
