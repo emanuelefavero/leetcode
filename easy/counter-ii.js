@@ -45,6 +45,28 @@ function createCounter2(init) {
 }
 
 // -------------------------
+// SOLUTION 3
+
+function createCounter3(init) {
+  let num = init
+
+  return {
+    increment: () => {
+      num++
+      return num
+    },
+    decrement: () => {
+      num--
+      return num
+    },
+    reset: () => {
+      num = init
+      return num
+    },
+  }
+}
+
+// -------------------------
 // TESTS
 
 // 1
@@ -62,3 +84,12 @@ console.log(counter2.increment()) // 6
 console.log(counter2.increment()) // 7
 console.log(counter2.reset()) // 5
 console.log(counter2.decrement()) // 4
+
+console.log('SOLUTION 3')
+
+// 3
+const counter3 = createCounter(5)
+console.log(counter3.increment()) // 6
+console.log(counter3.increment()) // 7
+console.log(counter3.reset()) // 5
+console.log(counter3.decrement()) // 4
