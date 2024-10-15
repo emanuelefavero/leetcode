@@ -13,12 +13,12 @@ reset() sets the current value to init and then returns it.
 */
 
 function createCounter(init) {
-  let number = init
+  let num = init
 
   return {
-    increment: () => ++number,
-    decrement: () => --number,
-    reset: () => (number = init),
+    increment: () => ++num,
+    decrement: () => --num,
+    reset: () => (num = init),
   }
 }
 
