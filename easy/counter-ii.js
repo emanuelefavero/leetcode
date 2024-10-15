@@ -18,10 +18,7 @@ function createCounter(init) {
   return {
     increment: () => ++number,
     decrement: () => --number,
-    reset: () => {
-      number = init
-      return number
-    },
+    reset: () => (number = init),
   }
 }
 
