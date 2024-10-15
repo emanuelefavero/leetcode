@@ -12,6 +12,12 @@ decrement() reduces the current value by 1 and then returns it.
 reset() sets the current value to init and then returns it.
 */
 
+/**
+ * @param {number} init
+ * @returns { { increment: () => number, decrement: () => number, reset: () => number } }
+ */
+
+// O(1) time | O(1) space
 function createCounter(init) {
   let num = init
 
