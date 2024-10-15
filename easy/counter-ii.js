@@ -26,10 +26,42 @@ function createCounter(init) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+function createCounter2(init) {
+  let num = init
+
+  return {
+    increment: () => {
+      init++
+      return init
+    },
+    decrement: () => {
+      init--
+      return init
+    },
+    reset: () => {
+      init = num
+      return init
+    },
+  }
+}
+
+// -------------------------
 // TESTS
 
+// 1
 const counter = createCounter(5)
 console.log(counter.increment()) // 6
 console.log(counter.increment()) // 7
 console.log(counter.reset()) // 5
 console.log(counter.decrement()) // 4
+
+console.log('SOLUTION 2')
+
+// 2
+const counter2 = createCounter(5)
+console.log(counter2.increment()) // 6
+console.log(counter2.increment()) // 7
+console.log(counter2.reset()) // 5
+console.log(counter2.decrement()) // 4
