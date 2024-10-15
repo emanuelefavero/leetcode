@@ -207,6 +207,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Interval Cancellation](./easy/interval-cancellation.js)
 - [Counter](./easy/counter.js)
 - [To Be Or Not To Be](./easy/to-be-or-not-to-be.js)
+- [Counter II](./easy/counter-ii.js)
 
 ### Graph
 
