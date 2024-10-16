@@ -1,5 +1,7 @@
 // * Memoize
 
+// TIP: This is a JavaScript specific problem
+
 /*
 Given a function fn, return a memoized version of that function.
 
@@ -12,11 +14,17 @@ fib accepts a single integer n and returns 1 if n <= 1 or fib(n - 1) + fib(n - 2
 factorial accepts a single integer n and returns 1 if n <= 1 or factorial(n - 1) * n otherwise.
 */
 
+/**
+ * @param {Function} fn
+ * @returns {Function}
+ */
+
+// O(n) time | O(n) space, where n is the number of unique inputs
 function memoize(fn) {
   const cache = {}
 
   return function (...args) {
-    const key = JSON.stringify(args)
+    const key = String(args)
 
     if (key in cache) return cache[key]
 
