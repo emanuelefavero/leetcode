@@ -318,6 +318,10 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Regions Cut By Slashes](./matrix/regions-cut-by-slashes.js)
 - [Snake in Matrix](./matrix/snake-in-matrix.js)
 
+### Medium
+
+- [Memoize](./medium/memoize.js)
+
 ### Queue
 
 - [Design Circular Queue](./queue/design-circular-queue.js)
