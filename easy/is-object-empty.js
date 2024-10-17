@@ -9,7 +9,7 @@ You may assume the object or array is the output of JSON.parse.
 */
 
 function isEmpty(obj) {
-  return !Object.keys(obj).length
+  return Object.keys(obj).length === 0
 }
 
 // -------------------------
