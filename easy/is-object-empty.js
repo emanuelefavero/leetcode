@@ -8,6 +8,12 @@ An empty array contains no elements.
 You may assume the object or array is the output of JSON.parse.
 */
 
+/**
+ * @param {Object} obj
+ * @returns {boolean}
+ */
+
+// O(n) time | O(1) space, where n is the number of keys in the object
 function isEmpty(obj) {
   return Object.keys(obj).length === 0
 }
