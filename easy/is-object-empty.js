@@ -1,5 +1,7 @@
 // * Is Object Empty
 
+// TIP: This is a JavaScript specific problem
+
 /*
 Given an object or an array, return if it is empty.
 
