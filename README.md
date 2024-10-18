@@ -209,6 +209,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [To Be Or Not To Be](./easy/to-be-or-not-to-be.js)
 - [Counter II](./easy/counter-ii.js)
 - [Is Object Empty](./easy/is-object-empty.js)
+- [Array Prototype Last](./easy/array-prototype-last.js)
 
 ### Graph
 
