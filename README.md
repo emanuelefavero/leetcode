@@ -210,6 +210,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Counter II](./easy/counter-ii.js)
 - [Is Object Empty](./easy/is-object-empty.js)
 - [Array Prototype Last](./easy/array-prototype-last.js)
+- [Calculator with Method Chaining](./easy/calculator-with-method-chaining.js)
 
 ### Graph
 
