@@ -2,10 +2,6 @@
 
 // TIP: To achieve constant time we will use two stacks, one to store the elements and another to store the minimums
 
-/**
- * @typedef {Object} MinStack
- */
-
 class MinStack {
   constructor() {
     this.stack = []

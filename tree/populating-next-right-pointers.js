@@ -14,15 +14,14 @@ Populate each next pointer to point to its next right node. If there is no next 
 Initially, all next pointers are set to NULL.
 */
 
-/**
- * @typedef {Object} Node
- * @property {number} val
- * @property {Node} left
- * @property {Node} right
- * @property {Node} next
- */
-
 class Node {
+  /**
+   * @param {number} val
+   * @param {Node} left
+   * @param {Node} right
+   * @param {Node} next
+   */
+
   constructor(val, left, right, next) {
     this.val = val || null
     this.left = left || null

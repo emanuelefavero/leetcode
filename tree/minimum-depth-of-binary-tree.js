@@ -8,15 +8,13 @@ The minimum depth is the number of nodes along the shortest path from the root n
 Note: A leaf is a node with no children.
 */
 
-/**
- * @typedef TreeNode
- * @type {object}
- * @property {number} val
- * @property {TreeNode} left
- * @property {TreeNode} right
- */
-
 class TreeNode {
+  /**
+   * @param {number} val
+   * @param {TreeNode} left
+   * @param {TreeNode} right
+   */
+
   constructor(val, left, right) {
     this.val = val
     this.left = left || null

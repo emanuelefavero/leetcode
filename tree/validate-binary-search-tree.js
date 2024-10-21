@@ -10,14 +10,13 @@ The right subtree of a node contains only nodes with keys greater than the node'
 Both the left and right subtrees must also be binary search trees.
 */
 
-/**
- * @typedef {Object} TreeNode
- * @property {number} val
- * @property {TreeNode} left
- * @property {TreeNode} right
- */
-
 class TreeNode {
+  /**
+   * @param {number} val
+   * @param {TreeNode} left
+   * @param {TreeNode} right
+   */
+
   constructor(val, left, right) {
     this.val = val || 0
     this.left = left || null

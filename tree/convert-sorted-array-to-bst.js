@@ -3,6 +3,10 @@
 // Given an integer array nums where the elements are sorted in ascending order, convert it to a height-balanced binary search tree
 
 class TreeNode {
+  /**
+   * @param {number} val
+   */
+
   constructor(val) {
     this.val = val
     this.left = null

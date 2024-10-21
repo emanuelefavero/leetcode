@@ -11,13 +11,12 @@ int add(int val) Appends the integer val to the stream and returns the element r
 
 // TIP: This is a brute force solution. The optimal solution uses a min heap. (@see https://leetcode.com/problems/kth-largest-element-in-a-stream/solutions)
 
-/**
- * @typedef {Object} KthLargest
- * @property {number} k
- * @property {number[]} nums
- */
-
 class KthLargest {
+  /**
+   * @param {number} k
+   * @param {number[]} nums
+   */
+
   constructor(k, nums) {
     this.k = k
     this.nums = nums

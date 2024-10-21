@@ -1,9 +1,10 @@
 // * return true if there is a path from cur to target
 
-/**
- * @typedef {Object} Node
- */
 class Node {
+  /**
+   * @param {number} val
+   * @param {Node[]} neighbors
+   */
   constructor(val, neighbors) {
     this.val = val || null
     this.neighbors = neighbors || []

@@ -14,10 +14,6 @@ int sum(string prefix) Returns the sum of all the pairs' value whose key starts 
 
 // TIP: This problem can also be solved with a Trie but it is much simpler to use a Map
 
-/**
- * @typedef {Object} MapSum
- */
-
 class MapSum {
   constructor() {
     this.map = {}

@@ -1,12 +1,11 @@
-/**
- * @typedef TreeNode
- * @property {number} val
- * @property {TreeNode} left
- * @property {TreeNode} right
- */
-
 // * INPUT
 class TreeNode {
+  /**
+   * @param {number} val
+   * @param {TreeNode} left
+   * @param {TreeNode} right
+   */
+
   constructor(val, left, right) {
     this.val = val
     this.left = left

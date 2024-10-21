@@ -4,11 +4,13 @@
 
 // A leaf is a node with no children.
 
-/**
- * @typedef {Object} TreeNode
- */
-
 class TreeNode {
+  /**
+   * @param {number} val
+   * @param {TreeNode} left
+   * @param {TreeNode} right
+   */
+
   constructor(val, left, right) {
     this.val = val || 0
     this.left = left || null

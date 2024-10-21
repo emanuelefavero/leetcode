@@ -10,13 +10,11 @@
 
 // TIP: Inorder traversal does not work for N-ary trees because we don't know which child to visit first
 
-/**
- * @typedef {Object} Node
- * @property {number} val
- * @property {Node[]} children
- */
-
 class Node {
+  /**
+   * @param {number} val
+   * @param {Node[]} children
+   */
   constructor(val, children) {
     this.val = val
     this.children = children || []

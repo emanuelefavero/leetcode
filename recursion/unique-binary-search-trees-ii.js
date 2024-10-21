@@ -20,11 +20,13 @@ output: [
 ]
 */
 
-/**
- * @typedef {Object} TreeNode
- */
-
 class TreeNode {
+  /**
+   * @param {number} val
+   * @param {TreeNode} left
+   * @param {TreeNode} right
+   */
+
   constructor(val, left, right) {
     this.val = val
     this.left = left || null

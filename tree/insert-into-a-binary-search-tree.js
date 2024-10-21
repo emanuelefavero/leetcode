@@ -1,9 +1,10 @@
-/**
- * @param {TreeNode} root
- * @param {number} val
- */
-
 class TreeNode {
+  /**
+   * @param {number} val
+   * @param {TreeNode} left
+   * @param {TreeNode} right
+   */
+
   constructor(val, left, right) {
     this.val = val || 0
     this.left = left || null

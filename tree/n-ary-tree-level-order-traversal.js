@@ -8,13 +8,12 @@
 // Input: root = [1,null,3,2,4,null,5,6]
 // Output: [[1],[3,2,4],[5,6]]
 
-/**
- * @typedef {Object} Node
- * @property {number} val
- * @property {Node[]} children
- */
-
 class Node {
+  /**
+   * @param {number} val
+   * @param {Node[]} children
+   */
+
   constructor(val, children) {
     this.val = val
     this.children = children || []

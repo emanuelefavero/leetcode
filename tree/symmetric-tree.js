@@ -11,12 +11,11 @@ Example:
 3    4 4    3
 */
 
-/**
- * @typedef {Object} TreeNode
- * @property {number} val
- */
-
 class TreeNode {
+  /**
+   * @param {number} val
+   */
+
   constructor(val) {
     this.val = val
     this.left = null

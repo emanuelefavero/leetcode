@@ -4,11 +4,12 @@
 // Return a deep copy (clone) of the graph
 // Each node in the graph contains a value (int) and a list (List[Node]) of its neighbors
 
-/**
- * @typedef {Object} Node
- */
-
 class Node {
+  /**
+   * @param {number} val
+   * @param {Node[]} neighbors
+   */
+
   constructor(val, neighbors) {
     this.val = val
     this.neighbors = neighbors

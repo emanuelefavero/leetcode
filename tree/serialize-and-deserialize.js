@@ -6,12 +6,11 @@
 
 // Clarification: The input/output format is the same as how LeetCode serializes a binary tree. You do not necessarily need to follow this format, so please be creative and come up with different approaches yourself.
 
-/**
- * @typedef {Object} TreeNode
- * @property {number} val
- */
-
 class TreeNode {
+  /**
+   * @param {number} val
+   */
+
   constructor(val) {
     this.val = val
     this.left = null
