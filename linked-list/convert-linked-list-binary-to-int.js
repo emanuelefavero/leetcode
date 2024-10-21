@@ -8,13 +8,12 @@ Return the decimal value of the number in the linked list.
 The most significant bit is at the head of the linked list.
 */
 
-/**
- * @typedef {Object} ListNode
- * @property {number} val
- * @property {ListNode | null} next
- */
-
 class ListNode {
+  /**
+   * @param {number} val
+   * @param {ListNode | null} next
+   */
+
   constructor(val) {
     this.val = val
     this.next = null

@@ -1,12 +1,10 @@
-/**
- * @typedef {Object} ListNode
- * @property {*} val
- * @property {ListNode} prev
- * @property {ListNode} next
- * @property {ListNode} child
- */
-
 class ListNode {
+  /**
+   * @param {ListNode} prev
+   * @param {ListNode} next
+   * @param {ListNode} child
+   */
+
   constructor(val, prev, next, child) {
     this.val = val
     this.prev = prev || null

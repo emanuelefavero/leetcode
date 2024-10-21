@@ -2,10 +2,6 @@
 
 // TIP: This solution is not really circular, it's just a queue with a fixed size but it works and in JavScript it's not needed to create a circular queue since the array is dynamic and can grow as needed
 
-/**
- * @typedef {Object} MyCircularQueue
- */
-
 class MyCircularQueue {
   /**
    * Initializes the object with the size of the queue to be k

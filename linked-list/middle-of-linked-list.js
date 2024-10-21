@@ -1,10 +1,9 @@
-/**
- * Definition for singly-linked list.
- * @typedef ListNode
- * @property {number} val
- * @property {ListNode} next
- */
 class ListNode {
+  /**
+   * @param {number} val
+   * @param {ListNode} next
+   */
+
   constructor(val, next) {
     this.val = val ?? 0
     this.next = next ?? null

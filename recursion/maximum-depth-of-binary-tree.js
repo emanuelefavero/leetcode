@@ -1,7 +1,3 @@
-/**
- * @typedef {Object} TreeNode
- */
-
 class TreeNode {
   /**
    * @param {number} val

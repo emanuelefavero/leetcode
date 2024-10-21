@@ -1,7 +1,6 @@
 class ListNode {
   /**
-   *
-   * @param {*} val
+   * @param {number} val
    */
 
   constructor(val) {

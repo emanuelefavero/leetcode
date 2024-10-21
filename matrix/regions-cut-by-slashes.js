@@ -67,13 +67,11 @@ function regionsBySlashes(grid) {
   return result
 }
 
-/**
- * @typedef {DisjointSetUnion}
- * @type {Object}
- * @property {number[]} parent
- */
-
 class DisjointSetUnion {
+  /**
+   * @param {number} n
+   */
+
   constructor(n) {
     this.parent = Array(n)
       .fill(0)

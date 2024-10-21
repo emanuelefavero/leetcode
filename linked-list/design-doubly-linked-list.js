@@ -1,13 +1,8 @@
 // * Doubly Linked List
 
-/**
- * @typedef {Object} Node
- */
-
 class Node {
   /**
-   *
-   * @param {*} val
+   * @param {number} val
    */
 
   constructor(val) {

@@ -4,10 +4,6 @@
 
 // Two trees are duplicate if they have the same structure with the same node values.
 
-/**
- * @typedef {Object} TreeNode
- */
-
 class TreeNode {
   /**
    *

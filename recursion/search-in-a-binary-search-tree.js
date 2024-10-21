@@ -1,8 +1,8 @@
-/**
- * @typedef TreeNode {object}
- */
-
 class TreeNode {
+  /**
+   * @param {number} val
+   */
+
   constructor(val) {
     this.val = val
     this.left = null

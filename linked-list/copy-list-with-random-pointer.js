@@ -1,9 +1,8 @@
-/**
- * @typedef {Object} ListNode
- * @param {number} val
- */
-
 class Node {
+  /**
+   * @param {number} val
+   */
+
   constructor(val) {
     this.val = val
     this.next = null

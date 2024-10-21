@@ -20,12 +20,11 @@ We will build the linked list and pass the node to your function.
 The output will be the entire list after calling your function.
 */
 
-/**
- * @typedef {Object} ListNode
- * @property {*} val
- */
-
 class ListNode {
+  /**
+   * @param {number} val
+   */
+
   constructor(val) {
     this.val = val
     this.next = null

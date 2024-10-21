@@ -18,11 +18,6 @@ To check if a node is a leaf node, use this formula:
   index > number of nodes / 2
 */
 
-/**
- * @typedef {Object} MinHeap
- * @property {number[]} heap
- */
-
 class MinHeap {
   constructor() {
     this.heap = []
