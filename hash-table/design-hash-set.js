@@ -1,9 +1,5 @@
 // * Design a HashSet without using any built-in hash table libraries
 
-/**
- * @typedef {Object} MyHashSet
- */
-
 class MyHashSet {
   constructor() {
     this.set = {}

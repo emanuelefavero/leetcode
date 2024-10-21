@@ -14,7 +14,7 @@ class Node {
  *
  * Given a linked list where some of the nodes contain a sub-list, print the linked list in order
  *
- * @param {ListNode} list
+ * @param {Node} list
  * @returns {void}
  */
 

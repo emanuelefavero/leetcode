@@ -16,8 +16,8 @@ class Node {
  * Given a linked list where each node has a next pointer and a random pointer, make a deep copy of the list
  *
  * @see https://leetcode.com/problems/copy-list-with-random-pointer/description/
- * @param {ListNode} head
- * @returns {ListNode}
+ * @param {Node} head
+ * @returns {Node}
  */
 
 // O(n) time | O(n) space

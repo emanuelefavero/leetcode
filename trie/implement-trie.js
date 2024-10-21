@@ -1,16 +1,8 @@
-/**
- * @typedef {Object} Node
- */
-
 class Node {
   constructor() {
     this.children = {}
   }
 }
-
-/**
- * @typedef {Object} Trie
- */
 
 class Trie {
   constructor() {

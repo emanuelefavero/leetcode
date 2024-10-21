@@ -11,7 +11,7 @@ class ListNode {
 
 /**
  *
- * @param {*} head
+ * @param {ListNode} head
  * @returns {boolean}
  */
 

@@ -21,7 +21,7 @@ class MyLinkedList {
   /**
    *
    * @param {number} index
-   * @returns {*}
+   * @returns {number}
    */
 
   get(index) {

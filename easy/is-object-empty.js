@@ -11,7 +11,7 @@ You may assume the object or array is the output of JSON.parse.
 */
 
 /**
- * @param {Object} obj
+ * @param {object} obj
  * @returns {boolean}
  */
 

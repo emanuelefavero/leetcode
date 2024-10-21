@@ -10,8 +10,8 @@ notToBe(val) accepts another value and returns true if the two values !== each o
 */
 
 /**
- * @param {string} val
- * @returns {Object}
+ * @param {*} val
+ * @returns {object}
  */
 
 // O(1) time | O(1) space
