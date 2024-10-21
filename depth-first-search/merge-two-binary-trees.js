@@ -10,15 +10,13 @@ Return the merged tree.
 Note: The merging process must start from the root nodes of both trees.
 */
 
-/**
- * @typedef TreeNode
- * @type {object}
- * @property {number} val
- * @property {TreeNode | null} left
- * @property {TreeNode | null} right
- */
-
 class TreeNode {
+  /**
+   * @param {number} val
+   * @param {TreeNode | null} left
+   * @param {TreeNode | null} right
+   */
+
   constructor(val, left, right) {
     this.val = val || 0
     this.left = left || null

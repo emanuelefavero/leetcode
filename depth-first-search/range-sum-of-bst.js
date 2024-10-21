@@ -2,15 +2,13 @@
 
 // Given the root node of a binary search tree and two integers low and high, return the sum of values of all nodes with a value in the inclusive range [low, high]
 
-/**
- * @typedef TreeNode
- * @type {object}
- * @property {number} val
- * @property {TreeNode | null} left
- * @property {TreeNode | null} right
- */
-
 class TreeNode {
+  /**
+   * @param {number} val
+   * @param {TreeNode | null} left
+   * @param {TreeNode | null} right
+   */
+
   constructor(val, left, right) {
     this.val = val || 0
     this.left = left || null

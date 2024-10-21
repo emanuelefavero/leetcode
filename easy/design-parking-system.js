@@ -9,13 +9,13 @@ ParkingSystem(int big, int medium, int small) Initializes object of the ParkingS
 bool addCar(int carType) Checks whether there is a parking space of carType for the car that wants to get into the parking lot. carType can be of three kinds: big, medium, or small, which are represented by 1, 2, and 3 respectively. A car can only park in a parking space of its carType. If there is no space available, return false, else park the car in that size space and return true.
 */
 
-/**
- * @param {number} big
- * @param {number} medium
- * @param {number} small
- */
-
 class ParkingSystem {
+  /**
+   * @param {number} big
+   * @param {number} medium
+   * @param {number} small
+   */
+
   constructor(big, medium, small) {
     this.parking = {
       1: big,

@@ -9,15 +9,13 @@ For all leaves in the tree, consider the numbers represented by the path from th
 The test cases are generated so that the answer fits in a 32-bits integer.
 */
 
-/**
- * @typedef TreeNode
- * @type {object}
- * @property {number} val
- * @property {TreeNode | null} left
- * @property {TreeNode | null} right
- */
-
 class TreeNode {
+  /**
+   * @param {number} val
+   * @param {TreeNode | null} left
+   * @param {TreeNode | null} right
+   */
+
   constructor(val, left, right) {
     this.val = val || 0
     this.left = left || null

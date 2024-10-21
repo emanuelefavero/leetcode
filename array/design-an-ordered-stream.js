@@ -11,11 +11,11 @@ OrderedStream(int n) Constructs the stream to take n values.
 String[] insert(int idKey, String value) Inserts the pair (idKey, value) into the stream, then returns the largest possible chunk of currently inserted values that appear next in the order.
 */
 
-/**
- * @param {number} n
- */
-
 class OrderedStream {
+  /**
+   * @param {number} n
+   */
+
   constructor(n) {
     this.list = new Array(n)
     this.pointer = 0

@@ -6,15 +6,13 @@ A binary tree is uni-valued if every node in the tree has the same value.
 Given the root of a binary tree, return true if the given tree is uni-valued, or false otherwise.
 */
 
-/**
- * @typedef TreeNode
- * @type {object}
- * @property {number} val
- * @property {TreeNode | null} left
- * @property {TreeNode | null} right
- */
-
 class TreeNode {
+  /**
+   * @param {number} val
+   * @param {TreeNode | null} left
+   * @param {TreeNode | null} right
+   */
+
   constructor(val = 0, left = null, right = null) {
     this.val = val
     this.left = left

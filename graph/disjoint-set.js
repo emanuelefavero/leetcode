@@ -8,10 +8,6 @@
 // TIP: find return the root of the set that the element belongs to
 // TIP: union merges two sets together
 
-/**
- * @typedef {Object} DisjointSet
- */
-
 class DisjointSet {
   constructor() {
     this.parent = {}

@@ -10,15 +10,13 @@ Return a reference to the same node in the cloned tree.
 Note that you are not allowed to change any of the two trees or the target node and the answer must be a reference to a node in the cloned tree.
 */
 
-/**
- * @typedef TreeNode
- * @type {object}
- * @property {number} val
- * @property {TreeNode | null} left
- * @property {TreeNode | null} right
- */
-
 class TreeNode {
+  /**
+   * @param {number} val
+   * @param {TreeNode | null} left
+   * @param {TreeNode | null} right
+   */
+
   constructor(val, left, right) {
     this.val = val || 0
     this.left = left || null

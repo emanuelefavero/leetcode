@@ -7,12 +7,10 @@ When two instances of this class are added together with the + operator, the res
 When the String() function is called on the instance, it will return a comma separated string surrounded by brackets. For example, [1,2,3].
 */
 
-/**
- * @param {number[]} nums
- * @returns {void}
- */
-
 class ArrayWrapper {
+  /**
+   * @param {number[]} nums
+   */
   constructor(nums) {
     this.nums = nums
   }

@@ -8,15 +8,13 @@ According to Wikipedia, every level, except possibly the last, is completely fil
 Design an algorithm that runs in less than O(n) time complexity.
 */
 
-/**
- * @typedef TreeNode
- * @type {object}
- * @property {number} val
- * @property {TreeNode} left
- * @property {TreeNode} right
- */
-
 class TreeNode {
+  /**
+   * @param {number} val
+   * @param {TreeNode} left
+   * @param {TreeNode} right
+   */
+
   constructor(val = 0, left = null, right = null) {
     this.val = val
     this.left = left
