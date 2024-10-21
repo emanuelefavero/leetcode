@@ -33,6 +33,12 @@ function findCircleNum(isConnected) {
   return result
 }
 
+/**
+ * @param {number[][]} isConnected
+ * @param {number} i
+ * @param {Set<number>} visited
+ */
+
 function DFS(isConnected, i, visited) {
   visited.add(i)
 
@@ -50,31 +56,6 @@ function DFS(isConnected, i, visited) {
 
 // O(n^2) time | O(n) space
 function findCircleNum2(isConnected) {
-  class DisjointSet {
-    constructor(n) {
-      this.graph = [...Array(n)].map((_, i) => i) // initialize the graph with each city as its own parent
-      this.size = n
-    }
-
-    find(id) {
-      if (this.graph[id] === id) return id
-
-      this.graph[id] = this.find(this.graph[id])
-
-      return this.graph[id]
-    }
-
-    union(x, y) {
-      let rootX = this.find(x)
-      let rootY = this.find(y)
-
-      if (rootX !== rootY) {
-        this.graph[rootY] = rootX
-        this.size--
-      }
-    }
-  }
-
   let disjointSet = new DisjointSet(isConnected.length)
 
   for (let r = 0; r < isConnected.length; r++) {
@@ -84,6 +65,43 @@ function findCircleNum2(isConnected) {
   }
 
   return disjointSet.size // the size will be the number of provinces
+}
+
+class DisjointSet {
+  /**
+   * @param {number} n
+   */
+  constructor(n) {
+    this.graph = [...Array(n)].map((_, i) => i) // initialize the graph with each city as its own parent
+    this.size = n
+  }
+
+  /**
+   * @param {number} id
+   * @returns {number}
+   */
+  find(id) {
+    if (this.graph[id] === id) return id
+
+    this.graph[id] = this.find(this.graph[id])
+
+    return this.graph[id]
+  }
+
+  /**
+   * @param {number} x
+   * @param {number} y
+   * @returns {void}
+   */
+  union(x, y) {
+    let rootX = this.find(x)
+    let rootY = this.find(y)
+
+    if (rootX !== rootY) {
+      this.graph[rootY] = rootX
+      this.size--
+    }
+  }
 }
 
 // -----------------------------
