@@ -8,6 +8,12 @@ If s[i] == 'L', a person leaves the waiting room, freeing up a chair.
 Return the minimum number of chairs needed so that a chair is available for every person who enters the waiting room given that it is initially empty.
 */
 
+/**
+ * @param {string} s
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function minimumChairs(s) {
   let count = 0
   let max = 0
