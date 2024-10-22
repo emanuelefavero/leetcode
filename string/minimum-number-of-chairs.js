@@ -28,9 +28,30 @@ function minimumChairs(s) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+function minimumChairs2(s) {
+  let count = 0
+  let max = 0
+
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === 'E') count++
+    else count--
+    max = max > count ? max : count
+  }
+
+  return max
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(minimumChairs('EEEEEEE')) // 7
 // Explanation: After each second, a person enters the waiting room and no person leaves it. Therefore, a minimum of 7 chairs is needed.
 
 console.log(minimumChairs('ELELEEL')) // 2
+
+// 2
+console.log(minimumChairs2('EEEEEEE')) // 7
+console.log(minimumChairs2('ELELEEL')) // 2
