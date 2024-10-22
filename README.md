@@ -421,6 +421,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Replace All Digits with Characters](./string/replace-all-digits-with-characters.js)
 - [Number of Strings That Appear as Substrings in Word](./string/number-of-strings-as-substrings.js)
 - [Number of Changing Keys](./string/number-of-changing-keys.js)
+- [Minimum Number of Chairs in a Waiting Room](./string/minimum-number-of-chairs.js)
 
 ### Tree
 
