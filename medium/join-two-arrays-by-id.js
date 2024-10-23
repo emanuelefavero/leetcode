@@ -46,6 +46,30 @@ function addTo(map, arr) {
 }
 
 // --------------------------
+// SOLUTION 2
+
+// O(n) time, O(n) space
+function join2(arr1, arr2) {
+  let map = {}
+
+  for (let item of arr1) {
+    map[item.id] = item
+  }
+
+  for (let item of arr2) {
+    if (map[item.id]) {
+      for (const key in item) {
+        map[item.id][key] = item[key]
+      }
+    } else {
+      map[item.id] = item
+    }
+  }
+
+  return Object.values(map)
+}
+
+// --------------------------
 // TESTS
 
 const arr1 = [
@@ -58,6 +82,7 @@ const arr2 = [
   { id: 3, x: 0, y: 0 },
 ]
 
+// 1
 console.log(join(arr1, arr2))
 /*
 [
@@ -68,3 +93,6 @@ console.log(join(arr1, arr2))
 
 Explanation: The two objects with id=1 and id=3 are included in the result array without modifiction. The two objects with id=2 are merged together. The keys from arr2 override the values in arr1.
 */
+
+// 2
+console.log(join2(arr1, arr2))
