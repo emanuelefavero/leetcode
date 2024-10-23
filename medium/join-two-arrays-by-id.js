@@ -15,6 +15,13 @@ If two objects share an id, their properties should be merged into a single obje
 - If a key is included in both objects, the value in the object from arr2 should override the value from arr1.
 */
 
+/**
+ * @param {Array} arr1
+ * @param {Array} arr2
+ * @returns {Array}
+ */
+
+// O(n) time, O(n) space
 function join(arr1, arr2) {
   let map = {}
 
@@ -24,6 +31,7 @@ function join(arr1, arr2) {
   return Object.values(map).sort((a, b) => a.id - b.id)
 }
 
+// helper function to add items to map
 function addTo(map, arr) {
   for (let item of arr) {
     if (!map[item.id]) {
