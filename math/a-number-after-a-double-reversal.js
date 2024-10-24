@@ -8,6 +8,12 @@ Reversing an integer means to reverse all its digits.
 Given an integer num, reverse num to get reversed1, then reverse reversed1 to get reversed2. Return true if reversed2 equals num. Otherwise return false.
 */
 
+/**
+ * @param {number} num
+ * @returns {boolean}
+ */
+
+// O(n) time | O(1) space, where n is the number of digits in num
 function isSameAfterReversals(num) {
   let reversed = Number(num.toString().split('').reverse().join(''))
   let reversed2 = Number(reversed.toString().split('').reverse().join(''))
