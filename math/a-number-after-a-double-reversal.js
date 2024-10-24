@@ -32,6 +32,17 @@ function isSameAfterReversals2(num) {
 }
 
 // -------------------------
+// SOLUTION 3
+
+// TIP: We could just check if the last digit of num is 0 or not by converting num to an array and checking if the last element is 0
+
+function isSameAfterReversals3(num) {
+  if (num === 0) return true
+  let array = num.toString().split('')
+  return array[array.length - 1] !== '0'
+}
+
+// -------------------------
 // TESTS
 
 // 1
@@ -43,3 +54,7 @@ console.log(isSameAfterReversals(1800)) // false
 // 2
 console.log(isSameAfterReversals2(526)) // true
 console.log(isSameAfterReversals2(1800)) // false
+
+// 3
+console.log(isSameAfterReversals3(526)) // true
+console.log(isSameAfterReversals3(1800)) // false
