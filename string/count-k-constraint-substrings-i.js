@@ -36,15 +36,15 @@ function countKConstraintSubstrings(s, k) {
 
 // O(n) time | O(1) space - helper function to check if substring satisfies k-constraint
 function isSatisfied(substring, k) {
-  let count0 = 0
-  let count1 = 0
+  let zeros = 0
+  let ones = 0
 
   for (let char of substring) {
-    if (char === '0') count0++
-    else if (char === '1') count1++
+    if (char === '0') zeros++
+    else if (char === '1') ones++
   }
 
-  if (count0 <= k || count1 <= k) return true
+  if (zeros <= k || ones <= k) return true
   else return false
 }
 
