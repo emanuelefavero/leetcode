@@ -1,5 +1,7 @@
 // * Count Substrings That Satisfy K-Constraint I
 
+// TIP: This is a sliding window problem
+
 /*
 You are given a binary string s and an integer k.
 
@@ -12,6 +14,13 @@ Return an integer denoting the number of
 substrings of s that satisfy the k-constraint.
 */
 
+/**
+ * @param {string} s
+ * @param {number} k
+ * @returns {number}
+ */
+
+// O(n^3) time | O(1) space
 function countKConstraintSubstrings(s, k) {
   let count = 0
 
@@ -25,6 +34,7 @@ function countKConstraintSubstrings(s, k) {
   return count
 }
 
+// O(n) time | O(1) space - helper function to check if substring satisfies k-constraint
 function isSatisfied(substring, k) {
   let count0 = 0
   let count1 = 0
