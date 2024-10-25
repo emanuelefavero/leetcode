@@ -49,10 +49,39 @@ function isSatisfied(substring, k) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: This solution is more optimized than the previous one
+
+function countKConstraintSubstrings2(s, k) {
+  let n = s.length
+  let count = 0
+
+  for (let i = 0; i < n; i++) {
+    let zeros = 0
+    let ones = 0
+
+    // iterate through the substring
+    for (let j = i; j < n; j++) {
+      // count 0's and 1's in the substring
+      if (s[j] === '0') zeros++
+      else ones++
+
+      // check if substring satisfies k-constraint
+      if (zeros <= k || ones <= k) count++
+      else break
+    }
+  }
+
+  return count
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(countKConstraintSubstrings('10101', 1)) // 12
 // Explanation: Every substring of s except the substrings "1010", "10101", and "0101" satisfies the k-constraint.
 
-console.log(countKConstraintSubstrings('1010101', 2)) // 25
-// Explanation: Every substring of s except the substrings with a length greater than 5 satisfies the k-constraint.
+// 2
+console.log(countKConstraintSubstrings2('10101', 1)) // 12
