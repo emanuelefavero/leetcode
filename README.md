@@ -425,6 +425,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Number of Changing Keys](./string/number-of-changing-keys.js)
 - [Minimum Number of Chairs in a Waiting Room](./string/minimum-number-of-chairs.js)
 - [Count Substrings That Satisfy K-Constraint I](./string/count-k-constraint-substrings-i.js)
+- [Check Balanced String](./string/check-balanced-string.js)
 
 ### Tree
 
