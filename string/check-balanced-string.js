@@ -4,6 +4,12 @@
 
 // Return true if num is balanced, otherwise return false.
 
+/**
+ * @param {string} num
+ * @returns {boolean}
+ */
+
+// O(n) time | O(1) space
 function isBalanced(num) {
   let evenSum = 0
   let oddSum = 0
