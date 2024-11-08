@@ -264,6 +264,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Kth Distinct String in an Array](./hash-table/kth-distinct-string-in-an-array.js)
 - [Find the XOR of Numbers Which Appear Twice](./hash-table/find-xor-of-twice-numbers.js)
 - [Rings and Rods](./hash-table/rings-and-rods.js)
+- [Sort Array by Increasing Frequency](./hash-table/sort-array-by-increasing-freq.js)
 
 ### Heap
 
