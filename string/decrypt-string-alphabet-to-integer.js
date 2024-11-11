@@ -11,6 +11,12 @@ Return the string formed after mapping.
 The test cases are generated so that a unique mapping will always exist.
 */
 
+/**
+ * @param {string} s
+ * @returns {string}
+ */
+
+// O(n) time | O(1) space
 function freqAlphabets(s) {
   let map = {
     1: 'a',
