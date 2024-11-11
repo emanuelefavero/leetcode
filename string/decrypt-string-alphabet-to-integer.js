@@ -65,7 +65,38 @@ function freqAlphabets(s) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: There is no need to create a map object. You can use the ASCII table to get the correct character from the number.
+// TIP: Use String.fromCharCode() to convert a number to a character and 96 to get the correct character from the ASCII table.
+
+function freqAlphabets2(s) {
+  let result = ''
+  let i = 0
+
+  while (i < s.length) {
+    if (i + 2 < s.length && s[i + 2] === '#') {
+      let num = parseInt(s.substring(i, i + 2))
+
+      result += String.fromCharCode(num + 96)
+      i += 3
+    } else {
+      let num = parseInt(s[i])
+      result += String.fromCharCode(num + 96)
+      i++
+    }
+  }
+
+  return result
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(freqAlphabets('10#11#12')) // jkab
 console.log(freqAlphabets('1326#')) // acz
+
+// 2
+console.log(freqAlphabets2('10#11#12')) // jkab
+console.log(freqAlphabets2('1326#')) // acz
