@@ -91,6 +91,19 @@ function freqAlphabets2(s) {
 }
 
 // -------------------------
+// SOLUTION 3
+
+// TIP: You can use regular expressions to solve this problem.
+// TIP: Use the replace method to replace the number with the correct character.
+// TIP: While shorter, this solution is harder to understand.
+
+function freqAlphabets3(s) {
+  return s
+    .replace(/(\d\d)#/g, (_, $1) => String.fromCharCode(+$1 + 96))
+    .replace(/\d/g, (n) => String.fromCharCode(+n + 96))
+}
+
+// -------------------------
 // TESTS
 
 // 1
@@ -100,3 +113,7 @@ console.log(freqAlphabets('1326#')) // acz
 // 2
 console.log(freqAlphabets2('10#11#12')) // jkab
 console.log(freqAlphabets2('1326#')) // acz
+
+// 3
+console.log(freqAlphabets3('10#11#12')) // jkab
+console.log(freqAlphabets3('1326#')) // acz
