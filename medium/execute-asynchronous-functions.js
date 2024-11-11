@@ -15,6 +15,12 @@ promise rejects:
 Please solve it without using the built-in Promise.all function.
 */
 
+/**
+ * @param {Array<Function>} functions
+ * @returns {Promise<any>}
+ */
+
+// O(n) time | O(n) space
 function promiseAll(functions) {
   return new Promise((resolve, reject) => {
     const result = []
