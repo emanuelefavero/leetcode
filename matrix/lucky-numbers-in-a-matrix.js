@@ -4,6 +4,12 @@
 
 // A lucky number is an element of the matrix such that it is the minimum element in its row and maximum in its column.
 
+/**
+ * @param {number[][]} matrix
+ * @returns {number[]}
+ */
+
+// O(n^2) time | O(1) space
 function luckyNumbers(matrix) {
   for (let i = 0; i < matrix.length; i++) {
     let min = Math.min(...matrix[i]) // get the min value in the row
