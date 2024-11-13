@@ -4,6 +4,13 @@
 
 // An integer x is a common factor of a and b if x divides both a and b.
 
+/**
+ * @param {number} a
+ * @param {number} b
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function commonFactors(a, b) {
   let min = Math.min(a, b)
   let count = 0
