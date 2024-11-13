@@ -313,6 +313,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Find the Pivot Integer](./math/find-the-pivot-integer.js)
 - [Harshad Number](./math/harshad-number.js)
 - [A Number After a Double Reversal](./math/a-number-after-a-double-reversal.js)
+- [Number of Common Factors](./math/number-of-common-factors.js)
 
 ### Matrix
 
