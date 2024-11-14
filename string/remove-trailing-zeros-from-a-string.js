@@ -18,7 +18,22 @@ function removeTrailingZeros(num) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: This solution uses regex to remove trailing zeros
+// TIP: $ means end of the string
+
+function removeTrailingZeros2(num) {
+  return num.replace(/0+$/, '')
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(removeTrailingZeros('51230100')) // '512301'
 console.log(removeTrailingZeros('123')) // '123'
+
+// 2
+console.log(removeTrailingZeros2('51230100')) // '512301'
+console.log(removeTrailingZeros2('123')) // '123'
