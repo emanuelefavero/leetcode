@@ -1,4 +1,4 @@
-// Self Dividing Numbers
+// * Self Dividing Numbers
 
 /*
 A self-dividing number is a number that is divisible by every digit it contains.
