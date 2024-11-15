@@ -10,6 +10,13 @@ A self-dividing number is not allowed to contain the digit zero.
 Given two integers left and right, return a list of all the self-dividing numbers in the range [left, right] (both inclusive).
 */
 
+/**
+ * @param {number} left
+ * @param {number} right
+ * @returns {number[]}
+ */
+
+// O(n * m) time | O(n) space - where n is the range of numbers and m is the number of digits in the number
 function selfDividingNumbers(left, right) {
   let result = []
 
