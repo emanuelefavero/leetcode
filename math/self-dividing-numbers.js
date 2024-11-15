@@ -21,16 +21,18 @@ function selfDividingNumbers(left, right) {
   let result = []
 
   for (let i = left; i <= right; i++) {
-    let digits = i.toString().split('')
+    let digits = i.toString()
 
-    let count = 0
+    let selfDividing = true
     for (let j = 0; j < digits.length; j++) {
-      let current = Number(digits[j])
-      if (current === 0) break
-      if (i % current === 0) count++
+      let digit = Number(digits[j])
+      if (digit === 0 || i % digit !== 0) {
+        selfDividing = false
+        break
+      }
     }
 
-    if (count === digits.length) result.push(i)
+    if (selfDividing) result.push(i)
   }
 
   return result
@@ -39,5 +41,6 @@ function selfDividingNumbers(left, right) {
 // -------------------------
 // TESTS
 
+// 1
 console.log(selfDividingNumbers(1, 22)) // [1,2,3,4,5,6,7,8,9,11,12,15,22]
 console.log(selfDividingNumbers(47, 85)) // [48,55,66,77]
