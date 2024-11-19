@@ -31,8 +31,25 @@ function squareIsWhite(coordinates) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: Use destructuring to get the letter and number
+// TIP: Use the unary operator '+' to convert the number to a number
+
+function squareIsWhite2(coordinates) {
+  const [x, y] = coordinates
+  return x.charCodeAt(0) % 2 !== +y % 2
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(squareIsWhite('a1')) // false
 console.log(squareIsWhite('h3')) // true
 console.log(squareIsWhite('c7')) // false
+
+// 2
+console.log(squareIsWhite2('a1')) // false
+console.log(squareIsWhite2('h3')) // true
+console.log(squareIsWhite2('c7')) // false
