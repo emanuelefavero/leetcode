@@ -315,6 +315,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [A Number After a Double Reversal](./math/a-number-after-a-double-reversal.js)
 - [Number of Common Factors](./math/number-of-common-factors.js)
 - [Self Dividing Numbers](./math/self-dividing-numbers.js)
+- [Determine Color of a Chessboard Square](./math/determine-color-of-chessboard-square.js)
 
 ### Matrix
 
