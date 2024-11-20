@@ -16,9 +16,16 @@ As code is circular, the next element of code[n-1] is code[0], and the previous 
 Given the circular array code and an integer key k, return the decrypted code to defuse the bomb!
 */
 
+/**
+ * @param {number[]} code
+ * @param {number} k
+ * @returns {number[]}
+ */
+
 // TIP: This solution is not a sliding window solution
 // TIP: Use modulo to handle circular array
 
+// O(n^2) time | O(n) space
 function decrypt(code, k) {
   let length = code.length
   if (k === 0) return new Array(length).fill(0)
@@ -51,6 +58,7 @@ function decrypt(code, k) {
 
 // TIP: This is a sliding window solution
 
+// O(n) time | O(n) space
 function decrypt2(code, k) {
   const decode = (code, k) => {
     let length = 0
