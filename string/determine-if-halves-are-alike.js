@@ -28,7 +28,35 @@ function halvesAreAlike(s) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: You can use two pointers to iterate through the string from both ends at the same time.
+// TIP: You can also use a string of vowels instead of a set to check if a character is a vowel
+
+function halvesAreAlike2(s) {
+  let count = 0
+  let vowels = 'aeiouAEIOU'
+  let left = 0
+  let right = s.length - 1
+
+  while (left < right) {
+    if (vowels.includes(s[left])) count++
+    if (vowels.includes(s[right])) count--
+
+    left++
+    right--
+  }
+
+  return count === 0
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(halvesAreAlike('book')) // true
 console.log(halvesAreAlike('textbook')) // false
+
+// 2
+console.log(halvesAreAlike2('book')) // true
+console.log(halvesAreAlike2('textbook')) // false
