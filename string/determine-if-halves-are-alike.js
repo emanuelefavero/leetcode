@@ -8,6 +8,12 @@ Two strings are alike if they have the same number of vowels ('a', 'e', 'i', 'o'
 Return true if a and b are alike. Otherwise, return false.
 */
 
+/**
+ * @param {string} s
+ * @returns {boolean}
+ */
+
+// O(n) time | O(1) space
 function halvesAreAlike(s) {
   let vowels = new Set(['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'])
   let half = s.length / 2
@@ -33,6 +39,7 @@ function halvesAreAlike(s) {
 // TIP: You can use two pointers to iterate through the string from both ends at the same time.
 // TIP: You can also use a string of vowels instead of a set to check if a character is a vowel
 
+// O(n) time | O(1) space
 function halvesAreAlike2(s) {
   let count = 0
   let vowels = 'aeiouAEIOU'
