@@ -12,6 +12,12 @@ Note that the number of columns decreases by one after each operation.
 Return the answer after performing the operations described above.
 */
 
+/**
+ * @param {number[][]} grid
+ * @returns {number}
+ */
+
+// O(n log n) time | O(1) space
 function deleteGreatestValue(grid) {
   let sum = 0
   let index = 0
