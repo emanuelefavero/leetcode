@@ -22,10 +22,12 @@ function deleteGreatestValue(grid) {
   let sum = 0
   let index = 0
 
+  // Sort each row in descending order
   for (let i = 0; i < grid.length; i++) {
     grid[i].sort((a, b) => b - a)
   }
 
+  // Get the max value from each column
   while (index < grid[0].length) {
     let max = -Infinity
 
@@ -41,8 +43,28 @@ function deleteGreatestValue(grid) {
 }
 
 // --------------------------
+// SOLUTION 2
+
+function deleteGreatestValue2(grid) {
+  grid.forEach((row) => row.sort((a, b) => b - a)) // sort descending
+  let sum = 0
+
+  while (grid[0].length) {
+    let column = []
+
+    // Remove the first element from each row and add it to the column
+    for (let row of grid) column.push(row.shift())
+
+    sum += Math.max(...column) // get the max value from the column
+  }
+
+  return sum
+}
+
+// --------------------------
 // TESTS
 
+// 1
 console.log(
   deleteGreatestValue([
     [1, 2, 4],
@@ -60,3 +82,11 @@ Explanation: The diagram above shows the removed values in each step.
 - In the third operation, we remove 1 from the first row and 1 from the second row. We add 1 to the answer.
 The final answer = 4 + 3 + 1 = 8.
 */
+
+// 2
+console.log(
+  deleteGreatestValue2([
+    [1, 2, 4],
+    [3, 3, 1],
+  ])
+) // 8
