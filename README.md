@@ -327,6 +327,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Regions Cut By Slashes](./matrix/regions-cut-by-slashes.js)
 - [Snake in Matrix](./matrix/snake-in-matrix.js)
 - [Lucky Numbers in a Matrix](./matrix/lucky-numbers-in-a-matrix.js)
+- [Delete Greatest Value in Each Row](./matrix/delete-greatest-value-in-each-row.js)
 
 ### Medium
 
