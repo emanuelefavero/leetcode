@@ -266,6 +266,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Find the XOR of Numbers Which Appear Twice](./hash-table/find-xor-of-twice-numbers.js)
 - [Rings and Rods](./hash-table/rings-and-rods.js)
 - [Sort Array by Increasing Frequency](./hash-table/sort-array-by-increasing-freq.js)
+- [Sum of Unique Elements](./hash-table/sum-of-unique-elements.js)
 
 ### Heap
 
