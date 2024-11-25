@@ -4,6 +4,12 @@
 
 // Return the sum of all the unique elements of nums.
 
+/**
+ * @param {number[]} nums
+ * @returns {number}
+ */
+
+// O(n) time | O(n) space
 function sumOfUnique(nums) {
   const map = new Map()
 
