@@ -8,6 +8,12 @@ He starts by putting in $1 on Monday, the first day. Every day from Tuesday to S
 Given n, return the total amount of money he will have in the Leetcode bank at the end of the nth day.
 */
 
+/**
+ * @param {number} n
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function totalMoney(n) {
   let result = 0
   let day = 1
