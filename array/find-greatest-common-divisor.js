@@ -5,14 +5,13 @@
 // The greatest common divisor of two numbers is the largest positive integer that evenly divides both numbers.
 
 function findGCD(nums) {
-  const largest = Math.max(...nums)
-  const smallest = Math.min(...nums)
+  let smallest = Math.min(...nums)
+  let largest = Math.max(...nums)
   let divisor = 1
 
-  for (let i = smallest; i >= 1; i--) {
+  for (let i = 1; i <= smallest; i++) {
     if (smallest % i === 0 && largest % i === 0) {
       divisor = i
-      break
     }
   }
 
