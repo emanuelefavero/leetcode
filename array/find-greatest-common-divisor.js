@@ -4,6 +4,12 @@
 
 // The greatest common divisor of two numbers is the largest positive integer that evenly divides both numbers.
 
+/**
+ * @param {number[]} nums
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function findGCD(nums) {
   let smallest = Math.min(...nums)
   let largest = Math.max(...nums)
