@@ -4,6 +4,12 @@
 
 // A string s is good if all the characters that appear in s have the same number of occurrences (i.e., the same frequency).
 
+/**
+ * @param {string} s
+ * @returns {boolean}
+ */
+
+// O(n) time | O(n) space
 function areOccurrencesEqual(s) {
   let map = new Map()
 
