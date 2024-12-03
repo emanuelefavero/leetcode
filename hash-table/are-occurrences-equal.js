@@ -20,9 +20,29 @@ function areOccurrencesEqual(s) {
 }
 
 // -----------------------------
+// SOLUTION 2
+
+// TIP: Use a set to check if all the values are the same
+
+function areOccurrencesEqual2(s) {
+  let map = new Map()
+
+  for (let i = 0; i < s.length; i++) {
+    map.set(s[i], map.get(s[i]) + 1 || 1)
+  }
+
+  // ? If all the values are the same, the set will have a size of 1
+  return new Set(map.values()).size === 1
+}
+
+// -----------------------------
 // TESTS
 
+// 1
 console.log(areOccurrencesEqual('abacbc')) // true
 // Explanation: The characters that appear in s are 'a', 'b', and 'c'. All characters occur 2 times in s.
-
 console.log(areOccurrencesEqual('aaabb')) // false
+
+// 2
+console.log(areOccurrencesEqual2('abacbc')) // true
+console.log(areOccurrencesEqual2('aaabb')) // false
