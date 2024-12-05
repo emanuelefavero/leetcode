@@ -4,6 +4,12 @@
 
 // The returned string must contain only lowercase English letters. If there are multiples valid strings, return any of them.
 
+/**
+ * @param {number} n
+ * @returns {string}
+ */
+
+// O(n) time | O(1) space
 function generateTheString(n) {
   let result = ''
 
