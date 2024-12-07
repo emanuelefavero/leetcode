@@ -10,7 +10,7 @@ function uniqueOccurrences(arr) {
     map.set(num, (map.get(num) || 0) + 1)
   }
 
-  for (let value of map.values()) {
+  for (let [_, value] of map) {
     if (set.has(value)) return false
     set.add(value)
   }
