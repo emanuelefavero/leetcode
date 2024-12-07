@@ -269,6 +269,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Sort Array by Increasing Frequency](./hash-table/sort-array-by-increasing-freq.js)
 - [Sum of Unique Elements](./hash-table/sum-of-unique-elements.js)
 - [Check if All Characters Have Equal Number of Occurrences](./hash-table/are-occurrences-equal.js)
+- [Unique Number of Occurrences](./hash-table/unique-number-of-occurrences.js)
 
 ### Heap
 
