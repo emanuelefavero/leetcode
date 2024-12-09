@@ -112,6 +112,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Maximum Average Subarray I](./array/maximum-average-subarray-i.js)
 - [Defuse the Bomb](./array/defuse-the-bomb.js)
 - [Find Greatest Common Divisor of Array](./array/find-greatest-common-divisor.js)
+- [Baseball Game](./array/baseball-game.js)
 
 ### Binary Search
 
