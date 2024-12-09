@@ -18,6 +18,12 @@ You are given a list of strings operations, where operations[i] is the ith opera
 The test cases are generated such that the answer and all intermediate calculations fit in a 32-bit integer and that all operations are valid.
 */
 
+/**
+ * @param {string[]} operations
+ * @returns {number}
+ */
+
+// O(n) - time | O(n) - space
 function calPoints(operations) {
   let result = []
 
