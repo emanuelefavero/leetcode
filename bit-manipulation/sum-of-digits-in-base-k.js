@@ -12,7 +12,27 @@ function sumBase(n, k) {
 }
 
 // ----------------------
+// SOLUTION 2
+
+// TIP: We can also solve this problem without converting the number to a different base
+
+function sumBase2(n, k) {
+  let sum = 0
+
+  while (n > 0) {
+    sum += n % k // add the remainder
+    n = Math.floor(n / k) // update n to the quotient
+  }
+
+  return sum
+}
+
+// ----------------------
 // TESTS
 
+// 1
 console.log(sumBase(34, 6)) // 9
 // Explanation: 34 (base 10) expressed in base 6 is 54. 5 + 4 = 9.
+
+// 2
+console.log(sumBase2(34, 6)) // 9
