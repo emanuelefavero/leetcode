@@ -4,6 +4,13 @@
 
 // After converting, each digit should be interpreted as a base 10 number, and the sum should be returned in base 10.
 
+/**
+ * @param {number} n
+ * @param {Number} k
+ * @returns {number}
+ */
+
+// O(log(n)) time | O(1) space
 function sumBase(n, k) {
   return n
     .toString(k)
@@ -16,6 +23,7 @@ function sumBase(n, k) {
 
 // TIP: We can also solve this problem without converting the number to a different base
 
+// O(log(n)) time | O(1) space
 function sumBase2(n, k) {
   let sum = 0
 
