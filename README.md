@@ -149,6 +149,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Hamming Distance](./bit-manipulation/hamming-distance.js)
 - [Reverse Bits](./bit-manipulation/reverse-bits.js)
 - [Minimum Bit Flips to Convert Number](./bit-manipulation/minimum-bit-flips-to-convert-number.js)
+- [Sum of Digits in Base K](./bit-manipulation/sum-of-digits-in-base-k.js)
 
 ### Breadth First Search
 
