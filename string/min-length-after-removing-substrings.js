@@ -10,6 +10,12 @@ Return the minimum possible length of the resulting string that you can obtain.
 Note that the string concatenates after removing the substring and could produce new "AB" or "CD" substrings.
 */
 
+/**
+ * @param {string} s
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function minLength(s) {
   while (s.includes('AB') || s.includes('CD')) {
     s = s.replace('AB', '').replace('CD', '')
@@ -23,6 +29,7 @@ function minLength(s) {
 
 // TIP: We can also use a stack to solve this problem
 
+// O(n) time | O(n) space
 function minLength2(s) {
   let stack = []
 
