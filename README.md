@@ -445,6 +445,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Remove Trailing Zeros From a String](./string/remove-trailing-zeros-from-a-string.js)
 - [Determine if String Halves Are Alike](./string/determine-if-halves-are-alike.js)
 - [Generate a String With Characters That Have Odd Counts](./string/generate-odd-counts-string.js)
+- [Minimum String Length After Removing Substrings](./string/min-length-after-removing-substrings.js)
 
 ### Tree
 
