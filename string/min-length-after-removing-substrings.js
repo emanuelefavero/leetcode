@@ -19,8 +19,27 @@ function minLength(s) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: We can also use a stack to solve this problem
+
+function minLength2(s) {
+  let stack = []
+
+  for (let char of s) {
+    // Check if the last character in the stack is 'A' or 'C' and the current character is 'B' or 'D' respectively
+    if (char === 'B' && stack[stack.length - 1] === 'A') stack.pop()
+    else if (char === 'D' && stack[stack.length - 1] === 'C') stack.pop()
+    else stack.push(char) // Otherwise, push the current character to the stack
+  }
+
+  return stack.length
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(minLength('ABFCACDB')) // 2
 /*
 Explanation: We can do the following operations:
@@ -30,3 +49,6 @@ Explanation: We can do the following operations:
 So the resulting length of the string is 2.
 It can be shown that it is the minimum length that we can obtain.
 */
+
+// 2
+console.log(minLength2('ABFCACDB')) // 2
