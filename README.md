@@ -324,6 +324,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Self Dividing Numbers](./math/self-dividing-numbers.js)
 - [Determine Color of a Chessboard Square](./math/determine-color-of-chessboard-square.js)
 - [Calculate Money in Leetcode Bank](./math/calculate-money-in-leetcode-bank.js)
+- [Calculate Delayed Arrival Time](./math/calculate-delayed-arrival-time.js)
 
 ### Matrix
 
