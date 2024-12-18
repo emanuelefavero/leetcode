@@ -8,6 +8,13 @@ Return the time when the train will arrive at the station.
 Note that the time in this problem is in 24-hours format.
 */
 
+/**
+ * @param {number} arrivalTime
+ * @param {number} delayedTime
+ * @returns {number}
+ */
+
+// O(1) time | O(1) space
 function findDelayedArrivalTime(arrivalTime, delayedTime) {
   return (arrivalTime + delayedTime) % 24
 }
