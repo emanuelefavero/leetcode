@@ -272,6 +272,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Sum of Unique Elements](./hash-table/sum-of-unique-elements.js)
 - [Check if All Characters Have Equal Number of Occurrences](./hash-table/are-occurrences-equal.js)
 - [Unique Number of Occurrences](./hash-table/unique-number-of-occurrences.js)
+- [Find the Distinct Difference Array](./hash-table/find-distinct-difference-array.js)
 
 ### Heap
 
