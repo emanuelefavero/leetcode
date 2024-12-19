@@ -10,6 +10,12 @@ Return the distinct difference array of nums.
 Note that nums[i, ..., j] denotes the subarray of nums starting at index i and ending at index j inclusive. Particularly, if i > j then nums[i, ..., j] denotes an empty subarray.
 */
 
+/**
+ * @param {number[]} nums
+ * @returns {number[]}
+ */
+
+// O(n^2) time | O(n) space
 function distinctDifferenceArray(nums) {
   let result = []
 
