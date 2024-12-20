@@ -326,6 +326,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Determine Color of a Chessboard Square](./math/determine-color-of-chessboard-square.js)
 - [Calculate Money in Leetcode Bank](./math/calculate-money-in-leetcode-bank.js)
 - [Calculate Delayed Arrival Time](./math/calculate-delayed-arrival-time.js)
+- [Find the Key of the Numbers](./math/find-the-key-of-the-numbers.js)
 
 ### Matrix
 
