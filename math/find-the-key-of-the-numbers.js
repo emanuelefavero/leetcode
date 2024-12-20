@@ -11,6 +11,14 @@ The key of num1, num2, and num3 is defined as a four-digit number such that:
 Return the key of the three numbers without leading zeros (if any).
 */
 
+/**
+ * @param {number} num1
+ * @param {number} num2
+ * @param {number} num3
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space, where n is the number of digits in the input numbers
 function generateKey(num1, num2, num3) {
   num1 = num1.toString().padStart(4, '0')
   num2 = num2.toString().padStart(4, '0')
