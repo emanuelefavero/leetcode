@@ -11,7 +11,28 @@ Implement the RecentCounter class:
 It is guaranteed that every call to ping uses a strictly larger value of t than the previous call.
 */
 
+// TIP: This solution uses a Queue
+
 class RecentCounter {
+  constructor() {
+    this.queue = []
+  }
+
+  ping(t) {
+    this.queue.push(t)
+
+    while (this.queue[0] < t - 3000) {
+      this.queue.shift()
+    }
+
+    return this.queue.length
+  }
+}
+
+// --------------------------
+// SOLUTION 2
+
+class RecentCounter2 {
   constructor() {
     this.requests = []
   }
@@ -45,3 +66,10 @@ recentCounter.ping(100);   // requests = [1, 100], range is [-2900,100], return 
 recentCounter.ping(3001);  // requests = [1, 100, 3001], range is [1,3001], return 3
 recentCounter.ping(3002);  // requests = [1, 100, 3001, 3002], range is [2,3002], return 3
 */
+
+// 2
+const recentCounter2 = new RecentCounter2()
+console.log(recentCounter2.ping(1)) // 1
+console.log(recentCounter2.ping(100)) // 2
+console.log(recentCounter2.ping(3001)) // 3
+console.log(recentCounter2.ping(3002)) // 3
