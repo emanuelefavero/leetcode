@@ -353,6 +353,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Perfect Squares](./queue/perfect-squares.js)
 - [Queue Technique Template](./queue/queue-technique-template.js)
 - [Implement Queue Using Stacks](./queue/implement-queue-using-stacks.js)
+- [Number of Recent Calls](./queue/number-of-recent-calls.js)
 
 ### Recursion
 
