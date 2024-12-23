@@ -18,6 +18,12 @@ class RecentCounter {
     this.queue = []
   }
 
+  /**
+   * @param {number} t
+   * @returns {number}
+   */
+
+  // O(n) time | O(1) space
   ping(t) {
     this.queue.push(t)
 
