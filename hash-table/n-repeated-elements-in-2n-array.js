@@ -31,7 +31,30 @@ function repeatedNTimes(nums) {
 }
 
 // -----------------------------
+// SOLUTION
+
+// TIP: Since there is only one element that is repeated n times, we can check if the current element is equal to the next 3 elements.
+
+function repeatedNTimes2(nums) {
+  let n = nums.length
+
+  for (let i = 0; i < n; i++) {
+    if (
+      nums[i] == nums[i + 1] ||
+      nums[i] == nums[i + 2] ||
+      nums[i] == nums[i + 3]
+    )
+      return nums[i]
+  }
+}
+
+// -----------------------------
 // TESTS
 
+// 1
 console.log(repeatedNTimes([1, 2, 3, 3])) // 3
 console.log(repeatedNTimes([2, 1, 2, 5, 3, 2])) // 2
+
+// 2
+console.log(repeatedNTimes2([1, 2, 3, 3])) // 3
+console.log(repeatedNTimes2([2, 1, 2, 5, 3, 2])) // 2
