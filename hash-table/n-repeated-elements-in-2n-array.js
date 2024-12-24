@@ -10,6 +10,12 @@ You are given an integer array nums with the following properties:
 Return the element that is repeated n times.
 */
 
+/**
+ * @param {number[]} nums
+ * @returns {number}
+ */
+
+// O(n) time | O(n) space
 function repeatedNTimes(nums) {
   let n = nums.length / 2
   let map = new Map()
@@ -35,6 +41,7 @@ function repeatedNTimes(nums) {
 
 // TIP: Since there is only one element that is repeated n times, we can check if the current element is equal to the next 3 elements.
 
+// O(n) time | O(1) space
 function repeatedNTimes2(nums) {
   let n = nums.length
 
