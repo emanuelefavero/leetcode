@@ -11,11 +11,18 @@ Return the element that is repeated n times.
 */
 
 function repeatedNTimes(nums) {
-  let n = Math.floor(nums.length / 2)
+  let n = nums.length / 2
   let map = new Map()
 
   for (let num of nums) {
-    map.set(num, (map.get(num) || 0) + 1)
+    if (map.has(num)) {
+      let value = map.get(num)
+      map.set(num, value + 1)
+
+      if (value === n) return num
+    } else {
+      map.set(num, 1)
+    }
   }
 
   for (let [key, value] of map) {
