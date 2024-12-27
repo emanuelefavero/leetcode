@@ -274,7 +274,6 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Unique Number of Occurrences](./hash-table/unique-number-of-occurrences.js)
 - [Find the Distinct Difference Array](./hash-table/find-distinct-difference-array.js)
 - [N-Repeated Element in Size 2N Array](./hash-table/n-repeated-element-in-2n-array.js)
-- [Increasing Decreasing String](./hash-table/increasing-decreasing-string.js)
 
 ### Heap
 
@@ -452,6 +451,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Determine if String Halves Are Alike](./string/determine-if-halves-are-alike.js)
 - [Generate a String With Characters That Have Odd Counts](./string/generate-odd-counts-string.js)
 - [Minimum String Length After Removing Substrings](./string/min-length-after-removing-substrings.js)
+- [Increasing Decreasing String](./string/increasing-decreasing-string.js)
 
 ### Tree
 
