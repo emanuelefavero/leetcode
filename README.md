@@ -274,6 +274,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Unique Number of Occurrences](./hash-table/unique-number-of-occurrences.js)
 - [Find the Distinct Difference Array](./hash-table/find-distinct-difference-array.js)
 - [N-Repeated Element in Size 2N Array](./hash-table/n-repeated-element-in-2n-array.js)
+- [Increasing Decreasing String](./hash-table/increasing-decreasing-string.js)
 
 ### Heap
 
