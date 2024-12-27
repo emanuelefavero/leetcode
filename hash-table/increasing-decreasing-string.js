@@ -23,30 +23,31 @@ Return the resulting string after reordering s using this algorithm.
 
 // O(n) time | O(1) space
 function sortString(s) {
-  const map = new Array(26).fill(0)
+  let count = new Array(26).fill(0)
 
-  for (const char of s) {
-    const charCode = char.charCodeAt(0) - 97
-    map[charCode]++
-  }
-
-  function appendCharToRes(i) {
-    const char = String.fromCharCode(i + 97)
-    result += char
-    map[i]--
+  // Count the frequency of each character
+  for (let char of s) {
+    count[char.charCodeAt() - 'a'.charCodeAt()]++
   }
 
   let result = ''
 
-  while (result.length !== s.length) {
-    for (let i = 0; i < map.length; i++) {
-      if (!map[i]) continue
-      appendCharToRes(i)
+  // Construct the result string
+  while (result.length < s.length) {
+    // Append the smallest character
+    for (let i = 0; i < 26; i++) {
+      if (count[i] > 0) {
+        result += String.fromCharCode(i + 97)
+        count[i]--
+      }
     }
 
-    for (let i = map.length - 1; i >= 0; i--) {
-      if (!map[i]) continue
-      appendCharToRes(i)
+    // Append the largest character
+    for (let i = 26; i >= 0; i--) {
+      if (count[i] > 0) {
+        result += String.fromCharCode(i + 97)
+        count[i]--
+      }
     }
   }
 
