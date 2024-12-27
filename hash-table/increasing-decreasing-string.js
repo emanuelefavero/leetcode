@@ -16,6 +16,12 @@ If the smallest or largest character appears more than once, you may choose any 
 Return the resulting string after reordering s using this algorithm.
 */
 
+/**
+ * @param {string} s
+ * @returns {string}
+ */
+
+// O(n) time | O(1) space
 function sortString(s) {
   const map = new Array(26).fill(0)
 
