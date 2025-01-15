@@ -10,6 +10,14 @@ Your task is to minimize the length of s by performing the above operations zero
 Return an integer denoting the length of the minimized string.
 */
 
+/**
+ * @param {string} s
+ * @returns {number}
+ */
+
+// TIP: Since the minimized string will always be a string of unique characters, we can use a Set to store the characters of the string and return the size of the Set
+
+// O(n) | O(n)
 function minimizedStringLength(s) {
   return new Set(s).size
 }
