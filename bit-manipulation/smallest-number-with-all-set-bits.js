@@ -19,9 +19,29 @@ function smallestNumber(n) {
 }
 
 // ----------------------
+// SOLUTION 2
+
+// TIP: This solution is based on the fact that the smallest number with all set bits is 2^x - 1 (e.g. 1, 3, 7, 15, ...). We can find the smallest number with all set bits greater than or equal to n by finding the smallest power of 2 greater than or equal to n and subtracting 1 from it.
+
+function smallestNumber2(n) {
+  let x = 2
+
+  while (x <= n) {
+    x *= 2 // ? *= 2 is equivalent to x = x * 2
+  }
+
+  return x - 1
+}
+
+// ----------------------
 // TESTS
 
+// 1
 console.log(smallestNumber(5)) // 7
 // Explanation: The binary representation of 7 is "111"
 console.log(smallestNumber(10)) // 15
 // Explanation: The binary representation of 15 is "1111"
+
+// 2
+console.log(smallestNumber2(5)) // 7
+console.log(smallestNumber2(10)) // 15
