@@ -4,6 +4,12 @@
 
 // Return the smallest number x greater than or equal to n, such that the binary representation of x contains only set bits (a set bit refers to a bit in the binary representation of a number that has a value of 1)
 
+/**
+ * @param {number} n
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function smallestNumber(n) {
   while (true) {
     let binary = n.toString(2)
