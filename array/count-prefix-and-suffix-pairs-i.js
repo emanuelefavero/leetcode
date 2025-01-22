@@ -12,6 +12,13 @@ For example, isPrefixAndSuffix("aba", "ababa") is true because "aba" is a prefix
 Return an integer denoting the number of index pairs (i, j) such that i < j, and isPrefixAndSuffix(words[i], words[j]) is true.
 */
 
+/**
+ * @param {string} word1
+ * @param {string} word2
+ * @returns {boolean}
+ */
+
+// O(n) time | O(1) space
 function isPrefixAndSuffix(word1, word2) {
   let length1 = word1.length
   let length2 = word2.length
@@ -31,6 +38,12 @@ function isPrefixAndSuffix(word1, word2) {
   return true
 }
 
+/**
+ * @param {string[]} words
+ * @returns {number}
+ */
+
+// O(n^2) time | O(1) space
 function countPrefixSuffixPairs(words) {
   let count = 0
   let length = words.length
