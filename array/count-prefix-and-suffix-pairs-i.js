@@ -61,8 +61,28 @@ function countPrefixSuffixPairs(words) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: This solution uses the built-in methods startsWith and endsWith
+
+function countPrefixSuffixPairs2(words) {
+  let count = 0
+
+  for (let i = 0; i < words.length; i++) {
+    for (let j = i + 1; j < words.length; j++) {
+      if (words[j].startsWith(words[i]) && words[j].endsWith(words[i])) {
+        count++
+      }
+    }
+  }
+
+  return count
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(countPrefixSuffixPairs(['a', 'aba', 'ababa', 'aa'])) // 4
 /*
 Explanation: In this example, the counted index pairs are:
@@ -72,3 +92,6 @@ i = 0 and j = 3 because isPrefixAndSuffix("a", "aa") is true.
 i = 1 and j = 2 because isPrefixAndSuffix("aba", "ababa") is true.
 Therefore, the answer is 4.
 */
+
+// 2
+console.log(countPrefixSuffixPairs2(['a', 'aba', 'ababa', 'aa'])) // 4
