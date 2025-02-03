@@ -6,6 +6,12 @@ You are given a 0-indexed 2D integer matrix grid of size n * n with values in th
 Return a 0-indexed integer array ans of size 2 where ans[0] equals to a and ans[1] equals to b.
 */
 
+/**
+ * @param {number[][]} grid
+ * @returns {number[]}
+ */
+
+// O(n) time | O(n) space
 function findMissingAndRepeatedValues(grid) {
   let map = new Map()
   let row = grid.length
