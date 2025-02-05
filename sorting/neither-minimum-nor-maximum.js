@@ -4,6 +4,12 @@
 
 // Return the selected integer.
 
+/**
+ * @param {number[]} nums
+ * @returns {number}
+ */
+
+// O(n log n) time | O(1) space
 function findNonMinOrMax(nums) {
   if (nums.length <= 2) return -1
 
