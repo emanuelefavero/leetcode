@@ -393,6 +393,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Maximum Product Difference Between Two Pairs](./sorting/max-product-difference.js)
 - [Maximum Product of Two Elements in an Array](./sorting/max-product-of-two-elements.js)
 - [Minimum Number of Moves to Seat Everyone](./sorting/min-moves-to-seat.js)
+- [Neither Minimum nor Maximum](./sorting/neither-minimum-nor-maximum.js)
 
 ### Stack
 
