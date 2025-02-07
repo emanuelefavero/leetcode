@@ -11,6 +11,13 @@ Return a 2D integer array ret where ret[i] = [valuei, weighti], with weighti bei
 Note: ret should be returned in ascending order by value.
 */
 
+/**
+ * @param {number[][]} items1
+ * @param {number[][]} items2
+ * @returns {number[][]}
+ */
+
+// O(n) time | O(n) space
 function mergeSimilarItems(items1, items2) {
   let map = new Map()
 
@@ -50,7 +57,6 @@ console.log(
 ) // [[1,6],[3,9],[4,5]]
 /*
 Explanation:
-
 The item with value = 1 occurs in items1 with weight = 1 and in items2 with weight = 5, total weight = 1 + 5 = 6.
 The item with value = 3 occurs in items1 with weight = 8 and in items2 with weight = 1, total weight = 8 + 1 = 9.
 The item with value = 4 occurs in items1 with weight = 5, total weight = 5.  
