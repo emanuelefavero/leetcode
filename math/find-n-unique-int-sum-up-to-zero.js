@@ -2,6 +2,12 @@
 
 // Given an integer n, return any array containing n unique integers such that they add up to 0.
 
+/**
+ * @param {number} n
+ * @returns {number[]}
+ */
+
+// O(n) time | O(n) space
 function sumZero(n) {
   let result = []
 
