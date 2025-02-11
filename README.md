@@ -331,6 +331,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Calculate Money in Leetcode Bank](./math/calculate-money-in-leetcode-bank.js)
 - [Calculate Delayed Arrival Time](./math/calculate-delayed-arrival-time.js)
 - [Find the Key of the Numbers](./math/find-the-key-of-the-numbers.js)
+- [Find N Unique Integers Sum up to Zero](./math/find-n-unique-int-sum-up-to-zero.js)
 
 ### Matrix
 
