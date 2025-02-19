@@ -277,6 +277,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Find the Distinct Difference Array](./hash-table/find-distinct-difference-array.js)
 - [N-Repeated Element in Size 2N Array](./hash-table/n-repeated-element-in-2n-array.js)
 - [Merge Similar Items](./hash-table/merge-similar-items.js)
+- [Two Out of Three](./hash-table/two-out-of-three.js)
 
 ### Heap
 
