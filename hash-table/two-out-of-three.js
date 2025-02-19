@@ -2,12 +2,19 @@
 
 // Given three integer arrays nums1, nums2, and nums3, return a distinct array containing all the values that are present in at least two out of the three arrays. You may return the values in any order.
 
-// TODO jsDoc
 // TODO link to README
 // TODO solution 2 (with hash table or set)
 
+/**
+ * @param {number[]} nums1
+ * @param {number[]} nums2
+ * @param {number[]} nums3
+ * @returns
+ */
+
 // TIP: We can use the constraint that the values are between 1 and 100 to loop through all the values and check if they are present in at least two arrays
 
+// O(n) time | O(1) space
 function twoOutOfThree(nums1, nums2, nums3) {
   let result = []
 
