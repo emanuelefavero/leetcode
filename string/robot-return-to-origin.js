@@ -10,6 +10,12 @@ Return true if the robot returns to the origin after it finishes all of its move
 Note: The way that the robot is "facing" is irrelevant. 'R' will always make the robot move to the right once, 'L' will always make it move left, etc. Also, assume that the magnitude of the robot's movement is the same for each move.
 */
 
+/**
+ * @param {string} moves
+ * @returns {boolean}
+ */
+
+// O(n) time | O(1) space
 function judgeCircle(moves) {
   let x = 0
   let y = 0
