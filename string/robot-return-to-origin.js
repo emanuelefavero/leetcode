@@ -11,17 +11,17 @@ Note: The way that the robot is "facing" is irrelevant. 'R' will always make the
 */
 
 function judgeCircle(moves) {
-  let upDown = 0
-  let leftRight = 0
+  let x = 0
+  let y = 0
 
   for (let move of moves) {
-    if (move === 'D') upDown--
-    else if (move === 'U') upDown++
-    else if (move === 'L') leftRight--
-    else if (move === 'R') leftRight++
+    if (move === 'L') x--
+    else if (move === 'R') x++
+    else if (move === 'D') y--
+    else if (move === 'U') y++
   }
 
-  return upDown === 0 && leftRight === 0
+  return x === 0 && y === 0
 }
 
 // -------------------------
