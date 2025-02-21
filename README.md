@@ -461,6 +461,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Increasing Decreasing String](./string/increasing-decreasing-string.js)
 - [Remove Palindromic Subsequences](./string/remove-palindromic-subsequences.js)
 - [Minimize String Length](./string/minimize-string-length.js)
+- [Robot Return to Origin](./string/robot-return-to-origin.js)
 
 ### Tree
 
