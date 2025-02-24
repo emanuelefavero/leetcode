@@ -1,5 +1,7 @@
 // * Robot Return to Origin
 
+// TODO delete all TODO comments in this repo
+
 /*
 There is a robot starting at the position (0, 0), the origin, on a 2D plane. Given a sequence of its moves, judge if this robot ends up at (0, 0) after it completes its moves.
 
@@ -31,10 +33,45 @@ function judgeCircle(moves) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: This solution uses a switch statement
+
+function judgeCircle2(moves) {
+  let x = 0
+  let y = 0
+
+  for (let move of moves) {
+    switch (move) {
+      case 'L':
+        x--
+        break
+      case 'R':
+        x++
+        break
+      case 'D':
+        y--
+        break
+      case 'U':
+        y++
+        break
+    }
+  }
+
+  if (x === 0 && y === 0) return true
+  return false
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(judgeCircle('UD')) // true
 /*
 Explanation: The robot moves up once, and then down once. All moves have the same magnitude, so it ended up at the origin where it started. Therefore, we return true.
 */
 console.log(judgeCircle('LL')) // false
+
+// 2
+console.log(judgeCircle2('UD')) // true
+console.log(judgeCircle2('LL')) // false
