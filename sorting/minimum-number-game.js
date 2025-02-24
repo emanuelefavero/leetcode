@@ -35,8 +35,6 @@ function numberGame(nums) {
 
 // TIP: This solution does not use sorting and it's not more efficient than the first solution
 
-// TODO: commit solution 2
-
 // O(n^2) time | O(n) space
 function numberGame2(nums) {
   let result = []
