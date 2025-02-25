@@ -32,8 +32,20 @@ function canBeEqual(target, arr) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: One line solution using sort and converting the arrays to strings
+
+function canBeEqual2(target, arr) {
+  return (
+    target.sort((a, b) => a - b).join('') === arr.sort((a, b) => a - b).join('')
+  )
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(canBeEqual([1, 2, 3, 4], [2, 4, 1, 3])) // true
 /*
 Explanation: You can follow the next steps to convert arr to target:
@@ -42,5 +54,8 @@ Explanation: You can follow the next steps to convert arr to target:
 3- Reverse subarray [4,3], arr becomes [1,2,3,4]
 There are multiple ways to convert arr to target, this is not the only way to do so.
 */
-console.log(canBeEqual([3, 7, 9], [3, 7, 11])) // false
+console.log(canBeEqual([1, 2, 2, 3], [1, 1, 2, 3])) // false
+
+// 2
+console.log(canBeEqual([1, 2, 3, 4], [2, 4, 1, 3])) // true
 console.log(canBeEqual([1, 2, 2, 3], [1, 1, 2, 3])) // false
