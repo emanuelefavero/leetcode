@@ -278,6 +278,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [N-Repeated Element in Size 2N Array](./hash-table/n-repeated-element-in-2n-array.js)
 - [Merge Similar Items](./hash-table/merge-similar-items.js)
 - [Two Out of Three](./hash-table/two-out-of-three.js)
+- [Make Two Arrays Equal by Reversing Subarrays](./hash-table/make-two-arrays-equal.js)
 
 ### Heap
 
