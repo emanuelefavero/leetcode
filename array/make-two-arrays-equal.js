@@ -4,6 +4,13 @@
 
 // Return true if you can make arr equal to target or false otherwise.
 
+/**
+ * @param {number[]} target
+ * @param {number} arr
+ * @returns {boolean}
+ */
+
+// O(n) time | O(n) space
 function canBeEqual(target, arr) {
   let map = new Map()
 
