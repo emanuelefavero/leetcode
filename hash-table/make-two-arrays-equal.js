@@ -43,6 +43,24 @@ function canBeEqual2(target, arr) {
 }
 
 // -------------------------
+// SOLUTION 3
+
+// TIP: This solution uses the provided constraints that the arrays have the same length and the numbers are between 1 and 1000
+// TIP: We increase the count of the target numbers and decrease the count of the arr numbers as we iterate through the arrays to check if they have the same numbers with the same frequency
+
+function canBeEqual3(target, arr) {
+  let count = new Int32Array(1001)
+  let uniqueCount = 0
+
+  for (let i = 0; i < target.length; i++) {
+    if (count[target[i]]++ === 0) uniqueCount++
+    if (count[arr[i]]-- === 1) uniqueCount--
+  }
+
+  return uniqueCount === 0
+}
+
+// -------------------------
 // TESTS
 
 // 1
@@ -57,5 +75,9 @@ There are multiple ways to convert arr to target, this is not the only way to do
 console.log(canBeEqual([1, 2, 2, 3], [1, 1, 2, 3])) // false
 
 // 2
-console.log(canBeEqual([1, 2, 3, 4], [2, 4, 1, 3])) // true
-console.log(canBeEqual([1, 2, 2, 3], [1, 1, 2, 3])) // false
+console.log(canBeEqual2([1, 2, 3, 4], [2, 4, 1, 3])) // true
+console.log(canBeEqual2([1, 2, 2, 3], [1, 1, 2, 3])) // false
+
+// 3
+console.log(canBeEqual3([1, 2, 3, 4], [2, 4, 1, 3])) // true
+console.log(canBeEqual3([1, 2, 2, 3], [1, 1, 2, 3])) // false
