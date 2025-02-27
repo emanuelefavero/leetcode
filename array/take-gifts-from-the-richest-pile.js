@@ -21,6 +21,25 @@ function pickGifts(gifts, k) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: This solution is more efficient than the previous one but it is still a brute force solution
+
+function pickGifts2(gifts, k) {
+  for (let i = 0; i < k; i++) {
+    let maxIndex = 0
+
+    for (let j = 1; j < gifts.length; j++) {
+      if (gifts[j] > gifts[maxIndex]) maxIndex = j
+    }
+
+    gifts[maxIndex] = Math.floor(Math.sqrt(gifts[maxIndex]))
+  }
+
+  return gifts.reduce((num, acc) => num + acc, 0)
+}
+
+// -------------------------
 // TESTS
 
 console.log(pickGifts([25, 64, 9, 4, 100], 4)) // 29
@@ -33,3 +52,6 @@ The gifts are taken in the following way:
 - Finally, the last pile is chosen again and 3 gifts are left behind.
 The final remaining gifts are [5,8,9,4,3], so the total number of gifts remaining is 29.
 */
+
+// 2
+console.log(pickGifts2([25, 64, 9, 4, 100], 4)) // 29
