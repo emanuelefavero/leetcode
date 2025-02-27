@@ -10,6 +10,13 @@ You are given an integer array gifts denoting the number of gifts in various pil
 Return the number of gifts remaining after k seconds.
 */
 
+/**
+ * @param {number[]} gifts
+ * @param {number} k
+ * @returns {number}
+ */
+
+// O(n log n * k) time | O(1) space
 function pickGifts(gifts, k) {
   for (let i = 0; i < k; i++) {
     gifts = gifts.sort((a, b) => b - a)
@@ -25,6 +32,7 @@ function pickGifts(gifts, k) {
 
 // TIP: This solution is more efficient than the previous one but it is still a brute force solution
 
+// O(n * k) time | O(1) space
 function pickGifts2(gifts, k) {
   for (let i = 0; i < k; i++) {
     let maxIndex = 0
