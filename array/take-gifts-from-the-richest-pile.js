@@ -40,8 +40,109 @@ function pickGifts2(gifts, k) {
 }
 
 // -------------------------
+// SOLUTION 3
+
+// TIP: This solution uses a max heap to solve the problem. It is also the most efficient solution
+
+class MaxHeap {
+  constructor() {
+    this.heap = []
+  }
+
+  peek() {
+    return this.heap[0]
+  }
+
+  push(val) {
+    this.heap.push(val)
+    this._bubbleUp()
+  }
+
+  pop() {
+    let max = this.heap[0]
+    let end = this.heap.pop()
+
+    if (this.heap.length > 0) {
+      this.heap[0] = end
+      this._bubbleDown()
+    }
+
+    return max
+  }
+
+  _bubbleUp() {
+    let idx = this.heap.length - 1
+    const ele = this.heap[idx]
+
+    while (idx > 0) {
+      let parentIdx = Math.floor((idx - 1) / 2)
+      let parent = this.heap[parentIdx]
+
+      if (ele <= parent) break
+
+      this.heap[parentIdx] = ele
+      this.heap[idx] = parent
+      idx = parentIdx
+    }
+  }
+
+  _bubbleDown() {
+    let idx = 0
+    const ele = this.heap[0]
+    const length = this.heap.length
+
+    while (true) {
+      let leftChildIdx = idx * 2 + 1
+      let rightChildIdx = idx * 2 + 2
+      let left
+      let right
+      let swap = null
+
+      if (leftChildIdx < length) {
+        left = this.heap[leftChildIdx]
+
+        if (left > ele) {
+          swap = leftChildIdx
+        }
+      }
+
+      if (rightChildIdx < length) {
+        right = this.heap[rightChildIdx]
+
+        if ((swap === null && right > ele) || (swap !== null && right > left)) {
+          swap = rightChildIdx
+        }
+      }
+
+      if (swap === null) break
+
+      this.heap[idx] = this.heap[swap]
+      this.heap[swap] = ele
+      idx = swap
+    }
+  }
+}
+
+function pickGifts3(gifts, k) {
+  let heap = new MaxHeap()
+
+  for (let gift of gifts) {
+    heap.push(gift)
+  }
+
+  while (k > 0) {
+    let max = heap.pop()
+    heap.push(Math.floor(Math.sqrt(max)))
+    k--
+  }
+
+  return heap.heap.reduce((num, acc) => num + acc, 0)
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(pickGifts([25, 64, 9, 4, 100], 4)) // 29
 /*
 Explanation: 
@@ -55,3 +156,6 @@ The final remaining gifts are [5,8,9,4,3], so the total number of gifts remainin
 
 // 2
 console.log(pickGifts2([25, 64, 9, 4, 100], 4)) // 29
+
+// 3
+console.log(pickGifts3([25, 64, 9, 4, 100], 4)) // 29
