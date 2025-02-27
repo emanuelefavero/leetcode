@@ -131,6 +131,7 @@ class MaxHeap {
   }
 }
 
+// O(n) time | O(n) space
 function pickGifts3(gifts, k) {
   let heap = new MaxHeap()
 
