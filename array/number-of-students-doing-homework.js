@@ -8,6 +8,14 @@ The ith student started doing their homework at the time startTime[i] and finish
 Return the number of students doing their homework at time queryTime. More formally, return the number of students where queryTime lays in the interval [startTime[i], endTime[i]] inclusive.
 */
 
+/**
+ * @param {number[]} startTime
+ * @param {number[]} endTime
+ * @param {number} queryTime
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function busyStudent(startTime, endTime, queryTime) {
   let count = 0
 
