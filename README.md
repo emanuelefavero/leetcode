@@ -114,6 +114,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Find Greatest Common Divisor of Array](./array/find-greatest-common-divisor.js)
 - [Baseball Game](./array/baseball-game.js)
 - [Count Prefix and Suffix Pairs I](./array/count-prefix-and-suffix-pairs-i.js)
+- [Number of Students Doing Homework at a Given Time](./array/number-of-students-doing-homework.js)
 
 ### Binary Search
 
