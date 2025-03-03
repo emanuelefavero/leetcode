@@ -9,6 +9,12 @@ You are given a string s consisting of digits. Perform the following operation r
 Return true if the final two digits in s are the same; otherwise, return false.
 */
 
+/**
+ * @param {string} s
+ * @returns {boolean}
+ */
+
+// O(n) time | O(n) space
 function hasSameDigits(s) {
   while (s.length > 2) {
     let newDigit = ''
