@@ -11,6 +11,12 @@ A partition is defined as an index i where 0 <= i < n - 1, splitting the array i
 Return the number of partitions where the difference between the sum of the left and right subarrays is even.
 */
 
+/**
+ * @param {number[]} nums
+ * @returns {number}
+ */
+
+// O(n^2) time | O(n) space
 function countPartitions(nums) {
   let count = 0
 
