@@ -336,6 +336,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Calculate Delayed Arrival Time](./math/calculate-delayed-arrival-time.js)
 - [Find the Key of the Numbers](./math/find-the-key-of-the-numbers.js)
 - [Find N Unique Integers Sum up to Zero](./math/find-n-unique-int-sum-up-to-zero.js)
+- [Count Partitions with Even Sum Difference](./math/count-partitions-even-sum-difference.js)
 
 ### Matrix
 
