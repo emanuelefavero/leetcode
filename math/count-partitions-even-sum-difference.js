@@ -34,8 +34,30 @@ function countPartitions(nums) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: We can also solve the problem without creating subarrays by calculating the sum of the left and right subarrays on the fly
+
+// O(n) time | O(1) space
+function countPartitions2(nums) {
+  let count = 0
+  let leftSum = 0
+  let rightSum = nums.reduce((num, acc) => num + acc, 0)
+
+  for (let i = 0; i < nums.length - 1; i++) {
+    leftSum += nums[i]
+    rightSum -= nums[i] // subtract the current element from the right sum
+
+    if (Math.abs(leftSum - rightSum) % 2 === 0) count++
+  }
+
+  return count
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(countPartitions([10, 10, 3, 7, 6])) // 4
 /*
 Explanation:
@@ -47,3 +69,6 @@ The 4 partitions are:
 [10, 10, 3], [7, 6] with a sum difference of 23 - 13 = 10, which is even.
 [10, 10, 3, 7], [6] with a sum difference of 30 - 6 = 24, which is even.
 */
+
+// 2
+console.log(countPartitions2([10, 10, 3, 7, 6])) // 4
