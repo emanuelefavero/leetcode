@@ -23,14 +23,10 @@ function splitWordsBySeparator(words, separator) {
   let result = []
 
   for (let word of words) {
-    let splitted = word.split(separator)
-
-    for (let s of splitted) {
-      if (s.length) result.push(s)
-    }
+    result.push(...word.split(separator))
   }
 
-  return result
+  return result.filter((s) => s.length)
 }
 
 // -------------------------
