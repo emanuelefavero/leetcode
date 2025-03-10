@@ -10,6 +10,12 @@ Additionally, you must minimize each value of ans[i] in the resulting array.
 If it is not possible to find such a value for ans[i] that satisfies the condition, then set ans[i] = -1.
 */
 
+/**
+ * @param {number[]} nums
+ * @returns {number[]}
+ */
+
+// O(n) time | O(1) space
 function minBitwiseArray(nums) {
   let ans = []
 
