@@ -12,6 +12,13 @@ Notes
 - The resulting strings must maintain the same order as they were initially given.
 */
 
+/**
+ * @param {string[]} words
+ * @param {character} separator
+ * @returns {string[]}
+ */
+
+// O(n * m) time | O(n) space - where n is the number of words and m is the average length of the words
 function splitWordsBySeparator(words, separator) {
   let result = []
 
@@ -40,5 +47,4 @@ Explanation: In this example we split as follows:
 
 Hence, the resulting array is ["one","two","three","four","five","six"].
 */
-
 console.log(splitWordsBySeparator(['$easy$', '$problem$'], '$'))
