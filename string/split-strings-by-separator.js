@@ -18,7 +18,7 @@ Notes
  * @returns {string[]}
  */
 
-// O(n * m) time | O(n) space - where n is the number of words and m is the average length of the words
+// O(n) time | O(n) space
 function splitWordsBySeparator(words, separator) {
   let result = []
 
@@ -34,8 +34,21 @@ function splitWordsBySeparator(words, separator) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: One liner solution using join and split
+
+function splitWordsBySeparator2(words, separator) {
+  return words
+    .join(separator) // join all words into a single string (place the separator between them)
+    .split(separator) // split the string by the separator
+    .filter((s) => s.length) // remove empty strings
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(splitWordsBySeparator(['one.two.three', 'four.five', 'six'], '.'))
 // ["one","two","three","four","five","six"]
 /*
@@ -48,3 +61,7 @@ Explanation: In this example we split as follows:
 Hence, the resulting array is ["one","two","three","four","five","six"].
 */
 console.log(splitWordsBySeparator(['$easy$', '$problem$'], '$'))
+
+// 2
+console.log(splitWordsBySeparator2(['one.two.three', 'four.five', 'six'], '.'))
+console.log(splitWordsBySeparator2(['$easy$', '$problem$'], '$'))
