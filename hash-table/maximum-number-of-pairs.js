@@ -37,8 +37,32 @@ function numberOfPairs(nums) {
 }
 
 // -----------------------------
+// SOLUTION 2
+
+// TIP: Sort the array to make it easier to form pairs
+
+// O(n log n) time | O(1) space
+function numberOfPairs2(nums) {
+  nums.sort((a, b) => a - b)
+
+  let count = 0
+
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] === nums[i + 1]) {
+      nums.shift()
+      nums.shift()
+      count++
+      i-- // adjust the index to check the next pair
+    }
+  }
+
+  return [count, nums.length]
+}
+
+// -----------------------------
 // TESTS
 
+// 1
 console.log(numberOfPairs([1, 3, 2, 1, 3, 2, 2])) // [3, 1]
 /*
 Explanation:
@@ -47,3 +71,6 @@ Form a pair with nums[0] and nums[2] and remove them from nums. Now, nums = [2,2
 Form a pair with nums[0] and nums[1] and remove them from nums. Now, nums = [2].
 No more pairs can be formed. A total of 3 pairs have been formed, and there is 1 number leftover in nums.
 */
+
+// 2
+console.log(numberOfPairs2([1, 3, 2, 1, 3, 2, 2])) // [3, 1]
