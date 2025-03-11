@@ -11,6 +11,12 @@ The operation is done on nums as many times as possible.
 Return a 0-indexed integer array answer of size 2 where answer[0] is the number of pairs that are formed and answer[1] is the number of leftover integers in nums after doing the operation as many times as possible.
 */
 
+/**
+ * @param {number[]} nums
+ * @returns {number[]}
+ */
+
+// O(n) time | O(n) space
 function numberOfPairs(nums) {
   let map = new Map()
 
