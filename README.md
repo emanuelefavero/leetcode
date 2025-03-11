@@ -281,6 +281,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Merge Similar Items](./hash-table/merge-similar-items.js)
 - [Two Out of Three](./hash-table/two-out-of-three.js)
 - [Make Two Arrays Equal by Reversing Subarrays](./hash-table/make-two-arrays-equal.js)
+- [Maximum Number of Pairs in Array](./hash-table/maximum-number-of-pairs.js)
 
 ### Heap
 
