@@ -282,6 +282,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Two Out of Three](./hash-table/two-out-of-three.js)
 - [Make Two Arrays Equal by Reversing Subarrays](./hash-table/make-two-arrays-equal.js)
 - [Maximum Number of Pairs in Array](./hash-table/maximum-number-of-pairs.js)
+- [Remove Letter To Equalize Frequency](./hash-table/remove-letter-to-equalize-freq.js)
 
 ### Heap
 
