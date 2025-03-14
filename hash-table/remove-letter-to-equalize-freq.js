@@ -1,5 +1,7 @@
 // * Remove Letter To Equalize Frequency
 
+// TIP: Despite being an Easy problem, the acceptance rate is one of the lowest on LeetCode (18% as of 2025)
+
 /*
 You are given a 0-indexed string word, consisting of lowercase English letters. You need to select one index and remove the letter at that index from word so that the frequency of every letter present in word is equal.
 
@@ -11,6 +13,12 @@ Note:
 - You must remove exactly one letter and cannot choose to do nothing.
 */
 
+/**
+ * @param {string} word
+ * @returns {boolean}
+ */
+
+// O(n) time | O(n) space - where n is the length of the word
 function equalFrequency(word) {
   const map = new Map()
 
@@ -40,6 +48,8 @@ function equalFrequency(word) {
 // TESTS
 
 console.log(equalFrequency('abcc')) // true
+// Explanation: Select index 3 and delete it: word becomes "abc" and each character has a frequency of 1.
 console.log(equalFrequency('aazz')) // false
+// Explanation: We must delete a character, so either the frequency of "a" is 1 and the frequency of "z" is 2, or vice versa. It is impossible to make all present letters have equal frequency.
 console.log(equalFrequency('ab')) // false
 console.log(equalFrequency('bac')) // true
