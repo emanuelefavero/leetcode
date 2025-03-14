@@ -45,11 +45,48 @@ function equalFrequency(word) {
 }
 
 // -----------------------------
+// SOLUTION 2
+
+// TIP: This solution uses an object instead of a Map
+
+function equalFrequency2(word) {
+  const map = {}
+
+  // Count the frequency of each character
+  for (let char of word) {
+    map[char] = (map[char] || 0) + 1
+  }
+
+  // Remove each character and check if all frequencies are equal
+  for (let char of word) {
+    // Remove the character if it's the last one
+    const freq = map[char] - 1
+    if (freq) map[char] = freq
+    else delete map[char]
+
+    // Check if all remaining frequencies are equal after removing the character
+    if (new Set(Object.values(map)).size === 1) return true
+
+    // Reset the frequency by adding 1
+    map[char] = freq + 1
+  }
+
+  return false
+}
+
+// -----------------------------
 // TESTS
 
+// 1
 console.log(equalFrequency('abcc')) // true
 // Explanation: Select index 3 and delete it: word becomes "abc" and each character has a frequency of 1.
 console.log(equalFrequency('aazz')) // false
 // Explanation: We must delete a character, so either the frequency of "a" is 1 and the frequency of "z" is 2, or vice versa. It is impossible to make all present letters have equal frequency.
 console.log(equalFrequency('ab')) // false
 console.log(equalFrequency('bac')) // true
+
+// 2
+console.log(equalFrequency2('abcc')) // true
+console.log(equalFrequency2('aazz')) // false
+console.log(equalFrequency2('ab')) // false
+console.log(equalFrequency2('bac')) // true
