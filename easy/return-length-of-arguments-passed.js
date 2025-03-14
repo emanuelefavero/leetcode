@@ -1,5 +1,7 @@
 // * Return Length of Arguments Passed
 
+// TIP: This is a JavaScript specific problem
+
 // Write a function argumentsLength that returns the count of arguments passed to it
 
 /**
