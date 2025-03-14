@@ -17,6 +17,12 @@ class ListNode {
   }
 }
 
+/**
+ * @param {ListNode} head
+ * @returns {ListNode}
+ */
+
+// O(n^2) time | O(1) space
 function insertGreatestCommonDivisors(head) {
   let current = head
 
