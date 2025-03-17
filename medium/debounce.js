@@ -20,6 +20,13 @@ The above diagram shows how debounce will transform events. Each rectangle repre
 Please solve it without using lodash's _.debounce() function.
 */
 
+/**
+ * @param {Function} fn
+ * @param {number} t milliseconds
+ * @returns {Function}
+ */
+
+// O(1) time | O(1) space
 function debounce(fn, t) {
   let timer
 
