@@ -1,7 +1,8 @@
 // * Execute Asynchronous Functions in Parallel
 
+// TIP: This is a JavaScript specific problem
+
 /*
-TIP: This is a JavaScript problem.
 
 Given an array of asynchronous functions functions, return a new promise promise. Each function in the array accepts no arguments and returns a promise. All the promises should be executed in parallel.
 

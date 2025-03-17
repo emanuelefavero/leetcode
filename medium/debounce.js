@@ -1,6 +1,6 @@
 // * Debounce
 
-// TIP: This is a JavaScript problem.
+// TIP: This is a JavaScript specific problem
 
 /*
 Given a function fn and a time in milliseconds t, return a debounced version of that function.
