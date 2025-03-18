@@ -518,6 +518,24 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Add and Search Word - Data structure design](./trie/add-and-search-word.js)
 - [Palindrome Pairs](./trie/palindrome-pairs.js)
 
+## Compare the execution time of two functions
+
+To compare the execution time of two functions, you can use the `time` utility function from the `utils.js` file.
+
+```js
+import { time } from '../utils.js'
+
+function sum(a, b) {
+  return a + b
+}
+
+console.log(time(() => sum(1, 2))) // 0.0001ms
+```
+
 ## License
 
 - [MIT](LICENSE.md)
+
+```
+
+```

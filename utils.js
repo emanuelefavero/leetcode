@@ -4,7 +4,7 @@
  * @param {Function} fn
  * @param  {...any} args
  * @returns {string}
- * @example time(() => myFunc(a, b))
+ * @example time(() => sum(1, 2)) // 0.0001ms
  */
 
 export function time(fn, ...args) {
