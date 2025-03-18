@@ -10,6 +10,12 @@ Return an array answer of size n, where answer[i] is the minimum number of opera
 Each answer[i] is calculated considering the initial state of the boxes.
 */
 
+/**
+ * @param {string} boxes
+ * @returns {number[]}
+ */
+
+// O(n^2) time | O(n) space
 function minOperations(boxes) {
   let answer = []
 
