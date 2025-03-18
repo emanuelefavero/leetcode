@@ -22,12 +22,14 @@ function minOperations(boxes) {
   for (let i = 0; i < boxes.length; i++) {
     let count = 0
 
+    // Go left
     let left = i - 1
     while (left >= 0) {
       if (boxes[left] === '1') count += i - left
       left--
     }
 
+    // Go right
     let right = i + 1
     while (right < boxes.length) {
       if (boxes[right] === '1') count += right - i
@@ -41,8 +43,41 @@ function minOperations(boxes) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: This solution is more efficient than the previous one. We just have to count the number of balls and the moves to the left and right of each box
+
+// O(n) time | O(n) space
+function minOperations2(boxes) {
+  let answer = Array(boxes.length).fill(0)
+
+  let balls = 0
+  let moves = 0
+
+  // Go left
+  for (let i = boxes.length - 1; i >= 0; i--) {
+    answer[i] += moves
+    if (boxes[i] === '1') balls++
+    moves += balls
+  }
+
+  balls = 0
+  moves = 0
+
+  // Go right
+  for (let i = 0; i < boxes.length; i++) {
+    answer[i] += moves
+    if (boxes[i] === '1') balls++
+    moves += balls
+  }
+
+  return answer
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(minOperations('110')) // [1,1,3]
 /*
 Explanation: The answer for each box is as follows:
@@ -50,3 +85,6 @@ Explanation: The answer for each box is as follows:
 2) Second box: you will have to move one ball from the first box to the second box in one operation.
 3) Third box: you will have to move one ball from the first box to the third box in two operations, and move one ball from the second box to the third box in one operation.
 */
+
+// 2
+console.log(minOperations2('110')) // [1,1,3]
