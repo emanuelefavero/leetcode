@@ -535,7 +535,3 @@ console.log(time(() => sum(1, 2))) // 0.0001ms
 ## License
 
 - [MIT](LICENSE.md)
-
-```
-
-```
