@@ -532,6 +532,14 @@ function sum(a, b) {
 console.log(time(() => sum(1, 2))) // 0.0001ms
 ```
 
+You can also use `console.time` and `console.timeEnd` to measure the execution time of a function.
+
+```js
+console.time('sum')
+sum(1, 2)
+console.timeEnd('sum') // sum: 0.0001ms
+```
+
 ## License
 
 - [MIT](LICENSE.md)
