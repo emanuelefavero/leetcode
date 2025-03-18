@@ -115,6 +115,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Baseball Game](./array/baseball-game.js)
 - [Count Prefix and Suffix Pairs I](./array/count-prefix-and-suffix-pairs-i.js)
 - [Number of Students Doing Homework at a Given Time](./array/number-of-students-doing-homework.js)
+- [Minimum Number of Operations to Move All Balls to Each Box](./array/min-operations-to-move-all-balls.js)
 
 ### Binary Search
 
