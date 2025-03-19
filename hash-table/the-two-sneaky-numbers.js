@@ -42,6 +42,23 @@ function getSneakyNumbers2(nums) {
 }
 
 // -----------------------------
+// SOLUTION 3
+
+// TIP: You can also sort the array and then compare the current number with the next one
+
+// O(n log n) time | O(n) space
+function getSneakyNumbers3(nums) {
+  let result = []
+  nums.sort((a, b) => a - b)
+
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] === nums[i + 1]) result.push(nums[i])
+  }
+
+  return result
+}
+
+// -----------------------------
 // TESTS
 
 // 1
@@ -50,3 +67,6 @@ console.log(getSneakyNumbers([0, 1, 1, 0])) // [0, 1]
 
 // 2
 console.log(getSneakyNumbers2([0, 1, 1, 0])) // [0, 1]
+
+// 3
+console.log(getSneakyNumbers3([0, 1, 1, 0])) // [0, 1]
