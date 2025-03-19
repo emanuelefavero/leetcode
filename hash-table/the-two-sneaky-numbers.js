@@ -6,6 +6,12 @@ In the town of Digitville, there was a list of numbers called nums containing in
 As the town detective, your task is to find these two sneaky numbers. Return an array of size two containing the two numbers (in any order), so peace can return to Digitville.
 */
 
+/**
+ * @param {number[]} nums
+ * @returns {number[]}
+ */
+
+// O(n) time | O(n) space
 function getSneakyNumbers(nums) {
   let set = new Set()
   let result = []
