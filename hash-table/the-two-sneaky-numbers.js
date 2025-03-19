@@ -25,7 +25,28 @@ function getSneakyNumbers(nums) {
 }
 
 // -----------------------------
+// SOLUTION 2
+
+// TIP: This solution uses a map instead of a set
+
+function getSneakyNumbers2(nums) {
+  let map = new Map()
+  let result = []
+
+  for (let num of nums) {
+    if (map.has(num)) result.push(num)
+    else map.set(num, true)
+  }
+
+  return result
+}
+
+// -----------------------------
 // TESTS
 
+// 1
 console.log(getSneakyNumbers([0, 1, 1, 0])) // [0, 1]
 // Explanation: The numbers 0 and 1 each appear twice in the array
+
+// 2
+console.log(getSneakyNumbers2([0, 1, 1, 0])) // [0, 1]
