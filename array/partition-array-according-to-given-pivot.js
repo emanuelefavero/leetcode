@@ -11,6 +11,13 @@ You are given a 0-indexed integer array nums and an integer pivot. Rearrange num
 Return nums after the rearrangement.
 */
 
+/**
+ * @param {number[]} nums
+ * @param {number} pivot
+ * @returns {number[]}
+ */
+
+// O(n) time | O(n) space
 function pivotArray(nums, pivot) {
   let left = []
   let equal = []
