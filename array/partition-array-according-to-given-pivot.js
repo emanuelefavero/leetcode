@@ -33,8 +33,34 @@ function pivotArray(nums, pivot) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: This is a two pointer approach. It is more efficient than the previous solution but less readable
+
+function pivotArray2(nums, pivot) {
+  let result = new Int32Array(nums.length).fill(pivot)
+  let left = 0
+  let right = nums.length - 1
+
+  for (let i = 0, j = nums.length - 1; i < nums.length; i++, j--) {
+    if (nums[i] < pivot) {
+      result[left] = nums[i]
+      left++
+    }
+
+    if (nums[j] > pivot) {
+      result[right] = nums[j]
+      right--
+    }
+  }
+
+  return result
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(pivotArray([9, 12, 5, 10, 14, 3, 10], 10)) // [9,5,3,10,10,12,14]
 /*
 Explanation: 
@@ -42,3 +68,6 @@ The elements 9, 5, and 3 are less than the pivot so they are on the left side of
 The elements 12 and 14 are greater than the pivot so they are on the right side of the array.
 The relative ordering of the elements less than and greater than pivot is also maintained. [9, 5, 3] and [12, 14] are the respective orderings.
 */
+
+// 2
+console.log(pivotArray2([9, 12, 5, 10, 14, 3, 10], 10)) // [9,5,3,10,10,12,14]
