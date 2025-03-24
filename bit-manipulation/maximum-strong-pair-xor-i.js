@@ -12,6 +12,14 @@ Return the maximum XOR value out of all possible strong pairs in the array nums.
 Note that you can pick the same integer twice to form a pair.
 */
 
+/**
+ * @param {number[]} nums
+ * @returns {number}
+ */
+
+// TIP: A strong pair is a pair of integers such that the absolute difference between them is less than or equal to the minimum of the two integers
+
+// O(n^2) time | O(1) space
 function maximumStrongPairXor(nums) {
   let max = 0
 
