@@ -27,23 +27,27 @@ class ListNode {
 
 // O(n) time | O(1) space
 function mergeNodes(head) {
-  let dummy = new ListNode()
-  let current = dummy
-  head = head.next
-  let sum = 0
+  let current = head
 
-  while (head !== null) {
-    if (head.val === 0) {
-      current.next = new ListNode(sum)
-      current = current.next
-      sum = 0
+  while (current.next !== null) {
+    if (current.next.val === 0) {
+      // If the end of the list is reached, remove the last node
+      if (current.next.next === null) {
+        current.next = null
+
+        // If not, move to the next node
+      } else {
+        current = current.next
+      }
+
+      // Merge nodes if there are more than 2 nodes between 0's
+    } else {
+      current.val += current.next.val
+      current.next = current.next.next
     }
-
-    sum += head.val
-    head = head.next
   }
 
-  return dummy.next
+  return head
 }
 
 // -----------------------------
