@@ -317,6 +317,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Delete Node in a Linked List](./linked-list/delete-node-in-a-linked-list.js)
 - [Convert Binary Number in a Linked List to Integer](./linked-list/convert-linked-list-binary-to-int.js)
 - [Insert Greatest Common Divisors in Linked List](./linked-list/insert-greatest-common-divisors.js)
+- [Merge Nodes in Between Zeros](./linked-list/merge-nodes-in-between-zeros.js)
 
 ### Math
 
