@@ -9,12 +9,23 @@ Return the head of the modified linked list.
 */
 
 class ListNode {
+  /**
+   * @param {number} val
+   * @param {ListNode} next
+   */
+
   constructor(val = 0, next = null) {
     this.val = val
     this.next = next
   }
 }
 
+/**
+ * @param {ListNode} head
+ * @returns {ListNode}
+ */
+
+// O(n) time | O(1) space
 function mergeNodes(head) {
   let dummy = new ListNode()
   let current = dummy
