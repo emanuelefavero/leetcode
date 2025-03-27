@@ -51,6 +51,24 @@ function transformArray3(nums) {
 }
 
 // -----------------------
+// SOLUTION 4
+
+// TIP: This solution is similar to the first one but counts the number of even and odd numbers and then creates the array
+
+// O(n) time | O(n) space
+function transformArray4(nums) {
+  let countEven = 0
+  let countOdd = 0
+
+  for (let num of nums) {
+    if (num % 2 === 0) countEven++
+    else countOdd++
+  }
+
+  return [...Array(countEven).fill(0), ...Array(countOdd).fill(1)]
+}
+
+// -----------------------
 // TESTS
 
 // 1
@@ -66,3 +84,6 @@ console.log(transformArray2([4, 3, 2, 1])) //  [0,0,1,1]
 
 // 3
 console.log(transformArray3([4, 3, 2, 1])) //  [0,0,1,1]
+
+// 4
+console.log(transformArray4([4, 3, 2, 1])) //  [0,0,1,1]
