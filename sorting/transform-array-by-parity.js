@@ -10,6 +10,12 @@ You are given an integer array nums. Transform nums by performing the following 
 Return the resulting array after performing these operations.
 */
 
+/**
+ * @param {number[]} nums
+ * @returns {number[]}
+ */
+
+// O(n) time | O(n) space
 function transformArray(nums) {
   let even = []
   let odd = []
