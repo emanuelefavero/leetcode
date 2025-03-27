@@ -31,32 +31,10 @@ function transformArray(nums) {
 // -----------------------
 // SOLUTION 2
 
-// O(n log n) time | O(1) space
-function transformArray2(nums) {
-  for (let i = 0; i < nums.length; i++) {
-    if (nums[i] % 2 === 0) nums[i] = 0
-    else nums[i] = 1
-  }
-
-  return nums.sort((a, b) => a - b)
-}
-
-// -----------------------
-// SOLUTION 3
-
-// TIP: This is a one liner solution
-
-function transformArray3(nums) {
-  return nums.map((num) => (num % 2 === 0 ? 0 : 1)).sort((a, b) => a - b)
-}
-
-// -----------------------
-// SOLUTION 4
-
 // TIP: This solution is similar to the first one but counts the number of even and odd numbers and then creates the array
 
 // O(n) time | O(n) space
-function transformArray4(nums) {
+function transformArray2(nums) {
   let countEven = 0
   let countOdd = 0
 
@@ -66,6 +44,31 @@ function transformArray4(nums) {
   }
 
   return [...Array(countEven).fill(0), ...Array(countOdd).fill(1)]
+}
+
+// -----------------------
+// SOLUTION 3
+
+// TIP: This is a one liner solution
+
+// O(n log n) time | O(1) space
+function transformArray3(nums) {
+  return nums.map((num) => (num % 2 === 0 ? 0 : 1)).sort((a, b) => a - b)
+}
+
+// -----------------------
+// SOLUTION 4
+
+// TIP: This solution is similar to the third one but is more readable
+
+// O(n log n) time | O(1) space
+function transformArray4(nums) {
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] % 2 === 0) nums[i] = 0
+    else nums[i] = 1
+  }
+
+  return nums.sort((a, b) => a - b)
 }
 
 // -----------------------
