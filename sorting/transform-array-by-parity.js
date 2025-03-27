@@ -42,6 +42,15 @@ function transformArray2(nums) {
 }
 
 // -----------------------
+// SOLUTION 3
+
+// TIP: This is a one liner solution
+
+function transformArray3(nums) {
+  return nums.map((num) => (num % 2 === 0 ? 0 : 1)).sort((a, b) => a - b)
+}
+
+// -----------------------
 // TESTS
 
 // 1
@@ -54,3 +63,6 @@ Explanation:
 
 // 2
 console.log(transformArray2([4, 3, 2, 1])) //  [0,0,1,1]
+
+// 3
+console.log(transformArray3([4, 3, 2, 1])) //  [0,0,1,1]
