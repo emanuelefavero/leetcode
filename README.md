@@ -242,6 +242,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Minimum Time to Type Word Using Special Typewriter](./greedy/min-time-to-type.js)
 - [Best Time to Buy and Sell Stock II](./greedy/best-time-to-buy-and-sell-stock-ii.js)
 - [Can Place Flowers](./greedy/can-place-flowers.js)
+- [Partitioning Into Minimum Number Of Deci-Binary Numbers](./greedy/partition-into-min-deci-binary-numbers.js)
 
 ### Hash Table
 
