@@ -20,6 +20,19 @@ function minPartitions2(n) {
 }
 
 // -------------------------
+// SOLUTION 3
+
+function minPartitions3(n) {
+  let max = 0
+
+  for (let i = 0; i < n.length; i++) {
+    if (n[i] > max) max = n[i]
+  }
+
+  return parseInt(max)
+}
+
+// -------------------------
 // TESTS
 
 // 1
@@ -28,3 +41,6 @@ console.log(minPartitions('32')) // 3
 
 // 2
 console.log(minPartitions2('32')) // 3
+
+// 3
+console.log(minPartitions3('32')) // 3
