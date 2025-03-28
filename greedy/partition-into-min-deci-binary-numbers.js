@@ -9,7 +9,22 @@
 const minPartitions = (n) => Math.max(...n)
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: We can also loop through digits between 9 and 0 and return the first digit that is present in the number n. This will be the maximum digit
+
+function minPartitions2(n) {
+  for (let i = 9; i >= 0; i--) {
+    if (n.includes(i)) return i
+  }
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(minPartitions('32')) // 3
 // Explanation: 10 + 11 + 11 = 32
+
+// 2
+console.log(minPartitions2('32')) // 3
