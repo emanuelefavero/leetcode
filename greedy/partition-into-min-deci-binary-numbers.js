@@ -6,6 +6,12 @@
 
 // TIP: Since we only have deci-binary (1s and 0s) to sum up to given number n, we need atleast n[i] deci-binary numbers to sum up to n[i], where n[i] is the ith digit of given number. So, we only need to find the maximum digit in the given number n. The maximum digit will be the answer
 
+/**
+ * @param {string} n
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 const minPartitions = (n) => Math.max(...n)
 
 // -------------------------
@@ -14,6 +20,7 @@ const minPartitions = (n) => Math.max(...n)
 // TIP: We can also loop through digits between 9 and 0 and return the first digit that is present in the number n. This will be the maximum digit
 
 function minPartitions2(n) {
+  // Find the maximum digit in the string n
   for (let i = 9; i >= 0; i--) {
     if (n.includes(i)) return i
   }
