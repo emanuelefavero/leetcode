@@ -16,13 +16,13 @@ Given two sentences s1 and s2, return a list of all the uncommon words. You may 
 
 // O(n) time | O(n) space
 function uncommonFromSentences(s1, s2) {
-  let result = []
   let arr1 = s1.split(' ')
   let arr2 = s2.split(' ')
+
+  // Count the words in both sentences
   let map2 = new Map()
   let map1 = new Map()
 
-  // Count the words in both sentences
   for (let word of arr1) {
     map1.set(word, (map1.get(word) || 0) + 1)
   }
@@ -30,18 +30,15 @@ function uncommonFromSentences(s1, s2) {
     map2.set(word, (map2.get(word) || 0) + 1)
   }
 
-  // Check if the word in map1 is not in map2 and if it is unique
+  // Check for uncommon words in both sentences
+  let result = []
+
   for (let [key, value] of map1) {
-    if (map1.has(key) && !map2.has(key)) {
-      if (value === 1) result.push(key)
-    }
+    if (value === 1 && !map2.has(key)) result.push(key)
   }
 
-  // Check if the word in map2 is not in map1 and if it is unique
   for (let [key, value] of map2) {
-    if (map2.has(key) && !map1.has(key)) {
-      if (value === 1) result.push(key)
-    }
+    if (value === 1 && !map1.has(key)) result.push(key)
   }
 
   return result
