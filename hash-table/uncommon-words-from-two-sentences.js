@@ -8,6 +8,13 @@ A word is uncommon if it appears exactly once in one of the sentences, and does 
 Given two sentences s1 and s2, return a list of all the uncommon words. You may return the answer in any order.
 */
 
+/**
+ * @param {string} s1
+ * @param {string} s2
+ * @returns {string[]}
+ */
+
+// O(n) time | O(n) space
 function uncommonFromSentences(s1, s2) {
   let result = []
   let arr1 = s1.split(' ')
