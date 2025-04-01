@@ -288,6 +288,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Maximum Number of Pairs in Array](./hash-table/maximum-number-of-pairs.js)
 - [Remove Letter To Equalize Frequency](./hash-table/remove-letter-to-equalize-freq.js)
 - [The Two Sneaky Numbers of Digitville](./hash-table/the-two-sneaky-numbers.js)
+- [Uncommon Words from Two Sentences](./hash-table/uncommon-words-from-two-sentences.js)
 
 ### Heap
 
