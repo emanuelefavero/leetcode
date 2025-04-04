@@ -348,6 +348,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Find the Key of the Numbers](./math/find-the-key-of-the-numbers.js)
 - [Find N Unique Integers Sum up to Zero](./math/find-n-unique-int-sum-up-to-zero.js)
 - [Count Partitions with Even Sum Difference](./math/count-partitions-even-sum-difference.js)
+- [Convert Date to Binary](./math/convert-date-to-binary.js)
 
 ### Matrix
 
