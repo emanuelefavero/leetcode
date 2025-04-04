@@ -8,6 +8,12 @@ date can be written in its binary representation obtained by converting year, mo
 Return the binary representation of date.
 */
 
+/**
+ * @param {string} date
+ * @returns {string}
+ */
+
+// O(n) time | O(1) space
 function convertDateToBinary(date) {
   let year = Number(date.substring(0, 4)).toString(2)
   let month = Number(date.substring(5, 7)).toString(2)
