@@ -13,6 +13,8 @@ Return the binary representation of date.
  * @returns {string}
  */
 
+// TIP: Since we already know the structure of the date string, we can use the substring method to get the year, month, and day
+
 // O(n) time | O(1) space
 function convertDateToBinary(date) {
   let year = Number(date.substring(0, 4)).toString(2)
@@ -22,7 +24,22 @@ function convertDateToBinary(date) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: We can also use the split method to get the year, month, and day
+
+function convertDateToBinary2(date) {
+  let array = date.split('-')
+  let result = array.map((num) => parseInt(num).toString(2))
+  return result.join('-')
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(convertDateToBinary('2080-02-29')) // "100000100000-10-11101"
 // Explanation: 100000100000, 10, and 11101 are the binary representations of 2080, 02, and 29 respectively.
+
+// 2
+console.log(convertDateToBinary2('2080-02-29')) // "100000100000-10-11101"
