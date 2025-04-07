@@ -16,9 +16,9 @@ class SubrectangleQueries {
   }
 
   updateSubrectangle(row1, col1, row2, col2, newValue) {
-    for (let row = row1; row <= row2; row++) {
-      for (let col = col1; col <= col2; col++) {
-        this.rectangle[row][col] = newValue
+    for (let i = row1; i <= row2; i++) {
+      for (let j = col1; j <= col2; j++) {
+        this.rectangle[i][j] = newValue
       }
     }
   }
