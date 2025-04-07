@@ -11,10 +11,24 @@ Implement the class SubrectangleQueries which receives a rows x cols rectangle a
 */
 
 class SubrectangleQueries {
+  /**
+   * @param {number[]} rectangle
+   */
+
   constructor(rectangle) {
     this.rectangle = rectangle
   }
 
+  /**
+   * @param {number} row1
+   * @param {number} col1
+   * @param {number} row2
+   * @param {number} col2
+   * @param {number} newValue
+   * @return {void}
+   */
+
+  // O(m * n) time | O(1) space
   updateSubrectangle(row1, col1, row2, col2, newValue) {
     for (let i = row1; i <= row2; i++) {
       for (let j = col1; j <= col2; j++) {
@@ -23,6 +37,13 @@ class SubrectangleQueries {
     }
   }
 
+  /**
+   * @param {number} row
+   * @param {number} col
+   * @returns {number}
+   */
+
+  // O(1) time | O(1) space
   getValue(row, col) {
     return this.rectangle[row][col]
   }
