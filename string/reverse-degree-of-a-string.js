@@ -11,6 +11,12 @@ The reverse degree is calculated as follows:
 Return the reverse degree of s.
 */
 
+/**
+ * @param {string} s
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function reverseDegree(s) {
   let map = {
     a: 26,
