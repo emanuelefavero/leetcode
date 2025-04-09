@@ -483,6 +483,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Robot Return to Origin](./string/robot-return-to-origin.js)
 - [Check If Digits Are Equal in String After Operations I](./string/check-if-digits-are-equal-i.js)
 - [Split Strings by Separator](./string/split-strings-by-separator.js)
+- [Reverse Degree of a String](./string/reverse-degree-of-a-string.js)
 
 ### Tree
 
