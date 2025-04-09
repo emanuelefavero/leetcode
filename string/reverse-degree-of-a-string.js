@@ -53,8 +53,25 @@ function reverseDegree(s) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: We can also use the ASCII value of the character to calculate its reverse degree
+
+function reverseDegree2(s) {
+  let result = 0
+
+  for (let i = 0; i < s.length; i++) {
+    // Subtract from 26 the ASCII value of the character minus the ASCII value of 'a' and multiply by its index (1-indexed)
+    result += (26 - (s.charCodeAt(i) - 'a'.charCodeAt(0))) * (i + 1)
+  }
+
+  return result
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(reverseDegree('abc')) // 148
 /*
 Explanation:
@@ -67,3 +84,6 @@ Explanation:
 
 The reversed degree is 26 + 50 + 72 = 148.
 */
+
+// 2
+console.log(reverseDegree2('abc')) // 148
