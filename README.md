@@ -519,6 +519,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Diameter Of Binary Tree](./tree/diameter-of-binary-tree.js)
 - [Minimum Depth of Binary Tree](./tree/minimum-depth-of-binary-tree.js)
 - [Evaluate Boolean Binary Tree](./tree/evaluate-boolean-binary-tree.js)
+- [Binary Search Tree to Greater Sum Tree](./tree/binary-search-tree-to-greater-sum-tree.js)
 
 ### Trie
 
