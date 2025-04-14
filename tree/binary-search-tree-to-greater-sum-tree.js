@@ -11,6 +11,10 @@ As a reminder, a binary search tree is a tree that satisfies these constraints:
 */
 
 class TreeNode {
+  /**
+   * @param {number} val
+   */
+
   constructor(val) {
     this.val = val
     this.left = null
@@ -18,6 +22,12 @@ class TreeNode {
   }
 }
 
+/**
+ * @param {TreeNode} root
+ * @returns {TreeNode}
+ */
+
+// O(n) time | O(h) space - where h is the height of the tree
 function bstToGst(root) {
   let sum = 0
 
