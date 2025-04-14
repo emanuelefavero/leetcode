@@ -35,8 +35,34 @@ function bstToGst(root) {
 }
 
 // -----------------------------
+// SOLUTION 2
+
+// TIP: We can also use a stack instead of recursion to traverse the tree
+
+function bstToGst2(root) {
+  let current = root
+  let stack = []
+  let sum = 0
+
+  while (current || stack.length) {
+    while (current) {
+      stack.push(current)
+      current = current.right // go to the rightmost node
+    }
+
+    current = stack.pop()
+    sum += current.val
+    current.val = sum
+    current = current.left // go to the left subtree
+  }
+
+  return root
+}
+
+// -----------------------------
 // TESTS
 
+// 1
 let root = new TreeNode(4)
 root.left = new TreeNode(1)
 root.right = new TreeNode(6)
@@ -66,3 +92,16 @@ console.log(bstToGst(root))
 //  36 35 26 15
 //       \     \
 //        33    8
+
+// 2
+root = new TreeNode(4)
+root.left = new TreeNode(1)
+root.right = new TreeNode(6)
+root.left.left = new TreeNode(0)
+root.left.right = new TreeNode(2)
+root.left.right.right = new TreeNode(3)
+root.right.left = new TreeNode(5)
+root.right.right = new TreeNode(7)
+root.right.right.right = new TreeNode(8)
+
+console.log(bstToGst2(root))
