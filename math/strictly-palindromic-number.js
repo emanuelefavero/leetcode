@@ -19,8 +19,18 @@ function isStrictlyPalindromic(n) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: Since no number greater than 3 is strictly palindromic, we can simply return false and it will be correct for all cases
+
+function isStrictlyPalindromic2(n) {
+  return false
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(isStrictlyPalindromic(9)) // false
 /*
 Explanation: In base 2: 9 = 1001 (base 2), which is palindromic.
@@ -28,3 +38,6 @@ In base 3: 9 = 100 (base 3), which is not palindromic.
 Therefore, 9 is not strictly palindromic so we return false.
 Note that in bases 4, 5, 6, and 7, n = 9 is also not palindromic.
 */
+
+// 2
+console.log(isStrictlyPalindromic2(9)) // false
