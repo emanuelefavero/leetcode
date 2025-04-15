@@ -8,6 +8,12 @@ Given an integer n, return true if n is strictly palindromic and false otherwise
 A string is palindromic if it reads the same forward and backward.
 */
 
+/**
+ * @param {number} n
+ * @returns {boolean}
+ */
+
+// O(n^2) time | O(n) space
 function isStrictlyPalindromic(n) {
   let length = n - 2
   for (let i = 2; i <= length; i++) {
@@ -23,6 +29,7 @@ function isStrictlyPalindromic(n) {
 
 // TIP: Since no number greater than 3 is strictly palindromic, we can simply return false and it will be correct for all cases
 
+// O(1) time | O(1) space
 function isStrictlyPalindromic2(n) {
   return false
 }
