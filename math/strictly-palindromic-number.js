@@ -30,9 +30,7 @@ function isStrictlyPalindromic(n) {
 // TIP: Since no number greater than 3 is strictly palindromic, we can simply return false and it will be correct for all cases
 
 // O(1) time | O(1) space
-function isStrictlyPalindromic2(n) {
-  return false
-}
+const isStrictlyPalindromic2 = (n) => false
 
 // -------------------------
 // TESTS
