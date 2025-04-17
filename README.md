@@ -157,6 +157,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Smallest Number With All Set Bits](./bit-manipulation/smallest-number-with-all-set-bits.js)
 - [Construct the Minimum Bitwise Array I](./bit-manipulation/construct-the-minimum-bitwise-array-i.js)
 - [Maximum Strong Pair XOR I](./bit-manipulation/maximum-strong-pair-xor-i.js)
+- [Find The Original Array of Prefix Xor](./bit-manipulation/find-the-original-array-of-prefix-xor.js)
 
 ### Breadth First Search
 
