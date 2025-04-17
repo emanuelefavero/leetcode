@@ -27,8 +27,26 @@ function findArray(pref) {
 }
 
 // ----------------------
+// SOLUTION 2
+
+// O(n) time | O(1) space
+function findArray2(pref) {
+  let accumulator = pref[0]
+
+  for (let i = 1; i < pref.length; i++) {
+    const temp = pref[i]
+    const or = accumulator ^ temp
+    accumulator ^= or
+    pref[i] = or
+  }
+
+  return pref
+}
+
+// ----------------------
 // TESTS
 
+// 1
 console.log(findArray([5, 2, 0, 3, 1])) // [5, 7, 2, 3, 2]
 /*
 Explanation: From the array [5,7,2,3,2] we have the following:
@@ -38,3 +56,6 @@ Explanation: From the array [5,7,2,3,2] we have the following:
 - pref[3] = 5 ^ 7 ^ 2 ^ 3 = 3.
 - pref[4] = 5 ^ 7 ^ 2 ^ 3 ^ 2 = 1.
 */
+
+// 2
+console.log(findArray2([5, 2, 0, 3, 1])) // [5, 7, 2, 3, 2]
