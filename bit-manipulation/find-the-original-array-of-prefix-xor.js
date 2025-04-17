@@ -10,6 +10,12 @@ Note that ^ denotes the bitwise-xor operation.
 It can be proven that the answer is unique.
 */
 
+/**
+ * @param {number[]} pref
+ * @returns {number[]}
+ */
+
+// O(n) time | O(n) space
 function findArray(pref) {
   let result = [pref[0]]
 
