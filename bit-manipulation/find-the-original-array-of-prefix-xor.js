@@ -44,6 +44,19 @@ function findArray2(pref) {
 }
 
 // ----------------------
+// SOLUTION 3
+
+// TIP: This solution is identical to the first one but it's in-place and loops backwards.
+
+function findArray3(pref) {
+  for (let i = pref.length - 1; i > 0; i--) {
+    pref[i] = pref[i] ^ pref[i - 1]
+  }
+
+  return pref
+}
+
+// ----------------------
 // TESTS
 
 // 1
@@ -59,3 +72,6 @@ Explanation: From the array [5,7,2,3,2] we have the following:
 
 // 2
 console.log(findArray2([5, 2, 0, 3, 1])) // [5, 7, 2, 3, 2]
+
+// 3
+console.log(findArray3([5, 2, 0, 3, 1])) // [5, 7, 2, 3, 2]
