@@ -158,6 +158,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Construct the Minimum Bitwise Array I](./bit-manipulation/construct-the-minimum-bitwise-array-i.js)
 - [Maximum Strong Pair XOR I](./bit-manipulation/maximum-strong-pair-xor-i.js)
 - [Find The Original Array of Prefix Xor](./bit-manipulation/find-the-original-array-of-prefix-xor.js)
+- [Count Number of Maximum Bitwise-OR Subsets](./bit-manipulation/count-number-of-max-bitwise-or-subsets.js)
 
 ### Breadth First Search
 
