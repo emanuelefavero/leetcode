@@ -8,6 +8,12 @@ An array a is a subset of an array b if a can be obtained from b by deleting som
 The bitwise OR of an array a is equal to a[0] OR a[1] OR ... OR a[a.length - 1] (0-indexed).
 */
 
+/**
+ * @param {number[]} nums
+ * @returns {number}
+ */
+
+// O(n^2) time | O(n) space
 function countMaxOrSubsets(nums) {
   let maxOR = 0
 
