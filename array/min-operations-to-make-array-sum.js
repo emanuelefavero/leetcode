@@ -8,6 +8,13 @@ You are given an integer array nums and an integer k. You can perform the follow
 Return the minimum number of operations required to make the sum of the array divisible by k.
 */
 
+/**
+ * @param {number[]} nums
+ * @param {number} k
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function minOperations(nums, k) {
   let sum = nums.reduce((num, acc) => num + acc, 0)
 
