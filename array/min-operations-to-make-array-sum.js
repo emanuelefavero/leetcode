@@ -40,6 +40,15 @@ function minOperations2(nums, k) {
 }
 
 // -------------------------
+// SOLUTION 3
+
+// TIP: This is a one liner solution
+
+function minOperations3(nums, k) {
+  return nums.reduce((num, acc) => num + acc, 0) % k
+}
+
+// -------------------------
 // TESTS
 
 // 1
@@ -51,3 +60,6 @@ The sum is 15, which is divisible by 5.
 
 // 2
 console.log(minOperations2([3, 9, 7], 5)) // 4
+
+// 3
+console.log(minOperations3([3, 9, 7], 5)) // 4
