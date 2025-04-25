@@ -29,10 +29,25 @@ function minOperations(nums, k) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: We can also solve the problem using the remainder
+
+function minOperations2(nums, k) {
+  let sum = nums.reduce((num, acc) => num + acc, 0)
+  let remainder = sum % k
+  return remainder
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(minOperations([3, 9, 7], 5)) // 4
 /* Explanation:
 Perform 4 operations on nums[1] = 9. Now, nums = [3, 5, 7].
 The sum is 15, which is divisible by 5.
 */
+
+// 2
+console.log(minOperations2([3, 9, 7], 5)) // 4
