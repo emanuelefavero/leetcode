@@ -117,6 +117,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Number of Students Doing Homework at a Given Time](./array/number-of-students-doing-homework.js)
 - [Minimum Number of Operations to Move All Balls to Each Box](./array/min-operations-to-move-all-balls.js)
 - [Partition Array According to Given Pivot](./array/partition-array-according-to-given-pivot.js)
+- [Minimum Operations to Make Array Sum Divisible by K](./array//min-operations-to-make-array-sum.js)
 
 ### Binary Search
 
