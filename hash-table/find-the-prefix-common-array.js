@@ -91,6 +91,29 @@ function findThePrefixCommonArray3(A, B) {
 }
 
 // -----------------------------
+// SOLUTION 4
+
+// TIP: This solution uses a set to count the occurrences of each number in A and B
+
+function findThePrefixCommonArray4(A, B) {
+  let set = new Set()
+  let result = []
+  let count = 0
+
+  for (let i = 0; i < A.length; i++) {
+    if (set.has(A[i])) count++
+    else set.add(A[i])
+
+    if (set.has(B[i])) count++
+    else set.add(B[i])
+
+    result.push(count)
+  }
+
+  return result
+}
+
+// -----------------------------
 // TESTS
 
 // 1
@@ -107,3 +130,6 @@ console.log(findThePrefixCommonArray2([1, 3, 2, 4], [3, 1, 2, 4])) // [0,2,3,4]
 
 // 3
 console.log(findThePrefixCommonArray3([1, 3, 2, 4], [3, 1, 2, 4])) // [0,2,3,4]
+
+// 4
+console.log(findThePrefixCommonArray4([1, 3, 2, 4], [3, 1, 2, 4])) // [0,2,3,4]
