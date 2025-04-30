@@ -26,26 +26,6 @@ function findThePrefixCommonArray(A, B) {
   let count = 0
 
   for (let i = 0; i < n; i++) {
-    if (++freq[A[i]] === 2) count++
-    if (++freq[B[i]] === 2) count++
-    result.push(count)
-  }
-
-  return result
-}
-
-// -----------------------------
-// SOLUTION 2
-
-// TIP: This solution is similar to the first one but does not use the pre increment operator
-
-function findThePrefixCommonArray2(A, B) {
-  let n = A.length
-  let freq = new Array(n + 1).fill(0)
-  let result = []
-  let count = 0
-
-  for (let i = 0; i < n; i++) {
     let numA = A[i]
     let numB = B[i]
 
@@ -57,6 +37,26 @@ function findThePrefixCommonArray2(A, B) {
     freq[numB]++
     if (freq[B[i]] === 2) count++
 
+    result.push(count)
+  }
+
+  return result
+}
+
+// -----------------------------
+// SOLUTION 2
+
+// TIP: This solution is similar to the first one but uses the pre increment operator to increment the frequency of the current numbers in A and B
+
+function findThePrefixCommonArray2(A, B) {
+  let n = A.length
+  let freq = new Array(n + 1).fill(0)
+  let result = []
+  let count = 0
+
+  for (let i = 0; i < n; i++) {
+    if (++freq[A[i]] === 2) count++
+    if (++freq[B[i]] === 2) count++
     result.push(count)
   }
 
