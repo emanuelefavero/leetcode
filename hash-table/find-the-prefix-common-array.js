@@ -10,6 +10,15 @@ Return the prefix common array of A and B.
 A sequence of n integers is called a permutation if it contains all integers from 1 to n exactly once.
 */
 
+/**
+ * @param {number[]} A
+ * @param {number[]} B
+ * @returns {number[]}
+ */
+
+// TIP: Use a frequency array to count the occurrences of each number in A and B.
+
+// O(n) time | O(n) space
 function findThePrefixCommonArray(A, B) {
   let n = A.length
   let freq = new Array(n + 1).fill(0)
