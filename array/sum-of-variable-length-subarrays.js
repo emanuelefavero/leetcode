@@ -6,6 +6,12 @@ You are given an integer array nums of size n. For each index i where 0 <= i < n
 Return the total sum of all elements from the subarray defined for each index in the array.
 */
 
+/**
+ * @param {number[]} nums
+ * @returns {number}
+ */
+
+// O(n^2) time | O(1) space
 function subarraySum(nums) {
   let sum = 0
 
