@@ -17,11 +17,9 @@ function subarraySum(nums) {
 
   for (let i = 0; i < nums.length; i++) {
     let start = Math.max(0, i - nums[i])
-    let subarraySum = 0
     for (let j = start; j <= i; j++) {
-      subarraySum += nums[j]
+      sum += nums[j]
     }
-    sum += subarraySum
   }
 
   return sum
