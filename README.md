@@ -119,6 +119,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Partition Array According to Given Pivot](./array/partition-array-according-to-given-pivot.js)
 - [Minimum Operations to Make Array Sum Divisible by K](./array//min-operations-to-make-array-sum.js)
 - [Sum of Variable Length Subarrays](./array/sum-of-variable-length-subarrays.js)
+- [Find Indices of Stable Mountains](./array/find-indices-of-stable-mountains.js)
 
 ### Binary Search
 
