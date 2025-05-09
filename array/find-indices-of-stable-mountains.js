@@ -8,6 +8,13 @@ A mountain is called stable if the mountain just before it (if it exists) has a 
 Return an array containing the indices of all stable mountains in any order.
 */
 
+/**
+ * @param {number[]} height
+ * @param {number} threshold
+ * @returns {number[]}
+ */
+
+// O(n) time | O(n) space
 function stableMountains(height, threshold) {
   let result = []
 
