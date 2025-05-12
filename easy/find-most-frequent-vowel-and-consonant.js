@@ -79,6 +79,50 @@ function maxFreqSum2(s) {
 }
 
 // -------------------------
+// SOLUTION 3
+
+// TIP: This solution is similar to the first one but uses arrays and a different style for finding the maximum frequency.
+
+function maxFreqSum3(s) {
+  let vowels = ['a', 'e', 'i', 'o', 'u']
+  let consonants = [
+    'b',
+    'c',
+    'd',
+    'f',
+    'g',
+    'h',
+    'j',
+    'k',
+    'l',
+    'm',
+    'n',
+    'p',
+    'q',
+    'r',
+    's',
+    't',
+    'v',
+    'w',
+    'x',
+    'y',
+    'z',
+  ]
+  let map = new Map()
+
+  // Populate the map with the frequency of each character
+  for (let char of s) {
+    map.set(char, (map.get(char) || 0) + 1)
+  }
+
+  // Find the maximum frequency of vowels and consonants
+  let maxVowel = Math.max(...vowels.map((char) => map.get(char) || 0))
+  let maxConsonant = Math.max(...consonants.map((char) => map.get(char) || 0))
+
+  return maxVowel + maxConsonant
+}
+
+// -------------------------
 // TESTS
 
 // 1
@@ -93,3 +137,6 @@ The output is 2 + 4 = 6.
 
 // 2
 console.log(maxFreqSum2('successes')) // 6
+
+// 3
+console.log(maxFreqSum3('successes')) // 6
