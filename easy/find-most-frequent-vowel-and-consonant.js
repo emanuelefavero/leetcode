@@ -14,6 +14,12 @@ Note: If multiple vowels or consonants have the same maximum frequency, you may 
 The frequency of a letter x is the number of times it occurs in the string.
 */
 
+/**
+ * @param {string} s
+ * @returns {number}
+ */
+
+// O(n) time | O(n) space
 function maxFreqSum(s) {
   let vowels = 'aeiou'
   let consonant = 'bcdfghjklmnpqrstvwxyz'
