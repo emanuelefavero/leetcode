@@ -47,8 +47,36 @@ function maxFreqSum(s) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: This solution uses two maps to store the frequency of vowels and consonants separately.
+
+function maxFreqSum2(s) {
+  let vowelMap = { a: 0, e: 0, i: 0, o: 0, u: 0 }
+  let consonantMap = {}
+
+  'bcdfghjklmnpqrstvwxyz'.split('').forEach((char) => {
+    consonantMap[char] = 0
+  })
+
+  for (let char of s) {
+    if (vowelMap.hasOwnProperty(char)) {
+      vowelMap[char]++
+    } else if (consonantMap.hasOwnProperty(char)) {
+      consonantMap[char]++
+    }
+  }
+
+  let maxVowel = Math.max(...Object.values(vowelMap))
+  let maxConsonant = Math.max(...Object.values(consonantMap))
+
+  return maxVowel + maxConsonant
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(maxFreqSum('successes')) // 6
 /*
 Explanation:
@@ -57,3 +85,6 @@ The vowels are: 'u' (frequency 1), 'e' (frequency 2). The maximum frequency is 2
 The consonants are: 's' (frequency 4), 'c' (frequency 2). The maximum frequency is 4.
 The output is 2 + 4 = 6.
 */
+
+// 2
+console.log(maxFreqSum2('successes')) // 6
