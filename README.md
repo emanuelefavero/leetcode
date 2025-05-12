@@ -227,6 +227,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Is Object Empty](./easy/is-object-empty.js)
 - [Array Prototype Last](./easy/array-prototype-last.js)
 - [Calculator with Method Chaining](./easy/calculator-with-method-chaining.js)
+- [Find Most Frequent Vowel and Consonant](./easy/find-most-frequent-vowel-and-consonant.js)
 
 ### Graph
 
