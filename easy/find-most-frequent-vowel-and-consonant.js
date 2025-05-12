@@ -25,10 +25,12 @@ function maxFreqSum(s) {
   let consonant = 'bcdfghjklmnpqrstvwxyz'
   let map = new Map()
 
+  // Populate the map with the frequency of each character
   for (let char of s) {
     map.set(char, (map.get(char) || 0) + 1)
   }
 
+  // Find the maximum frequency of vowels and consonants
   let maxVowel = 0
   for (let char of vowels) {
     if (map.has(char)) {
@@ -55,10 +57,12 @@ function maxFreqSum2(s) {
   let vowelMap = { a: 0, e: 0, i: 0, o: 0, u: 0 }
   let consonantMap = {}
 
+  // Populate the consonantMap with all consonants initialized to 0
   'bcdfghjklmnpqrstvwxyz'.split('').forEach((char) => {
     consonantMap[char] = 0
   })
 
+  // Count the frequency of vowels and consonants
   for (let char of s) {
     if (vowelMap.hasOwnProperty(char)) {
       vowelMap[char]++
@@ -67,6 +71,7 @@ function maxFreqSum2(s) {
     }
   }
 
+  // Find the maximum frequency of vowels and consonants
   let maxVowel = Math.max(...Object.values(vowelMap))
   let maxConsonant = Math.max(...Object.values(consonantMap))
 
