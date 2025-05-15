@@ -40,20 +40,24 @@ function countSymmetricIntegers2(low, high) {
   let result = 0
 
   for (let num = low; num <= high; num++) {
-    let s = num.toString()
-    if (s.length % 2 !== 0) continue
-
-    let middle = s.length / 2
-    let leftSum = 0
-    let rightSum = 0
-    for (let i = 0; i < middle; i++) {
-      leftSum += parseInt(s[i])
-      rightSum += parseInt(s[i + middle])
-    }
-    if (leftSum === rightSum) result++
+    if (isSymmetricInteger(num)) result++
   }
 
   return result
+}
+
+function isSymmetricInteger(num) {
+  let s = num.toString()
+  if (s.length % 2 !== 0) return false
+
+  let middle = s.length / 2
+  let leftSum = 0
+  let rightSum = 0
+  for (let i = 0; i < middle; i++) {
+    leftSum += parseInt(s[i])
+    rightSum += parseInt(s[i + middle])
+  }
+  return leftSum === rightSum
 }
 
 // -------------------------
