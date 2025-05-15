@@ -11,9 +11,6 @@ Return the number of symmetric integers in the range [low, high].
 function countSymmetricIntegers(low, high) {
   let result = 0
 
-  if (high < 10) return result
-  if (low < 10 && high > 9) low = 10
-
   for (let i = low; i <= high; i++) {
     let array = i.toString().split('')
     if (array.length % 2 !== 0) continue
