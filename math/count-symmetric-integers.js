@@ -30,7 +30,34 @@ function countSymmetricIntegers(low, high) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+function countSymmetricIntegers2(low, high) {
+  let result = 0
+
+  for (let num = low; num <= high; num++) {
+    let s = num.toString()
+    if (s.length % 2 !== 0) continue
+
+    let middle = s.length / 2
+    let leftSum = 0
+    let rightSum = 0
+    for (let i = 0; i < middle; i++) {
+      leftSum += parseInt(s[i])
+      rightSum += parseInt(s[i + middle])
+    }
+    if (leftSum === rightSum) result++
+  }
+
+  return result
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(countSymmetricIntegers(1, 100)) // 9
 // Explanation: There are 9 symmetric integers between 1 and 100: 11, 22, 33, 44, 55, 66, 77, 88, and 99.
+
+// 2
+console.log(countSymmetricIntegers2(1, 100)) // 9
