@@ -8,6 +8,13 @@ An integer x consisting of 2 * n digits is symmetric if the sum of the first n d
 Return the number of symmetric integers in the range [low, high].
 */
 
+/**
+ * @param {number} low
+ * @param {number} high
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function countSymmetricIntegers(low, high) {
   let result = 0
 
