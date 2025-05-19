@@ -440,6 +440,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Decode String](./stack/decode-string.js)
 - [Flood Fill](./stack/flood-fill.js)
 - [Keys And Rooms](./stack/keys-and-rooms.js)
+- [Clear Digits](./stack/clear-digits.js)
 
 ### String
 
