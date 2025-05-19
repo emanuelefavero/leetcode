@@ -37,9 +37,42 @@ function clearDigits(s) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: This solution does not use a stack
+
+// O(n) time | O(1) space
+function clearDigits2(s) {
+  let str = s
+
+  const regex = /[0-9]/
+
+  while (regex.test(str)) {
+    let index = 0
+    for (let i = 0; i < str.length; i++) {
+      if (!isNaN(parseInt(str[i]))) {
+        // If the character is a digit
+        break
+      } else {
+        index = i
+      }
+    }
+
+    str = str.slice(0, index) + str.slice(index + 1)
+    str = str.slice(0, index) + str.slice(index + 1)
+  }
+  return str
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(clearDigits('abc')) // 'abc'
 // Explanation: There is no digit in the string.
 console.log(clearDigits('cb34')) // ''
 // Explanation: First, we apply the operation on s[2], and s becomes "c4". Then we apply the operation on s[1], and s becomes "".
+
+// 2
+console.log(clearDigits('abc')) // 'abc'
+console.log(clearDigits('cb34')) // ''
