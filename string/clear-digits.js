@@ -13,6 +13,12 @@ Note that the operation cannot be performed on a digit that does not have any no
 
 // TIP: We can use a stack to keep track of the characters in the string. When we encounter a digit, we pop the last character from the stack (if it exists) and do not add the digit to the stack. If we encounter a non-digit character, we simply add it to the stack. At the end, we join the characters in the stack to form the resulting string.
 
+/**
+ * @param {string} s
+ * @returns {string}
+ */
+
+// O(n) time | O(n) space
 function clearDigits(s) {
   const stack = []
 
