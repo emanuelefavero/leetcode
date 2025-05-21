@@ -18,6 +18,14 @@ Determine which person reaches Person 3 first:
 Return the result accordingly.
 */
 
+/**
+ * @param {number} x
+ * @param {number} y
+ * @param {number} z
+ * @returns {number}
+ */
+
+// O(1) time | O(1) space
 function findClosest(x, y, z) {
   let xDiff = Math.abs(x - z)
   let yDiff = Math.abs(y - z)
