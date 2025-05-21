@@ -35,8 +35,18 @@ function findClosest(x, y, z) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+function findClosest2(x, y, z) {
+  if (Math.abs(z - x) < Math.abs(z - y)) return 1
+  if (Math.abs(z - x) > Math.abs(z - y)) return 2
+  return 0
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(findClosest(2, 7, 4)) // 1
 /* Explanation:
 - Person 1 is at position 2 and can reach Person 3 (at position 4) in 2 steps.
@@ -45,3 +55,8 @@ Since Person 1 reaches Person 3 first, the output is 1.
 */
 console.log(findClosest(2, 5, 6)) // 2
 console.log(findClosest(1, 5, 3)) // 0
+
+// 2
+console.log(findClosest2(2, 7, 4)) // 1
+console.log(findClosest2(2, 5, 6)) // 2
+console.log(findClosest2(1, 5, 3)) // 0
