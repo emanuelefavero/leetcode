@@ -296,6 +296,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [The Two Sneaky Numbers of Digitville](./hash-table/the-two-sneaky-numbers.js)
 - [Uncommon Words from Two Sentences](./hash-table/uncommon-words-from-two-sentences.js)
 - [Find the Prefix Common Array of Two Arrays](./hash-table/find-the-prefix-common-array.js)
+- [Merge Two 2D Arrays by Summing Values](./hash-table/merge-two-2d-arrays.js)
 
 ### Heap
 
