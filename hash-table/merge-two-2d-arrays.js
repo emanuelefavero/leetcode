@@ -16,6 +16,13 @@ Merge the two arrays into one array that is sorted in ascending order by id, res
 Return the resulting array. The returned array must be sorted in ascending order by id.
 */
 
+/**
+ * @param {number[][]} nums1
+ * @param {number[][]} nums2
+ * @returns {number[][]}
+ */
+
+// O(n) time | O(n) space
 function mergeArrays(nums1, nums2) {
   let map = new Map()
 
