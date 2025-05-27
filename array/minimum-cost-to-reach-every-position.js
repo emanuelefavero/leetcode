@@ -13,6 +13,14 @@ You are allowed to swap places with people as follows:
 Return an array answer of size n, where answer[i] is the minimum total cost to reach each position i in the line.
 */
 
+/**
+ * @param {number[]} cost
+ * @returns {number[]}
+ */
+
+// TIP: The problem is worded poorly, but it can easily be solved by keeping track of the minimum value seen so far as you iterate through the array
+
+// O(n) time | O(n) space
 function minCosts(cost) {
   let result = []
 
