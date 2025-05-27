@@ -34,8 +34,17 @@ function minCosts(cost) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: This is a one liner solution
+
+const minCosts2 = (cost) =>
+  cost.map((value, i) => (cost[i] = Math.min(value, cost[i - 1] || Infinity)))
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(minCosts([5, 3, 4, 1, 3, 2])) // [5,3,3,1,1,1]
 /* Explanation:
 We can get to each position in the following way:
@@ -48,3 +57,7 @@ i = 4. We can swap with person 3 for a cost of 1, then swap with person 4 for fr
 i = 5. We can swap with person 3 for a cost of 1, then swap with person 5 for free.
 */
 console.log(minCosts([1, 2, 4, 6, 7])) // [1,1,1,1,1]
+
+// 2
+console.log(minCosts2([5, 3, 4, 1, 3, 2])) // [5,3,3,1,1,1]
+console.log(minCosts2([1, 2, 4, 6, 7])) // [1,1,1,1,1]
