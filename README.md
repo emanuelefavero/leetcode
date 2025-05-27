@@ -120,6 +120,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Minimum Operations to Make Array Sum Divisible by K](./array//min-operations-to-make-array-sum.js)
 - [Sum of Variable Length Subarrays](./array/sum-of-variable-length-subarrays.js)
 - [Find Indices of Stable Mountains](./array/find-indices-of-stable-mountains.js)
+- [Minimum Cost to Reach Every Position](./array/minimum-cost-to-reach-every-position.js)
 
 ### Binary Search
 
