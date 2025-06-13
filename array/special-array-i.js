@@ -25,10 +25,36 @@ function isArraySpecial(nums) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: This solution is more concise and it is faster than the first one
+
+function isArraySpecial2(nums) {
+  let n = nums.length
+
+  for (let i = 0; i < n - 1; i++) {
+    if (
+      (nums[i] % 2 === 0 && nums[i + 1] % 2 === 0) ||
+      (nums[i] % 2 !== 0 && nums[i + 1] % 2 !== 0)
+    ) {
+      return false
+    }
+  }
+
+  return true
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(isArraySpecial([1])) // true
 // Explanation: There is only one element. So the answer is true.
 console.log(isArraySpecial([2, 1, 4])) // true
 // Explanation: There is only two pairs: (2,1) and (1,4), and both of them contain numbers with different parity. So the answer is true.
 console.log(isArraySpecial([4, 3, 1, 6])) // false
+
+// 2
+console.log(isArraySpecial2([1])) // true
+console.log(isArraySpecial2([2, 1, 4])) // true
+console.log(isArraySpecial2([4, 3, 1, 6])) // false
