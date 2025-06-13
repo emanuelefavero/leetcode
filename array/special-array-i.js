@@ -4,6 +4,12 @@
 
 // You are given an array of integers nums. Return true if nums is a special array, otherwise, return false.
 
+/**
+ * @param {number[]} nums
+ * @returns {boolean}
+ */
+
+// O(n) time | O(1) space
 function isArraySpecial(nums) {
   if (nums.length === 1) return true
 
