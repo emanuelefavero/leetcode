@@ -362,6 +362,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Strictly Palindromic Number](./math//strictly-palindromic-number.js)
 - [Count Symmetric Integers](./math/count-symmetric-integers.js)
 - [Find Closest Person](./math/find-closest-person.js)
+- [Smallest Index With Digit Sum Equal to Index](./math/smallest-index-with-digit-sum.js)
 
 ### Matrix
 
