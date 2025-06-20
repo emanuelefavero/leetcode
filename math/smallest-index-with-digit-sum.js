@@ -7,25 +7,20 @@
 // If no such index exists, return -1.
 
 function smallestIndex(nums) {
-  let result = []
-
   for (let i = 0; i < nums.length; i++) {
     let digits = nums[i].toString().split('')
     let sum = digits.reduce((acc, digit) => acc + Number(digit), 0)
 
-    if (sum === i) result.push(sum)
+    if (sum === i) return sum
   }
 
-  if (!result.length) return -1
-
-  result.sort((a, b) => a - b)
-
-  return result[0]
+  return -1
 }
 
 // -------------------------
 // TESTS
 
+// 1
 console.log(smallestIndex([1, 3, 2])) // 2
 // Explanation: For nums[2] = 2, the sum of digits is 2, which is equal to index i = 2. Thus, the output is 2.
 console.log(smallestIndex([1, 10, 11])) // 1
