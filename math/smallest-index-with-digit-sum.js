@@ -6,6 +6,12 @@
 
 // If no such index exists, return -1.
 
+/**
+ * @param {number[]} nums
+ * @returns {number}
+ */
+
+// O(n * m) time | O(1) space, where n is the length of nums and m is the maximum number of digits in any number in nums
 function smallestIndex(nums) {
   for (let i = 0; i < nums.length; i++) {
     let digits = nums[i].toString().split('')
