@@ -14,6 +14,12 @@ For example, performing the operation on "c" generates "cd" and performing the o
 Return the value of the kth character in word, after enough operations have been done for word to have at least k characters.
 */
 
+/**
+ * @param {number} k
+ * @returns {string}
+ */
+
+// O(k) time | O(k) space, where k is the input number
 function kthCharacter(k) {
   let alphabet = 'abcdefghijklmnopqrstuvwxyz'
   let word = 'a'
