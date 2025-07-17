@@ -39,6 +39,27 @@ function kthCharacter(k) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: This solution uses fromCharCode and charCodeAt to manipulate characters
+
+function kthCharacter2(k) {
+  let word = 'a'
+
+  while (word.length < k) {
+    let newWord = ''
+    for (let i = 0; i < word.length; i++) {
+      let charCode = word.charCodeAt(i)
+      newWord += String.fromCharCode(charCode + 1 > 122 ? 97 : charCode + 1)
+    }
+
+    word += newWord
+  }
+
+  return word[k - 1]
+}
+
+// -------------------------
 // TESTS
 
 console.log(kthCharacter(5)) // "b"
@@ -50,3 +71,6 @@ Generated string is "bc", word becomes "abbc".
 Generated string is "bccd", word becomes "abbcbccd".
 */
 console.log(kthCharacter(10)) // "c"
+
+console.log(kthCharacter2(5)) // "b"
+console.log(kthCharacter2(10)) // "c"
