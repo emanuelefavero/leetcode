@@ -363,6 +363,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Count Symmetric Integers](./math/count-symmetric-integers.js)
 - [Find Closest Person](./math/find-closest-person.js)
 - [Smallest Index With Digit Sum Equal to Index](./math/smallest-index-with-digit-sum.js)
+- [Find the K-th Character in String Game I](./math/find-the-k-th-character-in-string-game-i.js)
 
 ### Matrix
 
