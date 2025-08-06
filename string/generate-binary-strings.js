@@ -17,22 +17,6 @@ Return all valid strings with length n, in any order.
 
 // O(2^n) time | O(n) space
 function validStrings(n) {
-  if (n === 1) return ['0', '1']
-
-  let result = []
-
-  for (let s of validStrings(n - 1)) {
-    result.push(`1${s}`)
-    if (s[0] === '1') result.push(`0${s}`)
-  }
-
-  return result
-}
-
-// -------------------------
-// SOLUTION 2
-
-function validStrings2(n) {
   const result = []
 
   const generate = (s) => {
@@ -55,6 +39,22 @@ function validStrings2(n) {
   }
 
   generate('')
+
+  return result
+}
+
+// -------------------------
+// SOLUTION 2
+
+function validStrings2(n) {
+  if (n === 1) return ['0', '1']
+
+  let result = []
+
+  for (let s of validStrings(n - 1)) {
+    result.push(`1${s}`)
+    if (s[0] === '1') result.push(`0${s}`)
+  }
 
   return result
 }
