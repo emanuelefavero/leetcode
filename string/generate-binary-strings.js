@@ -1,6 +1,8 @@
 // * Generate Binary Strings Without Adjacent Zeros
 
 /*
+? Difficulty: Medium
+
 You are given a positive integer n.
 
 A binary string x is valid if all substrings of x of length 2 contain at least one "1".
@@ -8,6 +10,12 @@ A binary string x is valid if all substrings of x of length 2 contain at least o
 Return all valid strings with length n, in any order.
 */
 
+/**
+ * @param {number} n
+ * @returns {string[]}
+ */
+
+// O(2^n) time | O(n) space
 function validStrings(n) {
   if (n === 1) return ['0', '1']
 
