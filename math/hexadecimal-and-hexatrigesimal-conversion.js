@@ -18,6 +18,27 @@ function concatHex36(n) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: One liner solution
+
+function concatHex362(n) {
+  return ((n ** 2).toString(16) + (n ** 3).toString(36)).toUpperCase()
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(concatHex36(13)) // "A91P1"
+/*
+Explanation:
+
+n2 = 13 * 13 = 169. In hexadecimal, it converts to (10 * 16) + 9 = 169, which corresponds to "A9".
+n3 = 13 * 13 * 13 = 2197. In hexatrigesimal, it converts to (1 * 362) + (25 * 36) + 1 = 2197, which corresponds to "1P1".
+
+Concatenating both results gives "A9" + "1P1" = "A91P1".
+*/
+
+// 2
+console.log(concatHex362(13)) // "A91P1"
