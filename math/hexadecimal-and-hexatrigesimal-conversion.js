@@ -10,6 +10,12 @@ A hexadecimal number is defined as a base-16 numeral system that uses the digits
 A hexatrigesimal number is defined as a base-36 numeral system that uses the digits 0 – 9 and the uppercase letters A - Z to represent values from 0 to 35.
 */
 
+/**
+ * @param {number} n
+ * @returns {string}
+ */
+
+// O(log n) time | O(1) space
 function concatHex36(n) {
   const hex = (n ** 2).toString(16)
   const hex36 = (n ** 3).toString(36)
