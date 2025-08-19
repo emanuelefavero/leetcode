@@ -11,6 +11,12 @@ You need to divide nums into n pairs such that:
 Return true if nums can be divided into n pairs, otherwise return false.
 */
 
+/**
+ * @param {number} nums
+ * @returns {boolean}
+ */
+
+// O(n) time | O(n) space
 function divideArray(nums) {
   let map = new Map()
 
