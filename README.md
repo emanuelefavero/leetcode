@@ -122,7 +122,6 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Find Indices of Stable Mountains](./array/find-indices-of-stable-mountains.js)
 - [Minimum Cost to Reach Every Position](./array/minimum-cost-to-reach-every-position.js)
 - [Special Array I](./array/special-array-i.js)
-- [Divide Array Into Equal Pairs](./array/divide-array-into-equal-pairs.js)
 
 ### Binary Search
 
@@ -300,6 +299,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Uncommon Words from Two Sentences](./hash-table/uncommon-words-from-two-sentences.js)
 - [Find the Prefix Common Array of Two Arrays](./hash-table/find-the-prefix-common-array.js)
 - [Merge Two 2D Arrays by Summing Values](./hash-table/merge-two-2d-arrays.js)
+- [Divide Array Into Equal Pairs](./hash-table/divide-array-into-equal-pairs.js)
 
 ### Heap
 
