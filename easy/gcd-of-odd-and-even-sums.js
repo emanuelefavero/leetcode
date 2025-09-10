@@ -10,6 +10,12 @@ You are given an integer n. Your task is to compute the GCD (greatest common div
 Return the GCD of sumOdd and sumEven.
 */
 
+/**
+ * @param {number} n
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function gcdOfOddEvenSums(n) {
   let sumOdd = 0
   let sumEven = 0
@@ -33,6 +39,7 @@ function gcd(a, b) {
 
 // TIP: We can simplify the problem by simply multiplying n by n and n by (n + 1) respectively to find the sums directly
 
+// O(log(n)) time | O(1) space
 function gcdOfOddEvenSums2(n) {
   let odd = n * n
   let even = n * (n + 1)
