@@ -230,6 +230,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Array Prototype Last](./easy/array-prototype-last.js)
 - [Calculator with Method Chaining](./easy/calculator-with-method-chaining.js)
 - [Find Most Frequent Vowel and Consonant](./easy/find-most-frequent-vowel-and-consonant.js)
+- [GCD of Odd and Even Sums](./easy/gcd-of-odd-and-even-sums.js)
 
 ### Graph
 
