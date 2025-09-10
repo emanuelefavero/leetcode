@@ -29,7 +29,24 @@ function gcd(a, b) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: We can simplify the problem by simply multiplying n by n and n by (n + 1) respectively to find the sums directly
+
+function gcdOfOddEvenSums2(n) {
+  let odd = n * n
+  let even = n * (n + 1)
+
+  return gcd(odd, even)
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(gcdOfOddEvenSums(4)) // 4
 console.log(gcdOfOddEvenSums(5)) // 5
+
+// 2
+console.log(gcdOfOddEvenSums2(4)) // 4
+console.log(gcdOfOddEvenSums2(5)) // 5
