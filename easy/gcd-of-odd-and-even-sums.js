@@ -19,10 +19,13 @@ function gcdOfOddEvenSums(n) {
     else sumOdd += i
   }
 
-  // Find greatest common divisor with Euclidean algorithm
-  const gcd = (a, b) => (b === 0 ? a : gcd(b, a % b))
-
   return gcd(sumOdd, sumEven)
+}
+
+// Find greatest common divisor with Euclidean algorithm
+function gcd(a, b) {
+  if (b == 0) return a
+  else return gcd(b, a % b)
 }
 
 // -------------------------
