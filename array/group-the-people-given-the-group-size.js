@@ -10,6 +10,12 @@ Return a list of groups such that each person i is in a group of size groupSizes
 Each person should appear in exactly one group, and every person must be in a group. If there are multiple answers, return any of them. It is guaranteed that there will be at least one valid solution for the given input.
 */
 
+/**
+ * @param {number[]} groupSizes
+ * @returns {number[][]}
+ */
+
+// O(n) time | O(n) space
 function groupThePeople(groupSizes) {
   const map = new Map()
 
