@@ -388,6 +388,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Join Two Arrays by ID](./medium/join-two-arrays-by-id.js)
 - [Execute Asynchronous Functions in Parallel](./medium/execute-async-functions-in-parallel.js)
 - [Debounce](./medium/debounce.js)
+- [Flatten Deeply Nested Array](./medium/flatten-deeply-nested-array.js)
 
 ### Queue
 
