@@ -14,6 +14,13 @@ Please solve it without the built-in Array.flat method.
 
 // TIP: We can use recursion to solve this problem. Recursively flatten each sub-array until we reach the specified depth n
 
+/**
+ * @param {Array} arr
+ * @param {number} n
+ * @returns {Array}
+ */
+
+// O(m * n) time | O(m * n) space - m = number of elements in arr, n = depth
 function flat(arr, n) {
   if (n === 0) return arr
   let result = []
