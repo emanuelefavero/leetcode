@@ -9,7 +9,7 @@ Given a string text of words separated by a single space (no leading or trailing
 function canBeTypedWords(text, brokenLetters) {
   let set = new Set([...brokenLetters])
   let words = text.split(' ')
-  let count = 0
+  let length = 0
 
   for (let word of words) {
     let hasBrokenLetter = false
@@ -21,15 +21,51 @@ function canBeTypedWords(text, brokenLetters) {
       }
     }
 
-    if (!hasBrokenLetter) count++
+    if (!hasBrokenLetter) length++
   }
 
-  return count
+  return length
+}
+
+// -----------------------------
+// SOLUTION 2
+
+// TIP: This solution uses an hash-table instead of a set and counts the total number of words and then subtracts the words that contain broken letters
+
+function canBeTypedWords2(text, brokenLetters) {
+  let map = {}
+  for (let char of brokenLetters) {
+    map[char] = true
+  }
+
+  let words = text.split(' ')
+  let length = words.length
+
+  for (let word of words) {
+    let hasBrokenLetter = false
+
+    for (let char of word) {
+      if (map[char] === true) {
+        hasBrokenLetter = true
+        break
+      }
+    }
+
+    if (hasBrokenLetter) length--
+  }
+
+  return length
 }
 
 // -----------------------------
 // TESTS
 
+// 1
 console.log(canBeTypedWords('hello world', 'ad')) // 1
 console.log(canBeTypedWords('leet code', 'lt')) // 1
 console.log(canBeTypedWords('leet code', 'e')) // 0
+
+// 2
+console.log(canBeTypedWords2('hello world', 'ad')) // 1
+console.log(canBeTypedWords2('leet code', 'lt')) // 1
+console.log(canBeTypedWords2('leet code', 'e')) // 0
