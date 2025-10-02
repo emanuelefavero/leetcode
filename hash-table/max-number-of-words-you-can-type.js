@@ -6,6 +6,13 @@ There is a malfunctioning keyboard where some letter keys do not work. All other
 Given a string text of words separated by a single space (no leading or trailing spaces) and a string brokenLetters of all distinct letter keys that are broken, return the number of words in text you can fully type using this keyboard.
 */
 
+/**
+ * @param {string} text
+ * @param {string} brokenLetters
+ * @returns {number}
+ */
+
+// O(n * m) time | O(k) space - where n is the number of words in text, m is the average length of each word, and k is the length of brokenLetters
 function canBeTypedWords(text, brokenLetters) {
   let set = new Set([...brokenLetters])
   let words = text.split(' ')
