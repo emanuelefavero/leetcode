@@ -8,6 +8,12 @@ Each [si, ti] in tasks represents a task with start time si that takes ti units 
 Return the earliest time at which at least one task is finished.
 */
 
+/**
+ * @param {number[][]} tasks
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function earliestTime(tasks) {
   let min = Infinity
 
@@ -24,6 +30,7 @@ function earliestTime(tasks) {
 
 // TIP: THis solution works but it is slightly less efficient
 
+// O(n) time | O(n) space
 function earliestTime2(tasks) {
   let sums = []
 
