@@ -122,6 +122,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Find Indices of Stable Mountains](./array/find-indices-of-stable-mountains.js)
 - [Minimum Cost to Reach Every Position](./array/minimum-cost-to-reach-every-position.js)
 - [Special Array I](./array/special-array-i.js)
+- [Earliest Time to Finish One Task](./array/earliest-time-to-finish-one-task.js)
 
 ### Binary Search
 
