@@ -20,8 +20,25 @@ function earliestTime(tasks) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: THis solution works but it is slightly less efficient
+
+function earliestTime2(tasks) {
+  let sums = []
+
+  for (const task of tasks) {
+    let sum = task[0] + task[1]
+    sums.push(sum)
+  }
+
+  return Math.min(...sums)
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(
   earliestTime([
     [1, 6],
@@ -41,3 +58,18 @@ console.log(
 /* Explanation:
 All three tasks finish at time 100 + 100 = 200.
 */
+
+// 2
+console.log(
+  earliestTime([
+    [1, 6],
+    [2, 3],
+  ])
+) // 5
+console.log(
+  earliestTime([
+    [100, 100],
+    [100, 100],
+    [100, 100],
+  ])
+) // 200
