@@ -304,6 +304,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Divide Array Into Equal Pairs](./hash-table/divide-array-into-equal-pairs.js)
 - [Group the People Given the Group Size They Belong To](./hash-table//group-the-people-given-the-group-size.js)
 - [Maximum Number of Words You Can Type](./hash-table/max-number-of-words-you-can-type.js)
+- [Restore Finishing Order](./hash-table/restore-finishing-order.js)
 
 ### Heap
 
