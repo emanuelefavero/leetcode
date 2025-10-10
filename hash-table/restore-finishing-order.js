@@ -9,6 +9,13 @@ You are given an integer array order of length n and an integer array friends.
 Return an array containing your friends' IDs in their finishing order.
 */
 
+/**
+ * @param {number[]} order
+ * @param {number[]} friends
+ * @returns {number[]}
+ */
+
+// O(n) time | O(n) space
 function recoverOrder(order, friends) {
   const result = []
   const length = friends.length
