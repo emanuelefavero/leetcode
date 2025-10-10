@@ -32,7 +32,7 @@ function recoverOrder(order, friends) {
 // -----------------------------
 // SOLUTION 2
 
-// TIP: We can also solve the problem with nested loops, but it would be less efficient (although in this case is fine since the constraints are small)
+// TIP: We can also solve the problem with nested loops, since the constraints are small
 
 // O(n^2) time | O(1) space
 function recoverOrder2(order, friends) {
