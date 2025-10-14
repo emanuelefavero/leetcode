@@ -8,6 +8,12 @@ The alternating sum of nums is the value obtained by adding elements at even ind
 Return an integer denoting the alternating sum of nums.
 */
 
+/**
+ * @param {number[]} nums
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function alternatingSum(nums) {
   let altSum = 0
 
