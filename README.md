@@ -123,6 +123,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Minimum Cost to Reach Every Position](./array/minimum-cost-to-reach-every-position.js)
 - [Special Array I](./array/special-array-i.js)
 - [Earliest Time to Finish One Task](./array/earliest-time-to-finish-one-task.js)
+- [Compute Alternating Sum](./array/compute-alternating-sum.js)
 
 ### Binary Search
 
