@@ -28,11 +28,24 @@ function alternatingSum(nums) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: This solution uses the built-in reduce method
+
+function alternatingSum2(nums) {
+  return nums.reduce((acc, val, i) => (i % 2 === 0 ? acc + val : acc - val))
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(alternatingSum([1, 3, 5, 7])) // -4
 /* Explanation:
 Elements at even indices are nums[0] = 1 and nums[2] = 5 because 0 and 2 are even numbers.
 Elements at odd indices are nums[1] = 3 and nums[3] = 7 because 1 and 3 are odd numbers.
 The alternating sum is nums[0] - nums[1] + nums[2] - nums[3] = 1 - 3 + 5 - 7 = -4.
 */
+
+// 2
+console.log(alternatingSum2([1, 3, 5, 7])) // -4
