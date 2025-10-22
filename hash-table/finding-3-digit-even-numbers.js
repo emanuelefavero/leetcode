@@ -14,22 +14,34 @@ For example, if the given digits were [1, 2, 3], integers 132 and 312 follow the
 Return a sorted array of the unique integers.
 */
 
+/**
+ * @param {number[]} digits
+ * @returns {number[]}
+ */
+
+// O(n^3) time | O(n) space
 function findEvenNumbers(digits) {
   const seen = new Set()
   const result = []
 
+  // Loop through all possible combinations of 3 digits
   for (let i = 0; i < digits.length; i++) {
     if (digits[i] === 0) continue
 
     for (let j = 0; j < digits.length; j++) {
-      if (i === j) continue
+      if (i === j) continue // The first and second digits must be different
 
       for (let k = 0; k < digits.length; k++) {
+        // The last digit must be different from the first two and even
         if (digits[k] % 2 || k === i || k === j) continue
 
+        // Form the 3-digit number
         const digit = digits[i] * 100 + digits[j] * 10 + digits[k]
+
+        // Check for uniqueness
         if (seen.has(digit)) continue
 
+        // Add to seen set and result array
         seen.add(digit)
         result.push(digit)
       }
