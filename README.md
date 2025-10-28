@@ -166,6 +166,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Maximum Strong Pair XOR I](./bit-manipulation/maximum-strong-pair-xor-i.js)
 - [Find The Original Array of Prefix Xor](./bit-manipulation/find-the-original-array-of-prefix-xor.js)
 - [Count Number of Maximum Bitwise-OR Subsets](./bit-manipulation/count-number-of-max-bitwise-or-subsets.js)
+- [Bitwise OR of Even Numbers in an Array](./bit-manipulation/bitwise-or-of-even-numbers-in-an-array.js)
 
 ### Breadth First Search
 
