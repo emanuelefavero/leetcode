@@ -6,6 +6,12 @@
 
 // If there are no even numbers in nums, return 0.
 
+/**
+ * @param {number[]} nums
+ * @returns {number}
+ */
+
+// O(n) time | O(1) space
 function evenNumberBitwiseORs(nums) {
   let result = 0
 
