@@ -54,10 +54,12 @@ function numberOfBeams(bank) {
 // -------------------------
 // SOLUTION 2
 
+// TIP: We can filter out the floors with no devices first, then just sum the number of beams between each pair of consecutive floors with devices
+
 function numberOfBeams2(bank) {
   const nums = []
 
-  // Count the number of devices on each floor
+  // Loop through each floor and each cell to count the number of devices on each floor
   for (let i = 0; i < bank.length; i++) {
     let count = 0
     for (let j = 0; j < bank[i].length; j++) {
@@ -73,6 +75,32 @@ function numberOfBeams2(bank) {
   let sum = 0
   for (let i = 0; i < filtered.length - 1; i++) {
     sum += filtered[i] * filtered[i + 1]
+  }
+
+  return sum
+}
+
+// -------------------------
+// SOLUTION 2
+
+// TIP: We can also keep track of the number of devices on the previous floor with devices while iterating through the bank
+
+function numberOfBeams3(bank) {
+  let sum = 0
+  let prev = 0
+
+  for (const floor of bank) {
+    let count = 0
+
+    for (const cell of floor) {
+      if (cell === '1') count++
+    }
+
+    // If there are devices on the current floor, calculate the number of beams with the previous floor and update prev
+    if (count > 0) {
+      sum += prev * count
+      prev = count
+    }
   }
 
   return sum
@@ -102,3 +130,7 @@ console.log(numberOfBeams(['000', '111', '000'])) // 0
 // 2
 console.log(numberOfBeams2(['011001', '000000', '010100', '001000'])) // 8
 console.log(numberOfBeams2(['000', '111', '000'])) // 0
+
+// 3
+console.log(numberOfBeams3(['011001', '000000', '010100', '001000'])) // 8
+console.log(numberOfBeams3(['000', '111', '000'])) // 0
