@@ -15,6 +15,12 @@ Laser beams are independent, i.e., one beam does not interfere nor join with ano
 Return the total number of laser beams in the bank.
 */
 
+/**
+ * @param {string[]} bank
+ * @returns {number}
+ */
+
+// O(m * n) time | O(m) space
 function numberOfBeams(bank) {
   const devices = []
 
