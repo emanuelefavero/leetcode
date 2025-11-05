@@ -9,6 +9,12 @@ Note:
 - A subtree of root is a tree consisting of root and all of its descendants.
 */
 
+/**
+ * @param {TreeNode} root
+ * @returns {number}
+ */
+
+// O(n) time | O(h) space where n is the number of nodes and h is the height of the tree
 function averageOfSubtree(root) {
   let result = 0
 
@@ -39,6 +45,12 @@ function averageOfSubtree(root) {
 // TESTS
 
 class TreeNode {
+  /**
+   * @param {number} val
+   * @param {TreeNode|null} left
+   * @param {TreeNode|null} right
+   */
+
   constructor(val, left, right) {
     this.val = val || 0
     this.left = left || null
