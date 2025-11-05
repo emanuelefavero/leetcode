@@ -549,6 +549,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Minimum Depth of Binary Tree](./tree/minimum-depth-of-binary-tree.js)
 - [Evaluate Boolean Binary Tree](./tree/evaluate-boolean-binary-tree.js)
 - [Binary Search Tree to Greater Sum Tree](./tree/binary-search-tree-to-greater-sum-tree.js)
+- [Count Nodes Equal to Average of Subtree](./tree/count-nodes-equal-to-average-of-subtree.js)
 
 ### Trie
 
