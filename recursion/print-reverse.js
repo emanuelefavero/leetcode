@@ -44,7 +44,7 @@ function printReverse2(string, index = 0, output = '') {
 function printReverse3(string) {
   let output = ''
 
-  for (let i = string.length; i <= 0; i--) {
+  for (let i = string.length - 1; i >= 0; i--) {
     output += string[i]
   }
 
@@ -63,5 +63,5 @@ console.log(printReverse2('Hello')) // olleH
 console.log(printReverse2('')) // ''
 
 // 3
-// console.log(printReverse3('Hello')) // olleH
-// console.log(printReverse3('')) // ''
+console.log(printReverse3('Hello')) // olleH
+console.log(printReverse3('')) // ''
