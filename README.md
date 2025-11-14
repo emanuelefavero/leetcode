@@ -10,6 +10,37 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 
 > Note: Contributions and feedback are welcome!
 
+## How to Run
+
+- Clone the repository and `cd` into it:
+
+  ```bash
+  git clone https://github.com/emanuelefavero/leetcode.git
+  cd leetcode
+  ```
+
+- Run a specific solution file using Node.js. For example, to run the `two-sum.js` solution:
+
+  ```bash
+  npm start array/two-sum.js
+  ```
+
+- Run automatically on save:
+
+  > Note: Install nodemon if you haven't: `npm install -g nodemon`
+
+  ```bash
+  npm run dev array/two-sum.js
+  ```
+
+## Run all files and get a report
+
+The following script will run all solution files and generate a report of their outputs. If any file throws an error, it will be captured in the report.
+
+```bash
+./run-all.sh
+```
+
 ## Contents
 
 ### 2D Array
