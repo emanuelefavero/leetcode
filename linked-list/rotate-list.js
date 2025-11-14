@@ -71,6 +71,5 @@ head.next.next = new ListNode(3)
 head.next.next.next = new ListNode(4)
 head.next.next.next.next = new ListNode(5)
 
-k = 2
-
+const k = 2
 console.log(rotateRight(head, k)) // [4,5,1,2,3]
