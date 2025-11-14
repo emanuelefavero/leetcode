@@ -20,8 +20,8 @@ Note that shift(c, x) is not a preloaded function, but an operation to be implem
  */
 
 function shift(c, x) {
-  let alphabet = 'abcdefghijklmnopqrstuvwxyz'
-  let index = alphabet.indexOf(c)
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz'
+  const index = alphabet.indexOf(c)
 
   return alphabet[(index + x) % 26]
 }
@@ -47,8 +47,8 @@ function shift2(c, x) {
 // O(n) time | O(1) space
 function replaceDigits2(s) {
   for (let i = 1; i < s.length; i += 2) {
-    let c = s[i - 1]
-    let x = parseInt(s[i])
+    const c = s[i - 1]
+    const x = parseInt(s[i])
 
     s = s.slice(0, i) + shift2(c, x) + s.slice(i + 1)
   }

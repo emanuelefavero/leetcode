@@ -46,8 +46,8 @@ class DisjointSet {
 
   // O(n) time | O(1) space
   union(x, y) {
-    let xRoot = this.find(x)
-    let yRoot = this.find(y)
+    const xRoot = this.find(x)
+    const yRoot = this.find(y)
 
     this.parent[xRoot] = yRoot
 
@@ -71,7 +71,7 @@ class DisjointSet {
 // -----------------------------
 // TESTS
 
-let disjointSet = new DisjointSet()
+const disjointSet = new DisjointSet()
 
 disjointSet.makeSet(1)
 disjointSet.makeSet(2)

@@ -21,7 +21,7 @@ Return the original array arr. It can be proved that the answer exists and is un
 
 // O(n) time | O(n) space
 function decode(encoded, first) {
-  let result = [first]
+  const result = [first]
 
   for (let i = 0; i < encoded.length; i++) {
     result.push(encoded[i] ^ result[i])

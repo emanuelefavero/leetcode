@@ -26,7 +26,7 @@ function mySqrt2(x) {
   let right = x
 
   while (left <= right) {
-    let middle = Math.floor((left + right) / 2)
+    const middle = Math.floor((left + right) / 2)
 
     // Check if middle is the square root
     if (middle * middle <= x && (middle + 1) * (middle + 1) > x) {

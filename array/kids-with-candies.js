@@ -16,8 +16,8 @@ Note that multiple kids can have the greatest number of candies.
 
 // O(n) time | O(1) space
 function kidsWithCandies(candies, extraCandies) {
-  let max = Math.max(...candies)
-  let result = []
+  const max = Math.max(...candies)
+  const result = []
 
   for (let i = 0; i < candies.length; i++) {
     if (candies[i] + extraCandies >= max) {

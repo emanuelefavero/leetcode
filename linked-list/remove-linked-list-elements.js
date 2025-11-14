@@ -18,7 +18,7 @@ class ListNode {
  */
 
 function removeElements(head, val) {
-  let dummy = new ListNode(0)
+  const dummy = new ListNode(0)
   dummy.next = head
   let current = dummy
 
@@ -72,7 +72,7 @@ function removeElements3(head, val) {
 // -----------------------------
 // TEST
 
-let head = new ListNode(1)
+const head = new ListNode(1)
 head.next = new ListNode(2)
 head.next.next = new ListNode(6)
 head.next.next.next = new ListNode(3)

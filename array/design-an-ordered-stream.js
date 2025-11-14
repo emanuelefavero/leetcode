@@ -29,7 +29,7 @@ class OrderedStream {
 
   // O(n) time | O(n) space
   insert(idKey, value) {
-    let chunk = []
+    const chunk = []
     this.list[idKey - 1] = value // idKey is 1-based, so we need to subtract 1
 
     while (this.list[this.pointer]) {

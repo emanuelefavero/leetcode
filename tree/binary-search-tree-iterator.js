@@ -69,11 +69,11 @@ class BSTIterator {
 // -----------------------------
 // TESTS
 
-let root = new TreeNode(2)
+const root = new TreeNode(2)
 root.left = new TreeNode(1)
 root.right = new TreeNode(3)
 
-let obj = new BSTIterator(root)
+const obj = new BSTIterator(root)
 
 console.log(obj.next()) // 1
 console.log(obj.next()) // 2

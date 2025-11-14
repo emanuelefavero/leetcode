@@ -11,9 +11,9 @@
 
 // O(n) time | O(n) space
 function lengthOfLastWord(s) {
-  let trimmedString = s.trim()
-  let arrayOfStrings = trimmedString.split(' ')
-  let lastWord = arrayOfStrings.pop()
+  const trimmedString = s.trim()
+  const arrayOfStrings = trimmedString.split(' ')
+  const lastWord = arrayOfStrings.pop()
   return lastWord.length
 }
 

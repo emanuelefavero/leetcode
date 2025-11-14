@@ -33,7 +33,7 @@ class Node {
 function postorder(root, result = []) {
   if (!root) return result
 
-  for (let child of root.children) {
+  for (const child of root.children) {
     postorder(child, result)
   }
 
@@ -49,11 +49,11 @@ function postorder(root, result = []) {
 
 // O(n) time | O(n) space
 function postorder2(root) {
-  let result = []
-  let stack = [root]
+  const result = []
+  const stack = [root]
 
   while (stack.length) {
-    let current = stack.pop()
+    const current = stack.pop()
     if (!current) continue // we need this to avoid pushing null values into the result array
     result.push(current.val)
     stack.push(...current.children) // we use the spread operator (...) to push all the children of the current node into the stack
@@ -65,7 +65,7 @@ function postorder2(root) {
 // -----------------------------
 // TESTS
 
-let root = new Node(1)
+const root = new Node(1)
 root.children = [new Node(3), new Node(2), new Node(4)]
 root.children[0].children = [new Node(5), new Node(6)]
 root.children[1].children = [new Node(7)]

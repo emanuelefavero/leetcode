@@ -9,7 +9,7 @@
 
 // O(n) time | O(n) space
 function sumZero(n) {
-  let result = []
+  const result = []
 
   // If n is odd, add 0 to the result array
   if (n % 2 !== 0) result.push(0)

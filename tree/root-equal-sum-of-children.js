@@ -13,8 +13,8 @@ class TreeNode {
   }
 }
 
-let root = new TreeNode(10, new TreeNode(4), new TreeNode(6))
-let root2 = new TreeNode(10, new TreeNode(3), new TreeNode(2))
+const root = new TreeNode(10, new TreeNode(4), new TreeNode(6))
+const root2 = new TreeNode(10, new TreeNode(3), new TreeNode(2))
 
 /**
  * You are given the root of a binary tree that consists of exactly 3 nodes: the root, its left child, and its right child.

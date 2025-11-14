@@ -12,8 +12,8 @@
 
 // O(n log n) time | O(n) space
 function thirdMax(nums) {
-  let set = new Set(nums) // remove duplicates
-  let result = [...set] // convert set to array
+  const set = new Set(nums) // remove duplicates
+  const result = [...set] // convert set to array
   result.sort((a, b) => a - b) // sort result array
 
   // return third max if it exists, otherwise return max
@@ -32,7 +32,7 @@ function thirdMax2(nums) {
   let second = -Infinity
   let third = -Infinity
 
-  for (let num of nums) {
+  for (const num of nums) {
     if (num > first) {
       third = second
       second = first
@@ -76,7 +76,7 @@ function thirdMax3(nums) {
 // -------------------------
 // TESTS
 
-let nums = [3, 1, 2, 2, 4, 6, 5]
+const nums = [3, 1, 2, 2, 4, 6, 5]
 console.log(thirdMax(nums)) // 4
 console.log(thirdMax2(nums)) // 4
 console.log(thirdMax3(nums)) // 4

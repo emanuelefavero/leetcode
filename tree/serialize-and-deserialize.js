@@ -25,7 +25,7 @@ class TreeNode {
 
 // O(n) time | O(n) space - recursive approach
 function serialize(root) {
-  let data = []
+  const data = []
 
   function recurse(node) {
     if (!node) data.push(null)
@@ -50,10 +50,10 @@ function deserialize(data) {
   function recurse() {
     if (!data.length) return
 
-    let val = data.shift() // remove/get first element
+    const val = data.shift() // remove/get first element
     if (val === null) return null
 
-    let node = new TreeNode(val)
+    const node = new TreeNode(val)
     node.left = recurse()
     node.right = recurse()
     return node
@@ -78,7 +78,7 @@ function deserialize2(data) {
 // -----------------------------
 // TESTS
 
-let root = new TreeNode(1)
+const root = new TreeNode(1)
 root.left = new TreeNode(2)
 root.right = new TreeNode(3)
 root.right.left = new TreeNode(4)

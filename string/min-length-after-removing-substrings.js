@@ -31,9 +31,9 @@ function minLength(s) {
 
 // O(n) time | O(n) space
 function minLength2(s) {
-  let stack = []
+  const stack = []
 
-  for (let char of s) {
+  for (const char of s) {
     // Check if the last character in the stack is 'A' or 'C' and the current character is 'B' or 'D' respectively
     if (char === 'B' && stack[stack.length - 1] === 'A') stack.pop()
     else if (char === 'D' && stack[stack.length - 1] === 'C') stack.pop()

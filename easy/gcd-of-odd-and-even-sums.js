@@ -41,8 +41,8 @@ function gcd(a, b) {
 
 // O(log(n)) time | O(1) space
 function gcdOfOddEvenSums2(n) {
-  let odd = n * n
-  let even = n * (n + 1)
+  const odd = n * n
+  const even = n * (n + 1)
 
   return gcd(odd, even)
 }

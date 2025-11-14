@@ -25,7 +25,7 @@ function findDelayedArrivalTime(arrivalTime, delayedTime) {
 // TIP: This solution does not use the modulo operator
 
 function findDelayedArrivalTime2(arrivalTime, delayedTime) {
-  let result = arrivalTime + delayedTime
+  const result = arrivalTime + delayedTime
 
   if (result >= 24) return result - 24
   return result

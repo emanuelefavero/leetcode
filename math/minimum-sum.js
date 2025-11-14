@@ -19,8 +19,8 @@ Return the minimum possible sum of new1 and new2.
 function minimumSum(num) {
   num = num.toString().split('').sort() // num = ['2', '2', '3', '9']
 
-  let new1 = num[0] + num[2] // new1 = '23'
-  let new2 = num[1] + num[3] // new2 = '29'
+  const new1 = num[0] + num[2] // new1 = '23'
+  const new2 = num[1] + num[3] // new2 = '29'
 
   return parseInt(new1) + parseInt(new2)
 }

@@ -22,7 +22,7 @@ function reverse(string) {
 function reversePrefix(word, ch) {
   let right = 0
 
-  for (let char of word) {
+  for (const char of word) {
     if (char === ch) break
     right++
   }

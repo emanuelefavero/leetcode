@@ -14,7 +14,7 @@
 function binarySearch(nums, target, left = 0, right = nums.length - 1) {
   if (left > right) return -1 // BASE CASE
 
-  let middle = Math.floor((left + right) / 2)
+  const middle = Math.floor((left + right) / 2)
 
   if (nums[middle] === target) return middle
   else if (nums[middle] < target) {

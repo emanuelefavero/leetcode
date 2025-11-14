@@ -31,7 +31,7 @@ function findCenter2(edges) {
 // -------------------
 // TESTS
 
-let edges = [
+const edges = [
   [1, 2],
   [2, 3],
   [4, 2],

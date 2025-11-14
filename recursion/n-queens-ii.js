@@ -13,9 +13,9 @@
 
 // O(n!) time - O(n) space
 function totalNQueens(n) {
-  let occupiedColumns = new Set()
-  let positiveDiagonals = new Set()
-  let negativeDiagonals = new Set()
+  const occupiedColumns = new Set()
+  const positiveDiagonals = new Set()
+  const negativeDiagonals = new Set()
 
   let solutionCount = 0
 

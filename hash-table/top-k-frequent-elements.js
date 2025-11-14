@@ -8,17 +8,17 @@
 
 // O(n log n) time | O(n) space
 function topKFrequent(nums, k) {
-  let map = new Map()
-  let result = []
+  const map = new Map()
+  const result = []
 
   // loop through nums and add each element to map
-  for (let num of nums) {
+  for (const num of nums) {
     if (map.has(num)) map.set(num, map.get(num) + 1)
     else map.set(num, 1)
   }
 
   // convert map to sorted array
-  let sorted = [...map.entries()].sort((a, b) => b[1] - a[1])
+  const sorted = [...map.entries()].sort((a, b) => b[1] - a[1])
 
   // loop from 0 to k
   for (let i = 0; i < k; i++) {

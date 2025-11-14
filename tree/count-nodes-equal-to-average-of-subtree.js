@@ -58,7 +58,7 @@ class TreeNode {
   }
 }
 
-let root = new TreeNode(4)
+const root = new TreeNode(4)
 root.left = new TreeNode(8)
 root.right = new TreeNode(5)
 root.left.left = new TreeNode(0)

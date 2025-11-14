@@ -90,7 +90,7 @@ function numSquares3(n) {
   // TIP: db means dynamic programming
 
   // dp[i] represents the least number of perfect square numbers that sum to i
-  let dp = new Array(n + 1)
+  const dp = new Array(n + 1)
 
   // base case
   dp[0] = 0 // 0 is the sum of 0 perfect squares

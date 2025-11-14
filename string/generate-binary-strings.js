@@ -49,9 +49,9 @@ function validStrings(n) {
 function validStrings2(n) {
   if (n === 1) return ['0', '1']
 
-  let result = []
+  const result = []
 
-  for (let s of validStrings(n - 1)) {
+  for (const s of validStrings(n - 1)) {
     result.push(`1${s}`)
     if (s[0] === '1') result.push(`0${s}`)
   }

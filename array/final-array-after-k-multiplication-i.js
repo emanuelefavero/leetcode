@@ -20,7 +20,7 @@ Return an integer array denoting the final state of nums after performing all k 
 // O(k * n) time | O(1) space, where n is the length of nums and k is the number of operations
 function getFinalState(nums, k, multiplier) {
   while (k > 0) {
-    let min = Math.min(...nums) // find min value
+    const min = Math.min(...nums) // find min value
     nums[nums.indexOf(min)] *= multiplier // replace min value
     k--
   }
@@ -37,7 +37,7 @@ function getFinalState2(nums, k, multiplier) {
   while (k > 0) {
     // Find minimum value in nums
     let min = Infinity
-    for (let num of nums) {
+    for (const num of nums) {
       if (num < min) min = num
     }
 

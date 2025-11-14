@@ -27,11 +27,11 @@ function insertGreatestCommonDivisors(head) {
   let current = head
 
   while (current && current.next) {
-    let currentVal = current.val
-    let nextVal = current.next.val
+    const currentVal = current.val
+    const nextVal = current.next.val
 
     // Find the lower number between the two to have a smaller range to find the greatest common divisor
-    let lower = Math.min(currentVal, nextVal)
+    const lower = Math.min(currentVal, nextVal)
 
     // Find the greatest common divisor
     let gcd = lower
@@ -70,10 +70,10 @@ function insertGreatestCommonDivisors2(head) {
   let current = head
 
   while (current && current.next) {
-    let currentVal = current.val
-    let nextVal = current.next.val
+    const currentVal = current.val
+    const nextVal = current.next.val
 
-    let gcdVal = gcd(currentVal, nextVal)
+    const gcdVal = gcd(currentVal, nextVal)
 
     const newNode = new ListNode(gcdVal)
     newNode.next = current.next

@@ -20,9 +20,9 @@ Return the modified image after performing the flood fill.
 
 // O(n) time | O(n) space 
 function floodFill(image, sr, sc, color) {
-  let row = image.length
-  let column = image[0].length
-  let oldColor = image[sr][sc]
+  const row = image.length
+  const column = image[0].length
+  const oldColor = image[sr][sc]
 
   if (oldColor === color) return image // if the old color is the same as the new color, then we don't need to do anything
 
@@ -45,14 +45,14 @@ function floodFill(image, sr, sc, color) {
 // -------------------------
 // TESTS
 
-let image = [
+const image = [
   [1, 1, 1],
   [1, 1, 0],
   [1, 0, 1],
 ]
-let sr = 1 // starting row
-let sc = 1 // starting column
-let color = 2
+const sr = 1 // starting row
+const sc = 1 // starting column
+const color = 2
 
 console.log(floodFill(image, sr, sc, color))
 // [[2,2,2],[2,2,0],[2,0,1]]

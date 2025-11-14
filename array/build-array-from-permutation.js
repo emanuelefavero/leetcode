@@ -11,7 +11,7 @@
 
 // O(n) time | O(n) space
 function buildArray(nums) {
-  let result = []
+  const result = []
 
   for (let i = 0; i < nums.length; i++) {
     result.push(nums[nums[i]])

@@ -18,7 +18,7 @@ Return a list of the target indices of nums after sorting nums in non-decreasing
 function targetIndices(nums, target) {
   nums.sort((a, b) => a - b)
 
-  let result = []
+  const result = []
 
   for (let i = 0; i < nums.length; i++) {
     if (nums[i] === target) {
@@ -38,14 +38,14 @@ function targetIndices(nums, target) {
 function targetIndices2(nums, target) {
   nums.sort((a, b) => a - b) // sort
 
-  let result = []
+  const result = []
 
   // Binary search
   let left = 0
   let right = nums.length - 1
 
   while (left <= right) {
-    let middle = Math.floor((left + right) / 2)
+    const middle = Math.floor((left + right) / 2)
 
     if (target > nums[middle]) left = middle + 1
     else right = middle - 1

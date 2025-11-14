@@ -34,7 +34,7 @@ function countNegatives2(grid) {
     let right = grid[i].length - 1
 
     while (left <= right) {
-      let middle = Math.floor((left + right) / 2)
+      const middle = Math.floor((left + right) / 2)
 
       if (grid[i][middle] < 0) {
         right = middle - 1

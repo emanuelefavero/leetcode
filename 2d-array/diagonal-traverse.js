@@ -8,9 +8,9 @@
 
 // O(n) time | O(1) space
 function findDiagonalOrder(mat) {
-  let result = []
-  let rowLength = mat.length
-  let columnLength = mat[0].length
+  const result = []
+  const rowLength = mat.length
+  const columnLength = mat[0].length
   let row = 0
   let column = 0
   let direction = 1 // 1 for upward, -1 for downward
@@ -70,8 +70,8 @@ function findDiagonalOrder2(mat) {
   if (!mat.length) return []
 
   // variables to track the size of the matrix
-  let N = mat.length
-  let M = mat[0].length
+  const N = mat.length
+  const M = mat[0].length
 
   // the two arrays as explained in the algorithm
   let result = []
@@ -107,7 +107,7 @@ function findDiagonalOrder2(mat) {
 // -------------------------
 // TESTS
 
-let mat = [
+const mat = [
   [1, 2, 3],
   [4, 5, 6],
   [7, 8, 9],

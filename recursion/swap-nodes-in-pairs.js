@@ -24,11 +24,11 @@ class ListNode {
 function swapPairs(head) {
   if (!head || !head.next) return head
 
-  let first = head
-  let second = head.next
+  const first = head
+  const second = head.next
 
   // swap
-  let temp = first.val
+  const temp = first.val
   first.val = second.val
   second.val = temp
 
@@ -40,11 +40,11 @@ function swapPairs(head) {
 // -----------------------
 // TESTS
 
-let head = new ListNode(1)
+const head = new ListNode(1)
 head.next = new ListNode(2)
 head.next.next = new ListNode(3)
 head.next.next.next = new ListNode(4)
 console.log(swapPairs(head)) // 2 -> 1 -> 4 -> 3
 
-let head2 = new ListNode(1)
+const head2 = new ListNode(1)
 console.log(swapPairs(head2)) // 1

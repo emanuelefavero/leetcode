@@ -27,8 +27,8 @@ FALSE
 
 // O(n) time | O(n) space
 function isIsomorphic(s, t) {
-  let hashTable = new Map()
-  let hashTable2 = new Map()
+  const hashTable = new Map()
+  const hashTable2 = new Map()
 
   for (let i = 0; i < s.length; i++) {
     // fill the hash tables with the characters of the strings

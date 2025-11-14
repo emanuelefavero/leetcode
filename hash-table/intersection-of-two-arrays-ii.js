@@ -8,17 +8,17 @@
 
 // O(n) time | O(n) space
 function intersect(nums1, nums2) {
-  let map = new Map()
+  const map = new Map()
 
   // fill the map with the elements of nums1
-  for (let num of nums1) {
+  for (const num of nums1) {
     if (map.has(num)) map.set(num, map.get(num) + 1)
     else map.set(num, 1)
   }
 
   // loop through nums2 and check if the current element is in the map
-  let result = []
-  for (let num of nums2) {
+  const result = []
+  for (const num of nums2) {
     // if the current element is in the map and the value is greater than 0, add it to the result
     if (map.has(num) && map.get(num) > 0) {
       result.push(num)
@@ -36,7 +36,7 @@ function intersect(nums1, nums2) {
 
 // O(n^2) time | O(n) space
 function intersect2(nums1, nums2) {
-  let result = []
+  const result = []
 
   for (let i = 0; i < nums1.length; i++) {
     for (let j = 0; j < nums2.length; j++) {

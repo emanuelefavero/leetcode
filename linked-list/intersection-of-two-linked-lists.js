@@ -20,7 +20,7 @@ class ListNode {
  */
 
 function getIntersectionNode(headA, headB) {
-  let hash = new Set()
+  const hash = new Set()
 
   while (headA) {
     hash.add(headA)
@@ -60,13 +60,13 @@ function getIntersectionNode2(headA, headB) {
 // -----------------------------
 // TESTS
 
-let headA = new ListNode(4)
+const headA = new ListNode(4)
 headA.next = new ListNode(1)
 headA.next.next = new ListNode(8)
 headA.next.next.next = new ListNode(4)
 headA.next.next.next = new ListNode(5)
 
-let headB = new ListNode(5)
+const headB = new ListNode(5)
 headB.next = new ListNode(6)
 headB.next.next = new ListNode(1)
 headB.next.next.next = headA.next.next // intersection at node with val 8

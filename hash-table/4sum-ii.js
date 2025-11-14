@@ -13,21 +13,21 @@
 
 // O(n^2) time | O(n^2) space
 function fourSumCount(nums1, nums2, nums3, nums4) {
-  let map = new Map()
+  const map = new Map()
   let count = 0
 
-  for (let num1 of nums1) {
-    for (let num2 of nums2) {
-      let sum = num1 + num2
+  for (const num1 of nums1) {
+    for (const num2 of nums2) {
+      const sum = num1 + num2
 
       if (map.has(sum)) map.set(sum, map.get(sum) + 1)
       else map.set(sum, 1)
     }
   }
 
-  for (let num3 of nums3) {
-    for (let num4 of nums4) {
-      let sum = -(num3 + num4) // The minus sign is because we're looking for the negative of the sum
+  for (const num3 of nums3) {
+    for (const num4 of nums4) {
+      const sum = -(num3 + num4) // The minus sign is because we're looking for the negative of the sum
 
       if (map.has(sum)) count += map.get(sum)
     }

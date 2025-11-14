@@ -33,7 +33,7 @@ function maxDepth(root) {
 // -----------------------
 // TESTS
 
-let tree = new TreeNode(3)
+const tree = new TreeNode(3)
 tree.left = new TreeNode(9)
 tree.right = new TreeNode(20)
 tree.right.left = new TreeNode(15)

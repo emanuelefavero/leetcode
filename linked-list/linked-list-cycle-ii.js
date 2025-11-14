@@ -45,7 +45,7 @@ function detectCycle(head) {
 // TIP: This solution uses a set to keep track of nodes that have been visited.
 
 function detectCycle2(head) {
-  let hash = new Set()
+  const hash = new Set()
 
   while (head) {
     if (hash.has(head)) return head
@@ -60,7 +60,7 @@ function detectCycle2(head) {
 // -----------------------------
 // TESTS
 
-let head = new ListNode(1)
+const head = new ListNode(1)
 head.next = new ListNode(2)
 head.next.next = new ListNode(3)
 head.next.next.next = new ListNode(4)

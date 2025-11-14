@@ -19,19 +19,19 @@ Note: ret should be returned in ascending order by value.
 
 // O(n) time | O(n) space
 function mergeSimilarItems(items1, items2) {
-  let map = new Map()
+  const map = new Map()
 
   // Loop through both arrays and add the values to the map
-  for (let item of items1) {
+  for (const item of items1) {
     map.set(item[0], (map.get(item[0]) || 0) + item[1])
   }
-  for (let item of items2) {
+  for (const item of items2) {
     map.set(item[0], (map.get(item[0]) || 0) + item[1])
   }
 
   // Convert the map to an array
-  let result = []
-  for (let [key, value] of map) {
+  const result = []
+  for (const [key, value] of map) {
     result.push([key, value])
   }
 

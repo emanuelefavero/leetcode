@@ -42,7 +42,7 @@ class MyLinkedList {
    */
 
   addAtHead(val) {
-    let newNode = new Node(val)
+    const newNode = new Node(val)
 
     if (!this.head) {
       this.head = newNode
@@ -61,7 +61,7 @@ class MyLinkedList {
    */
 
   addAtTail(val) {
-    let newNode = new Node(val)
+    const newNode = new Node(val)
 
     if (!this.head) {
       this.head = newNode
@@ -101,7 +101,7 @@ class MyLinkedList {
       return
     }
 
-    let newNode = new Node(val)
+    const newNode = new Node(val)
     let current = this.head
 
     for (let i = 0; i < index - 1; i++) {
@@ -144,7 +144,7 @@ class MyLinkedList {
 // -------------------------
 // TESTS
 
-let obj = new MyLinkedList()
+const obj = new MyLinkedList()
 obj.addAtTail(2)
 obj.addAtTail(3)
 obj.addAtHead(1)

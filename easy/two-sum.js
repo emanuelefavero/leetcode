@@ -14,10 +14,10 @@
 
 // O(n)
 function twoSum(nums, target) {
-  let map = new Map()
+  const map = new Map()
 
   for (let i = 0; i < nums.length; i++) {
-    let difference = target - nums[i]
+    const difference = target - nums[i]
 
     if (map.has(difference)) return [map.get(difference), i]
 
@@ -30,10 +30,10 @@ function twoSum(nums, target) {
 
 // O(n)
 function twoSum2(nums, target) {
-  let map = {}
+  const map = {}
 
   for (let i = 0; i < nums.length; i++) {
-    let difference = target - nums[i]
+    const difference = target - nums[i]
 
     if (map[difference] !== undefined) return [map[difference], i]
 

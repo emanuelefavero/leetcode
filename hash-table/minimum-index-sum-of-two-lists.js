@@ -17,7 +17,7 @@ Return all the common strings with the least index sum. Return the answer in any
 // O(n^2) time | O(n) space - slower but easier to understand
 function findRestaurant(list1, list2) {
   let min = Infinity
-  let array = []
+  const array = []
 
   for (let i = 0; i < list1.length; i++) {
     for (let j = 0; j < list2.length; j++) {
@@ -40,7 +40,7 @@ function findRestaurant(list1, list2) {
 
 // O(n) time | O(n) space - faster and still readable although a bit more complex
 function findRestaurant2(list1, list2) {
-  let map = {}
+  const map = {}
 
   // fill the map with the elements of list1
   for (let i = 0; i < list1.length; i++) {
@@ -52,10 +52,10 @@ function findRestaurant2(list1, list2) {
 
   // loop through list2 and check if the current element is in the map
   for (let i = 0; i < list2.length; i++) {
-    let restaurant = list2[i]
+    const restaurant = list2[i]
 
     if (map[restaurant] !== undefined) {
-      let currentSum = map[restaurant] + i
+      const currentSum = map[restaurant] + i
 
       // if the current sum is smaller than the min sum, update the array and the min sum
       if (currentSum < minSum) {

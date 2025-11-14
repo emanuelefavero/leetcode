@@ -39,7 +39,7 @@ function sumRootToLeaf(root) {
     binaryNumber += node.val
 
     if (!node.left && !node.right) {
-      let number = parseInt(binaryNumber, 2) // convert binary to decimal
+      const number = parseInt(binaryNumber, 2) // convert binary to decimal
       sum += number
     }
 
@@ -58,7 +58,7 @@ function sumRootToLeaf(root) {
 // -------------------------
 // TESTS
 
-let root = new TreeNode(1)
+const root = new TreeNode(1)
 root.left = new TreeNode(0)
 root.left.left = new TreeNode(0)
 root.left.right = new TreeNode(1)

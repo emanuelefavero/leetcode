@@ -9,15 +9,15 @@
 
 // O(n) time | O(n) space
 function dailyTemperatures(temperatures) {
-  let stack = []
-  let result = new Array(temperatures.length).fill(0) // initialize the result array with the length of the temperatures array and fill it with 0s
+  const stack = []
+  const result = new Array(temperatures.length).fill(0) // initialize the result array with the length of the temperatures array and fill it with 0s
 
   for (let i = 0; i < temperatures.length; i++) {
     while (
       stack.length &&
       temperatures[i] > temperatures[stack[stack.length - 1]]
     ) {
-      let index = stack.pop() // get the index of the popped element
+      const index = stack.pop() // get the index of the popped element
       result[index] = i - index // calculate the difference between the indices
     }
 

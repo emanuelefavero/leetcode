@@ -18,7 +18,7 @@ function separateDigits(nums) {
   const answer = []
 
   for (const num of nums) {
-    let string = String(num)
+    const string = String(num)
 
     for (const char of string) {
       answer.push(parseInt(char))
@@ -34,7 +34,7 @@ function separateDigits(nums) {
 // TIP: This solution will not convert back the characters to integers but it will still pass the test cases on LeetCode
 
 function separateDigits2(nums) {
-  let answer = nums.join('').split('')
+  const answer = nums.join('').split('')
   return answer
 }
 

@@ -25,7 +25,7 @@ class MyStack {
       this.queue2.push(this.queue1.shift())
     }
 
-    let popped = this.queue1.shift()
+    const popped = this.queue1.shift()
 
     // swap queues - we need to do this because we need to keep the queue in the same state as it was before calling pop
     ;[this.queue1, this.queue2] = [this.queue2, this.queue1]
@@ -43,7 +43,7 @@ class MyStack {
     }
 
     // get the top element and push it to the other queue
-    let top = this.queue1[0]
+    const top = this.queue1[0]
     this.queue2.push(this.queue1.shift())
 
     // swap queues - we need to do this because we need to keep the queue in the same state as it was before calling top
@@ -96,7 +96,7 @@ class MyStack2 {
 // ------------------------
 // TESTS
 
-let stack = new MyStack()
+const stack = new MyStack()
 
 stack.push(1)
 stack.push(2)

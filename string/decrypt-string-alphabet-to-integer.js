@@ -18,7 +18,7 @@ The test cases are generated so that a unique mapping will always exist.
 
 // O(n) time | O(1) space
 function freqAlphabets(s) {
-  let map = {
+  const map = {
     1: 'a',
     2: 'b',
     3: 'c',
@@ -52,7 +52,7 @@ function freqAlphabets(s) {
 
   while (count < s.length) {
     if (s[count + 2] === '#') {
-      let value = s[count] + s[count + 1] + s[count + 2]
+      const value = s[count] + s[count + 1] + s[count + 2]
       result += map[value]
       count += 3
     } else {
@@ -76,12 +76,12 @@ function freqAlphabets2(s) {
 
   while (i < s.length) {
     if (i + 2 < s.length && s[i + 2] === '#') {
-      let num = parseInt(s.substring(i, i + 2))
+      const num = parseInt(s.substring(i, i + 2))
 
       result += String.fromCharCode(num + 96)
       i += 3
     } else {
-      let num = parseInt(s[i])
+      const num = parseInt(s[i])
       result += String.fromCharCode(num + 96)
       i++
     }

@@ -17,9 +17,9 @@ If it is not possible to find such a value for ans[i] that satisfies the conditi
 
 // O(n) time | O(1) space
 function minBitwiseArray(nums) {
-  let ans = []
+  const ans = []
 
-  for (let n of nums) {
+  for (const n of nums) {
     let num = n
     let ones = 0
 

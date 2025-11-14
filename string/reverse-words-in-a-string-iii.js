@@ -7,11 +7,11 @@
 
 // O(n) time - O(n) space
 function reverseWords(s) {
-  let result = []
+  const result = []
   let word = ''
 
   for (let i = s.length - 1; i >= 0; i--) {
-    let char = s[i]
+    const char = s[i]
 
     if (char !== ' ') {
       word += char
@@ -46,7 +46,7 @@ function reverseWords2(s) {
 
 // O(n) time - O(n) space
 function reverseWords3(s) {
-  let words = s.split(' ') // split string into array of words
+  const words = s.split(' ') // split string into array of words
 
   // loop through the array and reverse each word
   for (let i = 0; i < words.length; i++) {

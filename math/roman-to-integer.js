@@ -29,7 +29,7 @@ Given a roman numeral, convert it to an integer.
 
 // O(n) time | O(1) space
 function romanToInt(s) {
-  let map = {
+  const map = {
     I: 1,
     V: 5,
     X: 10,
@@ -41,8 +41,8 @@ function romanToInt(s) {
   let result = 0
 
   for (let i = 0; i < s.length; i++) {
-    let current = map[s[i]]
-    let next = map[s[i + 1]]
+    const current = map[s[i]]
+    const next = map[s[i + 1]]
 
     if (current < next) {
       result += next - current

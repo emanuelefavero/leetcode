@@ -32,7 +32,7 @@ function isPalindrome(head) {
   // reverse second half of list
   let prev = null
   while (slow) {
-    let next = slow.next
+    const next = slow.next
     slow.next = prev
     prev = slow
     slow = next
@@ -56,7 +56,7 @@ function isPalindrome(head) {
 // TIP: This solution uses a stack to store the first half of the list and then compares the second half of the list to the stack
 
 function isPalindrome2(head) {
-  let stack = []
+  const stack = []
   let slow = head
   let fast = head
 
@@ -72,7 +72,7 @@ function isPalindrome2(head) {
 
   // compare second half of list to stack
   while (slow) {
-    let top = stack.pop()
+    const top = stack.pop()
 
     if (top !== slow.val) return false
 
@@ -85,7 +85,7 @@ function isPalindrome2(head) {
 // -----------------------------
 // TEST
 
-let head = new ListNode(1)
+const head = new ListNode(1)
 head.next = new ListNode(2)
 head.next.next = new ListNode(2)
 head.next.next.next = new ListNode(1)

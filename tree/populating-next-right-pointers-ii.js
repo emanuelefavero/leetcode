@@ -45,8 +45,8 @@ function connect(root) {
   function getNext(next) {
     if (!next) return null
 
-    let nextLeft = next?.left
-    let nextRight = next?.right
+    const nextLeft = next?.left
+    const nextRight = next?.right
 
     return nextLeft ?? nextRight ?? getNext(next.next)
   }
@@ -62,7 +62,7 @@ function connect(root) {
 // -----------------------------
 // TESTS
 
-let root = new Node(1)
+const root = new Node(1)
 root.left = new Node(2)
 root.right = new Node(3)
 root.left.left = new Node(4)

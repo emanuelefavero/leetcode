@@ -16,28 +16,28 @@ Given two sentences s1 and s2, return a list of all the uncommon words. You may 
 
 // O(n) time | O(n) space
 function uncommonFromSentences(s1, s2) {
-  let arr1 = s1.split(' ')
-  let arr2 = s2.split(' ')
+  const arr1 = s1.split(' ')
+  const arr2 = s2.split(' ')
 
   // Count the words in both sentences
-  let map2 = new Map()
-  let map1 = new Map()
+  const map2 = new Map()
+  const map1 = new Map()
 
-  for (let word of arr1) {
+  for (const word of arr1) {
     map1.set(word, (map1.get(word) || 0) + 1)
   }
-  for (let word of arr2) {
+  for (const word of arr2) {
     map2.set(word, (map2.get(word) || 0) + 1)
   }
 
   // Check for uncommon words in both sentences
-  let result = []
+  const result = []
 
-  for (let [key, value] of map1) {
+  for (const [key, value] of map1) {
     if (value === 1 && !map2.has(key)) result.push(key)
   }
 
-  for (let [key, value] of map2) {
+  for (const [key, value] of map2) {
     if (value === 1 && !map1.has(key)) result.push(key)
   }
 
@@ -50,23 +50,23 @@ function uncommonFromSentences(s1, s2) {
 // TIP: This solution is the same as the first one, but uses a DRY approach
 
 function uncommonFromSentences2(s1, s2) {
-  let arr1 = s1.split(' ')
-  let arr2 = s2.split(' ')
+  const arr1 = s1.split(' ')
+  const arr2 = s2.split(' ')
 
   const countWords = (arr) => {
-    let map = new Map()
-    for (let word of arr) {
+    const map = new Map()
+    for (const word of arr) {
       map.set(word, (map.get(word) || 0) + 1)
     }
     return map
   }
 
-  let map1 = countWords(arr1)
-  let map2 = countWords(arr2)
+  const map1 = countWords(arr1)
+  const map2 = countWords(arr2)
 
   const checkUncommon = (map1, map2) => {
-    let result = []
-    for (let [key, value] of map1) {
+    const result = []
+    for (const [key, value] of map1) {
       if (value === 1 && !map2.has(key)) result.push(key)
     }
     return result

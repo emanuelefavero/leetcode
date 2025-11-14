@@ -32,7 +32,7 @@ function groupThePeople(groupSizes) {
   const result = []
 
   // Iterate through the map and create groups based on the groupSizes
-  for (let [length, array] of map) {
+  for (const [length, array] of map) {
     for (let i = 0; i < array.length; i += length) {
       // Slice the array into chunks of the specified length and add to result
       result.push(array.slice(i, i + length))

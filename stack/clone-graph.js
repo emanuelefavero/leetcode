@@ -26,7 +26,7 @@ class Node {
 function cloneGraph(node) {
   if (!node) return null
 
-  let map = new Map()
+  const map = new Map()
 
   function DFS(node) {
     if (!map.has(node.val)) {
@@ -45,10 +45,10 @@ function cloneGraph(node) {
 // ------------------------
 // TESTS
 
-let node1 = new Node(1, [])
-let node2 = new Node(2, [])
-let node3 = new Node(3, [])
-let node4 = new Node(4, [])
+const node1 = new Node(1, [])
+const node2 = new Node(2, [])
+const node3 = new Node(3, [])
+const node4 = new Node(4, [])
 
 node1.neighbors = [node2, node4]
 node2.neighbors = [node1, node3]

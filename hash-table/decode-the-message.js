@@ -33,7 +33,7 @@ function decodeMessage(key, message) {
   }
 
   // loop through the message and replace the characters with the hash table
-  for (let char of message) {
+  for (const char of message) {
     if (char === ' ') result += ' ' // if the character is a space, add a space
     else result += hash.get(char)
   }

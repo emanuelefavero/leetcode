@@ -20,9 +20,9 @@ A subsequence is an array that can be derived from another array by deleting som
 function answerQueries(nums, queries) {
   nums.sort((a, b) => a - b)
 
-  let result = []
+  const result = []
 
-  for (let query of queries) {
+  for (const query of queries) {
     let count = 0
     let sum = 0
 

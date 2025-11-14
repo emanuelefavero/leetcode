@@ -15,9 +15,9 @@ Return the final string that will be present on your laptop screen.
 
 // O(n) time | O(n) space
 function finalString(s) {
-  let result = []
+  const result = []
 
-  for (let char of s) {
+  for (const char of s) {
     if (char === 'i') result.reverse()
     else result.push(char)
   }
@@ -34,7 +34,7 @@ function finalString2(s) {
   let result = ''
   s = s.split('')
 
-  for (let char of s) {
+  for (const char of s) {
     if (char === 'i') {
       result = reverse(result)
     } else result += char

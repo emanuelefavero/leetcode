@@ -45,15 +45,15 @@ function generateTrees(n) {
   function generateBacktrack(start, end) {
     if (start > end) return [null] // base case
 
-    let result = []
+    const result = []
 
     for (let i = start; i <= end; i++) {
-      let leftTrees = generateBacktrack(start, i - 1)
-      let rightTrees = generateBacktrack(i + 1, end)
+      const leftTrees = generateBacktrack(start, i - 1)
+      const rightTrees = generateBacktrack(i + 1, end)
 
-      for (let l of leftTrees) {
-        for (let r of rightTrees) {
-          let current = new TreeNode(i)
+      for (const l of leftTrees) {
+        for (const r of rightTrees) {
+          const current = new TreeNode(i)
 
           current.left = l
           current.right = r

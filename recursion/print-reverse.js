@@ -63,5 +63,5 @@ console.log(printReverse2('Hello')) // olleH
 console.log(printReverse2('')) // ''
 
 // 3
-console.log(printReverse3('Hello')) // olleH
-console.log(printReverse3('')) // ''
+// console.log(printReverse3('Hello')) // olleH
+// console.log(printReverse3('')) // ''

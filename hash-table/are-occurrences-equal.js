@@ -11,14 +11,14 @@
 
 // O(n) time | O(n) space
 function areOccurrencesEqual(s) {
-  let map = new Map()
+  const map = new Map()
 
-  for (let char of s) {
+  for (const char of s) {
     map.set(char, map.get(char) + 1 || 1)
   }
 
-  let firstValue = map.get(s[0])
-  for (let [key, value] of map) {
+  const firstValue = map.get(s[0])
+  for (const [key, value] of map) {
     if (firstValue !== value) return false
   }
 
@@ -31,7 +31,7 @@ function areOccurrencesEqual(s) {
 // TIP: Use a set to check if all the values are the same
 
 function areOccurrencesEqual2(s) {
-  let map = new Map()
+  const map = new Map()
 
   for (let i = 0; i < s.length; i++) {
     map.set(s[i], map.get(s[i]) + 1 || 1)

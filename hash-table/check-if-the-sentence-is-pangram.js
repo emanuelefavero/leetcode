@@ -11,14 +11,14 @@
 
 // O(n) time | O(1) space
 function checkIfPangram(sentence) {
-  let alphabet = 'abcdefghijklmnopqrstuvwxyz'
-  let map = new Map()
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz'
+  const map = new Map()
 
-  for (let char of sentence) {
+  for (const char of sentence) {
     map.set(char, true)
   }
 
-  for (let char of alphabet) {
+  for (const char of alphabet) {
     if (!map.has(char)) return false
   }
 
@@ -31,7 +31,7 @@ function checkIfPangram(sentence) {
 // TIP: We can use a Set to store the unique characters of the sentence and then check if the size of the set is equal to 26 (number of letters in the English alphabet)
 
 function checkIfPangram2(sentence) {
-  let set = new Set([...sentence])
+  const set = new Set([...sentence])
   return set.size === 26
 }
 

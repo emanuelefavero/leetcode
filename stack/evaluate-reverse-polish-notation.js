@@ -30,13 +30,13 @@ function operation(a, b, operator) {
  */
 
 function evalRPN(tokens) {
-  let stack = []
-  let operators = new Set(['+', '-', '*', '/'])
+  const stack = []
+  const operators = new Set(['+', '-', '*', '/'])
 
-  for (let value of tokens) {
+  for (const value of tokens) {
     if (operators.has(value)) {
-      let top = stack.pop()
-      let second = stack.pop()
+      const top = stack.pop()
+      const second = stack.pop()
 
       // The trick is to put the second operand first in the operation
       stack.push(operation(second, top, value))
@@ -51,8 +51,8 @@ function evalRPN(tokens) {
 // SOLUTION 2
 
 function evalRPN2(tokens) {
-  let stack = []
-  let operation = {
+  const stack = []
+  const operation = {
     // NOTE: You can use an arrow function as a value in an object
     // TIP: Math.ceil() is used to round towards 0 when the result is negative
 
@@ -62,10 +62,10 @@ function evalRPN2(tokens) {
     '/': (a, b) => (a / b >= 0 ? Math.floor(a / b) : Math.ceil(a / b)),
   }
 
-  for (let value of tokens) {
+  for (const value of tokens) {
     if (value in operation) {
-      let top = stack.pop()
-      let second = stack.pop()
+      const top = stack.pop()
+      const second = stack.pop()
 
       // NOTE: You can pass arguments to a function inside an object
       // TIP: put the second operand first in the operation for the algorithm to work

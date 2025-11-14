@@ -17,11 +17,11 @@ Note that nums[i, ..., j] denotes the subarray of nums starting at index i and e
 
 // O(n^2) time | O(n) space
 function distinctDifferenceArray(nums) {
-  let result = []
+  const result = []
 
   for (let i = 0; i < nums.length; i++) {
-    let left = new Set(nums.slice(0, i + 1))
-    let right = new Set(nums.slice(i + 1))
+    const left = new Set(nums.slice(0, i + 1))
+    const right = new Set(nums.slice(i + 1))
     result.push(left.size - right.size)
   }
 
@@ -35,11 +35,11 @@ function distinctDifferenceArray(nums) {
 
 // O(n^2) time | O(n) space
 function distinctDifferenceArray2(nums) {
-  let result = []
-  let left = new Set()
+  const result = []
+  const left = new Set()
 
   for (let i = 0; i < nums.length; i++) {
-    let right = new Set()
+    const right = new Set()
     left.add(nums[i]) // add current element to left set
 
     // add elements from right to right set

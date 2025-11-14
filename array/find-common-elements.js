@@ -20,9 +20,9 @@ Return an integer array answer of size 2 containing the two values in the above 
 
 // O(n + m) time | O(n + m) space
 function findIntersectionValues(nums1, nums2) {
-  let result = []
-  let set1 = new Set(nums1)
-  let set2 = new Set(nums2)
+  const result = []
+  const set1 = new Set(nums1)
+  const set2 = new Set(nums2)
   let count1 = 0
   let count2 = 0
 

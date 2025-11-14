@@ -46,7 +46,7 @@ function isValidBST(root, min = -Infinity, max = Infinity) {
 // -----------------------------
 // TESTS
 
-let root = new TreeNode(2)
+const root = new TreeNode(2)
 root.left = new TreeNode(1)
 root.right = new TreeNode(3)
 

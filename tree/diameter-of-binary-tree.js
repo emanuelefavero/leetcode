@@ -34,8 +34,8 @@ function diameterOfBinaryTree(root) {
   function dfs(node) {
     if (!node) return 0
 
-    let left = dfs(node.left)
-    let right = dfs(node.right)
+    const left = dfs(node.left)
+    const right = dfs(node.right)
 
     // update diameter at every node
     diameter = Math.max(diameter, left + right)
@@ -52,7 +52,7 @@ function diameterOfBinaryTree(root) {
 // -----------------------------
 // TESTS
 
-let root = new TreeNode(1)
+const root = new TreeNode(1)
 root.left = new TreeNode(2)
 root.right = new TreeNode(3)
 root.left.left = new TreeNode(4)

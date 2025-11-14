@@ -20,7 +20,7 @@ Please solve it without the built-in Array.filter method.
 
 // O(n) time | O(n) space
 function filter(arr, fn) {
-  let result = []
+  const result = []
 
   for (let i = 0; i < arr.length; i++) {
     if (fn(arr[i], i)) result.push(arr[i])

@@ -12,7 +12,7 @@
 // O(n log log n) time | O(n) space
 function countPrimes(n) {
   let count = 0
-  let seen = new Array(n).fill(false)
+  const seen = new Array(n).fill(false)
 
   for (let i = 2; i < n; i++) {
     if (seen[i]) continue

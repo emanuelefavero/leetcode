@@ -16,13 +16,13 @@ Note that each '|' will belong to exactly one pair.
 // O(n) time | O(n) space
 function countAsterisks(s) {
   let count = 0
-  let array = s.split('|')
+  const array = s.split('|')
 
   for (let i = 0; i < array.length; i++) {
     if (i % 2 === 0) {
-      let string = array[i]
+      const string = array[i]
 
-      for (let char of string) {
+      for (const char of string) {
         if (char === '*') count++
       }
     }
@@ -40,7 +40,7 @@ function countAsterisks2(s) {
   let count = 0
   let insidePair = false
 
-  for (let char of s) {
+  for (const char of s) {
     if (char === '|') {
       insidePair = !insidePair
     } else if (char === '*' && !insidePair) {

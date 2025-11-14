@@ -33,8 +33,8 @@ function inorderTraversal(root, result = []) {
 
 // O(n) time | O(n) space - iterative approach (using stack)
 function inorderTraversal2(root) {
-  let result = []
-  let stack = []
+  const result = []
+  const stack = []
   let current = root
 
   while (current || stack.length) {
@@ -54,7 +54,7 @@ function inorderTraversal2(root) {
 // -----------------------------
 // TESTS
 
-let root = new TreeNode(1)
+const root = new TreeNode(1)
 root.right = new TreeNode(2)
 root.right.left = new TreeNode(3)
 

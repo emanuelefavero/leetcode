@@ -38,7 +38,7 @@ class MinHeap {
    */
 
   delete() {
-    let min = this.heap[0]
+    const min = this.heap[0]
     this.heap[0] = this.heap.pop() // replace root with last element
     this._bubbleDown()
 
@@ -49,9 +49,9 @@ class MinHeap {
     let index = this.heap.length - 1
 
     while (index > 0) {
-      let element = this.heap[index]
-      let parentIndex = Math.floor((index - 1) / 2) // to find parent note of any node, use this formula. We just need to divide the index of the node by 2 and round it down to the nearest whole number
-      let parent = this.heap[parentIndex]
+      const element = this.heap[index]
+      const parentIndex = Math.floor((index - 1) / 2) // to find parent note of any node, use this formula. We just need to divide the index of the node by 2 and round it down to the nearest whole number
+      const parent = this.heap[parentIndex]
 
       if (parent <= element) break // Change comparison operator to <=
 
@@ -64,12 +64,12 @@ class MinHeap {
 
   _bubbleDown() {
     let index = 0
-    let length = this.heap.length
-    let element = this.heap[0] // root node
+    const length = this.heap.length
+    const element = this.heap[0] // root node
 
     while (true) {
-      let leftChildIndex = 2 * index + 1
-      let rightChildIndex = 2 * index + 2
+      const leftChildIndex = 2 * index + 1
+      const rightChildIndex = 2 * index + 2
       let leftChild, rightChild
       let swap = null
 
@@ -112,7 +112,7 @@ class MinHeap {
 // --------------------------
 // TESTS
 
-let heap = new MinHeap()
+const heap = new MinHeap()
 
 heap.insert(10)
 heap.insert(40)

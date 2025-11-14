@@ -18,8 +18,8 @@ Return the sentence after the replacement.
 
 // O(n^2) time | O(n) space - where n is the number of words in the sentence
 function replaceWords(dictionary, sentence) {
-  let dict = new Set(dictionary) // create a set of dictionary words
-  let words = sentence.split(' ') // split sentence into array of words
+  const dict = new Set(dictionary) // create a set of dictionary words
+  const words = sentence.split(' ') // split sentence into array of words
 
   for (let i = 0; i < words.length; i++) {
     for (let j = 1; j < words[i].length; j++) {

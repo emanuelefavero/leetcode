@@ -17,15 +17,15 @@ Only the filled cells need to be validated according to the mentioned rules.
 
 function isValidSudoku(board) {
   for (let i = 0; i < 9; i++) {
-    let row = new Set(),
+    const row = new Set(),
       col = new Set(),
       box = new Set()
 
     for (let j = 0; j < 9; j++) {
-      let _row = board[i][j]
-      let _col = board[j][i]
+      const _row = board[i][j]
+      const _col = board[j][i]
       // TIP: This is the formula to get the row and column of the 3x3 box
-      let _box =
+      const _box =
         board[3 * Math.floor(i / 3) + Math.floor(j / 3)][3 * (i % 3) + (j % 3)]
 
       if (_row !== '.') {
@@ -52,7 +52,7 @@ function isValidSudoku(board) {
 function isValidSudoku2(board) {
   // rows
   for (let i = 0; i < 9; i++) {
-    let nums = new Set()
+    const nums = new Set()
 
     for (let j = 0; j < 9; j++) {
       if (nums.has(board[i][j])) return false
@@ -62,7 +62,7 @@ function isValidSudoku2(board) {
 
   // columns
   for (let i = 0; i < 9; i++) {
-    let nums = new Set()
+    const nums = new Set()
 
     for (let j = 0; j < 9; j++) {
       if (nums.has(board[j][i])) return false
@@ -72,12 +72,12 @@ function isValidSudoku2(board) {
 
   // boxes
   for (let i = 0; i < 9; i++) {
-    let nums = new Set()
+    const nums = new Set()
 
     for (let j = 0; j < 9; j++) {
       // TIP: This is the formula to get the row and column of the 3x3 box
-      let row = Math.floor(i / 3) * 3 + Math.floor(j / 3)
-      let column = (j % 3) + 3 * (i % 3)
+      const row = Math.floor(i / 3) * 3 + Math.floor(j / 3)
+      const column = (j % 3) + 3 * (i % 3)
 
       if (nums.has(board[row][column])) return false
       else if (board[row][column] !== '.') nums.add(board[row][column])

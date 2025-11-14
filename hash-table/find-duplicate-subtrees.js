@@ -26,8 +26,8 @@ class TreeNode {
  */
 
 function findDuplicateSubtrees(root) {
-  let map = new Map()
-  let result = []
+  const map = new Map()
+  const result = []
 
   dfs(root, map, result)
 
@@ -38,7 +38,7 @@ function dfs(root, map, result) {
   if (!root) return '#'
 
   // TIP: This is the formula to get the subtree
-  let subtree = `${root.val}.${dfs(root.left, map, result)}.${dfs(
+  const subtree = `${root.val}.${dfs(root.left, map, result)}.${dfs(
     root.right,
     map,
     result
@@ -58,7 +58,7 @@ function dfs(root, map, result) {
 // -----------------------------
 // TESTS
 
-let root = new TreeNode(1)
+const root = new TreeNode(1)
 root.left = new TreeNode(2)
 root.left.left = new TreeNode(4)
 root.right = new TreeNode(3)

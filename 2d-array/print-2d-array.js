@@ -17,7 +17,7 @@ function print2dArray(array) {
 // -------------------------
 // TESTS
 
-let array2d = [
+const array2d = [
   [1, 2],
   [3, 4],
 ]

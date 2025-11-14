@@ -17,13 +17,13 @@ Every close bracket has a corresponding open bracket of the same type.
 
 // O(n) time | O(p) space - where p is how many parentheses in the string
 function isValid(s) {
-  let stack = []
+  const stack = []
 
-  for (let char of s) {
+  for (const char of s) {
     if (char === '(' || char === '{' || char === '[') {
       stack.push(char)
     } else {
-      let last = stack.pop()
+      const last = stack.pop()
 
       if (
         (char === ')' && last !== '(') ||
@@ -44,20 +44,20 @@ function isValid(s) {
 // TIP: This solution is more concise but can be harder to understand
 
 function isValid2(s) {
-  let parentheses = {
+  const parentheses = {
     '(': ')',
     '[': ']',
     '{': '}',
   }
 
-  let stack = []
+  const stack = []
 
-  for (let char of s) {
+  for (const char of s) {
     // if the current character is an opening bracket, push it onto the stack
     if (parentheses[char]) {
       stack.push(char)
     } else {
-      let last = stack.pop()
+      const last = stack.pop()
 
       // if the current closing bracket does not match the last opening bracket, return false
       if (char !== parentheses[last]) return false

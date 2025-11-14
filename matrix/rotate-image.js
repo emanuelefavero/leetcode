@@ -15,12 +15,12 @@ You have to rotate the image in-place, which means you have to modify the input 
 
 // O(n^2) time, O(1) space
 function rotate(matrix) {
-  let n = matrix.length
+  const n = matrix.length
 
   // Swap rows with columns
   for (let i = 0; i < n; i++) {
     for (let j = i; j < n; j++) {
-      let temp = matrix[i][j]
+      const temp = matrix[i][j]
       matrix[i][j] = matrix[j][i]
       matrix[j][i] = temp
     }
@@ -35,7 +35,7 @@ function rotate(matrix) {
 // -------------------------
 // TESTS
 
-let matrix = [
+const matrix = [
   [1, 2, 3],
   [4, 5, 6],
   [7, 8, 9],

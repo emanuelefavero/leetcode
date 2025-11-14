@@ -24,11 +24,11 @@ Return the decompressed list.
 // O(n) time | O(n) space
 function decompressRLElist(nums) {
   let i = 0
-  let result = []
+  const result = []
 
   while (i < nums.length) {
-    let freq = nums[i]
-    let value = nums[i + 1]
+    const freq = nums[i]
+    const value = nums[i + 1]
 
     for (let i = 0; i < freq; i++) {
       result.push(value)
@@ -44,7 +44,7 @@ function decompressRLElist(nums) {
 // SOLUTION 2
 
 function decompressRLElist2(nums) {
-  let result = []
+  const result = []
 
   for (let i = 0; i < nums.length; i += 2) {
     for (let j = 0; j < nums[i]; j++) {

@@ -42,7 +42,7 @@ class MyHashSet {
 // -----------------------------
 // TESTS
 
-let obj = new MyHashSet()
+const obj = new MyHashSet()
 obj.add(1)
 obj.add(2)
 obj.remove(1)

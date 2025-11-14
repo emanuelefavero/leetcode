@@ -17,12 +17,12 @@ Return the element that is repeated n times.
 
 // O(n) time | O(n) space
 function repeatedNTimes(nums) {
-  let n = nums.length / 2
-  let map = new Map()
+  const n = nums.length / 2
+  const map = new Map()
 
-  for (let num of nums) {
+  for (const num of nums) {
     if (map.has(num)) {
-      let value = map.get(num)
+      const value = map.get(num)
       map.set(num, value + 1)
 
       if (value === n) return num
@@ -31,7 +31,7 @@ function repeatedNTimes(nums) {
     }
   }
 
-  for (let [key, value] of map) {
+  for (const [key, value] of map) {
     if (value === n) return key
   }
 }
@@ -43,7 +43,7 @@ function repeatedNTimes(nums) {
 
 // O(n) time | O(1) space
 function repeatedNTimes2(nums) {
-  let n = nums.length
+  const n = nums.length
 
   for (let i = 0; i < n; i++) {
     if (

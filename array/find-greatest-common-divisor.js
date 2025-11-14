@@ -11,8 +11,8 @@
 
 // O(n) time | O(1) space
 function findGCD(nums) {
-  let smallest = Math.min(...nums)
-  let largest = Math.max(...nums)
+  const smallest = Math.min(...nums)
+  const largest = Math.max(...nums)
   let divisor = 1
 
   for (let i = 1; i <= smallest; i++) {

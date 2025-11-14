@@ -11,7 +11,7 @@
 
 // O(n) time | O(n) space
 function reverseVowels(s) {
-  let vowels = new Map([
+  const vowels = new Map([
     ['a', true],
     ['e', true],
     ['i', true],
@@ -23,18 +23,18 @@ function reverseVowels(s) {
     ['O', true],
     ['U', true],
   ])
-  let foundVowels = []
-  let sArray = s.split('')
+  const foundVowels = []
+  const sArray = s.split('')
 
   for (let i = 0; i < sArray.length; i++) {
-    let char = sArray[i]
+    const char = sArray[i]
     if (vowels.has(char)) foundVowels.push(char)
   }
 
   foundVowels.reverse()
 
   for (let i = 0; i < sArray.length; i++) {
-    let char = sArray[i]
+    const char = sArray[i]
     if (vowels.has(char)) {
       sArray[i] = foundVowels.shift()
     }
@@ -50,9 +50,9 @@ function reverseVowels(s) {
 
 // O(n) time | O(1) space
 function reverseVowels2(s) {
-  let vowels = new Set(['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'])
+  const vowels = new Set(['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'])
 
-  let sArray = s.split('')
+  const sArray = s.split('')
   let left = 0
   let right = sArray.length - 1
 
@@ -77,7 +77,7 @@ function reverseVowels2(s) {
 
 // O(n) time | O(1) space
 function reverseVowels3(s) {
-  let vowels = 'aeiouAEIOU'
+  const vowels = 'aeiouAEIOU'
   s = s.split('')
   let left = 0
   let right = s.length - 1

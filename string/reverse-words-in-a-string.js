@@ -12,11 +12,11 @@
  */
 
 function reverseWords(s) {
-  let result = []
+  const result = []
   let word = ''
 
   for (let i = 0; i < s.length; i++) {
-    let char = s[i]
+    const char = s[i]
 
     if (char !== ' ') {
       word += char
@@ -49,8 +49,8 @@ function reverseWords2(s) {
 // SOLUTION 3
 
 function reverseWords3(s) {
-  let trimmed = s.trim().split(' ') // trim and split string into array of words
-  let result = []
+  const trimmed = s.trim().split(' ') // trim and split string into array of words
+  const result = []
 
   // loop through the array backwards
   for (let i = trimmed.length - 1; i >= 0; i--) {

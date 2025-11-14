@@ -31,15 +31,15 @@ class Node {
 function levelOrder(root) {
   if (!root) return []
 
-  let result = []
-  let queue = [root]
+  const result = []
+  const queue = [root]
 
   while (queue.length) {
-    let currentLevel = []
-    let size = queue.length
+    const currentLevel = []
+    const size = queue.length
 
     for (let i = 0; i < size; i++) {
-      let current = queue.shift()
+      const current = queue.shift()
       currentLevel.push(current.val)
 
       if (current.children) queue.push(...current.children)
@@ -58,7 +58,7 @@ function levelOrder(root) {
 
 // O(n) time | O(n) space
 function levelOrder2(root) {
-  let result = []
+  const result = []
   BFS(root, 0)
   return result
 
@@ -72,7 +72,7 @@ function levelOrder2(root) {
     result[depth].push(node.val)
 
     // we recursively call BFS on all the children of the current node
-    for (let child of node.children) {
+    for (const child of node.children) {
       BFS(child, depth + 1)
     }
   }
@@ -81,7 +81,7 @@ function levelOrder2(root) {
 // -----------------------------
 // TESTS
 
-let root = new Node(1)
+const root = new Node(1)
 root.children.push(new Node(3))
 root.children.push(new Node(2))
 root.children.push(new Node(4))

@@ -15,8 +15,8 @@ An Anagram is a word or phrase formed by rearranging the letters of a different 
 // O(n log n) time | O(1) space
 function isAnagram(s, t) {
   if (s.length !== t.length) return false
-  let sSorted = s.split('').sort().join('')
-  let tSorted = t.split('').sort().join('')
+  const sSorted = s.split('').sort().join('')
+  const tSorted = t.split('').sort().join('')
 
   return sSorted === tSorted
 }
@@ -28,13 +28,13 @@ function isAnagram(s, t) {
 function isAnagram2(s, t) {
   if (s.length !== t.length) return false
 
-  let map = {}
+  const map = {}
 
-  for (let char of s) {
+  for (const char of s) {
     map[char] = map[char] + 1 || 1
   }
 
-  for (let char of t) {
+  for (const char of t) {
     if (!map[char] || map[char] === 0) return false
     map[char]--
   }

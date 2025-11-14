@@ -21,13 +21,13 @@ Return the value of the kth character in word, after enough operations have been
 
 // O(k) time | O(k) space, where k is the input number
 function kthCharacter(k) {
-  let alphabet = 'abcdefghijklmnopqrstuvwxyz'
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz'
   let word = 'a'
 
   while (word.length < k) {
     let newWord = ''
     for (let i = 0; i < word.length; i++) {
-      let charIndex = alphabet.indexOf(word[i])
+      const charIndex = alphabet.indexOf(word[i])
 
       newWord += alphabet[(charIndex + 1) % alphabet.length]
     }
@@ -49,7 +49,7 @@ function kthCharacter2(k) {
   while (word.length < k) {
     let newWord = ''
     for (let i = 0; i < word.length; i++) {
-      let charCode = word.charCodeAt(i)
+      const charCode = word.charCodeAt(i)
       newWord += String.fromCharCode(charCode + 1 > 122 ? 97 : charCode + 1)
     }
 

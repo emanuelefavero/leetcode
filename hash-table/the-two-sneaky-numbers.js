@@ -13,10 +13,10 @@ As the town detective, your task is to find these two sneaky numbers. Return an 
 
 // O(n) time | O(n) space
 function getSneakyNumbers(nums) {
-  let set = new Set()
-  let result = []
+  const set = new Set()
+  const result = []
 
-  for (let num of nums) {
+  for (const num of nums) {
     if (set.has(num)) result.push(num)
     else set.add(num)
   }
@@ -30,10 +30,10 @@ function getSneakyNumbers(nums) {
 // TIP: This solution uses a map instead of a set
 
 function getSneakyNumbers2(nums) {
-  let map = new Map()
-  let result = []
+  const map = new Map()
+  const result = []
 
-  for (let num of nums) {
+  for (const num of nums) {
     if (map.has(num)) result.push(num)
     else map.set(num, true)
   }
@@ -48,7 +48,7 @@ function getSneakyNumbers2(nums) {
 
 // O(n log n) time | O(n) space
 function getSneakyNumbers3(nums) {
-  let result = []
+  const result = []
   nums.sort((a, b) => a - b)
 
   for (let i = 0; i < nums.length; i++) {

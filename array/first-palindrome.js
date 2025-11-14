@@ -14,7 +14,7 @@ A string is palindromic if it reads the same forward and backward.
 // O(n + m) time | O(m) space - where n is the number of words and m is the length of the longest word
 function firstPalindrome(words) {
   for (let i = 0; i < words.length; i++) {
-    let word = words[i]
+    const word = words[i]
     let reversed = ''
 
     for (let j = word.length - 1; j >= 0; j--) {

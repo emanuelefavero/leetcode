@@ -15,7 +15,7 @@ function isBalanced(num) {
   let oddSum = 0
 
   for (let i = 0; i < num.length; i++) {
-    let digit = Number(num[i])
+    const digit = Number(num[i])
 
     if (i % 2 === 0) evenSum += digit
     else oddSum += digit

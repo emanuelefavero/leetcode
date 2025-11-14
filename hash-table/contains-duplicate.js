@@ -6,9 +6,9 @@
  */
 
 function containsDuplicate(nums) {
-  let set = new Set()
+  const set = new Set()
 
-  for (let num of nums) {
+  for (const num of nums) {
     if (set.has(num)) return true
     else set.add(num)
   }
@@ -23,7 +23,7 @@ function containsDuplicate(nums) {
 
 // O(n) time | O(n) space
 function containsDuplicate2(nums) {
-  let set = new Set(nums)
+  const set = new Set(nums)
 
   return set.size !== nums.length
 }

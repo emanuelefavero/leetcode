@@ -24,8 +24,8 @@ class TreeNode {
 function invertTree(root) {
   if (!root) return null
 
-  let left = invertTree(root.left)
-  let right = invertTree(root.right)
+  const left = invertTree(root.left)
+  const right = invertTree(root.right)
 
   root.left = right
   root.right = left
@@ -36,7 +36,7 @@ function invertTree(root) {
 // -------------------------
 // TESTS
 
-let tree = new TreeNode(2)
+const tree = new TreeNode(2)
 tree.left = new TreeNode(1)
 tree.right = new TreeNode(3)
 

@@ -20,7 +20,7 @@ Return the total number of provinces.
 
 // O(n^2) time | O(n) space
 function findCircleNum(isConnected) {
-  let visited = new Set()
+  const visited = new Set()
   let result = 0
 
   for (let i = 0; i < isConnected.length; i++) {
@@ -56,7 +56,7 @@ function DFS(isConnected, i, visited) {
 
 // O(n^2) time | O(n) space
 function findCircleNum2(isConnected) {
-  let disjointSet = new DisjointSet(isConnected.length)
+  const disjointSet = new DisjointSet(isConnected.length)
 
   for (let r = 0; r < isConnected.length; r++) {
     for (let c = 0; c < isConnected.length; c++) {
@@ -94,8 +94,8 @@ class DisjointSet {
    * @returns {void}
    */
   union(x, y) {
-    let rootX = this.find(x)
-    let rootY = this.find(y)
+    const rootX = this.find(x)
+    const rootY = this.find(y)
 
     if (rootX !== rootY) {
       this.graph[rootY] = rootX

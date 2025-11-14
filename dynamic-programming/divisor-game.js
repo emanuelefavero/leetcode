@@ -31,7 +31,7 @@ function divisorGame(n) {
 
 // O(n^2) time | O(n) space
 function divisorGame2(n) {
-  let dp = new Array(n + 1).fill(false)
+  const dp = new Array(n + 1).fill(false)
 
   dp[0] = false
   dp[1] = false

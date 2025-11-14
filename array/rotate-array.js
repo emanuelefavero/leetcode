@@ -34,7 +34,7 @@ function reverse(nums, start, end) {
 function rotate2(nums, k) {
   // Remove the last k elements and add them to the beginning of the array:
   k = k % nums.length // ensures that k is never larger than the array length
-  let removed = nums.splice(-k) // remove the last k elements and store them
+  const removed = nums.splice(-k) // remove the last k elements and store them
   nums.unshift(...removed) // add them to the beginning of the array
 }
 

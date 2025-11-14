@@ -56,7 +56,7 @@ class MyQueue {
 // ------------------------
 // TESTS
 
-let queue = new MyQueue()
+const queue = new MyQueue()
 
 queue.push(1)
 queue.push(2)

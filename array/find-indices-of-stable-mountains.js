@@ -16,7 +16,7 @@ Return an array containing the indices of all stable mountains in any order.
 
 // O(n) time | O(n) space
 function stableMountains(height, threshold) {
-  let result = []
+  const result = []
 
   for (let i = 1; i < height.length; i++) {
     if (height[i - 1] > threshold) result.push(i)
@@ -31,7 +31,7 @@ function stableMountains(height, threshold) {
 // TIP: This solution checks the current mountain and pushes the next mountain index. Either solutions are valid.
 
 function stableMountains2(height, threshold) {
-  let result = []
+  const result = []
 
   for (let i = 0; i < height.length - 1; i++) {
     if (height[i] > threshold) result.push(i + 1)

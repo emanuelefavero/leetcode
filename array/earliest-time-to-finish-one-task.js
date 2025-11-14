@@ -18,7 +18,7 @@ function earliestTime(tasks) {
   let min = Infinity
 
   for (const task of tasks) {
-    let sum = task[0] + task[1]
+    const sum = task[0] + task[1]
     min = Math.min(min, sum)
   }
 
@@ -32,10 +32,10 @@ function earliestTime(tasks) {
 
 // O(n) time | O(n) space
 function earliestTime2(tasks) {
-  let sums = []
+  const sums = []
 
   for (const task of tasks) {
-    let sum = task[0] + task[1]
+    const sum = task[0] + task[1]
     sums.push(sum)
   }
 

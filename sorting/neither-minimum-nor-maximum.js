@@ -27,10 +27,10 @@ function findNonMinOrMax(nums) {
 function findNonMinOrMax2(nums) {
   if (nums.length <= 2) return -1
 
-  let max = Math.max(...nums)
-  let min = Math.min(...nums)
+  const max = Math.max(...nums)
+  const min = Math.min(...nums)
 
-  for (let num of nums) {
+  for (const num of nums) {
     if (num !== max && num !== min) return num
   }
 

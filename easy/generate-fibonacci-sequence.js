@@ -25,7 +25,7 @@ function* fibGenerator() {
   while (true) {
     yield a
 
-    let temp = a
+    const temp = a
     a = b
     b = temp + b
   }

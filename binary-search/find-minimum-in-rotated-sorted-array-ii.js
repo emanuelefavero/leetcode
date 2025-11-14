@@ -42,7 +42,7 @@ function findMin2(nums) {
   let right = nums.length - 1
 
   while (left < right) {
-    let middle = Math.floor((left + right) / 2)
+    const middle = Math.floor((left + right) / 2)
 
     // If nums[middle] < nums[right], it means the minimum element is in the left half
     if (nums[middle] < nums[right]) right = middle

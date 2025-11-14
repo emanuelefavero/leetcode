@@ -17,10 +17,10 @@ Return the resulting array after performing these operations.
 
 // O(n) time | O(n) space
 function transformArray(nums) {
-  let even = []
-  let odd = []
+  const even = []
+  const odd = []
 
-  for (let num of nums) {
+  for (const num of nums) {
     if (num % 2 === 0) even.push(0)
     else odd.push(1)
   }
@@ -38,7 +38,7 @@ function transformArray2(nums) {
   let countEven = 0
   let countOdd = 0
 
-  for (let num of nums) {
+  for (const num of nums) {
     if (num % 2 === 0) countEven++
     else countOdd++
   }

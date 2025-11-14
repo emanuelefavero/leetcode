@@ -29,7 +29,7 @@ TIP: The bitwise OR operator (|) is used to set a bit to 1 if it is 1 in either 
 function subsetXORSum(nums) {
   let sum = 0
 
-  for (let num of nums) {
+  for (const num of nums) {
     sum |= num // | is bitwise OR
   }
 

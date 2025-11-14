@@ -24,7 +24,7 @@ function reverseList(head) {
   let current = head
 
   while (current) {
-    let next = current.next
+    const next = current.next
     current.next = prev
     prev = current
     current = next
@@ -42,7 +42,7 @@ function reverseList(head) {
 function reverseList2(head, prev = null) {
   if (!head) return prev
 
-  let next = head.next
+  const next = head.next
   head.next = prev
 
   // NOTE: We pass next as the new head, and head as the new prev, essentially moving down the list one node at a time
@@ -53,14 +53,14 @@ function reverseList2(head, prev = null) {
 // TESTS
 
 // 1
-let head = new ListNode(1)
+const head = new ListNode(1)
 head.next = new ListNode(2)
 head.next.next = new ListNode(3)
 head.next.next.next = new ListNode(4)
 console.log(reverseList(head)) // 4 -> 3 -> 2 -> 1
 
 // 2
-let head2 = new ListNode(1)
+const head2 = new ListNode(1)
 head2.next = new ListNode(2)
 head2.next.next = new ListNode(3)
 head2.next.next.next = new ListNode(4)

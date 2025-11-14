@@ -24,7 +24,7 @@ function removeOuterParentheses(s) {
   let result = ''
   let count = 0
 
-  for (let char of s) {
+  for (const char of s) {
     if (char === '(') {
       // If an open parenthesis is found, and there already is an open parenthesis, then add the open parenthesis
       if (count > 0) {
@@ -54,7 +54,7 @@ function removeOuterParentheses2(s) {
   let result = ''
   let count = -1
 
-  for (let char of s) {
+  for (const char of s) {
     if (char === '(') count++
     if (count) result += char
     if (char === ')') count--

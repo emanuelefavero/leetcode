@@ -102,7 +102,7 @@ class MyCircularQueue2 {
   enQueue(value) {
     if (this.size >= this.k) return false
 
-    let node = new ListNode(value)
+    const node = new ListNode(value)
 
     if (!this.first) {
       this.first = node
@@ -150,7 +150,7 @@ class MyCircularQueue2 {
 
 // Solution 1
 console.log('Solution 1')
-let myCircularQueue = new MyCircularQueue(3)
+const myCircularQueue = new MyCircularQueue(3)
 console.log(myCircularQueue.enQueue(1)) // return true
 console.log(myCircularQueue.enQueue(2)) // return true
 console.log(myCircularQueue.enQueue(3)) // return true
@@ -163,7 +163,7 @@ console.log(myCircularQueue.Rear()) // return 4
 
 // Solution 2
 console.log('Solution 2')
-let myCircularQueue2 = new MyCircularQueue(3)
+const myCircularQueue2 = new MyCircularQueue(3)
 console.log(myCircularQueue2.enQueue(1)) // return true
 console.log(myCircularQueue2.enQueue(2)) // return true
 console.log(myCircularQueue2.enQueue(3)) // return true

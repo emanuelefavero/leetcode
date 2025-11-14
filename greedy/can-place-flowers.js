@@ -21,8 +21,8 @@ function canPlaceFlowers(flowerbed, n) {
   for (let i = 0; i < flowerbed.length; i++) {
     if (flowerbed[i] === 0) {
       // Check if the previous and next are 0
-      let prev = i === 0 ? 0 : flowerbed[i - 1]
-      let next = i === flowerbed.length - 1 ? 0 : flowerbed[i + 1]
+      const prev = i === 0 ? 0 : flowerbed[i - 1]
+      const next = i === flowerbed.length - 1 ? 0 : flowerbed[i + 1]
 
       // If both are 0, plant a flower
       if (prev === 0 && next === 0) {

@@ -18,7 +18,7 @@ function countMaxOrSubsets(nums) {
   let maxOR = 0
 
   // Compute the maximum OR
-  for (let num of nums) {
+  for (const num of nums) {
     maxOR |= num
   }
 

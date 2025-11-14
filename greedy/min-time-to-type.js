@@ -17,7 +17,7 @@ Given a string word, return the minimum number of seconds to type out the charac
 
 // O(n) time | O(1) space
 function minTimeToType(word) {
-  let map = {
+  const map = {
     a: 1,
     b: 2,
     c: 3,
@@ -50,8 +50,8 @@ function minTimeToType(word) {
   let previous = 1 // start at 'a'
 
   for (let i = 0; i < word.length; i++) {
-    let current = map[word[i]]
-    let diff = Math.abs(previous - current)
+    const current = map[word[i]]
+    const diff = Math.abs(previous - current)
 
     // get the minimum distance between the two characters and add 1 for typing
     result += Math.min(diff, 26 - diff) + 1
@@ -69,13 +69,13 @@ function minTimeToType2(word) {
   let lastChar = 'a'
   let time = 0
 
-  for (let char of word) {
+  for (const char of word) {
     // get the distance between the last character and the current character
-    let clockWise = Math.abs(lastChar.charCodeAt() - char.charCodeAt())
-    let counterClockWise = 26 - clockWise
+    const clockWise = Math.abs(lastChar.charCodeAt() - char.charCodeAt())
+    const counterClockWise = 26 - clockWise
 
     // get the minimum distance between the two characters
-    let turn = Math.min(clockWise, counterClockWise)
+    const turn = Math.min(clockWise, counterClockWise)
 
     time += turn + 1 // we add one for each character typed (one per second)
     lastChar = char // update the last character

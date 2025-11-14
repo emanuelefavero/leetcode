@@ -40,7 +40,7 @@ function differenceOfSums(n, m) {
 
 // TIP: This solution is more efficient than the previous one
 
-function differenceOfSums(n, m) {
+function differenceOfSums2(n, m) {
   let num1 = 0
   let num2 = 0
 
@@ -63,3 +63,5 @@ console.log(differenceOfSums(10, 3)) // 19
 // num1 = 1 + 2 + 4 + 5 + 7 + 8 + 10 = 37
 // num2 = 3 + 6 + 9 = 18
 // num1 - num2 = 37 - 18 = 19
+
+console.log(differenceOfSums2(10, 3)) // 19

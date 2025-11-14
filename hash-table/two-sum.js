@@ -8,10 +8,10 @@
 
 // O(n)
 function twoSum(nums, target) {
-  let map = new Map()
+  const map = new Map()
 
   for (let i = 0; i < nums.length; i++) {
-    let complement = target - nums[i]
+    const complement = target - nums[i]
 
     // if the map has the complement, return the key of the complement and the current index
     if (map.has(complement)) return [map.get(complement), i]
@@ -25,10 +25,10 @@ function twoSum(nums, target) {
 // SOLUTION 2 - same but using object instead of map
 
 function twoSum2(nums, target) {
-  let map = {}
+  const map = {}
 
   for (let i = 0; i < nums.length; i++) {
-    let complement = target - nums[i]
+    const complement = target - nums[i]
 
     // NOTE: We need to check if the value is undefined when using object
     if (map[complement] !== undefined) return [map[complement], i]

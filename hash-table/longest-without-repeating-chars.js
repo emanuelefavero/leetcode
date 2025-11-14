@@ -9,7 +9,7 @@
 
 // O(n) time | O(n) space
 function lengthOfLongestSubstring(s) {
-  let set = new Set()
+  const set = new Set()
   let left = 0
   let right = 0
   let max = 0
@@ -42,7 +42,7 @@ function lengthOfLongestSubstring2(s) {
   let current = []
 
   for (let i = 0; i < s.length; i++) {
-    let char = s[i]
+    const char = s[i]
 
     if (!current.includes(char)) {
       current.push(char)

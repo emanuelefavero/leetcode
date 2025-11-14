@@ -26,7 +26,7 @@ function climbStairs(n, memo = {}) {
 // SOLUTION 2
 
 function climbStairs2(n) {
-  let result = [1, 1]
+  const result = [1, 1]
 
   for (let i = 2; i <= n; i++) {
     // ? add previous and current numbers up until n

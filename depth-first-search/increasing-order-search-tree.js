@@ -23,7 +23,7 @@ class TreeNode {
 
 // O(n) time | O(n) space
 function increasingBST(root) {
-  let newRoot = new TreeNode()
+  const newRoot = new TreeNode()
   let current = newRoot
 
   function inOrder(node) {
@@ -46,7 +46,7 @@ function increasingBST(root) {
 // SOLUTION 2
 
 function increasingBST2(root) {
-  let values = []
+  const values = []
 
   function inOrder(node) {
     if (!node) return
@@ -58,7 +58,7 @@ function increasingBST2(root) {
 
   inOrder(root)
 
-  let newRoot = new TreeNode(values[0])
+  const newRoot = new TreeNode(values[0])
   let current = newRoot
 
   for (let i = 1; i < values.length; i++) {

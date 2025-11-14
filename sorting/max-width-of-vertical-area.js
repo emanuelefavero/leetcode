@@ -22,7 +22,7 @@ function maxWidthOfVerticalArea(points) {
   // find the maximum width between two points
   for (let i = 0; i < points.length - 1; i++) {
     // get width between previous x value - current x value
-    let width = points[i + 1][0] - points[i][0]
+    const width = points[i + 1][0] - points[i][0]
 
     // update maxWidth if width is greater
     maxWidth = Math.max(maxWidth, width)

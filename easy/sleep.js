@@ -15,5 +15,5 @@ async function sleep(ms) {
 // ----------------------
 // TESTS
 
-let t = Date.now()
+const t = Date.now()
 sleep(100).then(() => console.log(Date.now() - t)) // 100

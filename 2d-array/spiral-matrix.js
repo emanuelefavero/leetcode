@@ -8,10 +8,10 @@
 // O(n) time | O(n) space
 function spiralOrder(matrix) {
   // Extract the first row of the matrix and the rightmost elements of each remaining row
-  let firstRowAndRightmost = [...matrix.shift(), ...matrix.map((m) => m.pop())]
+  const firstRowAndRightmost = [...matrix.shift(), ...matrix.map((m) => m.pop())]
 
   // Filter out non-empty rows, reverse them, and reverse each row to maintain the spiral order
-  let remainingMatrix = matrix
+  const remainingMatrix = matrix
     .filter((m) => m.length)
     .reverse()
     .map((m) => m.reverse())
@@ -33,7 +33,7 @@ function spiralOrder(matrix) {
 function spiralOrder2(matrix) {
   let m = matrix.length
   let n = matrix[0].length
-  let result = []
+  const result = []
   let k = 0
   let l = 0
   let i
@@ -70,7 +70,7 @@ function spiralOrder2(matrix) {
 // -------------------------------
 // TESTS
 
-let matrix = [
+const matrix = [
   [1, 2, 3],
   [4, 5, 6],
   [7, 8, 9],

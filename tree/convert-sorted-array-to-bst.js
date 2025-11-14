@@ -27,8 +27,8 @@ class TreeNode {
 function sortedArrayToBST(nums, start = 0, end = nums.length - 1) {
   if (start > end) return null
 
-  let middle = Math.floor((start + end) / 2)
-  let root = new TreeNode(nums[middle])
+  const middle = Math.floor((start + end) / 2)
+  const root = new TreeNode(nums[middle])
 
   root.left = sortedArrayToBST(nums, start, middle - 1)
   root.right = sortedArrayToBST(nums, middle + 1, end)

@@ -23,14 +23,14 @@ Return the decoded message.
 function decodeMessage(key, message) {
   key = [...new Set(key.replace(/ /g, ''))] // remove duplicates, spaces
   let result = ''
-  let map = new Map()
-  let alphabet = 'abcdefghijklmnopqrstuvwxyz'
+  const map = new Map()
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz'
 
   for (let i = 0; i < alphabet.length; i++) {
     map.set(key[i], alphabet[i])
   }
 
-  for (let char of message) {
+  for (const char of message) {
     result += map.get(char) || ' '
   }
 

@@ -41,11 +41,11 @@ function containsNearbyAlmostDuplicate(nums, indexDiff, valueDiff) {
 
 // O(n) time | O(n) space
 function containsNearbyAlmostDuplicate2(nums, indexDiff, valueDiff) {
-  let buckets = new Map()
+  const buckets = new Map()
 
   for (let i = 0; i < nums.length; i++) {
     // get bucket number
-    let bucket = Math.floor(nums[i] / (valueDiff + 1))
+    const bucket = Math.floor(nums[i] / (valueDiff + 1))
 
     // check if bucket already exists
     if (buckets.has(bucket)) return true

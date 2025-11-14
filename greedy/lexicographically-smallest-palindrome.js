@@ -21,7 +21,7 @@ function makeSmallestPalindrome(s) {
   let a = 0
   let b = s.length - 1
 
-  let sArray = s.split('')
+  const sArray = s.split('')
 
   while (a < b) {
     if (sArray[a] !== sArray[b]) {

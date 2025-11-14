@@ -50,7 +50,7 @@ function fib3(n) {
   let curr = 1
 
   for (let i = 2; i <= n; i++) {
-    let next = prev + curr // add previous and current numbers
+    const next = prev + curr // add previous and current numbers
     prev = curr
     curr = next // update current number to sum of previous and current numbers
   }

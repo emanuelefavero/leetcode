@@ -7,9 +7,9 @@
 
 // O(n) time | O(n) space
 function findDuplicates(keys) {
-  let set = new Set()
+  const set = new Set()
 
-  for (let key of keys) {
+  for (const key of keys) {
     if (set.has(key)) return true
     else set.add(key)
   }

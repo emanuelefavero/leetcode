@@ -18,7 +18,7 @@ Return the resulting array arr.
 
 // O(n log n) time | O(n) space
 function numberGame(nums) {
-  let result = []
+  const result = []
 
   nums.sort((a, b) => a - b)
 
@@ -37,7 +37,7 @@ function numberGame(nums) {
 
 // O(n^2) time | O(n) space
 function numberGame2(nums) {
-  let result = []
+  const result = []
 
   let bobMin = 0
   let aliceMin = 0

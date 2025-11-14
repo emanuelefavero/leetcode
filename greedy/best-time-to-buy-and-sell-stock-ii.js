@@ -20,7 +20,7 @@ function maxProfit(prices) {
   let sum = 0
 
   for (let i = 0; i < prices.length - 1; i++) {
-    let difference = prices[i + 1] - prices[i]
+    const difference = prices[i + 1] - prices[i]
 
     if (difference > 0) sum += difference
   }

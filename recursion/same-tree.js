@@ -39,7 +39,7 @@ function isSameTree(p, q) {
 // TESTS
 
 let tree1 = new TreeNode(1, new TreeNode(2), new TreeNode(3))
-let tree2 = new TreeNode(1, new TreeNode(2), new TreeNode(3))
+const tree2 = new TreeNode(1, new TreeNode(2), new TreeNode(3))
 
 console.log(isSameTree(tree1, tree2)) // true
 

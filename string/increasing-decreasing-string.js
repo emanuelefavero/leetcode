@@ -23,10 +23,10 @@ Return the resulting string after reordering s using this algorithm.
 
 // O(n) time | O(1) space
 function sortString(s) {
-  let count = new Array(26).fill(0)
+  const count = new Array(26).fill(0)
 
   // Count the frequency of each character
-  for (let char of s) {
+  for (const char of s) {
     count[char.charCodeAt() - 'a'.charCodeAt()]++
   }
 

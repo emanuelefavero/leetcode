@@ -12,7 +12,7 @@
 
 // O(n) time | O(1) space
 function commonFactors(a, b) {
-  let min = Math.min(a, b)
+  const min = Math.min(a, b)
   let count = 0
 
   for (let i = 1; i <= min; i++) {

@@ -53,13 +53,13 @@ function mergeNodes(head) {
 // -----------------------------
 // TESTS
 
-let values = [0, 3, 1, 0, 4, 5, 2, 0]
+const values = [0, 3, 1, 0, 4, 5, 2, 0]
 
 function populateLinkedList(values) {
-  let head = new ListNode()
+  const head = new ListNode()
   let current = head
 
-  for (let val of values) {
+  for (const val of values) {
     current.next = new ListNode(val)
     current = current.next
   }
@@ -67,7 +67,7 @@ function populateLinkedList(values) {
   return head.next
 }
 
-let head = populateLinkedList(values)
+const head = populateLinkedList(values)
 
 console.log(mergeNodes(head)) // [4, 11]
 /*

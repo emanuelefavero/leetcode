@@ -24,6 +24,6 @@ function removeDuplicates(nums) {
 // -------------------------
 // TESTS
 
-let nums = [1, 1, 2, 3, 3, 3, 4]
+const nums = [1, 1, 2, 3, 3, 3, 4]
 removeDuplicates(nums)
 console.log(nums) // [1, 2, 3, 4]

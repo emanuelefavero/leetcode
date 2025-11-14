@@ -13,7 +13,7 @@
 
 // O(n^2) time | O(n) space
 function smallerNumbersThanCurrent(nums) {
-  let result = []
+  const result = []
 
   for (let i = 0; i < nums.length; i++) {
     let count = 0

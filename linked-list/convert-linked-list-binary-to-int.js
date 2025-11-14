@@ -73,7 +73,7 @@ function getDecimalValue3(head) {
 // -----------------------------
 // TESTS
 
-let head = new ListNode(1)
+const head = new ListNode(1)
 head.next = new ListNode(0)
 head.next.next = new ListNode(1)
 

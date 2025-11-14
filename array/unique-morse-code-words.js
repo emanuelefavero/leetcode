@@ -22,7 +22,7 @@ Return the number of different transformations among all words we have.
 
 // O(n * m) time | O(n) space, where n is the number of words and m is the length of each word
 function uniqueMorseRepresentations(words) {
-  let map = {
+  const map = {
     a: '.-',
     b: '-...',
     c: '-.-.',
@@ -51,7 +51,7 @@ function uniqueMorseRepresentations(words) {
     z: '--..',
   }
 
-  let set = new Set()
+  const set = new Set()
 
   for (let i = 0; i < words.length; i++) {
     let morseWord = ''

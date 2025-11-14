@@ -20,8 +20,8 @@ Return an integer denoting the number of index pairs (i, j) such that i < j, and
 
 // O(n) time | O(1) space
 function isPrefixAndSuffix(word1, word2) {
-  let length1 = word1.length
-  let length2 = word2.length
+  const length1 = word1.length
+  const length2 = word2.length
 
   if (length1 > length2) return false
 
@@ -46,13 +46,13 @@ function isPrefixAndSuffix(word1, word2) {
 // O(n^2) time | O(1) space
 function countPrefixSuffixPairs(words) {
   let count = 0
-  let length = words.length
+  const length = words.length
 
   for (let i = 0; i < length; i++) {
-    let word1 = words[i]
+    const word1 = words[i]
 
     for (let j = i + 1; j < length; j++) {
-      let word2 = words[j]
+      const word2 = words[j]
       if (isPrefixAndSuffix(word1, word2)) count++
     }
   }

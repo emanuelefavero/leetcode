@@ -44,7 +44,7 @@ function findClosestElements2(arr, k, x) {
   let right = arr.length - 1
 
   while (left < right) {
-    let mid = Math.floor((left + right) / 2)
+    const mid = Math.floor((left + right) / 2)
 
     // If the distance between x and arr[mid] is greater than the distance between x and arr[mid + k], it means arr[mid + k] is closer to x than arr[mid]
     if (x - arr[mid] > arr[mid + k] - x) left = mid + 1

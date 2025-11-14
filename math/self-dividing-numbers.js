@@ -18,14 +18,14 @@ Given two integers left and right, return a list of all the self-dividing number
 
 // O(n * m) time | O(n) space - where n is the range of numbers and m is the number of digits in the number
 function selfDividingNumbers(left, right) {
-  let result = []
+  const result = []
 
   for (let i = left; i <= right; i++) {
-    let digits = i.toString()
+    const digits = i.toString()
 
     let selfDividing = true
     for (let j = 0; j < digits.length; j++) {
-      let digit = Number(digits[j])
+      const digit = Number(digits[j])
       if (digit === 0 || i % digit !== 0) {
         selfDividing = false
         break

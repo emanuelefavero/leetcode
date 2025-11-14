@@ -37,7 +37,7 @@ function mostWordsFound2(sentences) {
   let max = 0
 
   for (let i = 0; i < sentences.length; i++) {
-    let numberOfWords = sentences[i].split(' ').length
+    const numberOfWords = sentences[i].split(' ').length
 
     if (numberOfWords > max) max = numberOfWords
   }

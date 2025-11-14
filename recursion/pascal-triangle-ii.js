@@ -16,10 +16,10 @@
 function getRow(rowIndex) {
   if (rowIndex === 0) return [1]
 
-  let result = [1]
+  const result = [1]
 
   // we need to get the previous row to calculate the current row
-  let prevRow = getRow(rowIndex - 1)
+  const prevRow = getRow(rowIndex - 1)
 
   for (let i = 1; i < rowIndex; i++) {
     // the result at the current index is the sum of the previous row's current index and the previous index
@@ -38,11 +38,11 @@ function getRow(rowIndex) {
 // TIP: This solution does not use recursion (you can also find this solution in array/pascal-triangle-ii.js).
 
 function getRow2(rowIndex) {
-  let result = []
+  const result = []
 
   // loop through the number of rows
   for (let i = 0; i <= rowIndex; i++) {
-    let row = []
+    const row = []
 
     // loop through the current row
     for (let j = 0; j <= i; j++) {

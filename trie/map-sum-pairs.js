@@ -39,7 +39,7 @@ class MapSum {
   sum(prefix) {
     let sum = 0
 
-    for (let key in this.map) {
+    for (const key in this.map) {
       if (key.startsWith(prefix)) {
         sum += this.map[key] // add value to sum
       }
@@ -52,7 +52,7 @@ class MapSum {
 // -----------------------------
 // TESTS
 
-let mapSum = new MapSum()
+const mapSum = new MapSum()
 mapSum.insert('apple', 3)
 console.log(mapSum.sum('ap')) // 3
 mapSum.insert('app', 2)

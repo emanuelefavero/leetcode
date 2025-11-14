@@ -7,7 +7,7 @@
 
 // O(n) time | O(n) space
 function firstUniqChar(s) {
-  let map = new Map()
+  const map = new Map()
 
   for (let i = 0; i < s.length; i++) {
     if (!map.has(s[i])) map.set(s[i], 1)

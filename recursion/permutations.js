@@ -9,7 +9,7 @@
 
 // O(n!) time (factorial) - O(n) space
 function permute(nums) {
-  let result = []
+  const result = []
 
   backtrack(nums, [], result)
 

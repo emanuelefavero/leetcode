@@ -13,7 +13,7 @@
 function countDigits(num) {
   let count = 0
 
-  for (let char of num.toString()) {
+  for (const char of num.toString()) {
     if (num % parseInt(char) === 0) count++
   }
 
@@ -24,11 +24,11 @@ function countDigits(num) {
 // SOLUTION 2
 
 function countDigits2(num) {
-  let str = num.toString()
+  const str = num.toString()
   let count = 0
 
   for (let i = 0; i < str.length; i++) {
-    let digit = parseInt(str[i])
+    const digit = parseInt(str[i])
     if (num % digit === 0) count++
   }
 

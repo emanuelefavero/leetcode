@@ -18,7 +18,7 @@ Return true if nums can be divided into n pairs, otherwise return false.
 
 // O(n) time | O(n) space
 function divideArray(nums) {
-  let map = new Map()
+  const map = new Map()
 
   // Populate the map with counts of each number
   for (const num of nums) {
@@ -37,7 +37,7 @@ function divideArray(nums) {
   }
 
   // Check if sum can be divided by n equally
-  let n = nums.length / 2
+  const n = nums.length / 2
   return sum % n === 0
 }
 // -------------------------
@@ -46,7 +46,7 @@ function divideArray(nums) {
 // TIP: If the frequency of all numbers is even, we can form pairs no matter the arrangement of the numbers, so we can simplify the solution.
 
 function divideArray2(nums) {
-  let map = new Map()
+  const map = new Map()
 
   // Populate the map with counts of each number
   for (const num of nums) {

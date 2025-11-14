@@ -23,15 +23,15 @@ class TreeNode {
 function levelOrder(root) {
   if (!root) return []
 
-  let result = []
-  let queue = [root]
+  const result = []
+  const queue = [root]
 
   while (queue.length) {
-    let currentLevel = []
-    let length = queue.length
+    const currentLevel = []
+    const length = queue.length
 
     for (let i = 0; i < length; i++) {
-      let current = queue.shift() // remove first element
+      const current = queue.shift() // remove first element
 
       currentLevel.push(current.val)
 
@@ -48,7 +48,7 @@ function levelOrder(root) {
 // -----------------------------
 // TESTS
 
-let root = new TreeNode(3)
+const root = new TreeNode(3)
 root.left = new TreeNode(9)
 root.right = new TreeNode(20)
 root.right.left = new TreeNode(15)

@@ -33,8 +33,8 @@ function smallestStringWithSwaps(s, pairs) {
     }
 
     union(x, y) {
-      let xRoot = this.find(x)
-      let yRoot = this.find(y)
+      const xRoot = this.find(x)
+      const yRoot = this.find(y)
 
       if (xRoot === yRoot) return
 
@@ -42,19 +42,19 @@ function smallestStringWithSwaps(s, pairs) {
     }
   }
 
-  let disjointSet = new DisjointSet()
+  const disjointSet = new DisjointSet()
 
   // loop through the pairs and union the indices
-  for (let pair of pairs) {
+  for (const pair of pairs) {
     disjointSet.union(pair[0], pair[1])
   }
 
   // create a map of the indices and their corresponding characters
-  let map = new Map()
+  const map = new Map()
 
   // loop through the string and add each character to the map
   for (let i = 0; i < s.length; i++) {
-    let root = disjointSet.find(i)
+    const root = disjointSet.find(i)
 
     // if the map does not have the root index, add it to the map (with an empty array as the value)
     if (!map.has(root)) map.set(root, [])
@@ -63,14 +63,14 @@ function smallestStringWithSwaps(s, pairs) {
   }
 
   // sort the characters at each index
-  for (let [key, val] of map) {
+  for (const [key, val] of map) {
     map.set(key, val.sort())
   }
 
   // loop through the string and add the characters from the map to the result
   let ans = ''
   for (let i = 0; i < s.length; i++) {
-    let root = disjointSet.find(i)
+    const root = disjointSet.find(i)
 
     ans += map.get(root).shift()
   }

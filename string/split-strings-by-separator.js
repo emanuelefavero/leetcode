@@ -20,9 +20,9 @@ Notes
 
 // O(n) time | O(n) space
 function splitWordsBySeparator(words, separator) {
-  let result = []
+  const result = []
 
-  for (let word of words) {
+  for (const word of words) {
     result.push(...word.split(separator))
   }
 

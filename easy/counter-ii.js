@@ -32,7 +32,7 @@ function createCounter(init) {
 // SOLUTION 2
 
 function createCounter2(init) {
-  let num = init
+  const num = init
 
   return {
     increment: () => {

@@ -48,7 +48,7 @@ function rangeSumBST(root, low, high, sum = 0) {
 // SOLUTION 2
 
 function rangeSumBST2(root, low, high) {
-  let set = new Set()
+  const set = new Set()
 
   const helper = (node) => {
     if (!node) return false
@@ -70,10 +70,10 @@ function rangeSumBST2(root, low, high) {
 
 function rangeSumBST3(root, low, high) {
   let sum = 0
-  let stack = [root]
+  const stack = [root]
 
   while (stack.length) {
-    let node = stack.pop()
+    const node = stack.pop()
 
     if (node.val >= low && node.val <= high) {
       sum += node.val
@@ -94,7 +94,7 @@ function rangeSumBST3(root, low, high) {
 // -------------------------
 // TESTS
 
-let root = new TreeNode(10)
+const root = new TreeNode(10)
 root.left = new TreeNode(5)
 root.right = new TreeNode(15)
 root.left.left = new TreeNode(3)

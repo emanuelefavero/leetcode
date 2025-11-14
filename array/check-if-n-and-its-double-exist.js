@@ -7,7 +7,7 @@
 
 // O(n) time | O(n) space
 function checkIfExist(arr) {
-  let set = new Set()
+  const set = new Set()
 
   for (let i = 0; i < arr.length; i++) {
     if (set.has(arr[i] * 2) || set.has(arr[i] / 2)) return true

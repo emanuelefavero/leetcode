@@ -18,10 +18,10 @@ function kthGrammar(n, k) {
   if (n === 1 && k === 1) return 0
 
   // call recursively the previous row (n - 1) and adjust the index to be in the middle of the row (Math.ceil(k / 2)). Store the result in prevRow
-  let prevRow = kthGrammar(n - 1, Math.ceil(k / 2))
+  const prevRow = kthGrammar(n - 1, Math.ceil(k / 2))
 
   // check if the current index is even or odd
-  let isEven = k % 2 === 0
+  const isEven = k % 2 === 0
 
   // if the previous row is 0, return 1 if the index is even, otherwise return 0
   if (prevRow === 0) {

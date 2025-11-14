@@ -34,7 +34,7 @@ function maxFrequencyElements(nums) {
   frequencies = frequencies.sort((a, b) => b - a)
 
   // Get the maximum frequency and add it to the sum
-  let maxFrequency = frequencies[0]
+  const maxFrequency = frequencies[0]
   sum += maxFrequency
 
   // Add the maximum frequency to the sum if there are multiple elements with the same frequency

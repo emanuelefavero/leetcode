@@ -22,7 +22,7 @@ function maximumOddBinaryNumber(s) {
   let count1 = 0
   let count0 = 0
 
-  for (let char of s) {
+  for (const char of s) {
     if (char === '1') count1++
     else if (char === '0') count0++
   }
@@ -34,8 +34,8 @@ function maximumOddBinaryNumber(s) {
 // SOLUTION 2
 
 function maximumOddBinaryNumber2(s) {
-  let count1 = s.match(/1/g).length
-  let count0 = s.length - count1
+  const count1 = s.match(/1/g).length
+  const count0 = s.length - count1
 
   return '1'.repeat(count1 - 1) + '0'.repeat(count0) + '1'
 }

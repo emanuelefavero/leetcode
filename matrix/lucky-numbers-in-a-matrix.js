@@ -12,8 +12,8 @@
 // O(n^2) time | O(1) space
 function luckyNumbers(matrix) {
   for (let i = 0; i < matrix.length; i++) {
-    let min = Math.min(...matrix[i]) // get the min value in the row
-    let minIndex = matrix[i].indexOf(min) // get the index of the min value
+    const min = Math.min(...matrix[i]) // get the min value in the row
+    const minIndex = matrix[i].indexOf(min) // get the index of the min value
     let max = min
 
     // check if the min value is the max value in its column
@@ -36,8 +36,8 @@ function luckyNumbers(matrix) {
 
 function luckyNumbers2(matrix) {
   for (let i = 0; i < matrix.length; i++) {
-    let min = Math.min(...matrix[i]) // get the min value in the row
-    let minIndex = matrix[i].indexOf(min)
+    const min = Math.min(...matrix[i]) // get the min value in the row
+    const minIndex = matrix[i].indexOf(min)
 
     // check if the min value is the max value in its column
     if (matrix.every((arr) => arr[minIndex] <= min)) return [min]

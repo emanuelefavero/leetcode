@@ -14,7 +14,7 @@
 
 // O(n!) time (factorial) - O(n) space
 function combine(n, k) {
-  let result = []
+  const result = []
 
   // start at 1 because we can't have 0 in the combination
   backtrack(n, k, 1, [], result) // [] is the current combination

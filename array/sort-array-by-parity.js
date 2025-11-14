@@ -7,8 +7,8 @@
 
 // O(n) time | O(n) space
 function sortArrayByParity(nums) {
-  let even = []
-  let odd = []
+  const even = []
+  const odd = []
 
   for (let i = 0; i < nums.length; i++) {
     if (nums[i] % 2 === 0) even.push(nums[i])
@@ -25,9 +25,9 @@ function sortArrayByParity(nums) {
 
 // O(n) time | O(n) space
 function sortArrayByParity2(nums) {
-  let result = []
+  const result = []
 
-  for (let num of nums) {
+  for (const num of nums) {
     if (num % 2 === 0) result.unshift(num) // add to the beginning
     else result.push(num)
   }
@@ -46,7 +46,7 @@ function sortArrayByParity3(nums) {
 
   for (let readPointer = 0; readPointer < nums.length; readPointer++) {
     if (nums[readPointer] % 2 === 0) {
-      let temp = nums[writePointer]
+      const temp = nums[writePointer]
       nums[writePointer] = nums[readPointer]
       nums[readPointer] = temp
       writePointer++

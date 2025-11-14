@@ -22,7 +22,7 @@ class Node {
 
 // O(n) time | O(n) space
 function copyRandomList(head) {
-  let map = new Map()
+  const map = new Map()
 
   let current = head
   while (current) {
@@ -44,7 +44,7 @@ function copyRandomList(head) {
 // -----------------------------
 // TESTS
 
-let head = new Node(7)
+const head = new Node(7)
 head.next = new Node(13)
 head.next.next = new Node(11)
 head.next.next.next = new Node(10)

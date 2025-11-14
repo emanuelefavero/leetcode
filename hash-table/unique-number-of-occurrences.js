@@ -9,14 +9,14 @@
 
 // O(n) time | O(n) space
 function uniqueOccurrences(arr) {
-  let map = new Map()
-  let set = new Set()
+  const map = new Map()
+  const set = new Set()
 
-  for (let num of arr) {
+  for (const num of arr) {
     map.set(num, (map.get(num) || 0) + 1)
   }
 
-  for (let [_, value] of map) {
+  for (const [_, value] of map) {
     if (set.has(value)) return false
     set.add(value)
   }
@@ -30,13 +30,13 @@ function uniqueOccurrences(arr) {
 // TIP: We could also check the size of the set
 
 function uniqueOccurrences2(arr) {
-  let map = new Map()
+  const map = new Map()
 
-  for (let num of arr) {
+  for (const num of arr) {
     map.set(num, (map.get(num) || 0) + 1)
   }
 
-  let set = new Set(map.values())
+  const set = new Set(map.values())
 
   return map.size === set.size
 }

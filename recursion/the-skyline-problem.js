@@ -22,9 +22,9 @@ Note: There must be no consecutive horizontal lines of equal height in the outpu
 
 // O(n log n) time - O(n) space
 function getSkyline(buildings) {
-  let heights = []
+  const heights = []
 
-  for (let [start, end, height] of buildings) {
+  for (const [start, end, height] of buildings) {
     heights.push([start, 0 - height])
     heights.push([end, height])
   }
@@ -32,16 +32,16 @@ function getSkyline(buildings) {
   // sort heights
   heights.sort((a, b) => (a[0] === b[0] ? a[1] - b[1] : a[0] - b[0]))
 
-  let result = []
-  let maxHeap = [0]
+  const result = []
+  const maxHeap = [0]
   let maxHeight = 0
 
   // loop through heights
-  for (let [pos, height] of heights) {
+  for (const [pos, height] of heights) {
     if (height < 0) maxHeap.push(0 - height)
     else maxHeap.splice(maxHeap.indexOf(height), 1)
 
-    let currentMaxHeight = Math.max(...maxHeap)
+    const currentMaxHeight = Math.max(...maxHeap)
 
     if (currentMaxHeight !== maxHeight) {
       result.push([pos, currentMaxHeight])

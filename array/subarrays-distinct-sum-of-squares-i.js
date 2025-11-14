@@ -21,7 +21,7 @@ function sumCounts(nums) {
   let sum = 0
 
   for (let i = 0; i < nums.length; i++) {
-    let set = new Set([nums[i]])
+    const set = new Set([nums[i]])
     for (let j = i; j < nums.length; j++) {
       set.add(nums[j])
       sum += set.size ** 2 // ** is the exponentiation operator

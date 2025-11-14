@@ -17,7 +17,7 @@ Explanation: The sum of 2 and 7 is 9. Therefore, index1 = 1, index2 = 2. We retu
 
 // O(n) time - O(1) space
 function twoSum(numbers, target) {
-  let hashTable = {}
+  const hashTable = {}
 
   for (let i = 0; i < numbers.length; i++) {
     if (hashTable[target - numbers[i]] !== undefined) {
@@ -37,7 +37,7 @@ function twoSum2(numbers, target) {
   let right = numbers.length - 1
 
   while (left < right) {
-    let sum = numbers[left] + numbers[right]
+    const sum = numbers[left] + numbers[right]
 
     // if the sum is equal to the target, return the indices
     if (sum === target) return [left + 1, right + 1]

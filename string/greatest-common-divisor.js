@@ -21,7 +21,7 @@ function gcdOfStrings(str1, str2) {
 
   // Euclidean algorithm @see https://en.wikipedia.org/wiki/Euclidean_algorithm
   while (b) {
-    let temp = b
+    const temp = b
     b = a % b // remainder of a divided by b
     a = temp
   }

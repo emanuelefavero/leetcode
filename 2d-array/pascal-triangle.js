@@ -10,11 +10,11 @@
 
 // O(n^2) time | O(n^2) space
 function generate(numRows) {
-  let result = []
+  const result = []
 
   // loop through the number of rows
   for (let i = 0; i < numRows; i++) {
-    let row = []
+    const row = []
 
     // loop through the current row
     for (let j = 0; j <= i; j++) {
@@ -36,5 +36,5 @@ function generate(numRows) {
 // -------------------------
 // TESTS
 
-let numRows = 5
+const numRows = 5
 console.log(generate(numRows)) // [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]

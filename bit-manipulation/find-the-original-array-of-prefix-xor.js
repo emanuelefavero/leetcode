@@ -17,7 +17,7 @@ It can be proven that the answer is unique.
 
 // O(n) time | O(n) space
 function findArray(pref) {
-  let result = [pref[0]]
+  const result = [pref[0]]
 
   for (let i = 1; i < pref.length; i++) {
     result.push(pref[i] ^ pref[i - 1])

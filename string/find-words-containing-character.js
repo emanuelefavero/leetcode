@@ -14,7 +14,7 @@
 
 // O(n) time | O(n) space - where n is the number of words
 function findWordsContaining(words, x) {
-  let result = []
+  const result = []
 
   for (let i = 0; i < words.length; i++) {
     if (words[i].includes(x)) result.push(i)
@@ -28,7 +28,7 @@ function findWordsContaining(words, x) {
 
 // O(n) time | O(n) space - where n is the number of words
 function findWordsContaining2(words, x) {
-  let result = []
+  const result = []
 
   for (let i = 0; i < words.length; i++) {
     for (let j = 0; j < words[i].length; j++) {
@@ -49,7 +49,7 @@ function findWordsContaining2(words, x) {
 
 // O(n) time | O(n) space - where n is the number of words
 function findWordsContaining3(words, x) {
-  let result = []
+  const result = []
 
   for (let i = 0; i < words.length; i++) {
     if (words[i].match(x)) result.push(i)

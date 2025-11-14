@@ -18,7 +18,7 @@ It is guaranteed that the graph of paths forms a line without any loop, therefor
 function destCity(paths) {
   if (paths.length === 1) return paths[0][1]
 
-  let set = new Set()
+  const set = new Set()
 
   // Add all left cities to the set
   for (const path of paths) {
@@ -27,7 +27,7 @@ function destCity(paths) {
 
   // Check which right city does not appear on the left
   for (const path of paths) {
-    let rightCity = path[1]
+    const rightCity = path[1]
     if (!set.has(rightCity)) return rightCity
   }
 }

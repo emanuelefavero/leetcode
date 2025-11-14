@@ -21,7 +21,7 @@ function solution(isBadVersion) {
     end = n
 
     while (start < end) {
-      let middle = Math.floor((start + end) / 2)
+      const middle = Math.floor((start + end) / 2)
       if (isBadVersion(middle)) end = middle // look on left
       else start = middle + 1 // look on right
     }

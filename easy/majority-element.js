@@ -11,10 +11,10 @@
 
 // O(n) time complexity
 function majorityElement(nums) {
-  let map = new Map()
+  const map = new Map()
 
   for (let i = 0; i < nums.length; i++) {
-    let current = nums[i]
+    const current = nums[i]
 
     if (!map.has(current)) {
       map.set(current, 1)
@@ -23,7 +23,7 @@ function majorityElement(nums) {
     }
   }
 
-  for (let [key, value] of map) {
+  for (const [key, value] of map) {
     if (value > nums.length / 2) return key
   }
 }

@@ -17,7 +17,7 @@ Return the number of rectangles that can make a square with a side length of max
 
 // O(nlogn) time | O(n) space
 function countGoodRectangles(rectangles) {
-  let lengths = []
+  const lengths = []
 
   for (let i = 0; i < rectangles.length; i++) {
     lengths.push(Math.min(rectangles[i][0], rectangles[i][1]))
@@ -27,7 +27,7 @@ function countGoodRectangles(rectangles) {
 
   let count = 1
 
-  let firstLength = lengths[0]
+  const firstLength = lengths[0]
   for (let i = 1; i < lengths.length; i++) {
     if (lengths[i] !== firstLength) return count
 

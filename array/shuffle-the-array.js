@@ -16,7 +16,7 @@ Return the array in the form [x1,y1,x2,y2,...,xn,yn].
 export function shuffle(nums, n) {
   let left = 0
   let right = n
-  let result = []
+  const result = []
 
   while (right < nums.length) {
     result.push(nums[left])
@@ -33,7 +33,7 @@ export function shuffle(nums, n) {
 
 // O(n) time | O(n) space
 function shuffle2(nums, n) {
-  let result = []
+  const result = []
 
   for (let i = 0; i < n; i++) {
     result.push(nums[i], nums[i + n])

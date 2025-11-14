@@ -15,8 +15,8 @@ Given an integer num, reverse num to get reversed1, then reverse reversed1 to ge
 
 // O(n) time | O(1) space, where n is the number of digits in num
 function isSameAfterReversals(num) {
-  let reversed = Number(num.toString().split('').reverse().join(''))
-  let reversed2 = Number(reversed.toString().split('').reverse().join(''))
+  const reversed = Number(num.toString().split('').reverse().join(''))
+  const reversed2 = Number(reversed.toString().split('').reverse().join(''))
   return reversed2 === num
 }
 
@@ -38,7 +38,7 @@ function isSameAfterReversals2(num) {
 
 function isSameAfterReversals3(num) {
   if (num === 0) return true
-  let array = num.toString().split('')
+  const array = num.toString().split('')
   return array[array.length - 1] !== '0'
 }
 

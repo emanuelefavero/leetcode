@@ -14,7 +14,7 @@
 // O(n log n) time | O(1) space
 function minElement(nums) {
   for (let i = 0; i < nums.length; i++) {
-    let sum = nums[i]
+    const sum = nums[i]
       .toString()
       .split('')
       .reduce((acc, num) => acc + parseInt(num), 0)
@@ -35,8 +35,8 @@ function minElement(nums) {
 function minElement2(nums) {
   let result = Infinity
 
-  for (let num of nums) {
-    let sum = num
+  for (const num of nums) {
+    const sum = num
       .toString()
       .split('')
       .reduce((acc, digit) => acc + Number(digit), 0)

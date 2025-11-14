@@ -26,7 +26,7 @@ function theMaximumAchievableX(num, t) {
 
 // O(t) time | O(1) space
 function theMaximumAchievableX2(num, t) {
-  let x = t
+  const x = t
 
   while (t > 0) {
     num++

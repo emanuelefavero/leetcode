@@ -21,7 +21,7 @@ function findPeakElement(nums) {
   let right = nums.length - 1
 
   while (left < right) {
-    let middle = Math.floor((left + right) / 2)
+    const middle = Math.floor((left + right) / 2)
 
     if (nums[middle] < nums[middle + 1]) left = middle + 1
     else if (nums[middle] > nums[middle + 1]) right = middle

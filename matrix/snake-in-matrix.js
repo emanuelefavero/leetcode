@@ -20,11 +20,11 @@ Return the position of the final cell where the snake ends up after executing co
 
 // O(n^2) time | O(n^2) space
 function finalPositionOfSnake(n, commands) {
-  let matrix = createMatrix(n)
+  const matrix = createMatrix(n)
   let i = 0
   let j = 0
 
-  for (let command of commands) {
+  for (const command of commands) {
     switch (command) {
       case 'UP':
         i--
@@ -70,7 +70,7 @@ function createMatrix(n) {
 function finalPositionOfSnake2(n, commands) {
   let position = 0
 
-  for (let command of commands) {
+  for (const command of commands) {
     switch (command) {
       case 'UP':
         position -= n
@@ -103,7 +103,7 @@ function finalPositionOfSnake3(n, commands) {
   let i = 0
   let j = 0
 
-  for (let command of commands) {
+  for (const command of commands) {
     if (command === 'UP') {
       i--
     } else if (command === 'RIGHT') {

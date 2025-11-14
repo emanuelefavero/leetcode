@@ -20,8 +20,8 @@ You must write an algorithm with O(sum of words[i].length) runtime complexity.
 
 // O(n^2) time | O(n) space - where n is the number of words
 function palindromePairs(words) {
-  let map = new Map()
-  let result = []
+  const map = new Map()
+  const result = []
 
   // Populate map with words and their indices
   for (let i = 0; i < words.length; i++) map.set(words[i], i)
@@ -36,8 +36,8 @@ function palindromePairs(words) {
     }
 
     // Check for reversed word in map
-    let reversedWord = words[i].split('').reverse().join('')
-    let matchingIndex = map.get(reversedWord)
+    const reversedWord = words[i].split('').reverse().join('')
+    const matchingIndex = map.get(reversedWord)
 
     // If reversed word exists in map, add to result
     if (matchingIndex !== undefined && matchingIndex !== i)
@@ -46,14 +46,14 @@ function palindromePairs(words) {
     // Check for palindromes in reversed word
     for (let j = 1; j < reversedWord.length; j++) {
       if (isPalindrome(reversedWord, 0, j - 1)) {
-        let matchingIndex = map.get(reversedWord.slice(j))
+        const matchingIndex = map.get(reversedWord.slice(j))
 
         // If palindrome exists in map, add to result
         if (matchingIndex !== undefined) result.push([i, matchingIndex])
       }
 
       if (isPalindrome(reversedWord, j)) {
-        let matchingIndex = map.get(reversedWord.slice(0, j))
+        const matchingIndex = map.get(reversedWord.slice(0, j))
 
         // If palindrome exists in map, add to result
         if (matchingIndex !== undefined) result.push([matchingIndex, i])

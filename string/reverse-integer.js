@@ -11,7 +11,7 @@
 
 // O(n) time | O(n) space
 function reverse(x) {
-  let stringArray = x.toString().split('')
+  const stringArray = x.toString().split('')
 
   let reversed
   if (stringArray[0] === '-') {

@@ -13,7 +13,7 @@
 
 // O(n) time | O(1) space
 function twoOutOfThree(nums1, nums2, nums3) {
-  let result = []
+  const result = []
 
   for (let i = 1; i <= 100; i++) {
     if (nums1.includes(i) && nums2.includes(i)) result.push(i)
@@ -30,18 +30,18 @@ function twoOutOfThree(nums1, nums2, nums3) {
 // TIP: This solution uses a set to store the values that are present in each array and then checks if the value is present in at least two sets
 
 function twoOutOfThree2(nums1, nums2, nums3) {
-  let result = []
-  let set1 = new Set(nums1)
-  let set2 = new Set(nums2)
-  let set3 = new Set(nums3)
+  const result = []
+  const set1 = new Set(nums1)
+  const set2 = new Set(nums2)
+  const set3 = new Set(nums3)
 
-  for (let num of set1) {
+  for (const num of set1) {
     if (set2.has(num) || set3.has(num)) {
       result.push(num)
     }
   }
 
-  for (let num of set2) {
+  for (const num of set2) {
     // NOTE: We also have to check if the value is already in the result array to avoid duplicates
     if ((set1.has(num) || set3.has(num)) && !result.includes(num)) {
       result.push(num)

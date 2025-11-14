@@ -25,7 +25,7 @@ function reverseList(head) {
   let current = head
 
   while (current) {
-    let next = current.next // save next node
+    const next = current.next // save next node
     current.next = prev // reverse the link
     prev = current // move prev forward
     current = next // move current forward
@@ -43,7 +43,7 @@ function reverseList2(head) {
   let prev = null
 
   while (head) {
-    let next = head.next
+    const next = head.next
     head.next = prev // reverse the link
     prev = head
     head = next
@@ -55,7 +55,7 @@ function reverseList2(head) {
 // -----------------------------
 // TEST
 
-let head = new ListNode(1)
+const head = new ListNode(1)
 head.next = new ListNode(2)
 head.next.next = new ListNode(3)
 head.next.next.next = new ListNode(4)

@@ -26,14 +26,14 @@ class TreeNode {
 
 // O(n) time | O(n) space
 function buildTree(preorder, inorder) {
-  let hash = {}
+  const hash = {}
   for (let i = 0; i < inorder.length; i++) hash[inorder[i]] = i
 
   function recurse(start, end) {
     if (start > end) return null
 
-    let value = preorder.shift()
-    let root = new TreeNode(value)
+    const value = preorder.shift()
+    const root = new TreeNode(value)
     root.left = recurse(start, hash[value] - 1)
     root.right = recurse(hash[value] + 1, end)
 
@@ -53,7 +53,7 @@ function buildTree2(preorder, inorder) {
 
   function recurse(stop) {
     if (inorder[i] !== stop) {
-      let root = new TreeNode(preorder[p++])
+      const root = new TreeNode(preorder[p++])
       root.left = recurse(root.val)
       i++
       root.right = recurse(stop)
@@ -73,8 +73,8 @@ function buildTree2(preorder, inorder) {
 function buildTree3(preorder, inorder) {
   if (!preorder.length || !inorder.length) return null
 
-  let root = new TreeNode(preorder[0]) // first element of preorder is root
-  let middle = inorder.indexOf(preorder[0]) // find root in inorder
+  const root = new TreeNode(preorder[0]) // first element of preorder is root
+  const middle = inorder.indexOf(preorder[0]) // find root in inorder
   root.left = buildTree3(
     preorder.slice(1, middle + 1), // ? 1 starts at 1 index to skip root
     inorder.slice(0, middle)
@@ -86,8 +86,8 @@ function buildTree3(preorder, inorder) {
 // -----------------------------
 // TESTS
 
-let preorder = [3, 9, 20, 15, 7]
-let inorder = [9, 3, 15, 20, 7]
+const preorder = [3, 9, 20, 15, 7]
+const inorder = [9, 3, 15, 20, 7]
 
 // NOTE: Only one log statement can be used at a time
 

@@ -23,7 +23,7 @@ If two objects share an id, their properties should be merged into a single obje
 
 // O(n) time, O(n) space
 function join(arr1, arr2) {
-  let map = {}
+  const map = {}
 
   addTo(map, arr1) // add all items from arr1 to map
   addTo(map, arr2) // add all items from arr2 to map
@@ -33,7 +33,7 @@ function join(arr1, arr2) {
 
 // helper function to add items to map
 function addTo(map, arr) {
-  for (let item of arr) {
+  for (const item of arr) {
     if (!map[item.id]) {
       map[item.id] = item
       continue
@@ -50,13 +50,13 @@ function addTo(map, arr) {
 
 // O(n) time, O(n) space
 function join2(arr1, arr2) {
-  let map = {}
+  const map = {}
 
-  for (let item of arr1) {
+  for (const item of arr1) {
     map[item.id] = item
   }
 
-  for (let item of arr2) {
+  for (const item of arr2) {
     if (map[item.id]) {
       for (const key in item) {
         map[item.id][key] = item[key]

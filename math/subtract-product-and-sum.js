@@ -9,16 +9,16 @@
 
 // O(n) time | O(1) space
 function subtractProductAndSum(n) {
-  let array = n.toString().split('') // convert n to array of chars
+  const array = n.toString().split('') // convert n to array of chars
 
   // get product
-  let product = array.reduce(
+  const product = array.reduce(
     (accumulator, current) => accumulator * parseInt(current),
     1
   )
 
   // get sum
-  let sum = array.reduce(
+  const sum = array.reduce(
     (accumulator, current) => accumulator + parseInt(current),
     0
   )

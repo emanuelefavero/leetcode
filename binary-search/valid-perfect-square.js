@@ -44,7 +44,7 @@ function isPerfectSquare3(num) {
   let right = num
 
   while (left <= right) {
-    let mid = Math.floor((left + right) / 2)
+    const mid = Math.floor((left + right) / 2)
 
     // If the square of mid is equal to num, we have found the answer
     if (mid * mid === num) return true

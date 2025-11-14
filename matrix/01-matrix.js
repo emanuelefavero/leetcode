@@ -13,8 +13,8 @@ The distance between two adjacent cells is 1.
 
 // O(n) time | O(n) space
 function updateMatrix(mat) {
-  let row = mat.length
-  let col = mat[0].length
+  const row = mat.length
+  const col = mat[0].length
 
   // loop through the matrix
   for (let r = 0; r < row; r++) {

@@ -20,7 +20,7 @@ function toLowerCase(s) {
 function toLowerCase2(s) {
   let result = ''
 
-  for (let char of s) {
+  for (const char of s) {
     let charCode = char.charCodeAt(0)
     if (charCode >= 65 && charCode <= 90) {
       charCode += 32

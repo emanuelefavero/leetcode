@@ -18,7 +18,7 @@ function myPow(x, n) {
 
   // If n is even, recursively compute x^(n/2) and square the result
   if (n % 2 === 0) {
-    let result = myPow(x, n / 2)
+    const result = myPow(x, n / 2)
     return result * result
 
     // If n is odd, recursively compute x^((n-1)/2) and square the result

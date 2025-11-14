@@ -18,7 +18,7 @@ function minimumChairs(s) {
   let count = 0
   let max = 0
 
-  for (let char of s) {
+  for (const char of s) {
     if (char === 'E') count++
     else count--
     max = Math.max(max, count)

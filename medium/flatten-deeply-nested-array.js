@@ -23,7 +23,7 @@ Please solve it without the built-in Array.flat method.
 // O(m * n) time | O(m * n) space - m = number of elements in arr, n = depth
 function flat(arr, n) {
   if (n === 0) return arr
-  let result = []
+  const result = []
 
   for (const item of arr) {
     if (Array.isArray(item)) {

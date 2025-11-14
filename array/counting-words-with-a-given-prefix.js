@@ -18,7 +18,7 @@ A prefix of a string s is any leading contiguous substring of s.
 function prefixCount(words, pref) {
   let count = 0
 
-  for (let word of words) {
+  for (const word of words) {
     if (word.startsWith(pref)) count++
   }
 

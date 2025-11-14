@@ -31,7 +31,7 @@ class MinStack {
    */
 
   pop() {
-    let popped = this.stack.pop()
+    const popped = this.stack.pop()
 
     if (popped === this.minStack[this.minStack.length - 1]) {
       this.minStack.pop()
@@ -60,7 +60,7 @@ class MinStack {
 // ------------------------
 // TESTS
 
-let stack = new MinStack()
+const stack = new MinStack()
 stack.push(10)
 stack.push(5)
 stack.push(20)

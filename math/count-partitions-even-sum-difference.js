@@ -21,11 +21,11 @@ function countPartitions(nums) {
   let count = 0
 
   for (let i = 1; i < nums.length; i++) {
-    let left = nums.slice(0, i)
-    let right = nums.slice(i)
+    const left = nums.slice(0, i)
+    const right = nums.slice(i)
 
-    let leftSum = left.reduce((num, acc) => num + acc, 0)
-    let rightSum = right.reduce((num, acc) => num + acc, 0)
+    const leftSum = left.reduce((num, acc) => num + acc, 0)
+    const rightSum = right.reduce((num, acc) => num + acc, 0)
 
     if (Math.abs(leftSum - rightSum) % 2 === 0) count++
   }

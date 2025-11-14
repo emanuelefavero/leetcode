@@ -31,7 +31,7 @@ class WordDictionary {
   addWord(word) {
     let current = this.root
 
-    for (let char of word) {
+    for (const char of word) {
       if (!current.children[char]) {
         current.children[char] = new Node()
       }
@@ -63,10 +63,10 @@ class WordDictionary {
   dfs(word, index, node) {
     if (index === word.length) return node.end
 
-    let char = word[index]
+    const char = word[index]
 
     if (char === '.') {
-      for (let key in node.children) {
+      for (const key in node.children) {
         if (this.dfs(word, index + 1, node.children[key])) return true
       }
     } else {
@@ -82,7 +82,7 @@ class WordDictionary {
 // ---------------------------
 // TESTS
 
-let wordDictionary = new WordDictionary()
+const wordDictionary = new WordDictionary()
 wordDictionary.addWord('bad')
 wordDictionary.addWord('dad')
 wordDictionary.addWord('mad')

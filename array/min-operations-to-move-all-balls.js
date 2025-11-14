@@ -17,7 +17,7 @@ Each answer[i] is calculated considering the initial state of the boxes.
 
 // O(n^2) time | O(n) space
 function minOperations(boxes) {
-  let answer = []
+  const answer = []
 
   for (let i = 0; i < boxes.length; i++) {
     let count = 0
@@ -49,7 +49,7 @@ function minOperations(boxes) {
 
 // O(n) time | O(n) space
 function minOperations2(boxes) {
-  let answer = Array(boxes.length).fill(0)
+  const answer = Array(boxes.length).fill(0)
 
   let balls = 0
   let moves = 0

@@ -18,7 +18,7 @@ Return the reverse degree of s.
 
 // O(n) time | O(1) space
 function reverseDegree(s) {
-  let map = {
+  const map = {
     a: 26,
     b: 25,
     c: 24,
@@ -49,7 +49,7 @@ function reverseDegree(s) {
 
   let result = 0
   for (let i = 0; i < s.length; i++) {
-    let char = s[i]
+    const char = s[i]
 
     // Multiply the map value of the character by its index (1-indexed)
     result += map[char] * (i + 1)

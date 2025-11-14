@@ -19,14 +19,14 @@ function countSymmetricIntegers(low, high) {
   let result = 0
 
   for (let i = low; i <= high; i++) {
-    let array = i.toString().split('')
+    const array = i.toString().split('')
     if (array.length % 2 !== 0) continue
 
-    let middle = Math.floor(array.length / 2)
-    let left = array.slice(0, middle)
-    let right = array.slice(middle)
-    let leftSum = left.reduce((a, acc) => Number(a) + Number(acc), 0)
-    let rightSum = right.reduce((a, acc) => Number(a) + Number(acc), 0)
+    const middle = Math.floor(array.length / 2)
+    const left = array.slice(0, middle)
+    const right = array.slice(middle)
+    const leftSum = left.reduce((a, acc) => Number(a) + Number(acc), 0)
+    const rightSum = right.reduce((a, acc) => Number(a) + Number(acc), 0)
     if (leftSum === rightSum) result++
   }
 
@@ -47,10 +47,10 @@ function countSymmetricIntegers2(low, high) {
 }
 
 function isSymmetricInteger(num) {
-  let s = num.toString()
+  const s = num.toString()
   if (s.length % 2 !== 0) return false
 
-  let middle = s.length / 2
+  const middle = s.length / 2
   let leftSum = 0
   let rightSum = 0
   for (let i = 0; i < middle; i++) {

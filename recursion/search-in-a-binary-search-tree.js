@@ -54,7 +54,7 @@ function searchBST2(root, val) {
 // -----------------------------
 // TESTS
 
-let root = new TreeNode(4)
+const root = new TreeNode(4)
 root.left = new TreeNode(2)
 root.right = new TreeNode(7)
 root.left.left = new TreeNode(1)

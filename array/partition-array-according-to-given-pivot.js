@@ -19,11 +19,11 @@ Return nums after the rearrangement.
 
 // O(n) time | O(n) space
 function pivotArray(nums, pivot) {
-  let left = []
-  let equal = []
-  let right = []
+  const left = []
+  const equal = []
+  const right = []
 
-  for (let num of nums) {
+  for (const num of nums) {
     if (num < pivot) left.push(num)
     else if (num > pivot) right.push(num)
     else equal.push(num)
@@ -38,7 +38,7 @@ function pivotArray(nums, pivot) {
 // TIP: This is a two pointer approach. It is more efficient than the previous solution but less readable
 
 function pivotArray2(nums, pivot) {
-  let result = new Int32Array(nums.length).fill(pivot)
+  const result = new Int32Array(nums.length).fill(pivot)
   let left = 0
   let right = nums.length - 1
 

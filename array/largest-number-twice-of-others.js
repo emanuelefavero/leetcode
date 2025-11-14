@@ -12,7 +12,7 @@
 // O(n log n) time | O(n) space
 function dominantIndex(nums) {
   // sort the array in descending order
-  let sorted = [...nums].sort((a, b) => b - a)
+  const sorted = [...nums].sort((a, b) => b - a)
 
   // if the largest number is at least twice as much as the second largest number, return the index of the largest number
   if (sorted[0] >= sorted[1] * 2) return nums.indexOf(sorted[0])

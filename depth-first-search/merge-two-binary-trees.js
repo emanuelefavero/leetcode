@@ -45,12 +45,12 @@ function mergeTrees(root1, root2) {
 // -------------------------
 // TESTS
 
-let root1 = new TreeNode(1)
+const root1 = new TreeNode(1)
 root1.left = new TreeNode(3)
 root1.right = new TreeNode(2)
 root1.left.left = new TreeNode(5)
 
-let root2 = new TreeNode(2)
+const root2 = new TreeNode(2)
 root2.left = new TreeNode(1)
 root2.right = new TreeNode(3)
 root2.left.right = new TreeNode(4)

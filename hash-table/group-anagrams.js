@@ -8,10 +8,10 @@
  */
 
 function groupAnagrams(strs) {
-  let map = new Map()
+  const map = new Map()
 
-  for (string of strs) {
-    let sortedString = string.split('').sort().join('')
+  for (const string of strs) {
+    const sortedString = string.split('').sort().join('')
 
     // if the map already has the sorted string, push the string into the array
     if (map.has(sortedString)) {

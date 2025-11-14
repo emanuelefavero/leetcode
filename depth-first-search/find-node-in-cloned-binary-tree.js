@@ -51,10 +51,10 @@ function getTargetCopy(original, cloned, target) {
 // TIP: This is a BFS solution
 
 function getTargetCopy2(original, cloned, target) {
-  let queue = [cloned]
+  const queue = [cloned]
 
   while (queue.length) {
-    let node = queue.shift()
+    const node = queue.shift()
 
     if (node.val === target.val) return node
 
@@ -68,15 +68,15 @@ function getTargetCopy2(original, cloned, target) {
 // -------------------------
 // TESTS
 
-let original = new TreeNode(7)
+const original = new TreeNode(7)
 original.left = new TreeNode(4)
 original.right = new TreeNode(3)
 original.right.left = new TreeNode(6)
 original.right.right = new TreeNode(19)
 
-let cloned = original
+const cloned = original
 
-let target = original.right
+const target = original.right
 
 console.log(getTargetCopy(original, cloned, target))
 console.log(getTargetCopy2(original, cloned, target))

@@ -44,7 +44,7 @@ function fib2(n) {
 
 // O(n) time | O(n) space
 function fib3(n) {
-  let table = new Array(n + 1)
+  const table = new Array(n + 1)
 
   table[0] = 0
   table[1] = 1

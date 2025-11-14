@@ -62,12 +62,12 @@ function deleteNode(node) {
 // -------------------
 // TESTS
 
-let head = new ListNode(4)
+const head = new ListNode(4)
 head.next = new ListNode(5)
 head.next.next = new ListNode(1)
 head.next.next.next = new ListNode(9)
 
-let node = head.next
+const node = head.next
 deleteNode(node)
 console.log(head) // 4 -> 1 -> 9
 // Explanation: You are given the second node with value 5, the linked list should become 4 -> 1 -> 9 after calling your function.

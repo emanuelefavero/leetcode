@@ -32,7 +32,7 @@ function findMaxConsecutiveOnes2(nums) {
   let currentSum = 0
   let maxSum = 0
 
-  for (let n of nums) {
+  for (const n of nums) {
     if (n === 1) {
       currentSum++
     } else {
@@ -51,7 +51,7 @@ function findMaxConsecutiveOnes2(nums) {
 
 // O(n) time | O(n) space
 function findMaxConsecutiveOnes3(nums) {
-  let result = []
+  const result = []
   let consecutiveOnes = 0
 
   for (let i = 0; i < nums.length; i++) {

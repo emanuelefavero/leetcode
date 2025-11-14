@@ -31,8 +31,8 @@ class TreeNode {
 function minDepth(root) {
   if (!root) return 0
 
-  let left = minDepth(root.left)
-  let right = minDepth(root.right)
+  const left = minDepth(root.left)
+  const right = minDepth(root.right)
 
   if (left === 0 || right === 0) {
     return left + right + 1
@@ -49,10 +49,10 @@ function minDepth(root) {
 function minDepth2(root) {
   if (!root) return 0
 
-  let queue = [[root, 1]]
+  const queue = [[root, 1]]
 
   while (queue.length) {
-    let [node, depth] = queue.shift()
+    const [node, depth] = queue.shift()
 
     if (!node.left && !node.right) return depth
 
@@ -69,7 +69,7 @@ function minDepth2(root) {
 // ---------------------
 // TESTS
 
-let tree = new TreeNode(3)
+const tree = new TreeNode(3)
 tree.left = new TreeNode(9)
 tree.right = new TreeNode(20)
 tree.right.left = new TreeNode(15)

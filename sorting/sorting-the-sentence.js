@@ -16,10 +16,10 @@ Given a shuffled sentence s containing no more than 9 words, reconstruct and ret
 
 // O(n) time | O(n) space
 function sortSentence(s) {
-  let result = new Array(9).fill(undefined)
+  const result = new Array(9).fill(undefined)
   let word = ''
 
-  for (let char of s) {
+  for (const char of s) {
     if (char !== ' ') {
       if (isNumber(char)) {
         result[char] = word

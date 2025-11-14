@@ -16,7 +16,7 @@ Return the bitwise XOR of all elements of nums.
 
 // O(n) time | O(n) space
 function xorOperation(n, start) {
-  let arr = []
+  const arr = []
   for (let i = 0; i < n; i++) {
     arr.push(start + 2 * i)
   }

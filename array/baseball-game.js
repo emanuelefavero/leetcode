@@ -25,11 +25,11 @@ The test cases are generated such that the answer and all intermediate calculati
 
 // O(n) - time | O(n) - space
 function calPoints(operations) {
-  let result = []
+  const result = []
 
-  for (let operation of operations) {
+  for (const operation of operations) {
     if (operation === '+') {
-      let sum = result[result.length - 1] + result[result.length - 2]
+      const sum = result[result.length - 1] + result[result.length - 2]
       result.push(sum)
     } else if (operation === 'C') {
       result.pop()

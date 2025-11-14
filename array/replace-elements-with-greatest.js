@@ -15,7 +15,7 @@ function replaceElements(arr) {
 
   // loop backwards so we can keep track of the max number to the right
   for (let i = arr.length - 1; i >= 0; i--) {
-    let current = arr[i]
+    const current = arr[i]
 
     arr[i] = max
     max = Math.max(max, current)

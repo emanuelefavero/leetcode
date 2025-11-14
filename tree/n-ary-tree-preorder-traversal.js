@@ -35,7 +35,7 @@ function preorder(root, result = []) {
 
   result.push(root.val)
 
-  for (let child of root.children) {
+  for (const child of root.children) {
     preorder(child, result)
   }
 
@@ -48,11 +48,11 @@ function preorder(root, result = []) {
 // NOTE: Iterative solution
 
 function preorder2(root) {
-  let result = []
-  let stack = [root]
+  const result = []
+  const stack = [root]
 
   while (stack.length) {
-    let current = stack.pop()
+    const current = stack.pop()
     if (!current) continue // we need this to avoid pushing null values into the result array
 
     result.push(current.val)
@@ -69,7 +69,7 @@ function preorder2(root) {
 // -----------------------------
 // TESTS
 
-let root = new Node(1)
+const root = new Node(1)
 root.children = [new Node(3), new Node(2), new Node(4)]
 root.children[0].children = [new Node(5), new Node(6)]
 

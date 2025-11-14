@@ -11,9 +11,9 @@
 
 // O(n log n) time  | O(n) space
 function frequencySort(nums) {
-  let map = new Map()
+  const map = new Map()
 
-  for (let num of nums) {
+  for (const num of nums) {
     map.set(num, (map.get(num) || 0) + 1)
   }
 
@@ -34,9 +34,9 @@ function frequencySort(nums) {
 // TIP: This solution uses an object instead of a Map and returns the sorted method directly
 
 function frequencySort2(nums) {
-  let map = {}
+  const map = {}
 
-  for (let num of nums) {
+  for (const num of nums) {
     map[num] = (map[num] || 0) + 1
   }
 

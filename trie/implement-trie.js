@@ -18,7 +18,7 @@ class Trie {
   insert(word) {
     let current = this.root
 
-    for (let char of word) {
+    for (const char of word) {
       if (!current.children[char]) {
         current.children[char] = new Node()
       }
@@ -38,7 +38,7 @@ class Trie {
   search(word) {
     let current = this.root
 
-    for (let char of word) {
+    for (const char of word) {
       if (!current.children[char]) return false
       current = current.children[char]
     }
@@ -55,7 +55,7 @@ class Trie {
   startsWith(prefix) {
     let current = this.root
 
-    for (let char of prefix) {
+    for (const char of prefix) {
       if (!current.children[char]) return false
       current = current.children[char]
     }
@@ -67,7 +67,7 @@ class Trie {
 // -----------------------------
 // TESTS
 
-let trie = new Trie()
+const trie = new Trie()
 trie.insert('apple')
 console.log(trie.search('apple')) // true
 console.log(trie.search('app')) // false

@@ -22,7 +22,7 @@ Return an array answer of size n, where answer[i] is the minimum total cost to r
 
 // O(n) time | O(n) space
 function minCosts(cost) {
-  let result = []
+  const result = []
 
   let min = Infinity
   for (let i = 0; i < cost.length; i++) {

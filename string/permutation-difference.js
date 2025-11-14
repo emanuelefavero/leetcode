@@ -17,7 +17,7 @@ Return the permutation difference between s and t.
 
 // O(n) time | O(1) space
 function findPermutationDifference(s, t) {
-  let map = new Map()
+  const map = new Map()
 
   for (let i = 0; i < s.length; i++) {
     if (!map.has(s[i])) {
@@ -42,7 +42,7 @@ function findPermutationDifference2(s, t) {
   let result = 0
 
   for (let i = 0; i < s.length; i++) {
-    let ii = t.indexOf(s[i])
+    const ii = t.indexOf(s[i])
     result += Math.abs(ii - i)
   }
 

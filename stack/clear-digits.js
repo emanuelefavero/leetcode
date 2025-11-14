@@ -22,7 +22,7 @@ Note that the operation cannot be performed on a digit that does not have any no
 function clearDigits(s) {
   const stack = []
 
-  for (let c of s) {
+  for (const c of s) {
     // If the character is a digit, we need to remove the last non-digit character from the stack
     if (c >= '0' && c <= '9') {
       if (stack.length) stack.pop()

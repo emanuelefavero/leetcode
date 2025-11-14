@@ -10,11 +10,11 @@
 
 // O(n^2) time, O(n) space
 function maximumWealth(accounts) {
-  let sums = []
+  const sums = []
 
   for (let i = 0; i < accounts.length; i++) {
     // Get the sum of each array
-    let sum = accounts[i].reduce((acc, curr) => acc + curr, 0)
+    const sum = accounts[i].reduce((acc, curr) => acc + curr, 0)
     sums.push(sum)
   }
 

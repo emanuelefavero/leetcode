@@ -20,8 +20,8 @@ function numMagicSquaresInside(grid) {
   const sum = (...set) => set.reduce((acc, curr) => acc + curr, 0)
 
   let result = 0
-  let cols = grid[0].length
-  let rows = grid.length
+  const cols = grid[0].length
+  const rows = grid.length
 
   for (let i = 0; i < cols - 2; i++) {
     for (let j = 0; j < rows - 2; j++) {

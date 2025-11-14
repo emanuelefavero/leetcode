@@ -19,15 +19,15 @@ Note that the strings are considered in the order in which they appear in the ar
 
 // O(n) time | O(n) space
 function kthDistinct(arr, k) {
-  let map = new Map()
+  const map = new Map()
 
-  for (let string of arr) {
+  for (const string of arr) {
     if (map.has(string)) map.set(string, 1) // ?
     else map.set(string, 0)
   }
 
-  let result = []
-  for (let string of arr) {
+  const result = []
+  for (const string of arr) {
     if (map.get(string) === 0) result.push(string)
   }
 
@@ -41,15 +41,15 @@ function kthDistinct(arr, k) {
 // TIP: This solution stops the second loop as soon as it finds the kth distinct string
 
 function kthDistinct2(arr, k) {
-  let map = new Map()
+  const map = new Map()
 
-  for (let string of arr) {
+  for (const string of arr) {
     if (map.has(string)) map.set(string, 1)
     else map.set(string, 0)
   }
 
   let count = 0
-  for (let string of arr) {
+  for (const string of arr) {
     if (map.get(string) === 0) count++
     if (count === k) return string
   }

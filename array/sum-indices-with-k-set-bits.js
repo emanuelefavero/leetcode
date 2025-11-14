@@ -23,7 +23,7 @@ function sumIndicesWithKSetBits(nums, k) {
 
   for (let i = 0; i < nums.length; i++) {
     let countOnes = 0
-    let iInBinary = i.toString(2)
+    const iInBinary = i.toString(2)
 
     for (let j = 0; j < iInBinary.length; j++) {
       if (iInBinary[j] === '1') countOnes++

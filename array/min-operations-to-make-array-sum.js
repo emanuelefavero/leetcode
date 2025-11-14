@@ -34,8 +34,8 @@ function minOperations(nums, k) {
 // TIP: We can also solve the problem using the remainder
 
 function minOperations2(nums, k) {
-  let sum = nums.reduce((num, acc) => num + acc, 0)
-  let remainder = sum % k
+  const sum = nums.reduce((num, acc) => num + acc, 0)
+  const remainder = sum % k
   return remainder
 }
 

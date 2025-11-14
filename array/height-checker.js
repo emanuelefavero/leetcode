@@ -17,7 +17,7 @@ TIP: To solve this problem, you can copy the heights array and sort it. Then, co
 
 // O(n log n) time | O(n) space
 function heightChecker(heights) {
-  let expected = [...heights].sort((a, b) => a - b) // sort heights
+  const expected = [...heights].sort((a, b) => a - b) // sort heights
   let result = 0
 
   for (let i = 0; i < heights.length; i++) {
@@ -30,5 +30,5 @@ function heightChecker(heights) {
 // -------------------------
 // TESTS
 
-let heights = [1, 1, 4, 2, 1, 3]
+const heights = [1, 1, 4, 2, 1, 3]
 console.log(heightChecker(heights)) // 3

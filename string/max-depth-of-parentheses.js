@@ -12,7 +12,7 @@ function maxDepth(s) {
   let max = 0
   let count = 0
 
-  for (let char of s) {
+  for (const char of s) {
     if (char === '(') {
       count++
       max = Math.max(max, count)
@@ -32,9 +32,9 @@ function maxDepth(s) {
 // O(n) time | O(n) space
 function maxDepth2(s) {
   let max = 0
-  let stack = []
+  const stack = []
 
-  for (let char of s) {
+  for (const char of s) {
     if (char === '(') {
       stack.push(char)
     } else if (char === ')') {

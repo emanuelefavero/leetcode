@@ -21,7 +21,7 @@ class ListNode {
 
 // O(n + m) time | O(1) space
 function mergeTwoLists(list1, list2) {
-  let head = new ListNode()
+  const head = new ListNode()
   let current = head
 
   while (list1 && list2) {
@@ -64,11 +64,11 @@ function mergeTwoLists2(list1, list2) {
 // -----------------------------
 // TESTS
 
-let list1 = new ListNode(1)
+const list1 = new ListNode(1)
 list1.next = new ListNode(2)
 list1.next.next = new ListNode(4)
 
-let list2 = new ListNode(1)
+const list2 = new ListNode(1)
 list2.next = new ListNode(3)
 list2.next.next = new ListNode(4)
 

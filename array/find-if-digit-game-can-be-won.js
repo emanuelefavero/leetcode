@@ -18,7 +18,7 @@ function canAliceWin(nums) {
   let singleDigitSum = 0
   let doubleDigitSum = 0
 
-  for (let num of nums) {
+  for (const num of nums) {
     if (num < 10) {
       singleDigitSum += num
     } else doubleDigitSum += num

@@ -15,10 +15,10 @@ A string is palindromic if it reads the same forward and backward.
 
 // O(n^2) time | O(n) space
 function isStrictlyPalindromic(n) {
-  let length = n - 2
+  const length = n - 2
   for (let i = 2; i <= length; i++) {
-    let base = n.toString(i)
-    let reversed = base.split('').reverse().join('')
+    const base = n.toString(i)
+    const reversed = base.split('').reverse().join('')
     if (base !== reversed) return false
   }
   return true

@@ -18,7 +18,7 @@ The '.' character indicates empty cells.
 
 // O(9^(n*n)) time - O(n*n) space
 function solveSudoku(board) {
-  let n = board.length
+  const n = board.length
   dfs(board, n)
 }
 
@@ -39,7 +39,7 @@ function dfs(board, n) {
 
       // if the cell is empty, try to fill it with a number from 1 to 9
       for (let i = 1; i <= 9; i++) {
-        let c = i.toString()
+        const c = i.toString()
 
         // if the number is valid, fill the cell with the number
         if (isValid(board, row, col, n, c)) {
@@ -74,15 +74,15 @@ function dfs(board, n) {
 // O(n) time - O(1) space
 // check if the number is valid for the cell
 function isValid(board, row, col, n, c) {
-  let blockRow = Math.floor(row / 3) * 3 // 0, 3, 6
-  let blockCol = Math.floor(col / 3) * 3 // 0, 3, 6
+  const blockRow = Math.floor(row / 3) * 3 // 0, 3, 6
+  const blockCol = Math.floor(col / 3) * 3 // 0, 3, 6
 
   // loop through the row, column, and block to check if the number is valid
   for (let i = 0; i < n; i++) {
     if (board[row][i] === c || board[i][col] === c) return false
 
-    let currentRow = blockRow + Math.floor(i / 3) // 0, 0, 0, 3, 3, 3, 6, 6, 6
-    let currentCol = blockCol + Math.floor(i % 3) // 0, 3, 6, 0, 3, 6, 0, 3, 6
+    const currentRow = blockRow + Math.floor(i / 3) // 0, 0, 0, 3, 3, 3, 6, 6, 6
+    const currentCol = blockCol + Math.floor(i % 3) // 0, 3, 6, 0, 3, 6, 0, 3, 6
 
     if (board[currentRow][currentCol] === c) return false
   }
@@ -93,7 +93,7 @@ function isValid(board, row, col, n, c) {
 // -----------------------------
 // TESTS
 
-let board = [
+const board = [
   ['5', '3', '.', '.', '7', '.', '.', '.', '.'],
   ['6', '.', '.', '1', '9', '5', '.', '.', '.'],
   ['.', '9', '8', '.', '.', '.', '.', '6', '.'],

@@ -14,7 +14,7 @@ Return the smallest character in letters that is lexicographically greater than 
 
 // O(n) time | O(1) space
 function nextGreatestLetter(letters, target) {
-  for (let letter of letters) {
+  for (const letter of letters) {
     if (letter.charCodeAt(0) > target.charCodeAt(0)) return letter
   }
 
@@ -32,7 +32,7 @@ function nextGreatestLetter2(letters, target) {
   let right = letters.length - 1
 
   while (left <= right) {
-    let middle = Math.floor((left + right) / 2)
+    const middle = Math.floor((left + right) / 2)
 
     if (letters[middle].charCodeAt(0) <= target.charCodeAt(0)) left = middle + 1
     else right = middle - 1

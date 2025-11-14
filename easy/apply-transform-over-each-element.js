@@ -16,7 +16,7 @@ Please solve it without the built-in Array.map method.
 
 // O(n) time | O(n) space
 function map(arr, fn) {
-  let result = []
+  const result = []
 
   for (let i = 0; i < arr.length; i++) {
     result.push(fn(arr[i], i))

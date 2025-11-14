@@ -15,7 +15,7 @@
 function reverseString(s) {
   if (s.length === 0) return s
 
-  let last = s.pop()
+  const last = s.pop()
 
   reverseString(s)
 

@@ -27,8 +27,8 @@ Return the result accordingly.
 
 // O(1) time | O(1) space
 function findClosest(x, y, z) {
-  let xDiff = Math.abs(x - z)
-  let yDiff = Math.abs(y - z)
+  const xDiff = Math.abs(x - z)
+  const yDiff = Math.abs(y - z)
   if (xDiff < yDiff) return 1
   if (xDiff > yDiff) return 2
   else return 0

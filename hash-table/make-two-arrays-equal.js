@@ -12,19 +12,19 @@
 
 // O(n) time | O(n) space
 function canBeEqual(target, arr) {
-  let map = new Map()
+  const map = new Map()
 
-  for (let num of target) {
+  for (const num of target) {
     map.set(num, (map.get(num) || 0) + 1)
   }
 
-  for (let num of arr) {
+  for (const num of arr) {
     if (!map.has(num)) return false
     map.set(num, map.get(num) - 1)
   }
 
   // If all values in the map are 0, it means that the arrays have the same numbers with same frequency
-  for (let [_, value] of map) {
+  for (const [_, value] of map) {
     if (value !== 0) return false
   }
 
@@ -49,7 +49,7 @@ function canBeEqual2(target, arr) {
 // TIP: We increase the count of the target numbers and decrease the count of the arr numbers as we iterate through the arrays to check if they have the same numbers with the same frequency
 
 function canBeEqual3(target, arr) {
-  let count = new Int32Array(1001)
+  const count = new Int32Array(1001)
   let uniqueCount = 0
 
   for (let i = 0; i < target.length; i++) {

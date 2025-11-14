@@ -14,8 +14,8 @@ function isArraySpecial(nums) {
   if (nums.length === 1) return true
 
   for (let i = 1; i < nums.length; i++) {
-    let current = nums[i]
-    let prev = nums[i - 1]
+    const current = nums[i]
+    const prev = nums[i - 1]
 
     const isEven = (num) => num % 2 === 0
 
@@ -36,7 +36,7 @@ function isArraySpecial(nums) {
 // TIP: This solution is more concise and it is faster than the first one
 
 function isArraySpecial2(nums) {
-  let n = nums.length
+  const n = nums.length
 
   for (let i = 0; i < n - 1; i++) {
     if (

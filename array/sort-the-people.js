@@ -16,11 +16,11 @@ Return names sorted in descending order by the people's heights.
 
 // O(n log n) time | O(n) space
 function sortPeople(names, heights) {
-  let result = []
+  const result = []
 
   // Create array of objects with name and height
   for (let i = 0; i < names.length; i++) {
-    let person = { name: names[i], height: heights[i] }
+    const person = { name: names[i], height: heights[i] }
     result.push(person)
   }
 
@@ -39,7 +39,7 @@ function sortPeople(names, heights) {
 
 function sortPeople2(names, heights) {
   // Create array of names and heights
-  let result = names.map((name, i) => [name, heights[i]])
+  const result = names.map((name, i) => [name, heights[i]])
 
   result.sort((a, b) => b[1] - a[1]) // sort by height
   return result.map((person) => person[0]) // remove the height

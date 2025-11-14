@@ -67,8 +67,8 @@ class MaxHeap {
   }
 
   pop() {
-    let max = this.heap[0]
-    let end = this.heap.pop()
+    const max = this.heap[0]
+    const end = this.heap.pop()
 
     if (this.heap.length > 0) {
       this.heap[0] = end
@@ -83,8 +83,8 @@ class MaxHeap {
     const ele = this.heap[idx]
 
     while (idx > 0) {
-      let parentIdx = Math.floor((idx - 1) / 2)
-      let parent = this.heap[parentIdx]
+      const parentIdx = Math.floor((idx - 1) / 2)
+      const parent = this.heap[parentIdx]
 
       if (ele <= parent) break
 
@@ -100,8 +100,8 @@ class MaxHeap {
     const length = this.heap.length
 
     while (true) {
-      let leftChildIdx = idx * 2 + 1
-      let rightChildIdx = idx * 2 + 2
+      const leftChildIdx = idx * 2 + 1
+      const rightChildIdx = idx * 2 + 2
       let left
       let right
       let swap = null
@@ -133,14 +133,14 @@ class MaxHeap {
 
 // O(n) time | O(n) space
 function pickGifts3(gifts, k) {
-  let heap = new MaxHeap()
+  const heap = new MaxHeap()
 
-  for (let gift of gifts) {
+  for (const gift of gifts) {
     heap.push(gift)
   }
 
   while (k > 0) {
-    let max = heap.pop()
+    const max = heap.pop()
     heap.push(Math.floor(Math.sqrt(max)))
     k--
   }

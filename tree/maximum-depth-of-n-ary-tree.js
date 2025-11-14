@@ -34,7 +34,7 @@ function maxDepth(root) {
 
   let max = 0
 
-  for (let child of root.children) {
+  for (const child of root.children) {
     max = Math.max(max, maxDepth(child))
   }
 
@@ -44,7 +44,7 @@ function maxDepth(root) {
 // -----------------------------
 // TESTS
 
-let root = new Node(1)
+const root = new Node(1)
 root.children = [new Node(3), new Node(2), new Node(4)]
 root.children[0].children = [new Node(5), new Node(6)]
 

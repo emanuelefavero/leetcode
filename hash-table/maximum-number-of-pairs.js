@@ -18,20 +18,20 @@ Return a 0-indexed integer array answer of size 2 where answer[0] is the number 
 
 // O(n) time | O(n) space
 function numberOfPairs(nums) {
-  let map = new Map()
+  const map = new Map()
 
-  for (let num of nums) {
+  for (const num of nums) {
     map.set(num, (map.get(num) || 0) + 1)
   }
 
   // Count the pairs in map
   let pairs = 0
-  for (let [_, value] of map) {
+  for (const [_, value] of map) {
     pairs += Math.floor(value / 2) // get the integer part of the division
   }
 
   // Count the leftover integers
-  let leftover = nums.length - pairs * 2
+  const leftover = nums.length - pairs * 2
 
   return [pairs, leftover]
 }

@@ -50,10 +50,10 @@ function deleteGreatestValue2(grid) {
   let sum = 0
 
   while (grid[0].length) {
-    let column = []
+    const column = []
 
     // Remove the first element from each row and add it to the column
-    for (let row of grid) column.push(row.shift())
+    for (const row of grid) column.push(row.shift())
 
     sum += Math.max(...column) // get the max value from the column
   }

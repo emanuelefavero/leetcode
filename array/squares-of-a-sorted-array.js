@@ -7,7 +7,7 @@
 
 // O(n log n) time | O(n) space
 function sortedSquares(nums) {
-  let result = nums.map((n) => n * n) // square each number
+  const result = nums.map((n) => n * n) // square each number
 
   return result.sort((a, b) => a - b) // sort the array
 }
@@ -29,7 +29,7 @@ function sortedSquares2(nums) {
 
 // O(n log n) time | O(n) space
 function sortedSquares3(nums) {
-  let squares = []
+  const squares = []
 
   for (let i = 0; i < nums.length; i++) {
     squares.push(nums[i] * nums[i])
@@ -45,15 +45,15 @@ function sortedSquares3(nums) {
 
 // O(n) time | O(n) space
 function sortedSquares4(nums) {
-  let squares = []
+  const squares = []
   let left = 0
   let right = nums.length - 1
 
   // iterate through the array from right to left
   for (let i = nums.length - 1; i >= 0; i--) {
     // compare the squares of the left and right pointers
-    let leftSquare = nums[left] * nums[left]
-    let rightSquare = nums[right] * nums[right]
+    const leftSquare = nums[left] * nums[left]
+    const rightSquare = nums[right] * nums[right]
 
     // add the larger square to the beginning of the array
     if (leftSquare > rightSquare) {

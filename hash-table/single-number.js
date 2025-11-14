@@ -7,9 +7,9 @@
 
 // O(n) time | O(n) space
 function singleNumber(nums) {
-  let hashTable = {}
+  const hashTable = {}
 
-  for (let num of nums) {
+  for (const num of nums) {
     if (hashTable[num]) {
       hashTable[num]++
     } else {
@@ -17,7 +17,7 @@ function singleNumber(nums) {
     }
   }
 
-  for (let key in hashTable) {
+  for (const key in hashTable) {
     if (hashTable[key] < 2) {
       return key
     }

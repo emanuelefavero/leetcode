@@ -10,14 +10,14 @@
 
 // O(n) time | O(n) space
 function numJewelsInStones(jewels, stones) {
-  let set = new Set()
+  const set = new Set()
   let count = 0
 
-  for (let jewel of jewels) {
+  for (const jewel of jewels) {
     set.add(jewel)
   }
 
-  for (let stone of stones) {
+  for (const stone of stones) {
     if (set.has(stone)) count++
   }
 
@@ -30,7 +30,7 @@ function numJewelsInStones(jewels, stones) {
 function numJewelsInStones2(jewels, stones) {
   let count = 0
 
-  for (let stone of stones) {
+  for (const stone of stones) {
     if (jewels.includes(stone)) count++
   }
 
@@ -41,7 +41,7 @@ function numJewelsInStones2(jewels, stones) {
 // SOLUTION 3
 
 function numJewelsInStones3(jewels, stones) {
-  let set = new Set(jewels)
+  const set = new Set(jewels)
   let count = 0
 
   for (let i = 0; i < stones.length; i++) {

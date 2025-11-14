@@ -15,11 +15,11 @@ Return the array after sorting it.
 // O(n log n) time | O(1) space
 function sortByBits(arr) {
   return arr.sort((a, b) => {
-    let countA = a
+    const countA = a
       .toString(2)
       .split('')
       .filter((bit) => bit === '1').length
-    let countB = b
+    const countB = b
       .toString(2)
       .split('')
       .filter((bit) => bit === '1').length

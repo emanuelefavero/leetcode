@@ -12,10 +12,10 @@
 function myPow(x, n) {
   if (n === 0) return 1
 
-  let pow = Math.abs(n) // always return x positive number
+  const pow = Math.abs(n) // always return x positive number
 
   // The following line efficiently divides the problem of exponentiation into smaller sub problems by exploiting the fact that `x^n` can be expressed as `(x^(n/2))^2` when `n` is even, and as `x * (x^(n-1)/2)^2` when `n` is odd
-  let result =
+  const result =
     pow % 2 === 0 ? myPow(x * x, pow / 2) : myPow(x * x, (pow - 1) / 2) * x
 
   // If `n` is negative, we invert the result by dividing 1 by it
@@ -42,7 +42,7 @@ function myPow3(x, n) {
   else if (n === -1) return 1 / x
   // If n is even, recursively compute x^(n/2) and square the result
   else if (n % 2 === 0) {
-    let result = myPow3(x, n / 2)
+    const result = myPow3(x, n / 2)
     return result * result
 
     // If n is odd, recursively compute x^((n-1)/2) and square the result

@@ -42,7 +42,7 @@ function lowestCommonAncestor(root, p, q) {
 // -----------------------------
 // TESTS
 
-let root = new TreeNode(6)
+const root = new TreeNode(6)
 root.left = new TreeNode(2)
 root.right = new TreeNode(8)
 root.left.left = new TreeNode(0)

@@ -53,12 +53,12 @@ function equalFrequency2(word) {
   const map = {}
 
   // Count the frequency of each character
-  for (let char of word) {
+  for (const char of word) {
     map[char] = (map[char] || 0) + 1
   }
 
   // Remove each character and check if all frequencies are equal
-  for (let char of word) {
+  for (const char of word) {
     // Remove the character if it's the last one
     const freq = map[char] - 1
     if (freq) map[char] = freq

@@ -18,7 +18,7 @@ function printMultiDimensionalArray(array) {
 // -------------------------
 // TESTS
 
-let multiDimensionalArray = [
+const multiDimensionalArray = [
   [1, 2],
   [3, 4, [5, 6]],
 ]

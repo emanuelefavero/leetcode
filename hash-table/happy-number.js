@@ -16,11 +16,11 @@ Return true if n is a happy number, and false if not
 
 // O(log n) time | O(log n) space
 function isHappy(n) {
-  let set = new Set()
+  const set = new Set()
 
   while (n !== 1) {
     let sum = 0
-    let num = n.toString() // convert n to a string so we can iterate over it
+    const num = n.toString() // convert n to a string so we can iterate over it
 
     for (let i = 0; i < num.length; i++) {
       sum += num[i] * num[i]

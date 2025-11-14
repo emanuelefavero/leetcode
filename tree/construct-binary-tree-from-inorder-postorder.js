@@ -26,14 +26,14 @@ class TreeNode {
 // O(n) time | O(n) space
 function buildTree(inorder, postorder) {
   // Store inorder values in hash table
-  let hash = {}
+  const hash = {}
   for (let i = 0; i < inorder.length; i++) hash[inorder[i]] = i
 
   function recurse(start, end) {
     if (start > end) return null // base case
 
-    let value = postorder.pop() // remove/get last element of postorder
-    let root = new TreeNode(value)
+    const value = postorder.pop() // remove/get last element of postorder
+    const root = new TreeNode(value)
     root.right = recurse(hash[value] + 1, end)
     root.left = recurse(start, hash[value] - 1)
 
@@ -48,7 +48,7 @@ function buildTree(inorder, postorder) {
 // -----------------------------
 // TESTS
 
-let inorder = [9, 3, 15, 20, 7]
-let postorder = [9, 15, 7, 20, 3]
+const inorder = [9, 3, 15, 20, 7]
+const postorder = [9, 15, 7, 20, 3]
 
 console.log(buildTree(inorder, postorder)) // [3,9,20,null,null,15,7]

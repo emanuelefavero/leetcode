@@ -12,7 +12,7 @@
 
 // O(log n) time | O(1) space
 function hammingWeight(n) {
-  let binary = n.toString(2)
+  const binary = n.toString(2)
   let count = 0
 
   for (let i = 0; i < binary.length; i++) {

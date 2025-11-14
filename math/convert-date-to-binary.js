@@ -17,9 +17,9 @@ Return the binary representation of date.
 
 // O(n) time | O(1) space
 function convertDateToBinary(date) {
-  let year = Number(date.substring(0, 4)).toString(2)
-  let month = Number(date.substring(5, 7)).toString(2)
-  let day = Number(date.substring(8, 10)).toString(2)
+  const year = Number(date.substring(0, 4)).toString(2)
+  const month = Number(date.substring(5, 7)).toString(2)
+  const day = Number(date.substring(8, 10)).toString(2)
   return `${year}-${month}-${day}`
 }
 
@@ -29,8 +29,8 @@ function convertDateToBinary(date) {
 // TIP: We can also use the split method to get the year, month, and day
 
 function convertDateToBinary2(date) {
-  let array = date.split('-')
-  let result = array.map((num) => parseInt(num).toString(2))
+  const array = date.split('-')
+  const result = array.map((num) => parseInt(num).toString(2))
   return result.join('-')
 }
 

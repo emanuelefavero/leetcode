@@ -13,7 +13,7 @@
 function minimumOperations(nums) {
   let count = 0
 
-  for (let num of nums) {
+  for (const num of nums) {
     if (num % 3 !== 0) count++
   }
 

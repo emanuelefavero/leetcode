@@ -39,8 +39,8 @@ function evaluateTree(root) {
   if (!root.left && !root.right) return root.val === 1
 
   // EvaluateTree left and right subtrees
-  let left = evaluateTree(root.left)
-  let right = evaluateTree(root.right)
+  const left = evaluateTree(root.left)
+  const right = evaluateTree(root.right)
 
   // Apply boolean operation based on the node's value
   if (root.val === 2) return left || right
@@ -50,7 +50,7 @@ function evaluateTree(root) {
 // ----------------------
 // TESTS
 
-let root = new TreeNode(2)
+const root = new TreeNode(2)
 root.left = new TreeNode(1)
 root.right = new TreeNode(3)
 root.right.left = new TreeNode(0)

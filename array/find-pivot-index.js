@@ -17,7 +17,7 @@
 // O(n) time | O(1) space
 function pivotIndex(nums) {
   // calculate the total sum of the array
-  let totalSum = nums.reduce((a, b) => a + b, 0)
+  const totalSum = nums.reduce((a, b) => a + b, 0)
   let leftSum = 0
 
   for (let i = 0; i < nums.length; i++) {

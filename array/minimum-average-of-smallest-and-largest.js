@@ -17,7 +17,7 @@ Return the minimum element in averages.
 
 // O(nlogn) time | O(n) space
 function minimumAverage(nums) {
-  let averages = []
+  const averages = []
 
   nums.sort((a, b) => a - b)
 

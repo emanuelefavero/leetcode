@@ -18,11 +18,11 @@ Given a string s, reconstruct the permutation perm and return it. If there are m
 
 // O(n) time | O(n) space
 function diStringMatch(s) {
-  let result = []
+  const result = []
   let left = 0
   let right = s.length
 
-  for (char of s) {
+  for (const char of s) {
     if (char === 'I') {
       result.push(left)
       left++

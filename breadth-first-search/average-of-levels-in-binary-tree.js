@@ -23,15 +23,15 @@ class TreeNode {
 
 // O(n) time | O(n) space
 function averageOfLevels(root) {
-  let result = []
-  let queue = [root]
+  const result = []
+  const queue = [root]
 
   while (queue.length) {
-    let size = queue.length // ?
+    const size = queue.length // ?
     let sum = 0
 
     for (let i = 0; i < size; i++) {
-      let current = queue.shift()
+      const current = queue.shift()
       sum += current.val
 
       if (current.left) queue.push(current.left)

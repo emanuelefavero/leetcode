@@ -23,8 +23,8 @@ Note that you can pick the same integer twice to form a pair.
 function maximumStrongPairXor(nums) {
   let max = 0
 
-  for (let x of nums) {
-    for (let y of nums) {
+  for (const x of nums) {
+    for (const y of nums) {
       // Check if x and y form a strong pair
       if (Math.abs(x - y) <= Math.min(x, y)) {
         max = Math.max(max, x ^ y) // update max

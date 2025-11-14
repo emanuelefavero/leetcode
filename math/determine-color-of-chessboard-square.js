@@ -47,7 +47,7 @@ function squareIsWhite2(coordinates) {
 // TIP: The following solution is not more efficient but it can be easier to understand. Basically, we create a map with the letters and their corresponding numbers. Then we check if the letter is odd and the number is odd. If both are odd or both are even, the square is white.
 
 function squareIsWhite3(coordinates) {
-  let map = {
+  const map = {
     a: 1,
     b: 2,
     c: 3,
@@ -58,8 +58,8 @@ function squareIsWhite3(coordinates) {
     h: 8,
   }
 
-  let isLetterOdd = map[coordinates[0]] % 2 !== 0
-  let isNumberOdd = parseInt(coordinates[1]) % 2 !== 0
+  const isLetterOdd = map[coordinates[0]] % 2 !== 0
+  const isNumberOdd = parseInt(coordinates[1]) % 2 !== 0
 
   return isLetterOdd !== isNumberOdd
 }

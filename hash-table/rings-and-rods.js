@@ -19,18 +19,18 @@ Return the number of rods that have all three colors of rings on them.
 
 // O(n) time | O(n) space
 function countPoints(rings) {
-  let map = {}
+  const map = {}
 
   for (let i = 0; i < rings.length; i += 2) {
-    let color = rings[i]
-    let rod = rings[i + 1]
+    const color = rings[i]
+    const rod = rings[i + 1]
 
     if (!map[rod]) map[rod] = {}
     map[rod][color] = true
   }
 
   let count = 0
-  for (let key of Object.keys(map)) {
+  for (const key of Object.keys(map)) {
     if (map[key].R && map[key].G && map[key].B) count++
   }
 
@@ -43,19 +43,19 @@ function countPoints(rings) {
 // TIP: This solution uses an array and a set to store the rods with all three colors
 
 function countPoints2(rings) {
-  let rods = Array(10)
+  const rods = Array(10)
     .fill(0)
     .map(() => new Set())
 
   for (let i = 0; i < rings.length; i += 2) {
-    let color = rings[i]
-    let rod = rings[i + 1]
+    const color = rings[i]
+    const rod = rings[i + 1]
 
     rods[rod].add(color)
   }
 
   let count = 0
-  for (let rod of rods) {
+  for (const rod of rods) {
     if (rod.size === 3) count++
   }
 

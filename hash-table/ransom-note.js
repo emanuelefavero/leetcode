@@ -10,14 +10,14 @@
 
 // O(n) time | O(n) space
 function canConstruct(ransomNote, magazine) {
-  let hashTable = {}
+  const hashTable = {}
 
-  for (let char of magazine) {
+  for (const char of magazine) {
     if (!hashTable[char]) hashTable[char] = 1
     else hashTable[char]++
   }
 
-  for (let char of ransomNote) {
+  for (const char of ransomNote) {
     if (!hashTable[char] || hashTable[char] === 0) return false
     else hashTable[char]--
   }
@@ -32,14 +32,14 @@ function canConstruct(ransomNote, magazine) {
 function canConstruct2(ransomNote, magazine) {
   if (ransomNote.length > magazine.length) return false
 
-  let hashTable = new Map()
+  const hashTable = new Map()
 
-  for (let char of magazine) {
+  for (const char of magazine) {
     if (!hashTable.has(char)) hashTable.set(char, 1)
     else hashTable.set(char, hashTable.get(char) + 1)
   }
 
-  for (let char of ransomNote) {
+  for (const char of ransomNote) {
     if (!hashTable.has(char) || hashTable.get(char) === 0) return false
     else hashTable.set(char, hashTable.get(char) - 1)
   }

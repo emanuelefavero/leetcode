@@ -38,7 +38,7 @@ function hasPathSum(root, targetSum) {
 // ----------------------------
 // TESTS
 
-let root = new TreeNode(5)
+const root = new TreeNode(5)
 root.left = new TreeNode(4)
 root.right = new TreeNode(8)
 root.left.left = new TreeNode(11)

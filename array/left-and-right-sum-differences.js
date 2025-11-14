@@ -20,14 +20,14 @@ Return the array answer.
 
 // O(n) time | O(n) space
 function leftRightDifference(nums) {
-  let result = []
+  const result = []
 
   let left = 0
   let right = nums.length - 1
   let leftSum = 0
   let rightSum = 0
-  let leftArray = []
-  let rightArray = []
+  const leftArray = []
+  const rightArray = []
 
   while (left < nums.length) {
     leftArray.push(leftSum)
@@ -62,7 +62,7 @@ function leftRightDifference2(nums) {
   // Iterate through nums array and calculate leftSum and rightSum
   return nums.map((num) => {
     rightSum -= num
-    let result = Math.abs(leftSum - rightSum) // Calculate difference
+    const result = Math.abs(leftSum - rightSum) // Calculate difference
     leftSum += num
 
     return result

@@ -14,7 +14,7 @@ Return the shuffled string.
 
 // O(n) time | O(n) space
 function restoreString(s, indices) {
-  let result = []
+  const result = []
 
   for (let i = 0; i < s.length; i++) {
     result[indices[i]] = s[i]

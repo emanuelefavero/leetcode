@@ -38,7 +38,7 @@ function defangIPaddr3(address) {
 function defangIPaddr4(address) {
   let result = ''
 
-  for (let char of address) {
+  for (const char of address) {
     if (char === '.') {
       result += '[.]'
     } else {

@@ -10,7 +10,7 @@
 
 // O(n) time | O(n) space
 function containsNearbyDuplicate(nums, k) {
-  let map = new Map()
+  const map = new Map()
 
   for (let i = 0; i < nums.length; i++) {
     // if the map has the current number and the difference between the current index and the index of the current number is less than or equal to k, return true

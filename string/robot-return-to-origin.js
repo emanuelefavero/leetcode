@@ -20,7 +20,7 @@ function judgeCircle(moves) {
   let x = 0
   let y = 0
 
-  for (let move of moves) {
+  for (const move of moves) {
     if (move === 'L') x--
     else if (move === 'R') x++
     else if (move === 'D') y--
@@ -39,7 +39,7 @@ function judgeCircle2(moves) {
   let x = 0
   let y = 0
 
-  for (let move of moves) {
+  for (const move of moves) {
     switch (move) {
       case 'L':
         x--

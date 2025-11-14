@@ -22,7 +22,7 @@ function minCostClimbingStairs(cost) {
 
   for (let i = 2; i < cost.length; i++) {
     // The current cost is the cost of the current step plus the minimum of the previous two steps
-    let current = cost[i] + Math.min(prev1, prev2)
+    const current = cost[i] + Math.min(prev1, prev2)
 
     // The previous two steps are updated
     prev1 = prev2

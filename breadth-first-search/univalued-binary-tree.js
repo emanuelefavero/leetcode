@@ -44,11 +44,11 @@ function isUnivalTree(root, prev = root.val) {
 
 // O(n) time | O(n) space
 function isUnivalTree2(root) {
-  let value = root.val
-  let queue = [root]
+  const value = root.val
+  const queue = [root]
 
   while (queue.length) {
-    let current = queue.shift()
+    const current = queue.shift()
 
     if (current.val !== value) return false
 

@@ -9,11 +9,11 @@
 
 // O(n^2) time | O(n) space
 function getRow(rowIndex) {
-  let result = []
+  const result = []
 
   // loop through the number of rows
   for (let i = 0; i <= rowIndex; i++) {
-    let row = []
+    const row = []
 
     // loop through the current row
     for (let j = 0; j <= i; j++) {

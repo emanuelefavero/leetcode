@@ -19,11 +19,11 @@ Return the number of unique arithmetic triplets
 
 // O(n) time | O(n) space
 function arithmeticTriplets(nums, diff) {
-  let map = new Map()
+  const map = new Map()
   let count = 0
 
-  for (let num of nums) {
-    let temp = num - diff
+  for (const num of nums) {
+    const temp = num - diff
 
     if (map.has(temp) && map.has(temp - diff)) {
       count++

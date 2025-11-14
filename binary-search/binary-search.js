@@ -14,7 +14,7 @@ function search(nums, target) {
   let end = nums.length - 1
 
   while (start <= end) {
-    let middle = Math.floor((start + end) / 2)
+    const middle = Math.floor((start + end) / 2)
 
     if (nums[middle] === target) return middle
 

@@ -35,7 +35,7 @@ class MyHashMap {
 // -----------------------------
 // TESTS
 
-let obj = new MyHashMap()
+const obj = new MyHashMap()
 obj.put(1, 1)
 obj.put(2, 2)
 obj.remove(1)

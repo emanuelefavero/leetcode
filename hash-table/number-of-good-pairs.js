@@ -29,7 +29,7 @@ function numIdenticalPairs(nums) {
 // O(n) time | O(n) space
 function numIdenticalPairs2(nums) {
   let count = 0
-  let hash = {}
+  const hash = {}
 
   for (let i = 0; i < nums.length; i++) {
     // if the number is already in the hash table, add the value to the count

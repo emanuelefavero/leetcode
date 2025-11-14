@@ -32,7 +32,7 @@ Explanation: The multilevel linked head in the input is shown.
 // TIP: This solution outputs a linked list (like the original problem)
 
 function flatten(head) {
-  let current = head
+  const current = head
 
   while (current) {
     let current = head
@@ -70,7 +70,7 @@ function flatten(head) {
 // TIP: This solution outputs an array instead of a linked list (it is more readable)
 
 function flatten2(head) {
-  let result = []
+  const result = []
 
   let current = head
   while (current) {
@@ -94,7 +94,7 @@ function flatten2(head) {
 // -----------------------------
 // TESTS
 
-let head = new ListNode(1)
+const head = new ListNode(1)
 head.next = new ListNode(2)
 head.next.prev = head
 head.next.next = new ListNode(3)

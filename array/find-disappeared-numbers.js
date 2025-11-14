@@ -14,7 +14,7 @@
 
 // O(n^2) time | O(n) space
 function findDisappearedNumbers(nums) {
-  let result = []
+  const result = []
 
   // Check if each number from 1 to nums.length is in the array
   for (let i = 1; i <= nums.length; i++) {
@@ -31,8 +31,8 @@ function findDisappearedNumbers(nums) {
 
 // O(n) time | O(n) space
 function findDisappearedNumbers2(nums) {
-  let set = new Set(nums) // remove duplicates
-  let result = []
+  const set = new Set(nums) // remove duplicates
+  const result = []
 
   // Check if each number from 1 to nums.length is in the set
   for (let i = 1; i <= nums.length; i++) {

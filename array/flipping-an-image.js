@@ -26,7 +26,7 @@ function flipAndInvertImage(image) {
     let right = image[i].length - 1
 
     while (left < right) {
-      let temp = image[i][left]
+      const temp = image[i][left]
       image[i][left] = image[i][right]
       image[i][right] = temp
 
@@ -51,12 +51,12 @@ function flipAndInvertImage(image) {
 
 function flipAndInvertImage2(image) {
   // Flip and invert
-  for (let row of image) {
+  for (const row of image) {
     let left = 0
     let right = row.length - 1
 
     while (left < right) {
-      let temp = row[left]
+      const temp = row[left]
       row[left] = row[right] === 0 ? 1 : 0
       row[right] = temp === 0 ? 1 : 0
 

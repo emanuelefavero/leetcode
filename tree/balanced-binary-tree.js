@@ -33,8 +33,8 @@ function isBalanced(root) {
 function getHeight(root) {
   if (!root) return 0 // base case
 
-  let left = getHeight(root.left)
-  let right = getHeight(root.right)
+  const left = getHeight(root.left)
+  const right = getHeight(root.right)
 
   // if left or right subtree is not balanced, return -1
   if (left === -1 || right === -1) return -1
@@ -49,7 +49,7 @@ function getHeight(root) {
 // -----------------------------
 // TESTS
 
-let root = new TreeNode(3)
+const root = new TreeNode(3)
 root.left = new TreeNode(9)
 root.right = new TreeNode(20)
 root.right.left = new TreeNode(15)
@@ -65,7 +65,7 @@ root.right.right = new TreeNode(7)
 
 console.log(isBalanced(root)) // true
 
-let root2 = new TreeNode(1)
+const root2 = new TreeNode(1)
 root2.left = new TreeNode(2)
 root2.right = new TreeNode(2)
 root2.left.left = new TreeNode(3)

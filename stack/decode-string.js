@@ -17,9 +17,9 @@ The test cases are generated so that the length of the output will never exceed 
 
 // O(n) time | O(n) space
 function decodeString(s) {
-  let stack = []
+  const stack = []
 
-  for (let char of s) {
+  for (const char of s) {
     // if the current character is not a closing bracket, push it onto the stack
     if (char !== ']') {
       stack.push(char)

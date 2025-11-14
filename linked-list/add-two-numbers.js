@@ -31,8 +31,8 @@ Explanation: 342 + 465 = 807
 */
 
 function addTwoNumbers(l1, l2) {
-  let num1 = []
-  let num2 = []
+  const num1 = []
+  const num2 = []
 
   while (l1) {
     num1.push(l1.val)
@@ -44,15 +44,15 @@ function addTwoNumbers(l1, l2) {
     l2 = l2.next
   }
 
-  let reversedNum1 = Number(num1.reverse().join(''))
-  let reversedNum2 = Number(num2.reverse().join(''))
+  const reversedNum1 = Number(num1.reverse().join(''))
+  const reversedNum2 = Number(num2.reverse().join(''))
 
-  let sum = (reversedNum1 + reversedNum2).toString()
+  const sum = (reversedNum1 + reversedNum2).toString()
 
   // Create linked list from sum (add new nodes to head so that sum is reversed)
   let result = null
   for (let i = 0; i < sum.length; i++) {
-    let newNode = new ListNode(sum[i])
+    const newNode = new ListNode(sum[i])
     newNode.next = result
     result = newNode
   }
@@ -76,7 +76,7 @@ function addTwoNumbers2(l1, l2, carry) {
   if (l2) total += l2.val
 
   // Create new node with total % 10 - % 10 converts to single digit base 10
-  let newNode = new ListNode(total % 10)
+  const newNode = new ListNode(total % 10)
 
   // Recursively call function with next nodes
   newNode.next = addTwoNumbers2(
@@ -91,11 +91,11 @@ function addTwoNumbers2(l1, l2, carry) {
 // -----------------------------
 // TESTS
 
-let l1 = new ListNode(2)
+const l1 = new ListNode(2)
 l1.next = new ListNode(4)
 l1.next.next = new ListNode(3)
 
-let l2 = new ListNode(5)
+const l2 = new ListNode(5)
 l2.next = new ListNode(6)
 l2.next.next = new ListNode(4)
 

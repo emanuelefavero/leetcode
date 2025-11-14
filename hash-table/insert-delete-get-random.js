@@ -47,8 +47,8 @@ class RandomizedSet {
    */
 
   getRandom() {
-    let keys = Object.keys(this.set)
-    let randomIndex = Math.floor(Math.random() * keys.length)
+    const keys = Object.keys(this.set)
+    const randomIndex = Math.floor(Math.random() * keys.length)
     return keys[randomIndex]
   }
 }
@@ -56,7 +56,7 @@ class RandomizedSet {
 // --------------------------
 // TESTS
 
-let obj = new RandomizedSet()
+const obj = new RandomizedSet()
 obj.insert(1) // true, 1 was inserted successfully
 obj.remove(2) // false, 2 is not in the set
 obj.insert(2) // true

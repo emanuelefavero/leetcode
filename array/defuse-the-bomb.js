@@ -27,10 +27,10 @@ Given the circular array code and an integer key k, return the decrypted code to
 
 // O(n^2) time | O(n) space
 function decrypt(code, k) {
-  let length = code.length
+  const length = code.length
   if (k === 0) return new Array(length).fill(0)
 
-  let result = []
+  const result = []
 
   if (k > 0) {
     for (let i = 0; i < length; i++) {
@@ -61,8 +61,8 @@ function decrypt(code, k) {
 // O(n) time | O(n) space
 function decrypt2(code, k) {
   const decode = (code, k) => {
-    let length = 0
-    let result = []
+    const length = 0
+    const result = []
     let sum = 0
 
     // Calculate the sum of the first k elements

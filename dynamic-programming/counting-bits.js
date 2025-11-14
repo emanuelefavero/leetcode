@@ -11,10 +11,10 @@
 
 // O(n) time | O(n) space
 function countBits(n) {
-  let ans = []
+  const ans = []
 
   for (let i = 0; i <= n; i++) {
-    let binary = i.toString(2)
+    const binary = i.toString(2)
     let count = 0
 
     for (let j = 0; j < binary.length; j++) {

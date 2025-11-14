@@ -26,7 +26,7 @@ function isEmpty(obj) {
 // TIP: This solution seems more efficient than the previous one
 
 function isEmpty2(obj) {
-  for (let key in obj) return false
+  for (const key in obj) return false
   return true
 }
 

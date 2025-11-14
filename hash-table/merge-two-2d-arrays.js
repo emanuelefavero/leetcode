@@ -24,22 +24,22 @@ Return the resulting array. The returned array must be sorted in ascending order
 
 // O(n) time | O(n) space
 function mergeArrays(nums1, nums2) {
-  let map = new Map()
+  const map = new Map()
 
-  for (let num of nums1) {
-    let id = num[0]
-    let value = num[1]
+  for (const num of nums1) {
+    const id = num[0]
+    const value = num[1]
     map.set(id, (map.get(id) || 0) + value)
   }
 
-  for (let num of nums2) {
-    let id = num[0]
-    let value = num[1]
+  for (const num of nums2) {
+    const id = num[0]
+    const value = num[1]
     map.set(id, (map.get(id) || 0) + value)
   }
 
-  let result = []
-  for (let [key, value] of map) {
+  const result = []
+  for (const [key, value] of map) {
     result.push([key, value])
   }
 
@@ -54,7 +54,7 @@ function mergeArrays(nums1, nums2) {
 // TIP: This is a two pointer approach
 
 function mergeArrays2(nums1, nums2) {
-  let result = []
+  const result = []
   let i = 0
   let j = 0
 

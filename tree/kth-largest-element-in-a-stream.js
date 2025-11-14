@@ -38,6 +38,6 @@ class KthLargest {
 // TESTS
 
 // 1
-let kthLargest = new KthLargest(3, [4, 5, 8, 2])
+const kthLargest = new KthLargest(3, [4, 5, 8, 2])
 console.log(kthLargest.add(3)) // 4
 console.log(kthLargest.add(5)) // 5, since [2,4,5,5,8] is the stream at this point

@@ -20,8 +20,8 @@ Return the number of passengers who are strictly more than 60 years old.
 function countSeniors(details) {
   let count = 0
 
-  for (let d of details) {
-    let age = parseInt(d[11] + d[12])
+  for (const d of details) {
+    const age = parseInt(d[11] + d[12])
     if (age > 60) count++
   }
 
@@ -36,8 +36,8 @@ function countSeniors(details) {
 function countSeniors2(details) {
   let count = 0
 
-  for (let d of details) {
-    let age = +(d[11] + d[12])
+  for (const d of details) {
+    const age = +(d[11] + d[12])
     count += age > 60
   }
 

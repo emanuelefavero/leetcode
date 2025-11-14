@@ -15,10 +15,10 @@ Given an integer array nums representing the amount of money of each house, retu
 
 // O(n) time | O(n) space
 function rob(nums) {
-  let n = nums.length
+  const n = nums.length
   if (n === 1) return nums[0]
 
-  let dp = new Array(n).fill(0) // Dynamic programming array
+  const dp = new Array(n).fill(0) // Dynamic programming array
   dp[0] = nums[0]
   dp[1] = Math.max(nums[0], nums[1])
 
@@ -40,7 +40,7 @@ function rob2(nums) {
   let second = 0
 
   for (let i = 0; i < nums.length; i++) {
-    let current = Math.max(first + nums[i], second)
+    const current = Math.max(first + nums[i], second)
     first = second
     second = current
   }

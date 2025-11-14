@@ -10,14 +10,14 @@
 // O(n) time - O(n) space
 function largestRectangleArea(heights) {
   let maxArea = 0
-  let stack = []
+  const stack = []
 
   for (let i = 0; i < heights.length; i++) {
     // if the current bar is shorter than the previous bar, pop the previous bar off the stack
     while (stack.length && heights[i] < heights[stack[stack.length - 1]]) {
       // calculate the area of the rectangle with the height of the popped bar
-      let height = heights[stack.pop()]
-      let width = i - (stack.length ? stack[stack.length - 1] : -1) - 1
+      const height = heights[stack.pop()]
+      const width = i - (stack.length ? stack[stack.length - 1] : -1) - 1
       maxArea = Math.max(maxArea, height * width)
     }
 
@@ -26,8 +26,8 @@ function largestRectangleArea(heights) {
 
   // calculate the area of the remaining bars in the stack
   while (stack.length) {
-    let height = heights[stack.pop()]
-    let width =
+    const height = heights[stack.pop()]
+    const width =
       heights.length - (stack.length ? stack[stack.length - 1] : -1) - 1
     maxArea = Math.max(maxArea, height * width)
   }

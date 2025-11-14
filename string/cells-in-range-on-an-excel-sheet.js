@@ -19,12 +19,12 @@ Return the list of cells (row, y) such that r1 <= row <= r2 and c1 <= y <= c2. T
 
 // O(n) time | O(n) space
 function cellsInRange(s) {
-  let result = []
+  const result = []
 
-  let col1 = s.charCodeAt(0)
-  let col2 = s.charCodeAt(3)
-  let row1 = +s[1]
-  let row2 = +s[4]
+  const col1 = s.charCodeAt(0)
+  const col2 = s.charCodeAt(3)
+  const row1 = +s[1]
+  const row2 = +s[4]
 
   for (let col = col1; col <= col2; col++) {
     for (let row = row1; row <= row2; row++) {
@@ -39,14 +39,14 @@ function cellsInRange(s) {
 // SOLUTION 2
 
 function cellsInRange2(s) {
-  let result = []
-  let col1 = s[0]
-  let col2 = s[3]
-  let cols = colsInRange(col1, col2)
-  let row1 = s[1]
-  let row2 = s[4]
+  const result = []
+  const col1 = s[0]
+  const col2 = s[3]
+  const cols = colsInRange(col1, col2)
+  const row1 = s[1]
+  const row2 = s[4]
 
-  for (let col of cols) {
+  for (const col of cols) {
     for (let row = row1; row <= row2; row++) {
       result.push(col + row)
     }
@@ -56,9 +56,9 @@ function cellsInRange2(s) {
 }
 
 function colsInRange(col1, col2) {
-  let start = col1.charCodeAt(0)
-  let end = col2.charCodeAt(0)
-  let result = []
+  const start = col1.charCodeAt(0)
+  const end = col2.charCodeAt(0)
+  const result = []
 
   for (let i = start; i <= end; i++) {
     result.push(String.fromCharCode(i))

@@ -21,14 +21,14 @@ Return the number of items that match the given rule.
 // O(n) time | O(1) space
 function countMatches(items, ruleKey, ruleValue) {
   let count = 0
-  let hash = {
+  const hash = {
     type: 0,
     color: 1,
     name: 2,
   }
-  let key = hash[ruleKey]
+  const key = hash[ruleKey]
 
-  for (let item of items) {
+  for (const item of items) {
     if (item[key] === ruleValue) count++
   }
 

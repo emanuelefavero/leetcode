@@ -15,7 +15,7 @@ You are given a sentence s​​​​​​ and an integer k​​​​​​.
 
 // O(n) time | O(n) space
 function truncateSentence(s, k) {
-  let array = s.split(' ')
+  const array = s.split(' ')
   array.length = k
   return array.join(' ')
 }
@@ -27,8 +27,8 @@ function truncateSentence(s, k) {
 
 // O(n) time | O(n) space
 function truncateSentence2(s, k) {
-  let array = []
-  let counter = 0
+  const array = []
+  const counter = 0
   let word = ''
 
   for (let i = 0; i < s.length; i++) {

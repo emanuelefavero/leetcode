@@ -25,7 +25,7 @@ function oddEvenList(head) {
   // Use two pointers to keep track of odd and even nodes
   let odd = head // pointer to odd nodes
   let even = head.next // pointer to even nodes (starts at second node)
-  let evenHead = even // pointer to head of even nodes (first even node)
+  const evenHead = even // pointer to head of even nodes (first even node)
 
   while (even && even.next) {
     // Adjust pointers to skip the next odd node and even node in the list
@@ -61,7 +61,7 @@ function oddEvenList(head) {
 
 // TIP: Helper function to get values from linked list
 function getValues(head) {
-  let values = []
+  const values = []
 
   let current = head
 
@@ -73,11 +73,11 @@ function getValues(head) {
   return values
 }
 
-let head = new ListNode(1)
+const head = new ListNode(1)
 head.next = new ListNode(2)
 head.next.next = new ListNode(3)
 head.next.next.next = new ListNode(4)
 head.next.next.next.next = new ListNode(5)
 
-let oddEven = oddEvenList(head)
+const oddEven = oddEvenList(head)
 console.log(getValues(oddEven)) // [1, 3, 5, 2, 4]

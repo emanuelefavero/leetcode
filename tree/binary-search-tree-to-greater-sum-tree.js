@@ -51,7 +51,7 @@ function bstToGst(root) {
 
 function bstToGst2(root) {
   let current = root
-  let stack = []
+  const stack = []
   let sum = 0
 
   while (current || stack.length) {

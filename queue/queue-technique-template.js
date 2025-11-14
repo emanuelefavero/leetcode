@@ -2,10 +2,10 @@
 
 function print(array) {
   let i = 0
-  let queue = [array[i]]
+  const queue = [array[i]]
 
   while (queue.length) {
-    let current = queue.shift()
+    const current = queue.shift()
 
     console.log(current)
 
@@ -22,13 +22,13 @@ print([1, 2, 3, 4, 5]) // 1 2 3 4 5
 // TIP: This is a template for a breadth first search (BFS) on a binary tree
 
 function BFS(array) {
-  let queue = [array[0]]
+  const queue = [array[0]]
 
   while (queue.length) {
-    let queueLength = queue.length
+    const queueLength = queue.length
 
     for (let i = 0; i < queueLength; i++) {
-      let current = queue.shift()
+      const current = queue.shift()
 
       console.log(current) // DO SOMETHING WITH CURRENT
 

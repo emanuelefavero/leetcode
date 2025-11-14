@@ -15,18 +15,18 @@ Return true if a and b are alike. Otherwise, return false.
 
 // O(n) time | O(1) space
 function halvesAreAlike(s) {
-  let vowels = new Set(['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'])
-  let half = s.length / 2
-  let a = s.slice(0, half)
-  let b = s.slice(half)
+  const vowels = new Set(['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'])
+  const half = s.length / 2
+  const a = s.slice(0, half)
+  const b = s.slice(half)
 
   let aCount = 0
-  for (let char of a) {
+  for (const char of a) {
     if (vowels.has(char)) aCount++
   }
 
   let bCount = 0
-  for (let char of b) {
+  for (const char of b) {
     if (vowels.has(char)) bCount++
   }
 
@@ -42,7 +42,7 @@ function halvesAreAlike(s) {
 // O(n) time | O(1) space
 function halvesAreAlike2(s) {
   let count = 0
-  let vowels = 'aeiouAEIOU'
+  const vowels = 'aeiouAEIOU'
   let left = 0
   let right = s.length - 1
 

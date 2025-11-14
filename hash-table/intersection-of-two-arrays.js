@@ -7,10 +7,10 @@
  */
 
 function intersection(nums1, nums2) {
-  let set = new Set(nums1)
-  let result = new Set()
+  const set = new Set(nums1)
+  const result = new Set()
 
-  for (let num of nums2) {
+  for (const num of nums2) {
     if (set.has(num)) result.add(num)
   }
 
@@ -21,11 +21,11 @@ function intersection(nums1, nums2) {
 // SOLUTION 2
 
 function intersection2(nums1, nums2) {
-  let set1 = new Set(nums1)
-  let set2 = new Set(nums2)
-  let result = []
+  const set1 = new Set(nums1)
+  const set2 = new Set(nums2)
+  const result = []
 
-  for (let num of set1) {
+  for (const num of set1) {
     if (set2.has(num)) result.push(num) // if num is in both sets, push it
   }
 

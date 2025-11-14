@@ -14,8 +14,8 @@
 // O(n * m) time | O(1) space, where n is the length of nums and m is the maximum number of digits in any number in nums
 function smallestIndex(nums) {
   for (let i = 0; i < nums.length; i++) {
-    let digits = nums[i].toString().split('')
-    let sum = digits.reduce((acc, digit) => acc + Number(digit), 0)
+    const digits = nums[i].toString().split('')
+    const sum = digits.reduce((acc, digit) => acc + Number(digit), 0)
 
     if (sum === i) return sum
   }

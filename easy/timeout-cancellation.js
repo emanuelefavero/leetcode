@@ -20,7 +20,7 @@ If, before the delay of t milliseconds, the function cancelFn is invoked, it sho
 
 // O(n) time | O(1) space
 function cancellable(fn, args, t) {
-  let timer = setTimeout(() => fn(...args), t)
+  const timer = setTimeout(() => fn(...args), t)
 
   return () => {
     clearTimeout(timer)

@@ -15,7 +15,7 @@ Return the number of consistent strings in the array words.
 // O(n * m) time | O(1) space - where n is the length of the allowed string and m is the total number of characters in all words
 function countConsistentStrings(allowed, words) {
   const hash = {}
-  for (let char of allowed) hash[char] = true
+  for (const char of allowed) hash[char] = true
 
   let count = 0
 

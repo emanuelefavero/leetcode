@@ -9,7 +9,7 @@
 
 // O(n) time | O(1) space
 function sumOfTheDigitsOfHarshadNumber(x) {
-  let sum = x
+  const sum = x
     .toString()
     .split('')
     .reduce((acc, curr) => acc + parseInt(curr), 0)
@@ -25,7 +25,7 @@ function sumOfTheDigitsOfHarshadNumber(x) {
 function sumOfTheDigitsOfHarshadNumber2(x) {
   let sum = 0
 
-  for (let i of String(x)) {
+  for (const i of String(x)) {
     sum += Number(i)
   }
 
@@ -39,7 +39,7 @@ function sumOfTheDigitsOfHarshadNumber2(x) {
 // TIP: This solution leverages the modulo operator to get the last digit of x
 
 function sumOfTheDigitsOfHarshadNumber3(x) {
-  let digits = x
+  const digits = x
   let sum = 0
 
   while (x > 0) {

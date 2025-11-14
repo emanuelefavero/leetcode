@@ -26,7 +26,7 @@
 function letterCombinations(digits) {
   if (!digits.length) return []
 
-  let map = {
+  const map = {
     2: 'abc',
     3: 'def',
     4: 'ghi',
@@ -37,7 +37,7 @@ function letterCombinations(digits) {
     9: 'wxyz',
   }
 
-  let result = []
+  const result = []
 
   function backtrack(string, i) {
     // base case
@@ -45,7 +45,7 @@ function letterCombinations(digits) {
       return result.push(string)
     }
 
-    for (let char of map[digits[i]]) {
+    for (const char of map[digits[i]]) {
       backtrack(string + char, i + 1)
     }
   }

@@ -11,10 +11,10 @@
 
 // O(n) time | O(n) space
 function duplicateNumbersXOR(nums) {
-  let map = new Map()
-  let result = []
+  const map = new Map()
+  const result = []
 
-  for (let num of nums) {
+  for (const num of nums) {
     if (map.has(num)) {
       result.push(num)
     } else {
@@ -30,9 +30,9 @@ function duplicateNumbersXOR(nums) {
 
 function duplicateNumbersXOR2(nums) {
   let result = 0
-  let set = new Set()
+  const set = new Set()
 
-  for (let num of nums) {
+  for (const num of nums) {
     if (set.has(num)) {
       result ^= num
     } else {

@@ -23,7 +23,7 @@ function differenceOfSum(nums) {
   for (let i = 0; i < nums.length; i++) {
     elementSum += nums[i]
 
-    let stringNum = nums[i].toString()
+    const stringNum = nums[i].toString()
     for (let j = 0; j < stringNum.length; j++) {
       digitSum += parseInt(stringNum[j])
     }

@@ -19,7 +19,7 @@ It is guaranteed that the insertion operations will be valid.
 
 // O(n) time | O(n) space
 function createTargetArray(nums, index) {
-  let target = []
+  const target = []
 
   for (let i = 0; i < index.length; i++) {
     target.splice(index[i], 0, nums[i])

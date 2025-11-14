@@ -15,10 +15,10 @@ Return an integer array answer where answer[i] is the final price you will pay f
 
 // O(n^2) time | O(n) space
 function finalPrices(prices) {
-  let result = []
+  const result = []
 
   for (let i = 0; i < prices.length; i++) {
-    let item = prices[i]
+    const item = prices[i]
     let discount = 0
     let j = i + 1
 
@@ -43,10 +43,10 @@ function finalPrices(prices) {
 // TIP: THis solution uses a stack to keep track of the prices that have not been discounted yet.
 
 function finalPrices2(prices) {
-  let stack = []
+  const stack = []
 
   for (let i = prices.length - 1; i >= 0; i--) {
-    let cost = prices[i]
+    const cost = prices[i]
 
     while (stack.length && cost < stack[stack.length - 1]) {
       stack.pop()

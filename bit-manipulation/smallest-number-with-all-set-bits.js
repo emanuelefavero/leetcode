@@ -12,7 +12,7 @@
 // O(n) time | O(1) space
 function smallestNumber(n) {
   while (true) {
-    let binary = n.toString(2)
+    const binary = n.toString(2)
     if (!binary.includes('0')) return n
     n++
   }

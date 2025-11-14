@@ -30,7 +30,7 @@ console.log(runningSum([3, 1, 2, 10, 1])) // [3, 4, 6, 16, 17]
 
 // O(n) time, O(n) space
 function runningSum2(nums) {
-  let result = []
+  const result = []
   let sum = 0
 
   for (let i = 0; i < nums.length; i++) {

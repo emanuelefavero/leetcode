@@ -34,11 +34,11 @@ class Solution {
 
   // O(n) time | O(n) space
   shuffle() {
-    let shuffled = [...this.nums]
+    const shuffled = [...this.nums]
 
     for (let i = 0; i < shuffled.length; i++) {
-      let randomIndex = Math.floor(Math.random() * (i + 1))
-      let temp = shuffled[i]
+      const randomIndex = Math.floor(Math.random() * (i + 1))
+      const temp = shuffled[i]
       shuffled[i] = shuffled[randomIndex]
       shuffled[randomIndex] = temp
     }
@@ -50,9 +50,9 @@ class Solution {
 // -------------------------
 // TESTS
 
-let obj = new Solution([1, 2, 3])
-let param_1 = obj.reset()
-let param_2 = obj.shuffle()
+const obj = new Solution([1, 2, 3])
+const param_1 = obj.reset()
+const param_2 = obj.shuffle()
 
 console.log(param_1) // [1, 2, 3]
 console.log(param_2) // [2, 1, 3]

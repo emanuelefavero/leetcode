@@ -37,11 +37,11 @@ function printListWithSubList(list) {
 // -----------------------------
 // TESTS
 
-let subList = new Node(1)
+const subList = new Node(1)
 subList.next = new Node(2)
 subList.next.next = new Node(3)
 
-let list = new Node(10)
+const list = new Node(10)
 list.next = new Node(subList)
 
 printListWithSubList(list) // 10 1 2 3

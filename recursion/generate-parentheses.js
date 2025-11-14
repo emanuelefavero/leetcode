@@ -11,7 +11,7 @@
 
 // O(n^2) time - O(n) space
 function generateParenthesis(n) {
-  let result = []
+  const result = []
 
   backtrack(n, n, '', result)
 

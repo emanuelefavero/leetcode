@@ -20,14 +20,14 @@ A sequence of n integers is called a permutation if it contains all integers fro
 
 // O(n) time | O(n) space
 function findThePrefixCommonArray(A, B) {
-  let n = A.length
-  let freq = new Array(n + 1).fill(0)
-  let result = []
+  const n = A.length
+  const freq = new Array(n + 1).fill(0)
+  const result = []
   let count = 0
 
   for (let i = 0; i < n; i++) {
-    let numA = A[i]
-    let numB = B[i]
+    const numA = A[i]
+    const numB = B[i]
 
     // Increment the frequency of the current numbers in A and B
     // If the frequency becomes 2 (the number is present in both arrays), increment the count
@@ -49,9 +49,9 @@ function findThePrefixCommonArray(A, B) {
 // TIP: This solution is similar to the first one but uses the pre increment operator to increment the frequency of the current numbers in A and B
 
 function findThePrefixCommonArray2(A, B) {
-  let n = A.length
-  let freq = new Array(n + 1).fill(0)
-  let result = []
+  const n = A.length
+  const freq = new Array(n + 1).fill(0)
+  const result = []
   let count = 0
 
   for (let i = 0; i < n; i++) {
@@ -69,14 +69,14 @@ function findThePrefixCommonArray2(A, B) {
 // TIP: This solution uses an hash table to count the occurrences of each number in A and B
 
 function findThePrefixCommonArray3(A, B) {
-  let n = A.length
-  let freq = new Map()
-  let result = []
+  const n = A.length
+  const freq = new Map()
+  const result = []
   let count = 0
 
   for (let i = 0; i < n; i++) {
-    let numA = A[i]
-    let numB = B[i]
+    const numA = A[i]
+    const numB = B[i]
 
     freq.set(numA, (freq.get(numA) || 0) + 1)
     if (freq.get(numA) === 2) count++
@@ -96,8 +96,8 @@ function findThePrefixCommonArray3(A, B) {
 // TIP: This solution uses a set to count the occurrences of each number in A and B
 
 function findThePrefixCommonArray4(A, B) {
-  let set = new Set()
-  let result = []
+  const set = new Set()
+  const result = []
   let count = 0
 
   for (let i = 0; i < A.length; i++) {

@@ -17,11 +17,11 @@ Given an array rooms where rooms[i] is the set of keys that you can obtain if yo
 
 // O(n) time | O(n) space
 function canVisitAllRooms(rooms) {
-  let visited = new Set()
-  let stack = [0] // start with room 0
+  const visited = new Set()
+  const stack = [0] // start with room 0
 
   while (stack.length > 0) {
-    let current = stack.pop()
+    const current = stack.pop()
 
     if (!visited.has(current)) {
       visited.add(current)
@@ -38,7 +38,7 @@ function canVisitAllRooms(rooms) {
 // TIP: This solution uses Depth First Search (DFS) and recursion
 
 function canVisitAllRooms2(rooms) {
-  let visited = new Set()
+  const visited = new Set()
 
   function DFS(rooms, i) {
     if (visited.has(i)) return

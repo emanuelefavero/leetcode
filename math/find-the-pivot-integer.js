@@ -15,13 +15,13 @@ Return the pivot integer x. If no such integer exists, return -1. It is guarante
 
 // O(n) time | O(1) space
 function pivotInteger(n) {
-  let totalSum = (n * (n + 1)) / 2
+  const totalSum = (n * (n + 1)) / 2
   let leftSum = 0
 
   // Iterate through all integers from 1 to n and check if the sum of all elements between 1 and x inclusively equals the sum of all elements between x and n inclusively.
   for (let x = 1; x <= n; x++) {
     leftSum += x
-    let rightSum = totalSum - leftSum + x
+    const rightSum = totalSum - leftSum + x
     if (leftSum === rightSum) return x
   }
 
@@ -34,7 +34,7 @@ function pivotInteger(n) {
 // TIP: The sum of all integers from 1 to n is n * (n + 1) / 2. The pivot integer x is the square root of the sum of all integers from 1 to n. If the pivot is an integer, return it; otherwise, return -1.
 
 function pivotInteger2(n) {
-  let pivot = Math.sqrt((n * (n + 1)) / 2)
+  const pivot = Math.sqrt((n * (n + 1)) / 2)
   return Number.isInteger(pivot) ? pivot : -1
 }
 

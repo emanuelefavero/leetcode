@@ -36,7 +36,7 @@ function memoize(fn) {
 // --------------------------
 // TESTS
 
-let callCount = 0
+const callCount = 0
 const sum = (a, b) => a + b
 const memoizedSum = memoize(sum)
 console.log(memoizedSum(2, 2)) // 4

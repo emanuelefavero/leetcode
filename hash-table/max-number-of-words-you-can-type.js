@@ -14,14 +14,14 @@ Given a string text of words separated by a single space (no leading or trailing
 
 // O(n * m) time | O(k) space - where n is the number of words in text, m is the average length of each word, and k is the length of brokenLetters
 function canBeTypedWords(text, brokenLetters) {
-  let set = new Set([...brokenLetters])
-  let words = text.split(' ')
+  const set = new Set([...brokenLetters])
+  const words = text.split(' ')
   let length = 0
 
-  for (let word of words) {
+  for (const word of words) {
     let hasBrokenLetter = false
 
-    for (let char of word) {
+    for (const char of word) {
       if (set.has(char)) {
         hasBrokenLetter = true
         break
@@ -40,18 +40,18 @@ function canBeTypedWords(text, brokenLetters) {
 // TIP: This solution uses an hash-table instead of a set and counts the total number of words and then subtracts the words that contain broken letters
 
 function canBeTypedWords2(text, brokenLetters) {
-  let map = {}
-  for (let char of brokenLetters) {
+  const map = {}
+  for (const char of brokenLetters) {
     map[char] = true
   }
 
-  let words = text.split(' ')
+  const words = text.split(' ')
   let length = words.length
 
-  for (let word of words) {
+  for (const word of words) {
     let hasBrokenLetter = false
 
-    for (let char of word) {
+    for (const char of word) {
       if (map[char] === true) {
         hasBrokenLetter = true
         break

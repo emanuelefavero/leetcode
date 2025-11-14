@@ -18,7 +18,7 @@ Please solve it without using lodash's _.chunk function.
 
 // O(n) time | O(n) space
 function chunk(arr, size) {
-  let result = []
+  const result = []
 
   for (let i = 0; i < arr.length; i += size) {
     result.push(arr.slice(i, i + size))

@@ -35,7 +35,7 @@ function getConcatenation3(nums) {
 // SOLUTION 4
 
 function getConcatenation4(nums) {
-  let n = nums.length // ? needed to avoid infinite loop
+  const n = nums.length // ? needed to avoid infinite loop
 
   for (let i = 0; i < n; i++) {
     nums.push(nums[i])

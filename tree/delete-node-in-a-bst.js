@@ -59,7 +59,7 @@ function deleteNode(root, key) {
     else if (!root.right) return root.left
 
     // if node has 2 children, replace node with the minimum node in the right subtree
-    let minNode = findMin(root.right)
+    const minNode = findMin(root.right)
     root.val = minNode.val // replace node with minNode
     root.right = deleteNode(root.right, root.val) // delete minNode since it's now the current root node
   }
@@ -76,7 +76,7 @@ function findMin(root) {
 // -----------------------------
 // TESTS
 
-let root = new TreeNode(5)
+const root = new TreeNode(5)
 root.left = new TreeNode(3)
 root.right = new TreeNode(6)
 root.left.left = new TreeNode(2)

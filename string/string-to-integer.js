@@ -19,9 +19,9 @@ Return the integer as the final int.
 
 // O(n) time | O(1) space
 function myAtoi(s) {
-  let num = parseInt(s.trim()) || 0
-  let max = Math.pow(2, 31) - 1
-  let min = Math.pow(-2, 31)
+  const num = parseInt(s.trim()) || 0
+  const max = Math.pow(2, 31) - 1
+  const min = Math.pow(-2, 31)
 
   if (num > max) return max
   if (num < min) return min
@@ -34,8 +34,8 @@ function myAtoi(s) {
 // TIP: This solution is unnecessary in JavaScript, but it lists all the steps in the problem description
 
 function myAtoi2(s) {
-  let MIN_INT = -2147483648
-  let MAX_INT = 2147483647
+  const MIN_INT = -2147483648
+  const MAX_INT = 2147483647
 
   // Whitespace:
   s = s.trim()

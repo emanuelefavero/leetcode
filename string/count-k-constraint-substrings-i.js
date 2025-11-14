@@ -26,7 +26,7 @@ function countKConstraintSubstrings(s, k) {
 
   for (let i = 0; i < s.length; i++) {
     for (let j = i + 1; j <= s.length; j++) {
-      let substring = s.slice(i, j)
+      const substring = s.slice(i, j)
       if (isSatisfied(substring, k)) count++
     }
   }
@@ -39,7 +39,7 @@ function isSatisfied(substring, k) {
   let zeros = 0
   let ones = 0
 
-  for (let char of substring) {
+  for (const char of substring) {
     if (char === '0') zeros++
     else if (char === '1') ones++
   }
@@ -54,7 +54,7 @@ function isSatisfied(substring, k) {
 // TIP: This solution is more optimized than the previous one
 
 function countKConstraintSubstrings2(s, k) {
-  let n = s.length
+  const n = s.length
   let count = 0
 
   for (let i = 0; i < n; i++) {

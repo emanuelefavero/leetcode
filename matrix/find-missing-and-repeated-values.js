@@ -13,9 +13,9 @@ Return a 0-indexed integer array ans of size 2 where ans[0] equals to a and ans[
 
 // O(n) time | O(n) space
 function findMissingAndRepeatedValues(grid) {
-  let map = new Map()
-  let row = grid.length
-  let col = grid[0].length
+  const map = new Map()
+  const row = grid.length
+  const col = grid[0].length
 
   // Count the frequency of each number
   for (let r = 0; r < row; r++) {
@@ -24,10 +24,10 @@ function findMissingAndRepeatedValues(grid) {
     }
   }
 
-  let result = []
+  const result = []
 
   // Find repeating number
-  for (let [key, value] of map) {
+  for (const [key, value] of map) {
     if (value > 1) {
       result[0] = key
       break
@@ -35,7 +35,7 @@ function findMissingAndRepeatedValues(grid) {
   }
 
   // Find missing number
-  let length = row * col
+  const length = row * col
   for (let i = 1; i <= length; i++) {
     if (!map.has(i)) {
       result[1] = i
@@ -52,8 +52,8 @@ function findMissingAndRepeatedValues(grid) {
 // TIP: Since the numbers are in the range [1, n2], we can use an array to count the frequency of each number.
 
 function findMissingAndRepeatedValues2(grid) {
-  let length = grid.length
-  let count = new Array(length * length + 1).fill(0)
+  const length = grid.length
+  const count = new Array(length * length + 1).fill(0)
 
   // Count the frequency of each number
   for (let i = 0; i < length; i++) {
@@ -64,7 +64,7 @@ function findMissingAndRepeatedValues2(grid) {
 
   let repeated = -1
   let missing = -1
-  let numsLength = length * length
+  const numsLength = length * length
 
   // Find repeated and missing numbers
   for (let i = 1; i <= numsLength; i++) {
