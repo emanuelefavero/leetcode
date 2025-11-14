@@ -18,7 +18,7 @@ You are given an API bool isBadVersion(version) which returns whether version is
 function solution(isBadVersion) {
   return function (n) {
     let start = 1
-    end = n
+    let end = n
 
     while (start < end) {
       const middle = Math.floor((start + end) / 2)
