@@ -1,14 +1,12 @@
 # LeetCode Solutions
 
-This repository contains my solutions to LeetCode problems.
+This repository contains my solutions to LeetCode problems. The solutions are written in JavaScript
 
-> Note: The solutions are written in JavaScript
+> Note: Contributions and feedback are welcome!
 
 ## Usage
 
 Feel free to browse the solutions and explanations for each problem. You can clone this repository to your local machine to access the code and run it as needed.
-
-> Note: Contributions and feedback are welcome!
 
 ## How to Run
 
@@ -32,14 +30,6 @@ Feel free to browse the solutions and explanations for each problem. You can clo
   ```bash
   npm run dev array/two-sum.js
   ```
-
-## Run all files and get a report
-
-The following script will run all solution files and generate a report of their outputs. If any file throws an error, it will be captured in the report.
-
-```bash
-./run-all.sh
-```
 
 ## Contents
 
@@ -590,6 +580,22 @@ The following script will run all solution files and generate a report of their 
 - [Add and Search Word - Data structure design](./trie/add-and-search-word.js)
 - [Palindrome Pairs](./trie/palindrome-pairs.js)
 
+&nbsp;
+
+## Run all files and get a report
+
+The following script will run all solution files and generate a report of their outputs. If any file throws an error, it will be captured in the report.
+
+> Note: Make sure you have the necessary permissions to execute the script. You might need to run `chmod +x run-all.sh` to make it executable.
+>
+> Note: To stop the script while it's running, you can use `Ctrl + c`
+>
+> Note: Since all files will be executed, this is a resource-intensive operation and may take some time depending on how powerful your machine is.
+
+```bash
+npm run report
+```
+
 ## Compare the execution time of two functions
 
 To compare the execution time of two functions, you can use the `time` utility function from the `utils.js` file.
@@ -612,6 +618,16 @@ sum(1, 2)
 console.timeEnd('sum') // sum: 0.0001ms
 ```
 
+&nbsp;
+
 ## License
 
 - [MIT](LICENSE.md)
+
+&nbsp;
+
+---
+
+&nbsp;
+
+[**Go To Top &nbsp; ⬆️**](#leetcode-solutions)
