@@ -12,7 +12,7 @@
 // O(n log n) time | O(1) space
 function merge(nums1, m, nums2, n) {
   let i = m // Start at the end of nums1
-  j = 0 // Start at the beginning of nums2
+  let j = 0 // Start at the beginning of nums2
 
   while (i < m + n) {
     nums1[i] = nums2[j] // Add the element from nums2 to nums1
