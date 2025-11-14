@@ -38,6 +38,9 @@ echo ""
 echo "🔍 Running all JS files with timeout ($TIMEOUT seconds)…"
 echo ""
 
+# Allow Ctrl+C to stop the script immediately
+trap "echo ''; echo '⛔ Script interrupted by user'; exit 1" INT
+
 for file in $FILES; do
   echo "➡️  Running: $file"
 
