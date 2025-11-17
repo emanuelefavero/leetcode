@@ -7,13 +7,9 @@
   "scripts": {
     "dev": "nodemon",
     "start": "node",
-    "report": "./run-all.sh",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch"
+    "report": "./run-all.sh"
   },
   "keywords": [],
   "author": "Emanuele Favero",
-  "license": "MIT",
-  "devDependencies": {
-    "jest": "^29.7.0"
-  }
+  "license": "MIT"
 }
