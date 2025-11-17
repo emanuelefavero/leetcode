@@ -17,6 +17,12 @@ Feel free to browse the solutions and explanations for each problem. You can clo
   cd leetcode
   ```
 
+- Install dependencies:
+
+  ```bash
+  npm install
+  ```
+
 - Run a specific solution file using Node.js. For example, to run the `two-sum.js` solution:
 
   ```bash
@@ -24,8 +30,6 @@ Feel free to browse the solutions and explanations for each problem. You can clo
   ```
 
 - Run automatically on save:
-
-  > Note: Install nodemon if you haven't: `npm install -g nodemon`
 
   ```bash
   npm run dev array/two-sum.js
