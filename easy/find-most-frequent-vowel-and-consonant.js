@@ -64,9 +64,9 @@ function maxFreqSum2(s) {
 
   // Count the frequency of vowels and consonants
   for (const char of s) {
-    if (vowelMap.hasOwnProperty(char)) {
+    if (Object.prototype.hasOwnProperty.call(vowelMap, char)) {
       vowelMap[char]++
-    } else if (consonantMap.hasOwnProperty(char)) {
+    } else if (Object.prototype.hasOwnProperty.call(consonantMap, char)) {
       consonantMap[char]++
     }
   }
