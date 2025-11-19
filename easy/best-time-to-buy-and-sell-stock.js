@@ -13,7 +13,7 @@ Return the maximum profit you can achieve from this transaction. If you cannot a
  * @returns {number}
  */
 
-// O(n)
+// O(n) time | O(1) space
 function maxProfit(prices) {
   let min = prices[0]
   let profit = 0
@@ -27,11 +27,14 @@ function maxProfit(prices) {
 }
 
 function maxProfit2(prices) {
-  let minPrice = prices[0]
-  let profit = 0
+  let minPrice = prices[0] // track the minimum price seen so far
+  let profit = 0 // track the maximum profit
 
   for (let i = 1; i < prices.length; i++) {
+    // Update minPrice if the current price is lower
     minPrice = Math.min(minPrice, prices[i])
+
+    // Update profit if selling at the current price yields a higher profit
     profit = Math.max(profit, prices[i] - minPrice)
   }
 
