@@ -18,6 +18,12 @@ It is possible to use both of these rules at the same time.
 Given an array of strings emails where we send one email to each emails[i], return the number of different addresses that actually receive mails.
 */
 
+/**
+ * @param {string[]} emails
+ * @returns {number}
+ */
+
+// O(n) time | O(n) space
 function numUniqueEmails(emails) {
   const set = new Set()
   const at = '@'
