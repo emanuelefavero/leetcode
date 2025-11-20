@@ -44,8 +44,26 @@ function numUniqueEmails(emails) {
 }
 
 // -------------------------
+// SOLUTION 2
+
+// TIP: This combines steps for a more concise approach.
+
+function numUniqueEmails2(emails) {
+  const set = new Set()
+
+  for (const email of emails) {
+    let [local, domain] = email.split('@') // Split email
+    local = local.split('+')[0].replace(/\./g, '') // Clean local part
+    set.add(`${local}@${domain}`) // Reconstruct and add to set
+  }
+
+  return set.size
+}
+
+// -------------------------
 // TESTS
 
+// 1
 console.log(
   numUniqueEmails([
     'test.email+alex@leetcode.com',
@@ -54,3 +72,12 @@ console.log(
   ])
 ) // 2
 // Explanation: "testemail@leetcode.com" and "testemail@lee.tcode.com" actually receive mails
+
+// 2
+console.log(
+  numUniqueEmails2([
+    'test.email+alex@leetcode.com',
+    'test.e.mail+bob.cathy@leetcode.com',
+    'testemail+david@lee.tcode.com',
+  ])
+) // 2
