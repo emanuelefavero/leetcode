@@ -26,15 +26,15 @@ function numUniqueEmails(emails) {
     // Split the email into local and domain parts
     const [localName, domainName] = email.split(at)
 
-    // Remove all '.' from the local name
-    const noDots = localName.replace(/\./g, '')
+    // Split the local name at the first '+' and take the part before it
+    const splitAtPlus = localName.split('+')
+    const localWithoutPlus = splitAtPlus[0]
 
-    // Remove all characters after the first '+', including the '+'
-    const plusIndex = noDots.indexOf('+')
-    const cleanLocal = plusIndex === -1 ? noDots : noDots.slice(0, plusIndex)
+    // Remove all '.' characters from the local name
+    const noDotsLocal = localWithoutPlus.replace(/\./g, '')
 
     // Reconstruct the processed email address
-    const cleanEmail = `${cleanLocal}${at}${domainName}`
+    const cleanEmail = `${noDotsLocal}${at}${domainName}`
 
     // Add the processed email to the set
     set.add(cleanEmail)
