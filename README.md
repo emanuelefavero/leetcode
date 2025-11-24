@@ -150,6 +150,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Earliest Time to Finish One Task](./array/earliest-time-to-finish-one-task.js)
 - [Compute Alternating Sum](./array/compute-alternating-sum.js)
 - [Unique Email Addresses](./array/unique-email-addresses.js)
+- [3Sum](./array/3sum.js)
 
 ### Binary Search
 
