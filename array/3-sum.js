@@ -6,6 +6,13 @@ Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]]
 Notice that the solution set must not contain duplicate triplets.
 */
 
+/**
+ *
+ * @param {number[]} nums
+ * @returns {number[][]}
+ */
+
+// O(n^2) time | O(n) space
 function threeSum(nums) {
   const result = []
   const length = nums.length
