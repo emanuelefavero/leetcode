@@ -10,6 +10,12 @@ The smallest and largest integers of the original range are still present in num
 Return a sorted list of all the missing integers in this range. If no integers are missing, return an empty list.
 */
 
+/**
+ * @param {number[]} nums
+ * @returns {number[]}
+ */
+
+// O(n) time | O(n) space
 function findMissingElements(nums) {
   nums.sort((a, b) => a - b)
   const length = nums.length
@@ -34,6 +40,7 @@ function findMissingElements(nums) {
 // -----------------------------
 // SOLUTION 2
 
+// O(n) time | O(1) space
 function findMissingElements2(nums) {
   nums.sort((a, b) => a - b)
   const min = nums[0]
