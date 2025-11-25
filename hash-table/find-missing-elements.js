@@ -32,7 +32,29 @@ function findMissingElements(nums) {
 }
 
 // -----------------------------
+// SOLUTION 2
+
+function findMissingElements2(nums) {
+  nums.sort((a, b) => a - b)
+  const min = nums[0]
+  const max = nums[nums.length - 1]
+  const result = []
+
+  for (let i = min; i <= max; i++) {
+    if (!nums.includes(i)) result.push(i)
+  }
+
+  return result
+}
+
+// -----------------------------
 // TESTS
 
+// 1
+console.log(findMissingElements([1, 4, 2, 5])) // [3]
+// Explanation: The smallest integer is 1 and the largest is 5, so the full range should be [1,2,3,4,5]. Among these, only 3 is missing.
+console.log(findMissingElements([7, 8, 6, 9])) // []
+
+// 2
 console.log(findMissingElements([1, 4, 2, 5])) // [3]
 console.log(findMissingElements([7, 8, 6, 9])) // []
