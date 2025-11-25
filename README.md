@@ -335,6 +335,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Maximum Number of Words You Can Type](./hash-table/max-number-of-words-you-can-type.js)
 - [Restore Finishing Order](./hash-table/restore-finishing-order.js)
 - [Finding 3-Digit Even Numbers](./hash-table/finding-3-digit-even-numbers.js)
+- [Find Missing Elements](./hash-table/find-missing-elements.js)
 
 ### Heap
 

@@ -55,6 +55,21 @@ function findMissingElements2(nums) {
 }
 
 // -----------------------------
+// SOLUTION 2
+
+function findMissingElements3(nums) {
+  const min = Math.min(...nums)
+  const max = Math.max(...nums)
+  const result = []
+
+  for (let i = min; i <= max; i++) {
+    if (!nums.includes(i)) result.push(i)
+  }
+
+  return result
+}
+
+// -----------------------------
 // TESTS
 
 // 1
@@ -63,5 +78,9 @@ console.log(findMissingElements([1, 4, 2, 5])) // [3]
 console.log(findMissingElements([7, 8, 6, 9])) // []
 
 // 2
+console.log(findMissingElements([1, 4, 2, 5])) // [3]
+console.log(findMissingElements([7, 8, 6, 9])) // []
+
+// 3
 console.log(findMissingElements([1, 4, 2, 5])) // [3]
 console.log(findMissingElements([7, 8, 6, 9])) // []
