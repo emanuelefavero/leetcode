@@ -15,6 +15,8 @@ Return a sorted list of all the missing integers in this range. If no integers a
  * @returns {number[]}
  */
 
+// TIP: Using a set to track existing numbers.
+
 // O(n) time | O(n) space
 function findMissingElements(nums) {
   nums.sort((a, b) => a - b)
@@ -40,6 +42,8 @@ function findMissingElements(nums) {
 // -----------------------------
 // SOLUTION 2
 
+// TIP: Using sort and includes. This solution is more efficient on small arrays.
+
 // O(n) time | O(1) space
 function findMissingElements2(nums) {
   nums.sort((a, b) => a - b)
@@ -55,8 +59,11 @@ function findMissingElements2(nums) {
 }
 
 // -----------------------------
-// SOLUTION 2
+// SOLUTION 3
 
+// TIP: Using Math.min and Math.max to find the smallest and largest numbers. This solution is the most efficient on small arrays.
+
+// O(n) time | O(1) space
 function findMissingElements3(nums) {
   const min = Math.min(...nums)
   const max = Math.max(...nums)
