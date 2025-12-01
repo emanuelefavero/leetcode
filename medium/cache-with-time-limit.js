@@ -19,6 +19,14 @@ class TimeLimitedCache {
     this.cache = new Map()
   }
 
+  /**
+   *
+   * @param {number} key
+   * @param {number} value
+   * @param {number} duration
+   * @returns {boolean} true if key existed, false otherwise
+   */
+
   set(key, value, duration) {
     let cache = this.cache
 
@@ -35,8 +43,13 @@ class TimeLimitedCache {
     }
     cache.set(key, data)
 
-    return found // Return true if key existed, false otherwise
+    return found
   }
+
+  /**
+   * @param {number} key
+   * @returns {number} value or -1
+   */
 
   get(key) {
     // Return the value if key exists, otherwise -1
@@ -45,8 +58,12 @@ class TimeLimitedCache {
     return -1
   }
 
+  /**
+   * @returns {number} count of un-expired keys
+   */
+
   count() {
-    return this.cache.size // Return the count of un-expired keys
+    return this.cache.size
   }
 }
 
