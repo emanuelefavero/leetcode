@@ -28,18 +28,18 @@ class TimeLimitedCache {
    */
 
   set(key, value, duration) {
-    let cache = this.cache
+    const cache = this.cache
 
     // Check if key already exists
-    let found = cache.has(key)
+    const found = cache.has(key)
 
     // If it exists, clear the previous timeout
-    if (found) clearTimeout(cache.get(key).ref)
+    if (found) clearTimeout(cache.get(key).timer)
 
     // Set the new value with a timeout to delete it after duration
     const data = {
       value,
-      ref: setTimeout(() => cache.delete(key), duration),
+      timer: setTimeout(() => cache.delete(key), duration),
     }
     cache.set(key, data)
 
@@ -53,7 +53,7 @@ class TimeLimitedCache {
 
   get(key) {
     // Return the value if key exists, otherwise -1
-    let cache = this.cache
+    const cache = this.cache
     if (cache.has(key)) return cache.get(key).value
     return -1
   }
@@ -68,9 +68,74 @@ class TimeLimitedCache {
 }
 
 // --------------------------
+// SOLUTION 2
+
+// TIP: This solution tracks expiration times with timestamps instead of relying solely on timeouts
+
+class TimeLimitedCache2 {
+  constructor() {
+    this.cache = new Map()
+  }
+
+  set(key, value, duration) {
+    const cache = this.cache
+
+    const now = Date.now()
+    const maxAge = now + duration
+
+    // Check if key exists and is unexpired
+    const found = cache.get(key)
+    const unExpired = found && found.maxAge > now
+
+    // Clear previous timeout if unexpired
+    if (unExpired) clearTimeout(found.timer)
+
+    // Set new value with expiration time and timeout
+    const timer = setTimeout(() => cache.delete(key), duration)
+    cache.set(key, { value, maxAge, timer })
+
+    // Return true if unexpired key existed, false otherwise
+    return !!unExpired // ? doble NOT operator to convert to boolean
+  }
+
+  get(key) {
+    const cache = this.cache
+
+    const data = cache.get(key)
+    if (!data) return -1
+
+    // Check if expired, if so delete and return -1
+    if (data.maxAge < Date.now()) {
+      cache.delete(data)
+      return -1
+    }
+
+    return data.value
+  }
+
+  count() {
+    const cache = this.cache
+
+    const now = Date.now()
+    let n = 0
+
+    for (const [_, data] of cache) {
+      if (data.maxAge > now) n++
+    }
+
+    return n
+  }
+}
+
+// --------------------------
 // TESTS
 
 const timeLimitedCache = new TimeLimitedCache()
 console.log(timeLimitedCache.set(1, 42, 1000)) // false
 console.log(timeLimitedCache.get(1)) // 42
 console.log(timeLimitedCache.count()) // 1
+
+const timeLimitedCache2 = new TimeLimitedCache2()
+console.log(timeLimitedCache2.set(1, 42, 1000)) // false
+console.log(timeLimitedCache2.get(1)) // 42
+console.log(timeLimitedCache2.count()) // 1
