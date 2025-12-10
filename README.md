@@ -151,6 +151,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Compute Alternating Sum](./array/compute-alternating-sum.js)
 - [Unique Email Addresses](./array/unique-email-addresses.js)
 - [3Sum](./array/3sum.js)
+- [Product of Array Except Self](./array/product-of-array-except-self.js)
 
 ### Binary Search
 
