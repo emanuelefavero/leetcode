@@ -8,6 +8,12 @@ The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit int
 You must write an algorithm that runs in O(n) time and without using the division operation.
 */
 
+/**
+ * @param {number[]} nums
+ * @returns {number[]}
+ */
+
+// O(n) time | O(n) space
 function productExceptSelf(nums) {
   const result = new Array(nums.length).fill(1)
 
