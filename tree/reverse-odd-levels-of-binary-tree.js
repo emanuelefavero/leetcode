@@ -11,6 +11,20 @@ A binary tree is perfect if all parent nodes have two children and all leaves ar
 The level of a node is the number of edges along the path between it and the root node.
 */
 
+class TreeNode {
+  constructor(val, left, right) {
+    this.val = val || 0
+    this.left = left || null
+    this.right = right || null
+  }
+}
+
+/**
+ * @param {TreeNode} root
+ * @returns {TreeNode}
+ */
+
+// O(n) time | O(h) space, where n is the number of nodes in the tree and h is the height of the tree
 function reverseOddLevels(root) {
   if (!root) return root
   DFS(root.left, root.right, 1) // ? Start from level 1, not 0 (root level)
@@ -28,14 +42,6 @@ function DFS(left, right, level) {
 
   DFS(left.left, right.right, level + 1)
   DFS(left.right, right.left, level + 1)
-}
-
-class TreeNode {
-  constructor(val, left, right) {
-    this.val = val || 0
-    this.left = left || null
-    this.right = right || null
-  }
 }
 
 // -----------------------------
