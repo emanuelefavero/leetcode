@@ -581,6 +581,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Evaluate Boolean Binary Tree](./tree/evaluate-boolean-binary-tree.js)
 - [Binary Search Tree to Greater Sum Tree](./tree/binary-search-tree-to-greater-sum-tree.js)
 - [Count Nodes Equal to Average of Subtree](./tree/count-nodes-equal-to-average-of-subtree.js)
+- [Reverse Odd Levels of Binary Tree](./tree/reverse-odd-levels-of-binary-tree.js)
 
 ### Trie
 
