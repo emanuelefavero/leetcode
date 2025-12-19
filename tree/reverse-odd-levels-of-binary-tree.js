@@ -12,22 +12,22 @@ The level of a node is the number of edges along the path between it and the roo
 */
 
 function reverseOddLevels(root) {
-  const DFS = (leftNode, rightNode, level) => {
-    if (!leftNode || !rightNode) return
+  if (!root) return root
+  DFS(root.left, root.right, 1) // ? Start from level 1, not 0 (root level)
+  return root
+}
 
-    if (level % 2 !== 0) {
-      let temp = leftNode.val
-      leftNode.val = rightNode.val
-      rightNode.val = temp
-    }
+function DFS(left, right, level) {
+  if (!left || !right) return
 
-    DFS(leftNode.left, rightNode.right, level + 1)
-    DFS(leftNode.right, rightNode.left, level + 1)
+  if (level % 2 !== 0) {
+    let temp = left.val
+    left.val = right.val
+    right.val = temp
   }
 
-  DFS(root.left, root.right, 1) // ? Start from level 1, not 0 (root level)
-
-  return root
+  DFS(left.left, right.right, level + 1)
+  DFS(left.right, right.left, level + 1)
 }
 
 class TreeNode {
