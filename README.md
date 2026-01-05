@@ -338,6 +338,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Finding 3-Digit Even Numbers](./hash-table/finding-3-digit-even-numbers.js)
 - [Find Missing Elements](./hash-table/find-missing-elements.js)
 - [Maximum Substrings With Distinct Start](./hash-table/maximum-substrings-with-distinct-start.js)
+- [Encode and Decode TinyURL](./hash-table/encode-and-decode-tiny-url.js)
 
 ### Heap
 
