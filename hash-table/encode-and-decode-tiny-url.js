@@ -15,18 +15,18 @@ Implement the Solution class:
 */
 
 const map = new Map()
-let count = 0
+let count = 1
 const baseUrl = 'http://tinyurl.com/'
 
 function encode(longUrl) {
-  count += 1
-  map.set(count, longUrl)
-  return baseUrl + count
+  const shortUrl = baseUrl + count
+  map.set(shortUrl, longUrl)
+  count++
+  return shortUrl
 }
 
 function decode(shortUrl) {
-  const id = parseInt(shortUrl.replace(baseUrl, ''))
-  return map.get(id)
+  return map.get(shortUrl)
 }
 
 // -----------------------------
