@@ -14,9 +14,9 @@ Implement the Solution class:
 - String decode(String shortUrl) Returns the original long URL for the given shortUrl. It is guaranteed that the given shortUrl was encoded by the same object.
 */
 
+const baseUrl = 'http://tinyurl.com/'
 const map = new Map()
 let count = 1
-const baseUrl = 'http://tinyurl.com/'
 
 /**
  * Encodes a URL to a shortened URL.
@@ -40,9 +40,48 @@ function decode(shortUrl) {
 }
 
 // -----------------------------
+// SOLUTION 2
+
+// TIP: This solution is less efficient but it doesn't rely on a counter
+
+const BASE_URL = 'http://tinyurl.com/'
+const CHARS = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
+const ID_LENGTH = 6
+const urlMap = new Map()
+
+function getRandomId() {
+  let id = ''
+
+  for (let i = 0; i < ID_LENGTH; i++) {
+    const random = Math.floor(Math.random() * CHARS.length)
+    id += CHARS[random]
+  }
+
+  return id
+}
+
+function encode2(longUrl) {
+  const shortUrl = BASE_URL + getRandomId()
+  urlMap.set(shortUrl, longUrl)
+
+  return shortUrl
+}
+
+function decode2(shortUrl) {
+  return urlMap.get(shortUrl)
+}
+
+// -----------------------------
 // TESTS
 
 const url = 'https://leetcode.com/problems/design-tinyurl'
-const shortUrl = encode(url)
+
+// 1
+let shortUrl = encode(url)
 console.log(decode(shortUrl)) // https://leetcode.com/problems/design-tinyurl
 console.log(shortUrl) // http://tinyurl.com/1
+
+// 2
+shortUrl = encode2(url)
+console.log(decode2(shortUrl)) // https://leetcode.com/problems/design-tinyurl
+console.log(shortUrl) // http://tinyurl.com/a9wY0y
