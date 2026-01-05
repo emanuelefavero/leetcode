@@ -18,6 +18,11 @@ const map = new Map()
 let count = 1
 const baseUrl = 'http://tinyurl.com/'
 
+/**
+ * Encodes a URL to a shortened URL.
+ * @param {string} longUrl
+ * @returns {string}
+ */
 function encode(longUrl) {
   const shortUrl = baseUrl + count
   map.set(shortUrl, longUrl)
@@ -25,6 +30,11 @@ function encode(longUrl) {
   return shortUrl
 }
 
+/**
+ * Decodes a shortened URL to its original URL.
+ * @param {string} shortUrl
+ * @returns {string}
+ */
 function decode(shortUrl) {
   return map.get(shortUrl)
 }
