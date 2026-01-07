@@ -545,6 +545,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Split Strings by Separator](./string/split-strings-by-separator.js)
 - [Reverse Degree of a String](./string/reverse-degree-of-a-string.js)
 - [Generate Binary Strings Without Adjacent Zeros](./string/generate-binary-strings.js)
+- [reverse-string-prefix](./string/reverse-string-prefix.js)
 
 ### Tree
 
