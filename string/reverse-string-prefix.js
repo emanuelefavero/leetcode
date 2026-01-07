@@ -56,6 +56,21 @@ function reversePrefix3(s, k) {
 }
 
 // -------------------------
+// SOLUTION 4
+
+// TIP: This is a variation of solution 1 that builds the reversed substring differently
+
+function reversePrefix4(s, k) {
+  let reversed = ''
+
+  for (let i = 0; i < k; i++) {
+    reversed = s[i] + reversed
+  }
+
+  return reversed + s.slice(k)
+}
+
+// -------------------------
 // TESTS
 
 // 1
@@ -73,3 +88,8 @@ console.log(reversePrefix2('hey', 1)) // hey
 console.log(reversePrefix3('abcd', 2)) // bacd
 console.log(reversePrefix3('xyz', 3)) // zyx
 console.log(reversePrefix3('hey', 1)) // hey
+
+// 4
+console.log(reversePrefix4('abcd', 2)) // bacd
+console.log(reversePrefix4('xyz', 3)) // zyx
+console.log(reversePrefix4('hey', 1)) // hey
