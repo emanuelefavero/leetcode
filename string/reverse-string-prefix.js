@@ -33,6 +33,29 @@ function reversePrefix2(s, k) {
 }
 
 // -------------------------
+// SOLUTION 3
+
+// TIP: This is a two-pointer approach to reverse the substring in place
+
+function reversePrefix3(s, k) {
+  let left = 0
+  let right = k - 1
+
+  s = s.split('')
+
+  while (left < right) {
+    const temp = s[left]
+    s[left] = s[right]
+    s[right] = temp
+
+    left++
+    right--
+  }
+
+  return s.join('')
+}
+
+// -------------------------
 // TESTS
 
 // 1
@@ -42,6 +65,11 @@ console.log(reversePrefix('xyz', 3)) // zyx
 console.log(reversePrefix('hey', 1)) // hey
 
 // 2
-console.log(reversePrefix('abcd', 2)) // bacd
-console.log(reversePrefix('xyz', 3)) // zyx
-console.log(reversePrefix('hey', 1)) // hey
+console.log(reversePrefix2('abcd', 2)) // bacd
+console.log(reversePrefix2('xyz', 3)) // zyx
+console.log(reversePrefix2('hey', 1)) // hey
+
+// 3
+console.log(reversePrefix3('abcd', 2)) // bacd
+console.log(reversePrefix3('xyz', 3)) // zyx
+console.log(reversePrefix3('hey', 1)) // hey
