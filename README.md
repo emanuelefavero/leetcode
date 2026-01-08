@@ -406,6 +406,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Find the K-th Character in String Game I](./math/find-the-k-th-character-in-string-game-i.js)
 - [Hexadecimal and Hexatrigesimal Conversion](./math/hexadecimal-and-hexatrigesimal-conversion.js)
 - [Number of Laser Beams in a Bank](./math/number-of-laser-beams-in-a-bank.js)
+- [Mirror Distance of an Integer](./math/mirror-distance-of-an-integer.js)
 
 ### Matrix
 
