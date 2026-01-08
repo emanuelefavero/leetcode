@@ -10,6 +10,12 @@ Return an integer denoting the mirror distance of n​​​​​​​.
 abs(x) denotes the absolute value of x.
 */
 
+/**
+ * @param {number} n
+ * @returns {number}
+ */
+
+// O(d) time | O(d) space - where d is the number of digits in n
 function mirrorDistance(n) {
   const reversed = n.toString().split('').reverse().join('')
   return Math.abs(n - reversed)
