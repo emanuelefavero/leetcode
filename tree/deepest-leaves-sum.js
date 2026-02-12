@@ -3,13 +3,22 @@
 // Given the root of a binary tree, return the sum of values of its deepest leaves.
 
 class TreeNode {
-  constructor(val, left, right) {
+  /**
+   * @param {number} val
+   */
+  constructor(val) {
     this.val = val || 0
-    this.left = left || null
-    this.right = right || null
+    this.left = null
+    this.right = null
   }
 }
 
+/**
+ * @param {TreeNode} root
+ * @returns {number}
+ */
+
+// O(2n) time | O(n) space, 2n since we traverse the tree twice
 function deepestLeavesSum(root) {
   if (!root) return 0
 
@@ -45,6 +54,7 @@ function deepestLeavesSum(root) {
 
 // TIP: In theory this solution should be more efficient, as it finds the deepest leaves in a single pass through the tree. It uses a breadth-first search (BFS) approach, traversing the tree level by level.
 
+// O(n) time | O(n) space
 function deepestLeavesSum2(root) {
   if (!root) return 0
 
@@ -76,6 +86,7 @@ function deepestLeavesSum2(root) {
 
 // TIP: This solution uses a depth-first search (DFS) approach (like solution 1), but goes through the tree in a single pass, keeping track of the current depth and max depth at the same time. When it finds a leaf node, it checks if it's at the max depth and updates the sum accordingly.
 
+// O(n) time | O(n) space
 function deepestLeavesSum3(root) {
   if (!root) return 0
 
