@@ -43,7 +43,7 @@ function deepestLeavesSum(root) {
 // -----------------------------
 // SOLUTION 2
 
-// TIP: In theory this solution should be more efficient, as it uses a breadth-first search (BFS) approach, which allows us to find the deepest leaves in a single pass through the tree.
+// TIP: In theory this solution should be more efficient, as it finds the deepest leaves in a single pass through the tree. It uses a breadth-first search (BFS) approach, traversing the tree level by level.
 
 function deepestLeavesSum2(root) {
   if (!root) return 0
@@ -71,6 +71,47 @@ function deepestLeavesSum2(root) {
   return sum
 }
 
+// -----------------------------
+// SOLUTION 3
+
+// TIP: This solution uses a depth-first search (DFS) approach (like solution 1), but goes through the tree in a single pass, keeping track of the current depth and max depth at the same time. When it finds a leaf node, it checks if it's at the max depth and updates the sum accordingly.
+
+function deepestLeavesSum3(root) {
+  if (!root) return 0
+
+  let sum = 0
+  let maxDepth = 0
+
+  const dfs = (node, depth) => {
+    if (!node) return
+
+    // Check if it's a leaf node
+    if (!node.left && !node.right) {
+      // If we find a deeper leaf node, update maxDepth and reset sum to the current node's value
+      if (depth > maxDepth) {
+        maxDepth = depth
+        sum = node.val // reset sum to current node's value
+        return
+      }
+
+      // If we find a leaf node at the same depth as maxDepth, add its value to sum
+      if (depth === maxDepth) {
+        sum += node.val // add current node's value to sum
+        return
+      }
+
+      return // if depth < maxDepth, do nothing
+    }
+
+    dfs(node.left, depth + 1)
+    dfs(node.right, depth + 1)
+  }
+
+  dfs(root, 0) // start DFS with root node and initial depth of 0
+
+  return sum
+}
+
 // ------------------------------
 // TESTS
 
@@ -85,3 +126,4 @@ root.right.right.right = new TreeNode(8)
 
 console.log(deepestLeavesSum(root)) // 15 (7 + 8)
 console.log(deepestLeavesSum2(root)) // 15 (7 + 8)
+console.log(deepestLeavesSum3(root)) // 15 (7 + 8)
