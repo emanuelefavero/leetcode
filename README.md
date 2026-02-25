@@ -420,6 +420,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Delete Greatest Value in Each Row](./matrix/delete-greatest-value-in-each-row.js)
 - [Find Missing and Repeated Values](./matrix/find-missing-and-repeated-values.js)
 - [Subrectangle Queries](./matrix/subrectangle-queries.js)
+- [Max Increase to Keep City Skyline](./matrix/max-increase-to-keep-city-skyline.js)
 
 ### Medium
 
