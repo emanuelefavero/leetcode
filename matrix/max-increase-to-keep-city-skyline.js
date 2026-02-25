@@ -10,6 +10,12 @@ We are allowed to increase the height of any number of buildings by any amount (
 Return the maximum total sum that the height of the buildings can be increased by without changing the city's skyline from any cardinal direction.
 */
 
+/**
+ * @param {number[][]} grid
+ * @returns {number}
+ */
+
+// O(n^2) time | O(n) space
 function maxIncreaseKeepingSkyline(grid) {
   const n = grid.length
   let maxRow = new Array(n).fill(0)
