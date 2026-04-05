@@ -11,6 +11,13 @@ For each word, take its weight modulo 26 and map the result to a lowercase Engli
 Return a string formed by concatenating the mapped characters for all words in order.
 */
 
+/**
+ * @param {string[]} words
+ * @param {number[]} weights
+ * @returns {string}
+ */
+
+// O(n) time | O(n) space
 function mapWordWeights(words, weights) {
   let result = ''
 
