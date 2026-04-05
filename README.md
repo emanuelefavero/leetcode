@@ -152,6 +152,7 @@ Feel free to browse the solutions and explanations for each problem. You can clo
 - [Unique Email Addresses](./array/unique-email-addresses.js)
 - [3Sum](./array/3sum.js)
 - [Product of Array Except Self](./array/product-of-array-except-self.js)
+- [Weighted Word Mapping](./array/weighted-word-mapping.js)
 
 ### Binary Search
 
